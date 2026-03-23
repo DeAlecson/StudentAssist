@@ -19,14 +19,19 @@ const Leaderboard = (() => {
   };
 
   const load = async () => {
+    const content = Utils.$('#lb-content');
+    if (!content) return;
+
+    content.innerHTML = '<div class="lb-loading">Loading leaderboard...</div>';
+
     try {
-      const content = Utils.$('#lb-content');
-      if (!content) return;
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 10000);
 
-      content.innerHTML = '<div class="lb-loading">Loading leaderboard...</div>';
+      const resp = await fetch(SHEET_URL + '?action=get', { signal: controller.signal });
+      clearTimeout(timer);
 
-      const resp = await fetch(SHEET_URL + '?action=get');
-      if (!resp.ok) throw new Error('Failed to fetch leaderboard');
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
 
       const json = await resp.json();
       _allData = json.data || [];
@@ -34,10 +39,8 @@ const Leaderboard = (() => {
       render();
     } catch (err) {
       console.error('Leaderboard load error:', err);
-      const content = Utils.$('#lb-content');
-      if (content) {
-        content.innerHTML = '<div class="empty-state"><div class="empty-state-desc">Unable to load leaderboard</div></div>';
-      }
+      const msg = err.name === 'AbortError' ? 'Request timed out' : 'Unable to load leaderboard';
+      content.innerHTML = `<div class="empty-state"><div class="empty-state-desc">${msg}</div></div>`;
     }
   };
 
