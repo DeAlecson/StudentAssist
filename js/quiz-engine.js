@@ -186,7 +186,6 @@ const QuizEngine = (() => {
         <div class="results-actions">
           <button class="btn btn-primary" onclick="QuizEngine._retry()">Retry</button>
           <button class="btn btn-secondary" onclick="Router.navigate('#/${_moduleId}')">Module Home</button>
-          <button class="btn btn-ghost" onclick="Leaderboard.submitScore({module:'${State.get('currentModuleConfig')?.code}', mode:'Quiz', pct:${pct}, correct:${correct}, total:${total}, time:'${timeStr}'})">Submit to LB 🏆</button>
         </div>
         <div class="results-breakdown">
           <h3>Review</h3>

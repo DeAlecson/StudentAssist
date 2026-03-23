@@ -164,7 +164,6 @@ const MixedEngine = (() => {
         <div class="results-actions">
           <button class="btn btn-primary" onclick="MixedEngine.start('${_moduleId}')">New Run</button>
           <button class="btn btn-secondary" onclick="Router.navigate('#/${_moduleId}')">Module Home</button>
-          <button class="btn btn-ghost" onclick="Leaderboard.submitScore({module:'${code}',mode:'Mixed Run',pct:${pct},correct:${correct},total:${total},time:'${timeStr}'})">🏆 Submit Score</button>
         </div>
         <div class="results-breakdown">
           <h3>Results by SU</h3>

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'studentassist-v5';
+const CACHE_NAME = 'studentassist-v6';
 
 const urlsToCache = [
   './',

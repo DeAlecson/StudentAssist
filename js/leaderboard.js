@@ -134,6 +134,9 @@ const Leaderboard = (() => {
   };
 
   const submitScore = async (data) => {
+    // Don't submit zero scores — likely a bug or incomplete run
+    if (!data.pct || data.pct <= 0) return;
+
     let name = Storage.getSettings().displayName;
     if (!name) {
       name = await promptName();
@@ -141,7 +144,9 @@ const Leaderboard = (() => {
     if (!name) return;
 
     try {
-      const payload = {
+      // Use GET with URL params — POST no-cors silently strips Content-Type,
+      // making JSON body unreliable on the Apps Script side
+      const params = new URLSearchParams({
         action: 'submit',
         name,
         module: data.module,
@@ -150,14 +155,9 @@ const Leaderboard = (() => {
         correct: data.correct,
         total: data.total,
         time: data.time
-      };
-
-      await fetch(SHEET_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
       });
+
+      await fetch(`${SHEET_URL}?${params.toString()}`, { mode: 'no-cors' });
 
       Utils.toast('Score submitted to leaderboard!', 'success', 3000);
       await load();
