@@ -42,6 +42,7 @@ const App = (() => {
       const card = document.createElement('div');
       card.className = 'hub-card' + (mod.available ? '' : ' hub-card-soon');
       card.dataset.module = mod.id;
+      card.style.setProperty('--card-color', mod.color);
 
       let chipsHTML = '';
       if (mod.chips) {
@@ -71,7 +72,7 @@ const App = (() => {
     });
   };
 
-  const loadModule = async (moduleId) => {
+  const loadModule = async (moduleId, targetRoute = null) => {
     const module = _modules.find(m => m.id === moduleId);
     if (!module || !module.available) return;
 
@@ -101,8 +102,8 @@ const App = (() => {
       // Refresh header with module progress
       Gamification.refreshHeader();
 
-      // Navigate to module home
-      Router.navigate(`#/${moduleId}`);
+      // Navigate to target route (or module home)
+      Router.navigate(targetRoute || `#/${moduleId}`);
 
       State.set('loading', false);
     } catch (err) {
@@ -144,42 +145,58 @@ const App = (() => {
         return;
       }
       State.set('currentRoute', `/${moduleId}`);
-      showPlaceholder(`${_currentModuleCode} Home`, 'Welcome to the module home screen. Study Units and learning resources will appear here.');
+      Renderer.moduleHome(moduleId);
     });
 
     // Module sub-routes
     Router.register('/:module/:mode', (moduleId, mode) => {
       if (State.get('currentModule') !== moduleId) {
-        loadModule(moduleId);
+        loadModule(moduleId, `#/${moduleId}/${mode}`);
         return;
       }
       State.set('currentRoute', `/${moduleId}/${mode}`);
-      handleModeRoute(mode);
+      handleModeRoute(moduleId, mode);
     });
 
     Router.register('/:module/:mode/:param', (moduleId, mode, param) => {
       if (State.get('currentModule') !== moduleId) {
-        loadModule(moduleId);
+        loadModule(moduleId, `#/${moduleId}/${mode}/${param}`);
         return;
       }
       State.set('currentRoute', `/${moduleId}/${mode}/${param}`);
-      handleModeRoute(mode, param);
+      handleModeRoute(moduleId, mode, param);
     });
   };
 
-  const handleModeRoute = (mode, param) => {
-    const modeNames = {
-      learn: '📖 Learn Mode',
-      quiz: '❓ Quiz Run',
-      assessment: '🎯 Assessment',
-      mixed: '🔀 Mixed Run',
-      home: '🏠 Module Home'
-    };
-
-    showPlaceholder(
-      modeNames[mode] || 'Mode',
-      `${modeNames[mode] || 'This mode'} is not yet implemented. Content will be loaded here.`
-    );
+  const handleModeRoute = (moduleId, mode, param) => {
+    switch (mode) {
+      case 'learn':
+        if (param) {
+          LearnEngine.start(moduleId, param);
+        } else {
+          Renderer.learnSelector(moduleId);
+        }
+        break;
+      case 'quiz':
+        if (param) {
+          QuizEngine.startUnit(moduleId, param);
+        } else {
+          Renderer.quizSelector(moduleId);
+        }
+        break;
+      case 'assessment':
+        if (param) {
+          AssessmentEngine.start(moduleId, param);
+        } else {
+          Renderer.assessmentSelector(moduleId);
+        }
+        break;
+      case 'mixed':
+        MixedEngine.start(moduleId);
+        break;
+      default:
+        Renderer.moduleHome(moduleId);
+    }
   };
 
   const showPlaceholder = (title, description) => {

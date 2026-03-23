@@ -1,7 +1,7 @@
-/* âââââââââââââââââââââââââââââââââââââââââââââââ
-   StudentAssist Â· Theme System
+/* ═══════════════════════════════════════════════
+   StudentAssist · Theme System
    Vibrant + Gamified Dark Theme
-âââââââââââââââââââââââââââââââââââââââââââââââ */
+═══════════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
@@ -50,7 +50,7 @@
   --shadow-lg: 0 16px 48px rgba(0,0,0,0.6);
 }
 
-/* âââ Base âââ */
+/* ─── Base ─── */
 html {
   font-family: 'Plus Jakarta Sans', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -68,13 +68,13 @@ body {
 
 * { box-sizing: border-box; }
 
-/* âââ Scrollbar âââ */
+/* ─── Scrollbar ─── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
 
-/* âââ Typography âââ */
+/* ─── Typography ─── */
 h1 { font-size: 2rem; font-weight: 900; margin: 0; letter-spacing: -0.03em; }
 h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 0.5rem 0; letter-spacing: -0.02em; }
 h3 { font-size: 1.2rem; font-weight: 700; margin: 0 0 0.5rem 0; }
@@ -93,7 +93,7 @@ code {
 
 .mono { font-family: 'JetBrains Mono', monospace; }
 
-/* âââ Animations âââ */
+/* ─── Animations ─── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
