@@ -10,6 +10,7 @@ const MixedEngine = (() => {
   let _finished = false;
 
   const start = async (moduleId) => {
+    _stopTimer();
     _moduleId = moduleId;
     _currentIdx = 0;
     _answers = [];
@@ -172,9 +173,7 @@ const MixedEngine = (() => {
       </div>
     `;
 
-    Leaderboard.promptName(() => {
-      Leaderboard.submitScore({ module: code, mode: 'Mixed Run', pct, correct, total, time: timeStr });
-    });
+    Leaderboard.submitScore({ module: code, mode: 'Mixed Run', pct, correct, total, time: timeStr });
   };
 
   const renderSUBreakdown = () => {

@@ -204,11 +204,9 @@ const QuizEngine = (() => {
       </div>
     `;
 
-    // Auto-prompt leaderboard
+    // Auto-submit to leaderboard
     const code = State.get('currentModuleConfig')?.code || _moduleId.toUpperCase();
-    Leaderboard.promptName(() => {
-      Leaderboard.submitScore({ module: code, mode: 'Quiz', pct, correct, total, time: timeStr });
-    });
+    Leaderboard.submitScore({ module: code, mode: 'Quiz', pct, correct, total, time: timeStr });
   };
 
   const _retry = () => {

@@ -45,7 +45,7 @@ const Router = (() => {
       const param = parts[2];
 
       // Check if it's a valid module route
-      const pattern = `/:module/${mode}` + (param ? '/:param' : '');
+      const pattern = '/:module/:mode' + (param ? '/:param' : '');
       if (_routes[pattern]) {
         try {
           _routes[pattern](moduleId, mode, param);

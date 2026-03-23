@@ -87,30 +87,59 @@ const Leaderboard = (() => {
     content.innerHTML = html;
   };
 
+  const promptName = () => {
+    return new Promise((resolve) => {
+      const modal = Utils.$('#name-modal');
+      if (!modal) { resolve(null); return; }
+
+      const input = Utils.$('#name-modal-input', modal);
+      const submitBtn = Utils.$('#name-modal-submit', modal);
+      const skipBtn = Utils.$('#name-modal-skip', modal);
+
+      if (input) input.value = '';
+      modal.style.display = 'flex';
+      if (input) input.focus();
+
+      const handleSubmit = () => {
+        const name = (input.value || '').trim();
+        if (name) {
+          Storage.updateSettings(s => { s.displayName = name; return s; });
+          modal.style.display = 'none';
+          resolve(name);
+        }
+      };
+
+      const handleSkip = () => {
+        modal.style.display = 'none';
+        resolve(null);
+      };
+
+      submitBtn.onclick = handleSubmit;
+      skipBtn.onclick = handleSkip;
+      if (input) input.onkeypress = (e) => { if (e.key === 'Enter') handleSubmit(); };
+    });
+  };
+
   const submitScore = async (data) => {
-    // Prompt for name if not saved
     let name = Storage.getSettings().displayName;
     if (!name) {
-      await promptName((n) => {
-        name = n;
-      });
+      name = await promptName();
     }
-
-    if (!name) return; // User skipped
+    if (!name) return;
 
     try {
       const payload = {
         action: 'submit',
-        name: name,
+        name,
         module: data.module,
         mode: data.mode,
         score: data.pct,
         correct: data.correct,
         total: data.total,
-        timeSeconds: data.time
+        time: data.time
       };
 
-      const resp = await fetch(SHEET_URL, {
+      await fetch(SHEET_URL, {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
@@ -123,43 +152,6 @@ const Leaderboard = (() => {
       console.error('Submit score error:', err);
       Utils.toast('Failed to submit score', 'error');
     }
-  };
-
-  const promptName = (callback) => {
-    const modal = Utils.$('#name-modal');
-    if (!modal) {
-      callback(null);
-      return;
-    }
-
-    const input = Utils.$('#name-modal-input', modal);
-    const submitBtn = Utils.$('#name-modal-submit', modal);
-    const skipBtn = Utils.$('#name-modal-skip', modal);
-
-    modal.style.display = 'flex';
-
-    const handleSubmit = () => {
-      const name = (input.value || '').trim();
-      if (name) {
-        Storage.updateSettings(s => {
-          s.displayName = name;
-          return s;
-        });
-        modal.style.display = 'none';
-        callback(name);
-      }
-    };
-
-    const handleSkip = () => {
-      modal.style.display = 'none';
-      callback(null);
-    };
-
-    submitBtn.onclick = handleSubmit;
-    skipBtn.onclick = handleSkip;
-    input.onkeypress = (e) => {
-      if (e.key === 'Enter') handleSubmit();
-    };
   };
 
   const bindFilters = () => {
