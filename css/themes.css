@@ -1,156 +1,170 @@
-/* CSS Custom Properties - Dark Theme */
+/* âââââââââââââââââââââââââââââââââââââââââââââââ
+   StudentAssist Â· Theme System
+   Vibrant + Gamified Dark Theme
+âââââââââââââââââââââââââââââââââââââââââââââââ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 :root {
-  --bg: #07080d;
-  --surface: #0d1018;
-  --surface2: #111720;
-  --border: #1e2436;
-  --text: #e8eaf2;
-  --muted: #5a6480;
-  --dim: #2a3048;
-  --green: #10b981;
-  --red: #f43f5e;
-  --amber: #f59e0b;
-  --purple: #7c3aed;
-  --radius: 14px;
-  --radius-sm: 8px;
+  /* Core Palette */
+  --bg:        #080811;
+  --surface:   #0f0f1e;
+  --surface2:  #171728;
+  --surface3:  #1e1e35;
+  --border:    #252545;
+  --border2:   #32326a;
+
+  /* Text */
+  --text:      #eeeeff;
+  --text-2:    #b0b0d0;
+  --muted:     #6a6a9a;
+  --dim:       #2a2a50;
+
+  /* Semantic Colors */
+  --green:     #22c55e;
+  --green-glow: rgba(34, 197, 94, 0.3);
+  --red:       #f43f5e;
+  --red-glow:  rgba(244, 63, 94, 0.3);
+  --amber:     #f59e0b;
+  --amber-glow: rgba(245, 158, 11, 0.3);
+  --purple:    #a855f7;
+  --purple-glow: rgba(168, 85, 247, 0.3);
+  --blue:      #3b82f6;
+
+  /* Module Accent (updated dynamically by JS) */
   --module-color: #00d4ff;
+  --module-glow:  rgba(0, 212, 255, 0.25);
+
+  /* Card-level color (set inline per hub-card) */
+  --card-color: #00d4ff;
+
+  /* Layout */
+  --radius:    16px;
+  --radius-sm: 10px;
+  --radius-xs: 6px;
+  --topbar-h:  52px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.5);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.6);
 }
 
+/* âââ Base âââ */
 html {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Plus Jakarta Sans', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg);
+  background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  font-size: 15px;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
+/* âââ Scrollbar âââ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--dim);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--muted);
-}
-
-/* Animation Keyframes */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Typography */
-h1 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin: 0;
-  letter-spacing: -0.02em;
-}
-
-h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: -0.01em;
-}
-
-h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem 0;
-}
-
-p {
-  margin: 0 0 0.5rem 0;
-}
+/* âââ Typography âââ */
+h1 { font-size: 2rem; font-weight: 900; margin: 0; letter-spacing: -0.03em; }
+h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 0.5rem 0; letter-spacing: -0.02em; }
+h3 { font-size: 1.2rem; font-weight: 700; margin: 0 0 0.5rem 0; }
+p  { margin: 0 0 0.5rem 0; }
 
 a {
   color: var(--module-color);
   text-decoration: none;
 }
-
-a:hover {
-  text-decoration: underline;
-}
+a:hover { text-decoration: underline; }
 
 code {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.9em;
 }
 
-/* Mono font utility */
-.mono {
-  font-family: 'JetBrains Mono', monospace;
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* âââ Animations âââ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(0.3); }
+  50%  { transform: scale(1.08); }
+  70%  { transform: scale(0.96); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+@keyframes xpGain {
+  0%   { opacity: 1; transform: translateY(0) scale(1); }
+  80%  { opacity: 1; transform: translateY(-28px) scale(1.1); }
+  100% { opacity: 0; transform: translateY(-36px) scale(0.9); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 8px var(--module-glow); }
+  50%       { box-shadow: 0 0 20px var(--module-glow), 0 0 40px var(--module-glow); }
+}
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25%       { transform: translateX(-6px); }
+  75%       { transform: translateX(6px); }
+}
+
+@keyframes cardReveal {
+  from { opacity: 0; transform: translateY(20px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
