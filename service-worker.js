@@ -1,4 +1,4 @@
-const CACHE_NAME = 'studentassist-v1';
+const CACHE_NAME = 'studentassist-v2';
 
 const urlsToCache = [
   './',
@@ -11,6 +11,12 @@ const urlsToCache = [
   './js/router.js',
   './js/gamification.js',
   './js/leaderboard.js',
+  './js/ai.js',
+  './js/learn-engine.js',
+  './js/quiz-engine.js',
+  './js/assessment-engine.js',
+  './js/mixed-engine.js',
+  './js/renderer.js',
   './js/app.js',
   './data/modules.json',
   './manifest.webmanifest'
