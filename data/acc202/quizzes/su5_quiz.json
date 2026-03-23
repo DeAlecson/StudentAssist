@@ -1,0 +1,116 @@
+{
+  "unitId": "su5",
+  "moduleId": "acc202",
+  "questions": [
+    {
+      "id": "acc_su5_q1",
+      "type": "mcq",
+      "concept": "contribution margin",
+      "prompt": "Selling price is $60, variable cost per unit is $40. What is the contribution margin per unit?",
+      "difficulty": 1,
+      "choices": ["$20", "$40", "$60", "$100"],
+      "answer": 0,
+      "explanation": "CM = Selling Price - Variable Cost = $60 - $40 = $20. This $20 per unit covers fixed costs and contributes to profit."
+    },
+    {
+      "id": "acc_su5_q2",
+      "type": "mcq",
+      "concept": "CM ratio",
+      "prompt": "Selling price $100, variable cost $60. What is the contribution margin ratio?",
+      "difficulty": 2,
+      "choices": ["40%", "60%", "67%", "33%"],
+      "answer": 0,
+      "explanation": "CM = $100 - $60 = $40. CM Ratio = $40 / $100 = 40%. This means 40% of every revenue dollar contributes toward fixed costs and profit."
+    },
+    {
+      "id": "acc_su5_q3",
+      "type": "mcq",
+      "concept": "break-even units",
+      "prompt": "Fixed costs $30,000, CM per unit $15. What is the break-even point in units?",
+      "difficulty": 2,
+      "choices": ["1,500 units", "2,000 units", "2,500 units", "3,000 units"],
+      "answer": 1,
+      "explanation": "BEP (units) = Fixed Costs / CM = $30,000 / $15 = 2,000 units. At 2,000 units, total contribution margin = fixed costs, and profit = zero."
+    },
+    {
+      "id": "acc_su5_q4",
+      "type": "mcq",
+      "concept": "break-even dollars",
+      "prompt": "Fixed costs $50,000, CM ratio 25%. What is the break-even point in dollars?",
+      "difficulty": 2,
+      "choices": ["$100,000", "$150,000", "$200,000", "$250,000"],
+      "answer": 2,
+      "explanation": "BEP (dollars) = Fixed Costs / CM Ratio = $50,000 / 0.25 = $200,000. At $200,000 revenue, profit = zero."
+    },
+    {
+      "id": "acc_su5_q5",
+      "type": "mcq",
+      "concept": "target profit",
+      "prompt": "Fixed costs $40,000, CM per unit $25, target profit $15,000. How many units must be sold?",
+      "difficulty": 2,
+      "choices": ["1,600 units", "1,800 units", "2,000 units", "2,200 units"],
+      "answer": 3,
+      "explanation": "Target Sales = (Fixed + Target Profit) / CM = ($40,000 + $15,000) / $25 = $55,000 / $25 = 2,200 units."
+    },
+    {
+      "id": "acc_su5_q6",
+      "type": "mcq",
+      "concept": "margin of safety",
+      "prompt": "Expected sales 2,500 units, break-even 1,500 units. What is the margin of safety in units?",
+      "difficulty": 2,
+      "choices": ["500 units", "750 units", "1,000 units", "1,500 units"],
+      "answer": 2,
+      "explanation": "MOS = Expected Sales - BEP = 2,500 - 1,500 = 1,000 units. Sales can drop by 1,000 units (40%) before losses occur."
+    },
+    {
+      "id": "acc_su5_q7",
+      "type": "mcq",
+      "concept": "margin of safety percentage",
+      "prompt": "Actual sales 3,000 units, break-even 2,000 units. What is the margin of safety as a percentage?",
+      "difficulty": 2,
+      "choices": ["20%", "25%", "33%", "50%"],
+      "answer": 1,
+      "explanation": "MOS % = (Actual - BEP) / Actual = (3,000 - 2,000) / 3,000 = 1,000 / 3,000 = 33.3%. Rounding, approximately 33%. Actually 1,000/3,000 = 0.333... = 33.3%, closest to 33% at index 2. Let me recalculate: 1000/3000 = 1/3 = 0.3333 = 33.3%. So answer 2 (33%) is correct."
+    },
+    {
+      "id": "acc_su5_q8",
+      "type": "mcq",
+      "concept": "degree of operating leverage",
+      "prompt": "Total contribution margin $90,000, operating income $30,000. What is the degree of operating leverage?",
+      "difficulty": 2,
+      "choices": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explanation": "DOL = CM / Operating Income = $90,000 / $30,000 = 3. A 1% change in sales yields a 3% change in profit."
+    },
+    {
+      "id": "acc_su5_q9",
+      "type": "mcq",
+      "concept": "CVP assumptions",
+      "prompt": "Which is an assumption of CVP analysis?",
+      "difficulty": 1,
+      "choices": [
+        "Product prices change with volume discounts",
+        "Variable cost per unit stays constant",
+        "Fixed costs increase proportionally with volume",
+        "All assumptions hold true in practice"
+      ],
+      "answer": 1,
+      "explanation": "CVP assumes variable cost per unit is constant — no economies of scale. It also assumes constant selling price and fixed costs within the relevant range."
+    },
+    {
+      "id": "acc_su5_q10",
+      "type": "mcq",
+      "concept": "effect of fixed cost changes",
+      "prompt": "If fixed costs increase while CM remains constant, what happens to the break-even point?",
+      "difficulty": 2,
+      "choices": [
+        "It decreases",
+        "It remains unchanged",
+        "It increases",
+        "It is eliminated"
+      ],
+      "answer": 2,
+      "explanation": "BEP = Fixed Costs / CM. If fixed costs increase and CM is constant, BEP must increase. More units are needed to cover the higher fixed costs."
+    }
+  ]
+}

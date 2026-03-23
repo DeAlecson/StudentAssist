@@ -1,0 +1,78 @@
+{
+  "unitId": "su1",
+  "moduleId": "ict162",
+  "cards": [
+    {
+      "id": "su1_f1",
+      "front": "What is a class in Python?",
+      "back": "A blueprint or template that defines what data (attributes) and actions (methods) objects will have. You create objects (instances) from a class.",
+      "concept": "OOP Fundamentals"
+    },
+    {
+      "id": "su1_f2",
+      "front": "What is an object (instance)?",
+      "back": "A concrete realization of a class. Each object has its own copy of instance variables but shares methods defined in the class.",
+      "concept": "OOP Fundamentals"
+    },
+    {
+      "id": "su1_f3",
+      "front": "What is __init__ and when is it called?",
+      "back": "__init__ is the constructor method. It runs automatically when you create a new object, initializing the object's attributes.",
+      "concept": "Constructors"
+    },
+    {
+      "id": "su1_f4",
+      "front": "What does 'self' refer to?",
+      "back": "A reference to the current object (instance). Every instance method's first parameter is self, which lets you access that specific object's attributes and methods.",
+      "concept": "Instance Variables"
+    },
+    {
+      "id": "su1_f5",
+      "front": "What is an instance variable?",
+      "back": "A variable that belongs to a specific object. Created with self in __init__, each object has its own copy. Example: self.name = 'Alice'",
+      "concept": "Instance Variables"
+    },
+    {
+      "id": "su1_f6",
+      "front": "What does the __ (double underscore) prefix do?",
+      "back": "Triggers name mangling to make a variable private. Python renames self.__value to _ClassName__value, preventing accidental access from outside the class.",
+      "concept": "Encapsulation"
+    },
+    {
+      "id": "su1_f7",
+      "front": "What does @property decorator do?",
+      "back": "Turns a method into a getter that can be accessed like an attribute. Instead of obj.get_name(), you write obj.name without parentheses.",
+      "concept": "Properties"
+    },
+    {
+      "id": "su1_f8",
+      "front": "What is @property.setter used for?",
+      "back": "Defines a setter method that runs when you assign a value to a property. Used for validation before storing data. Example: @name.setter validates before assigning.",
+      "concept": "Properties"
+    },
+    {
+      "id": "su1_f9",
+      "front": "What does __str__ method do?",
+      "back": "Defines how an object is printed as a string. Called automatically by print(obj) or str(obj). Must return a string representation.",
+      "concept": "String Representation"
+    },
+    {
+      "id": "su1_f10",
+      "front": "What is a class variable?",
+      "back": "A variable defined inside the class but outside any method. Shared by all instances. Example: species = 'Homo sapiens' is shared by all Person objects.",
+      "concept": "Class Variables"
+    },
+    {
+      "id": "su1_f11",
+      "front": "What is encapsulation?",
+      "back": "Bundling data (attributes) and methods together, hiding internal details with private variables and exposing only a clean public interface.",
+      "concept": "Encapsulation"
+    },
+    {
+      "id": "su1_f12",
+      "front": "What is instantiation?",
+      "back": "The process of creating an object from a class. Example: dog = Dog('Buddy') creates an instance of the Dog class.",
+      "concept": "OOP Fundamentals"
+    }
+  ]
+}

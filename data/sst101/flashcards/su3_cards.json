@@ -1,0 +1,20 @@
+{
+  "unitId": "su3",
+  "moduleId": "sst101",
+  "cards": [
+    {"id": "su3_f1", "front": "What is ES (Earliest Start)?", "back": "Earliest time an activity can start given predecessors are complete. Determined during forward pass.", "concept": "Network Calculations"},
+    {"id": "su3_f2", "front": "What is EF (Earliest Finish)?", "back": "Earliest time an activity can finish. Formula: EF = ES + Duration", "concept": "Network Calculations"},
+    {"id": "su3_f3", "front": "What is LS (Latest Start)?", "back": "Latest time an activity can start without delaying the project. Determined during backward pass.", "concept": "Network Calculations"},
+    {"id": "su3_f4", "front": "What is LF (Latest Finish)?", "back": "Latest time an activity can finish without delaying the project. Formula: LS = LF - Duration", "concept": "Network Calculations"},
+    {"id": "su3_f5", "front": "What is float (slack)?", "back": "Amount of time an activity can be delayed without delaying the project. Formula: Slack = LS - ES (or LF - EF)", "concept": "Float"},
+    {"id": "su3_f6", "front": "What is the critical path?", "back": "The longest sequence of dependent activities where all have zero slack. Determines project duration. Any delay extends project.", "concept": "Critical Path"},
+    {"id": "su3_f7", "front": "What is the forward pass?", "back": "Calculation that determines ES and EF for each activity, working left to right. Identifies earliest project finish date.", "concept": "Network Diagrams"},
+    {"id": "su3_f8", "front": "What is the backward pass?", "back": "Calculation that determines LS and LF for each activity, working right to left. Identifies latest acceptable times.", "concept": "Network Diagrams"},
+    {"id": "su3_f9", "front": "What is the merge point rule?", "back": "When multiple activities converge, ES of next activity = maximum (latest) EF of all predecessors.", "concept": "Network Calculations"},
+    {"id": "su3_f10", "front": "What is the burst point rule?", "back": "When one activity has multiple successors, LF = minimum (earliest) LS of all successors.", "concept": "Network Calculations"},
+    {"id": "su3_f11", "front": "What are parallel activities?", "back": "Activities that can run simultaneously, not dependent on each other. Reduce project timeline. Key to schedule compression.", "concept": "Activities"},
+    {"id": "su3_f12", "front": "What are sequential activities?", "back": "Activities that must be done one after another. A must finish before B starts. Total duration is sum of all durations.", "concept": "Activities"},
+    {"id": "su3_f13", "front": "How does Gantt chart differ from network diagram?", "back": "Gantt shows activities as bars over time (easy to visualize). Network shows dependencies with arrows (identifies critical path). Use both.", "concept": "Visualization"},
+    {"id": "su3_f14", "front": "What is a project network diagram?", "back": "Shows logical sequence and dependencies of activities. Built from WBS. Answers 'When must work be done?' and 'What depends on what?'", "concept": "Network Diagrams"}
+  ]
+}

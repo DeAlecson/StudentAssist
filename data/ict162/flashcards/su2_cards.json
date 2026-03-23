@@ -1,0 +1,78 @@
+{
+  "unitId": "su2",
+  "moduleId": "ict162",
+  "cards": [
+    {
+      "id": "su2_f1",
+      "front": "What is composition?",
+      "back": "A design pattern where one class contains objects of another class as attributes. Creates a 'has-a' relationship rather than 'is-a'.",
+      "concept": "Composition"
+    },
+    {
+      "id": "su2_f2",
+      "front": "What is a 'has-a' relationship?",
+      "back": "A relationship where one object contains another. Example: A Car has-a Engine. Car is not an Engine; it contains one.",
+      "concept": "Composition"
+    },
+    {
+      "id": "su2_f3",
+      "front": "What is aggregation?",
+      "back": "A weak form of composition where parent and child objects exist independently. Example: A Team has Players, but Players can exist without a Team.",
+      "concept": "Composition"
+    },
+    {
+      "id": "su2_f4",
+      "front": "How do you create a list of objects in Python?",
+      "back": "Create an empty list, then append objects: items = []. Then use items.append(obj) to add objects. Iterate with: for item in items:",
+      "concept": "Collections"
+    },
+    {
+      "id": "su2_f5",
+      "front": "How do you access a composed object's attributes?",
+      "back": "Use dot notation to chain through objects. Example: person.address.city accesses the city attribute of the address object inside person.",
+      "concept": "Composition"
+    },
+    {
+      "id": "su2_f6",
+      "front": "What is iterating over an object list?",
+      "back": "Using a loop to process each object in a collection: for student in students: print(student.name). Allows you to perform operations on each object.",
+      "concept": "Collections"
+    },
+    {
+      "id": "su2_f7",
+      "front": "How do you store objects in a dictionary?",
+      "back": "Create a dictionary, use unique keys: employees = {}. Add objects: employees['E001'] = Employee(...). Retrieve: emp = employees['E001']",
+      "concept": "Collections"
+    },
+    {
+      "id": "su2_f8",
+      "front": "When should you use a dictionary vs list for objects?",
+      "back": "Use dictionary when you need fast lookup by unique ID (O(1) time). Use list when you need ordered storage and will iterate through all items.",
+      "concept": "Collections"
+    },
+    {
+      "id": "su2_f9",
+      "front": "What is a work package in composition?",
+      "back": "A container class that holds a collection of related objects. Example: Order is a work package containing multiple OrderItem objects.",
+      "concept": "Collections"
+    },
+    {
+      "id": "su2_f10",
+      "front": "What is object lifecycle in composition?",
+      "back": "How objects are created and destroyed. In composition, when the parent is deleted, should children be deleted? (depends on design intent)",
+      "concept": "Composition"
+    },
+    {
+      "id": "su2_f11",
+      "front": "What is the difference between composition and inheritance?",
+      "back": "Composition: has-a relationship, one class contains another. Inheritance: is-a relationship, child class extends parent class.",
+      "concept": "Composition"
+    },
+    {
+      "id": "su2_f12",
+      "front": "What is a nested object?",
+      "back": "An object that contains other objects as attributes. Example: Person contains Address, which contains City.",
+      "concept": "Composition"
+    }
+  ]
+}

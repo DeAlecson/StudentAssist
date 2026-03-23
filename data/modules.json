@@ -1,0 +1,52 @@
+{
+  "modules": [
+    {
+      "id": "ict162",
+      "code": "ICT162",
+      "title": "Object Oriented Programming",
+      "icon": "💻",
+      "color": "#00d4ff",
+      "colorRGB": "0,212,255",
+      "description": "Master Python OOP — classes, inheritance, exceptions, GUI and SOLID design principles.",
+      "chips": ["6 Study Units", "Python OOP", "AI Marking"],
+      "available": true,
+      "configFile": "data/ict162/config.json"
+    },
+    {
+      "id": "sst101",
+      "code": "SST101",
+      "title": "Project Management",
+      "icon": "📊",
+      "color": "#10b981",
+      "colorRGB": "16,185,129",
+      "description": "Project life cycles, network diagrams, risk management, EVM and Agile Scrum.",
+      "chips": ["6 Study Units", "100 Questions", "EVM Calc"],
+      "available": true,
+      "configFile": "data/sst101/config.json"
+    },
+    {
+      "id": "acc202",
+      "code": "ACC202",
+      "title": "Accounting for Decision Making",
+      "icon": "📈",
+      "color": "#f59e0b",
+      "colorRGB": "245,158,11",
+      "description": "Financial statements, ratio analysis, cost concepts, CVP analysis and budgeting.",
+      "chips": ["6 Study Units", "AI Marking", "Ratio Formulas"],
+      "available": true,
+      "configFile": "data/acc202/config.json"
+    },
+    {
+      "id": "mkt202",
+      "code": "MKT202",
+      "title": "Marketing Management",
+      "icon": "📣",
+      "color": "#f472b6",
+      "colorRGB": "244,114,182",
+      "description": "Coming soon — Marketing strategy, consumer behaviour, segmentation and the 4Ps.",
+      "chips": ["Coming Soon"],
+      "available": false,
+      "configFile": null
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "su6",
+  "title": "Budgeting & Planning",
+  "moduleId": "acc202",
+  "difficulty": 2,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is a Budget?",
+      "content": "A budget is a quantitative expression of a plan for a specific future period. It includes planned revenues, costs, cash flows, and capital expenditures. Budgeting translates strategic goals into operational targets and provides a roadmap for managers to follow. It is a critical tool for planning, coordination, motivation, and control."
+    },
+    {
+      "type": "definition",
+      "title": "Functions of Budgeting",
+      "content": "**1. Planning** — Forces managers to think ahead, set goals, and identify resource needs before the period begins.\n\n**2. Communication & Coordination** — Aligns all departments toward common targets, ensuring departments work toward organisational objectives.\n\n**3. Motivation** — Gives teams specific, measurable goals to work toward, encouraging effort and performance.\n\n**4. Control** — Provides benchmarks to compare actual performance against planned, enabling management by exception (focus on variances).\n\nThese four functions make budgeting essential for effective organisational management."
+    },
+    {
+      "type": "concept",
+      "title": "Budgeting Approaches",
+      "content": "**Top-Down Budgeting:**\n- Senior management sets revenue and spending targets for each department\n- Advantage: Fast, ensures alignment with overall strategy\n- Disadvantage: May ignore operational realities, departments feel pressure\n\n**Participative (Bottom-Up) Budgeting:**\n- Department managers provide input; senior management reviews and consolidates\n- Advantage: More accurate (based on real operational knowledge), higher buy-in\n- Disadvantage: Time-consuming, risk of budget padding (managers padding to create slack)\n\n**Best Practice:** Combination of both — top-down guidance with participative input."
+    },
+    {
+      "type": "concept",
+      "title": "Budgeting Strategies",
+      "content": "**Incremental Budgeting:**\n- Starts with prior period figures and adjusts up/down\n- Advantage: Simple, quick, understands historical baseline\n- Disadvantage: Entrenches past inefficiencies, doesn't question old spending\n\n**Zero-Based Budgeting (ZBB):**\n- Starts from zero; every expenditure must be justified from scratch\n- Advantage: Eliminates waste, reallocates resources optimally, challenges assumptions\n- Disadvantage: Extremely time-consuming, may demotivate managers\n\n**Rolling Budget:**\n- Continuously updated; adds a new period as prior period expires\n- Keeps budget current and forward-looking\n\n**Periodic Budget:**\n- Fixed annual or quarterly period, not updated mid-period"
+    },
+    {
+      "type": "checkpoint",
+      "title": "Identify the Budgeting Approach",
+      "content": "Test your understanding of budgeting methods.",
+      "question": {
+        "type": "mcq",
+        "prompt": "A manager is required to justify every single line item of their budget from zero, regardless of what was spent last year. This is:",
+        "choices": [
+          "Incremental budgeting",
+          "Rolling budgeting",
+          "Zero-based budgeting",
+          "Top-down budgeting"
+        ],
+        "answer": 2,
+        "explanation": "Zero-based budgeting requires all expenditures to be justified from scratch each period. It eliminates the assumption that last year's spending was necessary or appropriate."
+      }
+    },
+    {
+      "type": "concept",
+      "title": "The Master Budget",
+      "content": "The master budget is an integrated set of budgets for the whole organisation.\n\n**Typical Sequence:**\n1. Sales Budget (starting point)\n2. Production Budget\n3. Direct Materials Budget (purchases and costs)\n4. Direct Labour Budget\n5. Manufacturing Overhead Budget\n6. Cost of Goods Sold Budget\n7. Selling & Admin Expense Budget\n8. Cash Budget (integrates all cash flows)\n9. Budgeted Income Statement (profit forecast)\n10. Budgeted Balance Sheet (financial position forecast)\n\nEach budget builds on the prior one. All are interconnected and must be internally consistent."
+    },
+    {
+      "type": "example",
+      "title": "Budget Preparation: Sales to Production",
+      "content": "**Sales Budget:**\n- Expected unit sales: 1,000 units\n- Selling price: $50\n- Budgeted revenue: 1,000 × $50 = $50,000\n\n**Production Budget:**\n- Expected sales: 1,000 units\n- Add: Desired ending inventory: 200 units\n- Less: Beginning inventory: 100 units\n- Units to produce: 1,000 + 200 - 100 = 1,100 units\n\n**Direct Materials Budget:**\n- Units to produce: 1,100\n- Materials per unit: 2 kg\n- Materials needed: 1,100 × 2 = 2,200 kg\n- Add: Desired ending inventory: 300 kg\n- Less: Beginning inventory: 200 kg\n- Materials to purchase: 2,200 + 300 - 200 = 2,300 kg"
+    },
+    {
+      "type": "concept",
+      "title": "Cash Budget",
+      "content": "The cash budget forecasts cash inflows and outflows to prevent cash shortfalls.\n\n**Cash Budget = Beginning Cash + Inflows - Outflows = Ending Cash**\n\nIncludes:\n- Collections from customers (may lag sales)\n- Payments for materials (may lag purchases)\n- Payments for labour and overhead\n- Interest and debt payments\n- Dividends, capital expenditures\n\nThe cash budget identifies periods of surplus (opportunities for investment) or shortfall (need for borrowing). Critical for managing working capital and ensuring liquidity."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Identify the Budget Sequence",
+      "content": "Test your knowledge of master budget preparation order.",
+      "question": {
+        "type": "mcq",
+        "prompt": "Which budget must be prepared FIRST before all others in the master budget?",
+        "choices": [
+          "Cash Budget",
+          "Production Budget",
+          "Budgeted Income Statement",
+          "Sales Budget"
+        ],
+        "answer": 3,
+        "explanation": "The Sales Budget is always first. All other budgets (production, materials, labour, overhead, cash) depend on projected sales volume. Without sales, you can't plan production or any other function."
+      }
+    },
+    {
+      "type": "concept",
+      "title": "Variance Analysis",
+      "content": "Comparing actual results against the budget identifies variances.\n\n**Favourable (F) Variance:** Actual profit > Budgeted profit (good)\n**Unfavourable (U) Variance:** Actual profit < Budgeted profit (concerning)\n\n**Revenue Variance** = Actual Revenue - Budgeted Revenue\n- F if actual > budget\n\n**Cost Variance** = Budgeted Cost - Actual Cost\n- F if actual costs are LOWER (you saved money)\n- U if actual costs are HIGHER\n\nVariance analysis supports **management by exception** — managers focus attention on significant deviations that require explanation and corrective action. Small variances are normal and expected."
+    },
+    {
+      "type": "definition",
+      "title": "Budgetary Control Cycle",
+      "content": "1. **Set Budget** — Develop and approve budget targets\n2. **Measure Actual Performance** — Track actual results during the period\n3. **Compare Actual vs Budget** — Calculate variances\n4. **Analyse Variances** — Investigate significant deviations and identify root causes\n5. **Take Corrective Action** — Adjust operations or update expectations\n6. **Revise Budget if Necessary** — Update budget if circumstances change significantly\n\nThis continuous cycle is central to management control and ensures the organisation remains on track toward objectives."
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su6_a1",
+        "prompt": "Explain the difference between incremental and zero-based budgeting, and identify one advantage and one disadvantage of each.",
+        "modelAnswer": "Incremental budgeting adjusts prior period figures up or down. Advantage: quick and simple. Disadvantage: may perpetuate past inefficiencies and unnecessary spending. ZBB starts from zero requiring full justification of every line item. Advantage: eliminates waste and reallocates resources optimally. Disadvantage: extremely time-consuming and may demotivate managers. Choice depends on organisational culture and resources available.",
+        "keyPoints": ["Incremental = prior period + adjustments", "ZBB = justify every line from zero", "Incremental is faster, ZBB is more thorough", "Each has different cost-benefit trade-offs"]
+      },
+      {
+        "id": "su6_a2",
+        "prompt": "What is the master budget and why must the sales budget be prepared first?",
+        "modelAnswer": "The master budget is an integrated set of functional budgets covering the entire organisation (sales, production, materials, labour, overhead, cash, and financial statements). The sales budget must come first because projected sales volume drives all other budgets. Production depends on how many units to sell; materials and labour depend on production quantity; overhead allocation depends on production level; cash budget depends on cash flows from all these activities. Without sales projections, no other budget can be meaningfully prepared.",
+        "keyPoints": ["Master budget = integrated operational plans", "Sales budget is the starting point", "All other budgets depend on sales volume", "Sequence ensures logical flow and consistency"]
+      },
+      {
+        "id": "su6_a3",
+        "prompt": "What is variance analysis and how does it support management decision-making?",
+        "modelAnswer": "Variance analysis compares actual results against the budget to identify and explain differences. Favourable variances (actual profit > budget) are positive; unfavourable variances signal problems requiring investigation. It supports management by exception — directing management attention to significant deviations that require explanation or corrective action. For example, an unfavourable revenue variance may trigger investigation of pricing, market conditions, or sales team performance. Variance analysis enables fact-based decision-making and accountability.",
+        "keyPoints": ["Variance = Actual vs Budget difference", "Favourable (F) vs Unfavourable (U)", "Management by exception = focus on significant deviations", "Identifies root causes for corrective action"]
+      }
+    ]
+  }
+}

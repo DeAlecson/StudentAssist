@@ -1,0 +1,128 @@
+{
+  "id": "su5",
+  "title": "Python GUI",
+  "moduleId": "ict162",
+  "difficulty": 2,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is Tkinter?",
+      "content": "# GUI Programming with Tkinter\n\n**Tkinter** is Python's standard library for building graphical user interfaces (GUIs). It provides widgets (buttons, text fields, labels, etc.) that you arrange on a window.\n\nKey concepts:\n- **Window (tk.Tk)**: The main application window\n- **Widgets**: Visual elements like buttons, labels, entry fields\n- **Layout managers**: pack(), grid(), place() — position widgets\n- **Event handlers**: Functions that respond to user actions\n- **Data binding**: Variables that sync between widgets and code\n\nTkinter is simple to learn and works cross-platform."
+    },
+    {
+      "type": "example",
+      "title": "Creating Your First Window",
+      "content": "# Hello World in Tkinter\n\n```python\nimport tkinter as tk\n\n# Create the main window\nwindow = tk.Tk()\nwindow.title(\"My First GUI\")\nwindow.geometry(\"300x200\")  # Width x Height\n\n# Create a label\nlabel = tk.Label(window, text=\"Hello, World!\")\nlabel.pack()  # Position the label\n\n# Start the event loop\nwindow.mainloop()\n```\n\nEvery Tkinter app:\n1. Creates a `tk.Tk()` window\n2. Adds widgets\n3. Calls `mainloop()` to listen for events"
+    },
+    {
+      "type": "definition",
+      "title": "Common Widgets",
+      "content": "# Basic Widgets\n\n**Label**: Displays text or images\n```python\nlabel = tk.Label(window, text=\"Name:\")\n```\n\n**Button**: Clickable button\n```python\nbutton = tk.Button(window, text=\"Click Me\")\n```\n\n**Entry**: Single-line text input\n```python\nentry = tk.Entry(window)\n```\n\n**Text**: Multi-line text input\n```python\ntext = tk.Text(window, height=5, width=20)\n```\n\n**Frame**: Container to organize widgets\n```python\nframe = tk.Frame(window)\n```\n\n**Listbox**: Selectable list of items\n```python\nlistbox = tk.Listbox(window)\n```"
+    },
+    {
+      "type": "example",
+      "title": "Layout Managers: pack() and grid()",
+      "content": "# Positioning Widgets\n\n**pack()**: Stacks widgets vertically or horizontally\n```python\nlabel.pack()\nbutton.pack()\nentry.pack()\n```\n\n**grid()**: Arranges widgets in rows and columns\n```python\nlabel.grid(row=0, column=0)\nentry.grid(row=0, column=1)\nbutton.grid(row=1, column=0, columnspan=2)\n```\n\nDon't mix pack() and grid() in the same container — use one layout manager per container.\n\n**place()**: Absolute positioning (rarely used)\n```python\nbutton.place(x=50, y=20, width=100, height=30)\n```"
+    },
+    {
+      "type": "definition",
+      "title": "StringVar and IntVar: Data Binding",
+      "content": "# Linking Widgets to Variables\n\n`StringVar` and `IntVar` sync between widgets and Python variables:\n\n```python\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title(\"Data Binding\")\n\n# Create variables\nname_var = tk.StringVar()\nage_var = tk.IntVar(value=0)\n\n# Link to Entry widgets\nname_entry = tk.Entry(window, textvariable=name_var)\nage_entry = tk.Entry(window, textvariable=age_var)\n\nname_entry.pack()\nage_entry.pack()\n\n# Access values\ndef show_info():\n    name = name_var.get()\n    age = age_var.get()\n    print(f\"{name} is {age} years old\")\n\nbutton = tk.Button(window, text=\"Show Info\", command=show_info)\nbutton.pack()\n\nwindow.mainloop()\n```\n\nData binding eliminates manual `.get()` calls from every entry field."
+    },
+    {
+      "type": "example",
+      "title": "Button Callbacks: command Parameter",
+      "content": "# Handling Button Clicks\n\nThe `command` parameter connects a button to a function:\n\n```python\nimport tkinter as tk\n\ndef on_click():\n    print(\"Button clicked!\")\n    label.config(text=\"Button was clicked\")\n\nwindow = tk.Tk()\nwindow.title(\"Button Callback\")\n\nlabel = tk.Label(window, text=\"Click the button\")\nlabel.pack()\n\nbutton = tk.Button(window, text=\"Click Me\", command=on_click)\nbutton.pack()\n\nwindow.mainloop()\n```\n\nWhen the button is clicked, Python calls the `on_click()` function. You can also use lambda for parameters:\n\n```python\nbutton = tk.Button(window, text=\"Greet\", command=lambda: print(\"Hello!\"))\n```"
+    },
+    {
+      "type": "definition",
+      "title": "Reading Entry Widget Values",
+      "content": "# Getting User Input\n\nRetrieve text from Entry widgets:\n\n```python\nimport tkinter as tk\n\nwindow = tk.Tk()\n\nentry = tk.Entry(window)\nentry.pack()\n\ndef get_input():\n    user_input = entry.get()  # Retrieve text\n    print(f\"You entered: {user_input}\")\n\nbutton = tk.Button(window, text=\"Submit\", command=get_input)\nbutton.pack()\n\nwindow.mainloop()\n```\n\nOr with StringVar:\n```python\nvar = tk.StringVar()\nentry = tk.Entry(window, textvariable=var)\nvalue = var.get()  # Same result\n```"
+    },
+    {
+      "type": "example",
+      "title": "Form Validation",
+      "content": "# Validating User Input\n\n```python\nimport tkinter as tk\nfrom tkinter import messagebox\n\ndef submit_form():\n    name = name_entry.get()\n    try:\n        age = int(age_entry.get())\n        if age < 0 or age > 150:\n            raise ValueError(\"Age out of range\")\n    except ValueError:\n        messagebox.showerror(\"Error\", \"Please enter a valid age\")\n        return\n    \n    messagebox.showinfo(\"Success\", f\"Hello {name}, age {age}\")\n\nwindow = tk.Tk()\nwindow.title(\"Form Validation\")\n\ntk.Label(window, text=\"Name:\").grid(row=0, column=0)\nname_entry = tk.Entry(window)\nname_entry.grid(row=0, column=1)\n\ntk.Label(window, text=\"Age:\").grid(row=1, column=0)\nage_entry = tk.Entry(window)\nage_entry.grid(row=1, column=1)\n\nbutton = tk.Button(window, text=\"Submit\", command=submit_form)\nbutton.grid(row=2, column=0, columnspan=2)\n\nwindow.mainloop()\n```"
+    },
+    {
+      "type": "definition",
+      "title": "Showing Messages with messagebox",
+      "content": "# Displaying Dialog Boxes\n\nThe `messagebox` module shows popup dialogs:\n\n```python\nfrom tkinter import messagebox\n\n# Show message\nmessagebox.showinfo(\"Title\", \"This is an info message\")\n\n# Show warning\nmessagebox.showwarning(\"Warning\", \"This is a warning\")\n\n# Show error\nmessagebox.showerror(\"Error\", \"An error occurred\")\n\n# Ask for confirmation (returns True/False)\nif messagebox.askyesno(\"Confirm\", \"Continue?\"):\n    print(\"User clicked Yes\")\nelse:\n    print(\"User clicked No\")\n```\n\nThese dialogs pause execution until the user responds, making them useful for confirmations."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Which Layout Manager Uses Row/Column?",
+      "content": "The grid() layout manager arranges widgets using row and column coordinates. You specify grid(row=..., column=...) to position widgets in a table-like layout.",
+      "question": {
+        "type": "mcq",
+        "prompt": "Which layout manager uses rows and columns to position widgets?",
+        "choices": [
+          "pack() — stacks widgets vertically",
+          "grid() — arranges in rows and columns",
+          "place() — absolute pixel positioning",
+          "arrange() — special for forms"
+        ],
+        "answer": 1,
+        "explanation": "grid(row=..., column=...) arranges widgets in a table-like grid, perfect for forms."
+      }
+    },
+    {
+      "type": "checkpoint",
+      "title": "Reading Entry Widget Values",
+      "content": "You read values from Entry widgets using the .get() method, either directly on the widget or through a StringVar variable.",
+      "question": {
+        "type": "mcq",
+        "prompt": "How do you retrieve the text from an Entry widget named 'entry'?",
+        "choices": [
+          "entry.value",
+          "entry.getText()",
+          "entry.get()",
+          "entry.text"
+        ],
+        "answer": 2,
+        "explanation": "Use entry.get() to retrieve the text. If linked to a StringVar, you can also call var.get()."
+      }
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su5_a1",
+        "prompt": "Explain the difference between pack() and grid() layout managers. When would you use each one?",
+        "modelAnswer": "pack() stacks widgets vertically or horizontally in order. It's simple for linear layouts. grid() arranges widgets in rows and columns like a table, offering more control. Use pack() for simple, linear UIs (list of buttons). Use grid() for complex forms with multiple columns and precise alignment. Never mix pack() and grid() in the same container — they're incompatible.",
+        "keyPoints": [
+          "pack(): stacks widgets in order, simple",
+          "grid(): table-like arrangement with rows/columns",
+          "grid() offers more control and flexibility",
+          "Use pack() for linear layouts",
+          "Use grid() for forms and complex layouts",
+          "Never mix both managers in same container"
+        ]
+      },
+      {
+        "id": "su5_a2",
+        "prompt": "How do you connect a button to a function so it runs when clicked? Provide code example.",
+        "modelAnswer": "Use the command parameter in tk.Button to connect to a function:\n```python\ndef on_click():\n    print(\"Button clicked\")\n\nbutton = tk.Button(window, text=\"Click\", command=on_click)\n```\nWhen the button is clicked, on_click() is called. For parameters, use lambda:\n```python\nbutton = tk.Button(window, text=\"Click\", command=lambda: print(\"Clicked\"))\n```",
+        "keyPoints": [
+          "command parameter connects button to function",
+          "Function is called when button is clicked",
+          "Use lambda for functions with parameters",
+          "No parentheses after function name in command",
+          "Function can update GUI elements"
+        ]
+      },
+      {
+        "id": "su5_a3",
+        "prompt": "Design a simple form with Name (Entry), Age (Entry), and Submit button. Validate that age is a number, then show a success message.",
+        "modelAnswer": "```python\nimport tkinter as tk\nfrom tkinter import messagebox\n\ndef submit():\n    name = name_var.get()\n    try:\n        age = int(age_var.get())\n        messagebox.showinfo(\"Success\", f\"Hello {name}, age {age}\")\n    except ValueError:\n        messagebox.showerror(\"Error\", \"Age must be a number\")\n\nwindow = tk.Tk()\nwindow.title(\"Form\")\n\nname_var = tk.StringVar()\nage_var = tk.StringVar()\n\ntk.Label(window, text=\"Name:\").grid(row=0, column=0)\ntk.Entry(window, textvariable=name_var).grid(row=0, column=1)\n\ntk.Label(window, text=\"Age:\").grid(row=1, column=0)\ntk.Entry(window, textvariable=age_var).grid(row=1, column=1)\n\ntk.Button(window, text=\"Submit\", command=submit).grid(row=2, column=0, columnspan=2)\n\nwindow.mainloop()\n```",
+        "keyPoints": [
+          "Use grid() for form layout",
+          "StringVar binds Entry to variables",
+          "Try/except validates age as integer",
+          "messagebox shows success or error",
+          "command parameter connects button to submit function"
+        ]
+      }
+    ]
+  }
+}

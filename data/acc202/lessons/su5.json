@@ -1,0 +1,94 @@
+{
+  "id": "su5",
+  "title": "Cost-Volume-Profit Analysis",
+  "moduleId": "acc202",
+  "difficulty": 3,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is CVP Analysis?",
+      "content": "Cost-Volume-Profit (CVP) analysis examines the relationship between costs (fixed and variable), sales volume, and profit. It helps managers make critical decisions about pricing, production levels, product mix, and profit targets. CVP is a fundamental tool for business planning and scenario analysis."
+    },
+    {
+      "type": "definition",
+      "title": "Contribution Margin",
+      "content": "**Contribution Margin (CM) per unit = Selling Price - Variable Cost per unit**\n\nThe CM is the amount each unit CONTRIBUTES to covering fixed costs and then generating profit.\n\n**Contribution Margin Ratio (CM Ratio) = CM per unit / Selling Price × 100%**\n\nExample:\n- Selling Price: $100\n- Variable Cost per unit: $60\n- CM = $100 - $60 = $40\n- CM Ratio = $40 / $100 = 40%\n\nThis product contributes $40 (or 40%) of every dollar of revenue toward fixed costs and profit."
+    },
+    {
+      "type": "concept",
+      "title": "Break-Even Point",
+      "content": "The break-even point (BEP) is where Total Revenue = Total Costs, resulting in zero profit.\n\n**Break-Even in Units = Fixed Costs / CM per unit**\n\n**Break-Even in Dollars = Fixed Costs / CM Ratio**\n\nExample:\n- Fixed Costs: $24,000\n- CM per unit: $40\n- CM Ratio: 40%\n\nBEP (units) = $24,000 / $40 = 600 units\nBEP (dollars) = $24,000 / 0.40 = $60,000\n\nAt 600 units sold (or $60,000 revenue), profit is zero."
+    },
+    {
+      "type": "example",
+      "title": "Full CVP Calculation",
+      "content": "Given:\n- Selling price: $100 per unit\n- Variable cost: $70 per unit\n- Fixed costs: $24,000\n\nCalculations:\n- CM = $100 - $70 = $30\n- CM Ratio = 30%\n- BEP units = $24,000 / $30 = 800 units\n- BEP dollars = $24,000 / 0.30 = $80,000\n\nIf actual sales = 1,200 units:\n- Total CM = 1,200 × $30 = $36,000\n- Operating Income = $36,000 - $24,000 (fixed) = $12,000 profit\n\nProfit increases by $30 for every additional unit sold (the CM)."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Calculate Break-Even",
+      "content": "Test your ability to calculate break-even point.",
+      "question": {
+        "type": "mcq",
+        "prompt": "Selling price $50, Variable cost $30, Fixed costs $40,000. What is the break-even point in units?",
+        "choices": ["500 units", "800 units", "1,000 units", "2,000 units"],
+        "answer": 3,
+        "explanation": "CM = $50 - $30 = $20 per unit. BEP = Fixed Costs / CM = $40,000 / $20 = 2,000 units."
+      }
+    },
+    {
+      "type": "concept",
+      "title": "Target Profit",
+      "content": "To achieve a specific profit target:\n\n**Target Sales (units) = (Fixed Costs + Target Operating Income) / CM per unit**\n\n**Target Sales (dollars) = (Fixed Costs + Target Operating Income) / CM Ratio**\n\nExample:\n- Fixed Costs: $24,000\n- CM per unit: $30\n- Target Profit: $12,000\n\nTarget Sales = ($24,000 + $12,000) / $30 = $36,000 / $30 = 1,200 units\n\nThe company must sell 1,200 units to earn $12,000 profit (vs. 800 units to break even)."
+    },
+    {
+      "type": "concept",
+      "title": "Margin of Safety",
+      "content": "**Margin of Safety (MOS) in units = Actual/Expected Sales - Break-Even Sales**\n\n**Margin of Safety (%) = MOS / Actual Sales × 100%**\n\nExample:\n- Actual sales: 1,200 units\n- Break-even: 800 units\n- MOS = 1,200 - 800 = 400 units\n- MOS % = 400 / 1,200 = 33%\n\nMOS shows how much sales can DROP before the company incurs a loss. A 33% drop in sales brings you to break-even. Higher MOS = safer position."
+    },
+    {
+      "type": "concept",
+      "title": "Degree of Operating Leverage",
+      "content": "**Degree of Operating Leverage (DOL) = Contribution Margin / Operating Income**\n\nDOL measures the sensitivity of profit to changes in sales volume.\n\nExample:\n- Total CM: $36,000\n- Operating Income: $12,000\n- DOL = $36,000 / $12,000 = 3\n\nInterpretation: A 10% increase in sales → 30% increase in profit (3 × 10%).\n\nCompanies with high fixed costs have high DOL (small sales changes cause large profit swings). This increases both upside and downside risk."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Interpret DOL",
+      "content": "Apply your understanding of operating leverage.",
+      "question": {
+        "type": "mcq",
+        "prompt": "A company has DOL = 4. Sales increase by 10%. Profit will increase by:",
+        "choices": ["4%", "10%", "40%", "400%"],
+        "answer": 2,
+        "explanation": "DOL × % change in sales = % change in profit. So 4 × 10% = 40% increase in profit. This shows the power of operating leverage."
+      }
+    },
+    {
+      "type": "definition",
+      "title": "CVP Assumptions",
+      "content": "Key assumptions that limit CVP precision:\n\n1. **Selling price is constant** — no volume discounts\n2. **Variable cost per unit is constant** — no economies of scale\n3. **Fixed costs don't change** — within the relevant range of activity\n4. **Sales mix is constant** — if multiple products, the ratio stays fixed\n5. **All units produced are sold** — no inventory buildup\n\nWhile these assumptions are simplifications, CVP remains a powerful planning tool. Sensitivity analysis can test how results change if assumptions vary."
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su5_a1",
+        "prompt": "A company sells a product at $80, variable cost is $50, fixed costs are $30,000. Calculate (a) contribution margin, (b) CM ratio, (c) break-even units, and (d) sales needed to earn $9,000 profit.",
+        "modelAnswer": "(a) CM = $80 - $50 = $30 per unit. (b) CM Ratio = $30 / $80 = 37.5%. (c) BEP = $30,000 / $30 = 1,000 units. (d) Target = ($30,000 + $9,000) / $30 = $39,000 / $30 = 1,300 units. The firm breaks even at 1,000 units and needs 1,300 units for $9,000 profit.",
+        "keyPoints": ["CM = Price - Variable Cost", "CM Ratio = CM / Price", "BEP units = Fixed / CM", "Target units = (Fixed + Target Profit) / CM"]
+      },
+      {
+        "id": "su5_a2",
+        "prompt": "What is the margin of safety and why is it important to managers?",
+        "modelAnswer": "Margin of safety is the amount by which actual sales exceed break-even sales, expressed in units or as a percentage. It shows how much sales can decline before losses occur. Higher MOS indicates greater safety/lower risk. Managers use it to assess business risk, plan contingencies, and evaluate how close the firm is to break-even. A 20% MOS means sales can drop 20% before losses begin.",
+        "keyPoints": ["MOS = Actual Sales - BEP Sales", "Higher MOS = lower risk", "Used for scenario planning and contingency analysis", "Expressed as units or percentage"]
+      },
+      {
+        "id": "su5_a3",
+        "prompt": "Explain how the degree of operating leverage works and what it means for a company with high fixed costs.",
+        "modelAnswer": "DOL = Contribution Margin / Operating Income. It measures profit sensitivity to sales changes. A company with high fixed costs has high contribution margin (less variable costs) relative to operating income, giving high DOL. So a 10% increase in sales might yield a 40% profit increase (if DOL=4). Conversely, downturns are also amplified — a 10% sales drop yields 40% profit decline. High fixed costs create high leverage, amplifying both gains and losses.",
+        "keyPoints": ["DOL = CM / Operating Income", "Higher fixed costs = higher DOL", "Both profit gains and losses are amplified", "Increases business risk in downturns"]
+      }
+    ]
+  }
+}

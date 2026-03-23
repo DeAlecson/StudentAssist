@@ -1,0 +1,109 @@
+{
+  "id": "su4",
+  "title": "Managerial Accounting & Cost Concepts",
+  "moduleId": "acc202",
+  "difficulty": 2,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is Managerial Accounting?",
+      "content": "Managerial accounting provides financial information to **internal managers** for planning, decision-making, and control. Unlike financial accounting (which serves external users and follows GAAP), managerial accounting is forward-looking, flexible, and tailored to management needs. It is not regulated by law but is critical for effective business management."
+    },
+    {
+      "type": "definition",
+      "title": "Managerial vs Financial Accounting",
+      "content": "**Financial Accounting:**\n- Serves external users (investors, creditors, regulators)\n- Historical and accurate (follows GAAP)\n- Annual or periodic reports\n- High level of standardisation\n\n**Managerial Accounting:**\n- Serves internal managers\n- Future-focused and flexible\n- Frequent (daily, weekly, monthly)\n- Tailored to specific decisions\n\nBoth use the same underlying financial data but serve fundamentally different purposes."
+    },
+    {
+      "type": "concept",
+      "title": "The Strategic Management Process",
+      "content": "1. **Vision/Mission** — Define purpose and values\n2. **Strategy Formulation** — Plan how to compete and create value\n3. **Strategy Implementation** — Execute through budgets, plans, and operational activities\n4. **Performance Monitoring** — Track progress and make adjustments\n\nManagerial accounting supports implementation (budgets, cost analysis, forecasts) and monitoring (actual vs. budget, variance analysis, KPIs)."
+    },
+    {
+      "type": "definition",
+      "title": "Cost Objects",
+      "content": "A cost object is anything for which you want to measure the cost. Examples:\n- A product or service (e.g., a specific BMW model)\n- A customer or market segment\n- A project (e.g., an R&D initiative)\n- A department or activity\n- A business process\n\nOnce you define a cost object, you can trace direct costs and allocate indirect costs to determine its profitability."
+    },
+    {
+      "type": "concept",
+      "title": "Direct vs Indirect Costs",
+      "content": "**Direct Costs** can be TRACED directly and economically to a cost object:\n- Raw materials in a product\n- Direct labour (wages of workers making the product)\n- Specific outsourced services\n\n**Indirect Costs (Overheads)** cannot be easily traced to one cost object and must be ALLOCATED:\n- Factory rent (supports all production)\n- Machine depreciation\n- Factory utilities\n- Supervision and quality control\n- Allocation uses cost drivers (machine hours, labour hours, square footage)\n\nAccurate cost assignment requires careful distinction between direct and indirect."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Classify the Cost",
+      "content": "Test your ability to distinguish direct from indirect costs.",
+      "question": {
+        "type": "mcq",
+        "prompt": "Factory rent paid monthly. This is best classified as:",
+        "choices": [
+          "Direct material",
+          "Direct labour",
+          "Indirect overhead — cannot be traced to specific product",
+          "Variable cost"
+        ],
+        "answer": 2,
+        "explanation": "Factory rent supports all production and cannot be traced to a specific product. It must be allocated using a cost driver like square footage or machine hours. It is an indirect manufacturing cost (overhead)."
+      }
+    },
+    {
+      "type": "concept",
+      "title": "Fixed vs Variable Costs",
+      "content": "**Variable Costs** change proportionally with activity level:\n- Raw materials (more units = more materials)\n- Direct labour paid per unit\n- Piece-rate commissions\n- Packaging materials\n\n**Fixed Costs** remain constant regardless of activity (within relevant range):\n- Rent, depreciation\n- Salaries of permanent staff\n- Insurance, property taxes\n\n**Mixed (Semi-Variable) Costs** have both components:\n- Utility bills (base charge + usage charge)\n- Vehicle leasing (base + mileage)\n\nUnderstanding this distinction is critical for break-even analysis, pricing, and profit planning."
+    },
+    {
+      "type": "concept",
+      "title": "Plantwide Overhead Rate Method",
+      "content": "A single overhead rate applied to all products:\n\n**Overhead Rate = Total Overhead / Total Allocation Base**\n\nExample:\n- Total Manufacturing Overhead: $500,000\n- Total Direct Labour Hours: 10,000\n- Overhead Rate = $500,000 / 10,000 = $50 per labour hour\n- Product A (100 labour hours): $50 × 100 = $5,000 overhead allocated\n\n**Advantage:** Simple, easy to apply\n\n**Disadvantage:** Inaccurate if products use resources differently (e.g., Product A is labour-intensive, Product B is machine-intensive)"
+    },
+    {
+      "type": "concept",
+      "title": "Activity-Based Costing (ABC)",
+      "content": "Assigns overhead costs based on ACTIVITIES each product consumes.\n\n**Steps:**\n1. Identify activities (setups, inspections, quality control, packaging)\n2. Assign costs to activity cost pools (e.g., all setup costs in one pool)\n3. Determine cost drivers (e.g., number of setups, machine hours)\n4. Calculate activity rates (cost pool / cost driver total)\n5. Apply to products based on their consumption of activities\n\n**Advantage:** More accurate when products consume resources differently\n\n**Disadvantage:** More complex and expensive to implement\n\nABC best used when products are diverse and overhead is substantial."
+    },
+    {
+      "type": "checkpoint",
+      "title": "ABC vs Plantwide Rate",
+      "content": "Apply your understanding of costing methods.",
+      "question": {
+        "type": "mcq",
+        "prompt": "A company produces two products: Product A (high volume, simple) and Product B (low volume, complex). Which costing method would most accurately assign overhead costs?",
+        "choices": [
+          "Plantwide rate — simpler to apply",
+          "Activity-Based Costing — allocates based on actual resource consumption",
+          "Direct labour rate — matches effort",
+          "Revenue-based allocation"
+        ],
+        "answer": 1,
+        "explanation": "ABC assigns costs based on activities actually consumed. Product B (complex, low volume) likely uses more setups, quality checks, and inspections. ABC captures this; plantwide rate would incorrectly over-cost high-volume Product A."
+      }
+    },
+    {
+      "type": "definition",
+      "title": "Unit Cost Formula",
+      "content": "**Unit Cost = (Direct Materials + Direct Labour + Manufacturing Overhead) / Units Produced**\n\nExample:\n- Direct materials per unit: $30\n- Direct labour per unit: $20\n- Manufacturing overhead per unit: $15 (allocated based on activity or plantwide rate)\n- **Unit Cost = $30 + $20 + $15 = $65**\n\nUnit cost is critical for pricing decisions, profit analysis, and inventory valuation."
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su4_a1",
+        "prompt": "Explain the difference between direct and indirect costs, with two examples of each.",
+        "modelAnswer": "Direct costs are traced directly to a specific cost object. Examples: raw materials used in manufacturing a product, wages of factory workers who make the product. Indirect costs (overheads) cannot be traced and must be allocated. Examples: factory rent (benefits all products), depreciation of machinery (supports all production). Accurate cost assignment requires distinguishing the two.",
+        "keyPoints": ["Direct = traced directly to cost object", "Indirect = allocated using cost drivers", "Examples of direct: materials, direct labour", "Examples of indirect: rent, depreciation, utilities"]
+      },
+      {
+        "id": "su4_a2",
+        "prompt": "What is Activity-Based Costing and when is it more appropriate than a plantwide overhead rate?",
+        "modelAnswer": "ABC assigns overhead costs based on activities each product consumes. It identifies activities (machining, quality inspection, setups), pools costs by activity, and allocates based on cost drivers (machine hours, number of inspections). ABC is better when products are diverse — using different amounts of overhead resources. Plantwide rate is simpler but distorts costs when products have very different production characteristics. ABC is appropriate for complex manufacturing with diverse products.",
+        "keyPoints": ["ABC uses multiple activity cost pools", "More accurate for diverse product mixes", "Better when overhead consumption differs significantly", "More complex but more precise than plantwide rate"]
+      },
+      {
+        "id": "su4_a3",
+        "prompt": "Classify each of the following as fixed or variable costs and explain why: (a) raw materials, (b) factory rent, (c) sales commissions.",
+        "modelAnswer": "(a) Raw materials: variable — increases proportionally as more units are produced. (b) Factory rent: fixed — stays constant regardless of production volume (within relevant range). (c) Sales commissions: variable — directly tied to sales volume, increases as more is sold. Understanding this distinction is critical for break-even analysis and contribution margin calculations.",
+        "keyPoints": ["Variable: change with activity level", "Fixed: constant within relevant range", "Mixed costs have both components", "Classification affects CVP analysis and pricing decisions"]
+      }
+    ]
+  }
+}

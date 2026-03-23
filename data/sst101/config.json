@@ -1,0 +1,64 @@
+{
+  "id": "sst101",
+  "code": "SST101",
+  "title": "Project Management",
+  "institution": "SUSS",
+  "color": "#10b981",
+  "icon": "📊",
+  "units": [
+    {
+      "id": "su1",
+      "title": "Introduction to Project Management",
+      "icon": "📋",
+      "description": "Projects vs operations, Triple Constraint, Project Life Cycle",
+      "lessonFile": "data/sst101/lessons/su1.json",
+      "quizFile": "data/sst101/quizzes/su1_quiz.json",
+      "flashcardFile": "data/sst101/flashcards/su1_cards.json"
+    },
+    {
+      "id": "su2",
+      "title": "Project Strategy & Selection",
+      "icon": "🎯",
+      "description": "Strategic alignment, SWOT, WBS, organisational structures",
+      "lessonFile": "data/sst101/lessons/su2.json",
+      "quizFile": "data/sst101/quizzes/su2_quiz.json",
+      "flashcardFile": "data/sst101/flashcards/su2_cards.json"
+    },
+    {
+      "id": "su3",
+      "title": "Networks & Critical Path",
+      "icon": "🔗",
+      "description": "Project network diagrams, forward/backward pass, float and critical path",
+      "lessonFile": "data/sst101/lessons/su3.json",
+      "quizFile": "data/sst101/quizzes/su3_quiz.json",
+      "flashcardFile": "data/sst101/flashcards/su3_cards.json"
+    },
+    {
+      "id": "su4",
+      "title": "Risk Management",
+      "icon": "⚠️",
+      "description": "IADC cycle, risk register, risk response strategies",
+      "lessonFile": "data/sst101/lessons/su4.json",
+      "quizFile": "data/sst101/quizzes/su4_quiz.json",
+      "flashcardFile": "data/sst101/flashcards/su4_cards.json"
+    },
+    {
+      "id": "su5",
+      "title": "Monitoring & EVM",
+      "icon": "📈",
+      "description": "Earned Value Management, CPI, SPI, EAC calculations",
+      "lessonFile": "data/sst101/lessons/su5.json",
+      "quizFile": "data/sst101/quizzes/su5_quiz.json",
+      "flashcardFile": "data/sst101/flashcards/su5_cards.json"
+    },
+    {
+      "id": "su6",
+      "title": "Closure & Agile",
+      "icon": "✅",
+      "description": "Project closure types, Scrum, retrospectives, Agile vs Waterfall",
+      "lessonFile": "data/sst101/lessons/su6.json",
+      "quizFile": "data/sst101/quizzes/su6_quiz.json",
+      "flashcardFile": "data/sst101/flashcards/su6_cards.json"
+    }
+  ]
+}

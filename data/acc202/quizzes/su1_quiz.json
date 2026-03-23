@@ -1,0 +1,141 @@
+{
+  "unitId": "su1",
+  "moduleId": "acc202",
+  "questions": [
+    {
+      "id": "acc_su1_q1",
+      "type": "mcq",
+      "concept": "double entry system",
+      "prompt": "In the double entry system, which statement is true?",
+      "difficulty": 1,
+      "choices": ["Total debits must exceed total credits", "Total debits must equal total credits", "Debits and credits are unrelated", "Credits must always exceed debits"],
+      "answer": 1,
+      "explanation": "The double entry system's fundamental principle is that total debits MUST equal total credits. This equality ensures accuracy and maintains the accounting equation balance."
+    },
+    {
+      "id": "acc_su1_q2",
+      "type": "mcq",
+      "concept": "normal balances",
+      "prompt": "Which account type has a CREDIT normal balance?",
+      "difficulty": 1,
+      "choices": ["Expenses", "Assets", "Liabilities", "Both Expenses and Assets"],
+      "answer": 2,
+      "explanation": "Liabilities have a CREDIT normal balance. They increase with credits and decrease with debits. Remember DEALER: Liabilities, Equity, and Revenue all increase with credits."
+    },
+    {
+      "id": "acc_su1_q3",
+      "type": "mcq",
+      "concept": "accounting equation",
+      "prompt": "A company buys equipment for $50,000 with cash. What happens to the accounting equation?",
+      "difficulty": 2,
+      "choices": ["Assets increase by $50,000, liabilities decrease by $50,000", "One asset increases, another decreases; equation remains balanced", "Assets increase by $50,000, equity decreases by $50,000", "Both assets and liabilities increase by $50,000"],
+      "answer": 1,
+      "explanation": "Equipment (asset) increases by $50,000, Cash (asset) decreases by $50,000. Total assets are unchanged. The equation remains balanced: Assets = Liabilities + Equity."
+    },
+    {
+      "id": "acc_su1_q4",
+      "type": "mcq",
+      "concept": "journal entries - inventory purchase",
+      "prompt": "A company buys $12,000 of inventory, paying 40% in cash and the rest on credit. What is the journal entry?",
+      "difficulty": 2,
+      "choices": [
+        "Dr Inventory $12,000, Cr Cash $12,000",
+        "Dr Inventory $12,000, Cr Cash $4,800, Cr Accounts Payable $7,200",
+        "Dr Inventory $4,800, Cr Cash $4,800",
+        "Dr Cash $4,800, Cr Inventory $4,800"
+      ],
+      "answer": 1,
+      "explanation": "Inventory (asset) increases by debit. Cash of $4,800 (40% of $12,000) decreases by credit. Accounts Payable of $7,200 (60%) increases by credit. Total debits = Total credits = $12,000."
+    },
+    {
+      "id": "acc_su1_q5",
+      "type": "mcq",
+      "concept": "journal entries - sales transaction",
+      "prompt": "A company sells goods for $8,000 cash. The cost of goods sold is $5,000. What is the correct journal entry to record the sale?",
+      "difficulty": 2,
+      "choices": [
+        "Dr Cash $8,000, Cr Revenue $8,000; Dr COGS $5,000, Cr Inventory $5,000",
+        "Dr Cash $8,000, Cr Inventory $8,000",
+        "Dr Revenue $8,000, Cr Cash $8,000",
+        "Dr Inventory $8,000, Cr Revenue $8,000"
+      ],
+      "answer": 0,
+      "explanation": "Two entries: (1) Record sale: Dr Cash $8,000, Cr Revenue $8,000 (captures customer payment). (2) Record cost: Dr COGS $5,000, Cr Inventory $5,000 (removes inventory at cost). This matches revenue with the cost to generate it."
+    },
+    {
+      "id": "acc_su1_q6",
+      "type": "mcq",
+      "concept": "capital injection",
+      "prompt": "Shareholders invest $100,000 cash into the company. What is the journal entry?",
+      "difficulty": 1,
+      "choices": [
+        "Dr Cash $100,000, Cr Equity $100,000",
+        "Dr Equity $100,000, Cr Cash $100,000",
+        "Dr Revenue $100,000, Cr Cash $100,000",
+        "Dr Cash $100,000, Cr Retained Earnings $100,000"
+      ],
+      "answer": 0,
+      "explanation": "Cash (asset) increases with debit. Share Capital (equity) increases with credit. Shareholder capital increases equity directly, not through revenue."
+    },
+    {
+      "id": "acc_su1_q7",
+      "type": "mcq",
+      "concept": "expense recording",
+      "prompt": "A company pays $5,000 salaries in cash. What is the journal entry?",
+      "difficulty": 1,
+      "choices": [
+        "Dr Salaries Payable $5,000, Cr Cash $5,000",
+        "Dr Salary Expense $5,000, Cr Cash $5,000",
+        "Dr Cash $5,000, Cr Salary Expense $5,000",
+        "Dr Salary Expense $5,000, Cr Salaries Payable $5,000"
+      ],
+      "answer": 1,
+      "explanation": "Salary Expense (increases with debit) increases by $5,000. Cash decreases by credit. The expense is recorded; it will reduce equity through retained earnings."
+    },
+    {
+      "id": "acc_su1_q8",
+      "type": "mcq",
+      "concept": "bank loan",
+      "prompt": "A company receives a bank loan of $50,000 in cash. What is the journal entry?",
+      "difficulty": 1,
+      "choices": [
+        "Dr Bank Loan $50,000, Cr Cash $50,000",
+        "Dr Cash $50,000, Cr Bank Loan Expense $50,000",
+        "Dr Cash $50,000, Cr Bank Loan Payable $50,000",
+        "Dr Equity $50,000, Cr Cash $50,000"
+      ],
+      "answer": 2,
+      "explanation": "Cash (asset) increases with debit. Bank Loan Payable (liability) increases with credit. The company now owes the bank. This is financing, not income."
+    },
+    {
+      "id": "acc_su1_q9",
+      "type": "mcq",
+      "concept": "trial balance and accuracy",
+      "prompt": "A trial balance shows total debits of $500,000 but total credits of $480,000. What does this indicate?",
+      "difficulty": 2,
+      "choices": [
+        "The company is profitable",
+        "There is an error in the accounting records",
+        "The company has more assets than liabilities",
+        "The revenue recognition is incorrect"
+      ],
+      "answer": 1,
+      "explanation": "Total debits MUST equal total credits. If they don't balance, an error exists: a transaction may be incompletely recorded, posted to wrong accounts, or an amount may be misstated. The books must be corrected before financial statements are prepared."
+    },
+    {
+      "id": "acc_su1_q10",
+      "type": "mcq",
+      "concept": "transaction flow",
+      "prompt": "In the accounting cycle, after transactions are journalised, what is the next step?",
+      "difficulty": 2,
+      "choices": [
+        "Prepare financial statements",
+        "Post entries to the general ledger",
+        "Prepare the trial balance",
+        "Perform adjusting entries"
+      ],
+      "answer": 1,
+      "explanation": "The journal records transactions chronologically. Posting transfers each debit and credit to the specific account in the general ledger. After posting, a trial balance is prepared to check that debits equal credits."
+    }
+  ]
+}

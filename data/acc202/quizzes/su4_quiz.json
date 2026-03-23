@@ -1,0 +1,126 @@
+{
+  "unitId": "su4",
+  "moduleId": "acc202",
+  "questions": [
+    {
+      "id": "acc_su4_q1",
+      "type": "mcq",
+      "concept": "managerial vs financial accounting",
+      "prompt": "Which statement best describes managerial accounting?",
+      "difficulty": 1,
+      "choices": [
+        "It reports to external users and follows GAAP",
+        "It provides internal managers with forward-looking, flexible financial information",
+        "It is prepared annually for shareholders",
+        "It must comply with regulatory standards"
+      ],
+      "answer": 1,
+      "explanation": "Managerial accounting serves internal decision-makers, is future-focused, flexible in format, and is not bound by GAAP. It is tailored to specific management decisions."
+    },
+    {
+      "id": "acc_su4_q2",
+      "type": "mcq",
+      "concept": "direct vs indirect cost",
+      "prompt": "Which is an example of an INDIRECT cost?",
+      "difficulty": 1,
+      "choices": ["Raw materials in a product", "Wages of factory workers assembling the product", "Rent paid for the production facility", "Outsourced components for a specific product"],
+      "answer": 2,
+      "explanation": "Rent benefits all products and cannot be traced to a specific one. It must be allocated. Raw materials and direct labour can be traced. Outsourced components for one product are direct."
+    },
+    {
+      "id": "acc_su4_q3",
+      "type": "mcq",
+      "concept": "cost classification - variable",
+      "prompt": "Which cost is VARIABLE?",
+      "difficulty": 1,
+      "choices": ["Plant manager's salary", "Factory building depreciation", "Raw materials for production", "Property insurance for the factory"],
+      "answer": 2,
+      "explanation": "Raw materials increase with production volume — more units produced require more materials. Salaries, depreciation, and insurance are fixed (constant regardless of volume)."
+    },
+    {
+      "id": "acc_su4_q4",
+      "type": "mcq",
+      "concept": "fixed cost behaviour",
+      "prompt": "A company incurs $50,000 in fixed costs. If production increases from 1,000 units to 1,500 units, what happens to total fixed costs?",
+      "difficulty": 1,
+      "choices": ["They decrease to $33,333", "They increase to $75,000", "They remain $50,000", "They increase proportionally with units"],
+      "answer": 2,
+      "explanation": "Fixed costs remain constant regardless of production volume (within the relevant range). They do not change with activity level. The fixed cost per unit will decrease, but total fixed cost is still $50,000."
+    },
+    {
+      "id": "acc_su4_q5",
+      "type": "mcq",
+      "concept": "plantwide overhead rate",
+      "prompt": "Total manufacturing overhead is $400,000. Total direct labour hours are 8,000. What is the plantwide overhead rate per labour hour?",
+      "difficulty": 2,
+      "choices": ["$40", "$50", "$25", "$80"],
+      "answer": 1,
+      "explanation": "Plantwide Rate = Total Overhead / Total Allocation Base = $400,000 / 8,000 hours = $50 per labour hour. This single rate is applied to all products."
+    },
+    {
+      "id": "acc_su4_q6",
+      "type": "mcq",
+      "concept": "activity-based costing",
+      "prompt": "In Activity-Based Costing, what is a cost driver?",
+      "difficulty": 2,
+      "choices": [
+        "The total cost of an activity",
+        "The measure used to allocate activity costs to products",
+        "The cost of raw materials",
+        "The depreciation of equipment"
+      ],
+      "answer": 1,
+      "explanation": "A cost driver is the activity measure (e.g., number of setups, machine hours, inspections) used to allocate activity costs to products based on consumption."
+    },
+    {
+      "id": "acc_su4_q7",
+      "type": "mcq",
+      "concept": "unit cost formula",
+      "prompt": "Direct materials per unit: $20, Direct labour per unit: $15, Manufacturing overhead allocated per unit: $10. What is the unit cost?",
+      "difficulty": 1,
+      "choices": ["$20", "$35", "$45", "$50"],
+      "answer": 2,
+      "explanation": "Unit Cost = Direct Materials + Direct Labour + Manufacturing Overhead = $20 + $15 + $10 = $45."
+    },
+    {
+      "id": "acc_su4_q8",
+      "type": "mcq",
+      "concept": "cost object",
+      "prompt": "Which is an example of a cost object?",
+      "difficulty": 1,
+      "choices": ["The accounting department", "A specific product model", "The total assets of the company", "The company's income statement"],
+      "answer": 1,
+      "explanation": "A cost object is anything you want to measure the cost of — a product, service, customer, project, or department. A specific product model is a clear cost object."
+    },
+    {
+      "id": "acc_su4_q9",
+      "type": "mcq",
+      "concept": "ABC vs plantwide",
+      "prompt": "When is Activity-Based Costing more appropriate than plantwide overhead rate?",
+      "difficulty": 2,
+      "choices": [
+        "When the company produces only one product",
+        "When products consume overhead resources in similar proportions",
+        "When products have diverse characteristics and consume resources differently",
+        "When overhead costs are very low"
+      ],
+      "answer": 2,
+      "explanation": "ABC shines when products are diverse — high-volume simple vs. low-volume complex. Plantwide rate treats all the same, causing distortion. ABC allocates based on actual resource consumption."
+    },
+    {
+      "id": "acc_su4_q10",
+      "type": "mcq",
+      "concept": "relevant costs for decisions",
+      "prompt": "Which cost is RELEVANT for a make-or-buy decision?",
+      "difficulty": 2,
+      "choices": [
+        "Historical costs incurred last year",
+        "Allocated fixed overhead",
+        "Variable costs that differ between making and buying",
+        "Sunk costs already committed"
+      ],
+      "answer": 2,
+      "explanation": "Relevant costs are those that DIFFER between alternatives. Variable costs that change based on the decision are relevant. Sunk costs (already spent) and allocated overhead (won't change) are not relevant to the decision."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "su2",
+  "title": "Composition & Collection",
+  "moduleId": "ict162",
+  "difficulty": 2,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is Composition?",
+      "content": "# Composition: Objects Within Objects\n\n**Composition** is a design pattern where one class contains objects of another class as attributes. Instead of inheriting from a class, you use instances of other classes to build more complex objects.\n\nThis creates a **\"has-a\" relationship**:\n- A `Car` **has-a** `Engine`\n- An `Order` **has-a** collection of `OrderItem` objects\n- A `Student` **has-a** `Transcript`\n\nComposition is flexible and often preferred over inheritance because it avoids tight coupling and makes your design more modular."
+    },
+    {
+      "type": "definition",
+      "title": "The Has-A Relationship",
+      "content": "# Has-A vs Is-A\n\n**Has-A (Composition)**:\n```python\nclass Engine:\n    def __init__(self, horsepower):\n        self.horsepower = horsepower\n\nclass Car:\n    def __init__(self, brand, engine):\n        self.brand = brand\n        self.engine = engine  # Car HAS-A Engine\n```\n\nThe `Car` class contains an `Engine` object. A `Car` is not an `Engine`, it has one.\n\n**Is-A (Inheritance)**:\nA `SportsCar` **is-a** `Car` — it inherits from `Car`.\n\nUse composition when:\n- Objects are naturally composed of other objects\n- You need flexibility to swap components\n- You want to avoid deep inheritance hierarchies"
+    },
+    {
+      "type": "example",
+      "title": "Creating Composed Objects",
+      "content": "# Building Complex Objects Through Composition\n\n```python\nclass Address:\n    def __init__(self, street, city, zip_code):\n        self.street = street\n        self.city = city\n        self.zip_code = zip_code\n\nclass Person:\n    def __init__(self, name, address):\n        self.name = name\n        self.address = address  # Person HAS-A Address\n\n# Create an Address first\naddr = Address(\"123 Main St\", \"Springfield\", \"12345\")\n\n# Create a Person with an Address\nperson = Person(\"John\", addr)\n\nprint(person.name)              # Output: John\nprint(person.address.city)      # Output: Springfield\nprint(person.address.zip_code)  # Output: 12345\n```\n\nThe `Person` object contains an `Address` object, making it easy to manage related data together."
+    },
+    {
+      "type": "definition",
+      "title": "Accessing Composed Object Methods",
+      "content": "# Using Methods of Composed Objects\n\nYou can call methods on composed objects through the parent object:\n\n```python\nclass Engine:\n    def __init__(self, horsepower):\n        self.horsepower = horsepower\n    \n    def start(self):\n        return f\"Engine with {self.horsepower}hp started\"\n\nclass Car:\n    def __init__(self, brand, engine):\n        self.brand = brand\n        self.engine = engine\n    \n    def ignition(self):\n        return self.engine.start()  # Call method of composed object\n\nengine = Engine(200)\ncar = Car(\"Toyota\", engine)\nprint(car.ignition())  # Output: Engine with 200hp started\n```\n\nThis chains method calls through the object hierarchy, demonstrating how composed objects work together."
+    },
+    {
+      "type": "example",
+      "title": "Lists of Objects",
+      "content": "# Managing Collections of Objects\n\nYou can store multiple objects in a list:\n\n```python\nclass Student:\n    def __init__(self, name, student_id):\n        self.name = name\n        self.student_id = student_id\n\nclass Course:\n    def __init__(self, course_name):\n        self.course_name = course_name\n        self.students = []  # List of students\n    \n    def add_student(self, student):\n        self.students.append(student)\n    \n    def list_students(self):\n        for student in self.students:\n            print(f\"{student.name} ({student.student_id})\")\n\ncourse = Course(\"Python 101\")\ncourse.add_student(Student(\"Alice\", \"S001\"))\ncourse.add_student(Student(\"Bob\", \"S002\"))\ncourse.list_students()\n```\n\nThe `Course` object manages a list of `Student` objects, allowing you to work with collections of related items."
+    },
+    {
+      "type": "definition",
+      "title": "Iterating Over Object Lists",
+      "content": "# Working with Collections\n\nYou can iterate over lists of objects to access their attributes:\n\n```python\nclass Item:\n    def __init__(self, name, price):\n        self.name = name\n        self.price = price\n\nclass ShoppingCart:\n    def __init__(self):\n        self.items = []\n    \n    def add_item(self, item):\n        self.items.append(item)\n    \n    def total_price(self):\n        total = 0\n        for item in self.items:\n            total += item.price\n        return total\n    \n    def display_items(self):\n        for item in self.items:\n            print(f\"{item.name}: ${item.price}\")\n\ncart = ShoppingCart()\ncart.add_item(Item(\"Apple\", 1.50))\ncart.add_item(Item(\"Banana\", 0.75))\ncart.display_items()\nprint(f\"Total: ${cart.total_price()}\")  # Output: Total: $2.25\n```\n\nIterating allows you to perform operations across all objects in a collection."
+    },
+    {
+      "type": "example",
+      "title": "Dictionaries of Objects",
+      "content": "# Using Dictionaries to Organize Objects\n\nDictionaries allow you to store objects with meaningful keys:\n\n```python\nclass Employee:\n    def __init__(self, name, department):\n        self.name = name\n        self.department = department\n\nclass Company:\n    def __init__(self, company_name):\n        self.company_name = company_name\n        self.employees = {}  # Dictionary of employees\n    \n    def hire(self, emp_id, employee):\n        self.employees[emp_id] = employee\n    \n    def find_employee(self, emp_id):\n        return self.employees.get(emp_id)\n\ncompany = Company(\"TechCorp\")\ncompany.hire(\"E001\", Employee(\"Alice\", \"Engineering\"))\ncompany.hire(\"E002\", Employee(\"Bob\", \"Sales\"))\n\nemp = company.find_employee(\"E001\")\nprint(f\"{emp.name} works in {emp.department}\")  # Output: Alice works in Engineering\n```\n\nDictionaries are ideal when you need to quickly find objects by a unique identifier."
+    },
+    {
+      "type": "definition",
+      "title": "Aggregation vs Composition",
+      "content": "# Understanding the Difference\n\n**Composition** (strong ownership):\n- Parent creates child; parent destroys child\n- Child cannot exist independently\n- Example: `Car` and `Engine` (destroy the car, destroy the engine)\n\n```python\nclass Engine:\n    pass\n\nclass Car:\n    def __init__(self):\n        self.engine = Engine()  # Car creates the Engine\n```\n\n**Aggregation** (weak ownership):\n- Parent and child exist independently\n- Child can exist without parent\n- Example: `Team` and `Player` (trade a player, team still exists)\n\n```python\nclass Player:\n    def __init__(self, name):\n        self.name = name\n\nclass Team:\n    def __init__(self, name, players):\n        self.name = name\n        self.players = players  # Team uses existing Players\n```\n\nIn practice, both are called \"composition\" in Python, but this distinction matters for design."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Composition vs Inheritance",
+      "content": "Composition creates a has-a relationship where one object contains another. Inheritance creates an is-a relationship where one class extends another. Composition is often more flexible.",
+      "question": {
+        "type": "mcq",
+        "prompt": "When would you use composition instead of inheritance?",
+        "choices": [
+          "Always use inheritance for better performance",
+          "When you need a has-a relationship and want flexibility to swap components",
+          "Composition and inheritance are the same thing",
+          "Inheritance is deprecated in modern Python"
+        ],
+        "answer": 1,
+        "explanation": "Composition is useful when objects are naturally composed of other objects, and you want flexibility. For example, a Car has-a Engine, and you might want to swap engines."
+      }
+    },
+    {
+      "type": "checkpoint",
+      "title": "Storing Multiple Objects in a List",
+      "content": "You can store multiple objects of the same class in a list and iterate through them to perform operations on each object.",
+      "question": {
+        "type": "mcq",
+        "prompt": "How would you calculate the sum of prices for all items in a shopping cart?",
+        "choices": [
+          "Use the sum() function directly on the cart object",
+          "Iterate through the items list and add up each item's price",
+          "Use a built-in total_price property on the list",
+          "Composition does not support price calculations"
+        ],
+        "answer": 1,
+        "explanation": "You iterate through cart.items and access the price attribute of each item, accumulating the total."
+      }
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su2_a1",
+        "prompt": "Explain composition and provide a real-world example of a composed class with at least two attributes that are objects.",
+        "modelAnswer": "Composition is a design pattern where a class contains objects of other classes as attributes, creating a has-a relationship. Example: A Library has-a collection of Book objects and Author objects. The Library class would contain a list of Book objects, where each Book has a title, ISBN, and an Author object. This allows you to organize related objects together and avoid tight coupling.",
+        "keyPoints": [
+          "Composition is a has-a relationship",
+          "One class contains instances of other classes",
+          "Creates modular, flexible designs",
+          "Allows easy access to composed object's attributes and methods",
+          "More flexible than inheritance in many cases"
+        ]
+      },
+      {
+        "id": "su2_a2",
+        "prompt": "Design an Order class that contains multiple OrderItem objects. The OrderItem class should have name, price, and quantity. Include methods to add items, calculate total price, and display all items.",
+        "modelAnswer": "```python\nclass OrderItem:\n    def __init__(self, name, price, quantity):\n        self.name = name\n        self.price = price\n        self.quantity = quantity\n    \n    def subtotal(self):\n        return self.price * self.quantity\n\nclass Order:\n    def __init__(self, order_id):\n        self.order_id = order_id\n        self.items = []\n    \n    def add_item(self, item):\n        self.items.append(item)\n    \n    def total_price(self):\n        return sum(item.subtotal() for item in self.items)\n    \n    def display_items(self):\n        for item in self.items:\n            print(f\"{item.name}: ${item.price} x {item.quantity} = ${item.subtotal()}\")\n```",
+        "keyPoints": [
+          "OrderItem class with name, price, quantity attributes",
+          "Order contains a list of OrderItem objects",
+          "add_item() appends items to the list",
+          "total_price() sums subtotals of all items",
+          "display_items() iterates and prints each item"
+        ]
+      },
+      {
+        "id": "su2_a3",
+        "prompt": "Explain the difference between storing objects in a list vs a dictionary. Provide an example scenario where a dictionary would be better.",
+        "modelAnswer": "A list is best for ordered collections of similar objects where you iterate through all items. A dictionary is best when you need to quickly look up objects by a unique key. Example: A dictionary of employees keyed by employee_id (employees[\"E001\"] returns an Employee object immediately) is faster than iterating through a list to find an employee by ID. Dictionaries provide O(1) lookup time vs O(n) for lists.",
+        "keyPoints": [
+          "Lists: ordered, iterate through all items",
+          "Dictionaries: keyed lookup, faster searching",
+          "Dictionary keys should be unique identifiers",
+          "Use dictionary when you need to find specific objects quickly",
+          "Use list when you need to process all objects in order"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "unitId": "su6",
+  "moduleId": "acc202",
+  "questions": [
+    {
+      "id": "acc_su6_q1",
+      "type": "mcq",
+      "concept": "budget functions",
+      "prompt": "Which is a primary function of budgeting?",
+      "difficulty": 1,
+      "choices": [
+        "To guarantee profitability",
+        "To provide targets and benchmarks for performance monitoring",
+        "To eliminate the need for financial accounting",
+        "To determine the company's stock price"
+      ],
+      "answer": 1,
+      "explanation": "Budgeting provides planning (ahead thinking), coordination (alignment), motivation (goals), and control (actual vs. planned). It serves as a benchmark for performance evaluation."
+    },
+    {
+      "id": "acc_su6_q2",
+      "type": "mcq",
+      "concept": "incremental budgeting",
+      "prompt": "Incremental budgeting:",
+      "difficulty": 1,
+      "choices": [
+        "Starts from zero each period",
+        "Adjusts prior period figures up or down",
+        "Is the most thorough budgeting method",
+        "Eliminates all past inefficiencies"
+      ],
+      "answer": 1,
+      "explanation": "Incremental budgeting uses last year's numbers as the base and adjusts them. It's quick but may perpetuate inefficiencies. Zero-based budgeting starts from zero."
+    },
+    {
+      "id": "acc_su6_q3",
+      "type": "mcq",
+      "concept": "zero-based budgeting",
+      "prompt": "Zero-based budgeting requires:",
+      "difficulty": 2,
+      "choices": [
+        "Starting with last year's budget and adjusting slightly",
+        "Justifying every line item from zero",
+        "Preparing only the sales budget",
+        "Focusing only on fixed costs"
+      ],
+      "answer": 1,
+      "explanation": "ZBB requires all expenditures to be justified from scratch. Every dollar must be defended, not just changes from prior year."
+    },
+    {
+      "id": "acc_su6_q4",
+      "type": "mcq",
+      "concept": "top-down vs participative",
+      "prompt": "In participative budgeting, who provides input on department targets?",
+      "difficulty": 1,
+      "choices": [
+        "Only senior management",
+        "Department managers along with senior management",
+        "The accounting department only",
+        "External auditors"
+      ],
+      "answer": 1,
+      "explanation": "Participative budgeting involves department managers providing input on what they can realistically achieve, increasing accuracy and buy-in."
+    },
+    {
+      "id": "acc_su6_q5",
+      "type": "mcq",
+      "concept": "master budget sequence",
+      "prompt": "Which budget is prepared FIRST in the master budget sequence?",
+      "difficulty": 1,
+      "choices": [
+        "Cash budget",
+        "Production budget",
+        "Sales budget",
+        "Budgeted income statement"
+      ],
+      "answer": 2,
+      "explanation": "Sales budget is first because all other budgets depend on expected sales volume. Production, materials, labour, overhead, and cash budgets all flow from sales projections."
+    },
+    {
+      "id": "acc_su6_q6",
+      "type": "mcq",
+      "concept": "production budget",
+      "prompt": "Expected sales: 5,000 units. Desired ending inventory: 1,000 units. Beginning inventory: 500 units. How many units should be produced?",
+      "difficulty": 2,
+      "choices": ["4,000 units", "5,000 units", "5,500 units", "6,000 units"],
+      "answer": 2,
+      "explanation": "Units to Produce = Expected Sales + Desired Ending Inventory - Beginning Inventory = 5,000 + 1,000 - 500 = 5,500 units."
+    },
+    {
+      "id": "acc_su6_q7",
+      "type": "mcq",
+      "concept": "cash budget purpose",
+      "prompt": "What is the primary purpose of the cash budget?",
+      "difficulty": 1,
+      "choices": [
+        "To determine net income",
+        "To forecast cash inflows and outflows to identify surplus or shortfall periods",
+        "To record all transactions",
+        "To prepare the balance sheet"
+      ],
+      "answer": 1,
+      "explanation": "The cash budget forecasts when cash will be available or needed. It identifies periods requiring borrowing or periods with excess cash for investment."
+    },
+    {
+      "id": "acc_su6_q8",
+      "type": "mcq",
+      "concept": "variance analysis - favourable",
+      "prompt": "Actual revenue is $500,000 and budgeted revenue is $450,000. Is this a favourable or unfavourable variance?",
+      "difficulty": 1,
+      "choices": [
+        "Unfavourable — actual is more than budget",
+        "Favourable — actual exceeds budget",
+        "Neutral — they're close enough",
+        "Cannot be determined"
+      ],
+      "answer": 1,
+      "explanation": "Favourable variance: actual revenue > budgeted revenue (good — company exceeded targets). This is positive performance."
+    },
+    {
+      "id": "acc_su6_q9",
+      "type": "mcq",
+      "concept": "variance analysis - cost",
+      "prompt": "Budgeted expenses are $200,000 but actual expenses are only $180,000. Is this favourable or unfavourable?",
+      "difficulty": 2,
+      "choices": [
+        "Unfavourable — we spent $20,000 more",
+        "Favourable — we spent less than budgeted",
+        "Neutral — they're very close",
+        "Unfavourable — we underspent the budget"
+      ],
+      "answer": 1,
+      "explanation": "For costs, favourable means actual < budgeted (spending less than planned). Actual $180,000 < Budget $200,000 is favourable — the company saved $20,000."
+    },
+    {
+      "id": "acc_su6_q10",
+      "type": "mcq",
+      "concept": "rolling budget",
+      "prompt": "A rolling budget is characterized by:",
+      "difficulty": 2,
+      "choices": [
+        "A fixed annual budget that does not change",
+        "Continuously updated — a new period is added as prior period expires",
+        "Starting from zero each month",
+        "Being approved only by senior management"
+      ],
+      "answer": 1,
+      "explanation": "Rolling budget is continuously updated, always looking forward (e.g., always planning 12 months ahead). It keeps the budget current and responsive to changing circumstances."
+    }
+  ]
+}

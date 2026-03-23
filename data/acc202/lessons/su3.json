@@ -1,0 +1,104 @@
+{
+  "id": "su3",
+  "title": "Financial Statement Analysis",
+  "moduleId": "acc202",
+  "difficulty": 2,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "Why Analyse Financial Statements?",
+      "content": "Financial statement analysis helps stakeholders assess company performance and make decisions. External users include investors, creditors, and regulators. Internal users include managers and board members. Analysis identifies trends, strengths, and weaknesses that inform investment, lending, and operational decisions."
+    },
+    {
+      "type": "definition",
+      "title": "Types of Analysis",
+      "content": "**Horizontal Analysis:** Compares the same line items across periods (year-over-year). Shows growth or decline in absolute dollars and percentages.\n\n**Vertical (Common-Size) Analysis:** Expresses each item as a percentage of a base figure. For the income statement, use revenue as base. For balance sheet, use total assets as base. Allows comparison of companies of different sizes.\n\n**Trend Analysis:** Tracks changes over multiple periods (3-5 years) to identify patterns."
+    },
+    {
+      "type": "concept",
+      "title": "Profitability Ratios",
+      "content": "**Gross Profit Margin** = Gross Profit / Revenue × 100%\n- Measures production efficiency and pricing strategy\n\n**Operating Profit Margin** = Operating Profit / Revenue × 100%\n- Measures operational efficiency (before interest and tax)\n\n**Net Profit Margin** = Net Profit / Revenue × 100%\n- Measures overall profitability\n\n**Return on Assets (ROA)** = Net Profit / Average Total Assets × 100%\n- Measures how efficiently assets generate profit\n\n**Return on Equity (ROE)** = Net Profit / Average Shareholders' Equity × 100%\n- Measures return to shareholders\n\nHigher is better for all profitability ratios."
+    },
+    {
+      "type": "example",
+      "title": "Calculating Profitability",
+      "content": "Given:\n- Revenue $500,000\n- COGS $300,000\n- Operating Expenses $100,000\n- Tax Rate 20%\n\nCalculations:\n- Gross Profit = $500,000 - $300,000 = $200,000\n- Gross Margin = 200,000 / 500,000 = 40%\n- Operating Profit = $200,000 - $100,000 = $100,000\n- Operating Margin = 100,000 / 500,000 = 20%\n- Net Profit (after tax) = $100,000 × 0.80 = $80,000\n- Net Margin = 80,000 / 500,000 = 16%"
+    },
+    {
+      "type": "concept",
+      "title": "Liquidity Ratios",
+      "content": "**Current Ratio** = Current Assets / Current Liabilities\n- Ideal: ≥ 2:1\n- Measures ability to pay short-term obligations\n\n**Quick (Acid-Test) Ratio** = (Current Assets - Inventory) / Current Liabilities\n- Ideal: ≥ 1:1\n- More conservative; excludes inventory (less liquid)\n\n**Working Capital** = Current Assets - Current Liabilities\n- Absolute dollar amount (not a ratio)\n- Shows cash buffer for operations\n\nHigher liquidity = better ability to pay debts quickly."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Calculate Current Ratio",
+      "content": "Test your ability to calculate and interpret a basic liquidity ratio.",
+      "question": {
+        "type": "mcq",
+        "prompt": "A company has Current Assets $120,000 and Current Liabilities $60,000. What is the current ratio?",
+        "choices": ["0.5:1", "1:2", "2:1", "1.5:1"],
+        "answer": 2,
+        "explanation": "Current Ratio = CA / CL = 120,000 / 60,000 = 2:1. The company has $2 of current assets for every $1 of current liabilities, which is healthy."
+      }
+    },
+    {
+      "type": "concept",
+      "title": "Solvency Ratios",
+      "content": "**Gearing Ratio (Debt-to-Equity)** = Debt / (Debt + Equity) × 100%\n- Measures long-term financial risk\n- High gearing (>50%) indicates heavy debt financing, increases financial risk\n- Low gearing (<30%) indicates conservative capital structure\n\n**Interest Coverage Ratio** = Operating Profit / Interest Expense\n- Shows ability to service debt\n- Ideal: ≥ 2.5×\n- Low coverage (< 2×) indicates difficulty meeting interest payments\n\nSolvency ratios concern long-term stability and risk."
+    },
+    {
+      "type": "concept",
+      "title": "Efficiency Ratios",
+      "content": "**Asset Turnover** = Revenue / Average Total Assets\n- Measures how efficiently assets generate revenue\n- Higher is better\n- Example: $500,000 revenue / $400,000 assets = 1.25× (generates $1.25 per dollar of assets)\n\n**Inventory Turnover** = Cost of Goods Sold / Average Inventory\n- Higher indicates faster inventory movement\n- Lower may indicate obsolescence or slow sales\n\n**Days Sales Outstanding (DSO)** = Accounts Receivable / Daily Revenue\n- Shows average days to collect payment\n- Lower is better (faster cash collection)"
+    },
+    {
+      "type": "concept",
+      "title": "Shareholder Value Ratios",
+      "content": "**Earnings Per Share (EPS)** = Net Profit / Number of Shares Outstanding\n- Shows profit attributable to each share\n- Higher EPS = more attractive to investors\n\n**Dividend Per Share (DPS)** = Total Dividends Declared / Number of Shares\n- Shows cash returned to shareholders\n\n**Price-to-Earnings (P/E) Ratio** = Market Share Price / EPS\n- Higher P/E suggests market expects strong future growth\n- Lower P/E may indicate undervaluation or lower growth expectations"
+    },
+    {
+      "type": "checkpoint",
+      "title": "Interpret the Ratio",
+      "content": "Apply your understanding of solvency ratios.",
+      "question": {
+        "type": "mcq",
+        "prompt": "A company has a gearing ratio of 65%. This BEST indicates:",
+        "choices": [
+          "The company is financially very safe",
+          "The company is heavily financed by debt, which increases risk",
+          "The company has no equity",
+          "The company is highly profitable"
+        ],
+        "answer": 1,
+        "explanation": "A gearing ratio of 65% means 65% of capital comes from debt and 35% from equity. This is high and indicates significant financial risk — the company has large interest obligations and less cushion from equity."
+      }
+    },
+    {
+      "type": "definition",
+      "title": "Limitations of Ratio Analysis",
+      "content": "- Ratios are point-in-time snapshots (balance sheet) or period averages; they change frequently\n- Different accounting policies affect comparability (depreciation methods, inventory valuation)\n- Earnings management (aggressive accounting choices) can distort ratios\n- Must compare against industry benchmarks and competitors, not just company history\n- Qualitative factors (management quality, brand strength, innovation) are not captured\n- External factors (economic cycles, regulations) affect all companies similarly but are not in ratios\n- Seasonal businesses show different ratios at different times of year"
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su3_a1",
+        "prompt": "A company has Net Profit $40,000, Revenue $200,000, Total Assets $400,000, and Equity $160,000. Calculate three profitability ratios and interpret each.",
+        "modelAnswer": "Net Profit Margin = 40,000 / 200,000 = 20% (the company keeps 20 cents profit for every dollar of revenue). ROA = 40,000 / 400,000 = 10% (generates 10 cents profit for every dollar of assets employed). ROE = 40,000 / 160,000 = 25% (returns 25 cents to shareholders for every dollar of equity invested). All three show solid profitability.",
+        "keyPoints": ["Net Profit Margin = Net Profit / Revenue", "ROA = Net Profit / Total Assets", "ROE = Net Profit / Equity", "Higher ratios indicate better profitability"]
+      },
+      {
+        "id": "su3_a2",
+        "prompt": "Explain the difference between horizontal and vertical analysis, and when you would use each.",
+        "modelAnswer": "Horizontal analysis compares the same line item across different time periods (e.g., sales grew 15% year on year). It identifies trends and growth rates. Vertical analysis expresses line items as percentages of a base figure within the same period (e.g., COGS is 60% of revenue). It compares cost structures across companies of different sizes. Use horizontal for trend detection; use vertical for structural comparisons.",
+        "keyPoints": ["Horizontal = comparison across time periods", "Vertical = comparison as percentage of base in one period", "Horizontal shows trends and growth", "Vertical shows structural composition"]
+      },
+      {
+        "id": "su3_a3",
+        "prompt": "What is the acid-test ratio and why is it considered more conservative than the current ratio?",
+        "modelAnswer": "Acid-test ratio = (Current Assets - Inventory) / Current Liabilities. It is more conservative because it excludes inventory, which may take time to sell and convert to cash. A company with high inventory might show a healthy current ratio but struggle to pay debts immediately. The acid-test reveals true liquid asset position without relying on inventory conversion.",
+        "keyPoints": ["Excludes inventory from current assets", "More conservative liquidity measure", "Shows ability to pay without selling inventory", "Better for assessing immediate liquidity"]
+      }
+    ]
+  }
+}

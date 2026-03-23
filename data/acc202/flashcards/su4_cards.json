@@ -1,0 +1,78 @@
+{
+  "unitId": "su4",
+  "moduleId": "acc202",
+  "cards": [
+    {
+      "id": "acc_su4_f1",
+      "front": "What is managerial accounting?",
+      "back": "Financial information prepared for internal managers to support planning, decision-making, and control. Not regulated by law; flexible and forward-looking.",
+      "concept": "Managerial Accounting"
+    },
+    {
+      "id": "acc_su4_f2",
+      "front": "What is financial accounting?",
+      "back": "Financial information prepared for external users (investors, creditors, regulators). Must follow GAAP and is regulated. Historical and standardised.",
+      "concept": "Financial Accounting"
+    },
+    {
+      "id": "acc_su4_f3",
+      "front": "What is a cost object?",
+      "back": "Anything for which you want to measure the cost: a product, service, customer, project, department, or activity.",
+      "concept": "Cost Object"
+    },
+    {
+      "id": "acc_su4_f4",
+      "front": "What is a direct cost?",
+      "back": "A cost that can be traced directly and economically to a cost object (e.g., raw materials, direct labour).",
+      "concept": "Direct Cost"
+    },
+    {
+      "id": "acc_su4_f5",
+      "front": "What is an indirect cost?",
+      "back": "A cost that cannot be traced to a specific cost object and must be allocated (e.g., factory rent, depreciation). Also called overhead.",
+      "concept": "Indirect Cost"
+    },
+    {
+      "id": "acc_su4_f6",
+      "front": "What is a fixed cost?",
+      "back": "A cost that remains constant regardless of activity level within the relevant range (e.g., rent, salaries, depreciation).",
+      "concept": "Fixed Cost"
+    },
+    {
+      "id": "acc_su4_f7",
+      "front": "What is a variable cost?",
+      "back": "A cost that changes proportionally with activity level (e.g., raw materials, direct labour, sales commissions).",
+      "concept": "Variable Cost"
+    },
+    {
+      "id": "acc_su4_f8",
+      "front": "What is a mixed cost?",
+      "back": "A cost with both fixed and variable components (e.g., utility bills with base charge plus usage charge).",
+      "concept": "Mixed Cost"
+    },
+    {
+      "id": "acc_su4_f9",
+      "front": "What is the unit cost formula?",
+      "back": "Unit Cost = (Direct Materials + Direct Labour + Manufacturing Overhead) / Units Produced. Critical for pricing and profitability analysis.",
+      "concept": "Unit Cost Formula"
+    },
+    {
+      "id": "acc_su4_f10",
+      "front": "What is the plantwide overhead rate?",
+      "back": "Total Manufacturing Overhead / Total Allocation Base (e.g., labour hours). A single rate applied to all products. Simple but may be inaccurate.",
+      "concept": "Plantwide Overhead Rate"
+    },
+    {
+      "id": "acc_su4_f11",
+      "front": "What is Activity-Based Costing (ABC)?",
+      "back": "A costing method that assigns overhead based on activities each product consumes. More accurate than plantwide rate for diverse products.",
+      "concept": "ABC"
+    },
+    {
+      "id": "acc_su4_f12",
+      "front": "What is a cost driver in ABC?",
+      "back": "The measure used to allocate activity costs to products (e.g., number of setups, machine hours, quality inspections).",
+      "concept": "Cost Driver"
+    }
+  ]
+}

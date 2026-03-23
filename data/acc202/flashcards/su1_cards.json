@@ -1,0 +1,78 @@
+{
+  "unitId": "su1",
+  "moduleId": "acc202",
+  "cards": [
+    {
+      "id": "acc_su1_f1",
+      "front": "What is the double entry system?",
+      "back": "Every transaction affects at least two accounts. Total debits must always equal total credits, keeping the accounting equation balanced.",
+      "concept": "Double Entry System"
+    },
+    {
+      "id": "acc_su1_f2",
+      "front": "What is a debit?",
+      "back": "The left side of an account. Debits increase assets, expenses, and dividends; debits decrease liabilities, equity, and revenue.",
+      "concept": "Debit"
+    },
+    {
+      "id": "acc_su1_f3",
+      "front": "What is a credit?",
+      "back": "The right side of an account. Credits increase liabilities, equity, and revenue; credits decrease assets, expenses, and dividends.",
+      "concept": "Credit"
+    },
+    {
+      "id": "acc_su1_f4",
+      "front": "What is a normal balance?",
+      "back": "The side (debit or credit) where an account naturally carries its balance. Assets, expenses, and dividends have debit normal balances. Liabilities, equity, and revenue have credit normal balances.",
+      "concept": "Normal Balance"
+    },
+    {
+      "id": "acc_su1_f5",
+      "front": "State the accounting equation.",
+      "back": "Assets = Liabilities + Equity. Every transaction must keep this equation balanced.",
+      "concept": "Accounting Equation"
+    },
+    {
+      "id": "acc_su1_f6",
+      "front": "Define an asset.",
+      "back": "A resource owned by the business that is expected to provide economic benefits in the future (e.g., cash, inventory, equipment).",
+      "concept": "Assets"
+    },
+    {
+      "id": "acc_su1_f7",
+      "front": "Define a liability.",
+      "back": "An obligation to transfer economic resources to another party in the future (e.g., accounts payable, loans payable).",
+      "concept": "Liabilities"
+    },
+    {
+      "id": "acc_su1_f8",
+      "front": "Define equity.",
+      "back": "The residual interest in assets after deducting liabilities. It represents the owners' stake in the business.",
+      "concept": "Equity"
+    },
+    {
+      "id": "acc_su1_f9",
+      "front": "Define revenue.",
+      "back": "Income earned by the business from selling products or providing services. Revenue increases equity and has a credit normal balance.",
+      "concept": "Revenue"
+    },
+    {
+      "id": "acc_su1_f10",
+      "front": "Define an expense.",
+      "back": "A cost incurred to generate revenue. Expenses decrease equity and have a debit normal balance.",
+      "concept": "Expenses"
+    },
+    {
+      "id": "acc_su1_f11",
+      "front": "What is a journal entry?",
+      "back": "A chronological record of a transaction showing the accounts debited and credited, amounts, and explanation. Journal entries are the starting point of the accounting cycle.",
+      "concept": "Journal Entry"
+    },
+    {
+      "id": "acc_su1_f12",
+      "front": "What is a trial balance?",
+      "back": "A list of all accounts and their balances to verify that total debits equal total credits. It is a control mechanism to detect errors in recording or posting.",
+      "concept": "Trial Balance"
+    }
+  ]
+}

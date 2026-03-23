@@ -1,0 +1,129 @@
+{
+  "id": "su6",
+  "title": "SOLID & Design",
+  "moduleId": "ict162",
+  "difficulty": 3,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What Makes Good Design?",
+      "content": "# Design Principles for Maintainable Code\n\nGood object-oriented design makes code:\n- **Easy to understand**: Each class has one clear purpose\n- **Easy to maintain**: Changes to one class don't break others\n- **Easy to extend**: New features can be added without rewriting existing code\n- **Easy to test**: Classes can be tested independently\n\nTwo key principles underlie all good design:\n- **High cohesion**: Each class does one thing well\n- **Low coupling**: Classes don't depend on each other's internals\n\nThe **SOLID principles** codify these ideas into actionable guidelines."
+    },
+    {
+      "type": "definition",
+      "title": "High Cohesion, Low Coupling",
+      "content": "# Fundamental Design Properties\n\n**High Cohesion**: Everything in a class is tightly related to its purpose.\n\nBad (low cohesion):\n```python\nclass Employee:\n    def calculate_salary(self):\n        pass\n    def print_invoice(self):\n        pass\n    def send_email(self):\n        pass\n    def update_database(self):\n        pass\n```\nThis class does too many unrelated things.\n\nGood (high cohesion):\n```python\nclass Employee:\n    def calculate_salary(self):\n        pass  # Salary logic only\n```\n\n**Low Coupling**: Classes don't depend on each other's internal details.\n\nBad (high coupling):\n```python\nclass PayrollProcessor:\n    def process(self, employee):\n        salary = employee.salary * employee.tax_rate * employee.deduction\n```\nPayroll directly accesses Employee's internal fields.\n\nGood (low coupling):\n```python\nclass PayrollProcessor:\n    def process(self, employee):\n        salary = employee.calculate_net_salary()\n```\nPayroll calls a public method, not accessing internals."
+    },
+    {
+      "type": "definition",
+      "title": "SRP — Single Responsibility Principle",
+      "content": "# Single Responsibility Principle\n\n**SRP**: A class should have one reason to change — one responsibility.\n\nBad (violates SRP):\n```python\nclass User:\n    def __init__(self, name, email):\n        self.name = name\n        self.email = email\n    \n    def save_to_database(self):\n        # Database code\n        pass\n    \n    def send_email(self):\n        # Email code\n        pass\n    \n    def generate_report(self):\n        # Report code\n        pass\n```\nThe class changes if User data changes, database changes, email service changes, or report format changes.\n\nGood (follows SRP):\n```python\nclass User:\n    def __init__(self, name, email):\n        self.name = name\n        self.email = email\n\nclass UserRepository:\n    def save(self, user):\n        pass\n\nclass EmailService:\n    def send(self, user):\n        pass\n\nclass ReportGenerator:\n    def generate(self, user):\n        pass\n```\nEach class has one reason to change."
+    },
+    {
+      "type": "definition",
+      "title": "OCP — Open/Closed Principle",
+      "content": "# Open/Closed Principle\n\n**OCP**: Classes should be open for extension, closed for modification.\n\nBad (violates OCP):\n```python\nclass PaymentProcessor:\n    def process(self, payment_type, amount):\n        if payment_type == \"credit_card\":\n            # Process credit card\n        elif payment_type == \"paypal\":\n            # Process PayPal\n        # Adding a new payment type requires modifying this class!\n```\n\nGood (follows OCP):\n```python\nfrom abc import ABC, abstractmethod\n\nclass PaymentMethod(ABC):\n    @abstractmethod\n    def process(self, amount):\n        pass\n\nclass CreditCard(PaymentMethod):\n    def process(self, amount):\n        pass\n\nclass PayPal(PaymentMethod):\n    def process(self, amount):\n        pass\n\nclass PaymentProcessor:\n    def process(self, method: PaymentMethod, amount):\n        method.process(amount)  # Works for any payment method\n```\n\nNow you can add a new payment type (Bitcoin, Apple Pay) without changing PaymentProcessor."
+    },
+    {
+      "type": "definition",
+      "title": "LSP — Liskov Substitution Principle",
+      "content": "# Liskov Substitution Principle\n\n**LSP**: Derived classes must be substitutable for base classes.\n\nBad (violates LSP):\n```python\nclass Bird:\n    def fly(self):\n        return \"Flying\"\n\nclass Penguin(Bird):\n    def fly(self):\n        raise Exception(\"Penguins cannot fly\")  # Violates substitutability\n```\n\nYou can't substitute a Penguin everywhere a Bird is expected — it breaks.\n\nGood (follows LSP):\n```python\nclass Bird:\n    def move(self):\n        pass\n\nclass FlyingBird(Bird):\n    def move(self):\n        return \"Flying\"\n\nclass Penguin(Bird):\n    def move(self):\n        return \"Swimming\"\n```\n\nNow Penguin is a valid Bird. Every derived class can be used in place of its parent."
+    },
+    {
+      "type": "definition",
+      "title": "ISP — Interface Segregation Principle",
+      "content": "# Interface Segregation Principle\n\n**ISP**: Don't force classes to implement methods they don't use.\n\nBad (violates ISP):\n```python\nclass Worker(ABC):\n    @abstractmethod\n    def work(self):\n        pass\n    \n    @abstractmethod\n    def eat_lunch(self):\n        pass\n\nclass Robot(Worker):\n    def work(self):\n        pass\n    \n    def eat_lunch(self):\n        raise Exception(\"Robots don't eat\")  # Forced to implement\n```\n\nGood (follows ISP):\n```python\nclass Workable(ABC):\n    @abstractmethod\n    def work(self):\n        pass\n\nclass Eatable(ABC):\n    @abstractmethod\n    def eat_lunch(self):\n        pass\n\nclass Human(Workable, Eatable):\n    def work(self):\n        pass\n    def eat_lunch(self):\n        pass\n\nclass Robot(Workable):\n    def work(self):\n        pass  # No forced eat_lunch method\n```\n\nClasses implement only the interfaces they need."
+    },
+    {
+      "type": "definition",
+      "title": "DIP — Dependency Inversion Principle",
+      "content": "# Dependency Inversion Principle\n\n**DIP**: Depend on abstractions, not concrete implementations.\n\nBad (violates DIP):\n```python\nclass MySQLDatabase:\n    def save(self, data):\n        pass\n\nclass UserService:\n    def __init__(self):\n        self.db = MySQLDatabase()  # Depends on concrete class\n    \n    def save_user(self, user):\n        self.db.save(user)\n```\n\nSwapping databases requires changing UserService.\n\nGood (follows DIP):\n```python\nfrom abc import ABC, abstractmethod\n\nclass Database(ABC):\n    @abstractmethod\n    def save(self, data):\n        pass\n\nclass MySQLDatabase(Database):\n    def save(self, data):\n        pass\n\nclass UserService:\n    def __init__(self, db: Database):  # Depends on abstraction\n        self.db = db\n    \n    def save_user(self, user):\n        self.db.save(user)\n\n# Swap implementations easily\nservice = UserService(MySQLDatabase())\n# Later: service = UserService(PostgresDatabase())\n```\n\nNow UserService works with any Database implementation."
+    },
+    {
+      "type": "example",
+      "title": "Spotting Bad Design: God Classes",
+      "content": "# Anti-patterns: Signs of Bad Design\n\n**God Class**: A class that does everything, knows everything, controls everything.\n\n```python\nclass ManagementSystem:\n    def hire_employee(self):\n        pass\n    def fire_employee(self):\n        pass\n    def calculate_payroll(self):\n        pass\n    def generate_reports(self):\n        pass\n    def manage_inventory(self):\n        pass\n    def process_sales(self):\n        pass\n    def handle_customer_support(self):\n        pass\n    # ... 50 more methods\n```\n\nProblems:\n- Hard to understand\n- Hard to test (depends on everything)\n- Hard to reuse (can't use salary logic without entire system)\n- Changes break multiple features\n\n**Tight Coupling**: Classes depend on each other's internals.\n\n```python\nclass Order:\n    def __init__(self, customer):\n        self.customer = customer\n    \n    def calculate_total(self):\n        return sum(item.price for item in self.items) - self.customer.discount_rate * sum(...)\n```\n\nOrder depends on Customer's internal discount_rate. Changes to Customer break Order."
+    },
+    {
+      "type": "definition",
+      "title": "Refactoring: Breaking Apart Large Classes",
+      "content": "# Improving Design Through Refactoring\n\nTake a God Class and split it:\n\nBefore:\n```python\nclass PaymentSystem:  # God class\n    def validate_card(self, card):\n        pass\n    def process_payment(self, amount):\n        pass\n    def send_receipt(self, email):\n        pass\n    def update_database(self, transaction):\n        pass\n    def log_transaction(self, tx):\n        pass\n```\n\nAfter (split by responsibility):\n```python\nclass CardValidator:\n    def validate(self, card):\n        pass\n\nclass PaymentGateway:\n    def process(self, amount):\n        pass\n\nclass EmailService:\n    def send_receipt(self, email):\n        pass\n\nclass TransactionRepository:\n    def save(self, transaction):\n        pass\n\nclass TransactionLogger:\n    def log(self, transaction):\n        pass\n\nclass PaymentService:\n    def __init__(self, validator, gateway, email, repo, logger):\n        self.validator = validator\n        self.gateway = gateway\n        self.email = email\n        self.repo = repo\n        self.logger = logger\n    \n    def process_payment(self, card, amount, recipient_email):\n        self.validator.validate(card)\n        self.gateway.process(amount)\n        self.email.send_receipt(recipient_email)\n        self.repo.save(transaction)\n        self.logger.log(transaction)\n```\n\nNow each class has one job, is easier to test, and easier to change."
+    },
+    {
+      "type": "checkpoint",
+      "title": "What Does SRP Mean?",
+      "content": "Single Responsibility Principle means a class should have one reason to change — one responsibility. Each class should focus on one aspect of the system.",
+      "question": {
+        "type": "mcq",
+        "prompt": "Which class violates the Single Responsibility Principle?",
+        "choices": [
+          "A Student class that stores name, ID, and course list",
+          "A ReportGenerator that formats and outputs reports",
+          "A class that validates email, saves to database, and sends notifications",
+          "A PaymentProcessor that processes payments"
+        ],
+        "answer": 2,
+        "explanation": "A class that validates, saves, and sends is doing three things. It has three reasons to change. Split into EmailValidator, UserRepository, and NotificationService."
+      }
+    },
+    {
+      "type": "checkpoint",
+      "title": "High Coupling Example",
+      "content": "High coupling occurs when classes depend on each other's internal details. Low coupling is when classes depend on abstractions or public interfaces.",
+      "question": {
+        "type": "mcq",
+        "prompt": "Which code has lower coupling?",
+        "choices": [
+          "class A directly accesses class B's private variables",
+          "class A calls a public method on class B's interface",
+          "class A creates and manages class B's internal state",
+          "class A hardcodes class B's implementation details"
+        ],
+        "answer": 1,
+        "explanation": "Calling a public method creates loose coupling. The caller doesn't know or care about internal details, only the interface."
+      }
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su6_a1",
+        "prompt": "Explain the Open/Closed Principle (OCP) with a concrete example. Show bad design that violates OCP and good design that follows it.",
+        "modelAnswer": "OCP states classes should be open for extension but closed for modification. Bad: A ReportGenerator with if/elif for each report type — adding a new type requires modifying the class. Good: Create an abstract ReportType class, then extend it with ConcreteReport, PDFReport, HTMLReport, etc. The generator uses the abstract interface, so new types don't require modification. Example:\n```python\n# Bad\nclass ReportGenerator:\n    def generate(self, type_):\n        if type_ == 'pdf': ...\n        elif type_ == 'html': ...\n        # Adding 'excel' requires modifying this\n\n# Good\nclass Report(ABC):\n    @abstractmethod\n    def generate(self): pass\n\nclass PDFReport(Report):\n    def generate(self): pass\n\nclass ReportGenerator:\n    def generate(self, report: Report):\n        report.generate()  # Works for any report\n```",
+        "keyPoints": [
+          "Open for extension: new types added without modifying existing code",
+          "Closed for modification: existing code doesn't change",
+          "Use abstraction (abstract classes, interfaces)",
+          "Use polymorphism to handle different types",
+          "Eliminates if/elif chains for new types"
+        ]
+      },
+      {
+        "id": "su6_a2",
+        "prompt": "What is a God Class and why is it bad? Give an example and explain how to fix it.",
+        "modelAnswer": "A God Class is a class that does too much — it knows and controls everything. Bad: A ManagementSystem with methods for hiring, payroll, inventory, sales, reporting, etc. Problems: (1) Hard to understand — 100+ lines per method, (2) Hard to test — depends on everything, (3) Hard to reuse — can't use payroll logic without the whole system, (4) Changes break multiple features. Fix: Break it into smaller, focused classes by responsibility: HRManager, PayrollProcessor, InventoryManager, SalesManager, ReportGenerator. Each has one job, one reason to change.",
+        "keyPoints": [
+          "God Class does too many unrelated things",
+          "Hard to understand, test, maintain, reuse",
+          "Multiple reasons to change = tight coupling",
+          "Solution: split by responsibility (SRP)",
+          "Each new class has one focused job",
+          "Easier to test, maintain, extend"
+        ]
+      },
+      {
+        "id": "su6_a3",
+        "prompt": "How does the Dependency Inversion Principle (DIP) improve testability? Explain with an example.",
+        "modelAnswer": "DIP says depend on abstractions, not concrete implementations. This improves testability because you can inject mock implementations for testing. Example: Bad (violates DIP): UserService depends on MySQLDatabase directly — to test, you must use a real database. Good (follows DIP): UserService depends on abstract Database interface — you inject a MockDatabase for testing. Testing code: `service = UserService(MockDatabase())`. The service works without touching a real database. DIP decouples classes, making them independently testable.",
+        "keyPoints": [
+          "DIP: depend on abstractions, not concrete classes",
+          "Allows injecting mock implementations",
+          "Enables unit testing without real dependencies",
+          "Classes are independently testable",
+          "Implementation can be swapped easily",
+          "Reduces coupling between components"
+        ]
+      }
+    ]
+  }
+}

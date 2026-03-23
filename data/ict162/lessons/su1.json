@@ -1,0 +1,128 @@
+{
+  "id": "su1",
+  "title": "Classes & Objects",
+  "moduleId": "ict162",
+  "difficulty": 1,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is a Class?",
+      "content": "# What is a Class?\n\nA class is a **blueprint or template** that defines the structure and behavior of objects. Think of a class like an architectural blueprint for a house — the blueprint defines what features a house will have (rooms, doors, windows), and each house built from that blueprint is a separate instance.\n\nIn Python, a class defines:\n- **Attributes** (data): The properties or state of an object\n- **Methods** (functions): The actions an object can perform\n\nEvery object created from a class is called an **instance** of that class."
+    },
+    {
+      "type": "definition",
+      "title": "Key Terms",
+      "content": "# Key Terminology\n\n- **Class**: A blueprint that defines the structure and behavior of objects\n- **Object (Instance)**: A concrete realization of a class\n- **Attribute**: A variable that belongs to an object (stores data)\n- **Method**: A function that belongs to an object (defines behavior)\n- **Constructor**: A special method (__init__) that initializes a new object\n- **Instance Variable**: A variable that belongs to a specific object instance\n- **Class Variable**: A variable shared by all instances of a class\n- **Encapsulation**: Bundling data and methods together, often with access restrictions\n- **Self**: A reference to the current object instance"
+    },
+    {
+      "type": "example",
+      "title": "Creating Your First Class",
+      "content": "# Creating a Simple Class\n\n```python\nclass Dog:\n    def __init__(self, name, breed):\n        self.name = name\n        self.breed = breed\n    \n    def bark(self):\n        return f\"{self.name} says Woof!\"\n\n# Creating objects (instances)\ndog1 = Dog(\"Buddy\", \"Golden Retriever\")\ndog2 = Dog(\"Max\", \"Labrador\")\n\nprint(dog1.bark())  # Output: Buddy says Woof!\nprint(dog2.name)    # Output: Max\n```\n\nHere, `Dog` is the class, and `dog1` and `dog2` are instances. Each instance has its own `name` and `breed` attributes."
+    },
+    {
+      "type": "definition",
+      "title": "The __init__ Constructor",
+      "content": "# Understanding __init__\n\nThe `__init__` method is a **constructor** — it runs automatically when you create a new object. It initializes the object's attributes.\n\n```python\nclass BankAccount:\n    def __init__(self, account_holder, balance):\n        self.account_holder = account_holder\n        self.balance = balance\n\naccount = BankAccount(\"Alice\", 1000)\n```\n\nWhen `account = BankAccount(\"Alice\", 1000)` is called:\n1. Python creates a new BankAccount object\n2. `__init__` is automatically called with `self`, `\"Alice\"`, and `1000`\n3. `self.account_holder` and `self.balance` are set\n\nThe first parameter, `self`, always refers to the object being created."
+    },
+    {
+      "type": "example",
+      "title": "Private Variables and Name Mangling",
+      "content": "# Private Variables with __ Prefix\n\nIn Python, a **double underscore prefix** (`__`) indicates a private variable. Python automatically mangles the name to prevent accidental access from outside the class.\n\n```python\nclass BankAccount:\n    def __init__(self, holder, balance):\n        self.holder = holder\n        self.__balance = balance  # Private variable\n    \n    def deposit(self, amount):\n        self.__balance += amount\n    \n    def get_balance(self):\n        return self.__balance\n\naccount = BankAccount(\"Alice\", 1000)\naccount.deposit(500)\nprint(account.get_balance())  # Output: 1500\n# print(account.__balance)    # ERROR - cannot access directly\n```\n\nThis enforces **encapsulation** — the balance can only be modified through the `deposit()` method, ensuring data integrity."
+    },
+    {
+      "type": "definition",
+      "title": "Properties: @property Decorator",
+      "content": "# Using @property for Getters\n\nThe `@property` decorator lets you access an attribute like it's a simple variable, but behind the scenes it calls a method. This gives you control without exposing the internal state.\n\n```python\nclass Circle:\n    def __init__(self, radius):\n        self.__radius = radius\n    \n    @property\n    def radius(self):\n        \"\"\"Getter for radius\"\"\"\n        return self.__radius\n    \n    @property\n    def area(self):\n        \"\"\"Calculate area on demand\"\"\"\n        return 3.14159 * self.__radius ** 2\n\ncircle = Circle(5)\nprint(circle.radius)  # Output: 5 (looks like an attribute)\nprint(circle.area)    # Output: 78.54975 (calculated property)\n```\n\nBenefits:\n- Access looks like simple attribute access: `circle.radius`\n- Validation and computation happen behind the scenes\n- Easy to add complexity later without changing the interface"
+    },
+    {
+      "type": "definition",
+      "title": "Setters: @property.setter",
+      "content": "# Using @property.setter for Validation\n\nA setter allows you to control how a property is modified, including validation:\n\n```python\nclass Circle:\n    def __init__(self, radius):\n        self.__radius = radius\n    \n    @property\n    def radius(self):\n        return self.__radius\n    \n    @radius.setter\n    def radius(self, value):\n        if value <= 0:\n            raise ValueError(\"Radius must be positive\")\n        self.__radius = value\n\ncircle = Circle(5)\ncircle.radius = 10      # Works fine\n# circle.radius = -5    # Raises ValueError\n```\n\nSetters ensure that only valid data is assigned to attributes. Without a setter, the property is **read-only**."
+    },
+    {
+      "type": "example",
+      "title": "The __str__ Method",
+      "content": "# String Representation with __str__\n\nThe `__str__` method defines how an object is printed as a string:\n\n```python\nclass Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def __str__(self):\n        return f\"{self.name} is {self.age} years old\"\n\nperson = Person(\"Alice\", 30)\nprint(person)  # Output: Alice is 30 years old\n```\n\nWithout `__str__`, printing would show `<__main__.Person object at 0x...>`. A well-designed `__str__` makes your objects more readable."
+    },
+    {
+      "type": "definition",
+      "title": "Class Variables vs Instance Variables",
+      "content": "# Class vs Instance Variables\n\n**Instance variables** belong to each object individually:\n```python\nclass Dog:\n    def __init__(self, name):\n        self.name = name  # Instance variable\n\ndog1 = Dog(\"Buddy\")\ndog2 = Dog(\"Max\")\n# dog1.name and dog2.name are separate\n```\n\n**Class variables** are shared by all instances:\n```python\nclass Dog:\n    species = \"Canis familiaris\"  # Class variable\n    \n    def __init__(self, name):\n        self.name = name  # Instance variable\n\ndog1 = Dog(\"Buddy\")\ndog2 = Dog(\"Max\")\nprint(Dog.species)    # Output: Canis familiaris\nprint(dog1.species)   # Output: Canis familiaris (same for all)\nprint(dog1.name)      # Output: Buddy (unique to dog1)\n```\n\nClass variables are useful for constants or properties shared across all instances."
+    },
+    {
+      "type": "checkpoint",
+      "title": "What Does __init__ Do?",
+      "content": "The __init__ constructor is called automatically when a new object is created. Its job is to initialize the object's attributes (instance variables).",
+      "question": {
+        "type": "mcq",
+        "prompt": "What happens when you create an object in Python?",
+        "choices": [
+          "The class definition is copied to memory",
+          "The __init__ method is automatically called to initialize the object",
+          "A blueprint is printed to the console",
+          "The object becomes available globally"
+        ],
+        "answer": 1,
+        "explanation": "When you create an object using ClassName(), Python automatically calls the __init__ method to set up the initial state."
+      }
+    },
+    {
+      "type": "checkpoint",
+      "title": "How Do You Access a Private Variable?",
+      "content": "Private variables (with __ prefix) cannot be accessed directly from outside the class. You must use public methods like getters or properties.",
+      "question": {
+        "type": "mcq",
+        "prompt": "If a class has a private variable __balance, how should you access it from outside the class?",
+        "choices": [
+          "Use account.__balance directly",
+          "Use a public method or @property decorator",
+          "Private variables cannot be accessed at all",
+          "Use the globals() function"
+        ],
+        "answer": 1,
+        "explanation": "Private variables are accessed through public methods (like get_balance()) or @property decorators, which provide controlled access while maintaining encapsulation."
+      }
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su1_a1",
+        "prompt": "Explain encapsulation in Python and why it is important.",
+        "modelAnswer": "Encapsulation is bundling data (attributes) and methods together into a class, and controlling access to the data through methods. It uses private variables (with __ prefix) and @property decorators to hide internal implementation details. It is important because it prevents accidental misuse of an object's data, enforces data validation, and allows you to change internal implementation without affecting external code that uses the class.",
+        "keyPoints": [
+          "Bundling data and methods together",
+          "Hiding internal implementation with private variables",
+          "Controlling access through public methods",
+          "Data validation and integrity",
+          "Flexible to change internally without breaking external code"
+        ]
+      },
+      {
+        "id": "su1_a2",
+        "prompt": "Design a BankAccount class with the following features: constructor that takes account_holder and initial_balance, a private __balance attribute, deposit() method, withdrawal() method that prevents overdraft, and a read-only balance property. Provide the code.",
+        "modelAnswer": "```python\nclass BankAccount:\n    def __init__(self, account_holder, initial_balance):\n        self.account_holder = account_holder\n        self.__balance = initial_balance\n    \n    @property\n    def balance(self):\n        return self.__balance\n    \n    def deposit(self, amount):\n        if amount > 0:\n            self.__balance += amount\n        else:\n            raise ValueError(\"Deposit amount must be positive\")\n    \n    def withdraw(self, amount):\n        if amount > self.__balance:\n            raise ValueError(\"Insufficient funds\")\n        if amount > 0:\n            self.__balance -= amount\n        else:\n            raise ValueError(\"Withdrawal amount must be positive\")\n```",
+        "keyPoints": [
+          "Constructor initializes account_holder and __balance",
+          "Private __balance variable protects data",
+          "@property decorator for read-only balance access",
+          "deposit() method adds funds with validation",
+          "withdraw() method prevents overdraft",
+          "Validation in both methods ensures data integrity"
+        ]
+      },
+      {
+        "id": "su1_a3",
+        "prompt": "What does the @property decorator do and why would you use it instead of just making an attribute public?",
+        "modelAnswer": "@property allows you to define a method that can be accessed like an attribute. You would use it because: (1) it provides a cleaner, simpler interface — users write circle.radius instead of circle.get_radius(), (2) it allows you to add validation or computation without changing external code, (3) it lets you make attributes read-only or control how they are set, and (4) it enforces encapsulation while maintaining a simple interface.",
+        "keyPoints": [
+          "Allows method to be accessed like an attribute",
+          "Provides control without exposing internals",
+          "Can add validation in the setter",
+          "Can compute derived properties on demand",
+          "Makes code cleaner and more Pythonic"
+        ]
+      }
+    ]
+  }
+}

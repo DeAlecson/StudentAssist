@@ -1,0 +1,19 @@
+{
+  "unitId": "su4",
+  "moduleId": "sst101",
+  "cards": [
+    {"id": "su4_f1", "front": "What is risk?", "back": "An uncertain event that, if it occurs, has positive or negative effect on project. Risk Severity = Likelihood × Impact", "concept": "Risk Basics"},
+    {"id": "su4_f2", "front": "What does IADC stand for?", "back": "Identify → Assess → Develop → Control. The four-step risk management cycle.", "concept": "IADC"},
+    {"id": "su4_f3", "front": "What is the Identify step?", "back": "Brainstorm and list all possible risks. Use risk profiles (checklists from past projects) to surface common risks.", "concept": "IADC"},
+    {"id": "su4_f4", "front": "What is the Assess step?", "back": "Evaluate each risk by likelihood and impact using a severity matrix. Prioritize risks for response planning.", "concept": "IADC"},
+    {"id": "su4_f5", "front": "What is the Develop step?", "back": "Plan responses for top risks using four strategies: Avoid, Transfer, Mitigate, or Accept.", "concept": "IADC"},
+    {"id": "su4_f6", "front": "What is the Control step?", "back": "Execute planned responses, monitor risk indicators, update risk register, and adjust responses as project progresses. Ongoing phase.", "concept": "IADC"},
+    {"id": "su4_f7", "front": "What does AVOID mean?", "back": "Eliminate the risk by changing the project plan. Example: use proven technology instead of unproven. Use when risk is unacceptable.", "concept": "Risk Responses"},
+    {"id": "su4_f8", "front": "What does TRANSFER mean?", "back": "Shift the risk to a third party. Example: purchase insurance or outsource to vendor. Use when another party can manage better.", "concept": "Risk Responses"},
+    {"id": "su4_f9", "front": "What does MITIGATE mean?", "back": "Reduce likelihood or impact of risk. Example: extra testing to reduce defect risk. Use when risk can be partially reduced.", "concept": "Risk Responses"},
+    {"id": "su4_f10", "front": "What does ACCEPT mean?", "back": "Acknowledge risk and prepare contingency (budget or schedule buffer). Use when risk is low-impact or unavoidable.", "concept": "Risk Responses"},
+    {"id": "su4_f11", "front": "What is a Risk Register?", "back": "Living document that tracks all identified risks: description, likelihood, impact, owner, response, and status. Updated continuously.", "concept": "Risk Management"},
+    {"id": "su4_f12", "front": "What is a risk profile?", "back": "Checklist of questions derived from past similar projects to surface common risks. Structured way to identify risks early.", "concept": "Risk Management"},
+    {"id": "su4_f13", "front": "Why is early risk identification critical?", "back": "Cost to fix problems is LOW early (maybe $1k) but HIGH late ($100k). Early identification enables cheap fixes; late discovery requires expensive rework.", "concept": "Risk Management"}
+  ]
+}

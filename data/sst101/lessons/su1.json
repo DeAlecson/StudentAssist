@@ -1,0 +1,117 @@
+{
+  "id": "su1",
+  "title": "Introduction to Project Management",
+  "moduleId": "sst101",
+  "difficulty": 1,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is a Project?",
+      "content": "# Understanding Projects\n\nA **project** is a temporary endeavour undertaken to create a unique product, service, or result. Unlike operations, which are ongoing and repetitive, projects have:\n\n- **Temporary nature**: A defined start and end date\n- **Unique output**: Creates something new or significantly different from previous work\n- **Specific constraints**: Limited scope, time, and cost\n- **Defined objectives**: Clear goals and success criteria\n\nExamples of projects:\n- Building a new office building\n- Developing and launching a new software application\n- Planning a company event\n- Implementing a new business process"
+    },
+    {
+      "type": "definition",
+      "title": "Projects vs Operations",
+      "content": "# Key Differences\n\n**Projects:**\n- Temporary with definite start and end\n- Create unique, non-repetitive outputs\n- Change the organization\n- Examples: software development, mergers, facility expansion\n\n**Operations:**\n- Ongoing and repetitive\n- Produce standardized outputs consistently\n- Maintain the status quo\n- Examples: manufacturing, customer service, payroll processing, maintenance\n\n**Key insight**: A project changes the organization from its current state to a desired future state. Operations keep things running as they are."
+    },
+    {
+      "type": "example",
+      "title": "The Triple Constraint",
+      "content": "# Scope, Time, Cost = Quality\n\nThe **Triple Constraint** defines the three primary constraints on any project:\n\n1. **Scope**: What work must be done? What are the deliverables?\n2. **Time**: How long will the project take? What is the deadline?\n3. **Cost**: What is the budget? What resources are allocated?\n\n**Quality is NOT a fourth constraint**. Instead, quality is the outcome of how well you balance scope, time, and cost.\n\nThe constraint triangle:\n```\n     Scope\n      / \\\n    /   \\\n   /     \\\n  /_______\\\nTime  Cost\n```\n\nChanging one constraint forces changes in the others:\n- **Faster deadline** (reduce time) → need more people (increase cost) or reduce scope\n- **Larger scope** → need more time or more money\n- **Smaller budget** → extend timeline or reduce scope"
+    },
+    {
+      "type": "definition",
+      "title": "Portfolio, Program, and Project Hierarchy",
+      "content": "# Understanding the Hierarchy\n\n**Portfolio**: A collection of programs and/or projects within an organization, which may be unrelated, grouped to facilitate effective management and meet organizational goals.\n\n**Program**: A group of **related** projects managed together as a coordinated whole to deliver strategic benefit beyond what individual projects could deliver alone.\n\n**Project**: A temporary endeavour with a unique objective.\n\n**Hierarchy example:**\n- **Portfolio** (Strategic): \"Digital Transformation Initiative\" — the overall strategic direction\n  - **Program 1** (Coordinated): \"Cloud Migration Program\" — moving systems to cloud\n    - Project 1a: Migrate CRM to cloud\n    - Project 1b: Migrate ERP to cloud\n  - **Program 2** (Coordinated): \"Cybersecurity Enhancement Program\"\n    - Project 2a: Implement new firewall\n    - Project 2b: Deploy endpoint protection"
+    },
+    {
+      "type": "definition",
+      "title": "The Project Life Cycle",
+      "content": "# Four Sequential Stages\n\nEvery project progresses through four stages:\n\n**1. Defining Stage** (lowest effort)\n- Identify the project need\n- Develop business case\n- Obtain authorization\n- Establish project charter\n- Effort: 5-10% of total project effort\n\n**2. Planning Stage**\n- Develop detailed project plans\n- Define scope, schedule, budget\n- Identify risks\n- Plan resources\n- Effort: 10-20% of total project effort\n\n**3. Executing Stage** (highest effort)\n- Perform the actual work\n- Produce deliverables\n- Manage team and stakeholders\n- Monitor progress\n- Effort: 60-70% of total project effort\n\n**4. Closing Stage** (low effort)\n- Verify deliverables\n- Obtain customer acceptance\n- Close contracts\n- Release resources\n- Capture lessons learned\n- Effort: 5-10% of total project effort"
+    },
+    {
+      "type": "example",
+      "title": "Risk vs Cost Curve",
+      "content": "# The Cost to Fix Problems Increases Over Time\n\n**Early in the project:**\n- Risk likelihood is HIGH (many unknowns)\n- Cost to fix problems is LOW (changes are inexpensive)\n- Example: Fixing requirements costs $1,000 in Defining stage\n\n**Late in the project:**\n- Risk likelihood is LOW (most variables known)\n- Cost to fix problems is HIGH (rework of completed deliverables)\n- Example: Same requirement change costs $100,000 in Executing stage\n\nThis is why **early risk identification is critical**. Issues identified and resolved early are far less expensive to fix.\n\n```\nCost to Fix\n    |\n$100k |         ----\n      |      ---\n      |   ---\n  $1k | --\n      |____________________\n      Defining Planning Executing Closing\n```"
+    },
+    {
+      "type": "definition",
+      "title": "Project Characteristics",
+      "content": "# What Defines a Project\n\n1. **Defined objective**: Clear, measurable goals\n2. **Defined start date**: Project kicks off\n3. **Defined end date**: Project reaches completion\n4. **Specific time requirement**: Duration and deadline\n5. **Specific cost requirement**: Budget allocation\n6. **Specific performance requirements**: Quality standards, specifications\n7. **Unique**: Creates something new or significantly different\n8. **Cross-functional team**: Draws from multiple departments\n9. **Uncertainty**: Risk and unknowns\n10. **Temporary**: Not permanent or ongoing"
+    },
+    {
+      "type": "checkpoint",
+      "title": "Which Stage Has the Highest Effort?",
+      "content": "The Executing stage is the longest and most resource-intensive, typically consuming 60-70% of total project effort. This is where the actual work happens and deliverables are produced.",
+      "question": {
+        "type": "mcq",
+        "prompt": "Which stage of the project life cycle consumes the most time and resources?",
+        "choices": [
+          "Defining stage",
+          "Planning stage",
+          "Executing stage",
+          "Closing stage"
+        ],
+        "answer": 2,
+        "explanation": "The Executing stage is where actual work happens — producing deliverables, managing teams, and performing the substantive project work. It typically consumes 60-70% of total effort."
+      }
+    },
+    {
+      "type": "checkpoint",
+      "title": "Portfolio vs Program",
+      "content": "A portfolio is a collection of programs and projects within an organization that may be unrelated. A program is a coordinated group of related projects that deliver strategic benefit together.",
+      "question": {
+        "type": "mcq",
+        "prompt": "What is the primary difference between a portfolio and a program?",
+        "choices": [
+          "Portfolio = related projects; Program = any collection",
+          "Portfolio = any collection; Program = related projects managed together",
+          "Portfolios are larger than programs",
+          "Programs only exist in large organizations"
+        ],
+        "answer": 1,
+        "explanation": "A program groups related projects for strategic benefit. A portfolio may contain unrelated programs and projects, all managed at the organizational level."
+      }
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su1_a1",
+        "prompt": "Explain the Triple Constraint and describe how changing one constraint affects the others.",
+        "modelAnswer": "The Triple Constraint consists of Scope (what work must be done), Time (how long it will take), and Cost (what budget is allocated). Quality is not a fourth constraint but the outcome of how well these three are balanced. When you change one constraint, you must adjust the others: faster timeline requires either more cost (more staff) or reduced scope. Larger scope requires more time or money. Smaller budget forces either extended timeline or reduced scope. The three are interdependent.",
+        "keyPoints": [
+          "Scope, Time, Cost are the three constraints",
+          "Quality is the outcome of constraint balance",
+          "Constraints are interdependent",
+          "Changing one affects the others",
+          "Project managers balance all three"
+        ]
+      },
+      {
+        "id": "su1_a2",
+        "prompt": "Explain how risk likelihood and the cost to fix problems change throughout the project life cycle.",
+        "modelAnswer": "Early in the project (Defining and Planning stages), risk likelihood is HIGH because many variables are unknown, but the COST to fix problems is LOW — changes are inexpensive and easy to implement. Late in the project (Executing stage), risk likelihood is LOW because most variables are known, but the COST to fix problems is HIGH because you must undo and redo completed work. This is why early risk identification is critical — identifying and resolving issues early prevents expensive rework later.",
+        "keyPoints": [
+          "Early stage: high likelihood, low cost",
+          "Late stage: low likelihood, high cost",
+          "Early risk identification prevents expensive fixes",
+          "Cost to fix increases exponentially over time",
+          "Project managers focus on early risk mitigation"
+        ]
+      },
+      {
+        "id": "su1_a3",
+        "prompt": "Distinguish between a project and an operation. Provide examples of each.",
+        "modelAnswer": "A project is a temporary endeavour that creates a unique product or result with a defined start and end date. Operations are ongoing, repetitive activities that maintain the organization. Example of a project: developing a new software application (temporary, unique, has end date). Example of an operation: providing customer service via a call centre (ongoing, repetitive, no defined end). Key difference: projects change the organization from current to desired state; operations keep things running as they are.",
+        "keyPoints": [
+          "Projects are temporary with defined start/end",
+          "Operations are ongoing and repetitive",
+          "Projects create unique outputs",
+          "Operations produce standardized, consistent outputs",
+          "Projects change; operations maintain"
+        ]
+      }
+    ]
+  }
+}

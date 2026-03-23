@@ -1,0 +1,18 @@
+{
+  "unitId": "su5",
+  "moduleId": "sst101",
+  "cards": [
+    {"id": "su5_f1", "front": "What is BAC?", "back": "Budget At Completion — total approved project budget from start to finish.", "concept": "EVM Basics"},
+    {"id": "su5_f2", "front": "What is PV?", "back": "Planned Value — the budget value of work planned to be done by a specific date. Shows what was scheduled.", "concept": "EVM Basics"},
+    {"id": "su5_f3", "front": "What is EV?", "back": "Earned Value — the budget value of work actually completed. Formula: EV = BAC × (% of work actually done)", "concept": "EVM Basics"},
+    {"id": "su5_f4", "front": "What is AC?", "back": "Actual Cost — the actual cost of work completed. What you have really spent.", "concept": "EVM Basics"},
+    {"id": "su5_f5", "front": "What is CV (Cost Variance)?", "back": "CV = EV - AC. Positive = under budget (good). Negative = over budget (bad).", "concept": "Variances"},
+    {"id": "su5_f6", "front": "What is SV (Schedule Variance)?", "back": "SV = EV - PV. Positive = ahead of schedule (good). Negative = behind schedule (bad).", "concept": "Variances"},
+    {"id": "su5_f7", "front": "What is CPI (Cost Performance Index)?", "back": "CPI = EV / AC. >1 = under budget (efficient). <1 = over budget (inefficient). Shows cost efficiency ratio.", "concept": "Indices"},
+    {"id": "su5_f8", "front": "What is SPI (Schedule Performance Index)?", "back": "SPI = EV / PV. >1 = ahead of schedule. <1 = behind schedule. Shows schedule efficiency ratio.", "concept": "Indices"},
+    {"id": "su5_f9", "front": "What is EAC?", "back": "Estimate At Completion — forecast of total project cost. Formula: EAC = BAC / CPI. Assumes current efficiency continues.", "concept": "Forecasting"},
+    {"id": "su5_f10", "front": "What is ETC?", "back": "Estimate To Complete — remaining cost from now to end. Formula: ETC = EAC - AC", "concept": "Forecasting"},
+    {"id": "su5_f11", "front": "What is VAC?", "back": "Variance At Completion — projected over/under budget at project end. Formula: VAC = BAC - EAC. Negative = will overrun.", "concept": "Forecasting"},
+    {"id": "su5_f12", "front": "What is TCPI?", "back": "To-Complete Performance Index — cost efficiency needed for remaining work to finish within budget. Formula: TCPI = (BAC-EV)/(BAC-AC)", "concept": "Forecasting"}
+  ]
+}

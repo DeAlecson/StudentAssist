@@ -1,0 +1,78 @@
+{
+  "unitId": "su5",
+  "moduleId": "acc202",
+  "cards": [
+    {
+      "id": "acc_su5_f1",
+      "front": "What is contribution margin?",
+      "back": "Contribution Margin = Selling Price - Variable Cost per Unit. The amount each unit contributes toward covering fixed costs and generating profit.",
+      "concept": "Contribution Margin"
+    },
+    {
+      "id": "acc_su5_f2",
+      "front": "What is the contribution margin ratio?",
+      "back": "CM Ratio = CM per Unit / Selling Price × 100%. Shows the percentage of revenue available to cover fixed costs and profit.",
+      "concept": "CM Ratio"
+    },
+    {
+      "id": "acc_su5_f3",
+      "front": "What is the break-even point?",
+      "back": "The level of sales where Total Revenue = Total Costs, resulting in zero profit. Neither a gain nor a loss.",
+      "concept": "Break-Even Point"
+    },
+    {
+      "id": "acc_su5_f4",
+      "front": "What is the formula for break-even in units?",
+      "back": "BEP (units) = Fixed Costs / CM per Unit. Shows the number of units that must be sold to break even.",
+      "concept": "BEP Formula (Units)"
+    },
+    {
+      "id": "acc_su5_f5",
+      "front": "What is the formula for break-even in dollars?",
+      "back": "BEP (dollars) = Fixed Costs / CM Ratio. Shows the revenue needed to break even.",
+      "concept": "BEP Formula (Dollars)"
+    },
+    {
+      "id": "acc_su5_f6",
+      "front": "What is the target profit formula?",
+      "back": "Target Sales = (Fixed Costs + Target Operating Income) / CM per Unit. Calculates sales needed to achieve a specific profit goal.",
+      "concept": "Target Profit Formula"
+    },
+    {
+      "id": "acc_su5_f7",
+      "front": "What is margin of safety?",
+      "back": "Margin of Safety = Actual/Expected Sales - Break-Even Sales. Shows how much sales can drop before losses occur.",
+      "concept": "Margin of Safety"
+    },
+    {
+      "id": "acc_su5_f8",
+      "front": "What is operating leverage?",
+      "back": "The impact of fixed costs on profit. High fixed costs create high leverage — small sales changes cause large profit swings.",
+      "concept": "Operating Leverage"
+    },
+    {
+      "id": "acc_su5_f9",
+      "front": "What is the degree of operating leverage (DOL) formula?",
+      "back": "DOL = Contribution Margin / Operating Income. Measures profit sensitivity to sales changes. A 1% sales change yields a DOL% profit change.",
+      "concept": "DOL Formula"
+    },
+    {
+      "id": "acc_su5_f10",
+      "front": "What is CVP analysis?",
+      "back": "Cost-Volume-Profit analysis examines the relationship between costs, sales volume, and profit. Used for planning and decision-making.",
+      "concept": "CVP Analysis"
+    },
+    {
+      "id": "acc_su5_f11",
+      "front": "What is the relevant range?",
+      "back": "The range of activity levels where assumptions (fixed costs, variable cost per unit) remain valid. Outside this range, relationships change.",
+      "concept": "Relevant Range"
+    },
+    {
+      "id": "acc_su5_f12",
+      "front": "How do fixed costs behave across the relevant range?",
+      "back": "Fixed costs remain constant in total amount. However, fixed cost per unit decreases as volume increases.",
+      "concept": "Fixed Cost Behaviour"
+    }
+  ]
+}

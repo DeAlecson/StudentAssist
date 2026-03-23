@@ -1,0 +1,18 @@
+{
+  "unitId": "su1",
+  "moduleId": "sst101",
+  "cards": [
+    {"id": "su1_f1", "front": "What is a project?", "back": "A temporary endeavour undertaken to create a unique product, service, or result. Has defined start/end, constrained by scope, time, cost, and produces unique outputs.", "concept": "Project Definition"},
+    {"id": "su1_f2", "front": "What is an operation?", "back": "Ongoing, repetitive activities that maintain the organization. No defined end, produce standardized outputs, and do not change the organization.", "concept": "Project Definition"},
+    {"id": "su1_f3", "front": "Explain the Triple Constraint.", "back": "Scope (what work), Time (how long), and Cost (budget) are the three constraints. Quality is not a constraint but the outcome of balancing these three.", "concept": "Triple Constraint"},
+    {"id": "su1_f4", "front": "What is a portfolio?", "back": "A collection of programs and/or projects within an organization, which may be unrelated, grouped to facilitate effective management.", "concept": "Portfolio/Program/Project"},
+    {"id": "su1_f5", "front": "What is a program?", "back": "A group of related projects managed together as a coordinated whole to deliver strategic benefit beyond what individual projects could achieve.", "concept": "Portfolio/Program/Project"},
+    {"id": "su1_f6", "front": "Name the four stages of the Project Life Cycle.", "back": "1. Defining (5-10% effort) 2. Planning (10-20% effort) 3. Executing (60-70% effort) 4. Closing (5-10% effort)", "concept": "Project Life Cycle"},
+    {"id": "su1_f7", "front": "Which stage has the highest effort?", "back": "Executing is the longest and most resource-intensive stage where the actual work happens and deliverables are produced.", "concept": "Project Life Cycle"},
+    {"id": "su1_f8", "front": "What is the Defining stage?", "back": "The first, shortest stage where the project need is identified, business case developed, and project charter established.", "concept": "Project Life Cycle"},
+    {"id": "su1_f9", "front": "What is the Planning stage?", "back": "Develop detailed plans for scope, schedule, budget. Identify risks, plan resources, and create the baseline for execution.", "concept": "Project Life Cycle"},
+    {"id": "su1_f10", "front": "What is the Closing stage?", "back": "Verify deliverables meet requirements, obtain customer acceptance, close contracts, release resources, capture lessons learned.", "concept": "Project Life Cycle"},
+    {"id": "su1_f11", "front": "Describe the risk-cost curve.", "back": "Early in projects, risk likelihood is HIGH but cost to fix is LOW. Late in projects, likelihood is LOW but cost is HIGH. Early identification is critical.", "concept": "Risk Management"},
+    {"id": "su1_f12", "front": "Why is project management important?", "back": "Projects are the vehicle for achieving organizational strategy. Without formal PM, strategies remain as intentions and never materialize.", "concept": "Project Definition"}
+  ]
+}

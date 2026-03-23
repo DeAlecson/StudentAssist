@@ -1,0 +1,64 @@
+{
+  "id": "ict162",
+  "code": "ICT162",
+  "title": "Object Oriented Programming",
+  "institution": "SUSS",
+  "color": "#00d4ff",
+  "icon": "💻",
+  "units": [
+    {
+      "id": "su1",
+      "title": "Classes & Objects",
+      "icon": "🧱",
+      "description": "Classes, objects, constructors, properties, methods and encapsulation",
+      "lessonFile": "data/ict162/lessons/su1.json",
+      "quizFile": "data/ict162/quizzes/su1_quiz.json",
+      "flashcardFile": "data/ict162/flashcards/su1_cards.json"
+    },
+    {
+      "id": "su2",
+      "title": "Composition & Collection",
+      "icon": "🔗",
+      "description": "Objects inside objects, lists of objects, and dictionary collections",
+      "lessonFile": "data/ict162/lessons/su2.json",
+      "quizFile": "data/ict162/quizzes/su2_quiz.json",
+      "flashcardFile": "data/ict162/flashcards/su2_cards.json"
+    },
+    {
+      "id": "su3",
+      "title": "Inheritance",
+      "icon": "🌳",
+      "description": "Parent and child classes, super(), overriding, abstract classes, and polymorphism",
+      "lessonFile": "data/ict162/lessons/su3.json",
+      "quizFile": "data/ict162/quizzes/su3_quiz.json",
+      "flashcardFile": "data/ict162/flashcards/su3_cards.json"
+    },
+    {
+      "id": "su4",
+      "title": "Exception Handling",
+      "icon": "🛡️",
+      "description": "Try/except, raising errors, custom exceptions, and validation",
+      "lessonFile": "data/ict162/lessons/su4.json",
+      "quizFile": "data/ict162/quizzes/su4_quiz.json",
+      "flashcardFile": "data/ict162/flashcards/su4_cards.json"
+    },
+    {
+      "id": "su5",
+      "title": "Python GUI",
+      "icon": "🖥️",
+      "description": "Tkinter basics: windows, widgets, layout, buttons, callbacks, and form validation",
+      "lessonFile": "data/ict162/lessons/su5.json",
+      "quizFile": "data/ict162/quizzes/su5_quiz.json",
+      "flashcardFile": "data/ict162/flashcards/su5_cards.json"
+    },
+    {
+      "id": "su6",
+      "title": "SOLID & Design",
+      "icon": "🏗️",
+      "description": "High cohesion, low coupling, SOLID principles, and spotting bad designs",
+      "lessonFile": "data/ict162/lessons/su6.json",
+      "quizFile": "data/ict162/quizzes/su6_quiz.json",
+      "flashcardFile": "data/ict162/flashcards/su6_cards.json"
+    }
+  ]
+}

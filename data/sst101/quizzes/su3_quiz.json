@@ -1,0 +1,21 @@
+{
+  "unitId": "su3",
+  "moduleId": "sst101",
+  "questions": [
+    {"id": "sst_su3_q1", "type": "mcq", "concept": "ES/EF", "prompt": "Activity B has ES=5 and duration=8. What is its Earliest Finish (EF)?", "difficulty": 2, "choices": ["5", "8", "13", "3"], "answer": 2},
+    {"id": "sst_su3_q2", "type": "mcq", "concept": "float", "prompt": "Activity D has LS=20 and ES=14. What is its slack?", "difficulty": 2, "choices": ["6", "34", "14", "20"], "answer": 0},
+    {"id": "sst_su3_q3", "type": "mcq", "concept": "critical path", "prompt": "The Critical Path is defined as:", "difficulty": 2, "choices": ["The shortest path with fewest activities", "The path with the most parallel activities", "The longest-duration path where all activities have zero slack", "The path that uses the most resources"], "answer": 2},
+    {"id": "sst_su3_q4", "type": "mcq", "concept": "forward pass", "prompt": "During a forward pass calculation, what does ES represent?", "difficulty": 2, "choices": ["The earliest time an activity can start given predecessors are complete", "The latest time an activity can start without delaying the project", "The total float available for an activity", "The time an activity takes to complete"], "answer": 0},
+    {"id": "sst_su3_q5", "type": "mcq", "concept": "parallel", "prompt": "Activities that run simultaneously in a project network are called:", "difficulty": 2, "choices": ["Sequential activities", "Critical activities", "Parallel activities", "Milestone activities"], "answer": 2},
+    {"id": "sst_su3_q6", "type": "mcq", "concept": "duration", "prompt": "Activity X has LS=15 and LF=22. What is its duration?", "difficulty": 2, "choices": ["37", "7", "15", "22"], "answer": 1},
+    {"id": "sst_su3_q7", "type": "mcq", "concept": "slack formula", "prompt": "Which formula correctly calculates an activity's Slack?", "difficulty": 2, "choices": ["EF - LS", "LS - ES (or equivalently LF - EF)", "ES + Duration", "LF + LS"], "answer": 1},
+    {"id": "sst_su3_q8", "type": "mcq", "concept": "network diagram", "prompt": "Which tool is built AFTER the WBS and shows the sequence of project activities?", "difficulty": 2, "choices": ["Risk Register", "Scope Statement", "Project Network Diagram", "Budget breakdown"], "answer": 2},
+    {"id": "sst_su3_q9", "type": "mcq", "concept": "ES calculation", "prompt": "Activity C has EF=18 and duration=5. What is its Earliest Start (ES)?", "difficulty": 2, "choices": ["23", "5", "13", "18"], "answer": 2},
+    {"id": "sst_su3_q10", "type": "mcq", "concept": "duration", "prompt": "In a project network, Activity G has LS=30 and LF=36. What is its duration?", "difficulty": 2, "choices": ["66", "30", "36", "6"], "answer": 3},
+    {"id": "sst_su3_q11", "type": "mcq", "concept": "backward pass", "prompt": "What is the Backward Pass used to determine?", "difficulty": 2, "choices": ["ES and EF for each activity", "LS and LF for each activity", "The critical path by summing all durations", "Resource requirements for each activity"], "answer": 1},
+    {"id": "sst_su3_q12", "type": "mcq", "concept": "critical path delay", "prompt": "If all activities on the critical path are delayed by 3 days each, the project end date is delayed by:", "difficulty": 2, "choices": ["3 days", "6 days", "9 days", "The path with highest total float"], "answer": 0},
+    {"id": "sst_su3_q13", "type": "mcq", "concept": "merge point", "prompt": "Two activities A (dur=5) and B (dur=8) both start after activity Start (ES=0). Their successor C starts after both finish. What is C's ES?", "difficulty": 3, "choices": ["5", "8", "13", "0"], "answer": 1},
+    {"id": "sst_su3_q14", "type": "mcq", "concept": "gantt vs network", "prompt": "A Gantt Chart differs from a Project Network Diagram in that a Gantt Chart:", "difficulty": 2, "choices": ["Shows activity dependencies using arrows", "Is used only for risk management", "Displays activities as horizontal bars against a time axis", "Identifies the critical path automatically"], "answer": 2},
+    {"id": "sst_su3_q15", "type": "mcq", "concept": "float and critical", "prompt": "Activity F has ES=10, EF=15, LS=12, LF=17. What is its float and is it critical?", "difficulty": 3, "choices": ["Float=2, Critical", "Float=2, Not Critical", "Float=0, Critical", "Float=5, Not Critical"], "answer": 1}
+  ]
+}

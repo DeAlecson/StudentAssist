@@ -1,0 +1,99 @@
+{
+  "id": "su1",
+  "title": "Recording Financial Transactions",
+  "moduleId": "acc202",
+  "difficulty": 1,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is Accounting?",
+      "content": "Accounting records, classifies, and summarises financial transactions to help stakeholders make decisions. The accounting cycle starts with source documents (invoices, receipts) and flows to financial statements.\n\nAccounting is often called the 'language of business' because it communicates financial information in a standardised way that investors, creditors, managers, and regulators can understand."
+    },
+    {
+      "type": "definition",
+      "title": "The Double Entry System",
+      "content": "Every transaction affects at least two accounts. **Debit (Dr)** = left side, **Credit (Cr)** = right side. Total debits MUST equal total credits. This is the foundation of accounting accuracy.\n\nThe double entry system is elegant in its logic: every economic event has a dual effect. Money comes from somewhere and goes somewhere else. This two-sided recording ensures accuracy and allows us to track both sources and uses of resources."
+    },
+    {
+      "type": "concept",
+      "title": "The Accounting Equation",
+      "content": "**Assets = Liabilities + Equity**\n\nExpanded: **Assets = Liabilities + Share Capital + Retained Earnings + Revenue - Expenses**\n\nEvery transaction must keep this equation balanced. This fundamental relationship underpins all of accounting. If the equation is out of balance, there is an error somewhere."
+    },
+    {
+      "type": "definition",
+      "title": "Account Types and Their Normal Balances",
+      "content": "- **Assets** increase with Dr, decrease with Cr\n- **Liabilities** increase with Cr, decrease with Dr\n- **Equity/Revenue** increase with Cr, decrease with Dr (rare)\n- **Expenses** increase with Dr, decrease with Cr\n\n**Remember: DEALER**\n- **D**ividends increase with Dr\n- **E**xpenses increase with Dr\n- **A**ssets increase with Dr\n- **L**iabilities increase with Cr\n- **E**quity increases with Cr\n- **R**evenue increases with Cr"
+    },
+    {
+      "type": "example",
+      "title": "Recording Common Transactions",
+      "content": "**Example 1: Buying inventory with cash**\n- Dr Inventory $5,000\n- Cr Cash $5,000\n- Effect: One asset (Inventory) increases, another asset (Cash) decreases. Equation stays balanced: Assets unchanged.\n\n**Example 2: Buying on credit**\n- Dr Inventory $8,000\n- Cr Accounts Payable $8,000\n- Effect: Asset increases, liability increases. Total assets = liabilities + equity still holds.\n\n**Example 3: Selling for cash**\n- Dr Cash $10,000\n- Cr Service Revenue $10,000\n- Effect: Asset increases, revenue (which increases equity) increases.\n\n**Example 4: Receiving from debtor**\n- Dr Cash $3,000\n- Cr Accounts Receivable $3,000\n- Effect: One asset increases, another decreases."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Which side increases an Asset?",
+      "content": "Test your understanding of normal balances.",
+      "question": {
+        "type": "mcq",
+        "prompt": "What is the normal balance (increases) for an Asset account?",
+        "choices": ["Credit side", "Debit side", "Either side", "Neither side"],
+        "answer": 1,
+        "explanation": "Assets have a DEBIT normal balance. They increase with debits and decrease with credits. This is part of the DEALER mnemonic."
+      }
+    },
+    {
+      "type": "concept",
+      "title": "The Transaction Flow",
+      "content": "1. **Source Documents** → Invoices, receipts, contracts, bank statements\n2. **Journal** → Chronological list of all entries (debit = credit for each entry)\n3. **Ledger** → T-accounts organised by account type, showing debits and credits\n4. **Trial Balance** → List of all accounts and balances, checking that total debits = total credits\n5. **Financial Statements** → Income statement, balance sheet, cash flow statement\n\nThis flow ensures every transaction is recorded accurately and can be traced from source to financial statement."
+    },
+    {
+      "type": "example",
+      "title": "Capital and Liability Transactions",
+      "content": "**Shareholder injects capital:**\n- Dr Cash $50,000\n- Cr Share Capital $50,000\n- Assets increase, equity increases.\n\n**Bank loan received:**\n- Dr Cash $20,000\n- Cr Bank Loan (Liability) $20,000\n- Assets increase, liabilities increase.\n\n**Paying rent expense:**\n- Dr Rent Expense $3,000\n- Cr Cash $3,000\n- Expense increases (decreases net profit, thus equity), cash decreases.\n\n**Declaring dividends:**\n- Dr Retained Earnings $2,000\n- Cr Dividends Payable $2,000\n- Equity decreases, liability increases (company owes this to shareholders)."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Identify the Journal Entry",
+      "content": "Apply your knowledge to a transaction scenario.",
+      "question": {
+        "type": "mcq",
+        "prompt": "A company buys inventory on credit for $8,000. What is the correct journal entry?",
+        "choices": [
+          "Dr Cash $8,000, Cr Inventory $8,000",
+          "Dr Inventory $8,000, Cr Cash $8,000",
+          "Dr Inventory $8,000, Cr Accounts Payable $8,000",
+          "Dr Accounts Payable $8,000, Cr Inventory $8,000"
+        ],
+        "answer": 2,
+        "explanation": "Buying on credit: Inventory (asset) increases with debit, Accounts Payable (liability) increases with credit. Cash is NOT involved because payment is deferred."
+      }
+    },
+    {
+      "type": "definition",
+      "title": "Financial Statements Overview",
+      "content": "**Income Statement (Profit & Loss)**\n- Revenue - Expenses = Net Profit\n- Covers a period (e.g., one year)\n\n**Balance Sheet (Statement of Financial Position)**\n- Assets = Liabilities + Equity\n- At a point in time (e.g., 31 December)\n\n**Cash Flow Statement**\n- Operating activities: cash from core business\n- Investing activities: buying/selling assets\n- Financing activities: borrowing, share issuance, dividends\n- Shows cash inflows and outflows during a period"
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su1_a1",
+        "prompt": "Explain the double entry principle and why total debits must equal total credits.",
+        "modelAnswer": "Every transaction has equal and opposite effects on at least two accounts. Total debits = total credits ensures the accounting equation (Assets = Liabilities + Equity) remains balanced. This dual recording system provides a built-in check for accuracy. If debits and credits do not balance, an error exists.",
+        "keyPoints": ["Each transaction affects two or more accounts", "Debits must always equal credits", "Maintains accounting equation balance", "Provides internal control check"]
+      },
+      {
+        "id": "su1_a2",
+        "prompt": "A company receives $15,000 cash for services rendered. Record the journal entry and explain which accounts are affected and why.",
+        "modelAnswer": "Dr Cash $15,000 (asset increases, debit) / Cr Service Revenue $15,000 (revenue increases, credit). Cash is an asset with a debit normal balance, so receiving cash increases it with a debit. Revenue has a credit normal balance, so earning revenue credits the account. The entry keeps Assets = Liabilities + Equity balanced.",
+        "keyPoints": ["Cash is a debit-normal asset", "Revenue has credit normal balance", "Entry keeps equation balanced", "Inflow of resources from operating activity"]
+      },
+      {
+        "id": "su1_a3",
+        "prompt": "List the five types of accounts and state whether each has a debit or credit normal balance.",
+        "modelAnswer": "Assets (Debit normal balance), Liabilities (Credit normal balance), Equity/Capital (Credit normal balance), Revenue (Credit normal balance), Expenses (Debit normal balance). The DEALER mnemonic helps remember: Dividends/Expenses/Assets increase with Debits; Liabilities/Equity/Revenue increase with Credits.",
+        "keyPoints": ["Assets = Debit normal balance", "Liabilities, Equity, Revenue = Credit normal balance", "Expenses = Debit normal balance", "DEALER mnemonic for quick recall"]
+      }
+    ]
+  }
+}

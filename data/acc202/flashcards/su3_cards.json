@@ -1,0 +1,78 @@
+{
+  "unitId": "su3",
+  "moduleId": "acc202",
+  "cards": [
+    {
+      "id": "acc_su3_f1",
+      "front": "What is gross profit margin?",
+      "back": "Gross Profit / Revenue × 100%. It measures the percentage of revenue remaining after deducting cost of goods sold.",
+      "concept": "Gross Margin"
+    },
+    {
+      "id": "acc_su3_f2",
+      "front": "What is net profit margin?",
+      "back": "Net Profit / Revenue × 100%. It measures the percentage of revenue remaining after all expenses. Shows overall profitability.",
+      "concept": "Net Profit Margin"
+    },
+    {
+      "id": "acc_su3_f3",
+      "front": "What is Return on Assets (ROA)?",
+      "back": "Net Profit / Average Total Assets × 100%. It measures how efficiently assets generate profit.",
+      "concept": "ROA"
+    },
+    {
+      "id": "acc_su3_f4",
+      "front": "What is Return on Equity (ROE)?",
+      "back": "Net Profit / Average Shareholders' Equity × 100%. It measures the return earned on shareholders' investment.",
+      "concept": "ROE"
+    },
+    {
+      "id": "acc_su3_f5",
+      "front": "What is the current ratio?",
+      "back": "Current Assets / Current Liabilities. Measures ability to pay short-term obligations. Ideal ratio is 2:1 or higher.",
+      "concept": "Current Ratio"
+    },
+    {
+      "id": "acc_su3_f6",
+      "front": "What is the acid-test (quick) ratio?",
+      "back": "(Current Assets - Inventory) / Current Liabilities. More conservative than current ratio; ideal is 1:1 or higher.",
+      "concept": "Acid-Test Ratio"
+    },
+    {
+      "id": "acc_su3_f7",
+      "front": "What is working capital?",
+      "back": "Current Assets - Current Liabilities. Shows the absolute dollar amount of short-term liquidity available for operations.",
+      "concept": "Working Capital"
+    },
+    {
+      "id": "acc_su3_f8",
+      "front": "What is the gearing ratio?",
+      "back": "Debt / (Debt + Equity) × 100%. Measures financial risk and leverage. High gearing (>50%) indicates heavy reliance on debt.",
+      "concept": "Gearing Ratio"
+    },
+    {
+      "id": "acc_su3_f9",
+      "front": "What is the interest coverage ratio?",
+      "back": "Operating Profit / Interest Expense. Shows ability to service debt. Higher is better; ideal is 2.5× or more.",
+      "concept": "Interest Coverage Ratio"
+    },
+    {
+      "id": "acc_su3_f10",
+      "front": "What is asset turnover?",
+      "back": "Revenue / Average Total Assets. Measures how efficiently assets generate revenue. Higher indicates better asset utilisation.",
+      "concept": "Asset Turnover"
+    },
+    {
+      "id": "acc_su3_f11",
+      "front": "What is Earnings Per Share (EPS)?",
+      "back": "Net Profit / Number of Shares Outstanding. Shows profit attributable to each share. Higher EPS is more attractive to investors.",
+      "concept": "EPS"
+    },
+    {
+      "id": "acc_su3_f12",
+      "front": "What is horizontal analysis?",
+      "back": "Comparing the same line items across different time periods to identify trends and percentage changes year-over-year.",
+      "concept": "Horizontal Analysis"
+    }
+  ]
+}

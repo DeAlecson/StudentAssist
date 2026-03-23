@@ -1,0 +1,78 @@
+{
+  "unitId": "su5",
+  "moduleId": "ict162",
+  "cards": [
+    {
+      "id": "su5_f1",
+      "front": "What is Tkinter?",
+      "back": "Python's standard library for building graphical user interfaces (GUIs). Provides widgets like buttons, labels, and entry fields for creating desktop applications.",
+      "concept": "GUI Basics"
+    },
+    {
+      "id": "su5_f2",
+      "front": "What is tk.Tk()?",
+      "back": "Creates the main application window. First step in any Tkinter program. Example: window = tk.Tk()",
+      "concept": "GUI Basics"
+    },
+    {
+      "id": "su5_f3",
+      "front": "What is a widget?",
+      "back": "A visual element in a GUI like Label, Button, Entry, Text, Frame. Each widget has properties (text, color) and can respond to events.",
+      "concept": "Widgets"
+    },
+    {
+      "id": "su5_f4",
+      "front": "What is a Label widget?",
+      "back": "Displays text or images on the window. Non-interactive. Example: tk.Label(window, text='Name:')",
+      "concept": "Widgets"
+    },
+    {
+      "id": "su5_f5",
+      "front": "What is a Button widget?",
+      "back": "A clickable button. Connected to a function via the command parameter. Example: tk.Button(window, text='Click', command=on_click)",
+      "concept": "Widgets"
+    },
+    {
+      "id": "su5_f6",
+      "front": "What is an Entry widget?",
+      "back": "Single-line text input field. Read value with .get(). Example: name = entry.get()",
+      "concept": "Widgets"
+    },
+    {
+      "id": "su5_f7",
+      "front": "What does pack() do?",
+      "back": "Stacks widgets vertically or horizontally. Simple layout manager. Example: button.pack()",
+      "concept": "Layout Managers"
+    },
+    {
+      "id": "su5_f8",
+      "front": "What does grid() do?",
+      "back": "Arranges widgets in rows and columns like a table. More control than pack(). Example: button.grid(row=0, column=1)",
+      "concept": "Layout Managers"
+    },
+    {
+      "id": "su5_f9",
+      "front": "What is StringVar?",
+      "back": "A Tkinter variable that binds to Entry widgets. Changes to StringVar automatically update the widget, and vice versa.",
+      "concept": "Data Binding"
+    },
+    {
+      "id": "su5_f10",
+      "front": "What is a command callback?",
+      "back": "A function connected to a button or other widget. Called when the widget is activated. Example: button.config(command=my_function)",
+      "concept": "Event Handling"
+    },
+    {
+      "id": "su5_f11",
+      "front": "What is messagebox?",
+      "back": "A Tkinter module for showing dialog boxes. Examples: messagebox.showinfo(), messagebox.showerror(), messagebox.askyesno()",
+      "concept": "Dialogs"
+    },
+    {
+      "id": "su5_f12",
+      "front": "What does mainloop() do?",
+      "back": "Starts the event loop that listens for user interactions. Keeps the window open. Must be called at the end of every Tkinter program.",
+      "concept": "GUI Basics"
+    }
+  ]
+}

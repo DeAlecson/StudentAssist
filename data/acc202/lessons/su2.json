@@ -1,0 +1,104 @@
+{
+  "id": "su2",
+  "title": "Accrual Accounting & Adjustments",
+  "moduleId": "acc202",
+  "difficulty": 2,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "Cash Basis vs Accrual Basis",
+      "content": "**Cash basis** records revenues when cash is received and expenses when cash is paid.\n\n**Accrual basis** records revenues when EARNED and expenses when INCURRED, regardless of cash flow.\n\nSUSS and most businesses use accrual accounting because it provides a more accurate picture of financial performance during a period. Cash basis can be misleading if payment timing differs from when value is exchanged."
+    },
+    {
+      "type": "definition",
+      "title": "The Revenue Recognition Principle",
+      "content": "Revenue is recognised (recorded) when it is **earned** — when the service is performed or goods are delivered — not when cash is received.\n\n**Example:** A consulting firm performs $10,000 of work in December but receives payment in January.\n- Accrual basis: Record $10,000 revenue in December (when earned)\n- Cash basis: Record $10,000 revenue in January (when cash received)\n\nAccrual accounting assigns the revenue to the correct period."
+    },
+    {
+      "type": "definition",
+      "title": "The Matching Principle",
+      "content": "Expenses must be matched to the period in which they help generate revenue.\n\n**Example:** A company uses electricity throughout December but receives the bill and pays in January.\n- Accrual basis: Record the expense in December (when consumed)\n- Cash basis: Record the expense in January (when paid)\n\nMatching ensures profit is calculated fairly by pairing revenues with the expenses incurred to generate them."
+    },
+    {
+      "type": "concept",
+      "title": "Prepayments (Prepaid Expenses)",
+      "content": "A prepayment occurs when cash is paid **before** the expense is incurred.\n\n**Example:** Paying 12 months of insurance $12,000 in January.\n- Initial entry (January): Dr Prepaid Insurance $12,000, Cr Cash $12,000\n- Monthly adjusting entry (Jan-Dec): Dr Insurance Expense $1,000, Cr Prepaid Insurance $1,000\n\nThe prepaid asset is gradually expensed as the benefit is consumed. At period end, prepaid = unexpired portion."
+    },
+    {
+      "type": "concept",
+      "title": "Accrued Expenses (Expenses Payable)",
+      "content": "An accrued expense is incurred **but not yet paid**.\n\n**Example:** December salaries $10,000 are earned by employees in December but paid in January.\n- December adjusting entry: Dr Salary Expense $10,000, Cr Salaries Payable $10,000\n- January payment: Dr Salaries Payable $10,000, Cr Cash $10,000\n\nAccruing ensures the expense is recorded in the period incurred, not when payment is made."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Identify Accrual vs Prepayment",
+      "content": "Test your ability to distinguish between prepayments and accruals.",
+      "question": {
+        "type": "mcq",
+        "prompt": "A company pays 6 months rent ($6,000) on 1 October. By 31 December, what adjustment is needed?",
+        "choices": [
+          "Record $6,000 as expense",
+          "Record $3,000 as expense and $3,000 as prepaid asset",
+          "Record $6,000 as prepaid asset",
+          "No adjustment needed"
+        ],
+        "answer": 1,
+        "explanation": "Three months have passed (October, November, December), so $3,000 is expense. $3,000 remains prepaid for January-March. The prepayment must be split."
+      }
+    },
+    {
+      "type": "concept",
+      "title": "Accrued Revenue (Revenue Receivable)",
+      "content": "Revenue is earned **but cash has not yet been received**.\n\n**Example:** A service firm completes a $5,000 project in December but invoices the customer in January.\n- December adjusting entry: Dr Accounts Receivable $5,000, Cr Service Revenue $5,000\n- January collection: Dr Cash $5,000, Cr Accounts Receivable $5,000\n\nAccruing revenue ensures it is recorded in the period earned, maintaining matching principle."
+    },
+    {
+      "type": "concept",
+      "title": "Unearned Revenue (Deferred Revenue)",
+      "content": "Cash is received **before** the service is performed. This is a **LIABILITY**, not revenue, until the service is delivered.\n\n**Example:** A customer pays $5,000 deposit in November for work to be done in December.\n- November entry: Dr Cash $5,000, Cr Unearned Revenue $5,000 (liability)\n- December entry (on completion): Dr Unearned Revenue $5,000, Cr Service Revenue $5,000\n\nUnearned revenue represents an obligation to perform — it is not income until earned."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Unearned Revenue Treatment",
+      "content": "Understand how to handle customer advances.",
+      "question": {
+        "type": "mcq",
+        "prompt": "A client pays $3,000 in advance for 3 months of consulting (January-March). At 31 January, what does the balance sheet show for the remaining advance?",
+        "choices": [
+          "Revenue of $3,000",
+          "Asset of $2,000",
+          "Liability of $2,000",
+          "Expense of $1,000"
+        ],
+        "answer": 2,
+        "explanation": "$1,000 is earned in January and becomes revenue. $2,000 is still owed as a service (liability — unearned revenue). Liabilities appear on the balance sheet."
+      }
+    },
+    {
+      "type": "definition",
+      "title": "Inventory and Receivables Treatments",
+      "content": "**Inventory:** Recorded at cost, adjusted downward if obsolete or damaged (Lower of Cost or Market principle). Ensures assets are not overstated.\n\n**Allowance for Doubtful Debts:** Accounts receivable should be reduced by an estimated amount of uncollectible receivables. This is a contra-asset account that reduces receivables on the balance sheet and matches the expense (bad debt expense) to revenue.\n\nBoth are examples of the matching principle: assets are valued conservatively, and expenses are matched to revenues."
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su2_a1",
+        "prompt": "Explain the difference between accrual and cash basis accounting, and give one example of each.",
+        "modelAnswer": "Accrual basis records revenue when earned and expenses when incurred, regardless of cash flow. Cash basis only records when cash moves in or out. Example accrual: December consulting revenue recorded even if payment arrives in January. Example cash basis: same revenue recorded only in January when cash received. Accrual gives a more accurate picture of performance in each period.",
+        "keyPoints": ["Accrual: revenue earned/expense incurred basis", "Cash: cash receipt/payment basis", "Accrual matches revenues and expenses to correct period", "Provides more accurate periodic profit"]
+      },
+      {
+        "id": "su2_a2",
+        "prompt": "A company pays 12 months insurance of $24,000 on 1 July. The financial year ends 31 December. What is the accounting treatment?",
+        "modelAnswer": "On 1 July: Dr Prepaid Insurance $24,000, Cr Cash $24,000 (record the prepayment). By 31 December (6 months used): Dr Insurance Expense $12,000, Cr Prepaid Insurance $12,000 (adjusting entry). Balance sheet at 31 Dec shows Prepaid Insurance (asset) $12,000. Income statement shows Insurance Expense $12,000. The remaining 6 months stay as an asset.",
+        "keyPoints": ["Initial payment creates prepaid asset", "6 months expensed by year end", "Remaining 6 months stay as asset", "Prepaid = unexpired portion"]
+      },
+      {
+        "id": "su2_a3",
+        "prompt": "What is unearned revenue and how should it be treated on the balance sheet?",
+        "modelAnswer": "Unearned revenue is cash received before a service is performed or goods delivered. It is a LIABILITY because the company still owes the customer the service. It appears under current liabilities on the balance sheet (if expected to be satisfied within a year). As the service is performed, it transfers from liability to revenue through an adjusting entry.",
+        "keyPoints": ["Cash received before service = liability", "Recorded as Unearned Revenue", "Transferred to Revenue as service completed", "Represents obligation, not income"]
+      }
+    ]
+  }
+}

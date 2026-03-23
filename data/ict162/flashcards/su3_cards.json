@@ -1,0 +1,78 @@
+{
+  "unitId": "su3",
+  "moduleId": "ict162",
+  "cards": [
+    {
+      "id": "su3_f1",
+      "front": "What is inheritance?",
+      "back": "A mechanism that allows a child class to inherit attributes and methods from a parent class. Enables code reuse and creates an 'is-a' relationship.",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f2",
+      "front": "What is an 'is-a' relationship?",
+      "back": "A relationship where one class is a specialized version of another. Example: Dog is-a Animal. Dog inherits from Animal and adds dog-specific behavior.",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f3",
+      "front": "What does super() do?",
+      "back": "Gives access to parent class methods. Use super().__init__() to call the parent constructor, or super().method() to call parent methods.",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f4",
+      "front": "What is method overriding?",
+      "back": "Redefining a parent method in a child class with the same name but different implementation. Allows child classes to customize behavior.",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f5",
+      "front": "What is polymorphism?",
+      "back": "The ability of objects of different classes to respond to the same method call in different ways. Example: Circle.area() and Square.area() use different formulas.",
+      "concept": "Polymorphism"
+    },
+    {
+      "id": "su3_f6",
+      "front": "What is an abstract class?",
+      "back": "A class that cannot be instantiated directly. Serves as a template for subclasses. Defined using ABC module with @abstractmethod decorators.",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f7",
+      "front": "What is @abstractmethod?",
+      "back": "A decorator that marks a method as abstract. Any subclass must implement (override) this method. Enforces a contract on child classes.",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f8",
+      "front": "What is ABC (Abstract Base Class)?",
+      "back": "A Python module (from abc import ABC) used to create abstract classes. Child classes must inherit from ABC and implement all abstract methods.",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f9",
+      "front": "What is multiple inheritance?",
+      "back": "A class inheriting from multiple parent classes. Syntax: class Child(Parent1, Parent2):. Allows combining features from multiple sources.",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f10",
+      "front": "What does isinstance() do?",
+      "back": "Checks if an object is an instance of a class, including parent classes. Example: isinstance(dog, Animal) returns True if dog is an Animal or subclass.",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f11",
+      "front": "What is a child class?",
+      "back": "A class that inherits from a parent class. Also called derived class or subclass. Syntax: class Dog(Animal):",
+      "concept": "Inheritance"
+    },
+    {
+      "id": "su3_f12",
+      "front": "What is a parent class?",
+      "back": "A class that is inherited by child classes. Also called base class or superclass. Defines shared attributes and methods for child classes.",
+      "concept": "Inheritance"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "su3",
+  "title": "Inheritance",
+  "moduleId": "ict162",
+  "difficulty": 2,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is Inheritance?",
+      "content": "# Inheritance: Reusing Class Structure\n\n**Inheritance** is a mechanism that allows you to create a new class based on an existing class. The new class **inherits** all attributes and methods from the existing class, and can add or override behavior.\n\nInheritance creates an **\"is-a\" relationship**:\n- A `Car` **is-a** `Vehicle`\n- A `Dog` **is-a** `Animal`\n- A `Manager` **is-a** `Employee`\n\nThe **parent class** (or base class) contains shared behavior. The **child class** (or derived class) extends or specializes that behavior. This reduces code duplication and makes designs more maintainable."
+    },
+    {
+      "type": "definition",
+      "title": "The Is-A Relationship",
+      "content": "# Understanding Is-A\n\n**Inheritance** (is-a):\n```python\nclass Vehicle:\n    def __init__(self, brand):\n        self.brand = brand\n    \n    def start(self):\n        return \"Vehicle starting\"\n\nclass Car(Vehicle):  # Car IS-A Vehicle\n    pass\n\ncar = Car(\"Toyota\")\nprint(car.brand)   # Inherited from Vehicle\nprint(car.start()) # Inherited from Vehicle\n```\n\n**Composition** (has-a):\n```python\nclass Engine:\n    pass\n\nclass Car:  # Car HAS-A Engine\n    def __init__(self, engine):\n        self.engine = engine\n```\n\nUse inheritance when there's a true is-a relationship. Use composition when there's a has-a relationship."
+    },
+    {
+      "type": "example",
+      "title": "Creating a Child Class",
+      "content": "# Class Hierarchy\n\n```python\nclass Animal:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def speak(self):\n        return \"Some sound\"\n\nclass Dog(Animal):  # Dog inherits from Animal\n    def speak(self):  # Override method\n        return f\"{self.name} barks: Woof!\"\n\ndog = Dog(\"Buddy\", 3)\nprint(dog.name)    # Inherited attribute\nprint(dog.speak()) # Overridden method\n```\n\nThe `Dog` class inherits `name` and `age` from `Animal`, but overrides the `speak()` method to provide dog-specific behavior."
+    },
+    {
+      "type": "definition",
+      "title": "super() and Parent Initialization",
+      "content": "# Calling Parent Methods with super()\n\nUse `super().__init__()` to call the parent class's constructor:\n\n```python\nclass Vehicle:\n    def __init__(self, brand, year):\n        self.brand = brand\n        self.year = year\n\nclass Car(Vehicle):\n    def __init__(self, brand, year, num_doors):\n        super().__init__(brand, year)  # Call parent __init__\n        self.num_doors = num_doors\n\ncar = Car(\"Toyota\", 2022, 4)\nprint(car.brand)      # Toyota (set by parent __init__)\nprint(car.num_doors)  # 4 (set by child __init__)\n```\n\n`super()` gives you access to parent class methods. This ensures the parent initialization runs before the child adds its own attributes."
+    },
+    {
+      "type": "example",
+      "title": "Method Overriding",
+      "content": "# Override Parent Methods\n\nYou can redefine a parent method in the child class:\n\n```python\nclass Employee:\n    def __init__(self, name, salary):\n        self.name = name\n        self.salary = salary\n    \n    def calculate_bonus(self):\n        return self.salary * 0.05  # 5% bonus\n\nclass Manager(Employee):\n    def calculate_bonus(self):  # Override\n        return self.salary * 0.10  # 10% bonus\n\nemp = Employee(\"Alice\", 50000)\nmgr = Manager(\"Bob\", 70000)\n\nprint(emp.calculate_bonus())  # 2500\nprint(mgr.calculate_bonus())  # 7000\n```\n\nOverriding allows child classes to customize behavior while maintaining the same interface."
+    },
+    {
+      "type": "definition",
+      "title": "Calling Parent Methods via super()",
+      "content": "# Using super() in Overridden Methods\n\nYou can call the parent method and extend it:\n\n```python\nclass Animal:\n    def speak(self):\n        return \"Making a sound\"\n\nclass Dog(Animal):\n    def speak(self):  # Override\n        parent_sound = super().speak()  # Call parent method\n        return f\"{parent_sound} - Woof!\"\n\ndog = Dog()\nprint(dog.speak())  # Output: Making a sound - Woof!\n```\n\nThis combines parent behavior with child-specific additions, avoiding code duplication."
+    },
+    {
+      "type": "example",
+      "title": "Abstract Classes",
+      "content": "# Abstract Classes and Abstract Methods\n\nAn abstract class cannot be instantiated directly; it serves as a template for subclasses. Use the `ABC` module:\n\n```python\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):  # Abstract class\n    @abstractmethod\n    def area(self):\n        pass  # Subclasses MUST implement this\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n    \n    def area(self):\n        return 3.14159 * self.radius ** 2\n\n# shape = Shape()  # ERROR: Cannot instantiate abstract class\ncircle = Circle(5)\nprint(circle.area())  # 78.54975\n```\n\nAbstract methods enforce a contract: all subclasses must implement them."
+    },
+    {
+      "type": "definition",
+      "title": "Polymorphism",
+      "content": "# Polymorphism: Same Method, Different Behavior\n\n**Polymorphism** means \"many forms.\" Objects of different classes can respond to the same method call in different ways:\n\n```python\nclass Animal:\n    def speak(self):\n        pass\n\nclass Dog(Animal):\n    def speak(self):\n        return \"Woof!\"\n\nclass Cat(Animal):\n    def speak(self):\n        return \"Meow!\"\n\ndef make_animal_speak(animal):\n    print(animal.speak())\n\ndog = Dog()\ncat = Cat()\n\nmake_animal_speak(dog)   # Output: Woof!\nmake_animal_speak(cat)   # Output: Meow!\n```\n\nThe same function works with different object types. Each object responds according to its own implementation."
+    },
+    {
+      "type": "definition",
+      "title": "isinstance() Type Checking",
+      "content": "# Checking Object Types\n\nUse `isinstance()` to check if an object is an instance of a class (including parent classes):\n\n```python\nclass Animal:\n    pass\n\nclass Dog(Animal):\n    pass\n\ndog = Dog()\n\nprint(isinstance(dog, Dog))      # True\nprint(isinstance(dog, Animal))   # True (Dog inherits from Animal)\nprint(isinstance(dog, str))      # False\n\nif isinstance(dog, Animal):\n    print(\"This is an animal\")  # Runs\n```\n\n`isinstance()` checks the entire inheritance hierarchy, making it useful for type validation."
+    },
+    {
+      "type": "checkpoint",
+      "title": "When to Use super().__init__()",
+      "content": "Use super().__init__() in a child class's constructor to call the parent class's constructor. This ensures the parent's initialization logic runs first, setting up inherited attributes.",
+      "question": {
+        "type": "mcq",
+        "prompt": "When should you call super().__init__() in a child class?",
+        "choices": [
+          "Never, it's optional and rarely needed",
+          "Always, at the beginning of the child's __init__ method, to initialize parent attributes",
+          "Only when the parent class has more than one method",
+          "Only in multiple inheritance situations"
+        ],
+        "answer": 1,
+        "explanation": "super().__init__() should be called to initialize the parent class's attributes. This ensures the full object is properly set up before the child adds its own attributes."
+      }
+    },
+    {
+      "type": "checkpoint",
+      "title": "What is an Abstract Method?",
+      "content": "An abstract method is a method defined in an abstract class that must be implemented by all child classes. It enforces a contract ensuring consistency.",
+      "question": {
+        "type": "mcq",
+        "prompt": "What happens if you define an abstract method in a parent class but forget to implement it in a child class?",
+        "choices": [
+          "The method is silently ignored",
+          "Python raises an error when you try to instantiate the child class",
+          "The parent's default implementation is used automatically",
+          "Abstract methods are only suggestions and don't enforce anything"
+        ],
+        "answer": 1,
+        "explanation": "Python (with ABC module) prevents instantiation of any class that doesn't implement all abstract methods from its parents."
+      }
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su3_a1",
+        "prompt": "Explain polymorphism with a concrete example involving at least two different classes that inherit from a parent.",
+        "modelAnswer": "Polymorphism allows objects of different classes to respond to the same method call with different behavior. Example: Create a Shape abstract class with an area() method. Then create Circle and Rectangle classes that both inherit from Shape and implement area() differently. When you call shape.area() on either a Circle or Rectangle, Python calls the appropriate implementation. This allows you to write code that works with any Shape without knowing its specific type.",
+        "keyPoints": [
+          "Same method name, different implementations",
+          "Works through inheritance and method overriding",
+          "Allows flexible, extensible code",
+          "Parent classes define the interface",
+          "Child classes provide specific implementations"
+        ]
+      },
+      {
+        "id": "su3_a2",
+        "prompt": "Design an Animal hierarchy with parent class Animal and child classes Dog and Cat. Include constructors with super(), a speak() method in parent, and overridden speak() methods in children. Provide the code.",
+        "modelAnswer": "```python\nclass Animal:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def speak(self):\n        return \"Making a sound\"\n\nclass Dog(Animal):\n    def __init__(self, name, age, breed):\n        super().__init__(name, age)\n        self.breed = breed\n    \n    def speak(self):\n        return f\"{self.name} barks: Woof!\"\n\nclass Cat(Animal):\n    def __init__(self, name, age, color):\n        super().__init__(name, age)\n        self.color = color\n    \n    def speak(self):\n        return f\"{self.name} meows: Meow!\"\n```",
+        "keyPoints": [
+          "Animal is parent class with name and age",
+          "Dog and Cat inherit from Animal",
+          "super().__init__() calls parent constructor",
+          "Each child adds its own attributes (breed, color)",
+          "speak() overridden in each child with different behavior"
+        ]
+      },
+      {
+        "id": "su3_a3",
+        "prompt": "Why use abstract classes? What problem do they solve?",
+        "modelAnswer": "Abstract classes solve the problem of enforcing consistency across a family of related classes. They define a contract that all subclasses must follow. Without abstract classes, a developer might forget to implement required methods, leading to bugs. Abstract classes prevent instantiation of incomplete implementations and make the API clearer by stating exactly what methods subclasses must provide. They also document the intended structure of the class hierarchy.",
+        "keyPoints": [
+          "Enforce consistent interface across subclasses",
+          "Prevent accidental instantiation of incomplete classes",
+          "Document required methods",
+          "Make code intentions clear",
+          "Enable compile-time (instantiation-time) error checking"
+        ]
+      }
+    ]
+  }
+}

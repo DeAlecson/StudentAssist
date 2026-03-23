@@ -1,0 +1,78 @@
+{
+  "unitId": "su4",
+  "moduleId": "ict162",
+  "cards": [
+    {
+      "id": "su4_f1",
+      "front": "What is an exception?",
+      "back": "An error that occurs during program execution. Instead of crashing, Python allows you to catch and handle exceptions gracefully.",
+      "concept": "Exceptions"
+    },
+    {
+      "id": "su4_f2",
+      "front": "What is a try/except block?",
+      "back": "A structure that catches and handles exceptions. Code in try block runs; if an exception occurs, the except block handles it.",
+      "concept": "Exception Handling"
+    },
+    {
+      "id": "su4_f3",
+      "front": "What is ValueError?",
+      "back": "An exception raised when a function receives an argument of the correct type but an inappropriate value. Example: int('abc') raises ValueError.",
+      "concept": "Built-in Exceptions"
+    },
+    {
+      "id": "su4_f4",
+      "front": "What is TypeError?",
+      "back": "An exception raised when an operation or function is applied to an object of an inappropriate type. Example: 'string' + 5 raises TypeError.",
+      "concept": "Built-in Exceptions"
+    },
+    {
+      "id": "su4_f5",
+      "front": "What is ZeroDivisionError?",
+      "back": "An exception raised when attempting to divide by zero. Example: 10 / 0 raises ZeroDivisionError.",
+      "concept": "Built-in Exceptions"
+    },
+    {
+      "id": "su4_f6",
+      "front": "What does the finally block do?",
+      "back": "Runs regardless of whether an exception occurred. Used for cleanup tasks like closing files or releasing resources.",
+      "concept": "Exception Handling"
+    },
+    {
+      "id": "su4_f7",
+      "front": "What does the else clause do?",
+      "back": "In a try/except/else block, the else runs only if no exception occurred in the try block. Used to separate normal processing from error handling.",
+      "concept": "Exception Handling"
+    },
+    {
+      "id": "su4_f8",
+      "front": "What does the raise keyword do?",
+      "back": "Manually throws (raises) an exception. Used to enforce business rules. Example: raise ValueError('Age must be positive')",
+      "concept": "Exception Handling"
+    },
+    {
+      "id": "su4_f9",
+      "front": "What is a custom exception?",
+      "back": "A user-defined exception created by inheriting from Exception. Example: class InsufficientFundsError(Exception): pass",
+      "concept": "Custom Exceptions"
+    },
+    {
+      "id": "su4_f10",
+      "front": "What is the Exception class?",
+      "back": "The base class for all built-in exceptions. All custom exceptions should inherit from it to work with try/except.",
+      "concept": "Custom Exceptions"
+    },
+    {
+      "id": "su4_f11",
+      "front": "What is input validation?",
+      "back": "Checking that user input meets requirements before processing. Uses exceptions or if/else to ensure data integrity.",
+      "concept": "Exception Handling"
+    },
+    {
+      "id": "su4_f12",
+      "front": "What is the exception hierarchy?",
+      "back": "A tree of exception classes, with Exception at the base. Different exception types inherit from it, creating a structure for specific error handling.",
+      "concept": "Built-in Exceptions"
+    }
+  ]
+}

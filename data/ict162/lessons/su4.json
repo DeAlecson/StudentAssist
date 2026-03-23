@@ -1,0 +1,122 @@
+{
+  "id": "su4",
+  "title": "Exception Handling",
+  "moduleId": "ict162",
+  "difficulty": 2,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What are Exceptions?",
+      "content": "# Exceptions: Handling Errors Gracefully\n\nAn **exception** is an error that occurs during program execution. Instead of crashing, Python allows you to catch and handle exceptions gracefully.\n\nCommon exceptions:\n- `ValueError`: Invalid value passed (e.g., converting \"abc\" to int)\n- `TypeError`: Wrong type passed (e.g., adding string + number)\n- `ZeroDivisionError`: Division by zero\n- `FileNotFoundError`: File doesn't exist\n- `IndexError`: Index out of range\n- `KeyError`: Dictionary key doesn't exist\n\n**Exception handling** lets you anticipate errors and respond to them without crashing."
+    },
+    {
+      "type": "definition",
+      "title": "Try/Except Blocks",
+      "content": "# Catching Exceptions\n\nThe `try/except` block catches and handles exceptions:\n\n```python\ntry:\n    # Code that might raise an exception\n    age = int(input(\"Enter your age: \"))  # Might raise ValueError\n    print(f\"You are {age} years old\")\nexcept ValueError:\n    # Handle the specific error\n    print(\"Please enter a valid number\")\n```\n\nIf the code in `try` raises a `ValueError`, Python jumps to the `except` block instead of crashing.\n\nYou can catch multiple exception types:\n```python\ntry:\n    result = int(input()) / int(input())\nexcept ValueError:\n    print(\"Please enter numbers\")\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\n```"
+    },
+    {
+      "type": "example",
+      "title": "Catching Specific Exceptions",
+      "content": "# Being Specific with Exception Handling\n\n```python\ntry:\n    numbers = [1, 2, 3]\n    print(numbers[5])  # IndexError: index out of range\nexcept IndexError:\n    print(\"Invalid index\")\n\ntry:\n    data = {\"name\": \"Alice\"}\n    print(data[\"age\"])  # KeyError: 'age'\nexcept KeyError:\n    print(\"Key not found\")\n\ntry:\n    x = 10 / 0  # ZeroDivisionError\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\n```\n\nCatching specific exceptions makes your error handling more precise and informative."
+    },
+    {
+      "type": "definition",
+      "title": "The else Clause",
+      "content": "# else: Code That Runs If No Exception Occurs\n\nThe `else` clause runs only if no exception was raised in the `try` block:\n\n```python\ntry:\n    number = int(input(\"Enter a number: \"))\nexcept ValueError:\n    print(\"Invalid input\")\nelse:\n    print(f\"You entered: {number}\")  # Runs only if int() succeeded\n    print(f\"Double: {number * 2}\")\n```\n\nThe `else` block separates normal processing from error handling, making code cleaner and more readable."
+    },
+    {
+      "type": "definition",
+      "title": "The finally Clause",
+      "content": "# finally: Code That Always Runs\n\nThe `finally` clause runs regardless of whether an exception occurred:\n\n```python\ntry:\n    file = open(\"data.txt\", \"r\")\n    content = file.read()\nexcept FileNotFoundError:\n    print(\"File not found\")\nfinally:\n    file.close()  # Always close the file, even if error occurred\n```\n\nThe `finally` block is essential for cleanup tasks (closing files, releasing resources, etc.).\n\n```python\ntry:\n    result = 10 / int(input())\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\nfinally:\n    print(\"Program finished\")  # Always prints\n```"
+    },
+    {
+      "type": "example",
+      "title": "Raising Exceptions",
+      "content": "# Throwing Exceptions with raise\n\nYou can manually raise an exception:\n\n```python\ndef validate_age(age):\n    if age < 0:\n        raise ValueError(\"Age cannot be negative\")\n    if age > 150:\n        raise ValueError(\"Age seems unrealistic\")\n    return age\n\ntry:\n    user_age = validate_age(-5)\nexcept ValueError as e:\n    print(f\"Error: {e}\")  # Output: Error: Age cannot be negative\n```\n\nThe `raise` statement stops execution and jumps to the nearest `except` block that can handle it. This is useful for input validation and enforcing business rules."
+    },
+    {
+      "type": "definition",
+      "title": "Custom Exception Classes",
+      "content": "# Creating Your Own Exceptions\n\nYou can define custom exceptions by inheriting from `Exception`:\n\n```python\nclass InsufficientFundsError(Exception):\n    pass\n\nclass BankAccount:\n    def __init__(self, balance):\n        self.balance = balance\n    \n    def withdraw(self, amount):\n        if amount > self.balance:\n            raise InsufficientFundsError(f\"Only ${self.balance} available\")\n        self.balance -= amount\n\naccount = BankAccount(100)\ntry:\n    account.withdraw(150)\nexcept InsufficientFundsError as e:\n    print(f\"Error: {e}\")  # Output: Error: Only $100 available\n```\n\nCustom exceptions make your code more expressive and allow callers to handle domain-specific errors."
+    },
+    {
+      "type": "example",
+      "title": "Input Validation Using Exceptions",
+      "content": "# Validation with Exception Handling\n\n```python\nclass User:\n    def __init__(self, username, age):\n        if not isinstance(username, str) or len(username) < 3:\n            raise ValueError(\"Username must be at least 3 characters\")\n        if not isinstance(age, int) or age < 0:\n            raise ValueError(\"Age must be a positive integer\")\n        self.username = username\n        self.age = age\n\ntry:\n    user = User(\"ab\", 25)  # Username too short\nexcept ValueError as e:\n    print(f\"Invalid user: {e}\")\n\ntry:\n    user = User(\"alice\", -5)  # Negative age\nexcept ValueError as e:\n    print(f\"Invalid user: {e}\")\n\nuser = User(\"alice\", 25)  # Valid\nprint(f\"User {user.username} created\")\n```\n\nExceptions are a powerful way to validate input and ensure data integrity."
+    },
+    {
+      "type": "checkpoint",
+      "title": "What Does finally Do?",
+      "content": "The finally block runs regardless of whether an exception occurred. It is used for cleanup tasks that must always happen, like closing files or releasing resources.",
+      "question": {
+        "type": "mcq",
+        "prompt": "In what situation would the finally block NOT execute?",
+        "choices": [
+          "When an exception is caught",
+          "When no exception occurs",
+          "Never — finally always executes (except in rare cases like sys.exit())",
+          "When the exception is re-raised"
+        ],
+        "answer": 2,
+        "explanation": "Finally blocks almost always execute. They run whether an exception occurred or not, and even if an exception is caught. They're used for cleanup that must always happen."
+      }
+    },
+    {
+      "type": "checkpoint",
+      "title": "Creating a Custom Exception",
+      "content": "A custom exception is created by inheriting from the Exception class. This allows you to raise and catch domain-specific errors.",
+      "question": {
+        "type": "mcq",
+        "prompt": "How do you create a custom exception called 'InvalidInputError'?",
+        "choices": [
+          "raise InvalidInputError()  # You cannot define custom exceptions",
+          "class InvalidInputError(Exception): pass",
+          "def InvalidInputError(): pass",
+          "import InvalidInputError from builtins"
+        ],
+        "answer": 1,
+        "explanation": "Custom exceptions are created by defining a class that inherits from Exception. Then you can raise and catch it like any built-in exception."
+      }
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "id": "su4_a1",
+        "prompt": "Why should you use exceptions for validation instead of returning error codes or using if/else statements?",
+        "modelAnswer": "Exceptions are better for validation because they separate normal flow from error handling, making code cleaner. With exceptions, you can write the happy-path code in try, and handle errors in except blocks. This avoids deep nesting of if/else statements and makes intentions clear. Exceptions can be caught at different levels, allowing flexible error handling. Error codes require manual checking at every step, which is error-prone and clutters the code.",
+        "keyPoints": [
+          "Separates normal flow from error handling",
+          "Cleaner, more readable code",
+          "Avoids deep if/else nesting",
+          "Can be caught at different levels",
+          "Forces caller to handle errors explicitly"
+        ]
+      },
+      {
+        "id": "su4_a2",
+        "prompt": "Design a custom exception class called 'InvalidStudentIDError' that stores the invalid ID. Write code to raise and catch it in a validate_student_id() function.",
+        "modelAnswer": "```python\nclass InvalidStudentIDError(Exception):\n    def __init__(self, student_id):\n        self.student_id = student_id\n        super().__init__(f\"Invalid student ID: {student_id}\")\n\ndef validate_student_id(sid):\n    if not isinstance(sid, str) or len(sid) != 6 or not sid.isdigit():\n        raise InvalidStudentIDError(sid)\n    return sid\n\ntry:\n    validate_student_id(\"ABC123\")\nexcept InvalidStudentIDError as e:\n    print(f\"Error: {e}, ID was: {e.student_id}\")\n```",
+        "keyPoints": [
+          "Custom exception inherits from Exception",
+          "__init__ stores relevant data (student_id)",
+          "super().__init__() sets error message",
+          "raise statement throws the exception",
+          "except block catches and accesses exception data"
+        ]
+      },
+      {
+        "id": "su4_a3",
+        "prompt": "Write a try/except/else/finally block that reads a number, divides 100 by it, and always prints a completion message.",
+        "modelAnswer": "```python\ntry:\n    number = int(input(\"Enter a number: \"))\n    result = 100 / number\nexcept ValueError:\n    print(\"Please enter a valid integer\")\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\nelse:\n    print(f\"100 / {number} = {result}\")\nfinally:\n    print(\"Calculation complete\")\n```",
+        "keyPoints": [
+          "try block contains risky code",
+          "except catches ValueError and ZeroDivisionError",
+          "else runs only if no exception in try",
+          "finally always runs last",
+          "Program completes cleanly regardless of errors"
+        ]
+      }
+    ]
+  }
+}

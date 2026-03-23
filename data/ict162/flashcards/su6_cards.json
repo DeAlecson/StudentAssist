@@ -1,0 +1,78 @@
+{
+  "unitId": "su6",
+  "moduleId": "ict162",
+  "cards": [
+    {
+      "id": "su6_f1",
+      "front": "What is cohesion?",
+      "back": "The degree to which elements of a class are related to its purpose. High cohesion = each class does one job well. Low cohesion = class does many unrelated things.",
+      "concept": "Design Principles"
+    },
+    {
+      "id": "su6_f2",
+      "front": "What is coupling?",
+      "back": "The degree of dependency between classes. Low coupling = classes depend on abstractions, not internals. High coupling = tight dependencies, hard to change.",
+      "concept": "Design Principles"
+    },
+    {
+      "id": "su6_f3",
+      "front": "What is SRP (Single Responsibility Principle)?",
+      "back": "A class should have one reason to change. One job, one responsibility. If a class does many things, split it into smaller, focused classes.",
+      "concept": "SOLID"
+    },
+    {
+      "id": "su6_f4",
+      "front": "What is OCP (Open/Closed Principle)?",
+      "back": "Classes should be open for extension but closed for modification. Add new behavior via inheritance, not by changing existing code.",
+      "concept": "SOLID"
+    },
+    {
+      "id": "su6_f5",
+      "front": "What is LSP (Liskov Substitution Principle)?",
+      "back": "Child classes must be substitutable for parent classes. Any child can be used wherever the parent is expected without breaking the program.",
+      "concept": "SOLID"
+    },
+    {
+      "id": "su6_f6",
+      "front": "What is ISP (Interface Segregation Principle)?",
+      "back": "Don't force classes to implement methods they don't use. Create smaller, focused interfaces. Clients depend only on what they need.",
+      "concept": "SOLID"
+    },
+    {
+      "id": "su6_f7",
+      "front": "What is DIP (Dependency Inversion Principle)?",
+      "back": "Depend on abstractions, not concrete implementations. Allows swapping implementations easily and improves testability via mocking.",
+      "concept": "SOLID"
+    },
+    {
+      "id": "su6_f8",
+      "front": "What is a God class?",
+      "back": "An anti-pattern: a class that knows and does everything. Hard to understand, test, reuse, and maintain. Solution: split by responsibility.",
+      "concept": "Anti-patterns"
+    },
+    {
+      "id": "su6_f9",
+      "front": "What is refactoring?",
+      "back": "Improving code structure without changing its behavior. Common example: breaking a God class into smaller, focused classes.",
+      "concept": "Design Principles"
+    },
+    {
+      "id": "su6_f10",
+      "front": "What is SOLID?",
+      "back": "An acronym for 5 design principles: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion.",
+      "concept": "SOLID"
+    },
+    {
+      "id": "su6_f11",
+      "front": "What is dependency injection?",
+      "back": "Passing dependencies to a class constructor instead of creating them internally. Enables testability and loose coupling.",
+      "concept": "Design Principles"
+    },
+    {
+      "id": "su6_f12",
+      "front": "What is an interface?",
+      "back": "A contract defining what methods a class must implement. In Python, abstract classes (ABC) define interfaces. Enables polymorphism.",
+      "concept": "Design Principles"
+    }
+  ]
+}

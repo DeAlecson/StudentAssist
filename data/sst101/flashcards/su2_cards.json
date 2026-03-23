@@ -1,0 +1,19 @@
+{
+  "unitId": "su2",
+  "moduleId": "sst101",
+  "cards": [
+    {"id": "su2_f1", "front": "What is the implementation gap?", "back": "The disconnect between an organization's stated strategy and the projects actually executed. Occurs when projects are selected for wrong reasons.", "concept": "Strategic Management"},
+    {"id": "su2_f2", "front": "What does SMART stand for?", "back": "Specific, Measurable, Achievable, Realistic, Timely. Converts vague goals into actionable objectives.", "concept": "Strategic Management"},
+    {"id": "su2_f3", "front": "What is SWOT analysis?", "back": "Strengths and Weaknesses (internal) + Opportunities and Threats (external). Assesses strategic position to identify projects.", "concept": "Strategic Management"},
+    {"id": "su2_f4", "front": "What is a strength in SWOT?", "back": "An internal capability or advantage the organization has. Examples: strong brand, skilled workforce, efficient processes.", "concept": "SWOT"},
+    {"id": "su2_f5", "front": "What is a weakness in SWOT?", "back": "An internal limitation or disadvantage. Examples: outdated technology, lack of expertise, weak processes.", "concept": "SWOT"},
+    {"id": "su2_f6", "front": "What is an opportunity in SWOT?", "back": "An external favorable trend or possibility. Examples: emerging market, new regulations, changing customer preferences.", "concept": "SWOT"},
+    {"id": "su2_f7", "front": "What is a threat in SWOT?", "back": "An external unfavorable change or risk. Examples: new competitors, market decline, regulatory restrictions.", "concept": "SWOT"},
+    {"id": "su2_f8", "front": "What is the WBS?", "back": "Work Breakdown Structure — deliverable-oriented decomposition that answers 'What work must be done?' Shows what will be delivered, not how or when.", "concept": "WBS"},
+    {"id": "su2_f9", "front": "What is a work package?", "back": "The lowest level of the WBS where work is estimated, scheduled, assigned, and costed. Where accountability is established.", "concept": "WBS"},
+    {"id": "su2_f10", "front": "What is a scope statement?", "back": "Defines project objective, deliverables, limits (what is included), and exclusions (what is NOT included). Prevents scope creep.", "concept": "Scope"},
+    {"id": "su2_f11", "front": "What are limits and exclusions?", "back": "Limits state what is included in scope. Exclusions explicitly state what is NOT included. Critical for preventing scope creep.", "concept": "Scope"},
+    {"id": "su2_f12", "front": "Name the five organizational structures in order of PM authority.", "back": "Least to most: Functional → Weak Matrix → Balanced Matrix → Strong Matrix → Projectised", "concept": "Organizational Structure"},
+    {"id": "su2_f13", "front": "What is a projectised structure?", "back": "PM has full authority; team reports directly to PM. Best for critical, complex projects. All team members dedicated full-time.", "concept": "Organizational Structure"}
+  ]
+}

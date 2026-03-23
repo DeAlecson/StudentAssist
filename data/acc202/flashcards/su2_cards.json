@@ -1,0 +1,78 @@
+{
+  "unitId": "su2",
+  "moduleId": "acc202",
+  "cards": [
+    {
+      "id": "acc_su2_f1",
+      "front": "What is accrual accounting?",
+      "back": "A method of accounting that recognises revenue when earned and expenses when incurred, regardless of when cash is received or paid.",
+      "concept": "Accrual Accounting"
+    },
+    {
+      "id": "acc_su2_f2",
+      "front": "What is cash basis accounting?",
+      "back": "A method of accounting that recognises revenue only when cash is received and expenses only when cash is paid.",
+      "concept": "Cash Basis"
+    },
+    {
+      "id": "acc_su2_f3",
+      "front": "State the revenue recognition principle.",
+      "back": "Revenue is recognised when it is earned (service performed or goods delivered), not when cash is received.",
+      "concept": "Revenue Recognition Principle"
+    },
+    {
+      "id": "acc_su2_f4",
+      "front": "State the matching principle.",
+      "back": "Expenses must be matched to the period in which they help generate revenue, ensuring profit is fairly calculated.",
+      "concept": "Matching Principle"
+    },
+    {
+      "id": "acc_su2_f5",
+      "front": "What is a prepaid expense?",
+      "back": "Cash paid before an expense is incurred. It is recorded as an asset (e.g., Prepaid Insurance) and expensed gradually as the benefit is consumed.",
+      "concept": "Prepaid Expense"
+    },
+    {
+      "id": "acc_su2_f6",
+      "front": "What is an accrued expense?",
+      "back": "An expense incurred but not yet paid. It is recorded as a liability (e.g., Salaries Payable) to match the expense to the period incurred.",
+      "concept": "Accrued Expense"
+    },
+    {
+      "id": "acc_su2_f7",
+      "front": "What is accrued revenue?",
+      "back": "Revenue earned but not yet received in cash. It is recorded as an asset (Accounts Receivable) to recognise the revenue in the correct period.",
+      "concept": "Accrued Revenue"
+    },
+    {
+      "id": "acc_su2_f8",
+      "front": "What is unearned revenue?",
+      "back": "Cash received before a service is performed or goods delivered. It is recorded as a liability (deferred revenue) until the service is completed.",
+      "concept": "Unearned Revenue"
+    },
+    {
+      "id": "acc_su2_f9",
+      "front": "How do you record a prepaid expense payment?",
+      "back": "Dr Prepaid [Expense] [Amount] / Cr Cash [Amount]. Later, as the benefit is consumed, adjust with Dr [Expense] Cr Prepaid [Expense].",
+      "concept": "Adjusting Entries"
+    },
+    {
+      "id": "acc_su2_f10",
+      "front": "How do you record an accrued expense?",
+      "back": "Dr [Expense] [Amount] / Cr [Payable] [Amount]. This matches the expense to the period incurred.",
+      "concept": "Prepayment Amortisation"
+    },
+    {
+      "id": "acc_su2_f11",
+      "front": "What account is used for accrued expenses?",
+      "back": "A payable account (liability) such as Salaries Payable, Interest Payable, or Utilities Payable. It represents the obligation to pay.",
+      "concept": "Accruals Payable"
+    },
+    {
+      "id": "acc_su2_f12",
+      "front": "What is the relationship between unearned revenue and the income statement?",
+      "back": "Unearned revenue is a liability on the balance sheet. As the service is performed, it transfers to revenue on the income statement.",
+      "concept": "Deferred Income"
+    }
+  ]
+}

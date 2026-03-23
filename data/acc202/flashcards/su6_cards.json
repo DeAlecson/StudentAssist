@@ -1,0 +1,78 @@
+{
+  "unitId": "su6",
+  "moduleId": "acc202",
+  "cards": [
+    {
+      "id": "acc_su6_f1",
+      "front": "What is a budget?",
+      "back": "A quantitative expression of a plan for a specific future period, including planned revenues, costs, cash flows, and capital expenditures.",
+      "concept": "Budget"
+    },
+    {
+      "id": "acc_su6_f2",
+      "front": "What is the master budget?",
+      "back": "An integrated set of functional budgets covering the entire organisation (sales, production, materials, labour, overhead, cash, and financial statements).",
+      "concept": "Master Budget"
+    },
+    {
+      "id": "acc_su6_f3",
+      "front": "What is the sales budget?",
+      "back": "The starting budget that projects expected unit sales and revenue. All other budgets depend on it.",
+      "concept": "Sales Budget"
+    },
+    {
+      "id": "acc_su6_f4",
+      "front": "What is the production budget?",
+      "back": "Calculates units to be produced: Expected Sales + Desired Ending Inventory - Beginning Inventory.",
+      "concept": "Production Budget"
+    },
+    {
+      "id": "acc_su6_f5",
+      "front": "What is the cash budget?",
+      "back": "Forecasts cash inflows and outflows to identify periods of surplus or shortfall. Critical for managing working capital and ensuring liquidity.",
+      "concept": "Cash Budget"
+    },
+    {
+      "id": "acc_su6_f6",
+      "front": "What is incremental budgeting?",
+      "back": "Budgeting method that adjusts prior period figures up or down. Quick and simple but may perpetuate past inefficiencies.",
+      "concept": "Incremental Budgeting"
+    },
+    {
+      "id": "acc_su6_f7",
+      "front": "What is zero-based budgeting (ZBB)?",
+      "back": "Budgeting method requiring every expenditure to be justified from scratch. Thorough and eliminates waste but time-consuming.",
+      "concept": "Zero-Based Budgeting"
+    },
+    {
+      "id": "acc_su6_f8",
+      "front": "What is a rolling budget?",
+      "back": "Continuously updated budget that adds a new period as the prior period expires. Always looks forward (e.g., always 12 months ahead).",
+      "concept": "Rolling Budget"
+    },
+    {
+      "id": "acc_su6_f9",
+      "front": "What is top-down budgeting?",
+      "back": "Senior management sets revenue and spending targets for departments. Fast but may ignore operational realities.",
+      "concept": "Top-Down Budgeting"
+    },
+    {
+      "id": "acc_su6_f10",
+      "front": "What is participative budgeting?",
+      "back": "Department managers provide input on targets. More accurate and increases buy-in but time-consuming.",
+      "concept": "Participative Budgeting"
+    },
+    {
+      "id": "acc_su6_f11",
+      "front": "What is variance analysis?",
+      "back": "Comparing actual results against budget to identify and investigate differences. Supports management by exception and accountability.",
+      "concept": "Variance Analysis"
+    },
+    {
+      "id": "acc_su6_f12",
+      "front": "What are favourable and unfavourable variances?",
+      "back": "Favourable (F): Actual profit > Budgeted profit (good) OR Actual costs < Budgeted costs (good). Unfavourable (U): Opposite (requires investigation).",
+      "concept": "Favourable/Unfavourable Variance"
+    }
+  ]
+}

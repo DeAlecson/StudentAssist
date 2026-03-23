@@ -1,0 +1,64 @@
+{
+  "id": "acc202",
+  "code": "ACC202",
+  "title": "Accounting for Decision Making",
+  "institution": "SUSS",
+  "color": "#f59e0b",
+  "icon": "📈",
+  "units": [
+    {
+      "id": "su1",
+      "title": "Recording Financial Transactions",
+      "icon": "📝",
+      "description": "Double entry system, accounting equation, account types and transaction recording",
+      "lessonFile": "data/acc202/lessons/su1.json",
+      "quizFile": "data/acc202/quizzes/su1_quiz.json",
+      "flashcardFile": "data/acc202/flashcards/su1_cards.json"
+    },
+    {
+      "id": "su2",
+      "title": "Accrual Accounting & Adjustments",
+      "icon": "⚙️",
+      "description": "Accrual vs cash basis, prepayments, accruals, inventory and receivables treatments",
+      "lessonFile": "data/acc202/lessons/su2.json",
+      "quizFile": "data/acc202/quizzes/su2_quiz.json",
+      "flashcardFile": "data/acc202/flashcards/su2_cards.json"
+    },
+    {
+      "id": "su3",
+      "title": "Financial Statement Analysis",
+      "icon": "📊",
+      "description": "Ratio analysis, horizontal analysis, vertical analysis, profitability, liquidity, solvency",
+      "lessonFile": "data/acc202/lessons/su3.json",
+      "quizFile": "data/acc202/quizzes/su3_quiz.json",
+      "flashcardFile": "data/acc202/flashcards/su3_cards.json"
+    },
+    {
+      "id": "su4",
+      "title": "Managerial Accounting & Cost Concepts",
+      "icon": "🏭",
+      "description": "Management accounting role, cost classification, direct vs indirect, ABC costing",
+      "lessonFile": "data/acc202/lessons/su4.json",
+      "quizFile": "data/acc202/quizzes/su4_quiz.json",
+      "flashcardFile": "data/acc202/flashcards/su4_cards.json"
+    },
+    {
+      "id": "su5",
+      "title": "Cost-Volume-Profit Analysis",
+      "icon": "📐",
+      "description": "Contribution margin, break-even, target profit, margin of safety, operating leverage",
+      "lessonFile": "data/acc202/lessons/su5.json",
+      "quizFile": "data/acc202/quizzes/su5_quiz.json",
+      "flashcardFile": "data/acc202/flashcards/su5_cards.json"
+    },
+    {
+      "id": "su6",
+      "title": "Budgeting & Planning",
+      "icon": "🗓️",
+      "description": "Budget functions, approaches (top-down/participative/ZBB), master budget sequence, variance analysis",
+      "lessonFile": "data/acc202/lessons/su6.json",
+      "quizFile": "data/acc202/quizzes/su6_quiz.json",
+      "flashcardFile": "data/acc202/flashcards/su6_cards.json"
+    }
+  ]
+}

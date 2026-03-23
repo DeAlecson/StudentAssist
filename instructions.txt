@@ -1,0 +1,24 @@
+I have given you access to this folder that has access to StudentAssist. 
+
+Student assist is a studentpowered AI lesson plan to help students learn about ICT162, SST101 and ACC202. You can learn more about the github info and files here: https://github.com/DeAlecson/oop-prep
+
+Currently this github started with just ICT162 alone but now it has branched out to other lessons. Currently the html is messy and has 3 different code structures for 3 different modules . I want to make this more universal and rename this to StudentAssist which is a universal app. Its time for this project to become modular where we can add onto future projects. this projects should consist of 3 modes
+
+Learn Mode - teach the student Study Unit (SU) with flashcards, quizzes and a mini assessment at the end to strenghten the understanding.
+Quiz Run separated by Study Unit. This quiz bank can be added in the future
+Assessment mode, ai written assessment with a text field for students to answer, it is AI marked. Also has amodel answer if anthropic key is not available.
+Mixed run, AI marked and also a mix of Quizes from study units.
+This project has multiple features:
+* leaderboard run - check the repo for understanding. The leaderboard was done well already and we can use the same setup. https://github.com/DeAlecson/oop-prep
+1. Mix run mode, to be able to do mix quiz. This can be exam mode. 
+
+You can also refer to Encapsulate's structure also, which was done pretty well for OOP but this is specific to just programming.  i would consider encapsulate is the better version of whatever is in oop-prep
+https://github.com/DeAlecson/Encapsulate
+
+SST101's current state in https://github.com/DeAlecson/oop-prep is already pretty good and refined, we can  just clone it and make subtle changes if its ui standardization.  and question bank is filled
+
+for ACC202, i have provided resorces found here, C:\Users\plane\OneDrive\Desktop\Claude Files\Claude Code Projects\StudentAssist it is still missing learn mode and all the basic structures.. Create the lesson plan accordingly to the resources provided
+
+Keep in mind that i will also add in MKT202 marketing after we complete the base of StudentAssist. So we have to accomodate for new updates. Consider how will we add these new modules to make it easier in the future. 
+
+Finally. I need you to create the readme file and setup the repository for this project.  I will then turn it into a github pages after. This is a brand new project that we're forking from the old repo. Tell me what else you need to make this project a success. Ask me questions

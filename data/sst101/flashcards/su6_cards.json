@@ -1,0 +1,19 @@
+{
+  "unitId": "su6",
+  "moduleId": "sst101",
+  "cards": [
+    {"id": "su6_f1", "front": "What is normal closure?", "back": "Project reaches completion with all objectives met and deliverables accepted. Standard, successful project ending.", "concept": "Closure Types"},
+    {"id": "su6_f2", "front": "What is premature closure?", "back": "Project terminated before objectives are fully met. Example: discovered feasibility issues, time constraints. Partial handoff required.", "concept": "Closure Types"},
+    {"id": "su6_f3", "front": "What is changed priority closure?", "back": "Project stopped because organization's strategic priorities shifted. No longer strategic fit. Formal closeout required.", "concept": "Closure Types"},
+    {"id": "su6_f4", "front": "What is failed project closure?", "back": "Project becomes unrecoverable (budget exhausted, timeline impossible, tech obsolete). Post-mortem to learn from failure.", "concept": "Closure Types"},
+    {"id": "su6_f5", "front": "List the six wrap-up closure activities.", "back": "1. Obtain customer acceptance 2. Close vendor contracts 3. Release team 4. Final report 5. Archive documentation 6. Retrospective/lessons learned", "concept": "Closure"},
+    {"id": "su6_f6", "front": "What is lessons learned?", "back": "Traditional approach: comprehensive review at project end documenting what was learned. Often becomes shelf-ware.", "concept": "Closure"},
+    {"id": "su6_f7", "front": "What is a retrospective?", "back": "Agile approach: regular meetings after each sprint, structured, producing concrete improvement actions implemented immediately.", "concept": "Closure"},
+    {"id": "su6_f8", "front": "What is Scrum?", "back": "Leading Agile framework with roles (PO, SM, Dev team), events (sprint, daily standup, review, retro), and artifacts (backlog, increment).", "concept": "Agile"},
+    {"id": "su6_f9", "front": "What is a Sprint?", "back": "Time-boxed cycle (1-4 weeks) in Scrum where team delivers working product increment. Regular heartbeat of Agile projects.", "concept": "Agile"},
+    {"id": "su6_f10", "front": "What is the Product Owner role?", "back": "Represents business/customer, manages and prioritizes product backlog, defines acceptance criteria, accepts completed work.", "concept": "Scrum Roles"},
+    {"id": "su6_f11", "front": "What is the Scrum Master role?", "back": "Facilitates Scrum process, removes blockers/impediments, coaches team on Scrum practices. NOT a traditional project manager.", "concept": "Scrum Roles"},
+    {"id": "su6_f12", "front": "What is the Development Team role?", "back": "Cross-functional, self-organizing group that delivers working software. Typically 3-9 people.", "concept": "Scrum Roles"},
+    {"id": "su6_f13", "front": "How does Agile differ from Waterfall?", "back": "Agile: iterative, adaptive, embraces change, frequent delivery. Waterfall: sequential, plan-heavy, resists change, delivers at end.", "concept": "Agile vs Waterfall"}
+  ]
+}
