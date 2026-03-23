@@ -1656,6 +1656,23 @@
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
 }
+.lb-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: 10px;
+  transition: background 0.15s ease;
+}
+.lb-row:hover { background: var(--surface2); }
+.lb-info { flex: 1; min-width: 0; }
+.lb-score-col { text-align: right; flex-shrink: 0; }
+.lb-detail {
+  font-size: 0.7rem;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 0.1rem;
+}
 .lb-loading, .lb-empty {
   text-align: center;
   padding: 2rem;

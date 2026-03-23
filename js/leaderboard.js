@@ -50,13 +50,13 @@ const Leaderboard = (() => {
 
     let filtered = _allData;
     if (_filter !== 'all') {
-      filtered = _allData.filter(row => row.module === _filter);
+      filtered = _allData.filter(row => (row.Module || row.module || '') === _filter);
     }
 
-    // Sort by score descending
+    // Sort by score descending (Score % is stored as decimal: 0.55 = 55%)
     filtered.sort((a, b) => {
-      const scoreA = parseFloat(a.score) || 0;
-      const scoreB = parseFloat(b.score) || 0;
+      const scoreA = parseFloat(a['Score %'] ?? a.score) || 0;
+      const scoreB = parseFloat(b['Score %'] ?? b.score) || 0;
       return scoreB - scoreA;
     });
 
@@ -71,17 +71,27 @@ const Leaderboard = (() => {
     filtered.forEach((row, idx) => {
       const rank = idx + 1;
       const medal = idx < 3 ? medals[idx] : rank;
-      const scorePct = Math.round((parseFloat(row.score) || 0) * 100) / 100;
-      const scorePctNum = Math.round(scorePct * 100);
+      const name    = row.Name   || row.name   || 'Anonymous';
+      const module  = row.Module || row.module || '';
+      const mode    = row.Mode   || row.mode   || '';
+      // API stores score as decimal (0.55 = 55%) — multiply by 100
+      const rawScore  = parseFloat(row['Score %'] ?? row.score) || 0;
+      const scorePct  = rawScore <= 1 ? rawScore * 100 : rawScore;
+      const correct   = row.Correct || row.correct || '';
+      const total     = row.Total   || row.total   || '';
+      const time      = row.Time    || row.time    || '';
 
       html += `
         <div class="lb-row">
           <div class="lb-rank">${medal}</div>
-          <div>
-            <div class="lb-name">${Utils.escapeHTML(row.name || 'Anonymous')}</div>
-            <div class="lb-module">${Utils.escapeHTML(row.module || '')}</div>
+          <div class="lb-info">
+            <div class="lb-name">${Utils.escapeHTML(name)}</div>
+            <div class="lb-module">${Utils.escapeHTML(module)}${mode ? ' · ' + Utils.escapeHTML(mode) : ''}</div>
           </div>
-          <div class="lb-score">${scorePct.toFixed(1)}%</div>
+          <div class="lb-score-col">
+            <div class="lb-score">${scorePct.toFixed(1)}%</div>
+            ${correct && total ? `<div class="lb-detail">${correct}/${total}${time ? ' · ' + Utils.escapeHTML(time) : ''}</div>` : ''}
+          </div>
         </div>
       `;
     });
