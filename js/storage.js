@@ -102,7 +102,7 @@ const Storage = (() => {
   };
 
   const exportData = () => {
-    const modules = ['ict162', 'sst101', 'acc202'];
+    const modules = ['ict162', 'sst101', 'acc202', 'mkt202'];
     const data = {
       version: '1.0.0',
       exportedAt: new Date().toISOString(),
@@ -115,6 +115,31 @@ const Storage = (() => {
     });
 
     return data;
+  };
+
+  const importData = (data) => {
+    if (!data || typeof data !== 'object') throw new Error('Invalid data format');
+
+    // Restore settings (only safe fields)
+    if (data.settings && typeof data.settings === 'object') {
+      updateSettings(s => {
+        if (data.settings.displayName) s.displayName = data.settings.displayName;
+        if (data.settings.theme) s.theme = data.settings.theme;
+        return s;
+      });
+    }
+
+    // Restore progress for every module present in the backup
+    if (data.progress && typeof data.progress === 'object') {
+      Object.entries(data.progress).forEach(([moduleId, progress]) => {
+        if (progress && typeof progress === 'object') {
+          const key = PREFIX + moduleId + '_progress';
+          // Merge with defaults so any new fields are included
+          const merged = { ...DEFAULT_PROGRESS, ...progress };
+          localStorage.setItem(key, JSON.stringify(merged));
+        }
+      });
+    }
   };
 
   return {
@@ -130,6 +155,7 @@ const Storage = (() => {
     clearApiKey,
     resetModule,
     resetAll,
-    exportData
+    exportData,
+    importData
   };
 })();

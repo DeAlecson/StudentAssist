@@ -386,6 +386,33 @@ const App = (() => {
       });
     }
 
+    // Settings - Import
+    const importBtn = Utils.$('#import-btn');
+    const importFileInput = Utils.$('#import-file-input');
+    if (importBtn && importFileInput) {
+      importBtn.addEventListener('click', () => importFileInput.click());
+      importFileInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          try {
+            const data = JSON.parse(ev.target.result);
+            Storage.importData(data);
+            Gamification.refreshHeader();
+            loadSettingsForm();
+            Utils.toast('Progress imported successfully!', 'success', 3000);
+            // Reset the input so the same file can be re-imported if needed
+            importFileInput.value = '';
+          } catch (err) {
+            Utils.toast('Import failed — invalid file', 'error', 3000);
+            importFileInput.value = '';
+          }
+        };
+        reader.readAsText(file);
+      });
+    }
+
     // Settings - Reset All
     const resetAllBtn = Utils.$('#reset-all-btn');
     if (resetAllBtn) {
