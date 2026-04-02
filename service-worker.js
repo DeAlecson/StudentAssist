@@ -1,4 +1,4 @@
-const CACHE_NAME = 'studentassist-v8';
+const CACHE_NAME = 'studentassist-v9';
 
 const urlsToCache = [
   './',
@@ -18,6 +18,7 @@ const urlsToCache = [
   './js/mixed-engine.js',
   './js/practice-engine.js',
   './js/exam-engine.js',
+  './js/cheatsheet.js',
   './js/renderer.js',
   './js/app.js',
   './data/modules.json',

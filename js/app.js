@@ -102,6 +102,9 @@ const App = (() => {
       // Refresh header with module progress
       Gamification.refreshHeader();
 
+      // Show cheatsheet FAB for this module
+      Cheatsheet.show(moduleId);
+
       // Navigate to target route (or module home)
       Router.navigate(targetRoute || `#/${moduleId}`);
 
@@ -136,6 +139,7 @@ const App = (() => {
       Utils.$('#hub-screen').classList.add('active');
       Utils.$('#module-screen').classList.remove('active');
       State.set('currentRoute', '/');
+      Cheatsheet.hide();
     });
 
     // Module root (home)
@@ -394,6 +398,9 @@ const App = (() => {
         }
       });
     }
+
+    // Initialize cheatsheet FAB
+    Cheatsheet.init();
 
     // Load saved settings into form
     loadSettingsForm();
