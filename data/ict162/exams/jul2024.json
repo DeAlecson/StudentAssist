@@ -1,0 +1,272 @@
+{
+  "id": "ict162_jul2024",
+  "module": "ict162",
+  "code": "ICT162",
+  "semester": "JUL 2024",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "closed_book",
+  "notes": "One A4-sized cheat sheet allowed.",
+  "caseStudies": [],
+  "questions": [
+    {
+      "id": "q1",
+      "label": "Question 1",
+      "marks": 20,
+      "text": "Analyse the Python classes shown in Figure Q1. For each part (a)–(e), assume they are independent. State whether there is an error. If there is an error, specify which statement causes it and explain why. If there is no error, explain what the statement(s) does and state the output produced.",
+      "type": "code_analysis",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p2_img1.jpeg"],
+      "subQuestions": [
+        {
+          "id": "q1a",
+          "label": "Question 1a",
+          "marks": 4,
+          "text": "Analyse the Python statement(s) for Part (a) in Figure Q1. State whether there is an error. If so, identify the statement and explain why the error occurs. If no error, explain what the statement does and state the output.",
+          "type": "code_analysis",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p2_img1.jpeg"],
+          "modelAnswer": "Refer to Figure Q1 for the class definitions and the specific statements in Part (a).\n\nAnalysis approach:\n1. Identify the classes and their inheritance hierarchy from Figure Q1.\n2. Trace the specific statement(s) — determine if they involve invalid method calls, incorrect attribute access, type mismatches, or calling abstract methods directly.\n3. If there is an error: state the exact statement (e.g., line X), identify the error type (AttributeError, TypeError, cannot instantiate abstract class, etc.), and explain why Python raises it.\n4. If there is no error: describe what object is created or what method is called, and trace the output including any __str__ or print() result.\n\nCommon error types in ICT162 Q1:\n- Instantiating an abstract class → TypeError: Can't instantiate abstract class\n- Accessing a private attribute from outside the class → AttributeError\n- Calling a method that doesn't exist on a particular class\n- Incorrect number of constructor arguments → TypeError",
+          "keyPoints": [
+            "Must state clearly whether there IS or IS NOT an error",
+            "If error: name the exact statement and the type of error",
+            "If no error: state which class object is created and trace the output precisely",
+            "MRO applies — Python uses the most-derived class method"
+          ]
+        },
+        {
+          "id": "q1b",
+          "label": "Question 1b",
+          "marks": 4,
+          "text": "Analyse the Python statement(s) for Part (b) in Figure Q1. State whether there is an error. If so, identify the statement and explain why the error occurs. If no error, explain what the statement does and state the output.",
+          "type": "code_analysis",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p2_img1.jpeg"],
+          "modelAnswer": "Refer to Figure Q1 Part (b) statements.\n\nApply the same structured analysis: check for abstract class instantiation errors, attribute errors, method resolution order, and constructor argument mismatches.\n\nTrace any print() or __str__ calls carefully using the class definitions shown in Figure Q1.",
+          "keyPoints": [
+            "State error/no error clearly",
+            "If error: identify statement and explain root cause",
+            "If no error: trace output following MRO and __str__ format"
+          ]
+        },
+        {
+          "id": "q1c",
+          "label": "Question 1c",
+          "marks": 4,
+          "text": "Analyse the Python statement(s) for Part (c) in Figure Q1. State whether there is an error. If so, identify the statement and explain why the error occurs. If no error, explain what the statement does and state the output.",
+          "type": "code_analysis",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p2_img1.jpeg"],
+          "modelAnswer": "Refer to Figure Q1 Part (c) statements.\n\nApply structured analysis. Pay attention to:\n- Polymorphism: if a parent-type variable holds a child object, method calls use the child's implementation\n- Attribute access through a reference of parent type when child has additional attributes\n- Any use of name mangling for private attributes (double underscore prefix)",
+          "keyPoints": [
+            "Polymorphism: method resolution uses runtime type, not declared type",
+            "Private attributes (__attr) use name mangling — cannot access directly from outside or via parent reference"
+          ]
+        },
+        {
+          "id": "q1d",
+          "label": "Question 1d",
+          "marks": 4,
+          "text": "Analyse the Python statement(s) for Part (d) in Figure Q1. State whether there is an error. If so, identify the statement and explain why the error occurs. If no error, explain what the statement does and state the output.",
+          "type": "code_analysis",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p2_img1.jpeg"],
+          "modelAnswer": "Refer to Figure Q1 Part (d) statements.\n\nApply structured analysis. Consider:\n- Object composition: accessing attributes of a composed object\n- Method chains: obj.method1().method2() — check if method1 returns an object that has method2\n- Default parameter values and optional arguments",
+          "keyPoints": [
+            "For composition: inner object must be initialised before its methods can be called",
+            "Method chaining only works if earlier methods return appropriate objects"
+          ]
+        },
+        {
+          "id": "q1e",
+          "label": "Question 1e",
+          "marks": 4,
+          "text": "Analyse the Python statement(s) for Part (e) in Figure Q1. State whether there is an error. If so, identify the statement and explain why the error occurs. If no error, explain what the statement does and state the output.",
+          "type": "code_analysis",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p2_img1.jpeg"],
+          "modelAnswer": "Refer to Figure Q1 Part (e) statements.\n\nApply structured analysis. Final part often involves a combination of concepts — be thorough in tracing the exact output or pinpointing the error.",
+          "keyPoints": [
+            "Read every statement carefully — errors can be subtle (e.g., wrong argument type, accessing mangled name)",
+            "For output prediction: substitute actual instance variable values into f-strings/format strings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "label": "Question 2",
+      "marks": 30,
+      "text": "Always Good Services (AGS) is a car servicing provider. When a service job is requested, AGS records the job details and assigns a service staff to carry it out. Study the class diagram in Figure Q2, which shows two types of job: ServiceJob and HomeServiceJob. Owners can request a home service job if they are not available to send the vehicle to the workshop. Charges and duration differ according to the assigned staff's hourly rate, skill level, and job type.",
+      "type": "code_writing",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p4_img1.png"],
+      "subQuestions": [
+        {
+          "id": "q2a",
+          "label": "Question 2a",
+          "marks": 4,
+          "text": "Implement the class ServiceStaff. It has THREE instance variables: name (str), skillFactor (float), and rate (float). Constructor initialises all three. Provide getter methods for skillFactor and rate using the property decorator.",
+          "type": "code_writing",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p4_img1.png"],
+          "modelAnswer": "```python\nclass ServiceStaff:\n    def __init__(self, name: str, skillFactor: float, rate: float):\n        self._name = name\n        self._skillFactor = skillFactor\n        self._rate = rate\n\n    @property\n    def skillFactor(self) -> float:\n        return self._skillFactor\n\n    @property\n    def rate(self) -> float:\n        return self._rate\n```",
+          "keyPoints": [
+            "3 instance variables with underscore prefix (protected convention)",
+            "Getter-only properties for skillFactor and rate (no setter needed unless specified)",
+            "Constructor parameters match the three attributes"
+          ]
+        },
+        {
+          "id": "q2b",
+          "label": "Question 2b",
+          "marks": 9,
+          "text": "Implement the Python class ServiceJob with: class variable _BASIC_FEES, instance variables jobId (str), hours (float), staff (ServiceStaff). Constructor initialises all three. Getter for hours using property decorator. Method computeJobDuration() returns hours divided by staff's skillFactor. Method getCharges() returns basic fees plus (job duration × staff's hourly rate).",
+          "type": "code_writing",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p4_img1.png"],
+          "modelAnswer": "```python\nclass ServiceJob:\n    _BASIC_FEES = 50  # (use value from Figure Q2 if specified)\n\n    def __init__(self, jobId: str, hours: float, staff: ServiceStaff):\n        self._jobId = jobId\n        self._hours = hours\n        self._staff = staff\n\n    @property\n    def hours(self) -> float:\n        return self._hours\n\n    def computeJobDuration(self) -> float:\n        return self._hours / self._staff.skillFactor\n\n    def getCharges(self) -> float:\n        return ServiceJob._BASIC_FEES + (self.computeJobDuration() * self._staff.rate)\n```",
+          "keyPoints": [
+            "Class variable _BASIC_FEES accessed via ClassName._BASIC_FEES",
+            "computeJobDuration divides hours by staff.skillFactor (skilled staff = shorter duration)",
+            "getCharges = basic fees + duration * rate",
+            "Use computeJobDuration() inside getCharges() to avoid code duplication"
+          ]
+        },
+        {
+          "id": "q2c",
+          "label": "Question 2c",
+          "marks": 7,
+          "text": "Implement HomeServiceJob, a subclass of ServiceJob. Additional instance variable: address (str). Constructor initialises jobId, hours, staff AND address. Override computeJobDuration() to return hours + 1 (skill factor does not apply for home service). Override getCharges() to return 1.5 times the standard service job charges.",
+          "type": "code_writing",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p4_img1.png"],
+          "modelAnswer": "```python\nclass HomeServiceJob(ServiceJob):\n    def __init__(self, jobId: str, hours: float, staff: ServiceStaff, address: str):\n        super().__init__(jobId, hours, staff)\n        self._address = address\n\n    def computeJobDuration(self) -> float:\n        return self._hours + 1\n\n    def getCharges(self) -> float:\n        return 1.5 * super().getCharges()\n```",
+          "keyPoints": [
+            "Call super().__init__() to inherit parent's initialisation",
+            "computeJobDuration() overrides by replacement (no super() call) — returns hours + 1",
+            "getCharges() calls super().getCharges() then multiplies by 1.5 — this is overriding by refinement"
+          ]
+        },
+        {
+          "id": "q2d",
+          "label": "Question 2d",
+          "marks": 4,
+          "text": "Based on your Python code in Q2(c) for HomeServiceJob, explain what type of overriding you implemented for getCharges() and computeJobDuration().",
+          "type": "essay",
+          "modelAnswer": "computeJobDuration() — Overriding by REPLACEMENT:\nHomeServiceJob completely redefines computeJobDuration() without calling super(). The parent's implementation (hours / skillFactor) is entirely replaced with a new implementation (hours + 1). There is no call to super() in the child's method.\n\ngetCharges() — Overriding by REFINEMENT:\nHomeServiceJob's getCharges() calls super().getCharges() to obtain the standard charges from the parent class, then extends the behaviour by multiplying the result by 1.5. The child's method builds upon (refines) the parent's implementation rather than replacing it entirely.",
+          "keyPoints": [
+            "Replacement = child method has NO super() call; completely new logic",
+            "Refinement = child method calls super() to reuse parent logic, then adds/modifies",
+            "Correctly identify which method is which type (common exam error: swapping them)"
+          ]
+        },
+        {
+          "id": "q2e",
+          "label": "Question 2e",
+          "marks": 6,
+          "text": "Referring to Figure Q2, for the following pairs of classes, identify whether the relationship is object composition or inheritance, and justify your choices: (i) ServiceJob and HomeServiceJob, (ii) ServiceJob and ServiceStaff, (iii) HomeServiceJob and ServiceStaff.",
+          "type": "essay",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p4_img1.png"],
+          "modelAnswer": "(i) ServiceJob and HomeServiceJob — INHERITANCE\nHomeServiceJob IS-A ServiceJob. HomeServiceJob is defined as a subclass of ServiceJob (class HomeServiceJob(ServiceJob)). It inherits all attributes and methods of ServiceJob and extends them. The UML shows a hollow triangle arrowhead pointing from HomeServiceJob to ServiceJob.\n\n(ii) ServiceJob and ServiceStaff — OBJECT COMPOSITION\nServiceJob HAS-A ServiceStaff. ServiceJob contains a ServiceStaff object as one of its instance variables (_staff). ServiceJob uses ServiceStaff to compute charges and duration, but ServiceStaff is an independent class that can exist without ServiceJob. The UML shows a solid diamond or association line between them.\n\n(iii) HomeServiceJob and ServiceStaff — OBJECT COMPOSITION (inherited)\nHomeServiceJob also HAS-A ServiceStaff (inherited from ServiceJob). HomeServiceJob inherits the _staff attribute from ServiceJob. The relationship is still composition — HomeServiceJob contains ServiceStaff indirectly through inheritance.",
+          "keyPoints": [
+            "Inheritance = IS-A relationship; subclass defined with parent in parentheses",
+            "Composition = HAS-A relationship; one class stores an instance of another as an attribute",
+            "Justify using the class definitions, not just the diagram labels",
+            "HomeServiceJob–ServiceStaff is composition (inherited, not directly defined in HomeServiceJob)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "label": "Question 3",
+      "marks": 30,
+      "text": "Study the class diagram in Figure Q3. You are to develop Python classes that raise exceptions.",
+      "type": "code_writing",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p6_img1.png"],
+      "subQuestions": [
+        {
+          "id": "q3a",
+          "label": "Question 3a",
+          "marks": 1,
+          "text": "Define the class InvalidContactException, which is a subclass of the Exception class. This class has no additional attribute or method.",
+          "type": "code_writing",
+          "modelAnswer": "```python\nclass InvalidContactException(Exception):\n    pass\n```",
+          "keyPoints": [
+            "Must subclass Exception",
+            "No additional attributes or methods — just 'pass'",
+            "Class name must be exactly InvalidContactException"
+          ]
+        },
+        {
+          "id": "q3b",
+          "label": "Question 3b",
+          "marks": 11,
+          "text": "Implement the Contact class with: instance variables name (str) and number (int). Constructor initialises both but first calls checkNumber to validate. Do not handle exceptions in constructor. Getter methods for name and number using property decorator. checkNumber validates: 8-digit length (raise InvalidContactException: 'Contact number must contain exactly 8 digits') and starts with 6, 8, or 9 (raise InvalidContactException: 'Contact number must start with a 6, 8 or 9'). Returns True if valid. __str__ returns: 'Name: Joe Chen   Number: 96884432' format.",
+          "type": "code_writing",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p7_img1.png"],
+          "modelAnswer": "```python\nclass Contact:\n    def __init__(self, name: str, number: int):\n        self.checkNumber(number)\n        self._name = name\n        self._number = number\n\n    @property\n    def name(self) -> str:\n        return self._name\n\n    @property\n    def number(self) -> int:\n        return self._number\n\n    def checkNumber(self, number: int) -> bool:\n        s = str(number)\n        if len(s) != 8:\n            raise InvalidContactException('Contact number must contain exactly 8 digits')\n        if s[0] not in ('6', '8', '9'):\n            raise InvalidContactException('Contact number must start with a 6, 8 or 9')\n        return True\n\n    def __str__(self) -> str:\n        return f'Name: {self._name}   Number: {self._number}'\n```",
+          "keyPoints": [
+            "checkNumber must be called BEFORE initialising instance variables",
+            "Constructor does NOT catch InvalidContactException — let it propagate",
+            "Length check must use str(number) not int operations",
+            "First-digit check: str(number)[0] in ('6', '8', '9')",
+            "Both checks raise InvalidContactException with exact messages",
+            "__str__ format matches the example exactly"
+          ]
+        },
+        {
+          "id": "q3c",
+          "label": "Question 3c",
+          "marks": 18,
+          "text": "Implement PhoneBook with: instance variable contacts (list of Contact objects), initialised to empty list in constructor. searchContact(name) returns matching Contact or None. searchNumber(number) returns True if exists. addContact(name, number): check for duplicate name (case insensitive) — raise InvalidContactException; check for duplicate number — raise InvalidContactException; create and add Contact object; return True. removeContact(name) removes matching Contact and returns True, else returns False. __str__ returns all Contacts sorted ascending by name.",
+          "type": "code_writing",
+          "modelAnswer": "```python\nclass PhoneBook:\n    def __init__(self):\n        self._contacts = []\n\n    def searchContact(self, name: str):\n        for c in self._contacts:\n            if c.name == name:\n                return c\n        return None\n\n    def searchNumber(self, number: int) -> bool:\n        for c in self._contacts:\n            if c.number == number:\n                return True\n        return False\n\n    def addContact(self, name: str, number: int) -> bool:\n        # Check duplicate name (case insensitive)\n        for c in self._contacts:\n            if c.name.lower() == name.lower():\n                raise InvalidContactException(f'Contact with name {name} already exists')\n        # Check duplicate number\n        if self.searchNumber(number):\n            raise InvalidContactException(f'Contact number {number} already exists')\n        # Create Contact (may raise InvalidContactException if format is invalid)\n        new_contact = Contact(name, number)\n        self._contacts.append(new_contact)\n        return True\n\n    def removeContact(self, name: str) -> bool:\n        contact = self.searchContact(name)\n        if contact:\n            self._contacts.remove(contact)\n            return True\n        return False\n\n    def __str__(self) -> str:\n        sorted_contacts = sorted(self._contacts, key=lambda c: c.name)\n        return '\\n'.join(str(c) for c in sorted_contacts)\n```",
+          "keyPoints": [
+            "searchContact: linear scan, return Contact object or None",
+            "searchNumber: return bool (True/False)",
+            "addContact: case-insensitive name check (.lower()), then number check, then create Contact",
+            "Do NOT handle exceptions from Contact() constructor in addContact",
+            "removeContact: use searchContact helper, then list.remove(), return bool",
+            "__str__: sorted() with lambda key on c.name, joined with newlines"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "label": "Question 4",
+      "marks": 20,
+      "text": "Figure Q4 shows a simple Python tkinter GUI that performs temperature conversion from Celsius to Fahrenheit. If the Convert button is clicked when Celsius is empty or non-numeric, display an error message. Otherwise apply the formula: F = (C * 9/5) + 32 and display Fahrenheit to 1 decimal place. A partial program is given in Figure Q4(a).",
+      "type": "code_writing",
+      "figures": [
+        "data/ict162/exams/figures/ICT162_JUL2024_p8_img1.jpeg",
+        "data/ict162/exams/figures/ICT162_JUL2024_p8_img4.jpeg"
+      ],
+      "subQuestions": [
+        {
+          "id": "q4a",
+          "label": "Question 4a",
+          "marks": 8,
+          "text": "Select a layout manager and provide the missing code (Figure Q4a, line 25) to layout the widgets according to Figure Q4.",
+          "type": "code_writing",
+          "figures": ["data/ict162/exams/figures/ICT162_JUL2024_p8_img4.jpeg"],
+          "modelAnswer": "Using the grid layout manager:\n\n```python\n# Line 25 — grid layout for all widgets\nlbl_celsius.grid(row=0, column=0, padx=10, pady=10, sticky='e')\nentry_celsius.grid(row=0, column=1, padx=10, pady=10)\nlbl_fahrenheit.grid(row=1, column=0, padx=10, pady=10, sticky='e')\nlbl_result.grid(row=1, column=1, padx=10, pady=10, sticky='w')\nbtn_convert.grid(row=2, column=0, columnspan=2, pady=10)\n```\n\nAlternatively, using pack layout:\n```python\nframe_top = Frame(root)\nframe_top.pack(pady=5)\nlbl_celsius.pack(side=LEFT, padx=5)\nentry_celsius.pack(side=LEFT, padx=5)\n# ... (use frames to achieve the two-row layout)\n```\n\nNote: The exact layout code depends on the widget names and structure defined in Figure Q4(a). Use grid for precise row/column placement matching the GUI screenshot.",
+          "keyPoints": [
+            "grid is the most precise layout manager for form-style GUIs",
+            "Specify row= and column= for every widget",
+            "Use sticky='e'/'w' to align labels and results properly",
+            "columnspan=2 centres a button across two columns"
+          ]
+        },
+        {
+          "id": "q4b",
+          "label": "Question 4b",
+          "marks": 12,
+          "text": "Write the event handler for the Convert button — complete the callback function convert(). It must: validate that Celsius input is not empty or non-numeric (display error message), then compute F = (C * 9/5) + 32 and display the result to 1 decimal place.",
+          "type": "code_writing",
+          "modelAnswer": "```python\ndef convert():\n    celsius_str = entry_celsius.get().strip()\n    \n    # Validation: empty check\n    if celsius_str == '':\n        lbl_result.config(text='Please enter a Celsius value')\n        return\n    \n    # Validation: numeric check\n    try:\n        celsius = float(celsius_str)\n    except ValueError:\n        lbl_result.config(text='Invalid input: must be numeric')\n        return\n    \n    # Conversion\n    fahrenheit = (celsius * 9 / 5) + 32\n    lbl_result.config(text=f'{fahrenheit:.1f}')\n```",
+          "keyPoints": [
+            "Use entry.get() to read input",
+            "Check for empty string first",
+            "Use try/except ValueError to catch non-numeric input",
+            "Formula: F = (C * 9/5) + 32",
+            "Display with :.1f formatting (1 decimal place)",
+            "Update label with .config(text=...) not direct assignment"
+          ]
+        }
+      ]
+    }
+  ]
+}

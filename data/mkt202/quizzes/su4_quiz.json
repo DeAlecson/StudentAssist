@@ -1,0 +1,156 @@
+{
+  "unitId": "su4",
+  "moduleId": "mkt202",
+  "questions": [
+    {
+      "id": "mkt_su4_q1",
+      "type": "mcq",
+      "concept": "product levels",
+      "prompt": "A customer buys a drill. The 'core benefit' they are actually purchasing is:",
+      "difficulty": 1,
+      "choices": [
+        "The drill itself and its brand name",
+        "The ability to make holes",
+        "The warranty and after-sales service",
+        "The packaging and accessories"
+      ],
+      "answer": 1,
+      "explanation": "The core benefit is the fundamental need the product satisfies. Customers buy a drill not for the drill itself, but for the holes it creates. This concept, popularised by Levitt's 'Marketing Myopia', reminds marketers to focus on the underlying need."
+    },
+    {
+      "id": "mkt_su4_q2",
+      "type": "mcq",
+      "concept": "product differentiation",
+      "prompt": "Which dimension of product differentiation refers to the probability that a product will NOT malfunction within a specified time period?",
+      "difficulty": 2,
+      "choices": [
+        "Durability",
+        "Conformance quality",
+        "Reliability",
+        "Repairability"
+      ],
+      "answer": 2,
+      "explanation": "Reliability is the probability that a product will not malfunction or fail within a specified period. Durability measures the expected operating life. Conformance quality measures whether units meet specifications. Repairability measures ease of fixing."
+    },
+    {
+      "id": "mkt_su4_q3",
+      "type": "mcq",
+      "concept": "services differentiation",
+      "prompt": "A bank introduces a mobile app allowing customers to open an account in 5 minutes without visiting a branch. This is an example of services differentiation based on:",
+      "difficulty": 2,
+      "choices": [
+        "Customer training",
+        "Ease of ordering",
+        "Customer consulting",
+        "Maintenance and repair"
+      ],
+      "answer": 1,
+      "explanation": "Ease of ordering refers to how easy it is for customers to place an order or begin using a service. A streamlined digital onboarding process directly improves ease of ordering by removing friction."
+    },
+    {
+      "id": "mkt_su4_q4",
+      "type": "mcq",
+      "concept": "brand equity",
+      "prompt": "Brand equity is BEST defined as:",
+      "difficulty": 1,
+      "choices": [
+        "The total value of a company's physical assets",
+        "The added value a brand name gives to a product beyond its functional benefits",
+        "The number of brand elements a company has registered",
+        "The market share held by a brand in its category"
+      ],
+      "answer": 1,
+      "explanation": "Brand equity is the added value a known brand name confers on a product — it reflects consumer perceptions, associations, and loyalty, and enables the company to charge premium prices, gain greater distribution, and withstand competitive pressure."
+    },
+    {
+      "id": "mkt_su4_q5",
+      "type": "mcq",
+      "concept": "brand elements",
+      "prompt": "Which of the following is NOT one of the six criteria for choosing brand elements?",
+      "difficulty": 3,
+      "choices": [
+        "Memorable",
+        "Transferable",
+        "Expensive",
+        "Adaptable"
+      ],
+      "answer": 2,
+      "explanation": "The six criteria for brand elements are: Memorable, Meaningful, Likeable, Transferable, Adaptable, and Protectable (MMLTP). 'Expensive' is not a criterion — in fact, the best brand elements (names, slogans) can be inexpensive to create."
+    },
+    {
+      "id": "mkt_su4_q6",
+      "type": "mcq",
+      "concept": "product life cycle",
+      "prompt": "During the GROWTH stage of the Product Life Cycle, the primary marketing goal is to:",
+      "difficulty": 2,
+      "choices": [
+        "Create product awareness and trial",
+        "Maximise market share",
+        "Maximise profit while defending market share",
+        "Reduce expenditure and milk the brand"
+      ],
+      "answer": 1,
+      "explanation": "In the Growth stage, sales climb rapidly and new competitors enter. The primary goal shifts to maximising market share before the market matures. Strategies include expanding distribution, improving the product, and lowering prices slightly to deter new entrants."
+    },
+    {
+      "id": "mkt_su4_q7",
+      "type": "mcq",
+      "concept": "product life cycle",
+      "prompt": "A well-known soft drink brand launches a new flavour targeted at a new demographic (teenagers) to extend its sales. This is an example of which maturity-stage strategy?",
+      "difficulty": 3,
+      "choices": [
+        "Product modification — quality improvement",
+        "Market modification — finding new users",
+        "Marketing mix modification — price reduction",
+        "Market modification — increasing usage rate"
+      ],
+      "answer": 1,
+      "explanation": "Market modification involves finding new users, new market segments, or new uses for a mature product. Targeting teenagers as a new demographic is finding new users — expanding the market base rather than modifying the product itself."
+    },
+    {
+      "id": "mkt_su4_q8",
+      "type": "mcq",
+      "concept": "new product development",
+      "prompt": "At which stage of the New Product Development (NPD) process does the company launch the product in a limited geographic area to gauge consumer and trade reactions?",
+      "difficulty": 2,
+      "choices": [
+        "Concept testing",
+        "Business analysis",
+        "Market testing",
+        "Commercialisation"
+      ],
+      "answer": 2,
+      "explanation": "Market testing involves launching the product in a limited test market to measure consumer response, distributor reactions, and sales projections before a full-scale rollout. It comes after product development and before commercialisation."
+    },
+    {
+      "id": "mkt_su4_q9",
+      "type": "mcq",
+      "concept": "packaging",
+      "prompt": "The Powder Shampoo uses zero-plastic packaging made from recyclable materials. This primarily serves which function of packaging?",
+      "difficulty": 2,
+      "choices": [
+        "Grading the product",
+        "Communicating brand values and sustainability positioning",
+        "Increasing the product's durability",
+        "Providing instructions for use"
+      ],
+      "answer": 1,
+      "explanation": "Packaging is a powerful marketing tool. Zero-plastic packaging communicates the brand's core value proposition — sustainability and environmental responsibility — reinforcing the positioning and differentiating it from conventional competitors."
+    },
+    {
+      "id": "mkt_su4_q10",
+      "type": "mcq",
+      "concept": "product life cycle",
+      "prompt": "The Powder Shampoo has rapidly expanded from Singapore to the UK, Netherlands, and is now entering Asia via Sephora. Which PLC stage is most consistent with this behaviour?",
+      "difficulty": 2,
+      "choices": [
+        "Introduction",
+        "Growth",
+        "Maturity",
+        "Decline"
+      ],
+      "answer": 1,
+      "explanation": "Rapid market expansion — entering new geographic markets, signing new distribution partnerships, and scaling quickly — is characteristic of the Growth stage. At this stage, a company maximises market share by widening distribution and entering new segments before competition intensifies."
+    }
+  ]
+}

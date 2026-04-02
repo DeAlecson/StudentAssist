@@ -60,5 +60,17 @@
       "quizFile": "data/sst101/quizzes/su6_quiz.json",
       "flashcardFile": "data/sst101/flashcards/su6_cards.json"
     }
+  ],
+  "examPapers": [
+    {
+      "id": "jan2024",
+      "label": "JAN 2024",
+      "file": "data/sst101/exams/jan2024.json"
+    },
+    {
+      "id": "jan2025",
+      "label": "JAN 2025",
+      "file": "data/sst101/exams/jan2025.json"
+    }
   ]
 }

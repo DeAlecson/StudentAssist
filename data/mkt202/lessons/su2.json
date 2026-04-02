@@ -1,0 +1,87 @@
+{
+  "unitId": "su2",
+  "moduleId": "mkt202",
+  "title": "Consumer Behaviour",
+  "sections": [
+    {
+      "type": "intro",
+      "title": "Why Study Consumer Behaviour?",
+      "content": "**Consumer behaviour** is the study of how individuals, groups, and organisations select, buy, use, and dispose of goods, services, ideas, or experiences to satisfy their needs and wants.\n\nUnderstanding consumer behaviour is fundamental to effective marketing. Without knowing *why* consumers make the choices they do, marketers cannot design compelling products, craft resonant messages, or choose the right channels.\n\nConsumer behaviour is shaped by two broad categories of influences:\n- **Consumer characteristics** — cultural, social, and personal factors\n- **Consumer psychology** — motivation, perception, learning, memory, and emotion\n\nThese factors interact to drive the **buying decision process**, which ultimately results in a purchase (or non-purchase)."
+    },
+    {
+      "type": "definition",
+      "title": "Cultural Factors",
+      "content": "**Culture** is the most fundamental determinant of a person's wants and behaviour. It is the set of values, perceptions, preferences, and behaviours acquired through family and key institutions.\n\n- **Subcultures** — Groups within a culture sharing distinct value systems (e.g., ethnic groups, religious communities, regional groups, generational cohorts like Gen Z). Subcultures often represent attractive niche marketing segments.\n- **Social Class** — Relatively permanent and ordered social divisions whose members share similar values, interests, and behaviours. Social class is determined by income, occupation, education, and wealth — not income alone. Different classes show distinct product and media preferences.\n\n**Why it matters for marketing:** Culture shapes what consumers consider desirable, acceptable, and aspirational. A product launch in a new country must account for local cultural values to avoid misalignment."
+    },
+    {
+      "type": "definition",
+      "title": "Social Factors",
+      "content": "Social influences shape consumer behaviour through the groups and relationships that surround individuals.\n\n- **Reference Groups** — Groups that have direct or indirect influence on attitudes or behaviour:\n  - *Primary groups* — frequent, informal interaction (family, friends, colleagues)\n  - *Secondary groups* — less frequent, more formal (professional associations, religious groups)\n  - *Aspirational groups* — groups the consumer wants to belong to\n  - *Dissociative groups* — groups the consumer wants to avoid association with\n- **Family** — The most influential buying organisation. The *family of orientation* (parents and siblings) shapes core values; the *family of procreation* (spouse and children) drives daily purchasing. Marketers research who plays which role in family purchase decisions.\n- **Opinion Leaders/Influencers** — Individuals with special knowledge or personality who influence others informally. Social media has amplified this role enormously (micro-influencers, KOLs).\n- **Roles and Status** — Each person occupies multiple roles (parent, employee, club member) and a status associated with each role. People choose products that communicate their role and status."
+    },
+    {
+      "type": "definition",
+      "title": "Personal Factors",
+      "content": "A buyer's decisions are also influenced by personal characteristics unique to the individual:\n\n- **Age and Life-Cycle Stage** — Buying patterns shift across life stages (single young adult → newlywed → parent → empty nester → retired). Life stage affects needs for housing, food, travel, and financial products.\n- **Occupation and Economic Circumstances** — Occupation determines disposable income, time availability, and aspirational identity. Economic circumstances (income, savings, debt) directly constrain spending power.\n- **Personality and Self-Concept** — Personality is a set of distinguishing traits (e.g., confidence, sociability, autonomy). The **self-concept** theory holds that people buy brands that match their actual, ideal, or social self-concept.\n- **Lifestyle** — Expressed through **AIO dimensions**:\n  - *Activities* — work, hobbies, sports, shopping\n  - *Interests* — food, fashion, family, recreation\n  - *Opinions* — social issues, politics, business\n- **Values** — Core beliefs that transcend specific situations and guide long-term behaviour (e.g., environmentalism driving sustainable product choices)."
+    },
+    {
+      "type": "concept",
+      "title": "Psychological Factors",
+      "content": "Four key psychological factors influence consumer choices:\n\n**1. Motivation — Maslow's Hierarchy of Needs**\nMaslow proposed that human needs are arranged in a hierarchy. Consumers first satisfy lower-order needs before higher-order ones become motivating:\n1. *Physiological* — food, water, shelter\n2. *Safety* — security, stability\n3. *Social (Love/Belonging)* — relationships, belonging\n4. *Esteem* — achievement, recognition, prestige\n5. *Self-Actualisation* — realising one's full potential\n\nMarketers target products at appropriate levels (e.g., luxury brands target esteem needs).\n\n**2. Perception**\nPerception is the process by which individuals select, organise, and interpret information:\n- *Selective attention* — we notice stimuli that are relevant to us\n- *Selective distortion* — we interpret information to fit existing beliefs\n- *Selective retention* — we remember points that support our attitudes\n\n**3. Learning**\nLearning changes behaviour based on experience:\n- *Classical conditioning* — associating a brand with a positive stimulus (e.g., uplifting music in an ad)\n- *Operant conditioning* — rewarding desired behaviour (e.g., loyalty points reinforcing repeat purchase)\n\n**4. Memory**\nMemory involves *encoding* (taking in information), *storage* (retaining it), and *retrieval* (recalling it). Brand associations are stored in memory networks — strong, positive associations are a key marketing goal."
+    },
+    {
+      "type": "concept",
+      "title": "The Consumer Buying Decision Process",
+      "content": "The **five-stage model** describes the full process a consumer may go through:\n\n1. **Problem Recognition** — The consumer identifies a gap between their actual and desired state. Marketing can trigger recognition (e.g., advertising showing what they're missing).\n2. **Information Search** — The consumer gathers information from:\n   - *Internal sources* — personal memory and experience\n   - *External sources* — friends/family (word of mouth), commercial sources (ads), public sources (reviews, ratings)\n3. **Evaluation of Alternatives** — Consumers compare options using evaluation criteria (e.g., price, brand reputation, features). Marketers aim to be in the consumer's *evoked set* (brands actively considered).\n4. **Purchase Decision** — The consumer chooses a brand, quantity, timing, and payment method. The decision can be disrupted by *attitude of others* (peer influence) or *unexpected situational factors* (stock-out, price spike).\n5. **Post-Purchase Behaviour** — After buying, the consumer evaluates whether expectations were met. Satisfaction → loyalty and positive word-of-mouth. Dissatisfaction → returns, complaints, negative reviews. Marketers aim to reduce **cognitive dissonance** (post-purchase doubt).\n\n**Important:** Not all purchases involve all five stages. Low-involvement decisions (e.g., buying chewing gum) may skip several steps."
+    },
+    {
+      "type": "definition",
+      "title": "Types of Buying Behaviour",
+      "content": "Buying behaviour varies by the consumer's level of involvement and the degree of difference between brands:\n\n| Type | Involvement | Brand Differences | Example |\n|---|---|---|---|\n| **Complex Buying Behaviour** | High | Significant | Laptop, car, home |\n| **Dissonance-Reducing** | High | Few | Flooring, appliances |\n| **Habitual Buying** | Low | Few | Salt, petrol, bread |\n| **Variety-Seeking** | Low | Significant | Snacks, soft drinks |\n\n- **Complex buying** requires intensive information search — marketers must provide detailed, credible information.\n- **Dissonance-reducing** buyers need reassurance after purchase — post-sale communication is critical.\n- **Habitual buying** is driven by routine — marketers should aim for shelf prominence and consistent packaging.\n- **Variety-seeking** consumers switch brands for novelty — marketers should offer variety within their product range."
+    },
+    {
+      "type": "example",
+      "title": "Applying Consumer Behaviour: Buying a Smartphone",
+      "content": "Purchasing a smartphone illustrates the full five-stage process and multiple influencing factors:\n\n**Problem Recognition:** The consumer's old phone is slow and its camera is outdated.\n\n**Information Search:** The consumer searches online reviews (Google, YouTube), asks friends, visits a telco store, and looks at brand websites. Apple and Samsung are already in their **evoked set** due to prior advertising exposure.\n\n**Evaluation of Alternatives:** The consumer compares on camera quality, battery life, ecosystem (iOS vs Android), and price. **Personal factors** (tech-savvy identity, budget) and **social factors** (friends' recommendations, aspirational reference group using iPhones) both play roles.\n\n**Purchase Decision:** Despite a positive attitude toward Samsung, the consumer buys an iPhone because a friend strongly recommended it (**attitude of others**) and it was on promotion (**situational factor**).\n\n**Post-Purchase:** The consumer experiences some cognitive dissonance wondering if Samsung would have been better. Apple counters this through unboxing experience, Apple Store support, and community belonging — driving satisfaction and long-term brand loyalty.\n\n**Key takeaway:** Every stage of the decision process is a marketing touchpoint."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Quick Check",
+      "question": "Explain the difference between selective attention, selective distortion, and selective retention, and give one marketing implication of each.",
+      "answer": "**Selective attention** — consumers notice stimuli relevant to them and filter out the rest. Implication: ads must be immediately attention-grabbing and relevant to the target audience's current needs. **Selective distortion** — consumers interpret information in ways that confirm their existing beliefs. Implication: negative information about a beloved brand is often discounted; marketers of challenger brands must work harder to shift established beliefs. **Selective retention** — consumers remember information that supports their attitudes and forget contradictory information. Implication: reinforce key brand messages repeatedly to increase the chance of retention and recall at the point of purchase."
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "prompt": "Describe Maslow's Hierarchy of Needs and explain how marketers can use it to design and position products.",
+        "modelAnswer": "Maslow's Hierarchy proposes that human needs are arranged in a five-level pyramid: physiological (food, water, shelter) at the base, followed by safety (security, stability), social/love (belonging, relationships), esteem (achievement, recognition), and self-actualisation (realising full potential) at the top. People are motivated to satisfy lower-level needs before higher-level ones become pressing. Marketers apply this framework by positioning products to appeal to the relevant need level of their target segment. Basic food brands appeal to physiological needs with messages of nourishment. Home security systems target safety needs with messaging around protection. Social media platforms and community products target belonging needs. Luxury brands (Rolex, Louis Vuitton) target esteem needs by associating ownership with achievement and status. Adventure travel and executive education programmes target self-actualisation by promising personal growth and fulfilment.",
+        "keyPoints": [
+          "Five levels: physiological, safety, social, esteem, self-actualisation",
+          "Lower needs must be met before higher needs motivate behaviour",
+          "Different product categories map naturally to different need levels",
+          "Marketers use need-level targeting to craft relevant messages and positioning"
+        ]
+      },
+      {
+        "prompt": "Compare and contrast the four types of consumer buying behaviour and explain how a marketer's strategy should differ for each.",
+        "modelAnswer": "The four types are determined by involvement level and degree of brand differentiation. Complex buying behaviour (high involvement, significant brand differences — e.g., cars, laptops) requires extensive information processing. Marketers should provide detailed product information, use salespeople for consultation, and emphasise differentiating features. Dissonance-reducing buying behaviour (high involvement, few brand differences — e.g., flooring) means consumers may choose quickly then seek reassurance. Marketers should focus on post-purchase communication and testimonials to reduce cognitive dissonance. Habitual buying behaviour (low involvement, few differences — e.g., salt, petrol) is driven by routine with little deliberation. Marketers should dominate shelf space, maintain consistent packaging, and use repetitive advertising to build familiarity. Variety-seeking buying behaviour (low involvement, significant differences — e.g., snacks, soft drinks) sees consumers switch brands out of curiosity rather than dissatisfaction. The market leader should ensure consistent availability and remind consumers of their preference, while challengers can encourage trial through promotions and new variants.",
+        "keyPoints": [
+          "Complex: high involvement + significant differences → provide information, enable comparison",
+          "Dissonance-reducing: high involvement + few differences → post-purchase reassurance",
+          "Habitual: low involvement + few differences → shelf prominence, repetitive advertising",
+          "Variety-seeking: low involvement + significant differences → market leader retains; challengers seek trial"
+        ]
+      },
+      {
+        "prompt": "Explain the role of reference groups and opinion leaders in shaping consumer behaviour, and discuss the marketing implications of the rise of social media influencers.",
+        "modelAnswer": "Reference groups are groups that exert direct or indirect influence on a consumer's attitudes and behaviour. Primary groups (family, close friends) have the strongest influence through frequent direct interaction. Secondary groups (professional associations, religious organisations) have formal but less frequent contact. Aspirational groups influence behaviour even without membership — consumers buy products associated with groups they wish to join. Opinion leaders are individuals perceived to have special knowledge, expertise, or personality who informally influence others' decisions. Traditionally, opinion leaders included celebrities, journalists, and subject-matter experts. The rise of social media has transformed this dynamic by creating a new class of influencers — individuals who build audiences on platforms like Instagram, TikTok, and YouTube. Micro-influencers (10,000–100,000 followers) often have higher engagement rates and greater perceived authenticity than mega-celebrities. Marketers now invest in influencer marketing strategies, partnering with creators whose audience demographics match their target segment. Key marketing implications include: selecting influencers whose values align with the brand, monitoring authenticity (sponsored content disclosure), measuring ROI through reach, engagement, and conversion metrics, and managing the reputational risk of influencer misconduct.",
+        "keyPoints": [
+          "Reference groups influence purchases especially for publicly visible products",
+          "Opinion leaders are trusted and credible sources within their peer networks",
+          "Social media has democratised influence — micro-influencers often outperform celebrities in engagement",
+          "Marketers must align influencer partnerships with brand values and measure impact rigorously"
+        ]
+      }
+    ]
+  }
+}

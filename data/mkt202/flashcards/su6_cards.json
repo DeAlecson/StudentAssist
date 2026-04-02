@@ -1,0 +1,96 @@
+{
+  "unitId": "su6",
+  "moduleId": "mkt202",
+  "cards": [
+    {
+      "id": "mkt_su6_c1",
+      "front": "What is Integrated Marketing Communications (IMC)?",
+      "back": "IMC is the coordination of all promotional tools and messages so that they work together consistently to deliver a clear, compelling brand message to the target audience.\n\nGoal: Every touchpoint — advertising, social media, PR, packaging, sales — delivers the same unified message.\n\nWhy it matters: Consumers encounter brands across many channels; inconsistent messages erode trust and dilute brand identity.",
+      "concept": "IMC Overview"
+    },
+    {
+      "id": "mkt_su6_c2",
+      "front": "List the FIVE main elements of the promotional mix.",
+      "back": "1. Advertising — paid, non-personal presentation via media (TV, digital, print)\n2. Sales Promotion — short-term incentives to stimulate purchase (coupons, contests, discounts)\n3. Public Relations (PR) — building positive image through editorial coverage, events, sponsorship\n4. Personal Selling — direct, person-to-person presentations to make sales\n5. Direct Marketing — direct communications to specific individuals (email, direct mail, telemarketing, social media DMs)",
+      "concept": "Promotional Mix"
+    },
+    {
+      "id": "mkt_su6_c3",
+      "front": "What are the main types of advertising by PURPOSE?",
+      "back": "1. Informative advertising — builds awareness, explains product features; used in introduction stage\n2. Persuasive advertising — builds preference, encourages brand switching; used in growth/maturity stage\n3. Reminder advertising — keeps brand top-of-mind for loyal customers; used in maturity stage\n4. Comparative advertising — directly or indirectly compares with competitors (e.g., Pepsi vs Coke Challenge)",
+      "concept": "Advertising"
+    },
+    {
+      "id": "mkt_su6_c4",
+      "front": "What are the FOUR main types of message appeal used in advertising?",
+      "back": "1. Rational appeal — focuses on practical benefits, features, quality, or value (e.g., 'saves you $50/month')\n2. Emotional appeal — evokes feelings (happiness, fear, nostalgia, love) to drive purchase (e.g., insurance ads showing family protection)\n3. Moral appeal — appeals to the audience's sense of right and wrong; often used in social causes (e.g., anti-littering, blood donation campaigns)\n4. Fear appeal — highlights risks or negative consequences of not buying/acting (e.g., anti-smoking campaigns)\n\nBest appeals are authentic and relevant to the brand's positioning.",
+      "concept": "Message Strategy"
+    },
+    {
+      "id": "mkt_su6_c5",
+      "front": "Distinguish between reach, frequency, and impact in media selection.",
+      "back": "Reach: The number of DIFFERENT people or households exposed to the media at least once during a given time period.\n\nFrequency: The number of TIMES the average person is exposed to the message during that period.\n\nImpact: The qualitative value of the exposure through a given medium (e.g., a video ad on YouTube has higher impact than a text tweet).\n\nKey trade-off: With a fixed budget, increasing reach decreases frequency, and vice versa. High-involvement purchases may need high frequency; broad awareness campaigns prioritise reach.",
+      "concept": "Media Selection"
+    },
+    {
+      "id": "mkt_su6_c6",
+      "front": "What is word-of-mouth (WOM) marketing? What are buzz and viral marketing?",
+      "back": "Word-of-mouth (WOM): Personal communications about a product between target buyers and their neighbours, friends, and family. Highly credible because it comes from trusted sources, not the brand.\n\nBuzz marketing: Cultivating brand ambassadors or opinion leaders to spread enthusiasm organically (e.g., seeding a product with influencers before launch).\n\nViral marketing: Creating content so compelling that audiences share it rapidly, like a social virus. Low cost, potentially massive reach.\n\nWOM is especially important for new or unusual products where trial risk is high — peer recommendation significantly lowers barriers.",
+      "concept": "Digital & Social Media Marketing"
+    },
+    {
+      "id": "mkt_su6_c7",
+      "front": "What are the FOUR main types of digital communication tools in marketing?",
+      "back": "1. Online communication — websites, SEO, content marketing, email marketing, online PR\n2. Social media marketing — Facebook, Instagram, TikTok, LinkedIn, YouTube — content, ads, influencer marketing\n3. Mobile communication — SMS/MMS, mobile apps, push notifications, mobile ads, location-based marketing\n4. Word-of-mouth (digital) — online reviews, referral programmes, social sharing, influencer advocacy\n\nFor exam answers: select the TWO most appropriate tools and explain why they suit the specific brand and target audience.",
+      "concept": "Digital Marketing Tools"
+    },
+    {
+      "id": "mkt_su6_c8",
+      "front": "What is content marketing and why is it effective?",
+      "back": "Content marketing involves creating and distributing VALUABLE, relevant, and consistent content (blogs, videos, podcasts, infographics) to attract and retain a clearly defined audience — with the goal of driving profitable customer action.\n\nWhy effective:\n- Provides value before asking for a sale (trust-building)\n- SEO-optimised content drives organic traffic long after publication\n- Establishes brand as a thought leader\n- Nurtures prospects through the buyer journey\n\nExample: A shampoo brand publishing articles on 'The Science of Hair Care' attracts searchers already interested in the topic.",
+      "concept": "Digital Marketing Tools"
+    },
+    {
+      "id": "mkt_su6_c9",
+      "front": "What is the difference between push and pull promotional strategies?",
+      "back": "PUSH strategy: The manufacturer 'pushes' the product through the distribution channel using trade promotions, personal selling to retailers, and trade discounts. The channel intermediaries then push it to consumers.\nExample: Sales rep persuades supermarket to stock the product; supermarket promotes it in-store.\n\nPULL strategy: The manufacturer creates consumer demand that 'pulls' the product through the channel — consumers demand the product from retailers, who then demand it from manufacturers.\nExample: Heavy advertising builds consumer brand awareness; consumers ask for the product at the store.\n\nMost companies use a combination of both.",
+      "concept": "Promotional Strategy"
+    },
+    {
+      "id": "mkt_su6_c10",
+      "front": "What is public relations (PR) and what are the key tools?",
+      "back": "PR involves building good relations with the company's various publics by obtaining favourable publicity, building up a good corporate image, and handling or heading off unfavourable rumours, stories, and events.\n\nKey PR tools (PENCILS):\n- Publications: newsletters, annual reports\n- Events: sponsorships, trade shows, product launches\n- News: press releases, media relations\n- Community: CSR activities, local engagement\n- Identity: corporate branding, stationery, signage\n- Lobbying: government relations\n- Social: social media, influencer relations\n\nAdvantage over advertising: PR coverage is perceived as more credible because it appears as editorial content, not paid promotion.",
+      "concept": "Public Relations"
+    },
+    {
+      "id": "mkt_su6_c11",
+      "front": "What is the AIDA model and how does it apply to IMC?",
+      "back": "AIDA describes the stages a consumer passes through when responding to a marketing message:\n\nA — Attention: The communication must first capture attention\nI — Interest: Then build interest in the product or brand\nD — Desire: Convert interest into a want or desire\nA — Action: Motivate the consumer to act (purchase, sign up, visit)\n\nIMC application: Different communication tools are most effective at different stages:\n- Awareness/Attention: Advertising, PR, social media\n- Interest/Desire: Content marketing, influencers, direct mail\n- Action: Sales promotion (coupons, discounts), direct marketing, personal selling",
+      "concept": "Communication Effectiveness"
+    },
+    {
+      "id": "mkt_su6_c12",
+      "front": "What is a positioning statement? What is the standard format?",
+      "back": "A positioning statement is a brief description of a company's target market and how it wants to be perceived — used to guide marketing communications.\n\nStandard format:\n'For [target segment], [Brand] is the [frame of reference] that [key benefit/point-of-difference] because [reason to believe].'\n\nExample:\n'For eco-conscious millennials who care about reducing plastic waste, The Powder Shampoo is the sustainable haircare brand that delivers 100 washes from a single zero-plastic bottle because it is water-free and packed in infinitely recyclable aluminium.'\n\nKey elements: Target segment, frame of reference (category), POD (benefit), RTB (proof)",
+      "concept": "Positioning & Communications"
+    },
+    {
+      "id": "mkt_su6_c13",
+      "front": "What is the difference between a point-of-parity (POP) and a point-of-difference (POD)?",
+      "back": "Point-of-Parity (POP): Attributes or associations that are SHARED with competitors — things a brand must have to be considered a legitimate player in the category. They remove reasons NOT to buy.\nExample: A coffee brand must have acceptable taste (POP with all coffee brands).\n\nPoint-of-Difference (POD): Attributes that are UNIQUE to the brand and valued by consumers — the reasons consumers choose it over competitors.\nExample: Prefer Coffee's bean-free, upcycled production is a POD vs conventional coffee suppliers.\n\nStrategy: Achieve POPs to qualify for consideration; establish PODs to win preference.",
+      "concept": "Positioning & Communications"
+    },
+    {
+      "id": "mkt_su6_c14",
+      "front": "What is micro-influencer marketing and why is it often more effective than mega-influencer marketing?",
+      "back": "Micro-influencers: Social media accounts with 10,000–100,000 followers in a specific niche.\n\nWhy more effective than mega-influencers:\n- Higher engagement rates (5–10% vs 1–2% for mega-influencers)\n- Perceived as more authentic and relatable — followers trust their opinions as 'real people'\n- Lower cost ($300–$1,000 per post vs $10,000–$100,000 for celebrities)\n- Niche relevance — a sustainable beauty micro-influencer's followers are far more likely to be interested in eco-friendly products\n\nFor small brands with limited budgets (e.g., Prefer Coffee, The Powder Shampoo), micro-influencers offer the best ROI.",
+      "concept": "Digital Marketing Tools"
+    },
+    {
+      "id": "mkt_su6_c15",
+      "front": "What are the key considerations when selecting a media channel for an IMC campaign?",
+      "back": "1. Target audience media habits — where do they spend their time?\n2. Product nature — complex products need detailed explanation (long-form content); simple products suit visual media\n3. Message type — emotional messages suit TV/video; rational/informative messages suit print/email\n4. Cost — CPM (cost per thousand), total budget, cost per action\n5. Timing — seasonal products, launch timing, purchase decision cycles\n6. Competitive environment — where are competitors advertising?\n7. Reach vs frequency trade-off — wide awareness or repeated exposure?\n\nFor exam: always justify your channel choice with at least 2 of these considerations.",
+      "concept": "Media Selection"
+    }
+  ]
+}

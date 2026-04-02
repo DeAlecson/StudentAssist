@@ -194,6 +194,20 @@ const App = (() => {
       case 'mixed':
         MixedEngine.start(moduleId);
         break;
+      case 'practice':
+        if (param) {
+          PracticeEngine.start(moduleId, param);
+        } else {
+          PracticeEngine.showSelector(moduleId);
+        }
+        break;
+      case 'exam':
+        if (param) {
+          ExamEngine.start(moduleId, param);
+        } else {
+          ExamEngine.showSelector(moduleId);
+        }
+        break;
       default:
         Renderer.moduleHome(moduleId);
     }

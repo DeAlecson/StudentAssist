@@ -1,0 +1,136 @@
+{
+  "id": "mkt202_jan2024",
+  "module": "mkt202",
+  "code": "MKT202",
+  "semester": "JAN 2024",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "open_book",
+  "caseStudies": [
+    {
+      "id": "cs_powder_shampoo",
+      "title": "The Powder Shampoo",
+      "text": "Paperwork is a chore, especially when registering a beauty brand in a foreign land. Beauty veteran Lynn Tan knows this too well, having made all the necessary applications with the US Food and Drug Administration (FDA) and European Union (EU) to retail The Powder Shampoo overseas. This was the only way to grow her brand globally and spread the sustainability message.\n\nToday, the made-in-Singapore brand sells worldwide through its online platform and distributors in the UK, US, Netherlands, Indonesia and Hong Kong. The Powder Shampoo just inked a partnership with Sephora to retail its products in five countries within Asia early next year. It also plans to expand to Malaysia, the Philippines, Australia, and Norway.\n\nIn Singapore, the Powder Shampoo sells its products in department stores like Isetan and Metro, smaller retailers like Beaute by Nature and online platforms like Lazada and Shopee. From March, you can find it on Singapore Airlines' Kris Shop as well.\n\nLaunched in April 2022, the idea for The Powder Shampoo came during the Covid-19 lockdown. The brand uses 28 botanically derived ingredients and eight micro-encapsulated essential oils, minus nasty sulphates, silicones, parabens, phthalates, or synthetic fragrances.\n\nThe Powder Shampoo is a powder-to-foam haircare line comprising four shampoos for various hair types. It is water-free and uses zero plastic packaging. With every 100g bottle you buy, you enjoy 100 washes, saving you five plastic bottles and five litres of water.\n\nProducts are packed in lightweight aluminium bottles that are 100% reusable, biodegradable and infinitely recyclable. Simply refill it with the brand's compostable and recyclable paper refill pouches.\n\nThe brand partnered with Tree Nation for a tree-planting initiative — a tree is planted with every bottle sold. So far, 20,000 trees have been planted, translating to 15 hectares of reforestation and 2,200 tonnes of carbon dioxide captured. The target is to plant 1,000,000 trees by 2030.\n\n(Adapted for academic purposes)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "label": "Question 1",
+      "marks": 50,
+      "text": "The questions below are based on the case study: The Powder Shampoo.",
+      "type": "essay",
+      "_caseStudyRef": "cs_powder_shampoo",
+      "subQuestions": [
+        {
+          "id": "q1a",
+          "label": "Question 1a",
+          "marks": 20,
+          "text": "Scan the macroenvironment and discuss two (2) macroenvironmental trends (under two different macroenvironment forces) that would impact the success of The Powder Shampoo.",
+          "type": "essay",
+          "_caseStudyRef": "cs_powder_shampoo",
+          "modelAnswer": "MACROENVIRONMENTAL ANALYSIS (PESTLE) — TWO FORCES:\n\nForce 1: NATURAL/ECOLOGICAL ENVIRONMENT\nTrend: Growing global concern about plastic pollution and water scarcity.\nImpact on The Powder Shampoo: Consumer and regulatory pressure to reduce single-use plastics is intensifying globally. The EU has enacted Single-Use Plastics Directives banning certain plastic items. Singapore's Zero Waste Masterplan targets a 30% reduction in waste by 2030. This environmental trend directly BENEFITS The Powder Shampoo — its zero-plastic, aluminium refillable bottles and waterless formula are precisely positioned to meet these requirements. Retailers and distributors like Sephora may prioritise such brands as part of their own sustainability commitments. Additionally, as water scarcity worsens (only 0.007% of Earth's water is accessible), the water-free formula gains stronger ethical appeal and could attract eco-conscious consumers globally.\n\nForce 2: SOCIOCULTURAL ENVIRONMENT\nTrend: Rising eco-consciousness and sustainable consumption behaviour, particularly among millennials and Gen Z.\nImpact on The Powder Shampoo: Consumers globally — especially younger segments — are increasingly making purchasing decisions based on environmental and ethical values. Studies show that 66% of consumers (and 73% of millennials) are willing to pay more for sustainable brands (Nielsen). This shift directly creates a growing market for The Powder Shampoo's product proposition. Furthermore, the brand's story (founder motivated by her grandchildren's future) resonates emotionally with purpose-driven consumers. The glowing review in The Telegraph and the Vegan Choice Awards demonstrate how sustainability credentials translate into organic word-of-mouth amplification in eco-conscious communities.",
+          "keyPoints": [
+            "Must identify TWO DIFFERENT PESTLE forces (not two trends from the same force)",
+            "Each force must be clearly named (Natural/Ecological, Sociocultural, Technological, Political/Legal, Economic, Demographic)",
+            "Trend must be described specifically, not just 'people care about the environment'",
+            "Impact must be tied to The Powder Shampoo's specific business situation",
+            "Positive AND negative impacts both valid — state direction clearly",
+            "Approximately 10 marks per force"
+          ]
+        },
+        {
+          "id": "q1b",
+          "label": "Question 1b",
+          "marks": 14,
+          "text": "Employ two (2) strategies that The Powder Shampoo can implement to manage customer relationships and to build loyalty.",
+          "type": "essay",
+          "_caseStudyRef": "cs_powder_shampoo",
+          "modelAnswer": "CUSTOMER RELATIONSHIP MANAGEMENT STRATEGIES:\n\nStrategy 1: LOYALTY PROGRAMME WITH SUSTAINABILITY REWARDS\nThe Powder Shampoo can introduce a loyalty programme that rewards repeat purchases with reforestation milestones. For example, customers who accumulate 10 bottle purchases could receive a certificate showing how many trees have been planted on their behalf, or unlock access to limited-edition refill scents. This creates an emotional bond beyond transactional exchanges — customers become co-stakeholders in the brand's mission. Research shows that emotional loyalty (brand attachment based on shared values) is far more durable than reward-based loyalty (points and discounts). Since The Powder Shampoo's core customers are sustainability-motivated, this alignment of rewards with brand values deepens commitment.\n\nStrategy 2: COMMUNITY BUILDING AND CO-CREATION (CUSTOMER ENGAGEMENT MARKETING)\nThe Powder Shampoo can build an online community (on Instagram, Telegram, or its own platform) that connects like-minded eco-conscious consumers. The brand could invite customers to co-create new product formulations, name new scents, or nominate tree-planting locations — turning customers into brand ambassadors and co-innovators. Kotler notes that customer engagement marketing involves making customers active participants in the brand story rather than passive recipients. User-generated content (UGC) from community members provides authentic social proof that is more persuasive to new prospects than paid advertising, reducing customer acquisition costs while deepening loyalty among existing customers.",
+          "keyPoints": [
+            "TWO distinct strategies (not two variations of the same idea)",
+            "Each strategy must be SPECIFIC to The Powder Shampoo's context, not generic CRM advice",
+            "Explain the MECHANISM of each strategy — HOW does it build loyalty?",
+            "Reference to CRM theory or concepts is valued (customer equity, CLV, engagement marketing)",
+            "Approximately 7 marks per strategy"
+          ]
+        },
+        {
+          "id": "q1c",
+          "label": "Question 1c",
+          "marks": 16,
+          "text": "Determine whether The Powder Shampoo has adopted the waterfall or the sprinkler approach when deciding how many markets to enter (6 marks). Then illustrate two (2) suitable modes of market entry that it can adopt to enter foreign markets such as Australia and the Philippines (10 marks).",
+          "type": "essay",
+          "_caseStudyRef": "cs_powder_shampoo",
+          "modelAnswer": "PART A: WATERFALL vs SPRINKLER APPROACH (6 marks)\n\nThe Powder Shampoo has adopted the WATERFALL approach.\n\nThe waterfall approach involves entering markets SEQUENTIALLY — one or a few at a time, moving to new markets only after establishing a foothold in existing ones. This is in contrast to the sprinkler approach, where a company simultaneously enters many markets at once.\n\nEvidence from the case:\n- The brand launched in Singapore first (April 2022), establishing its home market base\n- Then entered the UK, then the US, Netherlands, Indonesia, and Hong Kong progressively\n- A Sephora partnership was signed to enter five Asian countries 'early next year' — staged, not simultaneous\n- Plans for Malaysia, Philippines, Australia, Norway are still in discussion/planning phase\nThis sequential, market-by-market rollout is characteristic of the waterfall approach — reducing risk, learning from each market, and applying those learnings before moving on.\n\nPART B: TWO MODES OF MARKET ENTRY (10 marks)\n\nMode 1: INDIRECT EXPORTING via Distributors\nThe Powder Shampoo already uses distributors in several markets. For Australia and the Philippines, the brand could appoint exclusive local distributors. These distributors take ownership of the goods, handle customs clearance, warehousing, and local marketing. This is low-risk (minimal capital investment) and allows the brand to leverage the distributor's local market knowledge, retailer relationships, and regulatory expertise. However, the brand gives up some control over marketing and pricing.\nSuitability: Excellent for the Philippines (emerging e-commerce market, complex regulatory environment for cosmetics); distributors can navigate PDFA (Philippines FDA) approval processes that would be costly and time-consuming for a small brand to manage alone.\n\nMode 2: JOINT VENTURE with a Local Partner\nFor Australia — a large, competitive market with strong local cosmetics brands — a joint venture with an established Australian beauty or wellness company would give The Powder Shampoo access to distribution networks, retail shelf space, and local brand credibility. A JV shares investment costs and risks while combining The Powder Shampoo's product innovation with the partner's local market expertise. This is appropriate for markets where cultural nuance, regulatory barriers, and established competitor relationships make independent entry costly.",
+          "keyPoints": [
+            "Waterfall (not sprinkler) — justify with specific evidence from the case",
+            "Define BOTH approaches briefly before concluding which one applies",
+            "Part B: Two distinct modes (exporting, licensing, franchising, joint venture, direct investment)",
+            "Each mode explained with specifics: what it involves, why it suits this brand and these markets",
+            "10 marks split across two modes — approximately 5 marks each"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "label": "Question 2",
+      "marks": 50,
+      "text": "The questions below are based on the same case as Question 1: The Powder Shampoo.",
+      "type": "essay",
+      "_caseStudyRef": "cs_powder_shampoo",
+      "subQuestions": [
+        {
+          "id": "q2a",
+          "label": "Question 2a",
+          "marks": 18,
+          "text": "Examine two (2) possible profiles of target customer segments who would purchase The Powder Shampoo, using several variables from a minimum of two (2) segmentation bases.",
+          "type": "essay",
+          "_caseStudyRef": "cs_powder_shampoo",
+          "modelAnswer": "CUSTOMER SEGMENTATION — TWO PROFILES:\n\nSEGMENT 1: Eco-Conscious Urban Professional\n\nDemographic: Female, 28–42 years old, university-educated, upper-middle income (SGD $4,500+/month), employed in professional/managerial roles, living in urban centres (Singapore, London, Amsterdam).\n\nPsychographic (Values/Lifestyle): Strongly values environmental sustainability; adopts a minimalist lifestyle; willing to pay a premium for ethical brands; health-conscious (prefers clean ingredients, free from sulphates and parabens); actively researches brands before purchase. Reads publications like The Telegraph, follows eco-lifestyle influencers on Instagram.\n\nBehavioural: Early adopter of sustainable products; high brand loyalty once a brand aligns with values; purchases through premium retailers (Sephora, department stores) and online channels; influenced by expert reviews and certifications (Vegan Choice Awards); likely to recommend to social circle.\n\nGeographic: Urban; lives in markets with strong sustainability culture (Singapore, UK, Western Europe).\n\nRelevance: This segment values exactly what The Powder Shampoo offers — clean ingredients, zero plastic, sustainability credentials, and premium quality. They are willing to pay the price premium and become brand advocates.\n\nSEGMENT 2: Frequent Traveller / Digital Nomad\n\nDemographic: Male or female, 25–40, high income, frequent business or leisure traveller; carries cabin luggage (no checked bags); may be digital nomads working remotely across countries.\n\nPsychographic: Pragmatic, convenience-oriented; values compact, multi-functional products; environmentally aware but primary driver is convenience and travel compliance; purchases based on utility and efficiency.\n\nBehavioural: Makes purchase decisions in-flight (e.g., Singapore Airlines Kris Shop) or pre-travel; values products that are TSA-compliant (powder does not count towards liquid restrictions); repeat buyer when product delivers convenience; may discover through travel retail channels.\n\nGeographic: Transient; purchases across multiple geographies; relevant wherever The Powder Shampoo has distribution.\n\nRelevance: The Powder Shampoo's 20g Mini (20+ washes) and powder format are uniquely suited to travel — 'great for carry-on flights' as noted in the case. The travel channel (Kris Shop) is a strategic fit.",
+          "keyPoints": [
+            "TWO distinct, named segments — not just variations of 'eco-conscious consumer'",
+            "Minimum 2 segmentation bases per segment (e.g., demographic + psychographic + behavioural)",
+            "Describe VARIABLES within each base (not just the base name)",
+            "Each segment must be tied to evidence from the case study",
+            "Approximately 9 marks per segment"
+          ]
+        },
+        {
+          "id": "q2b",
+          "label": "Question 2b",
+          "marks": 20,
+          "text": "As part of an integrated communication campaign, develop two (2) distinct digital communication tools to attract and effectively persuade customers to use The Powder Shampoo (16 marks). Include a suitable message appeal in your answer (4 marks). Select from: online communication, social media, mobile communication, and word-of-mouth.",
+          "type": "essay",
+          "_caseStudyRef": "cs_powder_shampoo",
+          "modelAnswer": "MESSAGE APPEAL: EMOTIONAL + MORAL APPEAL\n\nThe campaign will use a combined emotional and moral appeal. Emotional appeal: evoke concern for the planet and hope for a better future (aligned with founder Lynn Tan's story about her grandchildren). Moral appeal: tap into consumers' sense of responsibility — 'Every wash saves 5 plastic bottles'. This dual appeal resonates with eco-conscious consumers who make purchasing decisions based on both values and emotions.\n\nDIGITAL TOOL 1: SOCIAL MEDIA MARKETING (Instagram + TikTok)\n\nObjective: Build awareness, showcase sustainability credentials, and drive trial among eco-conscious millennials and Gen Z.\n\nExecution:\n- Instagram: Curated aesthetic feed showcasing the powder-to-foam ritual, before/after of aluminium bottle refilling, and user-generated photos of planted trees tagged with #PowderForThePlanet. Collaborate with sustainability micro-influencers (10,000–100,000 followers) for authentic reviews — more credible than mega-influencers.\n- TikTok: Short-form video series 'The Science of Clean Hair' debunking myths about traditional liquid shampoo. '1 Bottle = 20 Washes' challenge encouraging users to share their refill journey.\n\nWhy suitable: The Powder Shampoo already received organic coverage in The Telegraph, showing the power of third-party advocacy. Social media amplifies this by creating shareable, emotionally resonant content. Instagram's visual format is ideal for beauty/lifestyle brands; TikTok's algorithm enables viral reach without large ad budgets.\n\nDIGITAL TOOL 2: ONLINE COMMUNICATION — Content Marketing (Brand Blog + SEO + Email)\n\nObjective: Educate consumers, establish thought leadership, and drive repeat purchase through lifecycle email marketing.\n\nExecution:\n- SEO-optimised blog articles: 'Why Your Shampoo is Destroying the Ocean', 'How The Powder Shampoo Saves 5 Litres of Water Per Wash' — targeting high-intent search queries from eco-conscious consumers.\n- Email nurture sequence: When a customer purchases, trigger an email series — Week 1: How to use your powder shampoo; Week 4: Your tree has been planted (personalised certificate); Month 3: Refill reminder with loyalty discount. This lifecycle marketing maximises customer lifetime value.\n- Tree Nation milestone emails: At 50,000 trees planted, send a community email celebrating the milestone — creates shared accomplishment and reinforces brand purpose.\n\nWhy suitable: Content marketing provides durable value (SEO articles rank for months/years). Email has the highest ROI of any digital channel (~$42 per $1 spent). Both tools align with The Powder Shampoo's story-driven, educational brand voice.",
+          "keyPoints": [
+            "Two tools from the specified list: online comm, social media, mobile comm, or word-of-mouth",
+            "Message appeal named AND explained — why it suits this brand",
+            "Each tool explained with specific execution details (not just the tool name)",
+            "Explain why each tool is suitable for The Powder Shampoo specifically",
+            "16 marks for tools + 4 marks for message appeal"
+          ]
+        },
+        {
+          "id": "q2c",
+          "label": "Question 2c",
+          "marks": 12,
+          "text": "Analyse and explain the distribution strategy that The Powder Shampoo has adopted in Singapore (7 marks), and provide one (1) suggestion to help them increase sales (5 marks).",
+          "type": "essay",
+          "_caseStudyRef": "cs_powder_shampoo",
+          "modelAnswer": "PART A: DISTRIBUTION STRATEGY IN SINGAPORE (7 marks)\n\nThe Powder Shampoo has adopted a SELECTIVE DISTRIBUTION strategy in Singapore.\n\nSelective distribution means the brand chooses a limited number of carefully selected retail outlets rather than selling through every available channel (intensive) or only one exclusive channel (exclusive).\n\nEvidence from the case:\n- Department stores: Isetan and Metro — premium, image-congruent retailers\n- Specialty retailers: Beaute by Nature — targeted, niche health and beauty audience\n- Online platforms: Lazada and Shopee — high-traffic e-commerce channels for broader reach\n- Singapore Airlines Kris Shop — premium travel retail, reinforcing the brand's international, premium positioning\n\nThis multi-channel but selective approach is strategic:\n1. It maintains brand image integrity by avoiding mass-market discounters\n2. It targets specific customer touch points (travellers via Kris Shop, urban shoppers via Isetan, price-sensitive online shoppers via Lazada/Shopee)\n3. It controls where the product is merchandised to ensure alignment with premium sustainability positioning\n\nThe distribution covers both offline (physical retail) and online channels — an omnichannel approach that maximises convenience for different shopper types.\n\nPART B: SUGGESTION TO INCREASE SALES (5 marks)\n\nSuggestion: Expand into pharmacy and health & wellness retail (e.g., Guardian, Watsons, Unity)\n\nJustification: Pharmacies and health-focused beauty retailers are high-footfall locations where health-conscious consumers already browse personal care products. Guardian has over 100 outlets in Singapore — far more than the current selective channels. By positioning The Powder Shampoo in the 'Natural/Organic Hair Care' section alongside brands like OGX and Pantene Rescue, the brand would gain trial-based discovery from consumers who are already in purchase mode. This increases visibility and accessibility without compromising brand integrity, as pharmacies are trusted retail environments. A refill station within Guardian (similar to zero-waste grocery concepts) would reinforce the sustainability message in a high-footfall environment.",
+          "keyPoints": [
+            "Correctly identify SELECTIVE distribution (not intensive, not exclusive)",
+            "List at least 3 of the specific channels from the case",
+            "Explain WHY selective suits the brand (image, targeting)",
+            "Mention omnichannel (offline + online)",
+            "Suggestion must be specific and justified with evidence/reasoning",
+            "Suggestion should NOT just repeat existing channels"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "unitId": "su3",
+  "moduleId": "mkt202",
+  "questions": [
+    {
+      "id": "mkt_su3_q1",
+      "type": "mcq",
+      "concept": "STP framework",
+      "prompt": "Which of the following correctly describes the correct sequence of the STP process?",
+      "difficulty": 1,
+      "choices": [
+        "Positioning → Segmentation → Targeting",
+        "Targeting → Segmentation → Positioning",
+        "Segmentation → Targeting → Positioning",
+        "Segmentation → Positioning → Targeting"
+      ],
+      "answer": 2,
+      "explanation": "STP follows a logical sequence: first Segment the market into distinct groups, then Target by selecting which segments to serve, then Position the brand to occupy a distinctive place in the minds of those target customers. Skipping or reversing steps leads to poorly defined strategy."
+    },
+    {
+      "id": "mkt_su3_q2",
+      "type": "mcq",
+      "concept": "segmentation bases — behavioural",
+      "prompt": "A sportswear brand offers double loyalty points on purchases made during the Olympics. This promotional strategy targets which behavioural segmentation variable?",
+      "difficulty": 2,
+      "choices": [
+        "User status",
+        "Usage rate",
+        "Occasions",
+        "Loyalty status"
+      ],
+      "answer": 2,
+      "explanation": "Occasion-based segmentation identifies when consumers buy or use a product. The Olympics is a time-based occasion that can trigger heightened interest in sports products. Marketers design special promotions around occasions like holidays, sporting events, or seasonal periods."
+    },
+    {
+      "id": "mkt_su3_q3",
+      "type": "mcq",
+      "concept": "requirements for effective segmentation MSADA",
+      "prompt": "A company segments the market as 'people who sometimes feel slightly unhappy.' This segment fails primarily on which segmentation requirement?",
+      "difficulty": 2,
+      "choices": [
+        "Substantial",
+        "Accessible",
+        "Measurable",
+        "Actionable"
+      ],
+      "answer": 2,
+      "explanation": "Measurability requires that the segment's size, purchasing power, and characteristics can be quantified. 'People who sometimes feel slightly unhappy' is too vague and subjective to measure accurately using available data. Without measurability, the segment cannot be properly sized or budgeted for."
+    },
+    {
+      "id": "mkt_su3_q4",
+      "type": "mcq",
+      "concept": "targeting strategies",
+      "prompt": "A small artisan cheese producer focuses exclusively on gourmet food enthusiasts who value handcrafted, aged cheeses. It does not attempt to serve mainstream supermarket shoppers. This targeting strategy is best described as:",
+      "difficulty": 1,
+      "choices": [
+        "Undifferentiated marketing",
+        "Differentiated marketing",
+        "Concentrated marketing",
+        "Micromarketing"
+      ],
+      "answer": 2,
+      "explanation": "Concentrated (niche) marketing focuses all efforts on one well-defined segment and aims to achieve a dominant share of that niche. The artisan cheese producer targets only gourmet enthusiasts — a narrow, specialised segment — rather than attempting to serve multiple segments or the mass market."
+    },
+    {
+      "id": "mkt_su3_q5",
+      "type": "mcq",
+      "concept": "positioning — POPs and PODs",
+      "prompt": "A new airline must offer comfortable seats, reliable schedules, and in-flight meals to be taken seriously as a premium carrier. These attributes are BEST described as:",
+      "difficulty": 2,
+      "choices": [
+        "Points of Difference (PODs) that set the airline apart",
+        "Points of Parity (POPs) that establish category membership",
+        "Value propositions that justify premium pricing",
+        "Perceptual positioning attributes"
+      ],
+      "answer": 1,
+      "explanation": "Points of Parity (POPs) are attributes necessary to be considered a legitimate competitor in the category — they do not differentiate the brand but establish basic credibility. Comfortable seats, reliable schedules, and in-flight meals are expected of any premium airline. Failing to provide them disqualifies the carrier; providing them merely puts it in the game."
+    },
+    {
+      "id": "mkt_su3_q6",
+      "type": "mcq",
+      "concept": "psychographic segmentation — VALS",
+      "prompt": "The VALS framework classifies consumers based on two key dimensions. What are they?",
+      "difficulty": 2,
+      "choices": [
+        "Age and income",
+        "Primary motivation and resources (psychological, physical, and material means)",
+        "Brand loyalty and purchase frequency",
+        "Geographic location and family life stage"
+      ],
+      "answer": 1,
+      "explanation": "The VALS (Values And Lifestyles) framework segments consumers by their primary motivation (ideals, achievement, or self-expression) and their resources (psychological, physical, and material means available to them). These two dimensions generate eight consumer types: Innovators, Thinkers, Achievers, Experiencers, Believers, Strivers, Makers, and Survivors."
+    },
+    {
+      "id": "mkt_su3_q7",
+      "type": "mcq",
+      "concept": "perceptual maps",
+      "prompt": "What is the PRIMARY purpose of a perceptual map in marketing?",
+      "difficulty": 1,
+      "choices": [
+        "To track monthly sales volume across different distribution channels",
+        "To calculate the financial return on advertising spend",
+        "To visualise how consumers perceive brands relative to each other on key attributes",
+        "To identify which demographic groups have the highest lifetime value"
+      ],
+      "answer": 2,
+      "explanation": "A perceptual map is a two-dimensional visual tool showing how consumers perceive competing brands relative to two key attributes (e.g., price vs quality). It reveals competitive clusters, positioning gaps, and opportunities for repositioning. It is based on consumer perceptions, not objective product measurements."
+    },
+    {
+      "id": "mkt_su3_q8",
+      "type": "mcq",
+      "concept": "customer persona",
+      "prompt": "Why is developing a customer persona more useful than simply describing a target segment with demographic statistics alone?",
+      "difficulty": 2,
+      "choices": [
+        "Personas are legally required before launching a marketing campaign",
+        "Personas give the segment a human face, helping teams design products and messages that genuinely resonate with real people",
+        "Personas eliminate the need for primary consumer research",
+        "Personas reduce the cost of media buying by identifying cheaper channels"
+      ],
+      "answer": 1,
+      "explanation": "Customer personas translate abstract demographic data into vivid, humanised profiles with goals, pain points, habits, and motivations. This makes it easier for product designers, copywriters, and media planners to make decisions that are genuinely customer-centric, rather than optimising for an abstract statistical profile."
+    },
+    {
+      "id": "mkt_su3_q9",
+      "type": "mcq",
+      "concept": "segmentation bases — demographic",
+      "prompt": "A financial services firm tailors different investment product offerings for customers aged 25–35, 36–50, and 51–65. Which segmentation base is it primarily using?",
+      "difficulty": 1,
+      "choices": [
+        "Psychographic segmentation",
+        "Behavioural segmentation",
+        "Demographic segmentation",
+        "Geographic segmentation"
+      ],
+      "answer": 2,
+      "explanation": "Dividing the market by age groups is a form of demographic segmentation — the most widely used segmentation base. Age influences financial needs: younger consumers may prioritise growth investments, middle-aged consumers balance growth and protection, and older consumers prioritise capital preservation and income."
+    },
+    {
+      "id": "mkt_su3_q10",
+      "type": "mcq",
+      "concept": "positioning statement",
+      "prompt": "In a positioning statement structured as 'To [target], [brand] is [frame of reference] that [POD] because [reason to believe]', what is the role of the 'frame of reference'?",
+      "difficulty": 2,
+      "choices": [
+        "It describes the brand's price positioning relative to competitors",
+        "It specifies the product category the brand competes in, anchoring consumer expectations",
+        "It lists the brand's key product features",
+        "It identifies the brand's advertising channels and creative strategy"
+      ],
+      "answer": 1,
+      "explanation": "The frame of reference tells consumers what category or set of competitors the brand belongs to — it sets the context for evaluating the brand. Without this anchor, the POD is meaningless. For example, stating Starbucks competes in 'premium coffee' tells consumers what to compare it against, making the subsequent point of difference relevant and credible."
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "id": "ict162_jan2025",
+  "module": "ict162",
+  "code": "ICT162",
+  "semester": "JAN 2025",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "closed_book",
+  "notes": "One A4-sized double-sided cheat sheet allowed.",
+  "caseStudies": [],
+  "questions": [
+    {
+      "id": "q1",
+      "label": "Question 1",
+      "marks": 8,
+      "text": "Analyse the Python classes shown in Figure Q1. For each part, assume they are independent. State whether there is an error. If there is an error, specify which statement causes it and explain why. If no error, explain what the statement does and state the output.",
+      "type": "code_analysis",
+      "figures": ["data/ict162/exams/figures/ICT162_JAN2025_p2_img1.png"],
+      "modelAnswer": "This question requires analysis of the specific code in Figure Q1. Apply the following structured approach for each part:\n\n1. Identify the class hierarchy from Figure Q1 (class definitions, inheritance, abstract methods)\n2. For each statement block:\n   - Check if any abstract class is being instantiated directly → TypeError\n   - Check if attribute access uses correct names and levels of the hierarchy\n   - Check if method calls match the class's method signatures\n   - If no error: trace the output through MRO, substituting actual instance variable values into __str__ f-strings\n3. State clearly: 'There IS an error' or 'There is NO error'\n4. If error: name the specific line/statement and explain the error type\n5. If no error: state which object is created and what output is produced",
+      "keyPoints": [
+        "Abstract classes cannot be instantiated — raises TypeError",
+        "Private attributes use name mangling (__attr becomes _ClassName__attr)",
+        "MRO: Python calls the most-derived class implementation",
+        "Refinement overrides call super() — include parent output in child output"
+      ]
+    },
+    {
+      "id": "q2",
+      "label": "Question 2",
+      "marks": 12,
+      "text": "Analyse the Python classes shown in Figure Q2. What is the output of the main() function? (There is no error in the code.)",
+      "type": "output_prediction",
+      "figures": ["data/ict162/exams/figures/ICT162_JAN2025_p3_img1.png"],
+      "modelAnswer": "This question requires tracing the execution of main() from Figure Q2.\n\nApproach:\n1. Read Figure Q2 carefully to identify all class definitions, __init__ methods, __str__ methods, and any method overriding.\n2. Trace the main() function step by step:\n   a. Identify each object instantiation — which class constructor runs?\n   b. Trace any method calls and identify which class provides the implementation (MRO)\n   c. For print(obj), Python calls obj.__str__() — use the most-derived class's __str__\n   d. For refinement overrides, include the parent's __str__ output as called by super()\n3. Write the output in the exact order that print statements execute.\n\nKey rules:\n- Substitution: replace all instance variable references with their actual values\n- Each print() call produces one line of output\n- super().__str__() output appears as part of the child's __str__ return value",
+      "keyPoints": [
+        "Trace every object instantiation in main()",
+        "Apply MRO — use the runtime type's __str__, not the declared type",
+        "For refinement: child __str__ = parent __str__ output + child additions",
+        "Write output in exact execution order of print() calls",
+        "1–2 marks per correct output line"
+      ]
+    },
+    {
+      "id": "q3",
+      "label": "Question 3",
+      "marks": 30,
+      "text": "CapitaStar is CapitaLand's multi-mall rewards programme. Members accumulate STAR$ with purchases from participating outlets. CapitaCard is a premium credit card that earns 6X STAR$ (capped at S$1,200 per calendar month) for eligible purchases at CapitaLand Malls. Study the class diagram in Figure Q3.",
+      "type": "code_writing",
+      "figures": ["data/ict162/exams/figures/ICT162_JAN2025_p3_img1.png"],
+      "subQuestions": [
+        {
+          "id": "q3a",
+          "label": "Question 3a",
+          "marks": 10,
+          "text": "Implement the CapitaStar class with: instance variables phone (int), name (str), starDollars (int, default 0). Constructor initialises phone and name. Getter and SETTER for starDollars using property/setter decorator. addStarDollars(amountSpent: float): validate amountSpent > $10 to qualify; if qualified, every $1 earns 1 STAR$ (floor division). redeemStarDollars(amount: int): if enough STAR$, subtract and return True, else return False.",
+          "type": "code_writing",
+          "modelAnswer": "```python\nclass CapitaStar:\n    def __init__(self, phone: int, name: str):\n        self._phone = phone\n        self._name = name\n        self._starDollars = 0\n\n    @property\n    def starDollars(self) -> int:\n        return self._starDollars\n\n    @starDollars.setter\n    def starDollars(self, value: int):\n        self._starDollars = value\n\n    def addStarDollars(self, amountSpent: float):\n        if amountSpent > 10:\n            self._starDollars += int(amountSpent)  # floor: $21.60 earns 21 STAR$\n\n    def redeemStarDollars(self, amount: int) -> bool:\n        if self._starDollars >= amount:\n            self._starDollars -= amount\n            return True\n        return False\n```",
+          "keyPoints": [
+            "starDollars initialised to 0 in __init__ (not in parameter)",
+            "Both @property getter AND @property.setter defined",
+            "addStarDollars: amountSpent must be > 10 (strictly greater than, not >=)",
+            "STAR$ earned = int(amountSpent) i.e. floor ($21.60 = 21 STAR$)",
+            "redeemStarDollars: check >= then subtract; return True on success, False otherwise"
+          ]
+        },
+        {
+          "id": "q3b",
+          "label": "Question 3b",
+          "marks": 16,
+          "text": "Implement CapitaCard, a subclass of CapitaStar. Class variables: _FACTOR = 6 (6X STAR$), _MONTHLY_CAP = 1200. Additional instance variables: cardNumber (str), remainingCap (float, initialised to _MONTHLY_CAP). resetCap() resets remainingCap to _MONTHLY_CAP. Override addStarDollars(amountSpent): validate > $10; if remainingCap = 0, earn 1 STAR$ per $1; if amountSpent <= remainingCap, earn 6 STAR$ per $1, deduct from remainingCap; if amountSpent > remainingCap, only remainingCap portion earns 6X, rest earns 1X, remainingCap becomes 0.",
+          "type": "code_writing",
+          "modelAnswer": "```python\nclass CapitaCard(CapitaStar):\n    _FACTOR = 6\n    _MONTHLY_CAP = 1200\n\n    def __init__(self, phone: int, name: str, cardNumber: str):\n        super().__init__(phone, name)\n        self._cardNumber = cardNumber\n        self._remainingCap = CapitaCard._MONTHLY_CAP\n\n    def resetCap(self):\n        self._remainingCap = CapitaCard._MONTHLY_CAP\n\n    def addStarDollars(self, amountSpent: float):\n        if amountSpent <= 10:\n            return  # Does not qualify\n        \n        if self._remainingCap == 0:\n            # No cap remaining — earn 1 STAR$ per $1\n            self._starDollars += int(amountSpent)\n        elif amountSpent <= self._remainingCap:\n            # Entire spend within cap — earn 6X\n            self._starDollars += int(amountSpent) * CapitaCard._FACTOR\n            self._remainingCap -= amountSpent\n        else:\n            # Partial 6X, partial 1X\n            cap_portion = self._remainingCap\n            over_portion = amountSpent - cap_portion\n            self._starDollars += int(cap_portion) * CapitaCard._FACTOR\n            self._starDollars += int(over_portion)\n            self._remainingCap = 0\n```",
+          "keyPoints": [
+            "Must call super().__init__(phone, name) in constructor",
+            "remainingCap initialised to _MONTHLY_CAP (use class variable reference)",
+            "Three branches in addStarDollars: remainingCap=0, amountSpent<=remainingCap, amountSpent>remainingCap",
+            "int() for floor arithmetic on STAR$ earned",
+            "remainingCap becomes exactly 0 (not negative) when spent exceeds cap",
+            "This is overriding by refinement — calls super logic is NOT required here (full replacement is acceptable)"
+          ]
+        },
+        {
+          "id": "q3c",
+          "label": "Question 3c",
+          "marks": 4,
+          "text": "Based on your Python code in Q3b for CapitaCard, explain what type of overriding you implemented for the method addStarDollars().",
+          "type": "essay",
+          "modelAnswer": "CapitaCard.addStarDollars() implements OVERRIDING BY REPLACEMENT.\n\nIn CapitaCard, addStarDollars() completely replaces the parent class (CapitaStar) implementation with entirely new logic. The child class does NOT call super().addStarDollars() anywhere in its implementation. Instead, it provides a completely different algorithm that accounts for the _FACTOR multiplier and the _MONTHLY_CAP constraint.\n\nThe parent's addStarDollars() simply adds int(amountSpent) STAR$ if amountSpent > $10. CapitaCard's version handles three distinct scenarios (no cap remaining, within cap, exceeding cap) and applies different earning rates. Since no super() call is made, the parent's behaviour is entirely discarded — this is replacement, not refinement.\n\nContrast with refinement: if CapitaCard had called super().addStarDollars() and then modified or extended the result, it would be refinement.",
+          "keyPoints": [
+            "State clearly: overriding by REPLACEMENT",
+            "Explain WHY: no super() call made",
+            "Contrast with refinement: refinement uses super(); replacement does not",
+            "Reference the specific implementation to justify the answer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "label": "Question 4",
+      "marks": 30,
+      "text": "Study the class diagram in Figure Q4. You are to develop Python classes that raise exceptions. The diagram shows: ExpenseException (subclass of Exception), Expense class, and BudgetPlan class with class variable TYPE_BUDGET.",
+      "type": "code_writing",
+      "figures": ["data/ict162/exams/figures/ICT162_JAN2025_p6_img1.png"],
+      "subQuestions": [
+        {
+          "id": "q4a",
+          "label": "Question 4a",
+          "marks": 1,
+          "text": "Define the class ExpenseException, which is a subclass of the Exception class. This class has no additional attribute or method.",
+          "type": "code_writing",
+          "modelAnswer": "```python\nclass ExpenseException(Exception):\n    pass\n```",
+          "keyPoints": [
+            "Must subclass Exception",
+            "No body beyond pass"
+          ]
+        },
+        {
+          "id": "q4b",
+          "label": "Question 4b",
+          "marks": 8,
+          "text": "Implement the Expense class with: instance variables merchantName (str), amount (float), expenseType (str), isCapitaStar (bool). Constructor validates expenseType against BudgetPlan.TYPE_BUDGET keys — raise ExpenseException if invalid, then initialise all 4 variables. Getter properties for amount, expenseType, isCapitaStar. __str__ returns: 'Merchant: InnisFries    Amount: $23.40    Type: Food' format.",
+          "type": "code_writing",
+          "modelAnswer": "```python\nclass Expense:\n    def __init__(self, merchantName: str, amount: float, expenseType: str, isCapitaStar: bool):\n        if expenseType not in BudgetPlan.TYPE_BUDGET:\n            raise ExpenseException(f'Invalid expense type: {expenseType}')\n        self._merchantName = merchantName\n        self._amount = amount\n        self._expenseType = expenseType\n        self._isCapitaStar = isCapitaStar\n\n    @property\n    def amount(self) -> float:\n        return self._amount\n\n    @property\n    def expenseType(self) -> str:\n        return self._expenseType\n\n    @property\n    def isCapitaStar(self) -> bool:\n        return self._isCapitaStar\n\n    def __str__(self) -> str:\n        return f'Merchant: {self._merchantName}    Amount: ${self._amount:.2f}    Type: {self._expenseType}'\n```",
+          "keyPoints": [
+            "Validate expenseType BEFORE initialising instance variables",
+            "Check: expenseType not in BudgetPlan.TYPE_BUDGET",
+            "Raise ExpenseException with descriptive message",
+            "Three getter properties (amount, expenseType, isCapitaStar)",
+            "__str__ format uses dollar sign, 2 decimal places, exact spacing from example"
+          ]
+        },
+        {
+          "id": "q4c",
+          "label": "Question 4c",
+          "marks": 21,
+          "text": "Implement BudgetPlan with: class variable TYPE_BUDGET (dict mapping type to budget). Instance variables: expenses (list, empty), capitaStar (CapitaStar object or None). Constructor initialises capitaStar. add(expense): check total of this type + new amount won't exceed budget — raise ExpenseException if yes; if capitaStar is not None and expense.isCapitaStar is True, call addStarDollars; add to list. listExpenses(expenseType=None): if expenseType given and invalid, raise ExpenseException; if given and valid, return matching expenses; if None, return all expenses plus STAR$ if applicable.",
+          "type": "code_writing",
+          "modelAnswer": "```python\nclass BudgetPlan:\n    TYPE_BUDGET = {\n        'Food': 800,\n        'Education': 500,\n        'Travel': 300,\n        'Others': 200\n    }\n\n    def __init__(self, capitaStar=None):\n        self._expenses = []\n        self._capitaStar = capitaStar\n\n    def add(self, expense: Expense):\n        # Check if adding this expense exceeds budget for this type\n        current_total = sum(e.amount for e in self._expenses if e.expenseType == expense.expenseType)\n        budget = BudgetPlan.TYPE_BUDGET[expense.expenseType]\n        if current_total + expense.amount > budget:\n            raise ExpenseException(\n                f'Adding this expense exceeds the {expense.expenseType} budget of ${budget}'\n            )\n        # Credit STAR$ if applicable\n        if self._capitaStar is not None and expense.isCapitaStar:\n            self._capitaStar.addStarDollars(expense.amount)\n        # Add to list\n        self._expenses.append(expense)\n\n    def listExpenses(self, expenseType=None) -> str:\n        if expenseType is not None:\n            # Validate type\n            if expenseType not in BudgetPlan.TYPE_BUDGET:\n                raise ExpenseException(f'Invalid expense type: {expenseType}')\n            # Return matching expenses\n            matching = [e for e in self._expenses if e.expenseType == expenseType]\n            return '\\n'.join(str(e) for e in matching)\n        else:\n            # Return all expenses\n            result = '\\n'.join(str(e) for e in self._expenses)\n            if self._capitaStar is not None:\n                result += f'\\nSTAR$: {self._capitaStar.starDollars}'\n            return result\n```",
+          "keyPoints": [
+            "TYPE_BUDGET is a class variable (dict) — access via BudgetPlan.TYPE_BUDGET",
+            "add(): calculate running total for the expense type before adding",
+            "add(): raise ExpenseException if total would EXCEED budget",
+            "add(): only call addStarDollars if BOTH capitaStar is not None AND isCapitaStar is True",
+            "listExpenses(expenseType): validate type, raise if invalid",
+            "listExpenses(None): include STAR$ line only if capitaStar is not None"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "label": "Question 5",
+      "marks": 20,
+      "text": "This question has 2 parts: Q5a (class methods in BudgetPlan) and Q5b (tkinter GUI). Answer both parts.",
+      "type": "code_writing",
+      "figures": ["data/ict162/exams/figures/ICT162_JAN2025_p9_img1.jpeg"],
+      "subQuestions": [
+        {
+          "id": "q5a",
+          "label": "Question 5a",
+          "marks": 6,
+          "text": "Implement TWO class methods in BudgetPlan as shown in Figure Q5a. updateBudgetByType(type, budget): if type not in TYPE_BUDGET, add it; if type exists, update its budget. listBudget(): returns formatted string of all types and budgets like: 'Food         $800.00\\nEducation    $500.00\\nTravel       $300.00\\nOthers       $200.00'. Provide the Python code for the 2 class methods only.",
+          "type": "code_writing",
+          "figures": ["data/ict162/exams/figures/ICT162_JAN2025_p9_img1.jpeg"],
+          "modelAnswer": "```python\n@classmethod\ndef updateBudgetByType(cls, type: str, budget: float):\n    cls.TYPE_BUDGET[type] = budget\n    # This handles both add (key doesn't exist) and update (key exists)\n    # Dictionary assignment works for both cases\n\n@classmethod\ndef listBudget(cls) -> str:\n    lines = []\n    for t, b in cls.TYPE_BUDGET.items():\n        lines.append(f'{t:<12} ${b:.2f}')\n    return '\\n'.join(lines)\n```",
+          "keyPoints": [
+            "Must use @classmethod decorator with cls as first parameter",
+            "updateBudgetByType: simple dict assignment handles both add and update",
+            "listBudget: use f-string formatting for alignment (left-align type, right-align budget with $)",
+            "Access TYPE_BUDGET via cls.TYPE_BUDGET (not self)",
+            "Provide ONLY these two methods, not the full class"
+          ]
+        },
+        {
+          "id": "q5b",
+          "label": "Question 5b",
+          "marks": 14,
+          "text": "A partially developed GUI is shown in Figure Q5b with widgets for type input, budget input, a 'list budget' button, an 'add/update' button, and a scrolled text area. Complete the two callback functions list() and update(). For update(): validate type is not blank, budget is not blank, budget is numeric, budget > 0; if valid, call updateBudgetByType(). For list(): call listBudget() and display in the scrolled text area.",
+          "type": "code_writing",
+          "figures": ["data/ict162/exams/figures/ICT162_JAN2025_p9_img1.jpeg"],
+          "modelAnswer": "```python\ndef list():\n    # Call class method to get budget info\n    result = BudgetPlan.listBudget()\n    # Display in scrolled text widget\n    txt_output.config(state=NORMAL)\n    txt_output.delete('1.0', END)\n    txt_output.insert('1.0', result)\n    txt_output.config(state=DISABLED)\n\ndef update():\n    expense_type = entry_type.get().strip()\n    budget_str = entry_budget.get().strip()\n    \n    # Validation\n    if expense_type == '':\n        messagebox.showerror('Error', 'Type cannot be blank')\n        return\n    if budget_str == '':\n        messagebox.showerror('Error', 'Budget cannot be blank')\n        return\n    \n    try:\n        budget = float(budget_str)\n    except ValueError:\n        messagebox.showerror('Error', 'Budget must be numeric')\n        return\n    \n    if budget <= 0:\n        messagebox.showerror('Error', 'Budget must be > 0')\n        return\n    \n    # Call class method to add/update\n    BudgetPlan.updateBudgetByType(expense_type, budget)\n    messagebox.showinfo('Success', f'{expense_type} budget updated to ${budget:.2f}')\n```",
+          "keyPoints": [
+            "list(): call BudgetPlan.listBudget() then display in ScrolledText widget",
+            "update(): validate in order — type blank, budget blank, numeric, > 0",
+            "Use messagebox.showerror for validation failures",
+            "Call BudgetPlan.updateBudgetByType(type, budget) on success",
+            "Widget names match Figure Q5b — use actual names from the provided code"
+          ]
+        }
+      ]
+    }
+  ]
+}

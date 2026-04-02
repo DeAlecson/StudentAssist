@@ -72,6 +72,25 @@ const Renderer = (() => {
           </div>
         </div>
 
+        <div class="home-section-label" style="margin-top:1.25rem">
+          <span class="section-pill exam-pill">Past Papers</span>
+          <span class="section-caption">Real SUSS exam questions</span>
+        </div>
+        <div class="mode-grid">
+          <div class="mode-card" onclick="Router.navigate('#/${moduleId}/practice')">
+            <div class="mode-icon">📝</div>
+            <div class="mode-title">Exam Practice</div>
+            <div class="mode-desc">Practise individual real exam questions at your own pace. AI-marked with model answers.</div>
+            <span class="mode-badge">No Timer</span>
+          </div>
+          <div class="mode-card" onclick="Router.navigate('#/${moduleId}/exam')">
+            <div class="mode-icon">🎓</div>
+            <div class="mode-title">Legacy Exam Mode</div>
+            <div class="mode-desc">Full 2-hour past paper simulation. Real exam conditions. AI-marked on submit.</div>
+            <span class="mode-badge purple">2 Hours · Leaderboard</span>
+          </div>
+        </div>
+
         ${p.weakTopics && p.weakTopics.length > 0 ? `
           <div class="weak-topics-card">
             <div class="weak-topics-header">⚠ Weak Topics</div>

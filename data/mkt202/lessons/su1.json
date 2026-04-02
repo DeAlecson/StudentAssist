@@ -1,0 +1,87 @@
+{
+  "unitId": "su1",
+  "moduleId": "mkt202",
+  "title": "Introduction to Marketing Management",
+  "sections": [
+    {
+      "type": "intro",
+      "title": "What is Marketing Management?",
+      "content": "**Marketing Management** is defined as the art and science of choosing target markets and getting, keeping, and growing customers through creating, delivering, and communicating superior customer value.\n\nAt its core, marketing is about **meeting customer needs profitably**. This means understanding what customers want, designing offerings that satisfy those needs better than competitors, and doing so in a way that generates sustainable value for the organisation.\n\nMarketing is not just advertising or selling — it encompasses everything from product design and pricing to distribution and after-sales service."
+    },
+    {
+      "type": "concept",
+      "title": "What Can Be Marketed?",
+      "content": "Marketing applies to a remarkably wide range of entities. Understanding this breadth helps marketers think creatively about value creation.\n\n- **Goods** — Physical, tangible products (e.g., smartphones, clothing, food)\n- **Services** — Intangible activities or benefits (e.g., banking, healthcare, education)\n- **Events** — Time-based experiences (e.g., concerts, sports events, trade fairs)\n- **Experiences** — Memorable engagements (e.g., theme parks, adventure tours)\n- **Persons** — Personal branding (e.g., politicians, celebrities, professionals)\n- **Places** — Destination marketing (e.g., tourism campaigns for Singapore)\n- **Properties** — Real estate or financial assets\n- **Organisations** — Corporate reputation and image\n- **Information** — Knowledge products (e.g., encyclopaedias, databases)\n- **Ideas** — Social causes, public health campaigns, environmental advocacy\n\nThis diversity shows why marketing skills are transferable across virtually every industry and sector."
+    },
+    {
+      "type": "concept",
+      "title": "Key Customer Markets",
+      "content": "Marketers must understand which type of market they are operating in, as each requires a distinct approach:\n\n- **Consumer Markets** — Individuals and households buying goods and services for personal consumption. Decisions are often emotionally driven and influenced by branding.\n- **Business Markets** — Organisations buying goods and services for use in production or resale. Purchases tend to be rational, formalised, and larger in volume.\n- **Global Markets** — Marketing across national boundaries, requiring adaptation to cultural, legal, and economic differences.\n- **Nonprofit and Government Markets** — Public sector and charitable organisations with budget constraints and accountability requirements, often requiring cost-effective value propositions."
+    },
+    {
+      "type": "definition",
+      "title": "The Marketing Environment",
+      "content": "Every organisation operates within a **marketing environment** made up of forces that affect its ability to serve customers. These forces are divided into two layers:\n\n**Microenvironment** (controllable to some degree):\n- The **company** itself (internal resources, culture, capabilities)\n- **Suppliers** who provide inputs\n- **Marketing intermediaries** (distributors, retailers, agents)\n- **Competitors** vying for the same customers\n- **Publics** (media, financial institutions, community groups)\n- **Customers** — the central focus\n\n**Macroenvironment** (largely uncontrollable — use the **DESTEP/PESTEL** framework):\n- **D**emographic — population size, age structure, urbanisation\n- **E**conomic — income levels, inflation, consumer spending patterns\n- **S**ociocultural — values, lifestyles, cultural trends\n- **T**echnological — innovation, digital disruption, R&D\n- **E**cological/Natural — environmental concerns, sustainability\n- **P**olitical-Legal — regulations, trade policies, consumer protection laws\n\nEffective marketers continuously scan both environments to identify opportunities and threats."
+    },
+    {
+      "type": "definition",
+      "title": "Marketing Concepts and Philosophies",
+      "content": "The way organisations approach the market has evolved through several **marketing management philosophies**:\n\n- **Production Concept** — Consumers prefer widely available, affordable products. Focus: efficiency and mass production. Risk: ignores customer preferences.\n- **Product Concept** — Consumers favour products with the best quality and features. Risk: 'marketing myopia' — focusing on the product rather than the need it serves.\n- **Selling Concept** — Consumers need aggressive selling and promotion. Used often for unsought goods (e.g., insurance).\n- **Marketing Concept** — Focus on identifying and satisfying target market needs better than competitors. Customer-centric approach.\n- **Holistic Marketing Concept** — Broadest view, integrating four components:\n  - **Relationship marketing** (building long-term customer and partner relationships)\n  - **Integrated marketing** (aligning all communications and activities)\n  - **Internal marketing** (training and motivating employees)\n  - **Performance marketing** (measuring financial and social impact)"
+    },
+    {
+      "type": "concept",
+      "title": "Customer Value and the Value Formula",
+      "content": "**Customer value** is the perceived benefit a customer receives relative to the cost they pay. It can be expressed as:\n\n> **Value = Benefits / Costs**\n\n**Benefits** include functional benefits (product performance), emotional benefits (how it makes you feel), and social benefits (status, belonging).\n\n**Costs** include monetary price, time cost, energy expenditure, and psychological cost (risk, effort).\n\nRelated concepts:\n- **Customer Lifetime Value (CLV)** — The total net profit a company can expect from a customer over the entire relationship. Encourages investment in retention, not just acquisition.\n- **Customer Equity** — The sum of CLVs across all customers. A key measure of company health.\n- **Brand Equity** — The added value a brand name gives to a product. High brand equity allows premium pricing and greater loyalty."
+    },
+    {
+      "type": "definition",
+      "title": "The Marketing Mix: 4Ps and 7Ps",
+      "content": "The **Marketing Mix** is the set of controllable tools a company uses to produce the response it wants in the target market.\n\n**The 4Ps (for goods):**\n- **Product** — Features, quality, design, branding, packaging, warranties\n- **Price** — List price, discounts, credit terms, payment periods\n- **Place** — Distribution channels, locations, logistics, coverage\n- **Promotion** — Advertising, sales promotion, PR, personal selling, direct/digital marketing\n\n**Extended to 7Ps (for services):**\n- **People** — Staff training, service culture, customer interaction quality\n- **Process** — Service delivery procedures, efficiency, standardisation\n- **Physical Evidence** — Tangible cues of service quality (e.g., store ambience, uniforms, website design)\n\nThe 7Ps are essential for service marketing because services are **intangible**, **inseparable**, **variable**, and **perishable** (the IHIP characteristics)."
+    },
+    {
+      "type": "example",
+      "title": "Applying the 4Ps: Nike",
+      "content": "**Nike** provides a clear illustration of an integrated marketing mix:\n\n- **Product** — High-performance athletic footwear and apparel. Nike invests heavily in R&D (e.g., Air, Flyknit technology) and design. Products carry strong brand identity.\n- **Price** — Premium pricing strategy reflecting brand equity and product quality. Selective discounting via outlet stores to manage brand perception.\n- **Place** — Sold via Nike-owned stores, the Nike app, major sports retailers (Foot Locker, JD Sports), and nike.com. Selective distribution maintains brand exclusivity.\n- **Promotion** — Iconic campaigns ('Just Do It'), celebrity endorsements (Michael Jordan, Serena Williams), sponsorship of major sporting events, and heavy social media presence.\n\n**Key takeaway:** Each P reinforces the others. Nike's premium pricing is credible because of strong product quality and powerful promotional messaging. Alignment across the mix is critical."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Quick Check",
+      "question": "A company focuses on making its product as widely available and affordable as possible, believing this is what consumers want. Which marketing philosophy does this represent, and what is its key risk?",
+      "answer": "This represents the **Production Concept**. The key risk is that it ignores actual customer preferences and desires — the company assumes availability and low price are all that matter, potentially leading to 'marketing myopia' where they lose sight of changing customer needs."
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "prompt": "Define Marketing Management and explain how the marketing concept differs from the selling concept.",
+        "modelAnswer": "Marketing Management is the art and science of choosing target markets and getting, keeping, and growing customers through creating, delivering, and communicating superior customer value. The marketing concept holds that achieving organisational goals depends on identifying the needs and wants of target markets and delivering value more effectively than competitors — it is customer-centric and starts with the market. In contrast, the selling concept starts with the company's existing products and uses aggressive promotion to drive sales, regardless of whether products truly meet customer needs. The marketing concept builds long-term relationships; the selling concept focuses on short-term transactions.",
+        "keyPoints": [
+          "Marketing management centres on customer value creation and profitable customer relationships",
+          "Marketing concept is pull-based — understand needs first, then create offerings",
+          "Selling concept is push-based — make the product, then persuade customers to buy",
+          "Marketing concept leads to sustainable competitive advantage through customer satisfaction"
+        ]
+      },
+      {
+        "prompt": "Explain the difference between the microenvironment and macroenvironment. Give two examples of each and explain how they might affect a company's marketing strategy.",
+        "modelAnswer": "The microenvironment consists of forces close to the company that affect its ability to serve customers — including suppliers, marketing intermediaries, competitors, publics, and customers themselves. For example, a key supplier raising prices may force a company to adjust its pricing strategy, while a new direct competitor entering the market may require a repositioning or promotional response. The macroenvironment consists of larger societal forces that affect all players in the market — captured by DESTEP or PESTEL. For example, a demographic shift toward an ageing population creates opportunities in healthcare and leisure products. A technological shift such as the rise of mobile internet reshapes where and how companies engage customers, requiring investment in digital marketing channels. Unlike microenvironment factors, macroenvironment forces are largely uncontrollable and must be monitored and adapted to.",
+        "keyPoints": [
+          "Microenvironment: company-adjacent forces (suppliers, competitors, customers, intermediaries, publics)",
+          "Macroenvironment: broad societal forces captured by DESTEP/PESTEL",
+          "Microenvironment forces are partially manageable; macroenvironment forces are largely uncontrollable",
+          "Both require continuous environmental scanning to identify opportunities and threats"
+        ]
+      },
+      {
+        "prompt": "What is customer value and why is it central to modern marketing? Discuss the concepts of Customer Lifetime Value and Brand Equity in your answer.",
+        "modelAnswer": "Customer value is the perceived benefit a customer receives from a product or service relative to its total cost (Value = Benefits / Costs). It is central to modern marketing because organisations that consistently deliver superior value earn customer loyalty, reduce churn, and generate word-of-mouth, all of which contribute to long-term profitability. Customer Lifetime Value (CLV) quantifies the total net profit expected from a customer over the entire relationship, highlighting the financial importance of retention over pure acquisition. A high CLV justifies investment in customer service, loyalty programmes, and personalisation. Brand Equity represents the added value a brand name gives to a product — a strong brand (e.g., Apple, Nike) can command premium pricing, attract loyal customers, and recover more quickly from setbacks. Together, CLV and brand equity demonstrate that marketing success is measured not just by individual transactions but by the strength and longevity of customer relationships.",
+        "keyPoints": [
+          "Value = Benefits / Costs; both monetary and non-monetary costs matter",
+          "CLV emphasises retention as financially superior to constant new acquisition",
+          "Brand equity enables premium pricing and customer loyalty beyond functional benefits",
+          "Customer equity (sum of all CLVs) is a key indicator of organisational health"
+        ]
+      }
+    ]
+  }
+}

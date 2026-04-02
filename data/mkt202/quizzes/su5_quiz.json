@@ -1,0 +1,156 @@
+{
+  "unitId": "su5",
+  "moduleId": "mkt202",
+  "questions": [
+    {
+      "id": "mkt_su5_q1",
+      "type": "mcq",
+      "concept": "pricing objectives",
+      "prompt": "A company sets its prices to barely cover operating costs during an economic downturn, with the sole aim of keeping the business operational. This pricing objective is called:",
+      "difficulty": 1,
+      "choices": [
+        "Maximum market skimming",
+        "Product-quality leadership",
+        "Survival",
+        "Maximum current profit"
+      ],
+      "answer": 2,
+      "explanation": "Survival pricing is used when a company faces overcapacity, intense competition, or a recession. The goal is simply to cover variable costs and some fixed costs, keeping the company afloat until conditions improve. It is a short-term objective."
+    },
+    {
+      "id": "mkt_su5_q2",
+      "type": "mcq",
+      "concept": "pricing objectives",
+      "prompt": "Apple launches the iPhone 16 Pro at $1,599, targeting early adopters willing to pay a premium before gradually lowering the price. This is an example of:",
+      "difficulty": 2,
+      "choices": [
+        "Penetration pricing",
+        "Market skimming pricing",
+        "Value pricing",
+        "Going-rate pricing"
+      ],
+      "answer": 1,
+      "explanation": "Market skimming (price skimming) involves setting a high initial price to 'skim' the maximum revenue from consumers willing to pay a premium. As early adopter demand is satisfied, the price is gradually reduced to attract more price-sensitive segments."
+    },
+    {
+      "id": "mkt_su5_q3",
+      "type": "mcq",
+      "concept": "price elasticity",
+      "prompt": "If the price of a product rises by 10% and quantity demanded falls by 25%, demand is:",
+      "difficulty": 2,
+      "choices": [
+        "Perfectly inelastic",
+        "Inelastic",
+        "Elastic",
+        "Unit elastic"
+      ],
+      "answer": 2,
+      "explanation": "Price elasticity = % change in quantity / % change in price = 25% / 10% = 2.5. Since elasticity > 1, demand is elastic. A 10% price rise leads to a 25% fall in quantity — consumers are very sensitive to price. Raising price reduces total revenue."
+    },
+    {
+      "id": "mkt_su5_q4",
+      "type": "mcq",
+      "concept": "pricing methods",
+      "prompt": "A manufacturer calculates its unit cost as $50 and wants a 25% markup. Using markup pricing, what is the selling price?",
+      "difficulty": 2,
+      "choices": [
+        "$62.50",
+        "$66.67",
+        "$75.00",
+        "$60.00"
+      ],
+      "answer": 1,
+      "explanation": "Markup price = Unit cost / (1 - desired return on sales) = $50 / (1 - 0.25) = $50 / 0.75 = $66.67. Note: this is markup on selling price (retail markup), not markup on cost. Markup on cost would be $50 × 1.25 = $62.50."
+    },
+    {
+      "id": "mkt_su5_q5",
+      "type": "mcq",
+      "concept": "EVC pricing",
+      "prompt": "Economic Value to Customer (EVC) pricing is BEST described as:",
+      "difficulty": 2,
+      "choices": [
+        "Setting price equal to the cost of production plus a profit margin",
+        "Setting price based on the maximum value a customer should rationally pay compared to the next best alternative",
+        "Setting price to match the average competitor price in the market",
+        "Setting price to achieve a target rate of return on invested capital"
+      ],
+      "answer": 1,
+      "explanation": "EVC = Reference product price + Differentiation value. It measures the maximum price a rational customer should pay given the economic benefits your product provides over the best alternative. It is customer-centric and captures the full value delivered."
+    },
+    {
+      "id": "mkt_su5_q6",
+      "type": "mcq",
+      "concept": "consumer price psychology",
+      "prompt": "A luxury handbag brand prices its bags at $3,000 rather than $2,799. This exploits which pricing psychology principle?",
+      "difficulty": 3,
+      "choices": [
+        "Odd-even pricing to appear affordable",
+        "Price-quality inference — a round, high price signals prestige and quality",
+        "Reference price anchoring below $3,000",
+        "Loss-leader pricing to attract customers"
+      ],
+      "answer": 1,
+      "explanation": "Luxury brands often use round, high prices because consumers make price-quality inferences — a high price signals premium quality and exclusivity. Odd pricing (e.g., $2,999) is associated with value/discount positioning, which undermines luxury brand image."
+    },
+    {
+      "id": "mkt_su5_q7",
+      "type": "mcq",
+      "concept": "price adaptation",
+      "prompt": "A coffee shop charges $3 per cup on weekdays and $4.50 on weekends. What type of price adaptation is this?",
+      "difficulty": 2,
+      "choices": [
+        "Quantity discount",
+        "Geographical pricing",
+        "Discriminatory pricing — time-based",
+        "Promotional pricing"
+      ],
+      "answer": 2,
+      "explanation": "Discriminatory pricing (also called differential pricing) involves charging different prices to different customers or at different times without a corresponding difference in costs. Time-based discriminatory pricing exploits higher willingness to pay during peak periods."
+    },
+    {
+      "id": "mkt_su5_q8",
+      "type": "mcq",
+      "concept": "price adaptation",
+      "prompt": "A printer manufacturer sells its printers cheaply but charges a high price for proprietary ink cartridges. This is an example of:",
+      "difficulty": 2,
+      "choices": [
+        "Bundling",
+        "Captive product pricing",
+        "Two-part pricing",
+        "Optional feature pricing"
+      ],
+      "answer": 1,
+      "explanation": "Captive product pricing involves pricing the main product low to attract buyers, then charging high prices for proprietary consumables (ink, razor blades, game cartridges). Customers are 'captive' because they must buy the consumables from the same manufacturer."
+    },
+    {
+      "id": "mkt_su5_q9",
+      "type": "mcq",
+      "concept": "responding to price changes",
+      "prompt": "A market leader in premium mineral water notices a budget competitor has cut prices by 20%. The MOST appropriate response that preserves the brand's premium positioning is:",
+      "difficulty": 3,
+      "choices": [
+        "Immediately match the competitor's price cut",
+        "Maintain current price and increase advertising of quality and brand values",
+        "Withdraw the product from the market",
+        "Launch a price war by cutting prices by 30%"
+      ],
+      "answer": 1,
+      "explanation": "For a premium brand, matching a budget competitor's price cut risks cheapening the brand and triggering a price war. The better strategy is to maintain price and reinforce the quality/value positioning through advertising — attracting customers who value premium quality, not price."
+    },
+    {
+      "id": "mkt_su5_q10",
+      "type": "mcq",
+      "concept": "pricing process",
+      "prompt": "Which is the CORRECT order of the 6-step price-setting process?",
+      "difficulty": 2,
+      "choices": [
+        "Select method → Determine demand → Estimate costs → Analyse competitors → Set objective → Final price",
+        "Set objective → Determine demand → Estimate costs → Analyse competitors → Select method → Final price",
+        "Estimate costs → Set objective → Determine demand → Select method → Analyse competitors → Final price",
+        "Determine demand → Set objective → Analyse competitors → Estimate costs → Select method → Final price"
+      ],
+      "answer": 1,
+      "explanation": "The correct 6-step order is: (1) Select pricing objective, (2) Determine demand, (3) Estimate costs, (4) Analyse competitors' costs/prices/offers, (5) Select pricing method, (6) Select final price. This sequence moves from strategic intent to market understanding to cost reality to competitive context before settling on price."
+    }
+  ]
+}

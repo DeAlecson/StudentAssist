@@ -1,0 +1,78 @@
+{
+  "unitId": "su1",
+  "moduleId": "mkt202",
+  "cards": [
+    {
+      "id": "mkt_su1_c1",
+      "front": "What is the formal definition of Marketing Management?",
+      "back": "The art and science of choosing target markets and getting, keeping, and growing customers through creating, delivering, and communicating superior customer value.",
+      "concept": "definition of marketing management"
+    },
+    {
+      "id": "mkt_su1_c2",
+      "front": "What are the 4Ps of the Marketing Mix?",
+      "back": "Product (features, design, branding), Price (what to charge and on what terms), Place (distribution channels and logistics), Promotion (advertising, sales promotion, PR, personal selling, digital).",
+      "concept": "marketing mix 4Ps"
+    },
+    {
+      "id": "mkt_su1_c3",
+      "front": "What three additional Ps extend the mix to 7Ps for services, and why are they needed?",
+      "back": "People (staff quality and training), Process (service delivery procedures), and Physical Evidence (tangible cues like décor and uniforms). They address services' unique characteristics: Intangibility, Inseparability, Variability, and Perishability (IHIP).",
+      "concept": "7Ps for services"
+    },
+    {
+      "id": "mkt_su1_c4",
+      "front": "What is the Customer Value formula and what does each component represent?",
+      "back": "Value = Benefits / Costs. Benefits include functional, emotional, and social benefits. Costs include monetary price, time, energy, and psychological cost. Marketers increase value by raising benefits, reducing costs, or both.",
+      "concept": "customer value formula"
+    },
+    {
+      "id": "mkt_su1_c5",
+      "front": "What is Customer Lifetime Value (CLV)?",
+      "back": "The total net profit a company can expect from a customer over the entire duration of the relationship. It emphasises the importance of customer retention — keeping an existing customer is typically more profitable than acquiring a new one.",
+      "concept": "customer lifetime value"
+    },
+    {
+      "id": "mkt_su1_c6",
+      "front": "What is Brand Equity?",
+      "back": "The added value that a brand name gives to a product beyond its functional attributes. High brand equity allows premium pricing, greater customer loyalty, and faster recovery from reputational setbacks. Examples: Apple, Nike, Coca-Cola.",
+      "concept": "brand equity"
+    },
+    {
+      "id": "mkt_su1_c7",
+      "front": "What is the difference between the Selling Concept and the Marketing Concept?",
+      "back": "The Selling Concept starts with the product and uses aggressive promotion to generate sales (inside-out). The Marketing Concept starts with customer needs and creates products that satisfy them better than competitors (outside-in). The marketing concept builds sustainable, long-term relationships.",
+      "concept": "marketing management philosophies"
+    },
+    {
+      "id": "mkt_su1_c8",
+      "front": "What are the four components of the Holistic Marketing Concept?",
+      "back": "1. Relationship Marketing — building long-term partnerships with customers and stakeholders. 2. Integrated Marketing — aligning all communications and activities. 3. Internal Marketing — training and motivating employees. 4. Performance Marketing — measuring financial and social/ethical impact.",
+      "concept": "holistic marketing concept"
+    },
+    {
+      "id": "mkt_su1_c9",
+      "front": "What is the DESTEP framework and what does it stand for?",
+      "back": "DESTEP is a tool for analysing the macroenvironment: Demographic, Economic, Sociocultural, Technological, Ecological/Natural, and Political-Legal forces. Also known as PESTEL (Political, Economic, Sociocultural, Technological, Environmental, Legal).",
+      "concept": "DESTEP macroenvironment"
+    },
+    {
+      "id": "mkt_su1_c10",
+      "front": "What is the difference between the Microenvironment and the Macroenvironment?",
+      "back": "Microenvironment: forces close to the company that directly affect its ability to serve customers (company, suppliers, intermediaries, competitors, publics, customers). Macroenvironment: broader societal forces affecting all players (DESTEP/PESTEL). Micro forces are partially manageable; macro forces are largely uncontrollable.",
+      "concept": "marketing environment"
+    },
+    {
+      "id": "mkt_su1_c11",
+      "front": "Give five examples of entities that can be marketed beyond physical goods.",
+      "back": "Services (banking, education), Events (Olympics, concerts), Experiences (theme parks), Persons (politicians, celebrities), Places (tourism destinations), Properties (real estate), Organisations (charities), Information (encyclopaedias), Ideas (public health campaigns).",
+      "concept": "what can be marketed"
+    },
+    {
+      "id": "mkt_su1_c12",
+      "front": "What is 'Marketing Myopia' and which marketing philosophy is most prone to it?",
+      "back": "Marketing Myopia is the error of focusing on the product rather than the underlying customer need it serves — leading companies to miss shifts in consumer demand. It is most associated with the Product Concept, where companies focus so much on product quality and features that they lose sight of what customers actually need.",
+      "concept": "marketing myopia and product concept"
+    }
+  ]
+}

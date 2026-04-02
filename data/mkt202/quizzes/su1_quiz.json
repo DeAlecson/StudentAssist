@@ -1,0 +1,156 @@
+{
+  "unitId": "su1",
+  "moduleId": "mkt202",
+  "questions": [
+    {
+      "id": "mkt_su1_q1",
+      "type": "mcq",
+      "concept": "definition of marketing management",
+      "prompt": "Which of the following best defines Marketing Management?",
+      "difficulty": 1,
+      "choices": [
+        "The process of manufacturing and distributing goods to consumers",
+        "The art and science of choosing target markets and getting, keeping, and growing customers through creating, delivering, and communicating superior customer value",
+        "The practice of advertising products to generate maximum sales volume",
+        "The management of a company's financial resources to maximise profit"
+      ],
+      "answer": 1,
+      "explanation": "Marketing Management is formally defined as the art and science of choosing target markets and getting, keeping, and growing customers through creating, delivering, and communicating superior customer value. It encompasses far more than advertising or distribution alone."
+    },
+    {
+      "id": "mkt_su1_q2",
+      "type": "mcq",
+      "concept": "marketing mix 4Ps",
+      "prompt": "A company decides to reduce its product's retail price by 15% and increase its advertising budget. Which two elements of the 4Ps are being adjusted?",
+      "difficulty": 1,
+      "choices": [
+        "Product and Place",
+        "Place and Promotion",
+        "Price and Promotion",
+        "Product and Price"
+      ],
+      "answer": 2,
+      "explanation": "Price refers to the amount charged for a product or service. Promotion encompasses advertising and other communication activities. Reducing the retail price adjusts the Price element; increasing the advertising budget adjusts the Promotion element."
+    },
+    {
+      "id": "mkt_su1_q3",
+      "type": "mcq",
+      "concept": "marketing management philosophies",
+      "prompt": "A company believes consumers will buy more goods if it uses aggressive selling and promotional techniques. This best reflects which marketing management philosophy?",
+      "difficulty": 2,
+      "choices": [
+        "Production concept",
+        "Product concept",
+        "Selling concept",
+        "Holistic marketing concept"
+      ],
+      "answer": 2,
+      "explanation": "The selling concept holds that consumers will not buy enough of a product unless the company undertakes aggressive selling and promotion. It is inside-out — starting with the product and pushing it to consumers — rather than starting with customer needs."
+    },
+    {
+      "id": "mkt_su1_q4",
+      "type": "mcq",
+      "concept": "marketing environment DESTEP",
+      "prompt": "New government regulations requiring all food packaging to display nutritional information in a specific format most directly represents which element of the macroenvironment?",
+      "difficulty": 2,
+      "choices": [
+        "Economic forces",
+        "Sociocultural forces",
+        "Political-legal forces",
+        "Technological forces"
+      ],
+      "answer": 2,
+      "explanation": "Government regulations and legal requirements fall under the Political-Legal forces of the macroenvironment (DESTEP/PESTEL). These forces define what businesses are permitted to do and must be monitored and complied with."
+    },
+    {
+      "id": "mkt_su1_q5",
+      "type": "mcq",
+      "concept": "customer value formula",
+      "prompt": "According to the customer value formula (Value = Benefits / Costs), which strategy would MOST directly increase perceived customer value without changing the price?",
+      "difficulty": 2,
+      "choices": [
+        "Increasing the product's manufacturing cost",
+        "Adding a new feature that meaningfully improves product performance",
+        "Reducing the packaging size of the product",
+        "Shortening the product warranty period"
+      ],
+      "answer": 1,
+      "explanation": "Value = Benefits / Costs. Adding a feature that improves performance increases the Benefits component of the formula, thereby raising perceived value even if price (a cost) remains unchanged. The other options either reduce benefits or do not clearly increase them."
+    },
+    {
+      "id": "mkt_su1_q6",
+      "type": "mcq",
+      "concept": "7Ps for services",
+      "prompt": "The 4Ps marketing mix is extended to 7Ps for services. Which three additional Ps are added for services?",
+      "difficulty": 1,
+      "choices": [
+        "Packaging, People, Positioning",
+        "People, Process, Physical Evidence",
+        "Profit, Process, Perception",
+        "People, Publicity, Physical Evidence"
+      ],
+      "answer": 1,
+      "explanation": "The 7Ps extend the original 4Ps (Product, Price, Place, Promotion) with People, Process, and Physical Evidence to address the unique characteristics of services — particularly their intangibility, which makes physical evidence and people-delivered quality critical."
+    },
+    {
+      "id": "mkt_su1_q7",
+      "type": "mcq",
+      "concept": "types of markets",
+      "prompt": "A global logistics company sells freight management software to manufacturing firms. Which type of market is it primarily operating in?",
+      "difficulty": 1,
+      "choices": [
+        "Consumer market",
+        "Global market",
+        "Business market",
+        "Nonprofit market"
+      ],
+      "answer": 2,
+      "explanation": "A business market (B2B) involves organisations buying goods and services for use in production, resale, or daily operations. The logistics company is selling to manufacturing firms — organisations — making this a business market transaction."
+    },
+    {
+      "id": "mkt_su1_q8",
+      "type": "mcq",
+      "concept": "holistic marketing concept",
+      "prompt": "Which of the following is NOT one of the four components of the Holistic Marketing Concept?",
+      "difficulty": 2,
+      "choices": [
+        "Relationship marketing",
+        "Integrated marketing",
+        "Production marketing",
+        "Performance marketing"
+      ],
+      "answer": 2,
+      "explanation": "The four components of the Holistic Marketing Concept are: Relationship Marketing (building long-term partnerships), Integrated Marketing (aligning all marketing activities), Internal Marketing (motivating and training employees), and Performance Marketing (measuring business and social outcomes). 'Production marketing' is not a component."
+    },
+    {
+      "id": "mkt_su1_q9",
+      "type": "mcq",
+      "concept": "brand equity and customer equity",
+      "prompt": "A company calculates that the total value of all its customer relationships over their lifetimes amounts to $50 million. This figure represents which marketing concept?",
+      "difficulty": 2,
+      "choices": [
+        "Brand equity",
+        "Customer lifetime value",
+        "Customer equity",
+        "Market capitalisation"
+      ],
+      "answer": 2,
+      "explanation": "Customer Equity is the total combined customer lifetime values of all of a company's customers. It represents the aggregate value of all customer relationships and is a key indicator of long-term company health. Brand equity, by contrast, is the added value a brand name gives to a product."
+    },
+    {
+      "id": "mkt_su1_q10",
+      "type": "mcq",
+      "concept": "microenvironment vs macroenvironment",
+      "prompt": "Which of the following is part of a company's MICROENVIRONMENT?",
+      "difficulty": 1,
+      "choices": [
+        "A rise in the national inflation rate",
+        "A new government data privacy law",
+        "A key raw material supplier experiencing production delays",
+        "A generational shift in consumer values toward sustainability"
+      ],
+      "answer": 2,
+      "explanation": "The microenvironment consists of forces close to the company that directly affect its ability to serve customers — including suppliers, competitors, marketing intermediaries, customers, and publics. A supplier experiencing delays is a direct microenvironment factor. The other options (inflation, privacy law, generational values shifts) are macroenvironment forces."
+    }
+  ]
+}

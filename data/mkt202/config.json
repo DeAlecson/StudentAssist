@@ -1,0 +1,76 @@
+{
+  "id": "mkt202",
+  "code": "MKT202",
+  "title": "Marketing Management",
+  "institution": "SUSS",
+  "color": "#f472b6",
+  "icon": "📣",
+  "units": [
+    {
+      "id": "su1",
+      "title": "Introduction to Marketing Management",
+      "icon": "🎯",
+      "description": "Foundations of marketing management, the marketing mix, customer value, and the marketing environment.",
+      "lessonFile": "data/mkt202/lessons/su1.json",
+      "quizFile": "data/mkt202/quizzes/su1_quiz.json",
+      "flashcardFile": "data/mkt202/flashcards/su1_cards.json"
+    },
+    {
+      "id": "su2",
+      "title": "Consumer Behaviour",
+      "icon": "🧠",
+      "description": "Cultural, social, personal, and psychological factors that shape consumer decisions and the buying process.",
+      "lessonFile": "data/mkt202/lessons/su2.json",
+      "quizFile": "data/mkt202/quizzes/su2_quiz.json",
+      "flashcardFile": "data/mkt202/flashcards/su2_cards.json"
+    },
+    {
+      "id": "su3",
+      "title": "Market Segmentation, Targeting & Positioning",
+      "icon": "🗺️",
+      "description": "How to segment markets, select target segments, and craft a compelling positioning strategy.",
+      "lessonFile": "data/mkt202/lessons/su3.json",
+      "quizFile": "data/mkt202/quizzes/su3_quiz.json",
+      "flashcardFile": "data/mkt202/flashcards/su3_cards.json"
+    },
+    {
+      "id": "su4",
+      "title": "Product & Service Differentiation",
+      "icon": "📦",
+      "description": "Product levels, branding, differentiation strategies, and managing the product life cycle.",
+      "lessonFile": "data/mkt202/lessons/su4.json",
+      "quizFile": "data/mkt202/quizzes/su4_quiz.json",
+      "flashcardFile": "data/mkt202/flashcards/su4_cards.json"
+    },
+    {
+      "id": "su5",
+      "title": "Pricing Strategy",
+      "icon": "💰",
+      "description": "Pricing objectives, methods, and strategies including value-based, cost-based, and competition-based approaches.",
+      "lessonFile": "data/mkt202/lessons/su5.json",
+      "quizFile": "data/mkt202/quizzes/su5_quiz.json",
+      "flashcardFile": "data/mkt202/flashcards/su5_cards.json"
+    },
+    {
+      "id": "su6",
+      "title": "Integrated Marketing Communications",
+      "icon": "📢",
+      "description": "The promotional mix, advertising, digital marketing, and designing cohesive IMC campaigns.",
+      "lessonFile": "data/mkt202/lessons/su6.json",
+      "quizFile": "data/mkt202/quizzes/su6_quiz.json",
+      "flashcardFile": "data/mkt202/flashcards/su6_cards.json"
+    }
+  ],
+  "examPapers": [
+    {
+      "id": "jan2024",
+      "label": "JAN 2024",
+      "file": "data/mkt202/exams/jan2024.json"
+    },
+    {
+      "id": "jan2025",
+      "label": "JAN 2025",
+      "file": "data/mkt202/exams/jan2025.json"
+    }
+  ]
+}

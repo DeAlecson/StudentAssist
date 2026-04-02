@@ -60,5 +60,17 @@
       "quizFile": "data/acc202/quizzes/su6_quiz.json",
       "flashcardFile": "data/acc202/flashcards/su6_cards.json"
     }
+  ],
+  "examPapers": [
+    {
+      "id": "jan2024",
+      "label": "JAN 2024",
+      "file": "data/acc202/exams/jan2024.json"
+    },
+    {
+      "id": "jan2025",
+      "label": "JAN 2025",
+      "file": "data/acc202/exams/jan2025.json"
+    }
   ]
 }

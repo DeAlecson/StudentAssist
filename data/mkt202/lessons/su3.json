@@ -1,0 +1,87 @@
+{
+  "unitId": "su3",
+  "moduleId": "mkt202",
+  "title": "Market Segmentation, Targeting & Positioning",
+  "sections": [
+    {
+      "type": "intro",
+      "title": "The STP Framework",
+      "content": "No company can serve everyone. Resources are finite, and customers have diverse and sometimes conflicting needs. The solution is the **STP process**:\n\n1. **Segmentation** — Divide the total market into distinct groups of buyers with different needs or responses to marketing\n2. **Targeting** — Evaluate each segment and select the most attractive segment(s) to pursue\n3. **Positioning** — Create a clear, distinctive, and desirable place for the brand in the minds of the target segment\n\nSTP is the strategic backbone of marketing. Every product launch, brand refresh, or market entry decision flows through this framework. Getting segmentation wrong means targeting the wrong people; getting positioning wrong means having the right audience but the wrong message."
+    },
+    {
+      "type": "definition",
+      "title": "Bases for Market Segmentation",
+      "content": "Marketers use multiple **segmentation bases** to slice the market into meaningful groups:\n\n**Geographic Segmentation** — Dividing by location:\n- Nations, regions, states, cities, neighbourhoods\n- **Geoclustering** (e.g., PRIZM system) combines geographic and demographic data to identify community clusters with shared consumption patterns\n\n**Demographic Segmentation** — Most commonly used base:\n- Age, gender, income, occupation, education\n- **Family life cycle** (single → couple → family with young children → empty nester → retired)\n- **Generation** (Baby Boomers, Gen X, Millennials, Gen Z — each with distinct values and media habits)\n- Nationality and social class\n\n**Psychographic Segmentation** — Dividing by psychology and lifestyle:\n- Personality traits (e.g., risk-taking vs conservative)\n- **Lifestyle** — captured through the AIO framework (Activities, Interests, Opinions)\n- **VALS Framework** — classifies consumers into eight types (Innovators, Thinkers, Achievers, Experiencers, Believers, Strivers, Makers, Survivors) based on primary motivation and resources\n- **Values** — core beliefs that drive long-term consumption patterns\n\n**Behavioural Segmentation** — Dividing by behaviour toward the product:\n- **Occasions** — when consumers use or buy (e.g., gifting at Christmas)\n- **User status** — nonuser, potential user, first-time user, regular user, ex-user\n- **Usage rate** — light, medium, heavy users (the 80/20 rule often applies)\n- **Buyer-readiness stage** — unaware → aware → informed → interested → desirous → intending to buy\n- **Loyalty status** — hard-core loyal, split loyal, shifting loyal, switchers\n- **Decision roles** — initiator, influencer, decider, buyer, user (may be different people)"
+    },
+    {
+      "type": "definition",
+      "title": "Requirements for Effective Segmentation (MSADA)",
+      "content": "Not all segmentation schemes are equally useful. An effective segment must satisfy five criteria — remembered by the acronym **MSADA**:\n\n- **M — Measurable**: The size, purchasing power, and characteristics of the segment can be measured. If you cannot quantify the segment, you cannot allocate resources to it.\n- **S — Substantial**: The segment is large and profitable enough to be worth pursuing. A segment of 50 people in a city is rarely worth a dedicated marketing programme.\n- **A — Accessible**: The segment can be effectively reached and served through available marketing channels and distribution systems.\n- **D — Differentiable**: The segment is conceptually distinct from others and responds differently to marketing mix elements. If two 'segments' respond identically, they are one segment.\n- **A — Actionable**: Effective marketing programmes can be designed and implemented to attract and serve the segment given the company's current resources and capabilities.\n\n**Exam tip:** MSADA is frequently tested. Be ready to apply each criterion to evaluate a proposed segmentation scheme."
+    },
+    {
+      "type": "concept",
+      "title": "Customer Personas",
+      "content": "A **customer persona** (also called a buyer persona or marketing persona) is a detailed, semi-fictional profile of a hypothetical ideal target customer, built from real data about the segment.\n\nA well-crafted persona typically includes:\n- **Demographics** — name, age, gender, location, income, education, occupation, family situation\n- **Psychographics** — values, lifestyle, personality traits, hobbies, motivations\n- **Behavioural data** — purchase habits, brand loyalty, usage frequency, preferred channels\n- **Goals and pain points** — what they are trying to achieve, and what frustrates them\n- **Media habits** — where they get information, which platforms they use\n\n**Why personas matter:** Personas give abstract segment data a human face, making it easier for marketing teams to design products, write copy, and choose channels that genuinely resonate. Instead of 'targeting 25–34 year old urban professionals', the team designs for 'Marcus, 29, a software engineer in Singapore who values efficiency and sustainability.'\n\nPersonas must be grounded in real customer research — not invented stereotypes."
+    },
+    {
+      "type": "concept",
+      "title": "Targeting Strategies",
+      "content": "After segmenting the market, companies must choose which segments to serve. There are four major targeting strategies:\n\n**1. Undifferentiated Marketing (Mass Marketing)**\n- Ignores segment differences and targets the whole market with one offer\n- Strength: economies of scale, simplified operations\n- Weakness: fails to satisfy any segment particularly well; vulnerable to competitors who niche\n- Example: early Coca-Cola (one product for everyone)\n\n**2. Differentiated Marketing**\n- Targets multiple segments with distinct marketing mixes for each\n- Strength: higher total sales, greater market coverage\n- Weakness: higher costs (production, marketing, administration)\n- Example: Toyota (Yaris for budget buyers, Camry for families, Lexus for luxury)\n\n**3. Concentrated Marketing (Niche Marketing)**\n- Targets one or a few segments and aims for a large share of them\n- Strength: deep understanding of segment, strong positioning, efficient use of resources\n- Weakness: risky if the niche declines or a large competitor enters\n- Example: Rolls-Royce (ultra-luxury segment), Lush (natural cosmetics)\n\n**4. Micromarketing**\n- *Local marketing*: tailoring programmes to local communities, cities, or neighbourhoods\n- *Individual marketing (one-to-one)*: customising products and communications to individual customers (enabled by big data and personalisation technology)\n- Example: Netflix personalised recommendations, Spotify Wrapped"
+    },
+    {
+      "type": "definition",
+      "title": "Positioning: Points of Parity and Points of Difference",
+      "content": "**Positioning** is the act of designing a company's offering and image to occupy a distinctive place in the minds of the target market.\n\nEffective positioning requires clarity on two dimensions:\n\n**Points of Parity (POPs)** — Attributes or benefits that are *not unique* to the brand but are considered necessary to be a credible competitor in the category. POPs establish legitimacy:\n- A premium coffee shop must have good coffee and comfortable seating (category POPs) before differentiation matters\n- Failing to meet POPs means the brand is disqualified, regardless of its unique features\n\n**Points of Difference (PODs)** — Attributes or benefits that are *strongly associated with the brand*, positively evaluated, and *not found in the same form among competitors*. PODs are the basis of competitive advantage:\n- Strong PODs should be **desirable** (valued by consumers), **deliverable** (the company can actually provide them), and **differentiating** (not already owned by a competitor)\n\n**The Positioning Statement:**\nA formal positioning statement follows this structure:\n> *\"To [target segment and need], [brand name] is [frame of reference/category] that [point of difference/key benefit] because [reason to believe].\"*\n\nExample: \"To busy young professionals who need fast, reliable coffee, Starbucks is the premium coffee experience that provides a personalised daily ritual because of its extensive customisation options and welcoming store environment.\""
+    },
+    {
+      "type": "concept",
+      "title": "Perceptual Maps and Value Propositions",
+      "content": "**Perceptual Maps** are two-dimensional visual tools used to understand how consumers perceive competing brands relative to two key attributes (e.g., price vs quality, traditional vs innovative).\n\nHow to use a perceptual map:\n1. Choose two attributes most important to the target segment\n2. Survey consumers to rate competing brands on each attribute\n3. Plot brands on the map to reveal competitive clusters and open spaces\n4. Identify **positioning gaps** — spaces where consumer needs are unmet\n\nPerceptual maps are used to:\n- Assess a brand's current position versus competitors\n- Identify repositioning opportunities\n- Spot underserved niches\n\n**Value Proposition** is the full set of benefits a brand promises to deliver to customers — the answer to 'why should I choose you?'\n\nA strong value proposition is:\n- **Clear** — easy to understand and communicate\n- **Specific** — tied to real product benefits, not generic claims\n- **Differentiated** — different from what competitors offer\n- **Credible** — backed by proof points the brand can actually deliver"
+    },
+    {
+      "type": "example",
+      "title": "STP in Practice: IKEA",
+      "content": "**IKEA** demonstrates the STP framework effectively:\n\n**Segmentation:**\n- *Demographic*: young adults, families, students, urban professionals aged 18–40 with moderate incomes\n- *Psychographic*: value-conscious, design-aware, practical, willing to participate in assembly\n- *Behavioural*: frequent movers, first-time home furnishers, heavy users of self-assembly products\n\n**Targeting:**\nIKEA uses a **differentiated strategy** — it targets multiple segments (young singles, young families, small businesses) with core products while tailoring some collections to local markets.\n\n**Positioning:**\n- **Frame of reference**: home furnishing retail\n- **POD**: stylish Scandinavian design at remarkably affordable prices through the flat-pack, self-assembly model\n- **POP**: wide product range, in-store experience (must compete on these to remain credible)\n- **Positioning statement**: 'To budget-conscious, design-aware home furnishers, IKEA is the affordable home furnishing brand that offers well-designed, functional products at prices so low that as many people as possible can afford them — because of our flat-pack, self-assembly supply chain model.'\n\n**Key takeaway:** IKEA's positioning is sustainable because its low-cost POD is backed by an entire business model (supply chain, flat-pack, store design, customer co-creation) — competitors cannot easily replicate this."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Quick Check",
+      "question": "What is the difference between a Point of Parity (POP) and a Point of Difference (POD)? Why do brands need both?",
+      "answer": "A **Point of Parity (POP)** is an attribute shared with competitors that is necessary for the brand to be considered a credible option in the category. A **Point of Difference (POD)** is a benefit that uniquely and positively distinguishes the brand from competitors. Brands need POPs to establish legitimacy — without meeting category norms, consumers will dismiss the brand entirely. Brands need PODs to give consumers a compelling reason to *choose* them over alternatives. Strong positioning requires both: POPs say 'we belong', PODs say 'here's why we're better'."
+    }
+  ],
+  "assessment": {
+    "questions": [
+      {
+        "prompt": "Explain the five criteria for effective market segmentation (MSADA) and apply them to evaluate a proposed segment: 'Singaporean pet owners aged 25–45 who spend over $200 monthly on premium pet food.'",
+        "modelAnswer": "The MSADA criteria are: Measurable (the segment's size and purchasing power can be quantified), Substantial (large and profitable enough to pursue), Accessible (reachable through available channels), Differentiable (distinct and responds differently from other segments), and Actionable (effective marketing programmes can be designed for it). Applying MSADA to the proposed segment: Measurable — yes, household survey data, loyalty card data, and e-commerce transaction records can quantify how many Singaporean pet owners spend over $200 monthly on premium pet food. Substantial — Singapore has over 1 million pet owners; premium pet food is a growing category, making this financially viable. Accessible — this segment can be reached through pet specialty stores, veterinary clinics, Instagram pet communities, and targeted digital advertising. Differentiable — premium pet food buyers exhibit different price sensitivity, brand loyalty, and purchase motivations than budget pet food buyers, justifying distinct marketing mixes. Actionable — a brand with premium pet food products and sufficient marketing budget can develop tailored campaigns, loyalty programmes, and partnerships with vets and pet influencers. Overall, this is a well-defined, viable segment that meets all five criteria.",
+        "keyPoints": [
+          "MSADA: Measurable, Substantial, Accessible, Differentiable, Actionable",
+          "Each criterion must be assessed, not just listed",
+          "A good segment meets all five — failure on any one criterion weakens the segmentation strategy",
+          "Real data sources should be considered when assessing measurability"
+        ]
+      },
+      {
+        "prompt": "Compare and contrast the four targeting strategies. Under what circumstances would a company choose concentrated (niche) marketing over differentiated marketing?",
+        "modelAnswer": "Undifferentiated marketing targets the entire market with one offer, benefiting from simplicity and scale but risking poor fit with any segment. Differentiated marketing targets multiple segments with tailored offers, maximising revenue but increasing complexity and cost. Concentrated marketing focuses all resources on one segment, building deep expertise and strong positioning within that niche but accepting higher vulnerability if the niche contracts. Micromarketing customises offerings at the local or individual level, enabled by data and technology. A company should choose concentrated over differentiated marketing when: (1) its resources are limited and cannot support multiple marketing mixes, (2) the niche is specialised enough that deep expertise creates a sustainable competitive moat, (3) the niche is underserved by larger competitors who find it unprofitable to cater to it, (4) the company desires a strong brand reputation within a specific domain rather than broad but shallow coverage. Examples include specialist law firms, luxury watchmakers, and artisan food producers.",
+        "keyPoints": [
+          "Four strategies: undifferentiated, differentiated, concentrated, micromarketing",
+          "Resource constraints often push SMEs toward concentrated strategy",
+          "Concentrated strategy builds depth over breadth — expertise and loyalty within niche",
+          "Risk of concentrated: niche decline or large competitor entry is highly threatening"
+        ]
+      },
+      {
+        "prompt": "What is a positioning statement and why is it important? Construct a positioning statement for a hypothetical sustainable sneaker brand targeting environmentally conscious Gen Z consumers.",
+        "modelAnswer": "A positioning statement is a concise internal document that articulates the brand's target segment, the category it competes in, its key point of difference, and the reason consumers should believe it. It serves as the strategic anchor for all marketing mix decisions — ensuring product, price, communication, and distribution choices are coherent and reinforce the intended positioning. A poorly crafted positioning statement leads to inconsistent messaging and confused brand identity. For a sustainable sneaker brand targeting Gen Z: 'To environmentally conscious Gen Z consumers who want to express their values through fashion choices, GreenStep is the sustainable footwear brand that delivers stylish, high-performance sneakers made entirely from recycled and ethically sourced materials, because every pair is certified carbon-neutral and comes with a transparent supply chain report showing exactly where and how it was made.' This statement identifies the target (Gen Z, environmentally conscious), the category (sustainable footwear), the POD (stylish + certified carbon-neutral + radical supply chain transparency), and the reason to believe (certification + supply chain reporting).",
+        "keyPoints": [
+          "Structure: To [target], [brand] is [category] that [POD] because [reason to believe]",
+          "Positioning statement is an internal strategic tool that guides all marketing decisions",
+          "A strong POD is desirable, deliverable, and differentiating",
+          "Reason to believe must be credible and verifiable — not just a claim"
+        ]
+      }
+    ]
+  }
+}

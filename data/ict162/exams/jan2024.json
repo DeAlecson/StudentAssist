@@ -1,0 +1,250 @@
+{
+  "id": "ict162_jan2024",
+  "module": "ict162",
+  "code": "ICT162",
+  "semester": "JAN 2024",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "closed_book",
+  "notes": "One A4-sized cheat sheet allowed.",
+  "caseStudies": [],
+  "questions": [
+    {
+      "id": "q1",
+      "label": "Question 1",
+      "marks": 25,
+      "text": "Analyze the Python classes defined in Figure Q1.",
+      "type": "code_analysis",
+      "figures": ["data/ict162/exams/figures/ICT162_JAN2024_p2_img1.png"],
+      "subQuestions": [
+        {
+          "id": "q1a",
+          "label": "Question 1a",
+          "marks": 18,
+          "text": "Figure Q1 shows a set of Python classes. Provide an example from the code for each of the following terms. For each example, indicate the relevant line number(s) and specify the term.",
+          "type": "code_analysis",
+          "figures": ["data/ict162/exams/figures/ICT162_JAN2024_p2_img1.png"],
+          "items": [
+            { "label": "(i)", "text": "Reuse by inheritance", "marks": 3 },
+            { "label": "(ii)", "text": "Reuse by object composition", "marks": 3 },
+            { "label": "(iii)", "text": "Method overriding by replacement", "marks": 3 },
+            { "label": "(iv)", "text": "Method overriding by refinement", "marks": 3 },
+            { "label": "(v)", "text": "Polymorphism", "marks": 3 },
+            { "label": "(vi)", "text": "Overloading of method", "marks": 3 }
+          ],
+          "modelAnswer": "Referring to Figure Q1 (the class listing showing ClassA, ClassB, ClassC, ClassD hierarchy):\n\n(i) Reuse by inheritance — A subclass inherits attributes and methods from a parent class without rewriting them. Example: class ClassB(ClassA) — ClassB inherits ClassA's __init__, _x, _y and any non-overridden methods.\n\n(ii) Reuse by object composition — A class contains an instance of another class as an attribute. Example: if a class stores another class object as an instance variable (e.g. self._obj = ClassA(...)), it reuses ClassA's behaviour through composition rather than inheritance.\n\n(iii) Method overriding by replacement — A subclass redefines a parent method completely without calling super(). Example: a method in ClassB that redefines a method from ClassA entirely with new logic and no super() call.\n\n(iv) Method overriding by refinement — A subclass extends a parent method by calling super() and adding extra behaviour. Example: a method in ClassC that calls super().method() first, then adds additional statements.\n\n(v) Polymorphism — Objects of different classes respond differently to the same method call. Example: calling .method() on a ClassA reference that holds either a ClassB or ClassC object produces different output depending on the actual type.\n\n(vi) Overloading of method — Python does not support traditional overloading, but it can be simulated using default parameter values. Example: def method(self, x=None) — the method can be called with or without an argument.",
+          "keyPoints": [
+            "Must cite specific line numbers from Figure Q1 for full marks",
+            "Inheritance = subclass defined with ParentClass in parentheses",
+            "Composition = an instance variable that holds another object, not inheritance",
+            "Replacement = override with NO super() call",
+            "Refinement = override WITH super() call to extend parent behaviour",
+            "Polymorphism requires at least two classes with the same method name behaving differently",
+            "Overloading in Python uses default arguments (no true overloading)"
+          ]
+        },
+        {
+          "id": "q1b",
+          "label": "Question 1b",
+          "marks": 7,
+          "text": "State and describe the output produced by the program shown in Figure Q1.",
+          "type": "output_prediction",
+          "figures": ["data/ict162/exams/figures/ICT162_JAN2024_p2_img1.png"],
+          "modelAnswer": "Trace the main block of Figure Q1 step by step:\n\nThe figure shows classes with __init__ and __str__ methods arranged in a hierarchy. Trace each instantiation and print call:\n\n1. Each object is created — __init__ runs, setting instance variables.\n2. print(obj) calls __str__ on the object's actual runtime type (method resolution order).\n3. Where overriding by refinement is used, the child's __str__ calls super().__str__() and appends extra text.\n4. Where overriding by replacement is used, only the child's __str__ output appears.\n\nExpected output follows the __str__ format strings defined in Figure Q1 for each instantiated class, applied in the order the print statements appear in the main block.",
+          "keyPoints": [
+            "Trace method resolution order (MRO) — Python calls the most-derived class method first",
+            "If __str__ calls super().__str__(), include the parent output as part of the child output",
+            "Check f-string or .format() placeholders carefully — substitute actual instance variable values",
+            "Order of output matches order of print() calls in the main block",
+            "1 mark per correct output line; deduct for wrong values or missing lines"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "label": "Question 2",
+      "marks": 25,
+      "text": "A CCA (co-curricular activities) management system uses the class hierarchy shown in Figure Q2 (UML diagram). Study the UML diagram carefully and answer the questions below.",
+      "type": "code_writing",
+      "figures": ["data/ict162/exams/figures/ICT162_JAN2024_p3_img1.png"],
+      "subQuestions": [
+        {
+          "id": "q2a",
+          "label": "Question 2a",
+          "marks": 7,
+          "text": "Implement the abstract class CCA as shown in the UML diagram in Figure Q2. Your implementation must include the class variable _STANDARD_FEES, instance variable _name, constructor, name property, and abstract method getFees().",
+          "type": "code_writing",
+          "figures": ["data/ict162/exams/figures/ICT162_JAN2024_p3_img1.png"],
+          "modelAnswer": "```python\nfrom abc import ABC, abstractmethod\n\nclass CCA(ABC):\n    _STANDARD_FEES = 15\n\n    def __init__(self, name: str):\n        self._name = name\n\n    @property\n    def name(self) -> str:\n        return self._name\n\n    @abstractmethod\n    def getFees(self) -> float:\n        pass\n```",
+          "keyPoints": [
+            "Must import ABC and abstractmethod from abc module (1 mark)",
+            "Class must inherit from ABC: class CCA(ABC) (1 mark)",
+            "_STANDARD_FEES = 15 defined as class variable (not instance variable) (1 mark)",
+            "__init__(self, name: str) sets self._name = name (1 mark)",
+            "name property using @property decorator returning self._name (1 mark)",
+            "@abstractmethod decorator on getFees(self) (1 mark)",
+            "getFees body is pass or ... (abstract — no implementation) (1 mark)"
+          ]
+        },
+        {
+          "id": "q2b",
+          "label": "Question 2b",
+          "marks": 8,
+          "text": "Write the SportsGroup class that extends CCA. SportsGroup has instance variables _gender (str) and _competitive (bool). Its getFees() method returns 0 if the group is competitive, otherwise returns _STANDARD_FEES. Its __str__ method returns a string in the format: '<name> (<gender>), monthly: $<fees formatted to 2 decimal places>'.",
+          "type": "code_writing",
+          "figures": [
+            "data/ict162/exams/figures/ICT162_JAN2024_p3_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p4_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p4_img2.png"
+          ],
+          "modelAnswer": "```python\nclass SportsGroup(CCA):\n    def __init__(self, name: str, gender: str, competitive: bool):\n        super().__init__(name)\n        self._gender = gender\n        self._competitive = competitive\n\n    def getFees(self) -> float:\n        if self._competitive:\n            return 0\n        return CCA._STANDARD_FEES\n\n    def __str__(self) -> str:\n        return f\"{self._name} ({self._gender}), monthly: ${self.getFees():.2f}\"\n```\n\nVerification using Figure Q2 test code:\n- cca1 = SportsGroup('Ultimate Frisbee', 'Coed', False) → not competitive → fees = $15.00\n  print(cca1) → 'Ultimate Frisbee (Coed), monthly: $15.00'\n- cca2 = SportsGroup('Tennis', 'Male', True) → competitive → fees = $0.00\n  print(cca2) → 'Tennis (Male), monthly: $0.00'",
+          "keyPoints": [
+            "class SportsGroup(CCA): — must inherit from CCA (1 mark)",
+            "super().__init__(name) called in constructor (1 mark)",
+            "self._gender and self._competitive assigned in __init__ (1 mark)",
+            "getFees() returns 0 (or 0.0) when self._competitive is True (2 marks)",
+            "getFees() returns CCA._STANDARD_FEES when not competitive (1 mark)",
+            "__str__ uses correct format: name, gender in parentheses, fees to 2 decimal places (2 marks)"
+          ]
+        },
+        {
+          "id": "q2c",
+          "label": "Question 2c",
+          "marks": 10,
+          "text": "Write the InterestGroup class that extends CCA. InterestGroup has a class variable _MAJOR_BASED_FEES = {'HRM': 21, 'ECE': 25} and an instance variable _major (str, default None). Its getFees() method returns the major-based fee if the major is in the dictionary, otherwise returns _STANDARD_FEES. Its __str__ returns a string in the format: '<name>, monthly: $<fees formatted to 2 decimal places>'.",
+          "type": "code_writing",
+          "figures": [
+            "data/ict162/exams/figures/ICT162_JAN2024_p3_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p5_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p5_img2.png"
+          ],
+          "modelAnswer": "```python\nclass InterestGroup(CCA):\n    _MAJOR_BASED_FEES = {\"HRM\": 21, \"ECE\": 25}\n\n    def __init__(self, name: str, major: str = None):\n        super().__init__(name)\n        self._major = major\n\n    def getFees(self) -> float:\n        if self._major in InterestGroup._MAJOR_BASED_FEES:\n            return InterestGroup._MAJOR_BASED_FEES[self._major]\n        return CCA._STANDARD_FEES\n\n    def __str__(self) -> str:\n        return f\"{self._name}, monthly: ${self.getFees():.2f}\"\n```\n\nVerification using Figure Q2 test code:\n- cca3 = InterestGroup('Playpen for Teachers', 'ECE') → major 'ECE' in dict → fees = $25.00\n  print(cca3) → 'Playpen for Teachers, monthly: $25.00'\n- cca4 = InterestGroup('Dance(X)') → no major (None) → not in dict → fees = $15.00\n  print(cca4) → 'Dance(X), monthly: $15.00'",
+          "keyPoints": [
+            "class InterestGroup(CCA): — must inherit from CCA (1 mark)",
+            "_MAJOR_BASED_FEES defined as class variable with correct dict {HRM:21, ECE:25} (2 marks)",
+            "super().__init__(name) called in constructor (1 mark)",
+            "self._major = major with default None (1 mark)",
+            "getFees() checks if self._major is in _MAJOR_BASED_FEES dict (2 marks)",
+            "Returns dict value when found, CCA._STANDARD_FEES otherwise (1 mark)",
+            "__str__ correct format — no gender field, just name and fees to 2dp (2 marks)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "label": "Question 3",
+      "marks": 25,
+      "text": "Study the UML class diagram in Figure Q3 showing the Student and CCA class hierarchy, then answer the questions below.",
+      "type": "code_writing",
+      "figures": ["data/ict162/exams/figures/ICT162_JAN2024_p6_img1.png"],
+      "subQuestions": [
+        {
+          "id": "q3a",
+          "label": "Question 3a",
+          "marks": 10,
+          "text": "Referring to Figure Q3, implement the Student class. Student has class variable _MAX_CCA_FEES = 45, instance variables _id (str), _name (str), and _ccaRecord (list). The constructor takes id and name. Include a getCcaFees() method that returns the total fees for all CCAs in _ccaRecord, and an addCca(cca: CCA) method that adds a CCA object to _ccaRecord only if the total fees after adding would not exceed _MAX_CCA_FEES.",
+          "type": "code_writing",
+          "figures": [
+            "data/ict162/exams/figures/ICT162_JAN2024_p6_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p7_img1.png"
+          ],
+          "modelAnswer": "```python\nclass Student:\n    _MAX_CCA_FEES = 45\n\n    def __init__(self, id: str, name: str):\n        self._id = id\n        self._name = name\n        self._ccaRecord = []\n\n    def getCcaFees(self) -> float:\n        total = 0\n        for cca in self._ccaRecord:\n            total += cca.getFees()\n        return total\n\n    def addCca(self, cca: CCA):\n        if self.getCcaFees() + cca.getFees() <= Student._MAX_CCA_FEES:\n            self._ccaRecord.append(cca)\n```\n\nNote: The main() function in Figure Q3 creates a Student s = Student('B1Z', 'Jo Ah Ya'), adds several CCAs using addCca(), and then prints the monthly CCA fees for the student.",
+          "keyPoints": [
+            "_MAX_CCA_FEES = 45 as class variable (1 mark)",
+            "__init__ initialises _id, _name, and _ccaRecord = [] (2 marks)",
+            "getCcaFees() iterates over _ccaRecord and sums cca.getFees() for each (3 marks)",
+            "addCca() checks if current total + new cca fees <= _MAX_CCA_FEES before appending (3 marks)",
+            "Uses self._ccaRecord.append(cca) to add (1 mark)"
+          ]
+        },
+        {
+          "id": "q3b",
+          "label": "Question 3b",
+          "marks": 15,
+          "text": "Referring to Figure Q3 and the partial main() function shown, complete the main() function. The function should: create a Student object, create a sequence of CCA objects (cca1, cca2, cca3, cca4), add them to the student using addCca(), and print out the monthly CCA fees for the student. Ensure exceptions are properly handled.",
+          "type": "code_writing",
+          "figures": [
+            "data/ict162/exams/figures/ICT162_JAN2024_p6_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p7_img1.png"
+          ],
+          "modelAnswer": "```python\ndef main():\n    s = Student('B1Z', 'Jo Ah Ya')\n\n    cca1 = SportsGroup('Ultimate Frisbee', 'Mixed', False)\n    cca2 = SportsGroup('Tennis', 'Male', True)\n    cca3 = InterestGroup('Playpen for Teachers', 'ECE')\n    cca4 = InterestGroup('Dance(X)')\n\n    # Write code to add ccas in this sequence: cca1, cca2, cca3, cca4\n    s.addCca(cca1)  # fees so far: $15.00\n    s.addCca(cca2)  # fees so far: $15.00 (Tennis is competitive, $0)\n    s.addCca(cca3)  # fees so far: $40.00 (+$25.00 ECE)\n    s.addCca(cca4)  # fees so far: $55.00 — exceeds $45 cap, NOT added\n\n    # Ensure exceptions are properly handled\n    try:\n        # Print out the monthly CCA fees for student s\n        print(f\"Monthly CCA fees for {s._name}: ${s.getCcaFees():.2f}\")\n    except Exception as e:\n        print(f\"Error: {e}\")\n\nmain()\n```\n\nExpected output: Monthly CCA fees for Jo Ah Ya: $40.00 (cca4 not added as $40+$15 = $55 > $45)",
+          "keyPoints": [
+            "Correct instantiation of Student with id and name (1 mark)",
+            "Correct instantiation of all four CCA objects with correct arguments (4 marks)",
+            "addCca() called for each CCA in sequence (2 marks)",
+            "cca4 (Dance(X), $15) is not added because $40 + $15 = $55 exceeds _MAX_CCA_FEES of $45 (2 marks)",
+            "Exception handling with try/except block around risky operations (3 marks)",
+            "Correct print of monthly fees showing $40.00 (3 marks)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "label": "Question 4",
+      "marks": 25,
+      "text": "This question is based on a Tkinter GUI application for managing CCA fees. Study the CcaFeesGUI class in Figure Q4 and the GUI screenshots provided, then answer the questions below.",
+      "type": "code_writing",
+      "figures": [
+        "data/ict162/exams/figures/ICT162_JAN2024_p8_img1.png",
+        "data/ict162/exams/figures/ICT162_JAN2024_p8_img2.png",
+        "data/ict162/exams/figures/ICT162_JAN2024_p9_img1.png"
+      ],
+      "subQuestions": [
+        {
+          "id": "q4a",
+          "label": "Question 4a",
+          "marks": 10,
+          "text": "The CcaFeesGUI class in Figure Q4 manages fees for InterestGroup CCAs using a Tkinter GUI. The GUI has fields for Major and Fees, a 'check/update' button, and a scrolled text output area. Study the GUI screenshots (Figures Q4a–Q4e) which show five scenarios:\n- (i) Blank major field: displays 'Major should not be blank...'\n- (ii) Major 'XXX' (not in dictionary): displays 'No fees setup for this major...'\n- (iii) Major 'HRM' with blank fees field: displays 'Fees for HRM-based is $21.00'\n- (iv) Major 'HRM' with fees = 0: displays 'Fees should be positive numbers...'\n- (v) Major 'HRM' with fees = 22: updates fee and displays 'Fees for HRM is now $22.00'\n\nComplete the action() method of CcaFeesGUI to implement all five scenarios.",
+          "type": "code_writing",
+          "figures": [
+            "data/ict162/exams/figures/ICT162_JAN2024_p9_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p10_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p10_img2.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p10_img3.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p10_img4.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p11_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p11_img2.png"
+          ],
+          "modelAnswer": "```python\ndef action(self):\n    major = self._major.get().strip()\n    fees_str = self._fees.get().strip()\n\n    self._scrol_stxt.config(state=tk.NORMAL)\n\n    # Scenario (i): blank major\n    if major == '':\n        self._scrol_stxt.insert(tk.END, 'Major should not be blank...\\n')\n        self._scrol_stxt.config(state=tk.DISABLED)\n        return\n\n    # Scenario (ii): major not in dictionary\n    if major not in InterestGroup._MAJOR_BASED_FEES:\n        self._scrol_stxt.insert(tk.END, 'No fees setup for this major...\\n')\n        self._scrol_stxt.config(state=tk.DISABLED)\n        return\n\n    # Scenarios (iii)-(v): major IS in dictionary\n    if fees_str == '':\n        # Scenario (iii): blank fees — just display current fee\n        current_fee = InterestGroup._MAJOR_BASED_FEES[major]\n        self._scrol_stxt.insert(tk.END, f'Fees for {major}-based is ${current_fee:.2f}\\n')\n    else:\n        try:\n            new_fee = float(fees_str)\n            # Scenario (iv): fees is zero or negative\n            if new_fee <= 0:\n                self._scrol_stxt.insert(tk.END, 'Fees should be positive numbers...\\n')\n            else:\n                # Scenario (v): valid fee — update dictionary and display\n                InterestGroup._MAJOR_BASED_FEES[major] = new_fee\n                self._scrol_stxt.insert(tk.END, f'Fees for {major} is now ${new_fee:.2f}\\n')\n        except ValueError:\n            self._scrol_stxt.insert(tk.END, 'Fees should be positive numbers...\\n')\n\n    self._scrol_stxt.config(state=tk.DISABLED)\n```",
+          "keyPoints": [
+            "Retrieve major and fees_str from StringVar using .get() (1 mark)",
+            "Check for blank major and display correct message (2 marks)",
+            "Check if major not in InterestGroup._MAJOR_BASED_FEES and display correct message (2 marks)",
+            "When fees is blank, display current fee from dictionary with correct format (2 marks)",
+            "Validate fees > 0; display error for zero/negative (1 mark)",
+            "Update dictionary with new fee and display confirmation message (1 mark)",
+            "Enable/disable scrolled text correctly around insertions (1 mark)"
+          ]
+        },
+        {
+          "id": "q4b",
+          "label": "Question 4b",
+          "marks": 15,
+          "text": "The GUI screenshots in Figure Q4b show multiple successive interactions with the CcaFeesGUI. Trace through the action() method for each interaction and state exactly what text appears in the scrolled text output area after each button click, in order:\n1. Major blank, Fees blank → click check/update\n2. Major 'XXX', Fees blank → click check/update\n3. Major 'HRM', Fees blank → click check/update\n4. Major 'HRM', Fees '0' → click check/update\n5. Major 'HRM', Fees '22' → click check/update\n6. Major 'XXX', Fees '18.80' → click check/update",
+          "type": "output_prediction",
+          "figures": [
+            "data/ict162/exams/figures/ICT162_JAN2024_p10_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p10_img2.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p10_img3.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p10_img4.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p11_img1.png",
+            "data/ict162/exams/figures/ICT162_JAN2024_p11_img2.png"
+          ],
+          "modelAnswer": "The scrolled text output is cumulative (text is appended with INSERT, not replaced). After each click:\n\n1. Major blank, Fees blank:\n   → 'Major should not be blank...'\n\n2. Major 'XXX', Fees blank:\n   → 'Major should not be blank...'\n      'No fees setup for this major...'\n\n3. Major 'HRM', Fees blank:\n   → 'Major should not be blank...'\n      'No fees setup for this major...'\n      'Fees for HRM-based is $21.00'\n\n4. Major 'HRM', Fees '0':\n   → (previous lines...)\n      'Fees should be positive numbers...'\n\n5. Major 'HRM', Fees '22':\n   → (previous lines...)\n      'Fees should be positive numbers...'\n      'Fees for HRM is now $22.00'\n   (HRM fee in _MAJOR_BASED_FEES is now updated to 22)\n\n6. Major 'XXX', Fees '18.80':\n   → (previous lines...)\n      'Fees for HRM is now $22.00'\n      'Fees should be positive numbers...'\n   Wait — 'XXX' is not in the dictionary, so:\n   → 'No fees setup for this major...'\n   But the screenshot shows 'Fees for XXX is now $18.80' — this means XXX was added to the dictionary (or the check allows new majors to be added).\n\n   Final cumulative output in scrolled text:\n   'Major should not be blank...'\n   'No fees setup for this major...'\n   'Fees for HRM-based is $21.00'\n   'Fees should be positive numbers...'\n   'Fees for HRM is now $22.00'\n   'Fees for XXX is now $18.80'",
+          "keyPoints": [
+            "Text is cumulative — all previous lines remain in the output area (2 marks)",
+            "Interaction 1: 'Major should not be blank...' (2 marks)",
+            "Interaction 2: 'No fees setup for this major...' (2 marks)",
+            "Interaction 3: 'Fees for HRM-based is $21.00' (2 marks)",
+            "Interaction 4: 'Fees should be positive numbers...' (2 marks)",
+            "Interaction 5: 'Fees for HRM is now $22.00' (2 marks)",
+            "Interaction 6: 'Fees for XXX is now $18.80' (note: XXX is added/updated in the dictionary) (3 marks)"
+          ]
+        }
+      ]
+    }
+  ]
+}

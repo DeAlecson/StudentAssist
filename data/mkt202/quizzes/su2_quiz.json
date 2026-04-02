@@ -1,0 +1,156 @@
+{
+  "unitId": "su2",
+  "moduleId": "mkt202",
+  "questions": [
+    {
+      "id": "mkt_su2_q1",
+      "type": "mcq",
+      "concept": "cultural factors",
+      "prompt": "Culture is described as the most fundamental determinant of consumer wants. Which of the following best describes a SUBCULTURE?",
+      "difficulty": 1,
+      "choices": [
+        "A distinct national government with its own trade policies",
+        "A group within a larger culture that shares distinct values and lifestyle patterns",
+        "The overall set of norms enforced by law within a society",
+        "A product category that appeals to the mass market"
+      ],
+      "answer": 1,
+      "explanation": "A subculture is a group within a larger culture that shares distinct values, beliefs, and lifestyle patterns — for example, ethnic groups, religious communities, geographic regions, or generational cohorts. Subcultures often represent attractive niche segments."
+    },
+    {
+      "id": "mkt_su2_q2",
+      "type": "mcq",
+      "concept": "Maslow's hierarchy of needs",
+      "prompt": "A luxury watch brand runs an ad campaign showing successful executives wearing its watches, with the tagline 'Worn by those who have earned it.' This appeal is primarily targeting which level of Maslow's Hierarchy?",
+      "difficulty": 2,
+      "choices": [
+        "Physiological needs",
+        "Safety needs",
+        "Social needs",
+        "Esteem needs"
+      ],
+      "answer": 3,
+      "explanation": "Esteem needs include the desire for achievement, recognition, prestige, and status. A luxury watch positioned as a reward for success and a signal of accomplishment is directly targeting the esteem level. The tagline 'Worn by those who have earned it' reinforces this by linking the product to achievement and social recognition."
+    },
+    {
+      "id": "mkt_su2_q3",
+      "type": "mcq",
+      "concept": "types of buying behaviour",
+      "prompt": "A consumer is purchasing a new home appliance. She spends considerable time researching options but finds the brands fairly similar in terms of features. After buying, she feels slightly unsure whether she made the right choice. Which type of buying behaviour does this illustrate?",
+      "difficulty": 2,
+      "choices": [
+        "Complex buying behaviour",
+        "Dissonance-reducing buying behaviour",
+        "Habitual buying behaviour",
+        "Variety-seeking buying behaviour"
+      ],
+      "answer": 1,
+      "explanation": "Dissonance-reducing buying behaviour occurs when involvement is high but differences between brands are small. The consumer researches carefully but struggles to differentiate, then experiences post-purchase doubt (cognitive dissonance). Marketers should focus on post-purchase reassurance for this type of buyer."
+    },
+    {
+      "id": "mkt_su2_q4",
+      "type": "mcq",
+      "concept": "consumer buying decision process",
+      "prompt": "During which stage of the consumer buying decision process does a marketer's goal shift to reducing cognitive dissonance?",
+      "difficulty": 2,
+      "choices": [
+        "Information search",
+        "Evaluation of alternatives",
+        "Purchase decision",
+        "Post-purchase behaviour"
+      ],
+      "answer": 3,
+      "explanation": "Post-purchase behaviour is where cognitive dissonance — the consumer's doubt or regret after buying — may arise. Marketers address this through follow-up communications, reassurance messaging, strong warranties, and excellent after-sales service to confirm the consumer made a good choice."
+    },
+    {
+      "id": "mkt_su2_q5",
+      "type": "mcq",
+      "concept": "perception — selective attention",
+      "prompt": "A consumer regularly checks social media for sneaker releases. She notices every sneaker advertisement but ignores ads for kitchen appliances. This best illustrates which perceptual concept?",
+      "difficulty": 1,
+      "choices": [
+        "Selective retention",
+        "Selective distortion",
+        "Selective attention",
+        "Selective exposure"
+      ],
+      "answer": 2,
+      "explanation": "Selective attention is the tendency to screen out most stimuli while noticing those that are relevant to current needs, interests, or goals. Because this consumer is actively interested in sneakers, she attends to sneaker ads and filters out unrelated content."
+    },
+    {
+      "id": "mkt_su2_q6",
+      "type": "mcq",
+      "concept": "social factors — reference groups",
+      "prompt": "A university student buys a specific brand of laptop because all her classmates use it and she wants to fit in with her peer group. This is an example of influence from which type of reference group?",
+      "difficulty": 1,
+      "choices": [
+        "Aspirational group",
+        "Primary group",
+        "Dissociative group",
+        "Secondary group"
+      ],
+      "answer": 1,
+      "explanation": "A primary reference group consists of people with whom an individual has frequent, informal, and direct interaction — such as classmates, friends, and family. Peer groups in university settings are classic primary reference groups that directly influence purchasing decisions."
+    },
+    {
+      "id": "mkt_su2_q7",
+      "type": "mcq",
+      "concept": "personal factors — lifestyle AIO",
+      "prompt": "Marketers using the AIO framework to understand consumer lifestyle measure three dimensions. What does AIO stand for?",
+      "difficulty": 1,
+      "choices": [
+        "Attitudes, Intentions, Opinions",
+        "Activities, Interests, Opinions",
+        "Ambitions, Income, Occupations",
+        "Awareness, Involvement, Opinions"
+      ],
+      "answer": 1,
+      "explanation": "AIO stands for Activities (work, hobbies, sports, entertainment, shopping), Interests (food, fashion, family, recreation, media), and Opinions (about social issues, politics, business, culture, the future). Together they form a comprehensive picture of a consumer's lifestyle."
+    },
+    {
+      "id": "mkt_su2_q8",
+      "type": "mcq",
+      "concept": "psychological factors — learning",
+      "prompt": "A coffee chain offers a loyalty card where every 10th coffee is free. Customers are trained to buy repeatedly to earn the reward. This is best explained by which learning theory?",
+      "difficulty": 2,
+      "choices": [
+        "Classical conditioning",
+        "Operant conditioning",
+        "Selective retention",
+        "Cognitive dissonance reduction"
+      ],
+      "answer": 1,
+      "explanation": "Operant conditioning (also called instrumental conditioning) involves reinforcing desired behaviour with a reward. The loyalty card rewards repeat purchases with a free coffee, conditioning customers to keep returning. Classical conditioning, by contrast, involves creating an association between a brand and an existing positive stimulus."
+    },
+    {
+      "id": "mkt_su2_q9",
+      "type": "mcq",
+      "concept": "consumer buying decision process — information search",
+      "prompt": "A consumer recalls his positive past experience with a brand when considering a new purchase, without consulting any external sources. This use of memory to guide decisions is called:",
+      "difficulty": 2,
+      "choices": [
+        "External information search",
+        "Internal information search",
+        "Selective distortion",
+        "Post-purchase evaluation"
+      ],
+      "answer": 1,
+      "explanation": "Internal information search involves drawing on personal memory, prior experience, and stored knowledge to make a decision. If internal search provides sufficient information, the consumer may not need to seek external information from friends, ads, or reviews."
+    },
+    {
+      "id": "mkt_su2_q10",
+      "type": "mcq",
+      "concept": "family influence on buying behaviour",
+      "prompt": "In household purchasing decisions, who is typically the DECIDER — the person who ultimately determines what product to buy?",
+      "difficulty": 2,
+      "choices": [
+        "Always the person who physically makes the purchase at the store",
+        "Always the highest income earner in the household",
+        "The person who has the final authority to choose the product or brand, which varies by household and product category",
+        "Always the end user of the product"
+      ],
+      "answer": 2,
+      "explanation": "The decision roles in a household purchase (initiator, influencer, decider, buyer, user) are distinct and can be played by different people. The decider is the person with final authority over the choice, but this varies — for a family car, it may be a parent; for children's toys, it might be the child influencing and the parent deciding. There is no universal rule."
+    }
+  ]
+}

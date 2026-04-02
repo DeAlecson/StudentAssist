@@ -1,0 +1,78 @@
+{
+  "unitId": "su4",
+  "moduleId": "mkt202",
+  "cards": [
+    {
+      "id": "mkt_su4_c1",
+      "front": "What are the THREE levels of a product?",
+      "back": "1. Core Benefit — the fundamental need being satisfied (e.g., a drill provides holes, not just a drill)\n2. Actual Product — the physical product: brand, features, design, packaging, quality\n3. Augmented Product — additional services: warranty, delivery, installation, after-sales support",
+      "concept": "Product Levels"
+    },
+    {
+      "id": "mkt_su4_c2",
+      "front": "What is product differentiation?",
+      "back": "The process of distinguishing a company's product from competitors' by highlighting unique attributes that create superior customer value. Dimensions include form, features, performance quality, conformance quality, durability, reliability, repairability, style, and design.",
+      "concept": "Product Differentiation"
+    },
+    {
+      "id": "mkt_su4_c3",
+      "front": "What is the difference between durability and reliability in product differentiation?",
+      "back": "Durability = expected operating life of a product under normal or stressful conditions (e.g., a laptop that lasts 5 years).\nReliability = probability that a product will NOT malfunction within a specified period (e.g., a laptop that doesn't crash).\nDurability is about lifespan; reliability is about consistency of performance.",
+      "concept": "Product Differentiation"
+    },
+    {
+      "id": "mkt_su4_c4",
+      "front": "List FOUR dimensions of services differentiation.",
+      "back": "1. Ease of ordering — how easy it is to place an order (e.g., one-click purchase)\n2. Delivery — speed, accuracy, and care\n3. Installation — setting up the product to work correctly\n4. Customer training/consulting — helping customers get more value\n5. Maintenance & repair — after-sale service programmes\n(Any four are acceptable.)",
+      "concept": "Services Differentiation"
+    },
+    {
+      "id": "mkt_su4_c5",
+      "front": "What is brand equity and what are its FOUR key sources?",
+      "back": "Brand equity = the added value a brand name gives to a product beyond its functional benefits.\n\nFour sources:\n1. Brand Awareness — ability to recognise/recall the brand\n2. Brand Associations — mental connections to quality, values, lifestyle\n3. Perceived Quality — overall quality perception\n4. Brand Loyalty — depth of commitment to repurchase",
+      "concept": "Brand Equity"
+    },
+    {
+      "id": "mkt_su4_c6",
+      "front": "Name SIX brand elements and give one example of each.",
+      "back": "1. Brand name — Nike\n2. URL — nike.com\n3. Logo/Symbol — Nike swoosh\n4. Character — Ronald McDonald\n5. Slogan — 'Just Do It'\n6. Jingle — McDonald's 'Ba da ba ba baaa'\n7. Packaging — Tiffany's robin-egg blue box\n(Six of the above required)",
+      "concept": "Brand Elements"
+    },
+    {
+      "id": "mkt_su4_c7",
+      "front": "What are the FOUR stages of the Product Life Cycle (PLC) and their primary marketing goals?",
+      "back": "1. Introduction — Create awareness and trial\n2. Growth — Maximise market share\n3. Maturity — Maximise profit while defending market share\n4. Decline — Reduce expenditure; decide to maintain, harvest, or divest\n\nNote: Each stage has distinct strategies for product, price, distribution, and promotion.",
+      "concept": "Product Life Cycle"
+    },
+    {
+      "id": "mkt_su4_c8",
+      "front": "What THREE strategies can a company use during the MATURITY stage of the PLC?",
+      "back": "1. Market Modification — find new users, new market segments, or new uses for the product\n2. Product Modification — improve quality, add features, or change style to attract new buyers\n3. Marketing Mix Modification — adjust price, distribution, advertising, or promotions to boost sales",
+      "concept": "Product Life Cycle — Maturity"
+    },
+    {
+      "id": "mkt_su4_c9",
+      "front": "What are the 8 stages of the New Product Development (NPD) process?",
+      "back": "1. Idea Generation\n2. Idea Screening\n3. Concept Development & Testing\n4. Marketing Strategy Development\n5. Business Analysis\n6. Product Development\n7. Market Testing\n8. Commercialisation\n\nSimultaneous (parallel) development can speed time-to-market.",
+      "concept": "New Product Development"
+    },
+    {
+      "id": "mkt_su4_c10",
+      "front": "What are the marketing functions of packaging?",
+      "back": "Packaging performs five key functions:\n1. Protect — physical protection during transport/storage\n2. Present — attractive display at point of sale\n3. Communicate — brand identity, product information, sustainability credentials\n4. Convenience — ease of use (resealable, portable)\n5. Promote — last advertisement a buyer sees before purchase decision",
+      "concept": "Packaging"
+    },
+    {
+      "id": "mkt_su4_c11",
+      "front": "What is the MMLTP framework for evaluating brand elements?",
+      "back": "Brand elements should be:\nM — Memorable (easy to recall and recognise)\nM — Meaningful (convey the brand's nature or benefit)\nL — Likeable (fun, interesting, aesthetically pleasing)\nT — Transferable (works across product categories and countries)\nA — Adaptable (can be updated over time)\nP — Protectable (legally and competitively defensible)",
+      "concept": "Brand Elements"
+    },
+    {
+      "id": "mkt_su4_c12",
+      "front": "What distinguishes 'conformance quality' from 'performance quality'?",
+      "back": "Performance quality = how well the product's primary functions are executed (e.g., a car's 0–100km/h time, engine power). Higher is better.\n\nConformance quality = the degree to which all produced units are identical and meet stated specifications. It's about consistency — a product with high conformance quality has few defects across the production run.",
+      "concept": "Product Differentiation"
+    }
+  ]
+}

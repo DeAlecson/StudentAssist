@@ -1,0 +1,323 @@
+{
+  "id": "sst101_jan2024",
+  "module": "sst101",
+  "code": "SST101",
+  "semester": "JAN 2024",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "open_book",
+  "caseStudies": [
+    {
+      "id": "cs1",
+      "title": "ACME Fire Safety Installation Project",
+      "text": "ACME Solutions has been contracted to install fire safety systems across a commercial building complex. The project involves sourcing, certifying, and installing both fire extinguishers and fire alarms, followed by testing and commissioning.\n\nProject tasks identified:\n- A: Review project plan with customer — 12 days\n- B: Source fire extinguishers (after A) — 10 days\n- C: Source fire alarms (after A) — 15 days\n- D: Certify fire extinguishers (after B) — 7 days\n- E: Certify fire alarms (after C) — 8 days\n- F: Create user manuals (after both B and C are complete) — 17 days\n- G: Install fire extinguishers (after both D and F are complete) — 6 days\n- H: Install fire alarms (after both E and F are complete) — 9 days\n- I: Test and commission (after both G and H are complete) — 5 days\n\nEVM data collected mid-project:\n- Planned Value (PV): $500,000\n- Earned Value (EV): $450,000\n- Actual Cost (AC): $480,000\n- Budget at Completion (BAC): $900,000"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1a",
+      "label": "Question 1a",
+      "marks": 2,
+      "text": "The career paths available to a project management practitioner include project manager, program manager, and ______ manager.",
+      "type": "fill_blank",
+      "answer": "portfolio",
+      "explanation": "The three main career paths in project management are: Project Manager (manages individual projects), Program Manager (manages related projects as a program), and Portfolio Manager (manages a collection of programs and projects aligned to organisational strategy)."
+    },
+    {
+      "id": "q1b",
+      "label": "Question 1b",
+      "marks": 2,
+      "text": "Choosing the right project management structure involves considering factors such as project ______ and the organisation's culture.",
+      "type": "fill_blank",
+      "answer": "complexity",
+      "explanation": "Key factors when selecting a PM structure include project complexity (size, number of stakeholders, technical difficulty), project type, organisational culture, and available resources. 'Size' or 'type' may also be accepted."
+    },
+    {
+      "id": "q1c",
+      "label": "Question 1c",
+      "marks": 2,
+      "text": "The Work Breakdown Structure (WBS) is a tool used to ______ project activities into smaller, more manageable components.",
+      "type": "fill_blank",
+      "answer": "decompose",
+      "explanation": "The WBS uses decomposition to break down the project scope hierarchically into work packages. Decomposition makes large, complex projects easier to plan, assign, estimate, and control."
+    },
+    {
+      "id": "q1d",
+      "label": "Question 1d",
+      "marks": 2,
+      "text": "The ______ is a document that defines the project's objectives, scope, deliverables, and stakeholders.",
+      "type": "fill_blank",
+      "answer": "project charter",
+      "explanation": "The Project Charter formally authorises the project, names the project manager, and defines high-level scope, objectives, stakeholders, and constraints. It is the foundational project document issued before planning begins."
+    },
+    {
+      "id": "q1e",
+      "label": "Question 1e",
+      "marks": 2,
+      "text": "Project Network is a tool used for planning, scheduling, and monitoring that uses ______ to represent project activities and their dependencies.",
+      "type": "fill_blank",
+      "answer": "nodes and arrows",
+      "explanation": "Project networks use nodes (boxes or circles) to represent activities and arrows to show dependencies between them. The Activity-on-Node (AON) method, also known as Precedence Diagramming Method (PDM), is the most common format."
+    },
+    {
+      "id": "q1f",
+      "label": "Question 1f",
+      "marks": 2,
+      "text": "Scheduling resources and costs involves identifying resources needed and developing a project ______.",
+      "type": "fill_blank",
+      "answer": "budget",
+      "explanation": "After identifying resource requirements, costs are estimated and aggregated to create the project budget. The budget forms the cost baseline against which actual expenditure is tracked."
+    },
+    {
+      "id": "q1g",
+      "label": "Question 1g",
+      "marks": 2,
+      "text": "The Critical Path Method (CPM) is a technique to determine the shortest possible duration by identifying the longest path of ______ activities.",
+      "type": "fill_blank",
+      "answer": "critical",
+      "explanation": "The Critical Path is the longest sequence of dependent activities in the project network. Activities on the critical path have zero float/slack — any delay to them directly delays the project end date. CPM identifies these critical activities."
+    },
+    {
+      "id": "q1h",
+      "label": "Question 1h",
+      "marks": 2,
+      "text": "The ______ meeting is a key Scrum event where the team reviews progress and demonstrates the product increment.",
+      "type": "fill_blank",
+      "answer": "Sprint Review",
+      "explanation": "The Sprint Review is held at the end of each Sprint. The Scrum team demonstrates the completed increment to stakeholders and collects feedback. It is distinct from the Sprint Retrospective (process improvement) and Daily Scrum (daily sync)."
+    },
+    {
+      "id": "q1i",
+      "label": "Question 1i",
+      "marks": 2,
+      "text": "Traditional PM is most appropriate when scope is well defined, while Agile is suited for projects with a ______ scope.",
+      "type": "fill_blank",
+      "answer": "evolving",
+      "explanation": "Agile approaches are best suited for projects where requirements are not fully known at the start and will evolve through iterative delivery and stakeholder feedback. 'Dynamic' or 'changing' are also acceptable answers."
+    },
+    {
+      "id": "q1j",
+      "label": "Question 1j",
+      "marks": 2,
+      "text": "The ______ method is a popular Agile framework that emphasises delivering a working product incrementally.",
+      "type": "fill_blank",
+      "answer": "Scrum",
+      "explanation": "Scrum is the most widely adopted Agile framework. It organises work into time-boxed Sprints (typically 2–4 weeks) and focuses on delivering a potentially shippable product increment at the end of each Sprint."
+    },
+    {
+      "id": "q2a",
+      "label": "Question 2a",
+      "marks": 5,
+      "caseStudyRef": "cs1",
+      "text": "Create a task table for the ACME fire safety project. The table should include: Task Identifier, Task Description, Duration (days), and Immediate Predecessor(s).",
+      "type": "short_answer",
+      "modelAnswer": "| ID | Task Description                  | Duration (days) | Predecessors |\n|----|-----------------------------------|-----------------|--------------|\n| A  | Review project plan with customer | 12              | —            |\n| B  | Source fire extinguishers         | 10              | A            |\n| C  | Source fire alarms                | 15              | A            |\n| D  | Certify fire extinguishers        | 7               | B            |\n| E  | Certify fire alarms               | 8               | C            |\n| F  | Create user manuals               | 17              | B, C         |\n| G  | Install fire extinguishers        | 6               | D, F         |\n| H  | Install fire alarms               | 9               | E, F         |\n| I  | Test and commission               | 5               | G, H         |",
+      "keyPoints": [
+        "Task A has no predecessor (it is the start activity)",
+        "Task F depends on BOTH B and C (dual dependency)",
+        "Tasks G and H each have two predecessors",
+        "Task I is the final task depending on both G and H",
+        "Table must have all four required columns"
+      ]
+    },
+    {
+      "id": "q2b",
+      "label": "Question 2b",
+      "marks": 8,
+      "caseStudyRef": "cs1",
+      "text": "Draw a project network diagram for the ACME fire safety project using the Activity-on-Node (AON) method. Show all activities, dependencies, and direction of arrows.",
+      "type": "diagram",
+      "modelAnswer": "Project Network Diagram (AON / Precedence Diagramming Method):\n\nStart → [A:12] → [B:10] → [D:7]  → [G:6] → [I:5] → End\n              ↓                              ↑\n              → [C:15] → [E:8]   → [H:9] → ↑\n                      ↓          ↑\n              [B:10] → [F:17] → (joins to G and H)\n\nFormal network paths:\n- A connects to B and C\n- B connects to D and F\n- C connects to E and F\n- D connects to G\n- E connects to H\n- F connects to G and H (merge node)\n- G connects to I\n- H connects to I\n- I is the end node\n\nKey merge points:\n- F has two incoming arrows (from B and C)\n- G has two incoming arrows (from D and F)\n- H has two incoming arrows (from E and F)\n- I has two incoming arrows (from G and H)",
+      "keyPoints": [
+        "Each activity is a node (box), arrows show dependencies",
+        "A is the only start node (no predecessors)",
+        "F is a merge point receiving arrows from both B and C",
+        "G receives from D and F; H receives from E and F",
+        "I is the single end node receiving from G and H",
+        "Arrows always flow left to right (or top to bottom)"
+      ]
+    },
+    {
+      "id": "q2c",
+      "label": "Question 2c",
+      "marks": 2,
+      "caseStudyRef": "cs1",
+      "text": "Using the project network, calculate the total project duration (in days). Show the critical path.",
+      "type": "calculation",
+      "modelAnswer": "To find project duration, calculate the earliest completion time for each path:\n\nForward Pass (Earliest Start/Finish):\nA: Start=0, Finish=12\nB: Start=12, Finish=22\nC: Start=12, Finish=27\nD: Start=22, Finish=29\nE: Start=27, Finish=35\nF: Start=max(22,27)=27, Finish=44  ← F can only start after BOTH B and C finish\nG: Start=max(29,44)=44, Finish=50\nH: Start=max(35,44)=44, Finish=53\nI: Start=max(50,53)=53, Finish=58\n\nTotal Project Duration = 58 days\n\nCritical Path: A → C → F → H → I\nPath duration: 12 + 15 + 17 + 9 + 5 = 58 days ✓",
+      "keyPoints": [
+        "Use the forward pass to find earliest finish times",
+        "At merge points (F, G, H, I): take the MAXIMUM of all incoming paths",
+        "F starts at day 27 (later of B's finish=22 and C's finish=27)",
+        "H starts at day 44 (F's finish=44 is later than E's finish=35)",
+        "Critical path is A-C-F-H-I = 58 days",
+        "All activities on critical path have zero float"
+      ]
+    },
+    {
+      "id": "q2d",
+      "label": "Question 2d",
+      "marks": 2,
+      "caseStudyRef": "cs1",
+      "text": "Identify all distinct paths through the project network from start to finish.",
+      "type": "short_answer",
+      "modelAnswer": "The distinct paths through the network are:\n\n1. A → B → D → G → I: 12+10+7+6+5 = 40 days\n2. A → B → F → G → I: 12+10+17+6+5 = 50 days  (F starts at 27 due to C, so actual path length considers merge)\n3. A → B → F → H → I: 12+10+17+9+5 = 53 days\n4. A → C → E → H → I: 12+15+8+9+5 = 49 days\n5. A → C → F → G → I: 12+15+17+6+5 = 55 days\n6. A → C → F → H → I: 12+15+17+9+5 = 58 days  ← CRITICAL PATH\n\nNote: Paths 2 and 3 involving A→B→F are constrained by C's completion at day 27 (F cannot start before day 27). The true duration of any path through F is determined by the longer of the B-side or C-side feed.",
+      "keyPoints": [
+        "List all paths systematically from Start to End",
+        "There are 6 distinct paths in this network",
+        "The longest path (58 days) is the critical path",
+        "Paths through F are governed by the latest-arriving predecessor (C at day 27)"
+      ]
+    },
+    {
+      "id": "q2e",
+      "label": "Question 2e",
+      "marks": 4,
+      "caseStudyRef": "cs1",
+      "text": "Calculate the Total Float (slack) for each activity in the project network. Show workings using the forward and backward pass.",
+      "type": "calculation",
+      "modelAnswer": "FORWARD PASS (Earliest Start ES, Earliest Finish EF):\nA: ES=0, EF=12\nB: ES=12, EF=22\nC: ES=12, EF=27\nD: ES=22, EF=29\nE: ES=27, EF=35\nF: ES=27, EF=44\nG: ES=44, EF=50\nH: ES=44, EF=53\nI: ES=53, EF=58\n\nBACKWARD PASS (Latest Start LS, Latest Finish LF) — starting from project end = 58:\nI:  LF=58, LS=53\nH:  LF=53, LS=44\nG:  LF=53, LS=47  (LF = LS of I = 53; wait — G → I, so G's LF = I's LS = 53)\nF:  LF = min(LS of G, LS of H) = min(47, 44) = 44; LS = 44–17 = 27\nE:  LF = LS of H = 44; LS = 44–8 = 36\nD:  LF = LS of G = 47; LS = 47–7 = 40\nC:  LF = min(LS of E, LS of F) = min(36, 27) = 27; LS = 27–15 = 12\nB:  LF = min(LS of D, LS of F) = min(40, 27) = 27; LS = 27–10 = 17\nA:  LF = min(LS of B, LS of C) = min(17, 12) = 12; LS = 12–12 = 0\n\nTOTAL FLOAT = LS – ES (or LF – EF):\nA: 0–0 = 0 (Critical)\nB: 17–12 = 5 days\nC: 12–12 = 0 (Critical)\nD: 40–22 = 18 days\nE: 36–27 = 9 days\nF: 27–27 = 0 (Critical)\nG: 47–44 = 3 days\nH: 44–44 = 0 (Critical)\nI: 53–53 = 0 (Critical)\n\nCritical activities (zero float): A, C, F, H, I",
+      "keyPoints": [
+        "Forward pass: ES of activity = max EF of all predecessors",
+        "Backward pass: LF of activity = min LS of all successors",
+        "Total Float = LS – ES = LF – EF",
+        "Zero float = critical activity (on critical path)",
+        "Activity B has 5 days float; D has 18 days float; E has 9 days float; G has 3 days float"
+      ]
+    },
+    {
+      "id": "q2f",
+      "label": "Question 2f",
+      "marks": 9,
+      "caseStudyRef": "cs1",
+      "text": "Develop a detailed Project Management Plan for the ACME fire safety project. Your plan should include at least THREE specific areas of project management (e.g., scope, schedule, risk, communication, quality, procurement) with specific actions for each.",
+      "type": "essay",
+      "modelAnswer": "PROJECT MANAGEMENT PLAN — ACME Fire Safety Installation Project\n\n1. SCOPE MANAGEMENT\nScope Statement: Install fire extinguishers and fire alarms across all designated areas of the building complex, including certification, user manual creation, and final test and commission.\nScope Control Actions:\n- Develop a detailed WBS decomposing all 9 tasks into work packages with defined deliverables\n- Establish a formal change control process — any scope changes must be submitted in writing and approved by the project sponsor\n- Conduct weekly scope verification meetings with the customer to confirm deliverables meet requirements\n\n2. SCHEDULE MANAGEMENT\nBaseline Schedule: Total project duration = 58 days; critical path = A-C-F-H-I.\nSchedule Control Actions:\n- Use the project network (CPM) to monitor all activities weekly, prioritising critical path tasks (A, C, F, H, I)\n- Assign a schedule buffer of 3 days for non-critical activities with low float (e.g., G with only 3 days float)\n- Implement bi-weekly schedule reviews with the team to identify early warning signs of delay\n- Use a Gantt chart for visual schedule communication with the customer\n\n3. RISK MANAGEMENT\nKey Risks Identified:\n- Delays in sourcing or certifying equipment (affects Tasks B, C, D, E)\n- Supplier non-delivery of fire alarms (Task C is on critical path)\n- Incomplete user manuals delaying installation (Task F is critical)\nRisk Response Actions:\n- Pre-qualify multiple suppliers before project start (mitigation)\n- Establish contractual delivery deadlines with penalty clauses for suppliers (transfer)\n- Maintain a 5-day contingency buffer at the end of the project for unforeseen events (acceptance with reserve)\n\n4. COMMUNICATION MANAGEMENT\n- Prepare a stakeholder register identifying the customer, site manager, procurement team, and certifying authority\n- Schedule weekly status meetings with internal team and bi-weekly progress reports to customer\n- Document all decisions and changes in a shared project log accessible to all stakeholders\n\n5. QUALITY MANAGEMENT\n- Define acceptance criteria for each deliverable (e.g., certification standards for extinguishers/alarms)\n- Conduct quality inspections at key milestones: post-certification (after D and E) and post-installation (after G and H)\n- Ensure final testing and commissioning (Task I) follows the relevant regulatory standards",
+      "keyPoints": [
+        "Address at least 3 distinct PM knowledge areas",
+        "Each area should have specific, actionable steps (not just generic descriptions)",
+        "Link scope and schedule to the specific project context (ACME, fire safety)",
+        "Risk section should identify specific project risks and tailored responses",
+        "Communication plan should identify stakeholders and frequency of reporting"
+      ]
+    },
+    {
+      "id": "q3a",
+      "label": "Question 3a",
+      "marks": 10,
+      "caseStudyRef": "cs1",
+      "text": "Using the IADC (Identify, Assess, Develop response, Control) risk cycle, identify and assess FOUR risks for the ACME fire safety project. Present your answer in a structured format.",
+      "type": "essay",
+      "modelAnswer": "RISK MANAGEMENT — ACME Fire Safety Project (IADC Framework)\n\nRISK 1: Supplier Delay for Fire Alarms (Task C — Critical Path)\nIdentify: Supplier fails to deliver fire alarms on time, delaying Task C.\nAssess: Probability = High (3/5); Impact = High (5/5) — C is on critical path; Risk Score = 15/25 (High)\nDevelop Response: MITIGATE — Pre-qualify two approved suppliers; set contractual delivery deadlines with penalties.\nControl: Weekly supplier status updates; escalate if delivery falls behind by 2+ days.\n\nRISK 2: Certification Failure for Fire Extinguishers (Task D)\nIdentify: Fire extinguishers fail regulatory certification on first attempt.\nAssess: Probability = Medium (2/5); Impact = Medium (3/5) — 18 days float available; Risk Score = 6/25 (Medium)\nDevelop Response: MITIGATE — Ensure extinguishers sourced from pre-certified suppliers; pre-submit documentation to certifying authority.\nControl: Review certification checklist before submission; assign dedicated quality officer.\n\nRISK 3: Scope Creep from Customer (All Tasks)\nIdentify: Customer requests additional fire safety installations beyond original scope.\nAssess: Probability = Medium (3/5); Impact = Medium (3/5); Risk Score = 9/25 (Medium)\nDevelop Response: AVOID/TRANSFER — Implement formal change control process; any changes require written approval and cost/schedule adjustment.\nControl: Document all customer requests; track approved vs. requested changes in change log.\n\nRISK 4: Key Personnel Unavailability (Multiple Tasks)\nIdentify: A key team member (e.g., technical installer) is absent due to illness or resignation.\nAssess: Probability = Low (2/5); Impact = High (4/5); Risk Score = 8/25 (Medium-High)\nDevelop Response: MITIGATE — Cross-train team members; identify backup contractors in advance.\nControl: Maintain a resource register with backup contacts; review availability weekly.",
+      "keyPoints": [
+        "Use IADC framework explicitly for each risk",
+        "At least 4 distinct risks relevant to the ACME project context",
+        "Include probability and impact scores to determine risk score",
+        "Risk response strategies: Avoid, Mitigate, Transfer, Accept",
+        "Control actions should describe how the risk will be monitored ongoing"
+      ]
+    },
+    {
+      "id": "q3b",
+      "label": "Question 3b",
+      "marks": 10,
+      "caseStudyRef": "cs1",
+      "text": "For the THREE highest-priority risks identified in Q3a, develop detailed risk response strategies. Justify the choice of response strategy for each risk.",
+      "type": "essay",
+      "modelAnswer": "RISK RESPONSE STRATEGIES — Top 3 Risks\n\nRISK 1: Supplier Delay for Fire Alarms (Score: 15/25 — HIGH PRIORITY)\nResponse Strategy: MITIGATE\nDetailed Actions:\n1. Pre-qualify and contract two alternative suppliers for fire alarms before project starts\n2. Include penalty clauses in supplier contracts for deliveries delayed beyond agreed dates\n3. Request weekly delivery status updates from suppliers starting 3 weeks before Task C is due to begin\n4. Place orders with a 1-week lead buffer before the required start date of Task C\nJustification: Since Task C is on the critical path, any delay directly extends the project. Mitigation (not acceptance) is warranted because the impact is too severe. Transfer (via penalties) supplements mitigation by incentivising supplier performance.\n\nRISK 3: Scope Creep from Customer (Score: 9/25 — MEDIUM PRIORITY)\nResponse Strategy: AVOID\nDetailed Actions:\n1. Define and lock the project scope document before kick-off, signed by the customer\n2. Establish a formal Change Control Board (CCB) to review and approve any requested changes\n3. Communicate clearly that changes will affect cost and timeline, providing revised estimates\n4. Include a scope boundary section in the project charter listing explicitly what is OUT of scope\nJustification: Scope creep is best avoided through strong upfront scope definition and governance. Once scope is uncontrolled, the project loses its baseline — avoidance is more effective than reacting to creep after it occurs.\n\nRISK 4: Key Personnel Unavailability (Score: 8/25 — MEDIUM-HIGH)\nResponse Strategy: MITIGATE\nDetailed Actions:\n1. Cross-train at least one additional team member for critical technical roles (installation and commissioning)\n2. Identify and pre-contract a standby technical contractor who can be mobilised within 48 hours\n3. Document all technical procedures so knowledge is not held by a single person\n4. Include resource risk in project schedule with contingency time\nJustification: Full avoidance is not possible (illness is uncontrollable), and full acceptance would leave the project exposed. Mitigation through redundancy and documentation reduces both probability and impact.",
+      "keyPoints": [
+        "Address the top 3 risks by score/priority",
+        "Name and justify the specific strategy: Avoid, Mitigate, Transfer, or Accept",
+        "Provide at least 3-4 concrete actions per risk",
+        "Justify why that strategy is most appropriate for each risk",
+        "Actions should be specific and feasible for the ACME project context"
+      ]
+    },
+    {
+      "id": "q3c",
+      "label": "Question 3c",
+      "marks": 10,
+      "caseStudyRef": "cs1",
+      "text": "Create a Risk Register for the ACME fire safety project covering all four risks identified. The register should include: Risk ID, Description, Probability (1–5), Impact (1–5), Risk Score, Risk Level (Low/Medium/High), Response Strategy, and Owner.",
+      "type": "table",
+      "modelAnswer": "RISK REGISTER — ACME Fire Safety Installation Project\n\n| Risk ID | Description                          | Prob (1–5) | Impact (1–5) | Risk Score | Risk Level | Response Strategy      | Owner            |\n|---------|--------------------------------------|------------|--------------|------------|------------|------------------------|------------------|\n| R01     | Supplier delay for fire alarms       | 3          | 5            | 15         | HIGH       | Mitigate + Transfer    | Procurement Lead |\n| R02     | Certification failure (extinguishers)| 2          | 3            | 6          | MEDIUM     | Mitigate               | QA Officer       |\n| R03     | Scope creep from customer            | 3          | 3            | 9          | MEDIUM     | Avoid                  | Project Manager  |\n| R04     | Key personnel unavailability         | 2          | 4            | 8          | MEDIUM-HIGH| Mitigate               | Project Manager  |\n\nRisk Level thresholds:\n- Score 1–4: LOW\n- Score 5–9: MEDIUM\n- Score 10–25: HIGH\n\nMonitoring:\n- All risks reviewed at weekly project status meetings\n- Risk owner responsible for updating register and escalating if risk materialises\n- Risk log maintained in project management information system (PMIS)",
+      "keyPoints": [
+        "Risk score = Probability × Impact",
+        "All required columns must be present in the register",
+        "Risk levels should reflect the score using a defined threshold",
+        "Each risk has an assigned owner (not just 'Project Manager' for all)",
+        "Include a note on monitoring frequency and escalation process"
+      ]
+    },
+    {
+      "id": "q4a",
+      "label": "Question 4a",
+      "marks": 12,
+      "caseStudyRef": "cs1",
+      "text": "Using the EVM data provided, calculate the following and interpret each result:\n(i) Cost Variance (CV)\n(ii) Schedule Variance (SV)\n(iii) Cost Performance Index (CPI)\n(iv) Schedule Performance Index (SPI)",
+      "type": "calculation",
+      "subItems": [
+        {
+          "label": "(i)",
+          "text": "Cost Variance (CV)",
+          "marks": 3
+        },
+        {
+          "label": "(ii)",
+          "text": "Schedule Variance (SV)",
+          "marks": 3
+        },
+        {
+          "label": "(iii)",
+          "text": "Cost Performance Index (CPI)",
+          "marks": 3
+        },
+        {
+          "label": "(iv)",
+          "text": "Schedule Performance Index (SPI)",
+          "marks": 3
+        }
+      ],
+      "modelAnswer": "Given: PV = $500,000 | EV = $450,000 | AC = $480,000 | BAC = $900,000\n\n(i) Cost Variance (CV)\nCV = EV – AC = $450,000 – $480,000 = –$50,000\nInterpretation: Negative CV indicates the project is OVER BUDGET by $50,000. The team has spent $30,000 more than the value of work accomplished.\n\n(ii) Schedule Variance (SV)\nSV = EV – PV = $450,000 – $500,000 = –$50,000\nInterpretation: Negative SV indicates the project is BEHIND SCHEDULE by the equivalent of $50,000 worth of work. Less work has been completed than planned at this point in time.\n\n(iii) Cost Performance Index (CPI)\nCPI = EV / AC = $450,000 / $480,000 = 0.9375 ≈ 0.94\nInterpretation: CPI < 1.0 means the project is getting only $0.94 worth of work for every $1.00 spent — COST INEFFICIENT. If this continues, the project will overrun its budget.\n\n(iv) Schedule Performance Index (SPI)\nSPI = EV / PV = $450,000 / $500,000 = 0.90\nInterpretation: SPI < 1.0 means the project is progressing at only 90% of the planned rate — BEHIND SCHEDULE. The team is completing 90 cents of planned work for every dollar's worth of work scheduled.",
+      "keyPoints": [
+        "CV = EV – AC (positive = under budget; negative = over budget)",
+        "SV = EV – PV (positive = ahead of schedule; negative = behind schedule)",
+        "CPI = EV / AC (>1 = cost efficient; <1 = over spending)",
+        "SPI = EV / PV (>1 = ahead of schedule; <1 = behind schedule)",
+        "This project has BOTH cost and schedule problems (CV < 0, SV < 0, CPI < 1, SPI < 1)"
+      ]
+    },
+    {
+      "id": "q4b",
+      "label": "Question 4b",
+      "marks": 10,
+      "caseStudyRef": "cs1",
+      "text": "Calculate the Estimate at Completion (EAC) using the following methods:\n(i) EAC assuming current cost performance will continue\n(ii) EAC assuming remaining work will be completed at budgeted rate\n(iii) EAC using a composite of CPI and SPI\nFor each, calculate the Estimate to Complete (ETC) and Variance at Completion (VAC).",
+      "type": "calculation",
+      "modelAnswer": "Given: PV=$500K, EV=$450K, AC=$480K, BAC=$900K, CPI=0.9375, SPI=0.90\n\n(i) EAC — Current CPI Continues (Most common method)\nEAC = BAC / CPI = $900,000 / 0.9375 = $960,000\nETC = EAC – AC = $960,000 – $480,000 = $480,000\nVAC = BAC – EAC = $900,000 – $960,000 = –$60,000\nInterpretation: If cost efficiency stays at 0.94, the project will overrun by $60,000.\n\n(ii) EAC — Remaining Work at Budget Rate\nEAC = AC + (BAC – EV) = $480,000 + ($900,000 – $450,000) = $480,000 + $450,000 = $930,000\nETC = BAC – EV = $450,000\nVAC = $900,000 – $930,000 = –$30,000\nInterpretation: If the team corrects performance and completes remaining work on budget, total overrun will be $30,000 (only the past overruns carry forward).\n\n(iii) EAC — CPI × SPI Composite\nEAC = AC + [(BAC – EV) / (CPI × SPI)]\n= $480,000 + [$450,000 / (0.9375 × 0.90)]\n= $480,000 + [$450,000 / 0.84375]\n= $480,000 + $533,333\n= $1,013,333\nETC = $533,333\nVAC = $900,000 – $1,013,333 = –$113,333\nInterpretation: If both cost and schedule inefficiencies persist, the project will overrun by $113,333 — the most pessimistic scenario.",
+      "keyPoints": [
+        "Method 1 (BAC/CPI): assumes past cost performance persists — most widely used",
+        "Method 2 (AC + BAC – EV): assumes all FUTURE work completed at budget — optimistic",
+        "Method 3 (composite): accounts for both cost and schedule performance — most pessimistic here",
+        "ETC = EAC – AC (how much more to spend)",
+        "VAC = BAC – EAC (negative = overrun; positive = under budget)"
+      ]
+    },
+    {
+      "id": "q4c",
+      "label": "Question 4c",
+      "marks": 8,
+      "caseStudyRef": "cs1",
+      "text": "Based on the EVM analysis, recommend THREE specific corrective actions the ACME project manager should take to improve project performance. Justify each recommendation.",
+      "type": "essay",
+      "modelAnswer": "CORRECTIVE ACTIONS FOR ACME FIRE SAFETY PROJECT\n\nContext: The project is over budget (CPI = 0.94, CV = –$50K) and behind schedule (SPI = 0.90, SV = –$50K). Immediate corrective action is required.\n\n1. CRASH THE CRITICAL PATH SCHEDULE\nAction: Add resources to critical path activities (C, F, H, or I) to compress their duration. For example, assign additional staff to create user manuals (Task F) concurrently with remaining sourcing work.\nJustification: SPI = 0.90 indicates the project is running 10% behind schedule. Fast-tracking or crashing critical activities will recover schedule time. This is the most direct way to address the schedule variance.\n\n2. CONDUCT A COST AUDIT AND REDUCE WASTE\nAction: Perform a detailed review of all expenditure to identify activities overspending vs. budget. Implement tighter cost controls — require approval for any spending above 5% of task budget.\nJustification: CPI = 0.94 means every dollar spent returns only 94 cents of value. A cost audit will reveal whether the overrun is due to procurement inefficiency, labour overruns, or unexpected technical costs, enabling targeted corrective actions.\n\n3. RE-BASELINE AND COMMUNICATE TO STAKEHOLDERS\nAction: Update the project schedule and cost baseline to reflect current status. Present a revised EAC ($960,000 minimum) to the sponsor and customer with a revised delivery date.\nJustification: Continuing against an obsolete baseline leads to further discrepancies and loss of stakeholder trust. A revised baseline allows the team to measure future performance against a realistic plan, and early disclosure to the customer maintains credibility and allows joint problem-solving.",
+      "keyPoints": [
+        "Address BOTH cost (CPI) and schedule (SPI) problems",
+        "Actions should be specific and concrete, not vague (e.g., 'crash Task F' not just 'add resources')",
+        "Each recommendation must be justified using the EVM data",
+        "Re-baselining is important when the current plan is no longer achievable",
+        "Communication to stakeholders is a PM responsibility, not optional"
+      ]
+    }
+  ]
+}

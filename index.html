@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudentAssist · SUSS</title>
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/favicon.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <meta name="theme-color" content="#080811">
   <meta name="description" content="Multi-module AI-powered student study tool for SUSS">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="StudentAssist">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -28,7 +31,7 @@
       <div id="hub-cards" class="hub-cards">
         <!-- Cards injected by app.js from modules.json -->
       </div>
-      <div class="hub-footer">v1.0.6 · All progress saved locally</div>
+      <div class="hub-footer">v1.1.0 · MKT202 · Past Papers · Exam Mode</div>
     </div>
   </div>
 
@@ -60,12 +63,18 @@
       </div>
       <div id="sn-module-badge" class="sn-module-badge"></div>
       <div class="sn-section">
-        <div class="sn-label">Modes</div>
+        <div class="sn-label">Study</div>
         <button class="sn-btn" data-route="home">🏠 Module Home</button>
         <button class="sn-btn" data-route="learn">📖 Learn Mode</button>
         <button class="sn-btn" data-route="quiz">❓ Quiz Run</button>
         <button class="sn-btn" data-route="assessment">🎯 Assessment</button>
         <button class="sn-btn" data-route="mixed">🔀 Mixed Run</button>
+      </div>
+      <div class="sn-divider"></div>
+      <div class="sn-section">
+        <div class="sn-label">Exam</div>
+        <button class="sn-btn" data-route="practice">📝 Exam Practice</button>
+        <button class="sn-btn" data-route="exam">🎓 Legacy Exam Mode</button>
       </div>
       <div class="sn-divider"></div>
       <div class="sn-section">
@@ -109,10 +118,10 @@
         </div>
         <div class="settings-section">
           <label class="settings-label">Data</label>
-          <div class="settings-hint">Export your progress or wipe all stored data.</div>
-          <div class="settings-actions">
-            <button id="export-btn" class="btn btn-ghost">Export Progress</button>
-            <button id="reset-all-btn" class="btn btn-danger">Reset All Data</button>
+          <div class="settings-hint">Export your progress as a JSON backup, or wipe all stored data.</div>
+          <div class="settings-data-actions">
+            <button id="export-btn" class="btn btn-ghost settings-data-btn">⬇ Export Progress</button>
+            <button id="reset-all-btn" class="btn btn-danger settings-data-btn">🗑 Reset All Data</button>
           </div>
         </div>
       </div>
@@ -131,6 +140,7 @@
         <button class="lb-filter-btn" data-filter="ICT162">ICT162</button>
         <button class="lb-filter-btn" data-filter="SST101">SST101</button>
         <button class="lb-filter-btn" data-filter="ACC202">ACC202</button>
+        <button class="lb-filter-btn" data-filter="MKT202">MKT202</button>
       </div>
       <div id="lb-content" class="lb-content">
         <div class="lb-loading">Loading leaderboard...</div>
@@ -165,6 +175,8 @@
 <script src="js/quiz-engine.js"></script>
 <script src="js/assessment-engine.js"></script>
 <script src="js/mixed-engine.js"></script>
+<script src="js/practice-engine.js"></script>
+<script src="js/exam-engine.js"></script>
 <script src="js/renderer.js"></script>
 <script src="js/app.js"></script>
 

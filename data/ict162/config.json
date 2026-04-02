@@ -60,5 +60,22 @@
       "quizFile": "data/ict162/quizzes/su6_quiz.json",
       "flashcardFile": "data/ict162/flashcards/su6_cards.json"
     }
+  ],
+  "examPapers": [
+    {
+      "id": "jan2024",
+      "label": "JAN 2024",
+      "file": "data/ict162/exams/jan2024.json"
+    },
+    {
+      "id": "jul2024",
+      "label": "JUL 2024",
+      "file": "data/ict162/exams/jul2024.json"
+    },
+    {
+      "id": "jan2025",
+      "label": "JAN 2025",
+      "file": "data/ict162/exams/jan2025.json"
+    }
   ]
 }

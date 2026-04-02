@@ -1,0 +1,156 @@
+{
+  "unitId": "su6",
+  "moduleId": "mkt202",
+  "questions": [
+    {
+      "id": "mkt_su6_q1",
+      "type": "mcq",
+      "concept": "IMC",
+      "prompt": "The core purpose of Integrated Marketing Communications (IMC) is to:",
+      "difficulty": 1,
+      "choices": [
+        "Reduce the total marketing budget by eliminating redundant channels",
+        "Coordinate all communication tools to deliver a consistent and compelling brand message",
+        "Focus all marketing efforts exclusively on digital channels",
+        "Ensure every communication uses the same creative template"
+      ],
+      "answer": 1,
+      "explanation": "IMC is about coordination and consistency — ensuring that all communication tools (advertising, PR, digital, personal selling, etc.) work together to deliver a single, clear, and compelling message across every consumer touchpoint."
+    },
+    {
+      "id": "mkt_su6_q2",
+      "type": "mcq",
+      "concept": "communication process",
+      "prompt": "In the communication process, 'noise' refers to:",
+      "difficulty": 2,
+      "choices": [
+        "Loud background music in a TV advertisement",
+        "Unplanned distortion that interferes with message transmission or reception",
+        "The feedback loop between sender and receiver",
+        "The media channel used to transmit the message"
+      ],
+      "answer": 1,
+      "explanation": "Noise is any unplanned static or distortion during the communication process that prevents the intended message from being received correctly. It can be literal (sound) or figurative (competing ads, consumer inattention, cultural misunderstanding)."
+    },
+    {
+      "id": "mkt_su6_q3",
+      "type": "mcq",
+      "concept": "communication mix",
+      "prompt": "A supermarket chain runs a 'buy 2 get 1 free' campaign for one week. This is an example of which communication mix tool?",
+      "difficulty": 1,
+      "choices": [
+        "Advertising",
+        "Public relations",
+        "Sales promotion",
+        "Personal selling"
+      ],
+      "answer": 2,
+      "explanation": "Sales promotion includes short-term incentives designed to encourage immediate purchase — such as price deals, coupons, contests, and multi-buy offers like 'buy 2 get 1 free'. It creates urgency and boosts short-term sales."
+    },
+    {
+      "id": "mkt_su6_q4",
+      "type": "mcq",
+      "concept": "digital communication tools",
+      "prompt": "A brand partners with a popular YouTube creator who reviews sustainable lifestyle products. The creator produces a dedicated video featuring the brand. This is BEST described as:",
+      "difficulty": 2,
+      "choices": [
+        "Native advertising",
+        "Search engine marketing",
+        "Influencer marketing",
+        "Display advertising"
+      ],
+      "answer": 2,
+      "explanation": "Influencer marketing involves partnering with content creators (influencers) who have established audiences and credibility in a niche area. The brand leverages the influencer's reach and trust to promote its products authentically."
+    },
+    {
+      "id": "mkt_su6_q5",
+      "type": "mcq",
+      "concept": "message appeals",
+      "prompt": "An insurance advertisement shows a family financially devastated after an uninsured accident to motivate people to buy insurance. This uses which message appeal?",
+      "difficulty": 1,
+      "choices": [
+        "Moral appeal",
+        "Humour appeal",
+        "Fear appeal",
+        "Rational appeal"
+      ],
+      "answer": 2,
+      "explanation": "Fear appeals highlight the negative consequences of not taking action. They are effective in high-involvement categories like insurance, health, and safety where the stakes are high and consumers need motivation to act."
+    },
+    {
+      "id": "mkt_su6_q6",
+      "type": "mcq",
+      "concept": "digital communication tools",
+      "prompt": "Search Engine Optimisation (SEO) differs from Search Engine Marketing (SEM) in that SEO:",
+      "difficulty": 2,
+      "choices": [
+        "Costs more per click than SEM",
+        "Achieves higher rankings through paid advertising",
+        "Improves rankings through organic techniques without direct payment per click",
+        "Targets social media platforms rather than search engines"
+      ],
+      "answer": 2,
+      "explanation": "SEO uses organic techniques (keyword optimisation, quality content, backlinks, site speed) to improve search rankings without paying per click. SEM involves paid placements (e.g., Google Ads) where companies pay each time a user clicks their ad."
+    },
+    {
+      "id": "mkt_su6_q7",
+      "type": "mcq",
+      "concept": "push vs pull strategy",
+      "prompt": "A beverage company invests heavily in TV commercials and social media ads to generate consumer demand, which then motivates retailers to stock the product. This is a:",
+      "difficulty": 2,
+      "choices": [
+        "Push strategy",
+        "Pull strategy",
+        "Penetration strategy",
+        "Skimming strategy"
+      ],
+      "answer": 1,
+      "explanation": "A pull strategy directs promotions at end consumers to create demand that 'pulls' the product through the distribution channel. When consumers request the product, retailers are motivated to stock it. Pull strategies rely on consumer advertising and media."
+    },
+    {
+      "id": "mkt_su6_q8",
+      "type": "mcq",
+      "concept": "word-of-mouth marketing",
+      "prompt": "A food brand creates an unusual eating challenge with their product and encourages customers to film themselves attempting it and share on TikTok. This is an example of:",
+      "difficulty": 2,
+      "choices": [
+        "Email marketing",
+        "Buzz/viral marketing",
+        "Native advertising",
+        "Direct marketing"
+      ],
+      "answer": 1,
+      "explanation": "Viral (buzz) marketing involves creating content or experiences that people naturally want to share, spreading brand awareness organically. TikTok challenges are a classic modern viral marketing format — designed for shareability and generating exponential reach."
+    },
+    {
+      "id": "mkt_su6_q9",
+      "type": "mcq",
+      "concept": "communication planning",
+      "prompt": "Which budgeting method for marketing communications is considered the MOST rigorous as it directly links spending to specific objectives?",
+      "difficulty": 3,
+      "choices": [
+        "Affordable method",
+        "Percentage-of-sales method",
+        "Competitive-parity method",
+        "Objective-and-task method"
+      ],
+      "answer": 3,
+      "explanation": "The objective-and-task method requires marketers to define specific communication objectives, determine the tasks needed to achieve them, and estimate the cost of each task. It is the most rigorous because spending is directly justified by strategic goals."
+    },
+    {
+      "id": "mkt_su6_q10",
+      "type": "mcq",
+      "concept": "message appeals",
+      "prompt": "A fair-trade coffee brand runs an ad campaign showing the stories of farmers who receive fair wages, using the tagline 'Choose with your conscience.' This uses which appeal?",
+      "difficulty": 2,
+      "choices": [
+        "Fear appeal",
+        "Rational appeal",
+        "Moral appeal",
+        "Humour appeal"
+      ],
+      "answer": 2,
+      "explanation": "Moral appeals direct attention to what is right, proper, and ethical. They are particularly effective for cause-related brands, sustainability products, and social enterprises where the brand's purpose is tied to social or environmental good."
+    }
+  ]
+}

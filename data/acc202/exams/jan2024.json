@@ -1,0 +1,219 @@
+{
+  "id": "acc202_jan2024",
+  "module": "acc202",
+  "code": "ACC202",
+  "semester": "JAN 2024",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "closed_book",
+  "caseStudies": [
+    {
+      "id": "cs1",
+      "title": "Sengkang Ltd Financial Statements",
+      "text": "The following financial statements are provided for Sengkang Ltd for the year ended 20X3.\n\nBALANCE SHEET (in $'000):\n                          20X3      20X2\nCash                      3,290     4,220\nAccounts receivable       8,200     7,350\nInventories              14,000    13,860\nTotal current assets     25,490    25,430\nPP&E (net)               34,380    30,660\nTotal assets             59,870    56,090\n\nAccounts payable         11,560    11,980\nInterest-bearing liabilities 19,880  18,900\nTotal liabilities        31,440    30,880\nShare capital (15,400K shares) 15,400  15,400\nRetained earnings        13,030     9,810\nTotal equity             28,430    25,210\n\nINCOME STATEMENT 20X3 (in $'000):\nRevenue (net sales)      110,000\nCost of sales             70,200\nGross profit              39,800\nSelling & distribution    14,200\nAdministrative             9,940\nFinance costs              3,120\nTotal expenses            27,260\nProfit before tax         12,540\nTax (30%)                  3,816\nProfit after tax           8,724\n\nADDITIONAL INFORMATION:\n- Depreciation: $18,750K\n- Tax paid: $3,816K\n- Market price per ordinary share: $60\n- Shares outstanding: 15,400,000\n- Dividends paid: $5,504K"
+    },
+    {
+      "id": "cs2",
+      "title": "Fairfield Manufacturing — Cost Classification and CVP",
+      "text": "Fairfield Manufacturing produces a single product. Management requires assistance with cost classification, contribution margin analysis, and break-even calculations to support planning decisions.\n\nSelected data for the period:\n- Selling price per unit: $50\n- Variable cost per unit: $30\n- Total fixed costs: $80,000\n- Actual units sold: 6,000\n- Budgeted units: 5,500"
+    },
+    {
+      "id": "cs3",
+      "title": "Budget Variance Analysis",
+      "text": "A company prepared a static budget for the period but actual results differed. Management requires a flexible budget and variance analysis to understand performance.\n\nStatic budget data:\n- Budgeted units: 10,000\n- Budgeted selling price: $25 per unit\n- Budgeted variable cost: $15 per unit\n- Budgeted fixed costs: $50,000\n\nActual results:\n- Actual units sold: 12,000\n- Actual revenue: $288,000\n- Actual variable costs: $186,000\n- Actual fixed costs: $52,000"
+    },
+    {
+      "id": "cs4",
+      "title": "Journal Entries and Adjustments",
+      "text": "A company undertakes several transactions during the period. You are required to record these using the double-entry system, prepare adjusting entries at period end, and calculate depreciation.\n\nTransactions:\na. Purchased equipment for $60,000 cash (5-year life, zero residual, straight-line)\nb. Purchased supplies on credit for $3,000; $800 remains unused at period end\nc. Received $12,000 in advance for services to be performed over 6 months; 2 months have elapsed\nd. Accrued wages of $4,500 unpaid at period end\ne. An insurance policy was prepaid for $6,000 covering 12 months; 3 months have elapsed"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1a",
+      "label": "Question 1a",
+      "marks": 15,
+      "caseStudyRef": "cs1",
+      "text": "Calculate the following ratios for Sengkang Ltd for the financial year 20X3. Show all workings and compare each ratio against the given industry average.",
+      "type": "calculation",
+      "subItems": [
+        {
+          "label": "(i)",
+          "text": "Return on total assets (Industry average: 12.0%)",
+          "marks": 3
+        },
+        {
+          "label": "(ii)",
+          "text": "Return on ordinary shareholders' equity (Industry average: 20.0%)",
+          "marks": 3
+        },
+        {
+          "label": "(iii)",
+          "text": "Gross margin (Industry average: 38%)",
+          "marks": 3
+        },
+        {
+          "label": "(iv)",
+          "text": "Current ratio (Industry average: 2.0×)",
+          "marks": 3
+        },
+        {
+          "label": "(v)",
+          "text": "Earnings per share",
+          "marks": 3
+        }
+      ],
+      "modelAnswer": "(i) Return on Total Assets (ROA)\nFormula: Net Profit / Average Total Assets × 100\nAverage Total Assets = (59,870 + 56,090) / 2 = 115,960 / 2 = $57,980K\nROA = 8,724 / 57,980 × 100 = 15.05%\nComparison: 15.05% > Industry avg 12.0% — ABOVE industry average (favourable)\n\n(ii) Return on Ordinary Shareholders' Equity (ROE)\nFormula: Net Profit / Average Shareholders' Equity × 100\nAverage Equity = (28,430 + 25,210) / 2 = 53,640 / 2 = $26,820K\nROE = 8,724 / 26,820 × 100 = 32.53%\nComparison: 32.53% > Industry avg 20.0% — ABOVE industry average (favourable)\n\n(iii) Gross Margin\nFormula: Gross Profit / Revenue × 100\nGross Margin = 39,800 / 110,000 × 100 = 36.18%\nComparison: 36.18% < Industry avg 38.0% — BELOW industry average (unfavourable)\n\n(iv) Current Ratio\nFormula: Current Assets / Current Liabilities\nCurrent Ratio = 25,490 / 11,560 = 2.20×\nComparison: 2.20× > Industry avg 2.0× — ABOVE industry average (favourable)\n\n(v) Earnings Per Share (EPS)\nFormula: Net Profit / Number of Ordinary Shares\nEPS = $8,724,000 / 15,400,000 shares = $0.57 per share",
+      "keyPoints": [
+        "ROA uses average total assets (average of opening and closing balances)",
+        "ROE uses average shareholders' equity (average of opening and closing balances)",
+        "Gross margin uses gross profit (revenue minus cost of sales), not net profit",
+        "Current ratio uses total current liabilities ($11,560K = accounts payable only shown as current)",
+        "EPS converts $'000 to actual dollars before dividing by number of shares",
+        "Always state whether ratio is above/below industry average and whether favourable/unfavourable"
+      ]
+    },
+    {
+      "id": "q1b",
+      "label": "Question 1b",
+      "marks": 5,
+      "caseStudyRef": "cs1",
+      "text": "Based on the ratios calculated in Question 1a, comment on Sengkang Ltd's overall financial performance. Your answer should address profitability, liquidity, and any areas of concern.",
+      "type": "essay",
+      "modelAnswer": "Overall Assessment of Sengkang Ltd's Financial Performance:\n\nPROFITABILITY:\n- ROA of 15.05% exceeds the industry average of 12.0%, indicating that Sengkang is generating above-average returns from its asset base. This suggests efficient asset utilisation.\n- ROE of 32.53% significantly exceeds the industry average of 20.0%, demonstrating strong returns for shareholders and effective use of equity financing.\n- However, gross margin of 36.18% is below the industry average of 38.0%, indicating that Sengkang's cost of sales is relatively high compared to peers. Management should investigate whether this is due to higher input costs, pricing pressure, or inefficiencies in production.\n\nLIQUIDITY:\n- Current ratio of 2.20× exceeds the industry average of 2.0×, suggesting adequate short-term liquidity. The company can comfortably meet its current obligations.\n\nOVERALL:\n- Sengkang Ltd shows strong overall financial performance, outperforming the industry in profitability and liquidity metrics. The one area of concern is the below-average gross margin, which if not addressed, could erode net profitability over time.\n- The company should focus on managing its cost of sales to improve gross margin towards or above the industry benchmark.",
+      "keyPoints": [
+        "Comment on each ratio in relation to its industry average",
+        "Address both profitability (ROA, ROE, gross margin) and liquidity (current ratio)",
+        "Identify the weakness: gross margin below industry average",
+        "Provide specific recommendations or areas for management attention",
+        "Use ratio values in your discussion, not just vague statements"
+      ]
+    },
+    {
+      "id": "q1c",
+      "label": "Question 1c",
+      "marks": 5,
+      "caseStudyRef": "cs1",
+      "text": "Calculate the following investor ratios for Sengkang Ltd for 20X3:\n(i) Price-Earnings (P/E) ratio\n(ii) Dividend yield\nInterpret what each ratio tells investors about the company.",
+      "type": "calculation",
+      "subItems": [
+        {
+          "label": "(i)",
+          "text": "Price-Earnings (P/E) ratio",
+          "marks": 2
+        },
+        {
+          "label": "(ii)",
+          "text": "Dividend yield",
+          "marks": 3
+        }
+      ],
+      "modelAnswer": "(i) Price-Earnings (P/E) Ratio\nFormula: Market Price per Share / Earnings per Share\nEPS (from Q1a) = $0.57\nP/E Ratio = $60 / $0.57 = 105.26×\nInterpretation: Investors are paying $105.26 for every $1 of earnings. This high P/E suggests investors expect significant future earnings growth, or the stock may be overvalued relative to current earnings.\n\n(ii) Dividend Yield\nFormula: Dividend per Share / Market Price per Share × 100\nDividend per Share (DPS) = Total Dividends / Number of Shares\nDPS = $5,504,000 / 15,400,000 = $0.357 per share\nDividend Yield = $0.357 / $60 × 100 = 0.60%\nInterpretation: Investors receive $0.60 for every $100 invested in the form of dividends. This is a very low dividend yield, suggesting the company retains most of its earnings for reinvestment (growth company), or investors are primarily seeking capital gains rather than dividend income.",
+      "keyPoints": [
+        "P/E ratio uses EPS calculated in Q1a ($0.57)",
+        "DPS = Total dividends paid / number of shares (convert $'000 to actual dollars)",
+        "Dividend yield is expressed as a percentage",
+        "Always interpret what the ratio means for investors",
+        "Low dividend yield is typical of growth companies that reinvest earnings"
+      ]
+    },
+    {
+      "id": "q2a",
+      "label": "Question 2a",
+      "marks": 10,
+      "caseStudyRef": "cs2",
+      "text": "For Fairfield Manufacturing, classify each of the following costs as: (1) Fixed or Variable, and (2) Direct or Indirect. Provide a brief justification for each classification.\n\nCosts to classify:\n(i) Raw materials used in production\n(ii) Factory supervisor's salary\n(iii) Electricity for factory machinery (varies with production)\n(iv) Depreciation on factory building (straight-line)\n(v) Sales commissions paid per unit sold",
+      "type": "short_answer",
+      "modelAnswer": "(i) Raw materials\n- Fixed/Variable: VARIABLE — cost increases directly with each unit produced\n- Direct/Indirect: DIRECT — can be directly traced to the specific product\n\n(ii) Factory supervisor's salary\n- Fixed/Variable: FIXED — salary does not change with production volume\n- Direct/Indirect: INDIRECT — cannot be traced to a specific unit; it is a manufacturing overhead\n\n(iii) Electricity for factory machinery\n- Fixed/Variable: VARIABLE — consumption rises and falls with production activity\n- Direct/Indirect: INDIRECT — difficult to trace directly to individual units; treated as overhead\n\n(iv) Depreciation on factory building (straight-line)\n- Fixed/Variable: FIXED — remains constant regardless of production level\n- Direct/Indirect: INDIRECT — a period cost allocated as manufacturing overhead\n\n(v) Sales commissions\n- Fixed/Variable: VARIABLE — paid per unit sold, so increases with sales volume\n- Direct/Indirect: INDIRECT — selling expense, not a product cost; cannot be traced to individual units in the same way direct materials can",
+      "keyPoints": [
+        "Variable costs change in total with volume; fixed costs remain constant in total",
+        "Direct costs can be traced to the product; indirect costs cannot and are allocated",
+        "Raw materials and direct labour are the main direct costs",
+        "Factory overheads (supervisor salary, depreciation, utilities) are indirect",
+        "Selling commissions are variable but are period costs, not product costs"
+      ]
+    },
+    {
+      "id": "q2b",
+      "label": "Question 2b",
+      "marks": 10,
+      "caseStudyRef": "cs2",
+      "text": "Using the data for Fairfield Manufacturing:\n(i) Calculate the contribution margin per unit and contribution margin ratio.\n(ii) Calculate the break-even point in units and in sales dollars.\n(iii) Calculate the margin of safety in units and as a percentage.",
+      "type": "calculation",
+      "subItems": [
+        {
+          "label": "(i)",
+          "text": "Contribution margin per unit and contribution margin ratio",
+          "marks": 3
+        },
+        {
+          "label": "(ii)",
+          "text": "Break-even point in units and in sales dollars",
+          "marks": 4
+        },
+        {
+          "label": "(iii)",
+          "text": "Margin of safety in units and as a percentage",
+          "marks": 3
+        }
+      ],
+      "modelAnswer": "(i) Contribution Margin\nContribution Margin per unit = Selling Price – Variable Cost per unit\n= $50 – $30 = $20 per unit\n\nContribution Margin Ratio (CM Ratio) = CM per unit / Selling Price × 100\n= $20 / $50 × 100 = 40%\n\n(ii) Break-Even Point\nBreak-Even Units = Fixed Costs / Contribution Margin per unit\n= $80,000 / $20 = 4,000 units\n\nBreak-Even Sales = Break-Even Units × Selling Price\n= 4,000 × $50 = $200,000\nAlternatively: Fixed Costs / CM Ratio = $80,000 / 0.40 = $200,000\n\n(iii) Margin of Safety\nMargin of Safety (units) = Actual Units – Break-Even Units\n= 6,000 – 4,000 = 2,000 units\n\nMargin of Safety (%) = Margin of Safety Units / Actual Units × 100\n= 2,000 / 6,000 × 100 = 33.33%\n\nInterpretation: Sales can fall by 33.33% before the company reaches break-even.",
+      "keyPoints": [
+        "Contribution margin = Selling price minus variable costs only (not fixed costs)",
+        "Break-even uses FIXED costs divided by contribution margin per unit",
+        "CM ratio allows break-even to be calculated in dollars directly",
+        "Margin of safety shows how much sales can decline before a loss is made",
+        "Always show formula, substitution, and final answer with units"
+      ]
+    },
+    {
+      "id": "q3a",
+      "label": "Question 3a",
+      "marks": 12,
+      "caseStudyRef": "cs3",
+      "text": "Using the budget and actual data provided, prepare a flexible budget for the actual level of activity (12,000 units) and calculate all variances. Indicate whether each variance is Favourable (F) or Unfavourable (U).",
+      "type": "calculation",
+      "modelAnswer": "FLEXIBLE BUDGET AT 12,000 UNITS:\n\nRevenue:\nFlexible Budget Revenue = 12,000 × $25 = $300,000\nActual Revenue = $288,000\nRevenue Variance = $288,000 – $300,000 = –$12,000 (U)\n(Actual selling price = $288,000/12,000 = $24 vs budgeted $25)\n\nVariable Costs:\nFlexible Budget Variable Costs = 12,000 × $15 = $180,000\nActual Variable Costs = $186,000\nVariable Cost Variance = $186,000 – $180,000 = $6,000 (U)\n\nFixed Costs:\nBudgeted Fixed Costs = $50,000\nActual Fixed Costs = $52,000\nFixed Cost Variance = $52,000 – $50,000 = $2,000 (U)\n\nSUMMARY TABLE:\n                    Flexible Budget   Actual    Variance\nRevenue             $300,000          $288,000  $12,000 (U)\nVariable Costs      $180,000          $186,000   $6,000 (U)\nContribution Margin $120,000          $102,000  $18,000 (U)\nFixed Costs          $50,000           $52,000   $2,000 (U)\nOperating Profit     $70,000           $50,000  $20,000 (U)\n\nNote: The static budget profit = (10,000 × $25) – (10,000 × $15) – $50,000 = $250,000 – $150,000 – $50,000 = $50,000\nSales volume variance = Flexible budget profit – Static budget profit = $70,000 – $50,000 = $20,000 (F) (due to higher volume)",
+      "keyPoints": [
+        "Flexible budget recalculates variable costs at the actual volume (12,000 units)",
+        "Fixed costs remain the same in the flexible budget",
+        "Revenue variance is unfavourable because actual price ($24) < budgeted price ($25)",
+        "Variable cost variance is unfavourable because actual cost > flexible budget cost",
+        "Sales volume variance is favourable because actual volume > budgeted volume",
+        "Always label variances as F (Favourable) or U (Unfavourable)"
+      ]
+    },
+    {
+      "id": "q3b",
+      "label": "Question 3b",
+      "marks": 8,
+      "caseStudyRef": "cs3",
+      "text": "Explain the possible causes for:\n(i) The unfavourable revenue variance\n(ii) The unfavourable variable cost variance\n(iii) The favourable sales volume variance\nFor each, suggest ONE management action to address the issue.",
+      "type": "essay",
+      "modelAnswer": "(i) Unfavourable Revenue Variance ($12,000 U)\nCauses: The actual selling price of $24 was lower than the budgeted price of $25. This could be due to:\n- Increased market competition forcing price reductions\n- Discounts offered to secure higher sales volume\n- Weaker market demand than anticipated\nManagement Action: Review pricing strategy; consider whether volume discounts are justified by contribution margin analysis. Conduct market analysis to set competitive yet profitable prices.\n\n(ii) Unfavourable Variable Cost Variance ($6,000 U)\nCauses: Actual variable costs ($15.50/unit) exceeded budget ($15/unit). Possible causes:\n- Increase in raw material prices\n- Higher labour costs (overtime or wage increases)\n- Production inefficiencies or wastage\nManagement Action: Negotiate better supplier contracts, review production processes for waste reduction, and consider bulk purchasing to reduce per-unit material costs.\n\n(iii) Favourable Sales Volume Variance ($20,000 F)\nCauses: Actual units sold (12,000) exceeded budget (10,000) by 2,000 units. Possible reasons:\n- Successful marketing campaign\n- Competitor supply disruption boosting demand\n- Lower selling price attracting more customers\nManagement Action: Investigate whether higher volume was driven by the price reduction — if so, ensure the incremental revenue from extra volume justifies the lower price. Seek to sustain volume growth without sacrificing margin.",
+      "keyPoints": [
+        "Link each variance back to a specific cause with a logical explanation",
+        "Note the connection between low price (revenue variance U) and high volume (volume variance F)",
+        "Management actions should be specific and actionable",
+        "Distinguish between price effects and efficiency/volume effects"
+      ]
+    },
+    {
+      "id": "q4a",
+      "label": "Question 4a",
+      "marks": 15,
+      "caseStudyRef": "cs4",
+      "text": "Prepare journal entries for all transactions listed in the case study. Include adjusting entries at period end where applicable. Show debit and credit accounts clearly.",
+      "type": "journal_entries",
+      "modelAnswer": "JOURNAL ENTRIES:\n\n(a) Purchase of equipment for cash:\nDR Equipment                  $60,000\n   CR Cash                             $60,000\n(Being purchase of equipment)\n\n(b) Purchase of supplies on credit:\nDR Supplies (asset)            $3,000\n   CR Accounts Payable                  $3,000\n(Being purchase of supplies on credit)\n\nAdjusting entry — supplies used = $3,000 – $800 = $2,200:\nDR Supplies Expense            $2,200\n   CR Supplies                          $2,200\n(Being supplies consumed during period)\n\n(c) Cash received in advance:\nDR Cash                       $12,000\n   CR Unearned Revenue                 $12,000\n(Being cash received for services not yet performed)\n\nAdjusting entry — 2 months earned = 2/6 × $12,000 = $4,000:\nDR Unearned Revenue            $4,000\n   CR Service Revenue                   $4,000\n(Being recognition of revenue earned)\n\n(d) Accrued wages:\nDR Wages Expense               $4,500\n   CR Wages Payable                     $4,500\n(Being accrual of unpaid wages at period end)\n\n(e) Prepaid insurance adjustment — 3 months elapsed = 3/12 × $6,000 = $1,500:\nDR Insurance Expense           $1,500\n   CR Prepaid Insurance                 $1,500\n(Being insurance expense for 3 months recognised)\n\nDEPRECIATION (for equipment in transaction a):\nAnnual depreciation = $60,000 / 5 = $12,000 per year\nAssuming monthly = $12,000 / 12 = $1,000 per month\nDR Depreciation Expense        $1,000\n   CR Accumulated Depreciation          $1,000\n(Being monthly depreciation on equipment)",
+      "keyPoints": [
+        "Every transaction has equal debits and credits",
+        "Advance receipts are liabilities (Unearned Revenue) until earned",
+        "Adjusting entries are required for prepayments, accruals, and depreciation",
+        "Supplies: record the unused amount as asset, expense the used portion",
+        "Accruals record expenses incurred but not yet paid",
+        "Depreciation: always credit Accumulated Depreciation, not the asset account directly"
+      ]
+    }
+  ]
+}

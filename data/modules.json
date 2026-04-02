@@ -43,10 +43,10 @@
       "icon": "📣",
       "color": "#f472b6",
       "colorRGB": "244,114,182",
-      "description": "Coming soon — Marketing strategy, consumer behaviour, segmentation and the 4Ps.",
-      "chips": ["Coming Soon"],
-      "available": false,
-      "configFile": null
+      "description": "Marketing strategy, consumer behaviour, segmentation, pricing, and integrated marketing communications.",
+      "chips": ["6 Study Units", "AI Marking", "Past Papers"],
+      "available": true,
+      "configFile": "data/mkt202/config.json"
     }
   ]
 }

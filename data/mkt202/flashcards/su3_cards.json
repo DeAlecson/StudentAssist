@@ -1,0 +1,78 @@
+{
+  "unitId": "su3",
+  "moduleId": "mkt202",
+  "cards": [
+    {
+      "id": "mkt_su3_c1",
+      "front": "What is Market Segmentation and why do companies do it?",
+      "back": "Market segmentation is the process of dividing a total market into distinct groups of buyers who share similar needs, characteristics, or responses to marketing. Companies segment because no single offering can satisfy everyone — resources are finite, and targeted strategies outperform one-size-fits-all approaches.",
+      "concept": "market segmentation definition"
+    },
+    {
+      "id": "mkt_su3_c2",
+      "front": "What does MSADA stand for, and what does each criterion test?",
+      "back": "Measurable (can the segment's size and power be quantified?), Substantial (is it large/profitable enough to pursue?), Accessible (can it be reached through available channels?), Differentiable (does it respond distinctly to different marketing mixes?), Actionable (can effective programmes be designed for it?). All five must be met for a segment to be viable.",
+      "concept": "requirements for effective segmentation MSADA"
+    },
+    {
+      "id": "mkt_su3_c3",
+      "front": "What are the four main bases for market segmentation?",
+      "back": "1. Geographic (nations, regions, cities, geoclustering). 2. Demographic (age, gender, income, occupation, education, family life cycle, generation). 3. Psychographic (personality, lifestyle/AIO, VALS framework, values). 4. Behavioural (occasions, user status, usage rate, buyer-readiness, loyalty status, decision roles).",
+      "concept": "segmentation bases"
+    },
+    {
+      "id": "mkt_su3_c4",
+      "front": "What is behavioural segmentation by 'loyalty status' and what are its four types?",
+      "back": "Loyalty status segments buyers by their commitment to a brand: Hard-core loyals (always buy the same brand), Split loyals (loyal to two or three brands), Shifting loyals (moving from one brand to another), and Switchers (no loyalty — buy on promotion or variety). Each type calls for a different retention or conversion strategy.",
+      "concept": "behavioural segmentation — loyalty status"
+    },
+    {
+      "id": "mkt_su3_c5",
+      "front": "What is a Customer Persona and what information does it typically include?",
+      "back": "A customer persona is a detailed, semi-fictional profile of a hypothetical ideal target customer built from real research. It includes demographics (name, age, occupation, income), psychographics (values, lifestyle, personality), behavioural data (purchase habits, loyalty), goals and pain points, and media habits. It humanises the segment for marketing teams.",
+      "concept": "customer persona"
+    },
+    {
+      "id": "mkt_su3_c6",
+      "front": "What are the four targeting strategies and how do they differ?",
+      "back": "Undifferentiated (mass) — one offer for the whole market. Differentiated — separate offers for multiple segments. Concentrated (niche) — full focus on one segment for deep penetration. Micromarketing — local (tailored to communities) or individual (personalised to each customer, enabled by data). Choice depends on resources, segment diversity, and competitive context.",
+      "concept": "targeting strategies"
+    },
+    {
+      "id": "mkt_su3_c7",
+      "front": "What is Positioning in marketing?",
+      "back": "Positioning is the act of designing a company's offering and image to occupy a clear, distinctive, and desirable place in the minds of the target segment relative to competitors. Effective positioning answers the question: 'Why should I choose this brand over all others?'",
+      "concept": "positioning definition"
+    },
+    {
+      "id": "mkt_su3_c8",
+      "front": "What is the difference between Points of Parity (POPs) and Points of Difference (PODs)?",
+      "back": "POPs are attributes shared with competitors that are necessary for category credibility — they don't differentiate but are required to be taken seriously. PODs are attributes uniquely and positively associated with the brand that competitors cannot easily match. Strong positioning requires POPs (to belong) AND PODs (to stand out).",
+      "concept": "POPs and PODs"
+    },
+    {
+      "id": "mkt_su3_c9",
+      "front": "What is the structure of a Positioning Statement?",
+      "back": "\"To [target segment and need], [brand name] is [frame of reference/category] that [point of difference/key benefit] because [reason to believe].\" The frame of reference anchors expectations; the POD gives the reason to choose; the reason to believe provides credibility. All four components must be present.",
+      "concept": "positioning statement structure"
+    },
+    {
+      "id": "mkt_su3_c10",
+      "front": "What is a Perceptual Map and what is it used for?",
+      "back": "A perceptual map is a two-dimensional visual diagram plotting competing brands on two key attributes (e.g., price vs quality) based on consumer perceptions. It reveals: where competitors cluster, where the brand currently sits, and where positioning gaps (underserved spaces) exist. Used for positioning decisions and repositioning strategy.",
+      "concept": "perceptual maps"
+    },
+    {
+      "id": "mkt_su3_c11",
+      "front": "What is the VALS framework and how does it segment consumers?",
+      "back": "VALS (Values And Lifestyles) classifies consumers into eight types based on primary motivation (Ideals, Achievement, Self-Expression) and resources (psychological, physical, and material means). The eight types are: Innovators, Thinkers, Achievers, Experiencers, Believers, Strivers, Makers, and Survivors. Used for psychographic segmentation.",
+      "concept": "VALS framework"
+    },
+    {
+      "id": "mkt_su3_c12",
+      "front": "What are the three criteria a strong Point of Difference (POD) must satisfy?",
+      "back": "1. Desirable — consumers must find the attribute genuinely important and relevant to their needs. 2. Deliverable — the company must actually be able to deliver on the POD consistently. 3. Differentiating — the POD must be distinctly owned by the brand and not already claimed effectively by a competitor.",
+      "concept": "criteria for a strong POD"
+    }
+  ]
+}

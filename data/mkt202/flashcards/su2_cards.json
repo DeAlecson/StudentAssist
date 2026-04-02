@@ -1,0 +1,78 @@
+{
+  "unitId": "su2",
+  "moduleId": "mkt202",
+  "cards": [
+    {
+      "id": "mkt_su2_c1",
+      "front": "What are the four major categories of factors that influence consumer behaviour?",
+      "back": "1. Cultural factors (culture, subculture, social class). 2. Social factors (reference groups, family, roles and status, opinion leaders). 3. Personal factors (age, occupation, personality, lifestyle, values). 4. Psychological factors (motivation, perception, learning, memory, emotions).",
+      "concept": "model of consumer behaviour"
+    },
+    {
+      "id": "mkt_su2_c2",
+      "front": "What are Maslow's five levels of needs, from base to apex?",
+      "back": "1. Physiological (food, water, shelter) → 2. Safety (security, stability) → 3. Social/Love/Belonging (relationships, belonging) → 4. Esteem (achievement, recognition, prestige) → 5. Self-Actualisation (realising full potential). Lower needs must be satisfied before higher needs motivate behaviour.",
+      "concept": "Maslow's hierarchy of needs"
+    },
+    {
+      "id": "mkt_su2_c3",
+      "front": "What are the three perceptual processes and how do they affect marketing?",
+      "back": "Selective Attention — consumers notice relevant stimuli and filter the rest (ads must be immediately engaging). Selective Distortion — consumers interpret information to fit existing beliefs (hard to change strong brand attitudes). Selective Retention — consumers remember information that supports their views (key messages must be repeated consistently).",
+      "concept": "perception in consumer psychology"
+    },
+    {
+      "id": "mkt_su2_c4",
+      "front": "What is the difference between classical conditioning and operant conditioning in marketing?",
+      "back": "Classical conditioning: associating a brand with a pre-existing positive stimulus (e.g., uplifting music in an ad transfers positive feeling to the brand). Operant conditioning: rewarding desired behaviour to reinforce it (e.g., loyalty points reward repeat purchases, conditioning customers to return).",
+      "concept": "learning theories in consumer behaviour"
+    },
+    {
+      "id": "mkt_su2_c5",
+      "front": "What are the five stages of the Consumer Buying Decision Process?",
+      "back": "1. Problem Recognition (gap between actual and desired state). 2. Information Search (internal memory + external sources). 3. Evaluation of Alternatives (comparing options in the evoked set). 4. Purchase Decision (brand, quantity, timing, payment). 5. Post-Purchase Behaviour (satisfaction/dissatisfaction, cognitive dissonance).",
+      "concept": "consumer buying decision process"
+    },
+    {
+      "id": "mkt_su2_c6",
+      "front": "What is Cognitive Dissonance and when does it occur?",
+      "back": "Cognitive dissonance is post-purchase doubt or unease that arises when the consumer wonders if they made the right choice. It typically occurs after high-involvement, irreversible purchases where brands were similarly evaluated. Marketers reduce it through post-sale reassurance, follow-up communication, and strong after-sales support.",
+      "concept": "cognitive dissonance"
+    },
+    {
+      "id": "mkt_su2_c7",
+      "front": "What are the four types of consumer buying behaviour and what determines them?",
+      "back": "Determined by involvement level and brand difference degree: Complex (high involvement, significant differences — e.g., car), Dissonance-reducing (high involvement, few differences — e.g., flooring), Habitual (low involvement, few differences — e.g., salt), Variety-seeking (low involvement, significant differences — e.g., snacks).",
+      "concept": "types of buying behaviour"
+    },
+    {
+      "id": "mkt_su2_c8",
+      "front": "What is the AIO framework used in psychographic profiling?",
+      "back": "AIO stands for Activities (work, hobbies, sports, shopping, entertainment), Interests (food, fashion, family, recreation, media), and Opinions (about social issues, business, politics, culture). Together they map a consumer's lifestyle, which influences brand preferences and media habits.",
+      "concept": "AIO lifestyle framework"
+    },
+    {
+      "id": "mkt_su2_c9",
+      "front": "What are the five decision roles in a household purchase and what does each involve?",
+      "back": "Initiator (identifies the need), Influencer (provides input and recommendations), Decider (makes the final choice), Buyer (physically makes the purchase), User (actually uses the product). These roles can be played by different people, making household purchasing decisions complex.",
+      "concept": "decision roles in consumer behaviour"
+    },
+    {
+      "id": "mkt_su2_c10",
+      "front": "What distinguishes a primary reference group from a secondary reference group?",
+      "back": "Primary reference groups involve frequent, direct, and informal interaction (family, close friends, colleagues) — they have the strongest influence on behaviour. Secondary reference groups involve less frequent and more formal contact (professional associations, religious bodies, clubs) — influence is more limited and indirect.",
+      "concept": "reference groups"
+    },
+    {
+      "id": "mkt_su2_c11",
+      "front": "What is the self-concept theory and how does it apply to consumer behaviour?",
+      "back": "Self-concept theory holds that people's possessions contribute to and reflect their identity. Consumers tend to choose brands and products that match their actual self (who they are), their ideal self (who they want to be), or their social self (how they want others to see them). Brands can target all three dimensions.",
+      "concept": "personality and self-concept"
+    },
+    {
+      "id": "mkt_su2_c12",
+      "front": "What is the 'evoked set' and why is it strategically important for marketers?",
+      "back": "The evoked set is the small set of brands a consumer actively considers when evaluating alternatives during the buying decision process. It is strategically critical because consumers only compare brands within their evoked set — brands not in it are effectively invisible at the point of decision. Marketers invest in advertising and awareness to stay in consumers' evoked sets.",
+      "concept": "evoked set in information search"
+    }
+  ]
+}

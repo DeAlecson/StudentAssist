@@ -1,0 +1,102 @@
+{
+  "unitId": "su5",
+  "moduleId": "mkt202",
+  "cards": [
+    {
+      "id": "mkt_su5_c1",
+      "front": "What is the only element of the marketing mix that GENERATES revenue?",
+      "back": "Price — all other elements (product, place, promotion) represent costs. Price is therefore the most powerful and flexible element of the marketing mix.",
+      "concept": "Pricing Fundamentals"
+    },
+    {
+      "id": "mkt_su5_c2",
+      "front": "List the FIVE major pricing objectives.",
+      "back": "1. Survival — cover costs when facing overcapacity or intense competition\n2. Maximum Current Profit — set price to maximise short-term profit\n3. Maximum Market Share — lowest price to gain largest market share (penetration pricing)\n4. Maximum Market Skimming — high initial price, skim off each price-inelastic layer\n5. Product-Quality Leadership — price high enough to signal premium quality",
+      "concept": "Pricing Objectives"
+    },
+    {
+      "id": "mkt_su5_c3",
+      "front": "What is market skimming pricing and when is it used?",
+      "back": "Setting a HIGH initial price to 'skim' maximum revenue from customers willing to pay the most, then gradually lowering price to attract more price-sensitive segments.\n\nUsed when:\n- Demand is price-inelastic at launch\n- Product is highly differentiated (e.g., new iPhone)\n- High prices do not attract immediate competition\n- High price signals quality/exclusivity",
+      "concept": "Pricing Strategies"
+    },
+    {
+      "id": "mkt_su5_c4",
+      "front": "What is market penetration pricing and when is it used?",
+      "back": "Setting a LOW initial price to win the largest possible market share quickly.\n\nUsed when:\n- Market is highly price-sensitive\n- Low price discourages competition from entering\n- Volume lowers per-unit costs (experience curve effects)\n- Examples: Netflix, budget airlines\n\nRisk: Brand may be perceived as low quality; hard to raise prices later.",
+      "concept": "Pricing Strategies"
+    },
+    {
+      "id": "mkt_su5_c5",
+      "front": "What is price elasticity of demand? Distinguish elastic vs inelastic demand.",
+      "back": "Price elasticity measures how sensitive quantity demanded is to a price change.\n\nElastic demand (elasticity > 1): A small price increase causes a LARGE drop in quantity. (commodities, easily substituted goods)\n\nInelastic demand (elasticity < 1): Price changes have little effect on quantity. (necessities, addictive products, strong brands)\n\nImplication: For inelastic demand, raising price increases revenue; for elastic demand, lowering price increases revenue.",
+      "concept": "Demand & Pricing"
+    },
+    {
+      "id": "mkt_su5_c6",
+      "front": "What are the three main categories of pricing methods?",
+      "back": "1. Cost-Based: Markup pricing (cost-plus), target-return pricing\n2. Value-Based: Perceived-value pricing, EDLP (everyday low price / value pricing)\n3. Competition-Based: Going-rate pricing, auction-type pricing\n\nKey insight: Cost sets the floor; customer perception of value sets the ceiling; competition prices set the midpoint.",
+      "concept": "Pricing Methods"
+    },
+    {
+      "id": "mkt_su5_c7",
+      "front": "What is markup (cost-plus) pricing? Give the formula.",
+      "back": "Setting price by adding a standard markup to the unit cost.\n\nFormula: Markup Price = Unit Cost ÷ (1 − Desired Return on Sales)\n\nExample: Unit cost = $10, desired markup = 20%\nMarkup Price = $10 ÷ (1 − 0.20) = $10 ÷ 0.80 = $12.50\n\nLimitation: Ignores current demand and competitive prices — may over- or under-price.",
+      "concept": "Cost-Based Pricing"
+    },
+    {
+      "id": "mkt_su5_c8",
+      "front": "What is target-return pricing? Give the formula.",
+      "back": "Setting price to achieve a specified rate of return on investment.\n\nFormula: Target-Return Price = Unit Cost + (Desired Return × Invested Capital) ÷ Unit Sales\n\nExample: Unit cost = $16, desired return = 20%, investment = $1M, expected sales = 50,000 units\nTarget-Return Price = $16 + (0.20 × $1,000,000) ÷ 50,000 = $16 + $4 = $20\n\nUsed by: Capital-intensive firms (utilities, manufacturers)",
+      "concept": "Cost-Based Pricing"
+    },
+    {
+      "id": "mkt_su5_c9",
+      "front": "What is EVC (Economic Value to Customer) pricing?",
+      "back": "EVC prices a product based on the MAXIMUM rational price a customer should pay relative to the next best alternative.\n\nFormula: EVC = Reference Product Price + Differentiation Value\n\n- Reference product price: cost of the best competing alternative\n- Differentiation value: additional savings, revenue, or value your product delivers\n\nAdvantage: Captures full value delivered, not just costs. Best for B2B and premium differentiated products.\n\nExample: Competitor product costs $100; your product saves $50/year in maintenance → EVC = $150",
+      "concept": "Value-Based Pricing"
+    },
+    {
+      "id": "mkt_su5_c10",
+      "front": "EVC vs Target Rate of Return — which is more suitable for a premium, highly differentiated product and why?",
+      "back": "EVC (Economic Value to Customer) is more suitable for premium/differentiated products.\n\nWhy:\n- TRR anchors price to COSTS — it may underprice a product whose value far exceeds its production cost\n- EVC anchors price to CUSTOMER VALUE — captures the full premium customers are willing to pay\n- For intangible/experiential benefits (design, exclusivity, brand), EVC captures emotional and functional value that TRR ignores\n\nBest practice: Use TRR as a FLOOR (minimum price to cover costs and profit), and EVC as the CEILING (maximum rational price)",
+      "concept": "Value-Based Pricing"
+    },
+    {
+      "id": "mkt_su5_c11",
+      "front": "What is the 6-step price-setting process?",
+      "back": "1. Select the pricing objective\n2. Determine demand (price elasticity, reference prices, consumer psychology)\n3. Estimate costs (fixed, variable, total; experience curve)\n4. Analyse competitors' costs, prices, and offers\n5. Select a pricing method (cost-based, value-based, or competition-based)\n6. Select the final price (psychological factors, company policies, impact on channel partners)",
+      "concept": "Price-Setting Process"
+    },
+    {
+      "id": "mkt_su5_c12",
+      "front": "What is reference price and how does it influence consumer perception?",
+      "back": "A reference price is the price consumers use as a benchmark to judge whether a price is fair or good value.\n\n- Internal reference price: stored in memory from past experience\n- External reference price: shown by the seller (e.g., 'Was $200, Now $99')\n\nSellers can manipulate reference prices via price anchoring — showing a high original price makes the current price seem like a bargain. This is why retail displays show crossed-out prices.",
+      "concept": "Consumer Price Psychology"
+    },
+    {
+      "id": "mkt_su5_c13",
+      "front": "What is odd-even pricing and what signal does each convey?",
+      "back": "Odd pricing: Prices ending in 9 or 7 (e.g., $19.99) — perceived as significantly cheaper than round numbers; signals a bargain.\n\nEven pricing: Prices ending in 0 or 5 (e.g., $20.00) — perceived as higher quality; common in luxury goods and premium brands.\n\nInsight: $19.99 vs $20.00 — the psychological gap between these is much larger than $0.01 in the consumer's mind.",
+      "concept": "Consumer Price Psychology"
+    },
+    {
+      "id": "mkt_su5_c14",
+      "front": "What is captive product pricing? Give an example.",
+      "back": "Pricing the core product low (or even at a loss), then charging a high price for the consumables or accessories needed to use it.\n\nExamples:\n- Razor (cheap) + razor blades (expensive)\n- Printer (cheap) + ink cartridges (expensive)\n- Coffee machine (cheap) + coffee pods (expensive)\n\nAlso called razor-and-blades or lock-in pricing. Once the consumer buys the core product, they are 'captured' — forced to buy the companion consumables.",
+      "concept": "Product-Mix Pricing"
+    },
+    {
+      "id": "mkt_su5_c15",
+      "front": "What is discriminatory pricing? Give FOUR types.",
+      "back": "Selling the same product at different prices to different buyers, without proportional cost differences.\n\n1. Customer-segment pricing: students/seniors pay less (cinema, museums)\n2. Product-form pricing: same product, different versions at different prices (economy vs business class)\n3. Time pricing: peak vs off-peak rates (electricity, hotels, ride-hailing surge pricing)\n4. Location pricing: different prices in different places (front row vs back row concert seats)\n\nFor discriminatory pricing to work: segments must have different price sensitivities; segments must be separable; higher-paying segment must not be able to buy from the lower-price segment.",
+      "concept": "Price Adaptation"
+    },
+    {
+      "id": "mkt_su5_c16",
+      "front": "What four strategies can a company use to RESPOND to a competitor's price cut?",
+      "back": "1. Maintain price — if customer loyalty is high or the competitor's cut is minor or temporary\n2. Maintain price but add value — improve quality or communication without cutting price\n3. Reduce price — match the cut if the market is price-sensitive and you risk losing share\n4. Introduce a fighter brand — launch a separate, lower-priced brand to compete without cannibalising the main brand (e.g., P&G value brand)\n\nBonus: Raise quality and price — reposition upward, away from the price fight",
+      "concept": "Price Changes"
+    }
+  ]
+}

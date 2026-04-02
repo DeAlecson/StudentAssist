@@ -1,0 +1,140 @@
+{
+  "id": "mkt202_jan2025",
+  "module": "mkt202",
+  "code": "MKT202",
+  "semester": "JAN 2025",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "open_book",
+  "caseStudies": [
+    {
+      "id": "cs_oplus",
+      "title": "O+ Eyewear Designer — Bespo+ke Service",
+      "text": "In 1985, Singaporean entrepreneur David Hwang embarked on a journey in the eyewear industry. Almost 40 years later, his sons Silas Hwang (36) and Shamus Hwang (33) are co-founders of O+ Eyewear Designer, which has three branches.\n\nIn April 2025, the duo launched Bespo+ke service at their flagship boutique at Star Vista, allowing customers to design their eyewear with guidance from in-house consultants. Customers can choose everything from shape and pattern to colour and even rivets on the glasses — resulting in 23 million possible combinations.\n\nThe consultation lasts 30 minutes to 1.5 hours, starts at $949 for comprehensive measurements, with extra charges for premium materials. Precise head measurements are taken to reduce temple pressure. Once designed, the eyewear is crafted in a Shenzhen factory and can take up to 12 weeks.\n\nEyewear has shifted from merely functional tools to a form of personal expression. '\"Glasses are no longer just for clear vision, but are personal pieces that reflect one's individuality and style. There is also a heightened awareness of the importance of fit and comfort, leading to a demand for lightweight materials and precise craftsmanship,\" says Mr Silas Hwang.\n\nTechnological advances have allowed O+ to innovate — 3D printing has transformed the brand's prototyping process, allowing intricate designs and real-time adjustments.\n\nSince introducing Bespo+ke, personalised eyewear has grown to about 10% of overall sales. Two main groups opt for this service: those whose face sizes do not fit standard ranges, and those who seek frames that express their personalities. Demand is especially strong among consumers in their 20s–30s, drawn to sustainable materials and craftsmanship.\n\n(Adapted for academic purposes)"
+    },
+    {
+      "id": "cs_prefer",
+      "title": "Prefer Coffee — Bean-Free Sustainable Coffee",
+      "text": "What happens when a food tech venture capitalist and a flavours scientist, both coffee connoisseurs, meet? Berber and Tan started Prefer, a sustainable bio-flavours start-up offering bean-less coffee, in November 2022.\n\nPrefer produces fresh coffee grounds and bottled cold brew by upcycling old Gardenia bread, soybean pulp from Mr Bean, and spent barley grains from local breweries. The ingredients are blended and fermented before being roasted for aroma and flavour.\n\nTan explains: \"We ferment these ingredients using food-grade, non-GM microbes through a process similar to brewing beer or kombucha. We can potentially replicate a range of coffee profiles from Ethiopian to Colombian beans.\"\n\nThe 48-hour manufacturing process is much shorter than the average five years for coffee plants to bear fruit. Prefer currently produces about 50kg a month in its laboratory at the Food Tech Innovation Centre in Buona Vista.\n\nPrefer rolled out its products in September 2023. Operating on a B2B model, Prefer's coffee is currently served in 30 outlets (as of January 2025) around Singapore, such as Dough, Foreword Coffee Roasters, and The Providore.\n\nPrefer's unique selling proposition is being 'a more affordable or similarly priced' supplier compared to competitors and the product's ease of use — compatible with existing coffee machines, so cafes incur no additional costs when switching.\n\nDue to climate change, 50% of land where coffee is grown today will not be able to do so in the next couple of decades. Concurrently, coffee demand is expected to triple, especially in countries such as China and India. Prefer is searching for a manufacturing facility to expand production capabilities and service customers throughout Southeast Asia, starting with Manila.\n\n(Adapted for academic purposes)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "label": "Question 1",
+      "marks": 50,
+      "text": "The questions below are based on the case study: O+ Eyewear Designer.",
+      "type": "essay",
+      "_caseStudyRef": "cs_oplus",
+      "subQuestions": [
+        {
+          "id": "q1a",
+          "label": "Question 1a",
+          "marks": 18,
+          "text": "Discuss one (1) trend each from sociocultural and technological environmental factors that could impact the sales of the Bespo+ke service offered by O+ Eyewear Designer.",
+          "type": "essay",
+          "_caseStudyRef": "cs_oplus",
+          "modelAnswer": "SOCIOCULTURAL TREND: The Rise of Individualisation and Personal Expression\n\nTrend: Consumers today, particularly millennials and Gen Z (ages 20–40), increasingly view their possessions as extensions of their identity. There is a growing cultural shift from mass-market conformity to personal expression and uniqueness. Consumers seek products that are 'theirs' — customised, co-created, and reflective of personal values. This is evident in the growth of bespoke fashion, personalised jewellery, and customised consumer electronics.\n\nImpact on Bespo+ke: This trend directly fuels demand for O+ Eyewear Designer's Bespo+ke service. The case states that customers are drawn to Bespo+ke because it allows them to express their personalities and craft glasses that reflect their individuality. With 23 million possible combinations, the service is perfectly positioned to serve identity-driven consumers. As this cultural shift deepens, demand for bespoke eyewear is expected to grow — Silas Hwang acknowledges that 'glasses are no longer just for clear vision, but are personal pieces that reflect one's individuality and style.' However, as competitors eventually offer similar customisation (the brothers anticipate it will become an industry standard), differentiation will require deeper personalisation beyond combinations.\n\nTECHNOLOGICAL TREND: Advances in 3D Printing and Digital Manufacturing\n\nTrend: 3D printing technology has matured rapidly, enabling fast prototyping, mass customisation, and precise manufacturing of complex objects at declining costs. The technology allows for intricate geometries that are impossible or prohibitively expensive to produce with traditional machining.\n\nImpact on Bespo+ke: The case explicitly states that O+ uses 3D printing to transform their prototyping process — bringing intricate designs to life and making real-time adjustments. This accelerates innovation and ensures precision before production. As 3D printing continues to improve (higher resolution, new materials like sustainable bio-plastics and lightweight metals), O+ can offer even more complex customisation options at potentially lower cost. This widens the Bespo+ke service's appeal to a broader market. However, as the technology becomes more accessible, competitors can adopt it too — reducing O+'s technological advantage. O+ must continuously innovate in design expertise, materials, and personalisation experience to stay ahead.",
+          "keyPoints": [
+            "ONE sociocultural trend + ONE technological trend (two different PESTLE forces)",
+            "Each trend described specifically — not just 'technology is improving'",
+            "Impact tied to Bespo+ke service specifically, not O+ Eyewear in general",
+            "Both positive (opportunity) and negative (threat) impacts strengthen the answer",
+            "Approximately 9 marks per trend"
+          ]
+        },
+        {
+          "id": "q1b",
+          "label": "Question 1b",
+          "marks": 16,
+          "text": "Describe two (2) possible customer personas who would go to O+ Eyewear Designer to make a pair of Bespo+ke eyewear.",
+          "type": "essay",
+          "_caseStudyRef": "cs_oplus",
+          "modelAnswer": "PERSONA 1: The Self-Expression Millennial Professional\n\nName/Profile: Jamie, 29, marketing manager at a tech startup.\nDemographic: Female, 27–34, university-educated, upper-middle income ($5,000–$8,000/month), living in Singapore's CBD.\nPsychographic: High fashion-consciousness; views personal style as part of professional brand identity; values quality over quantity; willing to pay premium for unique, well-crafted items; sustainability-conscious (prefers brands that source responsibly).\nBehavioural: Researches extensively before purchasing high-value items; influenced by lifestyle magazines and curated Instagram content; enjoys 'experiences' as much as products; likely to share the Bespo+ke design journey on social media.\nNeeds/Motivations: Standard optical frames do not feel 'her' — she wants eyewear that is as unique as her personal brand. The 1.5-hour consultation at O+ feels like a premium experience worth the $949+ price point.\nRelevance: Matches the case's profile of consumers 'drawn to sustainability materials and craftsmanship' and those who 'seek frames that express their personalities.'\n\nPERSONA 2: The Face-Fit Seeker\n\nName/Profile: Marcus, 45, finance director.\nDemographic: Male, 40–55, high income ($10,000+/month), Singaporean or expatriate, with an atypically shaped face (e.g., very wide jaw, high cheekbones, flat nose bridge) that standard frames do not fit comfortably.\nPsychographic: Pragmatic; prioritises function and comfort over fashion; frustrated by years of ill-fitting glasses causing temple pressure and slippage; willing to invest in a solution that genuinely works.\nBehavioural: Previously purchased from multiple brands with unsatisfying results; responds to problem-solution messaging; may have been recommended Bespo+ke by an optometrist.\nNeeds/Motivations: The precise head measurements and custom curvature adjustments offered by O+ solve a real pain point that off-the-shelf frames cannot. For Marcus, $949 is worth it for eyewear that stays in place and causes no discomfort.\nRelevance: Matches the case's first target group — 'those whose face sizes do not fit standard ranges.'",
+          "keyPoints": [
+            "Two distinct personas (one from each major use case: self-expression vs. fit problem)",
+            "Each persona should include: demographic, psychographic, behavioural, and motivational details",
+            "Tie each persona explicitly to evidence in the case",
+            "Personas should feel like real people, not just lists of demographics",
+            "Approximately 8 marks per persona"
+          ]
+        },
+        {
+          "id": "q1c",
+          "label": "Question 1c",
+          "marks": 16,
+          "text": "Identify the pricing objective adopted by O+ Eyewear Designer and differentiate between economic-value-to-customer (EVC) pricing and target rate of return (TRR) pricing. Draw a conclusion on which pricing method is more suitable for their Bespo+ke eyewear service.",
+          "type": "essay",
+          "_caseStudyRef": "cs_oplus",
+          "modelAnswer": "PRICING OBJECTIVE:\n\nO+ Eyewear Designer has adopted PRODUCT-QUALITY LEADERSHIP as its pricing objective.\n\nThe Bespo+ke service is priced at $949+ — a significant premium over off-the-shelf frames. This price is deliberately set to signal exclusivity, craftsmanship, and superior personalisation. The brand does not compete on price; instead, it uses price as a quality cue — communicating to consumers that Bespo+ke eyewear is in a different category from standard optical frames. This is consistent with the product-quality leadership objective, where the goal is to be the quality leader in the market, justifying a premium price.\n\nEVC vs TRR PRICING:\n\nEconomic Value to Customer (EVC) Pricing:\nEVC measures the maximum price a rational customer should pay relative to the next best alternative. EVC = Reference Product Price + Differentiation Value. The differentiation value represents the additional economic, functional, or psychological benefit the product provides over the reference alternative.\nFor example: Reference product (designer frame from LensCraft) = $400. Differentiation value: perfect fit ($150 value in reduced discomfort/replacement), unique design identity ($200 emotional/social value), 12-week craft experience ($100 experiential value). EVC = $400 + $450 = $850 (approximate maximum rational price).\n\nTarget Rate of Return (TRR) Pricing:\nTRR sets price based on achieving a specific return on invested capital. Formula: TRR Price = Unit Cost + (Target ROI × Investment) / Expected Unit Sales. This ensures the company recovers its costs and achieves profit targets, but it is cost-driven and does not explicitly capture the customer's willingness to pay.\n\nCONCLUSION — Which is More Suitable for Bespo+ke:\n\nEVC pricing is more suitable for Bespo+ke. The service's premium is driven by perceived value — personal expression, perfect fit, and exclusivity — not just production costs. TRR would anchor pricing to material costs and labour, potentially underpricing the emotional and experiential premium that consumers are willing to pay. EVC allows O+ to price closer to what customers genuinely value, maximising revenue per transaction. Additionally, since Bespo+ke involves intangible benefits (identity, uniqueness) that are hard to cost-account, EVC better captures what the market will bear. TRR could serve as a floor (minimum price to cover costs), with EVC determining the optimal price ceiling.",
+          "keyPoints": [
+            "Identify pricing objective as Product-Quality Leadership (with justification from the case)",
+            "Define BOTH EVC and TRR clearly with formulas",
+            "Apply EVC concretely to Bespo+ke (reference product + differentiation value)",
+            "Draw a clear conclusion stating which is MORE suitable and WHY",
+            "Mention TRR as a floor price — combined approach is sophisticated"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "label": "Question 2",
+      "marks": 50,
+      "text": "The questions below are based on the case study: Prefer Coffee.",
+      "type": "essay",
+      "_caseStudyRef": "cs_prefer",
+      "subQuestions": [
+        {
+          "id": "q2a",
+          "label": "Question 2a",
+          "marks": 16,
+          "text": "(i) Propose a suitable frame of reference/potential competitor for Prefer Coffee. (4 marks) (ii) Analyse one (1) point-of-parity (POP) and one (1) point-of-difference (POD) for Prefer Coffee. (8 marks) (iii) Develop a positioning statement that Prefer Coffee can adopt. (4 marks)",
+          "type": "essay",
+          "_caseStudyRef": "cs_prefer",
+          "modelAnswer": "(i) FRAME OF REFERENCE / POTENTIAL COMPETITOR (4 marks)\n\nFrame of reference: Specialty coffee suppliers / sustainable coffee alternatives.\nPotential competitor: Oatside, Minor Figures, or conventional coffee roasters like Columbus Coffee or Jewel Coffee that supply B2B to cafes in Singapore.\n\nMore specifically, Prefer competes with TRADITIONAL SPECIALTY COFFEE BEAN SUPPLIERS in the B2B foodservice sector — companies like Common Man Coffee Roasters or Parchment Coffee that supply ground coffee to cafes. These are the direct alternatives a cafe owner considers when sourcing their coffee supply.\n\nJustification: Prefer operates on a B2B model serving cafes. Any cafe sourcing decision involves comparing Prefer's bean-free grounds against conventional specialty coffee suppliers on price, quality, ease of use, and sustainability.\n\n(ii) POINT-OF-PARITY (POP) (4 marks)\n\nPOP: Compatible with existing coffee machines and familiar brewing formats.\nExplanation: Prefer's coffee grounds can be used in the same machines already in use at cafes, with no additional equipment investment. This matches the standard expectation of any coffee supplier — products must work with existing infrastructure. Without this compatibility, cafes would face high switching costs. This POP reassures cafes that adopting Prefer does not disrupt their operations, reducing the barrier to trial.\n\nPOINT-OF-DIFFERENCE (POD) (4 marks)\n\nPOD: Sustainable production using upcycled food waste inputs with a significantly lower carbon footprint than conventional coffee.\nExplanation: Unlike any conventional coffee supplier, Prefer's product is made from upcycled bread, soybean pulp, and spent grains — diverting food waste from landfills. Conventional coffee has the sixth highest carbon footprint globally (29kg CO2 per kg). Prefer's process is dramatically more sustainable. For cafes that have sustainability commitments (ESG targets, eco-certification), this is a meaningful differentiator that conventional suppliers cannot match. This POD supports a clear, defensible competitive advantage.\n\n(iii) POSITIONING STATEMENT (4 marks)\n\nPositioning statement:\n\"For cafes and F&B businesses that are committed to sustainability without compromising on taste or operational efficiency, Prefer is the bean-free coffee supplier that delivers familiar coffee flavours using upcycled local food ingredients — reducing carbon footprint and food waste while remaining price-competitive and fully compatible with existing equipment.\"\n\nFormat: For [target segment], Prefer is the [frame of reference] that [key benefit/POD] because [reason to believe].",
+          "keyPoints": [
+            "(i) Frame of reference must be specific — not just 'coffee companies'",
+            "(ii) POP must be something Prefer SHARES with competitors (not unique to Prefer)",
+            "(ii) POD must be something Prefer has that competitors LACK",
+            "(iii) Positioning statement should follow the standard format: For [target], [brand] is the [frame of reference] that [benefit] because [RTB]",
+            "4 marks per part"
+          ]
+        },
+        {
+          "id": "q2b",
+          "label": "Question 2b",
+          "marks": 12,
+          "text": "Illustrate one (1) corporate social responsibility (CSR) action that Prefer Coffee has already undertaken and suggest one (1) new community-based CSR initiative that it can implement.",
+          "type": "essay",
+          "_caseStudyRef": "cs_prefer",
+          "modelAnswer": "EXISTING CSR ACTION:\n\nPrefer has undertaken ENVIRONMENTAL SUSTAINABILITY through upcycling and waste reduction as a core CSR action.\n\nSpecifically, Prefer diverts food waste from landfills by upcycling spent ingredients from other local businesses — old Gardenia bread, soybean pulp from Mr Bean, and spent barley grains from breweries like The 1925 Brewing Co. and Brewerkz. Rather than these by-products going to waste, Prefer transforms them into a commercial product. This embodies the circular economy principle and demonstrates environmental stewardship.\n\nThis qualifies as CSR because Prefer is voluntarily operating a supply chain that benefits the environment and the broader community — reducing both food waste and the carbon footprint of coffee production — beyond what is legally required.\n\nAdditionally, Prefer's product addresses a global environmental crisis (conventional coffee's 29kg CO2/kg footprint), and its shorter 48-hour production process versus five years for coffee plants represents a significant environmental advantage.\n\nNEW COMMUNITY-BASED CSR INITIATIVE:\n\nSuggested Initiative: 'Prefer for Schools' — Coffee Education and Sustainability Outreach Programme\n\nPrefer could partner with Singapore primary and secondary schools to conduct free 'Science of Sustainability' workshops where students learn about fermentation, food waste, and the environmental impact of everyday choices like coffee consumption. Students could participate in simple fermentation experiments.\n\nWhy community-based: This initiative directly benefits the local community (students and parents), builds food literacy and environmental awareness among Singapore's youth, and positions Prefer as an educator and thought leader — not just a product company. It also creates goodwill with the community and generates positive media coverage, amplifying brand awareness at minimal cost.",
+          "keyPoints": [
+            "Existing CSR: upcycling food waste / circular economy — must cite specific examples from the case",
+            "New initiative must be COMMUNITY-based (not just environmental)",
+            "New initiative should be realistic and specific to Prefer's capabilities and B2B context",
+            "Explain HOW the initiative is CSR — voluntary, benefits society beyond legal requirements",
+            "Approximately 6 marks per part"
+          ]
+        },
+        {
+          "id": "q2c",
+          "label": "Question 2c",
+          "marks": 22,
+          "text": "As bean-free coffee is still relatively new in the market, propose a marketing communication campaign for Prefer Coffee by examining two (2) digital communication tools that can build awareness and persuade more customers to try their coffee at various cafes. A creative approach with a message appeal should be included. Select from: online communication, social media, mobile communication, and word-of-mouth. Note that Prefer is a small company and cost is a consideration.",
+          "type": "essay",
+          "_caseStudyRef": "cs_prefer",
+          "modelAnswer": "CAMPAIGN CONCEPT: 'Brewed from Tomorrow'\n\nOverarching message appeal: FEAR APPEAL + RATIONAL APPEAL (combined)\nFear appeal: Tap into the growing anxiety about climate change — 50% of coffee-growing land will be lost in decades, and demand will triple. 'The coffee you love is disappearing. Prefer is what comes next.'\nRational appeal: Allay concerns about taste and convenience — 'Compatible with your existing machine. Served in 30 Singapore cafes. Try it today.'\nThis combined approach first creates urgency (fear), then provides a credible, reassuring solution (rational).\n\nDIGITAL TOOL 1: SOCIAL MEDIA MARKETING (Instagram + LinkedIn)\n\nObjective: Build awareness among sustainability-conscious consumers and B2B buyers (cafe owners, F&B managers).\n\nB2C Instagram Strategy (Cost-effective):\n- Partner with 5–8 Singapore-based sustainability micro-influencers (10,000–80,000 followers) who cover food, sustainability, or lifestyle content. Micro-influencers have higher engagement rates than mega-influencers and charge significantly less ($300–$800 per post vs. $5,000+ for mega-influencers) — appropriate for a small company.\n- Campaign: 'My First Prefer Cup' — influencers document their first taste test at one of the 30 partner cafes, reacting authentically to the taste. Hashtag: #PreferCoffee #BrewedFromTomorrow.\n- Instagram Stories polls: 'Did you know your coffee has a 29kg CO2 footprint?' → Swipe up to find your nearest Prefer cafe.\n\nB2B LinkedIn Strategy:\n- Publish thought leadership articles written by Prefer's founders on sustainability in the F&B industry — targeting cafe owners and procurement managers. LinkedIn is the most cost-effective B2B channel for a small startup.\n\nWhy suitable for Prefer: Social media allows Prefer to reach both individual consumers (Instagram) and business decision-makers (LinkedIn) at minimal cost. User-generated content from micro-influencers provides authentic social proof that is more credible to new consumers than polished ads.\n\nDIGITAL TOOL 2: WORD-OF-MOUTH MARKETING (Referral Programme + Community Building)\n\nObjective: Leverage the 30 existing cafe partners to drive trial through organic peer recommendation.\n\nExecution:\n- Cafe partner 'Try & Tell' programme: Offer first-time Prefer coffee drinkers a QR code on their cup that leads to a landing page where they can rate their experience and share it on social media in exchange for a 10% discount on their next Prefer coffee at any partner cafe.\n- Digital referral: If a customer shares their rating on Instagram/Facebook, they earn a free coffee voucher at a partner cafe. This creates a viral loop — each satisfied customer recruits new ones.\n- WhatsApp community (mobile communication element): Build a 'Prefer Friends' WhatsApp or Telegram community where early adopters receive exclusive behind-the-scenes content, new cafe partner announcements, and early access to new products. Community members become advocates.\n\nWhy suitable for Prefer: Word-of-mouth is the most cost-effective channel for a small startup — each satisfied customer does the marketing. Since Prefer's product is novel (bean-free coffee), peer recommendation from a trusted friend is far more persuasive than any paid advertisement. The QR code and referral programme require minimal investment but create measurable, trackable advocacy.",
+          "keyPoints": [
+            "Two distinct tools from the specified list",
+            "Message appeal named (fear, rational, emotional, moral) with creative concept/tagline",
+            "Cost-effectiveness addressed (small company constraint from the question)",
+            "B2B context considered — Prefer sells to cafes, not end consumers directly",
+            "Execution should be specific: what exactly is done, who is targeted, how it works",
+            "22 marks total — allocate proportionally: ~4 marks appeal + ~9 marks per tool"
+          ]
+        }
+      ]
+    }
+  ]
+}
