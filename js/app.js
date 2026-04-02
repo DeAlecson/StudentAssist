@@ -8,7 +8,7 @@ const App = (() => {
 
     // Load modules configuration
     try {
-      const modulesData = await Utils.loadJSON('data/modules.json');
+      const modulesData = await Utils.loadJSON('data/modules.json?v=' + Date.now());
       _modules = modulesData.modules || [];
     } catch (err) {
       console.error('Failed to load modules:', err);
