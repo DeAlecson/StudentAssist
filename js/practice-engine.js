@@ -18,11 +18,11 @@ const PracticeEngine = (() => {
             ...sq,
             _parentLabel: q.label,
             _figures: sq.figures || q.figures || [],
-            _caseStudyRef: sq.caseStudyRef || q.caseStudyRef || null
+            _caseStudyRef: sq._caseStudyRef || q._caseStudyRef || null
           });
         });
       } else {
-        flat.push({ ...q, _figures: q.figures || [], _caseStudyRef: q.caseStudyRef || null });
+        flat.push({ ...q, _figures: q.figures || [], _caseStudyRef: q._caseStudyRef || null });
       }
     });
     return flat;
