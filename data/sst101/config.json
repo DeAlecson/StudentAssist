@@ -65,12 +65,14 @@
     {
       "id": "jan2024",
       "label": "JAN 2024",
-      "file": "data/sst101/exams/jan2024.json"
+      "file": "data/sst101/exams/jan2024.json",
+      "examType": "open_book"
     },
     {
       "id": "jan2025",
       "label": "JAN 2025",
-      "file": "data/sst101/exams/jan2025.json"
+      "file": "data/sst101/exams/jan2025.json",
+      "examType": "open_book"
     }
   ]
 }

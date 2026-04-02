@@ -65,17 +65,20 @@
     {
       "id": "jan2024",
       "label": "JAN 2024",
-      "file": "data/ict162/exams/jan2024.json"
+      "file": "data/ict162/exams/jan2024.json",
+      "examType": "closed_book"
     },
     {
       "id": "jul2024",
       "label": "JUL 2024",
-      "file": "data/ict162/exams/jul2024.json"
+      "file": "data/ict162/exams/jul2024.json",
+      "examType": "closed_book"
     },
     {
       "id": "jan2025",
       "label": "JAN 2025",
-      "file": "data/ict162/exams/jan2025.json"
+      "file": "data/ict162/exams/jan2025.json",
+      "examType": "closed_book"
     }
   ]
 }

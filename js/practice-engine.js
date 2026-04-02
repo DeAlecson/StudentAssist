@@ -49,8 +49,8 @@ const PracticeEngine = (() => {
               <div class="su-card" onclick="PracticeEngine.start('${moduleId}', '${p.id}')">
                 <div class="su-card-icon">📄</div>
                 <div class="su-card-body">
-                  <div class="su-card-code">${escapeHTML(p.semester)}</div>
-                  <div class="su-card-title">${escapeHTML(config.code)} ${escapeHTML(p.semester)} Paper</div>
+                  <div class="su-card-code">${escapeHTML(p.label)}</div>
+                  <div class="su-card-title">${escapeHTML(config.code)} ${escapeHTML(p.label)} Paper</div>
                   <div class="su-card-desc">${escapeHTML(p.examType === 'open_book' ? 'Open Book · 100 marks' : 'Closed Book · 100 marks')}</div>
                 </div>
                 <span class="su-card-arrow">›</span>
@@ -89,7 +89,7 @@ const PracticeEngine = (() => {
     main.innerHTML = `
       <div class="practice-selector">
         <div class="practice-paper-header">
-          <button class="btn btn-ghost" onclick="Router.navigate('#/${_moduleId}/practice')">← Papers</button>
+          <button class="btn btn-ghost" onclick="PracticeEngine.showSelector('${_moduleId}')">← Papers</button>
           <div class="practice-paper-info">
             <h2>📝 ${escapeHTML(_paper.semester)}</h2>
             <p>${escapeHTML(_paper.code)} · ${_flatQuestions.length} questions · ${_paper.examType === 'open_book' ? 'Open Book' : 'Closed Book'}</p>

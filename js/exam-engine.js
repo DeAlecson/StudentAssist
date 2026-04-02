@@ -35,8 +35,8 @@ const ExamEngine = (() => {
               <div class="su-card" onclick="ExamEngine.start('${moduleId}', '${p.id}')">
                 <div class="su-card-icon">🎓</div>
                 <div class="su-card-body">
-                  <div class="su-card-code">${escapeHTML(p.semester)}</div>
-                  <div class="su-card-title">${escapeHTML(config.code)} ${escapeHTML(p.semester)} — Full Paper</div>
+                  <div class="su-card-code">${escapeHTML(p.label)}</div>
+                  <div class="su-card-title">${escapeHTML(config.code)} ${escapeHTML(p.label)} — Full Paper</div>
                   <div class="su-card-desc">${escapeHTML(p.examType === 'open_book' ? 'Open Book' : 'Closed Book')} · 2 hours · 100 marks</div>
                 </div>
                 <div class="exam-start-badge">Start Exam →</div>
