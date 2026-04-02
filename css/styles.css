@@ -2555,3 +2555,57 @@
 /* yes / no text helpers */
 .yes { color: #10b981; font-weight: 700; }
 .no  { color: #ef4444; font-weight: 700; }
+
+
+/* ============================================================
+   MARKDOWN TABLE RENDERING (.md-table)
+   Used in lesson content, model answers, AI feedback
+   ============================================================ */
+
+.md-table-wrap {
+  overflow-x: auto;
+  margin: 0.75rem 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.md-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  min-width: 420px;
+}
+
+.md-table thead {
+  background: rgba(255,255,255,0.05);
+}
+
+.md-table th {
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-primary, #fff);
+  padding: 0.55rem 0.75rem;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  white-space: nowrap;
+}
+
+.md-table td {
+  padding: 0.45rem 0.75rem;
+  color: var(--text-secondary, #ccc);
+  vertical-align: top;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.md-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.md-table tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+@media (max-width: 480px) {
+  .md-table { font-size: 0.75rem; }
+  .md-table th,
+  .md-table td { padding: 0.4rem 0.5rem; }
+}

@@ -10,15 +10,54 @@ const Utils = (() => {
 
   const markdownToHTML = (text) => {
     if (!text) return '';
-    let html = text
-      .replace(/```(\w*)\n?([\s\S]*?)```/g, (_, lang, code) =>
-        `<pre class="code-block"><code class="${lang ? 'lang-' + lang : ''}">${escapeHTML(code.trim())}</code></pre>`)
+
+    const placeholders = [];
+    const ph = (html) => {
+      const token = `\x00PH${placeholders.length}\x00`;
+      placeholders.push(html);
+      return token;
+    };
+
+    // Extract fenced code blocks first (before table detection)
+    let out = text.replace(/```(\w*)\n?([\s\S]*?)```/g, (_, lang, code) =>
+      ph(`<pre class="code-block"><code class="${lang ? 'lang-' + lang : ''}">${escapeHTML(code.trim())}</code></pre>`)
+    );
+
+    // Extract markdown tables: consecutive pipe-starting lines with a separator row
+    out = out.replace(/((?:(?:^|\n)\|.+)+)/g, (block) => {
+      const lines = block.replace(/^\n/, '').split('\n')
+        .map(l => l.trim()).filter(l => l.startsWith('|'));
+      if (lines.length < 2 || !/^\|[\s\-:|]+\|/.test(lines[1])) return block;
+
+      const cells = (line) => line.split('|').slice(1, -1).map(c => c.trim());
+      const headers = cells(lines[0]);
+      const dataRows = lines.slice(2).filter(l => l.startsWith('|')).map(cells);
+
+      let tbl = '<div class="md-table-wrap"><table class="md-table"><thead><tr>';
+      tbl += headers.map(h => `<th>${h}</th>`).join('');
+      tbl += '</tr></thead><tbody>';
+      dataRows.forEach(row => {
+        tbl += '<tr>' + row.map(c => `<td>${c}</td>`).join('') + '</tr>';
+      });
+      tbl += '</tbody></table></div>';
+      return ph(tbl);
+    });
+
+    // Inline markdown + paragraphs
+    let html = out
       .replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>')
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       .replace(/\*([^*]+)\*/g, '<em>$1</em>')
       .replace(/\n\n/g, '</p><p>')
       .replace(/\n/g, '<br>');
-    return '<p>' + html + '</p>';
+
+    html = '<p>' + html + '</p>';
+
+    // Restore placeholders — unwrap block-level ones from surrounding <p> tags
+    html = html.replace(/<p>(\x00PH\d+\x00)<\/p>/g, (_, token) => token);
+    html = html.replace(/\x00PH(\d+)\x00/g, (_, i) => placeholders[+i]);
+
+    return html;
   };
 
   const formatTime = (seconds) => {
