@@ -88,17 +88,22 @@
   <div id="hub-screen" class="screen active">
     <div class="hub-inner">
       <!-- User chip top-right of hub -->
-      <div id="hub-user-chip" class="hub-user-chip hidden">
-        <div id="hub-user-avatar" class="hub-user-avatar"></div>
-        <div class="hub-user-info">
-          <span id="hub-user-name" class="hub-user-name"></span>
-          <span class="hub-user-label">Signed in</span>
+      <div class="hub-header">
+        <div class="hub-header-spacer"></div>
+        <div class="hub-wordmark">
+          <div class="hub-logo">Student<span class="hub-dot">Assist</span></div>
+          <div class="hub-tagline">SUSS · Powered by AI</div>
         </div>
-        <button id="hub-signout-btn" class="hub-signout-btn" title="Sign out">Sign out</button>
-      </div>
-      <div class="hub-wordmark">
-        <div class="hub-logo">Student<span class="hub-dot">Assist</span></div>
-        <div class="hub-tagline">SUSS · Powered by AI</div>
+        <div class="hub-header-right">
+          <div id="hub-user-chip" class="hub-user-chip hidden">
+            <div id="hub-user-avatar" class="hub-user-avatar"></div>
+            <div class="hub-user-info">
+              <span id="hub-user-name" class="hub-user-name"></span>
+              <span class="hub-user-label">Signed in</span>
+            </div>
+            <button id="hub-signout-btn" class="hub-signout-btn" title="Sign out">Sign out</button>
+          </div>
+        </div>
       </div>
       <div id="hub-cards" class="hub-cards">
         <!-- Cards injected by app.js from modules.json -->

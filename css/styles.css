@@ -34,7 +34,7 @@
 
 .hub-wordmark {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0;
 }
 
 .hub-logo {
@@ -2703,29 +2703,36 @@
 .pw-label-amber { color: #f59e0b; }
 .pw-label-green { color: #22c55e; }
 
+/* ═════ HUB HEADER ═════ */
+.hub-header {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 1rem; margin-bottom: 2.5rem;
+}
+.hub-header-spacer { flex: 1; min-width: 0; }
+.hub-header-right { flex: 1; min-width: 0; display: flex; justify-content: flex-end; }
+.hub-wordmark { flex: 0 0 auto; text-align: center; margin-bottom: 0; }
+
 /* ═════ HUB USER CHIP ═════ */
-.hub-inner { position: relative; }
 .hub-user-chip {
-  position: fixed; top: 1.25rem; right: 1.25rem; z-index: 100;
-  display: flex; align-items: center; gap: 0.6rem;
+  display: flex; align-items: center; gap: 0.5rem;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 12px; padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+  border-radius: 12px; padding: 0.45rem 0.6rem 0.45rem 0.45rem;
   box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 .hub-user-chip.hidden { display: none; }
 .hub-user-avatar {
-  width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;
+  width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
   background: linear-gradient(135deg, #00d4ff, #a855f7);
-  color: #fff; font-size: 0.8rem; font-weight: 700;
+  color: #fff; font-size: 0.78rem; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
 }
 .hub-user-info { display: flex; flex-direction: column; line-height: 1.2; }
-.hub-user-name { font-size: 0.82rem; font-weight: 700; color: var(--text); max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.hub-user-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; }
+.hub-user-name { font-size: 0.8rem; font-weight: 700; color: var(--text); max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hub-user-label { font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; }
 .hub-signout-btn {
   background: none; border: 1px solid var(--border); cursor: pointer;
-  color: var(--text-muted); font-size: 0.7rem; font-weight: 600;
-  padding: 0.25rem 0.5rem; border-radius: 6px; margin-left: 0.25rem;
+  color: var(--text-muted); font-size: 0.68rem; font-weight: 600;
+  padding: 0.2rem 0.45rem; border-radius: 6px; margin-left: 0.15rem;
   transition: color 0.15s, border-color 0.15s, background 0.15s;
   white-space: nowrap;
 }
