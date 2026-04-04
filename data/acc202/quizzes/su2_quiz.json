@@ -109,8 +109,8 @@
       "prompt": "On 1 September, a company pays $3,600 for 6 months of rent (Sept-Feb). By 31 December, what amount should remain as Prepaid Rent?",
       "difficulty": 2,
       "choices": ["$3,600", "$1,200", "$2,400", "$0"],
-      "answer": 2,
-      "explanation": "From September to December is 4 months. Expense = $3,600 / 6 × 4 = $2,400. Remaining prepaid (January-February) = $3,600 - $2,400 = $1,200. Wait, let me recalculate: If $3,600 is for 6 months, one month = $600. By Dec 31, 4 months have passed. Expense = $2,400. Remaining = $1,200. Answer should be $1,200, but checking: from Sept to Dec inclusive = 4 months expensed. Remaining Feb = 2 months = $1,200. The question asks what remains Prepaid at 31 Dec, which is $1,200... Let me verify once more: $3,600/6 = $600/month. 4 months used = $2,400. 2 months unused = $1,200. Hmm, the answer should be $1,200, but I listed $2,400. Let me reconsider the scenario — if paying Sept 1 for Sept-Feb (6 months), then by Dec 31: Sept, Oct, Nov, Dec = 4 months used = $2,400 expense. Jan-Feb remaining = 2 months = $1,200 prepaid. Actually I had the wrong answer index. Let me correct: The remaining prepaid is $1,200 (2 months × $600). But if the question is asking for amount expensed by year end, it's $2,400. Given the question asks for 'what remains', the answer is $1,200. I'll revise the answer to 3 ($1,200)."
+      "answer": 1,
+      "explanation": "$3,600 / 6 months = $600 per month. From September 1 to December 31 = 4 months used. Rent Expense = 4 × $600 = $2,400. Remaining Prepaid Rent (January–February = 2 months) = 2 × $600 = $1,200. The question asks what REMAINS as Prepaid Rent at 31 December, which is $1,200."
     },
     {
       "id": "acc_su2_q10",

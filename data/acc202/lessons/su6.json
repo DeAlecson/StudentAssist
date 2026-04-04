@@ -75,8 +75,35 @@
     },
     {
       "type": "concept",
-      "title": "Variance Analysis",
-      "content": "Comparing actual results against the budget identifies variances.\n\n**Favourable (F) Variance:** Actual profit > Budgeted profit (good)\n**Unfavourable (U) Variance:** Actual profit < Budgeted profit (concerning)\n\n**Revenue Variance** = Actual Revenue - Budgeted Revenue\n- F if actual > budget\n\n**Cost Variance** = Budgeted Cost - Actual Cost\n- F if actual costs are LOWER (you saved money)\n- U if actual costs are HIGHER\n\nVariance analysis supports **management by exception** — managers focus attention on significant deviations that require explanation and corrective action. Small variances are normal and expected."
+      "title": "Static vs Flexible Budget ⭐ Exam Topic",
+      "content": "This framework is tested in **every SUSS ACC202 exam**. You must know all three columns and the two variances.\n\n---\n\n**Static Budget** = The original budget prepared at the START of the period, based on *planned* sales volume.\n\n**Flexible Budget** = The budget REBASED to *actual* sales volume, but keeping original unit costs/prices.\n\n**Actual Results** = What really happened.\n\n---\n\n**The Three-Column Framework:**\n\n| | Static Budget | Flexible Budget | Actual Results |\n|---|---|---|---|\n| Units | Planned volume | **Actual volume** | Actual volume |\n| Revenue | Planned price × Planned units | Planned price × **Actual units** | Actual price × Actual units |\n| Variable Costs | Planned VC/unit × Planned units | Planned VC/unit × **Actual units** | Actual VC/unit × Actual units |\n| Fixed Costs | Budgeted fixed | Budgeted fixed | Actual fixed |\n| **Operating Profit** | X | Y | Z |\n\n---\n\n**Two Key Variances:**\n\n**Sales Volume Variance (SVV)** = Flexible Budget Profit − Static Budget Profit\n- Caused by selling MORE or FEWER units than planned\n- F if actual volume > budgeted volume\n- U if actual volume < budgeted volume\n\n**Flexible Budget Variance (FBV)** = Actual Results − Flexible Budget\n- Caused by PRICES or COSTS being different from standard\n- F if actual profit > flexible budget profit\n- U if actual profit < flexible budget profit\n\n**Total Variance** = Actual Profit − Static Budget Profit = SVV + FBV\n\n---\n\n**Memory tip:** Think of it as two questions:\n1. *Did we sell the right volume?* → Sales Volume Variance\n2. *Did we charge/spend the right amounts?* → Flexible Budget Variance"
+    },
+    {
+      "type": "example",
+      "title": "Static vs Flexible Budget: Worked Example ⭐",
+      "content": "**Given:**\n- Budgeted sales: 1,000 units at $50 each\n- Variable cost: $30 per unit\n- Fixed costs: $8,000\n- Actual sales: 1,200 units at $48 each\n- Actual variable cost: $31 per unit\n- Actual fixed costs: $8,500\n\n---\n\n**Step 1 — Static Budget (at planned 1,000 units):**\n- Revenue: 1,000 × $50 = $50,000\n- Variable Costs: 1,000 × $30 = $30,000\n- Fixed Costs: $8,000\n- **Static Budget Profit = $12,000**\n\n**Step 2 — Flexible Budget (at actual 1,200 units, standard prices):**\n- Revenue: 1,200 × $50 = $60,000\n- Variable Costs: 1,200 × $30 = $36,000\n- Fixed Costs: $8,000 (unchanged)\n- **Flexible Budget Profit = $16,000**\n\n**Step 3 — Actual Results:**\n- Revenue: 1,200 × $48 = $57,600\n- Variable Costs: 1,200 × $31 = $37,200\n- Fixed Costs: $8,500\n- **Actual Profit = $11,900**\n\n---\n\n**Variance Calculations:**\n\n**Sales Volume Variance** = Flexible − Static = $16,000 − $12,000 = **$4,000 F**\n→ Sold 200 more units than planned (good)\n\n**Flexible Budget Variance** = Actual − Flexible = $11,900 − $16,000 = **$4,100 U**\n→ Lower selling price ($48 vs $50) and higher costs dragged profit down\n\n**Total Variance** = Actual − Static = $11,900 − $12,000 = **$100 U**\n= $4,000 F + $4,100 U = $100 U ✓\n\n**Interpretation:** We sold more units (good — $4,000 F volume variance) but our prices were lower and costs were higher than expected (bad — $4,100 U), resulting in a small overall unfavourable variance."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Checkpoint: Identify the Variance",
+      "content": "Apply the flexible budget framework.",
+      "question": {
+        "type": "mcq",
+        "prompt": "Static Budget Profit = $20,000. Flexible Budget Profit (at actual volume) = $25,000. Actual Profit = $22,000. What is the Sales Volume Variance and is it F or U?",
+        "choices": [
+          "$3,000 U — actual profit is less than flexible budget",
+          "$5,000 F — flexible budget profit exceeds static budget profit",
+          "$2,000 U — actual profit is less than static budget",
+          "$5,000 U — flexible budget exceeds actual results"
+        ],
+        "answer": 1,
+        "explanation": "Sales Volume Variance = Flexible Budget Profit − Static Budget Profit = $25,000 − $20,000 = $5,000 F. This is FAVOURABLE because the company sold more units than planned, generating more profit at standard prices. The Flexible Budget Variance = Actual − Flexible = $22,000 − $25,000 = $3,000 U (prices/costs were worse than standard)."
+      }
+    },
+    {
+      "type": "concept",
+      "title": "Variance Analysis — Revenue and Cost Detail",
+      "content": "Comparing actual results against the budget identifies variances.\n\n**Favourable (F) Variance:** Actual profit > Budgeted profit (good)\n**Unfavourable (U) Variance:** Actual profit < Budgeted profit (concerning)\n\n**Revenue Variance** = Actual Revenue − Budgeted Revenue\n- F if actual > budget (more revenue earned)\n\n**Cost Variance** = Budgeted Cost − Actual Cost\n- F if actual costs are LOWER (you spent less than planned)\n- U if actual costs are HIGHER (you overspent)\n\nNote: For costs, the sign convention is REVERSED from revenue — spending less is favourable.\n\nVariance analysis supports **management by exception** — managers focus attention on significant deviations that require explanation and corrective action. Small variances are normal and expected."
     },
     {
       "type": "definition",
@@ -103,6 +130,19 @@
         "prompt": "What is variance analysis and how does it support management decision-making?",
         "modelAnswer": "Variance analysis compares actual results against the budget to identify and explain differences. Favourable variances (actual profit > budget) are positive; unfavourable variances signal problems requiring investigation. It supports management by exception — directing management attention to significant deviations that require explanation or corrective action. For example, an unfavourable revenue variance may trigger investigation of pricing, market conditions, or sales team performance. Variance analysis enables fact-based decision-making and accountability.",
         "keyPoints": ["Variance = Actual vs Budget difference", "Favourable (F) vs Unfavourable (U)", "Management by exception = focus on significant deviations", "Identifies root causes for corrective action"]
+      },
+      {
+        "id": "su6_a4",
+        "prompt": "A company budgeted to sell 2,000 units at $60 each, variable cost $35 per unit, fixed costs $15,000. Actual results: 2,500 units sold at $58 each, actual variable cost $36 per unit, actual fixed costs $16,000.\n\n(a) Prepare the Static Budget, Flexible Budget, and Actual Results in a three-column format.\n(b) Calculate the Sales Volume Variance and state whether F or U.\n(c) Calculate the Flexible Budget Variance and state whether F or U.\n(d) Verify: Total Variance = Sales Volume Variance + Flexible Budget Variance.",
+        "modelAnswer": "(a) Three-Column Analysis:\n\nStatic Budget (2,000 units):\n- Revenue: 2,000 × $60 = $120,000\n- Variable Costs: 2,000 × $35 = $70,000\n- Fixed Costs: $15,000\n- Operating Profit: $35,000\n\nFlexible Budget (2,500 units, standard prices):\n- Revenue: 2,500 × $60 = $150,000\n- Variable Costs: 2,500 × $35 = $87,500\n- Fixed Costs: $15,000\n- Operating Profit: $47,500\n\nActual Results (2,500 units):\n- Revenue: 2,500 × $58 = $145,000\n- Variable Costs: 2,500 × $36 = $90,000\n- Fixed Costs: $16,000\n- Operating Profit: $39,000\n\n(b) Sales Volume Variance = Flexible Budget Profit − Static Budget Profit = $47,500 − $35,000 = $12,500 F\nFavourable because 500 more units were sold than planned.\n\n(c) Flexible Budget Variance = Actual Profit − Flexible Budget Profit = $39,000 − $47,500 = $8,500 U\nUnfavourable because selling price was $2 lower, variable cost $1 higher, and fixed costs $1,000 over budget.\n\n(d) Total Variance = Actual − Static = $39,000 − $35,000 = $4,000 F\nVerification: $12,500 F + $8,500 U = $4,000 F ✓",
+        "keyPoints": [
+          "Static Budget uses PLANNED volume and planned prices/costs",
+          "Flexible Budget uses ACTUAL volume but PLANNED (standard) prices/costs",
+          "Sales Volume Variance = Flexible Budget Profit − Static Budget Profit",
+          "Flexible Budget Variance = Actual Profit − Flexible Budget Profit",
+          "Total Variance = SVV + FBV (always verify this adds up)",
+          "F = Actual Profit > Budget; U = Actual Profit < Budget"
+        ]
       }
     ]
   }

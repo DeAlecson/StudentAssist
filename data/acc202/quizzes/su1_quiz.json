@@ -5,137 +5,152 @@
     {
       "id": "acc_su1_q1",
       "type": "mcq",
-      "concept": "double entry system",
-      "prompt": "In the double entry system, which statement is true?",
+      "concept": "Financial vs Managerial Accounting",
+      "prompt": "The primary users of financial accounting reports are:",
       "difficulty": 1,
-      "choices": ["Total debits must exceed total credits", "Total debits must equal total credits", "Debits and credits are unrelated", "Credits must always exceed debits"],
+      "choices": [
+        "Investors and employees",
+        "Investors and lenders",
+        "Employees and department managers",
+        "Investors and customers"
+      ],
       "answer": 1,
-      "explanation": "The double entry system's fundamental principle is that total debits MUST equal total credits. This equality ensures accuracy and maintains the accounting equation balance."
+      "explanation": "Financial accounting is designed for EXTERNAL users — primarily investors (who decide whether to invest) and lenders (who decide whether to extend credit). Managerial accounting serves internal users like managers and employees."
     },
     {
       "id": "acc_su1_q2",
       "type": "mcq",
-      "concept": "normal balances",
-      "prompt": "Which account type has a CREDIT normal balance?",
+      "concept": "Regulatory Framework",
+      "prompt": "Which of the following is NOT one of the three sources of the regulatory framework for financial reporting in Singapore?",
       "difficulty": 1,
-      "choices": ["Expenses", "Assets", "Liabilities", "Both Expenses and Assets"],
-      "answer": 2,
-      "explanation": "Liabilities have a CREDIT normal balance. They increase with credits and decrease with debits. Remember DEALER: Liabilities, Equity, and Revenue all increase with credits."
+      "choices": [
+        "Companies Act",
+        "Accounting Standards (SFRS/IFRS)",
+        "Stock exchange regulations",
+        "Board of Directors' internal policies"
+      ],
+      "answer": 3,
+      "explanation": "The three regulatory sources are: (1) Companies Act — sets legal obligations for directors; (2) Accounting Standards (SFRS/IFRS) — detailed rules for recording transactions; (3) Stock Exchange regulations — for listed companies. Internal board policies are not part of the external regulatory framework."
     },
     {
       "id": "acc_su1_q3",
       "type": "mcq",
-      "concept": "accounting equation",
-      "prompt": "A company buys equipment for $50,000 with cash. What happens to the accounting equation?",
-      "difficulty": 2,
-      "choices": ["Assets increase by $50,000, liabilities decrease by $50,000", "One asset increases, another decreases; equation remains balanced", "Assets increase by $50,000, equity decreases by $50,000", "Both assets and liabilities increase by $50,000"],
+      "concept": "Going-Concern Assumption",
+      "prompt": "The going-concern assumption means that:",
+      "difficulty": 1,
+      "choices": [
+        "Assets are recorded at liquidation (fire-sale) prices",
+        "The business is assumed to continue operating indefinitely, so assets are valued at cost",
+        "All liabilities must be paid within one year",
+        "Financial statements must be produced annually"
+      ],
       "answer": 1,
-      "explanation": "Equipment (asset) increases by $50,000, Cash (asset) decreases by $50,000. Total assets are unchanged. The equation remains balanced: Assets = Liabilities + Equity."
+      "explanation": "Going-concern assumes the business will continue operating. This means assets are NOT valued at what they'd fetch in a quick liquidation sale — they are valued based on their ongoing use. Only if a business is about to close would liquidation values be used."
     },
     {
       "id": "acc_su1_q4",
       "type": "mcq",
-      "concept": "journal entries - inventory purchase",
-      "prompt": "A company buys $12,000 of inventory, paying 40% in cash and the rest on credit. What is the journal entry?",
+      "concept": "Accrual Basis Assumption",
+      "prompt": "A consulting firm completes a $10,000 project in December but receives payment in January. Under accrual accounting, in which month is the revenue recognised?",
       "difficulty": 2,
       "choices": [
-        "Dr Inventory $12,000, Cr Cash $12,000",
-        "Dr Inventory $12,000, Cr Cash $4,800, Cr Accounts Payable $7,200",
-        "Dr Inventory $4,800, Cr Cash $4,800",
-        "Dr Cash $4,800, Cr Inventory $4,800"
+        "January — when cash is received",
+        "December — when the service is performed",
+        "Split evenly between December and January",
+        "Neither — it is only recognised when the invoice is issued"
       ],
       "answer": 1,
-      "explanation": "Inventory (asset) increases by debit. Cash of $4,800 (40% of $12,000) decreases by credit. Accounts Payable of $7,200 (60%) increases by credit. Total debits = Total credits = $12,000."
+      "explanation": "Under the accrual basis, revenue is recognised when EARNED — when the service is performed (December), not when cash is received (January). This ensures revenue is matched to the correct accounting period."
     },
     {
       "id": "acc_su1_q5",
       "type": "mcq",
-      "concept": "journal entries - sales transaction",
-      "prompt": "A company sells goods for $8,000 cash. The cost of goods sold is $5,000. What is the correct journal entry to record the sale?",
+      "concept": "Conservatism and Prudence",
+      "prompt": "Inventory was purchased for $10,000 but can now only be sold for $8,000 due to damage. Under the Conservatism principle, the inventory should be recorded at:",
       "difficulty": 2,
       "choices": [
-        "Dr Cash $8,000, Cr Revenue $8,000; Dr COGS $5,000, Cr Inventory $5,000",
-        "Dr Cash $8,000, Cr Inventory $8,000",
-        "Dr Revenue $8,000, Cr Cash $8,000",
-        "Dr Inventory $8,000, Cr Revenue $8,000"
+        "$10,000 — always use historical cost",
+        "$9,000 — the average of cost and market value",
+        "$8,000 — the lower of cost or market value",
+        "$0 — damaged goods have no accounting value"
       ],
-      "answer": 0,
-      "explanation": "Two entries: (1) Record sale: Dr Cash $8,000, Cr Revenue $8,000 (captures customer payment). (2) Record cost: Dr COGS $5,000, Cr Inventory $5,000 (removes inventory at cost). This matches revenue with the cost to generate it."
+      "answer": 2,
+      "explanation": "Conservatism (Prudence) requires recording assets at the LOWER of cost or market value. If market value ($8,000) falls below cost ($10,000), the inventory must be written down. This prevents overstating assets."
     },
     {
       "id": "acc_su1_q6",
       "type": "mcq",
-      "concept": "capital injection",
-      "prompt": "Shareholders invest $100,000 cash into the company. What is the journal entry?",
-      "difficulty": 1,
+      "concept": "Account Types — ALREX",
+      "prompt": "Unearned Revenue is best classified as:",
+      "difficulty": 2,
       "choices": [
-        "Dr Cash $100,000, Cr Equity $100,000",
-        "Dr Equity $100,000, Cr Cash $100,000",
-        "Dr Revenue $100,000, Cr Cash $100,000",
-        "Dr Cash $100,000, Cr Retained Earnings $100,000"
+        "Asset — it represents future cash to be received",
+        "Revenue — the company has received the money",
+        "Liability — the company owes a service to the customer",
+        "Equity — the customer has invested in the company"
       ],
-      "answer": 0,
-      "explanation": "Cash (asset) increases with debit. Share Capital (equity) increases with credit. Shareholder capital increases equity directly, not through revenue."
+      "answer": 2,
+      "explanation": "Unearned Revenue is a LIABILITY. The company received cash but has NOT yet performed the service. It owes the customer a future service — this is an obligation. Once the service is performed, Unearned Revenue (Liability) decreases and Revenue increases."
     },
     {
       "id": "acc_su1_q7",
       "type": "mcq",
-      "concept": "expense recording",
-      "prompt": "A company pays $5,000 salaries in cash. What is the journal entry?",
-      "difficulty": 1,
+      "concept": "Stock vs Flow Accounts",
+      "prompt": "Which of the following is a FLOW account?",
+      "difficulty": 2,
       "choices": [
-        "Dr Salaries Payable $5,000, Cr Cash $5,000",
-        "Dr Salary Expense $5,000, Cr Cash $5,000",
-        "Dr Cash $5,000, Cr Salary Expense $5,000",
-        "Dr Salary Expense $5,000, Cr Salaries Payable $5,000"
+        "Accounts Receivable",
+        "Bank (Cash)",
+        "Salary Expense",
+        "Share Capital"
       ],
-      "answer": 1,
-      "explanation": "Salary Expense (increases with debit) increases by $5,000. Cash decreases by credit. The expense is recorded; it will reduce equity through retained earnings."
+      "answer": 2,
+      "explanation": "Salary Expense is a FLOW account — it is measured over a period of time (e.g., salary expense for the year) and resets to zero at the start of each accounting period. It appears on the Income Statement. Accounts Receivable, Bank, and Share Capital are STOCK accounts (measured at a point in time, on the Balance Sheet)."
     },
     {
       "id": "acc_su1_q8",
       "type": "mcq",
-      "concept": "bank loan",
-      "prompt": "A company receives a bank loan of $50,000 in cash. What is the journal entry?",
-      "difficulty": 1,
+      "concept": "Accounting Equation",
+      "prompt": "A company's Balance Sheet shows: Cash $22,000, Accounts Receivable $16,000, Equipment $50,000, and Accounts Payable $17,000. What is Owner's Equity?",
+      "difficulty": 2,
       "choices": [
-        "Dr Bank Loan $50,000, Cr Cash $50,000",
-        "Dr Cash $50,000, Cr Bank Loan Expense $50,000",
-        "Dr Cash $50,000, Cr Bank Loan Payable $50,000",
-        "Dr Equity $50,000, Cr Cash $50,000"
+        "$17,000",
+        "$55,000",
+        "$71,000",
+        "$88,000"
       ],
       "answer": 2,
-      "explanation": "Cash (asset) increases with debit. Bank Loan Payable (liability) increases with credit. The company now owes the bank. This is financing, not income."
+      "explanation": "Assets = $22,000 + $16,000 + $50,000 = $88,000. Liabilities = $17,000. Equity = Assets − Liabilities = $88,000 − $17,000 = $71,000. This applies the fundamental equation: Assets = Liabilities + Equity."
     },
     {
       "id": "acc_su1_q9",
       "type": "mcq",
-      "concept": "trial balance and accuracy",
-      "prompt": "A trial balance shows total debits of $500,000 but total credits of $480,000. What does this indicate?",
-      "difficulty": 2,
+      "concept": "Financial Statements",
+      "prompt": "Which financial statement shows whether the company earned a profit during the period by listing revenues and expenses?",
+      "difficulty": 1,
       "choices": [
-        "The company is profitable",
-        "There is an error in the accounting records",
-        "The company has more assets than liabilities",
-        "The revenue recognition is incorrect"
+        "Statement of Financial Position (Balance Sheet)",
+        "Statement of Cash Flows",
+        "Income Statement (Profit or Loss)",
+        "Statement of Changes in Equity"
       ],
-      "answer": 1,
-      "explanation": "Total debits MUST equal total credits. If they don't balance, an error exists: a transaction may be incompletely recorded, posted to wrong accounts, or an amount may be misstated. The books must be corrected before financial statements are prepared."
+      "answer": 2,
+      "explanation": "The Income Statement (also called Statement of Profit or Loss) lists all revenues earned and expenses incurred during a period. Revenue − Expenses = Net Profit or Net Loss. It is a FLOW statement covering a period (e.g., one year)."
     },
     {
       "id": "acc_su1_q10",
       "type": "mcq",
-      "concept": "transaction flow",
-      "prompt": "In the accounting cycle, after transactions are journalised, what is the next step?",
+      "concept": "Cash Flow Activities",
+      "prompt": "A company purchases a new factory machine for $80,000 cash. On the Statement of Cash Flows, this is classified as:",
       "difficulty": 2,
       "choices": [
-        "Prepare financial statements",
-        "Post entries to the general ledger",
-        "Prepare the trial balance",
-        "Perform adjusting entries"
+        "Operating activity — it is part of running the business",
+        "Investing activity — it is the purchase of a long-term asset",
+        "Financing activity — it involves spending cash",
+        "It does not appear on the Cash Flow Statement"
       ],
       "answer": 1,
-      "explanation": "The journal records transactions chronologically. Posting transfers each debit and credit to the specific account in the general ledger. After posting, a trial balance is prepared to check that debits equal credits."
+      "explanation": "Buying a long-term asset (factory machine) is an INVESTING activity on the Cash Flow Statement. Operating activities relate to day-to-day business operations (sales, salaries, utilities). Financing activities relate to borrowing, issuing shares, or paying dividends."
     }
   ]
 }

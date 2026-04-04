@@ -191,6 +191,36 @@
       ],
       "answer": 1,
       "explanation": "Variance analysis is only the start — the variance flags a problem, but management must investigate ROOT CAUSE before responding: (a) if materials prices rose (price variance), consider renegotiating contracts or switching suppliers; (b) if workers used more materials than standard (efficiency/usage variance), investigate training, machine calibration, or scrap rates; (c) if both, address each separately. Cutting the budget without understanding why creates a cycle of missed targets."
+    },
+    {
+      "id": "acc_su6_q14",
+      "type": "mcq",
+      "concept": "flexible budget — profit calculation",
+      "difficulty": 3,
+      "prompt": "Static budget: 1,000 units, selling price $50, variable cost $30/unit, fixed costs $10,000. Actual results: 1,200 units sold at $48, variable cost $32/unit, fixed costs $10,500. What is the Flexible Budget Profit (at 1,200 units, standard prices)?",
+      "choices": [
+        "$10,000",
+        "$14,000",
+        "$14,500",
+        "$13,100"
+      ],
+      "answer": 1,
+      "explanation": "Flexible Budget uses ACTUAL volume (1,200 units) but STANDARD prices and costs. Revenue: 1,200 × $50 = $60,000. Variable costs: 1,200 × $30 = $36,000. Fixed costs: $10,000 (budgeted). Flexible Budget Profit = $60,000 − $36,000 − $10,000 = $14,000. (Actual Profit = 1,200×$48 − 1,200×$32 − $10,500 = $57,600 − $38,400 − $10,500 = $8,700)."
+    },
+    {
+      "id": "acc_su6_q15",
+      "type": "mcq",
+      "concept": "sales volume variance vs flexible budget variance",
+      "difficulty": 3,
+      "prompt": "Static Budget Profit = $10,000. Flexible Budget Profit = $14,000. Actual Profit = $8,700. What are the Sales Volume Variance and Flexible Budget Variance?",
+      "choices": [
+        "SVV = $4,000 F; FBV = $5,300 U",
+        "SVV = $5,300 U; FBV = $4,000 F",
+        "SVV = $1,300 U; FBV = $4,000 F",
+        "SVV = $4,000 F; FBV = $1,300 U"
+      ],
+      "answer": 0,
+      "explanation": "Sales Volume Variance = Flexible Budget Profit − Static Budget Profit = $14,000 − $10,000 = $4,000 F (sold more units than planned). Flexible Budget Variance = Actual Profit − Flexible Budget Profit = $8,700 − $14,000 = $5,300 U (actual prices/costs were worse than standard). Total Variance = Actual − Static = $8,700 − $10,000 = $1,300 U = $4,000 F + $5,300 U ✓."
     }
   ]
 }

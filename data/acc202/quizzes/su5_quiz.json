@@ -69,8 +69,8 @@
       "prompt": "Actual sales 3,000 units, break-even 2,000 units. What is the margin of safety as a percentage?",
       "difficulty": 2,
       "choices": ["20%", "25%", "33%", "50%"],
-      "answer": 1,
-      "explanation": "MOS % = (Actual - BEP) / Actual = (3,000 - 2,000) / 3,000 = 1,000 / 3,000 = 33.3%. Rounding, approximately 33%. Actually 1,000/3,000 = 0.333... = 33.3%, closest to 33% at index 2. Let me recalculate: 1000/3000 = 1/3 = 0.3333 = 33.3%. So answer 2 (33%) is correct."
+      "answer": 2,
+      "explanation": "MOS % = (Actual Sales − BEP) / Actual Sales = (3,000 − 2,000) / 3,000 = 1,000 / 3,000 = 33.3% ≈ 33%. Sales can fall by 33% before the company reaches break-even."
     },
     {
       "id": "acc_su5_q8",
@@ -111,6 +111,36 @@
       ],
       "answer": 2,
       "explanation": "BEP = Fixed Costs / CM. If fixed costs increase and CM is constant, BEP must increase. More units are needed to cover the higher fixed costs."
+    },
+    {
+      "id": "acc_su5_q11",
+      "type": "mcq",
+      "concept": "after-tax target profit",
+      "prompt": "Selling price $80, variable cost $50, fixed costs $30,000, tax rate 25%. How many units must be sold to earn an after-tax profit of $15,000?",
+      "difficulty": 3,
+      "choices": [
+        "1,500 units",
+        "1,667 units",
+        "1,750 units",
+        "2,000 units"
+      ],
+      "answer": 2,
+      "explanation": "Step 1 — CM = $80 − $50 = $30 per unit. Step 2 — Convert after-tax to pre-tax: $15,000 ÷ (1 − 0.25) = $15,000 ÷ 0.75 = $20,000. Step 3 — Target units = (Fixed Costs + Pre-tax Profit) ÷ CM = ($30,000 + $20,000) ÷ $30 = $50,000 ÷ $30 = 1,667 units. Key rule: always convert after-tax profit to pre-tax FIRST before applying the CVP formula."
+    },
+    {
+      "id": "acc_su5_q12",
+      "type": "mcq",
+      "concept": "after-tax CVP — conversion step",
+      "prompt": "A company wants an after-tax profit of $36,000. The tax rate is 40%. What is the required PRE-TAX profit to use in the CVP formula?",
+      "difficulty": 2,
+      "choices": [
+        "$21,600",
+        "$36,000",
+        "$60,000",
+        "$50,400"
+      ],
+      "answer": 2,
+      "explanation": "Pre-tax Profit = After-tax Profit ÷ (1 − Tax Rate) = $36,000 ÷ (1 − 0.40) = $36,000 ÷ 0.60 = $60,000. Once you have $60,000 pre-tax profit, tax of 40% = $24,000. After-tax = $60,000 − $24,000 = $36,000 ✓. Always divide by (1 − t) to convert back to pre-tax."
     }
   ]
 }

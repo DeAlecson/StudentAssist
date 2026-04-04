@@ -38,8 +38,25 @@
     },
     {
       "type": "concept",
-      "title": "Target Profit",
+      "title": "Target Profit (Before Tax)",
       "content": "To achieve a specific profit target:\n\n**Target Sales (units) = (Fixed Costs + Target Operating Income) / CM per unit**\n\n**Target Sales (dollars) = (Fixed Costs + Target Operating Income) / CM Ratio**\n\nExample:\n- Fixed Costs: $24,000\n- CM per unit: $30\n- Target Profit: $12,000\n\nTarget Sales = ($24,000 + $12,000) / $30 = $36,000 / $30 = 1,200 units\n\nThe company must sell 1,200 units to earn $12,000 profit (vs. 800 units to break even)."
+    },
+    {
+      "type": "concept",
+      "title": "After-Tax Target Profit ⭐ Exam Topic",
+      "content": "When an exam question gives you a **profit target AFTER tax**, you must convert it to a **pre-tax** target first, then use the standard formula.\n\n**Step 1 — Convert after-tax profit to pre-tax profit:**\n> Pre-Tax Profit = After-Tax Profit ÷ (1 − Tax Rate)\n\n**Step 2 — Calculate target units using pre-tax figure:**\n> Target Units = (Fixed Costs + Pre-Tax Profit) ÷ CM per unit\n\n**Why?** The CVP formula uses Operating Income (before tax). Tax is applied AFTER operating income is calculated, so you must reverse it.\n\n---\n\n**Full Worked Example:**\n- Selling price: $80\n- Variable cost: $50\n- CM per unit: $80 − $50 = **$30**\n- Fixed costs: $30,000\n- Tax rate: 25%\n- Target profit **after tax**: $15,000\n\n**Step 1 — Pre-tax target:**\n> $15,000 ÷ (1 − 0.25) = $15,000 ÷ 0.75 = **$20,000**\n\n**Step 2 — Target units:**\n> ($30,000 + $20,000) ÷ $30 = $50,000 ÷ $30 = **1,667 units** (rounded up)\n\n**Verify:**\n- Revenue: 1,667 × $80 = $133,360\n- Variable costs: 1,667 × $50 = $83,350\n- CM: $50,010\n- Fixed costs: $30,000\n- Pre-tax profit: ≈$20,000\n- Tax (25%): $5,000\n- After-tax profit: ≈$15,000 ✓\n\n**Quick memory trick:** After-tax → Pre-tax: divide by (1 − t). Always do this BEFORE plugging into the CVP formula."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Checkpoint: After-Tax CVP",
+      "content": "This type of question appears in the SUSS ACC202 final exam.",
+      "question": {
+        "type": "mcq",
+        "prompt": "Selling price $100, Variable cost $60, Fixed costs $40,000, Tax rate 20%. How many units must be sold to achieve an after-tax profit of $24,000?",
+        "choices": ["1,000 units", "1,250 units", "1,500 units", "1,750 units"],
+        "answer": 3,
+        "explanation": "Step 1 — CM = $100 − $60 = $40 per unit. Step 2 — Convert after-tax to pre-tax: $24,000 ÷ (1 − 0.20) = $24,000 ÷ 0.80 = $30,000. Step 3 — Target units = (Fixed Costs + Pre-tax Profit) ÷ CM = ($40,000 + $30,000) ÷ $40 = $70,000 ÷ $40 = 1,750 units. Verify: 1,750 × $40 CM = $70,000 − $40,000 FC = $30,000 pre-tax profit × (1 − 0.20) = $24,000 after-tax ✓"
+      }
     },
     {
       "type": "concept",
@@ -88,6 +105,18 @@
         "prompt": "Explain how the degree of operating leverage works and what it means for a company with high fixed costs.",
         "modelAnswer": "DOL = Contribution Margin / Operating Income. It measures profit sensitivity to sales changes. A company with high fixed costs has high contribution margin (less variable costs) relative to operating income, giving high DOL. So a 10% increase in sales might yield a 40% profit increase (if DOL=4). Conversely, downturns are also amplified — a 10% sales drop yields 40% profit decline. High fixed costs create high leverage, amplifying both gains and losses.",
         "keyPoints": ["DOL = CM / Operating Income", "Higher fixed costs = higher DOL", "Both profit gains and losses are amplified", "Increases business risk in downturns"]
+      },
+      {
+        "id": "su5_a4",
+        "prompt": "A company sells a product at $120, variable cost per unit is $72, and fixed costs are $48,000. The tax rate is 25%. Calculate: (a) contribution margin per unit and CM ratio, (b) break-even point in units and dollars, (c) units needed to earn an after-tax profit of $27,000, (d) margin of safety if current sales are 1,500 units.",
+        "modelAnswer": "(a) CM per unit = $120 − $72 = $48. CM Ratio = $48 / $120 = 40%.\n\n(b) BEP units = $48,000 / $48 = 1,000 units. BEP dollars = $48,000 / 0.40 = $120,000.\n\n(c) Convert after-tax to pre-tax: $27,000 ÷ (1 − 0.25) = $27,000 ÷ 0.75 = $36,000. Target units = ($48,000 + $36,000) ÷ $48 = $84,000 ÷ $48 = 1,750 units.\n\n(d) MOS in units = 1,500 − 1,000 = 500 units. MOS % = 500 / 1,500 = 33.3%. Sales can drop 33.3% before the company breaks even.",
+        "keyPoints": [
+          "CM = Selling Price − Variable Cost; CM Ratio = CM / Selling Price",
+          "BEP units = Fixed Costs / CM per unit",
+          "After-tax to pre-tax conversion: divide by (1 − tax rate) BEFORE applying CVP formula",
+          "Target units = (Fixed Costs + Pre-tax Target) / CM per unit",
+          "MOS = Actual Sales − BEP Sales (units or %)"
+        ]
       }
     ]
   }
