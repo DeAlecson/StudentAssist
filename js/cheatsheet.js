@@ -268,34 +268,33 @@ def validate(x): ...       # no self or cls</pre>
   <div class="cs-section">
     <div class="cs-sh">Account Types — ALREX + Dr/Cr Rules</div>
     <table class="cs-table">
-      <tr><th>Type</th><th>Examples</th><th>Increase</th><th>Decrease</th><th>Statement</th></tr>
-      <tr><td><b>A</b>sset</td><td>Cash, Receivables, Equipment, Prepaid</td><td class="yes">Dr ↑</td><td class="no">Cr ↓</td><td>SoFP</td></tr>
-      <tr><td><b>L</b>iability</td><td>Payables, Loans, Unearned Revenue</td><td class="no">Cr ↑</td><td class="yes">Dr ↓</td><td>SoFP</td></tr>
-      <tr><td><b>E</b>quity</td><td>Share Capital, Retained Earnings</td><td class="no">Cr ↑</td><td class="yes">Dr ↓</td><td>SoFP</td></tr>
-      <tr><td><b>R</b>evenue</td><td>Sales, Service Revenue</td><td class="no">Cr ↑</td><td class="yes">Dr ↓</td><td>IS</td></tr>
-      <tr><td><b>X</b>pense</td><td>Salary, Rent, Depreciation Exp.</td><td class="yes">Dr ↑</td><td class="no">Cr ↓</td><td>IS</td></tr>
+      <tr><th>Type</th><th>Examples</th><th>↑ Increase</th><th>↓ Decrease</th><th>Statement</th></tr>
+      <tr><td><b>A</b>sset</td><td>Cash, Receivables, Equipment, Prepaid</td><td class="yes">Dr</td><td class="no">Cr</td><td>SoFP</td></tr>
+      <tr><td><b>L</b>iability</td><td>Payables, Loans, Unearned Revenue</td><td class="no">Cr</td><td class="yes">Dr</td><td>SoFP</td></tr>
+      <tr><td><b>E</b>quity</td><td>Share Capital, Retained Earnings</td><td class="no">Cr</td><td class="yes">Dr</td><td>SoFP</td></tr>
+      <tr><td><b>R</b>evenue</td><td>Sales, Service Revenue</td><td class="no">Cr</td><td class="yes">Dr</td><td>IS</td></tr>
+      <tr><td><b>X</b>pense</td><td>Salary, Rent, Dep. Expense</td><td class="yes">Dr</td><td class="no">Cr</td><td>IS</td></tr>
     </table>
-    <div class="cs-note">Stock accounts (A, L, E) = Balance Sheet · Flow accounts (R, X) = Income Statement · Flow accounts reset to $0 each period</div>
+    <div class="cs-note">A/L/E = Stock (SoFP, measured at a date) · R/X = Flow (IS, measured over a period, reset each year)</div>
   </div>
 
   <div class="cs-section">
-    <div class="cs-sh">Accounting Equation &amp; Equity</div>
+    <div class="cs-sh">Accounting Equation</div>
     <div class="cs-formula">Assets = Liabilities + Equity</div>
     <div class="cs-formula">Equity = Share Capital + Retained Earnings + Revenue − Expenses</div>
     <div class="cs-formula">Closing Equity = Opening Equity + Net Profit − Dividends</div>
-    <div class="cs-note">Revenue ↑ Equity · Expenses ↓ Equity · Every transaction must keep equation balanced</div>
   </div>
 
   <div class="cs-section">
     <div class="cs-sh">Adjusting Entries — 4 Types</div>
     <table class="cs-table">
-      <tr><th>Type</th><th>When cash is paid/received</th><th>Adjusting Entry (period end)</th></tr>
-      <tr><td><b>Prepaid Expense</b></td><td>Cash paid BEFORE expense used<br><i>Dr Prepaid / Cr Cash</i></td><td>Dr Expense / Cr Prepaid<br><i>(portion used this period)</i></td></tr>
-      <tr><td><b>Accrued Expense</b></td><td>Cash paid AFTER expense incurred</td><td>Dr Expense / Cr Accrued Liability<br><i>(owe but haven't paid)</i></td></tr>
-      <tr><td><b>Unearned Revenue</b></td><td>Cash received BEFORE service done<br><i>Dr Cash / Cr Unearned Rev.</i></td><td>Dr Unearned Revenue / Cr Revenue<br><i>(portion earned this period)</i></td></tr>
-      <tr><td><b>Accrued Revenue</b></td><td>Cash received AFTER service done</td><td>Dr Accounts Receivable / Cr Revenue<br><i>(earned but not yet billed)</i></td></tr>
+      <tr><th>Type</th><th>Initial Entry (when cash moves)</th><th>Period-End Adjusting Entry</th></tr>
+      <tr><td><b>Prepaid Expense</b><br><i>cash before service</i></td><td>Dr Prepaid Asset / Cr Cash</td><td>Dr Expense / Cr Prepaid<br>(portion used = Total ÷ months × months used)</td></tr>
+      <tr><td><b>Accrued Expense</b><br><i>cash after service</i></td><td>— (paid later)</td><td>Dr Expense / Cr Accrued Liability</td></tr>
+      <tr><td><b>Unearned Revenue</b><br><i>cash before service</i></td><td>Dr Cash / Cr Unearned Revenue</td><td>Dr Unearned Revenue / Cr Revenue<br>(portion earned this period)</td></tr>
+      <tr><td><b>Accrued Revenue</b><br><i>cash after service</i></td><td>— (collected later)</td><td>Dr Accounts Receivable / Cr Revenue</td></tr>
     </table>
-    <div class="cs-note">Prepaid formula: Monthly = Total ÷ Months · Remaining Prepaid = Total − Amount Used</div>
+    <div class="cs-note">Remaining Prepaid = Total Paid − Amount Expensed · Remaining Unearned = Total Received − Revenue Recognised</div>
   </div>
 
   <div class="cs-section">
@@ -303,7 +302,7 @@ def validate(x): ...       # no self or cls</pre>
     <div class="cs-formula">Straight-Line: Dep/yr = (Cost − Residual Value) ÷ Useful Life</div>
     <div class="cs-formula">Reducing Balance: Dep/yr = Carrying Value × Rate%</div>
     <div class="cs-formula">Carrying Value = Cost − Accumulated Depreciation</div>
-    <div class="cs-note">Journal: Dr Depreciation Expense / Cr Accumulated Depreciation (contra-asset)</div>
+    <div class="cs-note">Journal: Dr Depreciation Expense / Cr Accumulated Depreciation · ❌ NOT a cash flow item</div>
   </div>
 
   <div class="cs-section">
@@ -312,15 +311,64 @@ def validate(x): ...       # no self or cls</pre>
     <div class="cs-formula">CM Ratio = CM per unit ÷ Selling Price</div>
     <div class="cs-formula">BEP (units) = Fixed Costs ÷ CM per unit</div>
     <div class="cs-formula">BEP ($) = Fixed Costs ÷ CM Ratio</div>
-    <div class="cs-formula">Target units (pre-tax) = (FC + Target Profit) ÷ CM</div>
-    <div class="cs-formula" style="background:rgba(245,158,11,0.12)">⭐ After-tax target → Pre-tax: Pre-tax Profit = After-tax ÷ (1 − Tax Rate)</div>
-    <div class="cs-formula">Margin of Safety (units) = Actual Sales − BEP · MOS% = MOS ÷ Actual × 100%</div>
-    <div class="cs-formula">Degree of Operating Leverage (DOL) = CM ÷ Operating Income</div>
-    <div class="cs-note">DOL × % change in sales = % change in profit · High DOL = high fixed costs = amplified swings</div>
+    <div class="cs-formula">Target units = (Fixed Costs + Target Pre-tax Profit) ÷ CM per unit</div>
+    <div class="cs-formula" style="background:rgba(245,158,11,0.15);border-color:#f59e0b">⭐ After-tax profit → Pre-tax: Pre-tax = After-tax ÷ (1 − Tax Rate) → then use above</div>
+    <div class="cs-formula">MOS (units) = Actual Sales − BEP · MOS% = MOS ÷ Actual × 100%</div>
+    <div class="cs-formula">DOL = Total CM ÷ Operating Income · DOL × %Δsales = %Δprofit</div>
+  </div>
+
+  <div class="cs-section">
+    <div class="cs-sh">Financial Ratios</div>
+    <table class="cs-table">
+      <tr><th>Ratio</th><th>Formula</th></tr>
+      <tr><td colspan="2" style="background:rgba(245,158,11,0.08);font-weight:600;font-size:0.7rem;padding:2px 6px">LIQUIDITY</td></tr>
+      <tr><td>Current Ratio</td><td>Current Assets ÷ Current Liabilities</td></tr>
+      <tr><td>Acid-Test</td><td>(Current Assets − Inventory) ÷ Current Liabilities</td></tr>
+      <tr><td colspan="2" style="background:rgba(245,158,11,0.08);font-weight:600;font-size:0.7rem;padding:2px 6px">PROFITABILITY</td></tr>
+      <tr><td>Gross Profit Margin</td><td>Gross Profit ÷ Revenue × 100%</td></tr>
+      <tr><td>Net Profit Margin</td><td>PAT ÷ Revenue × 100%</td></tr>
+      <tr><td>ROE</td><td>PAT ÷ Avg Equity × 100%</td></tr>
+      <tr><td>ROA</td><td>PAT ÷ Avg Total Assets × 100%</td></tr>
+      <tr><td colspan="2" style="background:rgba(245,158,11,0.08);font-weight:600;font-size:0.7rem;padding:2px 6px">EFFICIENCY</td></tr>
+      <tr><td>Inventory Days</td><td>Avg Inventory ÷ (COGS ÷ 365)</td></tr>
+      <tr><td>Receivables Days</td><td>Avg Receivables ÷ (Credit Sales ÷ 365)</td></tr>
+      <tr><td>Payables Days</td><td>Avg Payables ÷ (COGS ÷ 365)</td></tr>
+      <tr><td colspan="2" style="background:rgba(245,158,11,0.08);font-weight:600;font-size:0.7rem;padding:2px 6px">LEVERAGE</td></tr>
+      <tr><td>Gearing</td><td>IBL ÷ (IBL + Equity) × 100%</td></tr>
+      <tr><td>Interest Coverage</td><td>EBIT ÷ Interest Expense (times)</td></tr>
+      <tr><td>EPS</td><td>PAT ÷ No. of Ordinary Shares</td></tr>
+    </table>
   </div>
 
 </div>
 <div class="cs-col">
+
+  <div class="cs-section">
+    <div class="cs-sh">⭐ Cash Budget Template</div>
+    <table class="cs-table">
+      <tr><th></th><th>Month 1</th><th>Month 2</th><th>Month 3</th><th>Total</th></tr>
+      <tr><td><b>Opening Cash Balance</b></td><td>$X</td><td>↑prev closing</td><td>↑prev closing</td><td>—</td></tr>
+      <tr><td colspan="5" style="background:rgba(245,158,11,0.06);font-weight:600;font-size:0.7rem;padding:2px 6px">ADD: CASH RECEIPTS</td></tr>
+      <tr><td>Cash Sales</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Credit collected: same month (x%)</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Credit collected: prior month (y%)</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><b>= Cash Available</b></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td colspan="5" style="background:rgba(245,158,11,0.06);font-weight:600;font-size:0.7rem;padding:2px 6px">LESS: CASH DISBURSEMENTS</td></tr>
+      <tr><td>Purchases / COGS (cash)</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Wages / Salaries</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Cash operating expenses</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Rent / other one-off items</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><b>= Total Disbursements</b></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><b>Excess / (Shortage)</b></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td colspan="5" style="background:rgba(245,158,11,0.06);font-weight:600;font-size:0.7rem;padding:2px 6px">FINANCING</td></tr>
+      <tr><td>+ Borrowing</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>− Loan Repayment</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>− Interest Paid</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><b>Closing Cash Balance</b></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    <div class="cs-note" style="color:#ef4444;font-weight:600">❌ NEVER include Depreciation — it is non-cash. Only include CASH items.</div>
+    <div class="cs-note">Interest = Principal × Rate × (months ÷ 12) · Quarterly rent = Annual ÷ 4 · Closing = prev Opening next month</div>
+  </div>
 
   <div class="cs-section">
     <div class="cs-sh">⭐ Static vs Flexible Budget Template</div>
@@ -332,65 +380,35 @@ def validate(x): ...       # no self or cls</pre>
       <tr><td><b>Fixed Costs</b></td><td>Budget FC</td><td>Budget FC</td><td>Actual FC</td></tr>
       <tr><td><b>Operating Profit</b></td><td><b>$A</b></td><td><b>$B</b></td><td><b>$C</b></td></tr>
     </table>
-    <div class="cs-formula">Sales Volume Variance (SVV) = $B − $A &nbsp;→&nbsp; F if B &gt; A (sold more than planned)</div>
-    <div class="cs-formula">Flexible Budget Variance (FBV) = $C − $B &nbsp;→&nbsp; F if C &gt; B (better prices/costs)</div>
-    <div class="cs-formula">Total Variance = $C − $A = SVV + FBV &nbsp;✓ (always verify)</div>
-    <div class="cs-note">F = Favourable (actual better than budget) · U = Unfavourable (actual worse)</div>
+    <div class="cs-formula">Sales Volume Variance = $B − $A &nbsp;(F if B &gt; A = sold more than planned)</div>
+    <div class="cs-formula">Flexible Budget Variance = $C − $B &nbsp;(F if C &gt; B = better prices/costs)</div>
+    <div class="cs-formula">Total Variance = $C − $A = SVV + FBV &nbsp;← always verify this</div>
+    <div class="cs-note">F = Favourable · U = Unfavourable · Flexible budget isolates volume effect from price/cost effect</div>
   </div>
 
   <div class="cs-section">
-    <div class="cs-sh">Financial Statements — Structure</div>
+    <div class="cs-sh">Financial Statements — Quick Ref</div>
     <table class="cs-table">
-      <tr><th>Statement</th><th>What it shows</th><th>Period or Date?</th></tr>
-      <tr><td><b>Income Statement</b></td><td>Revenue − COGS = GP − Expenses = EBIT − Interest = EBT − Tax = PAT</td><td>Period (flow)</td></tr>
-      <tr><td><b>Statement of Financial Position</b> (Balance Sheet)</td><td>Assets = Liabilities + Equity</td><td>At a date (stock)</td></tr>
-      <tr><td><b>Statement of Changes in Equity</b></td><td>Opening Equity + Net Profit − Dividends = Closing Equity</td><td>Period (flow)</td></tr>
-      <tr><td><b>Statement of Cash Flows</b></td><td>Operating + Investing + Financing = Net Cash Change</td><td>Period (flow)</td></tr>
+      <tr><th>Statement</th><th>Formula / Structure</th><th>Date or Period?</th></tr>
+      <tr><td><b>Income Statement</b></td><td>Revenue − COGS = GP − Expenses = EBIT − Interest = EBT − Tax = PAT</td><td>Period</td></tr>
+      <tr><td><b>Balance Sheet (SoFP)</b></td><td>Assets = Liabilities + Equity</td><td>At a date</td></tr>
+      <tr><td><b>Changes in Equity</b></td><td>Opening Equity + PAT − Dividends = Closing Equity</td><td>Period</td></tr>
+      <tr><td><b>Cash Flow Stmt</b></td><td>Operating ± Investing ± Financing = Net change in cash</td><td>Period</td></tr>
     </table>
-    <table class="cs-table" style="margin-top:6px">
-      <tr><th>Cash Flow Section</th><th>Key Items</th></tr>
-      <tr><td><b>Operating</b></td><td>Collections, payments to suppliers/employees, tax paid</td></tr>
-      <tr><td><b>Investing</b></td><td>Buy/sell property, equipment, long-term investments</td></tr>
-      <tr><td><b>Financing</b></td><td>Issuing shares, borrowing, repaying loans, paying dividends</td></tr>
-    </table>
-  </div>
-
-  <div class="cs-section">
-    <div class="cs-sh">Financial Ratios</div>
-    <table class="cs-table">
-      <tr><th>Ratio</th><th>Formula</th></tr>
-      <tr><td colspan="2" style="background:rgba(245,158,11,0.08);font-weight:600">Liquidity</td></tr>
-      <tr><td>Current Ratio</td><td>Current Assets ÷ Current Liabilities <i>(healthy &gt;1)</i></td></tr>
-      <tr><td>Acid-Test (Quick)</td><td>(Current Assets − Inventory) ÷ Current Liabilities</td></tr>
-      <tr><td colspan="2" style="background:rgba(245,158,11,0.08);font-weight:600">Profitability</td></tr>
-      <tr><td>Gross Profit Margin</td><td>Gross Profit ÷ Revenue × 100%</td></tr>
-      <tr><td>Net Profit Margin</td><td>PAT ÷ Revenue × 100%</td></tr>
-      <tr><td>ROE</td><td>PAT ÷ Avg Shareholders' Equity × 100%</td></tr>
-      <tr><td>ROA</td><td>PAT ÷ Avg Total Assets × 100%</td></tr>
-      <tr><td colspan="2" style="background:rgba(245,158,11,0.08);font-weight:600">Efficiency</td></tr>
-      <tr><td>Inventory Turnover</td><td>COGS ÷ Avg Inventory <i>(times/yr)</i></td></tr>
-      <tr><td>Inventory Days</td><td>365 ÷ Inventory Turnover</td></tr>
-      <tr><td>Receivables Days</td><td>Avg Receivables ÷ (Credit Sales ÷ 365)</td></tr>
-      <tr><td>Payables Days</td><td>Avg Payables ÷ (COGS ÷ 365)</td></tr>
-      <tr><td colspan="2" style="background:rgba(245,158,11,0.08);font-weight:600">Leverage &amp; Market</td></tr>
-      <tr><td>Gearing</td><td>IBL ÷ (IBL + Equity) × 100%</td></tr>
-      <tr><td>Interest Coverage</td><td>EBIT ÷ Interest Expense <i>(times)</i></td></tr>
-      <tr><td>EPS</td><td>PAT ÷ No. of Ordinary Shares</td></tr>
-      <tr><td>P/E Ratio</td><td>Market Price per Share ÷ EPS</td></tr>
-    </table>
+    <div class="cs-note">Operating = day-to-day · Investing = buy/sell long-term assets · Financing = loans, shares, dividends</div>
   </div>
 
   <div class="cs-section">
     <div class="cs-sh">Budgeting Quick Reference</div>
     <table class="cs-table">
-      <tr><th>Approach</th><th>Key Feature</th><th>Strength / Weakness</th></tr>
-      <tr><td><b>Incremental</b></td><td>Prior year + adjustments</td><td>Fast; may entrench inefficiencies</td></tr>
-      <tr><td><b>Zero-Based (ZBB)</b></td><td>Every item justified from $0</td><td>Eliminates waste; very time-consuming</td></tr>
-      <tr><td><b>Rolling</b></td><td>Always adds next period as one expires</td><td>Current; never "stale"</td></tr>
-      <tr><td><b>Top-Down</b></td><td>Senior management sets targets</td><td>Fast alignment; low buy-in</td></tr>
-      <tr><td><b>Participative</b></td><td>Managers provide input</td><td>Accurate; risk of padding/slack</td></tr>
+      <tr><th>Type</th><th>Key Feature</th><th>Pro / Con</th></tr>
+      <tr><td><b>Incremental</b></td><td>Prior year ± adjustments</td><td>Fast · may entrench waste</td></tr>
+      <tr><td><b>Zero-Based</b></td><td>Justify every line from $0</td><td>No waste · very time-consuming</td></tr>
+      <tr><td><b>Rolling</b></td><td>Always adds next period as one ends</td><td>Always current · never stale</td></tr>
+      <tr><td><b>Top-Down</b></td><td>Senior mgmt sets targets</td><td>Aligned · low buy-in</td></tr>
+      <tr><td><b>Participative</b></td><td>Managers provide input</td><td>Accurate · risk of slack</td></tr>
     </table>
-    <div class="cs-note">Master budget sequence: Sales → Production → Materials → Labour → Overhead → Cash → Budgeted IS → Budgeted SoFP</div>
+    <div class="cs-note">Master budget order: Sales → Production → Materials → Labour → Overhead → Cash Budget → Budgeted IS → Budgeted SoFP</div>
   </div>
 
 </div>`;
