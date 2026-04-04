@@ -2706,25 +2706,30 @@
 /* ═════ HUB USER CHIP ═════ */
 .hub-inner { position: relative; }
 .hub-user-chip {
-  position: absolute; top: 0; right: 0;
-  display: flex; align-items: center; gap: 0.5rem;
+  position: fixed; top: 1.25rem; right: 1.25rem; z-index: 100;
+  display: flex; align-items: center; gap: 0.6rem;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 999px; padding: 0.3rem 0.75rem 0.3rem 0.3rem;
+  border-radius: 12px; padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 .hub-user-chip.hidden { display: none; }
 .hub-user-avatar {
-  width: 26px; height: 26px; border-radius: 50%;
-  background: var(--accent); color: #fff;
-  font-size: 0.7rem; font-weight: 700;
+  width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, #00d4ff, #a855f7);
+  color: #fff; font-size: 0.8rem; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
 }
-.hub-user-name { font-size: 0.8rem; font-weight: 600; color: var(--text); max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hub-user-info { display: flex; flex-direction: column; line-height: 1.2; }
+.hub-user-name { font-size: 0.82rem; font-weight: 700; color: var(--text); max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hub-user-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; }
 .hub-signout-btn {
-  background: none; border: none; cursor: pointer;
-  color: var(--text-muted); font-size: 0.85rem; padding: 0 0.1rem;
-  transition: color 0.15s;
+  background: none; border: 1px solid var(--border); cursor: pointer;
+  color: var(--text-muted); font-size: 0.7rem; font-weight: 600;
+  padding: 0.25rem 0.5rem; border-radius: 6px; margin-left: 0.25rem;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  white-space: nowrap;
 }
-.hub-signout-btn:hover { color: var(--text); }
+.hub-signout-btn:hover { color: var(--text); border-color: var(--text-muted); background: var(--bg); }
 
 /* ═════ TOPBAR USER CHIP ═════ */
 .topbar-user-chip {
