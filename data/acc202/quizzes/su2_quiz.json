@@ -5,157 +5,182 @@
     {
       "id": "acc_su2_q1",
       "type": "mcq",
-      "concept": "accrual vs cash basis",
+      "concept": "Accrual vs Cash Basis",
       "prompt": "Under accrual basis accounting, when is revenue recognised?",
       "difficulty": 1,
-      "choices": ["When cash is received", "When an invoice is sent", "When the service is performed or goods are delivered", "When the customer's cheque clears the bank"],
+      "choices": [
+        "When cash is received",
+        "When an invoice is sent to the customer",
+        "When the service is performed or goods are delivered",
+        "When the customer confirms satisfaction"
+      ],
       "answer": 2,
-      "explanation": "Accrual basis recognises revenue when EARNED (service performed or goods delivered), not when cash is received. This matches revenue to the period in which it was earned."
+      "explanation": "Accrual basis recognises revenue when EARNED — when the service is performed or goods are delivered — regardless of when cash is received. This matches revenue to the period it was earned."
     },
     {
       "id": "acc_su2_q2",
       "type": "mcq",
-      "concept": "revenue recognition principle",
+      "concept": "Revenue Recognition",
       "prompt": "A consulting firm completes a $10,000 project in December but receives payment in January. Under accrual accounting, in which month is revenue recognised?",
       "difficulty": 2,
-      "choices": ["January only", "December only", "Split between December and January", "Neither — it's revenue only when cash is received"],
+      "choices": [
+        "January — when cash is received",
+        "December — when the service is performed",
+        "Split evenly between December and January",
+        "Neither — only when the invoice is issued"
+      ],
       "answer": 1,
-      "explanation": "Revenue is recognised in December when earned (work completed). Cash collection happens in January. Accrual basis separates the timing of earning revenue from receiving payment."
+      "explanation": "Revenue is recognised in December when EARNED (work completed), not when cash arrives in January. Accrual basis separates the timing of earning revenue from receiving payment."
     },
     {
       "id": "acc_su2_q3",
       "type": "mcq",
-      "concept": "prepaid expenses",
-      "prompt": "A company pays $24,000 for 12 months of insurance on 1 October. By 31 December, how much should be recorded as an expense?",
+      "concept": "Prepaid Expenses",
+      "prompt": "A company pays $24,000 for 12 months of insurance on 1 October. By 31 December, what amount should be recorded as an expense?",
       "difficulty": 2,
-      "choices": ["$24,000", "$18,000", "$6,000", "$0 — expense is recorded when paid"],
+      "choices": [
+        "$24,000",
+        "$18,000",
+        "$6,000",
+        "$0 — expense is recorded when paid"
+      ],
       "answer": 2,
-      "explanation": "From October 1 to December 31 is 3 months. Expense = $24,000 / 12 × 3 = $6,000. The remaining $18,000 stays as Prepaid Insurance (an asset)."
+      "explanation": "From October 1 to December 31 = 3 months used. Expense = $24,000 ÷ 12 × 3 = $6,000. The remaining $18,000 stays as Prepaid Insurance (an asset — future benefit not yet consumed)."
     },
     {
       "id": "acc_su2_q4",
       "type": "mcq",
-      "concept": "accrued expenses",
-      "prompt": "Employees earn $15,000 in December salaries but are paid in January. What is the December adjusting entry?",
+      "concept": "Accrued Expenses — Account Effect",
+      "prompt": "Employees earn $15,000 in December salaries but will be paid in January. In December, which types of accounts are affected and how? (Activity 2 style)",
       "difficulty": 2,
       "choices": [
-        "Dr Cash $15,000, Cr Salary Expense $15,000",
-        "Dr Salary Expense $15,000, Cr Salaries Payable $15,000",
-        "Dr Salaries Payable $15,000, Cr Salary Expense $15,000",
-        "Dr Cash $15,000, Cr Salaries Payable $15,000"
+        "Assets decrease $15,000; Liabilities increase $15,000",
+        "Expenses increase $15,000; Assets decrease $15,000",
+        "Expenses increase $15,000; Liabilities increase $15,000",
+        "Liabilities decrease $15,000; Equity decreases $15,000"
       ],
-      "answer": 1,
-      "explanation": "December expense (debit) is matched to December period. Salaries Payable (liability) increases with credit. The January payment will debit Salaries Payable and credit Cash."
+      "answer": 2,
+      "explanation": "Salary Expense increases $15,000 (expense incurred → reduces equity). Salaries Payable (Liability) increases $15,000 (obligation to pay in January). No cash has moved yet — cash only decreases when payment is made in January."
     },
     {
       "id": "acc_su2_q5",
       "type": "mcq",
-      "concept": "unearned revenue",
-      "prompt": "A customer pays $6,000 on 1 November for 3 months of service (Nov-Jan). On 30 November, what journal entry is needed?",
+      "concept": "Unearned Revenue — Earning It",
+      "prompt": "A customer pays $6,000 on 1 November for 3 months of service (Nov–Jan). On 30 November, one month of service is earned. Which accounts are affected?",
       "difficulty": 2,
       "choices": [
-        "Dr Unearned Revenue $2,000, Cr Service Revenue $2,000",
-        "No entry — revenue was already recorded in November",
-        "Dr Cash $2,000, Cr Service Revenue $2,000",
-        "Dr Service Revenue $2,000, Cr Unearned Revenue $2,000"
+        "Assets increase $2,000; Revenue increases $2,000",
+        "Liabilities decrease $2,000; Revenue increases $2,000",
+        "Liabilities increase $2,000; Assets decrease $2,000",
+        "Equity increases $2,000; Liabilities increase $2,000"
       ],
-      "answer": 0,
-      "explanation": "One month of service is earned in November ($6,000 / 3 = $2,000). This reduces unearned revenue (liability) by debit and increases revenue by credit. Remaining unearned = $4,000."
+      "answer": 1,
+      "explanation": "When the service is performed, Unearned Revenue (Liability) decreases $2,000 — the obligation is fulfilled. Revenue increases $2,000 — now actually earned. The other $4,000 remains as Unearned Revenue (Liability) for Nov–Jan remaining."
     },
     {
       "id": "acc_su2_q6",
       "type": "mcq",
-      "concept": "matching principle",
-      "prompt": "What is the matching principle?",
+      "concept": "Matching Principle",
+      "prompt": "What does the matching principle require?",
       "difficulty": 1,
       "choices": [
         "Revenue must equal expenses each period",
-        "All accounts must have equal debits and credits",
-        "Expenses must be matched to the period in which they help generate revenue",
-        "All transactions must have matching debit and credit entries"
+        "All accounts must balance to zero at year end",
+        "Expenses must be recorded in the same period as the revenue they helped generate",
+        "All transactions must have two equal entries"
       ],
       "answer": 2,
-      "explanation": "The matching principle ensures expenses are recorded in the same period as the revenue they helped generate. This gives an accurate profit figure for each period."
+      "explanation": "The matching principle ensures expenses are recorded in the same period as the revenue they helped produce. This gives an accurate profit figure — not distorted by timing of cash payments."
     },
     {
       "id": "acc_su2_q7",
       "type": "mcq",
-      "concept": "accrued revenue",
-      "prompt": "A company performs $8,000 of work in December but has not yet invoiced the customer. What adjusting entry is needed?",
+      "concept": "Accrued Revenue — Account Effect",
+      "prompt": "A company performs $8,000 of consulting work in December but has not yet collected payment. Which accounts are affected and how?",
       "difficulty": 2,
       "choices": [
-        "Dr Accounts Receivable $8,000, Cr Service Revenue $8,000",
-        "Dr Cash $8,000, Cr Service Revenue $8,000",
-        "Dr Service Revenue $8,000, Cr Accounts Receivable $8,000",
-        "No entry needed until the customer is invoiced"
+        "Assets increase $8,000; Revenue increases $8,000",
+        "Assets decrease $8,000; Liabilities decrease $8,000",
+        "Liabilities increase $8,000; Revenue increases $8,000",
+        "Equity increases $8,000; Revenue decreases $8,000"
       ],
       "answer": 0,
-      "explanation": "Revenue is earned in December even though cash hasn't been received. This creates an asset (Accounts Receivable) and recognises revenue in the correct period."
+      "explanation": "Revenue is earned in December even though cash hasn't been received. Accounts Receivable (Asset) increases $8,000 — money owed by the client. Revenue increases $8,000 — earned this period. This ensures revenue is matched to December where it was earned."
     },
     {
       "id": "acc_su2_q8",
       "type": "mcq",
-      "concept": "unearned revenue classification",
+      "concept": "Unearned Revenue Classification",
       "prompt": "Unearned revenue is best classified as:",
       "difficulty": 1,
-      "choices": ["An asset — it represents future cash to be received", "A liability — it represents a future obligation to perform work", "Equity — the customer has invested in the company", "An expense — the company has incurred future costs"],
+      "choices": [
+        "An asset — it represents future cash to be received",
+        "A liability — the company owes a future service to the customer",
+        "Equity — the customer has invested in the company",
+        "An expense — the company has incurred future costs"
+      ],
       "answer": 1,
-      "explanation": "Unearned revenue is a LIABILITY because the company owes the customer a service. Once the service is performed, it transfers from liability to revenue."
+      "explanation": "Unearned Revenue is a LIABILITY because the company has received cash but has NOT yet performed the service. It owes the customer a future service — that is an obligation. Once the service is performed, Unearned Revenue (Liability) decreases and Revenue increases."
     },
     {
       "id": "acc_su2_q9",
       "type": "mcq",
-      "concept": "multi-period prepayment",
-      "prompt": "On 1 September, a company pays $3,600 for 6 months of rent (Sept-Feb). By 31 December, what amount should remain as Prepaid Rent?",
+      "concept": "Prepaid Expense — Remaining Balance",
+      "prompt": "On 1 September, a company pays $3,600 for 6 months of rent (Sept–Feb). By 31 December, what amount REMAINS as Prepaid Rent?",
       "difficulty": 2,
-      "choices": ["$3,600", "$1,200", "$2,400", "$0"],
+      "choices": [
+        "$3,600",
+        "$1,200",
+        "$2,400",
+        "$0"
+      ],
       "answer": 1,
-      "explanation": "$3,600 / 6 months = $600 per month. From September 1 to December 31 = 4 months used. Rent Expense = 4 × $600 = $2,400. Remaining Prepaid Rent (January–February = 2 months) = 2 × $600 = $1,200. The question asks what REMAINS as Prepaid Rent at 31 December, which is $1,200."
+      "explanation": "$3,600 ÷ 6 months = $600 per month. Sept to Dec = 4 months used → Rent Expense = $2,400. Remaining Prepaid (Jan–Feb = 2 months) = 2 × $600 = $1,200. The question asks what REMAINS as an asset, which is $1,200."
     },
     {
       "id": "acc_su2_q10",
       "type": "mcq",
-      "concept": "inventory and receivables",
-      "prompt": "Allowance for doubtful debts is recorded to:",
+      "concept": "Transaction Analysis — No Effect",
+      "prompt": "Mary hired a new employee at a monthly salary of $3,000. The employee will start work on 1 April. What is the effect on Mary's accounts today? (Activity 2, Q1 v)",
       "difficulty": 2,
       "choices": [
-        "Reduce inventory to lower of cost or market",
-        "Estimate and record bad debt expense and reduce receivables to net realisable value",
-        "Accrue revenue that may not be collected",
-        "Record interest earned on accounts receivable"
+        "Expenses increase $3,000; Liabilities increase $3,000",
+        "Assets decrease $3,000; Equity decreases $3,000",
+        "No effect — no transaction has occurred yet",
+        "Liabilities increase $3,000; Assets increase $3,000"
       ],
-      "answer": 1,
-      "explanation": "Allowance for doubtful debts is a contra-asset account that reduces accounts receivable on the balance sheet and records an estimated bad debt expense on the income statement. This matches the expense to the period revenue was earned."
+      "answer": 2,
+      "explanation": "Hiring an employee is not a transaction until work is performed and compensation is owed. Since the employee hasn't started yet, there is NO financial effect today. Expenses are only recorded when they are incurred — not when a future commitment is made."
     },
     {
       "id": "acc_su2_q11",
       "type": "mcq",
-      "concept": "unearned revenue adjusting entry",
+      "concept": "Unearned Revenue — Period-End Adjustment",
+      "prompt": "On 1 Nov, a company receives $9,600 for a 12-month maintenance contract (Nov to Oct). At 31 Dec (year end), 2 months have been earned. Which accounts are affected for the adjustment?",
       "difficulty": 3,
-      "prompt": "On 1 November, a company receives $9,600 in advance for a 12-month maintenance contract (Nov to Oct). At 31 December (year end), what is the adjusting entry?",
       "choices": [
-        "Dr Unearned Revenue $1,600, Cr Revenue $1,600",
-        "Dr Revenue $1,600, Cr Unearned Revenue $1,600",
-        "Dr Cash $9,600, Cr Revenue $9,600",
-        "Dr Unearned Revenue $9,600, Cr Revenue $9,600"
+        "Liabilities decrease $1,600; Revenue increases $1,600",
+        "Liabilities increase $1,600; Revenue increases $1,600",
+        "Assets decrease $1,600; Revenue increases $1,600",
+        "Liabilities decrease $9,600; Revenue increases $9,600"
       ],
       "answer": 0,
-      "explanation": "From Nov 1 to Dec 31 = 2 months earned. Monthly rate = $9,600 / 12 = $800. Revenue earned = 2 × $800 = $1,600. Adjusting entry: Dr Unearned Revenue $1,600 (liability decreases) Cr Revenue $1,600 (income recognised). Remaining $8,000 stays as Unearned Revenue (liability) for the remaining 10 months."
+      "explanation": "Monthly rate = $9,600 ÷ 12 = $800. Nov + Dec = 2 months earned = $1,600. Unearned Revenue (Liability) decreases $1,600 — the obligation for 2 months is now fulfilled. Revenue increases $1,600 — now earned. Remaining $8,000 stays as Unearned Revenue (Liability) for the next 10 months."
     },
     {
       "id": "acc_su2_q12",
       "type": "mcq",
-      "concept": "accrued revenue adjusting entry",
+      "concept": "Accrual vs Cash Profit",
+      "prompt": "Henry's firm received $2,000 cash on 29 Jan for consulting to be done in February, and earned $3,000 on credit on 24 Jan (not yet collected). Under accrual accounting, how much revenue is recognised in January? (Activity 2, Q2)",
       "difficulty": 3,
-      "prompt": "A consultancy provides $8,000 of services in December but will not invoice the client until January. What is the December 31 year-end adjusting entry?",
       "choices": [
-        "Dr Accounts Receivable $8,000, Cr Revenue $8,000",
-        "Dr Revenue $8,000, Cr Accounts Receivable $8,000",
-        "Dr Cash $8,000, Cr Revenue $8,000",
-        "No entry needed until cash is received"
+        "$2,000 — only cash received counts",
+        "$3,000 — only the credit service counts",
+        "$5,000 — both cash received and credit service",
+        "$3,000 cash + $2,000 credit = $5,000 total"
       ],
-      "answer": 0,
-      "explanation": "Accrued revenue (also called accrued income) is revenue earned but not yet billed or collected. The adjusting entry creates an asset (Accounts Receivable / Accrued Revenue) for money owed and recognises the revenue in the period it was earned. Dr Accounts Receivable $8,000, Cr Revenue $8,000. When the invoice is paid in January, Dr Cash, Cr Accounts Receivable."
+      "answer": 1,
+      "explanation": "Under accrual accounting: the $2,000 received in advance is NOT revenue yet — it is Unearned Revenue (Liability) because the service is in February. The $3,000 credit service IS revenue in January because it was earned in January (service already performed). Accrual revenue = $3,000 only. Cash basis would record $2,000 (cash received) and ignore the $3,000 not yet collected."
     }
   ]
 }
