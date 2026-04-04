@@ -136,8 +136,10 @@ const Auth = {
   },
 
   async signUp(email, password) {
+    const redirectTo = window.location.href.split('?')[0].split('#')[0];
     const { error } = await this.client.auth.signUp({
-      email: email.trim().toLowerCase(), password
+      email: email.trim().toLowerCase(), password,
+      options: { emailRedirectTo: redirectTo }
     });
     return error ? { ok: false, error: error.message } : { ok: true, confirmEmail: true };
   },
