@@ -211,6 +211,23 @@
           <div id="api-key-status" class="settings-status"></div>
         </div>
 
+        <div class="settings-section" id="tts-settings-section">
+          <label class="settings-label">Text-to-Speech <span class="badge-optional">beta</span></label>
+          <div class="settings-hint">Reads lesson content aloud using a local AI voice model. Downloads ~86 MB on first use — cached in your browser afterward. Works best in Chrome or Edge.</div>
+          <label class="tts-toggle-row">
+            <span class="tts-toggle-label-text">Enable in Learn mode</span>
+            <span class="tts-switch-wrap">
+              <input type="checkbox" id="tts-enabled" class="tts-switch-input">
+              <span class="tts-switch-track"><span class="tts-switch-thumb"></span></span>
+            </span>
+          </label>
+          <div class="tts-voice-row">
+            <select id="tts-voice-select" class="settings-input" style="flex:1;margin-top:0"></select>
+            <button id="tts-test-btn" class="btn btn-ghost" style="white-space:nowrap;flex-shrink:0">🔊 Preview</button>
+          </div>
+          <div id="tts-load-indicator" class="tts-load-indicator"></div>
+        </div>
+
         <div class="settings-section">
           <label class="settings-label">Data</label>
           <div class="settings-hint">Export your progress as a JSON backup, or wipe all stored data.</div>
@@ -286,6 +303,7 @@
 <script src="js/gamification.js"></script>
 <script src="js/leaderboard.js"></script>
 <script src="js/ai.js"></script>
+<script src="js/tts.js"></script>
 <script src="js/learn-engine.js"></script>
 <script src="js/quiz-engine.js"></script>
 <script src="js/assessment-engine.js"></script>

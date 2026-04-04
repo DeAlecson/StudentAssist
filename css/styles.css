@@ -2774,3 +2774,82 @@
 
 /* ═════ HIDDEN UTILITY ═════ */
 .hidden { display: none !important; }
+
+/* ── TTS (Text-to-Speech) ─────────────────────────────────────────── */
+.tts-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 3px 8px;
+  line-height: 1.4;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+.tts-btn:hover:not(:disabled) { background: var(--surface-hover); color: var(--text); }
+.tts-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.tts-btn.tts-speaking {
+  color: var(--accent);
+  border-color: var(--accent);
+  animation: tts-pulse 1.4s ease-in-out infinite;
+}
+@keyframes tts-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+.learn-section-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+.tts-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+.tts-toggle-label-text { font-size: 0.9rem; color: var(--text); user-select: none; }
+.tts-switch-wrap { position: relative; flex-shrink: 0; }
+.tts-switch-input { position: absolute; opacity: 0; width: 0; height: 0; }
+.tts-switch-track {
+  display: block;
+  width: 44px; height: 24px;
+  background: var(--border);
+  border-radius: 12px;
+  transition: background 0.2s;
+  position: relative;
+}
+.tts-switch-input:checked ~ .tts-switch-track { background: var(--accent); }
+.tts-switch-thumb {
+  position: absolute;
+  top: 3px; left: 3px;
+  width: 18px; height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.tts-switch-input:checked ~ .tts-switch-track .tts-switch-thumb { transform: translateX(20px); }
+.tts-voice-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  align-items: center;
+}
+.tts-load-indicator {
+  font-size: 0.78rem;
+  margin-top: 0.5rem;
+  min-height: 1.1em;
+  color: var(--text-muted);
+}
+.tts-load-indicator.loading { color: var(--accent); }
+.tts-load-indicator.ready   { color: #10b981; }
+.tts-load-indicator.error   { color: #ef4444; }

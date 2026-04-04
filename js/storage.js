@@ -19,7 +19,9 @@ const Storage = (() => {
   const DEFAULT_SETTINGS = {
     theme: 'dark',
     displayName: '',
-    aiMarking: true
+    aiMarking: true,
+    ttsEnabled: false,
+    ttsVoice: 'af_sky'
   };
 
   const init = () => {

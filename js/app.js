@@ -443,6 +443,27 @@ const App = (() => {
       });
     }
 
+    // TTS settings
+    const ttsEnabledToggle = Utils.$('#tts-enabled');
+    const ttsVoiceSelect   = Utils.$('#tts-voice-select');
+    const ttsTestBtn       = Utils.$('#tts-test-btn');
+
+    if (ttsEnabledToggle) {
+      ttsEnabledToggle.addEventListener('change', () => {
+        Storage.updateSettings(s => { s.ttsEnabled = ttsEnabledToggle.checked; return s; });
+      });
+    }
+    if (ttsVoiceSelect) {
+      ttsVoiceSelect.addEventListener('change', () => {
+        Storage.updateSettings(s => { s.ttsVoice = ttsVoiceSelect.value; return s; });
+      });
+    }
+    if (ttsTestBtn) {
+      ttsTestBtn.addEventListener('click', () => {
+        if (typeof TTS !== 'undefined') TTS.testVoice();
+      });
+    }
+
     // Initialize cheatsheet FAB
     Cheatsheet.init();
 
@@ -462,6 +483,24 @@ const App = (() => {
       State.set('apiKeyActive', true);
       Utils.$('#api-key-status').textContent = 'Key loaded from session';
       Utils.$('#api-key-status').className = 'settings-status success';
+    }
+
+    // TTS form population
+    const s = Storage.getSettings();
+    const ttsEnabledEl = Utils.$('#tts-enabled');
+    if (ttsEnabledEl) ttsEnabledEl.checked = s.ttsEnabled === true;
+
+    const ttsVoiceSel = Utils.$('#tts-voice-select');
+    if (ttsVoiceSel && typeof TTS !== 'undefined') {
+      if (ttsVoiceSel.options.length === 0) {
+        TTS.listVoices().forEach(v => {
+          const opt = document.createElement('option');
+          opt.value = v.id;
+          opt.textContent = v.name;
+          ttsVoiceSel.appendChild(opt);
+        });
+      }
+      ttsVoiceSel.value = s.ttsVoice || 'af_sky';
     }
   };
 

@@ -178,7 +178,10 @@ const LearnEngine = (() => {
         <div class="learn-section-counter">${_sectionIdx + 1} of ${total}</div>
 
         <div class="learn-card">
-          <div class="learn-section-badge">${sectionTypeIcon} ${escapeHTML(section.title)}</div>
+          <div class="learn-section-badge">
+            <span>${sectionTypeIcon} ${escapeHTML(section.title)}</span>
+            ${(typeof TTS !== 'undefined' && TTS.isEnabled()) ? `<button class="tts-btn" title="Read aloud" onclick="LearnEngine._speakSection()">🔊</button>` : ''}
+          </div>
           <div class="learn-content">${markdownToHTML(section.content || '')}</div>
 
           ${section.type === 'checkpoint' && section.question ? renderCheckpoint(section.question, _sectionIdx, answered) : ''}
@@ -232,15 +235,25 @@ const LearnEngine = (() => {
     renderLesson();
   };
 
+  const _speakSection = () => {
+    const section = _lesson && _lesson.sections && _lesson.sections[_sectionIdx];
+    if (!section || typeof TTS === 'undefined') return;
+    const text = (section.title ? section.title + '. ' : '') + (section.content || '');
+    TTS.speak(text);
+  };
+
   const _prevSection = () => {
+    if (typeof TTS !== 'undefined') TTS.stop();
     if (_sectionIdx > 0) { _sectionIdx--; renderLesson(); window.scrollTo(0, 0); }
   };
 
   const _nextSection = () => {
+    if (typeof TTS !== 'undefined') TTS.stop();
     if (_sectionIdx < _lesson.sections.length - 1) { _sectionIdx++; renderLesson(); window.scrollTo(0, 0); }
   };
 
   const _goToAssessment = () => {
+    if (typeof TTS !== 'undefined') TTS.stop();
     Storage.updateProgress(_moduleId, p => {
       if (!p.completedLessons.includes(_unitId)) p.completedLessons.push(_unitId);
     });
@@ -434,6 +447,7 @@ Student answer: ${state.text}`;
     _skipFlashcards,
     _goToLesson,
     _answerCheckpoint,
+    _speakSection,
     _prevSection,
     _nextSection,
     _goToAssessment,
