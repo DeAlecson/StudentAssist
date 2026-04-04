@@ -180,7 +180,7 @@ const LearnEngine = (() => {
         <div class="learn-card">
           <div class="learn-section-badge">
             <span>${sectionTypeIcon} ${escapeHTML(section.title)}</span>
-            ${(typeof TTS !== 'undefined' && TTS.isEnabled()) ? `<button class="tts-btn" title="Read aloud" onclick="LearnEngine._speakSection()">🔊</button>` : ''}
+            ${(typeof TTS !== 'undefined' && TTS.isEnabled()) ? `<button class="tts-btn" data-tts-state="idle" title="Read aloud" onclick="LearnEngine._speakSection()"><span class="tts-glyph">🔊</span><span class="tts-bars" aria-hidden="true"><b></b><b></b><b></b></span></button>` : ''}
           </div>
           <div class="learn-content">${markdownToHTML(section.content || '')}</div>
 

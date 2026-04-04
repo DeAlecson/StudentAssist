@@ -2784,6 +2784,7 @@
 .hidden { display: none !important; }
 
 /* ── TTS (Text-to-Speech) ─────────────────────────────────────────── */
+/* ── TTS Button ─────────────────────────────────────────────────── */
 .tts-btn {
   background: none;
   border: 1px solid var(--border);
@@ -2792,21 +2793,55 @@
   cursor: pointer;
   font-size: 1rem;
   padding: 3px 8px;
-  line-height: 1.4;
+  line-height: 1;
   transition: all 0.15s;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 30px;
+  gap: 2px;
 }
 .tts-btn:hover:not(:disabled) { background: var(--surface-hover); color: var(--text); }
 .tts-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Loading state — dim pulse on the whole button */
+.tts-btn[data-tts-state="loading"] {
+  animation: tts-loading-pulse 1s ease-in-out infinite;
+  opacity: 0.7;
+}
+@keyframes tts-loading-pulse { 0%,100%{opacity:0.7} 50%{opacity:0.35} }
+
+/* Speaking state — accent colour */
+.tts-btn[data-tts-state="speaking"],
 .tts-btn.tts-speaking {
   color: var(--accent);
   border-color: var(--accent);
-  animation: tts-pulse 1.4s ease-in-out infinite;
 }
-@keyframes tts-pulse {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.5; }
+
+/* Soundbar elements — hidden by default, visible when speaking */
+.tts-glyph { display: flex; }
+.tts-bars  { display: none; align-items: flex-end; gap: 2px; height: 16px; }
+.tts-bars b {
+  display: block;
+  width: 3px;
+  border-radius: 2px;
+  background: currentColor;
+  min-height: 3px;
+  animation: tts-wave 0.7s ease-in-out infinite alternate;
 }
+.tts-bars b:nth-child(1) { animation-delay: 0s;    animation-duration: 0.6s; }
+.tts-bars b:nth-child(2) { animation-delay: 0.18s; animation-duration: 0.8s; }
+.tts-bars b:nth-child(3) { animation-delay: 0.34s; animation-duration: 0.5s; }
+@keyframes tts-wave {
+  from { height: 3px;  }
+  to   { height: 15px; }
+}
+
+/* Toggle glyph↔bars based on data-tts-state */
+.tts-btn[data-tts-state="speaking"] .tts-glyph { display: none; }
+.tts-btn[data-tts-state="speaking"] .tts-bars  { display: flex; }
 .learn-section-badge {
   display: flex;
   align-items: center;
