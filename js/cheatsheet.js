@@ -266,16 +266,16 @@ def validate(x): ...       # no self or cls</pre>
 <div class="cs-col">
 
   <div class="cs-section">
-    <div class="cs-sh">Account Types — ALREX + Dr/Cr Rules</div>
+    <div class="cs-sh">Account Types — ALERX</div>
     <table class="cs-table">
-      <tr><th>Type</th><th>Examples</th><th>↑ Increase</th><th>↓ Decrease</th><th>Statement</th></tr>
-      <tr><td><b>A</b>sset</td><td>Cash, Receivables, Equipment, Prepaid</td><td class="yes">Dr</td><td class="no">Cr</td><td>SoFP</td></tr>
-      <tr><td><b>L</b>iability</td><td>Payables, Loans, Unearned Revenue</td><td class="no">Cr</td><td class="yes">Dr</td><td>SoFP</td></tr>
-      <tr><td><b>E</b>quity</td><td>Share Capital, Retained Earnings</td><td class="no">Cr</td><td class="yes">Dr</td><td>SoFP</td></tr>
-      <tr><td><b>R</b>evenue</td><td>Sales, Service Revenue</td><td class="no">Cr</td><td class="yes">Dr</td><td>IS</td></tr>
-      <tr><td><b>X</b>pense</td><td>Salary, Rent, Dep. Expense</td><td class="yes">Dr</td><td class="no">Cr</td><td>IS</td></tr>
+      <tr><th>Type</th><th>Examples</th><th>Increases when…</th><th>Statement</th></tr>
+      <tr><td><b>A</b>sset</td><td>Cash, Receivables, Equipment, Prepaid</td><td>Resource received or acquired</td><td>SoFP</td></tr>
+      <tr><td><b>L</b>iability</td><td>Payables, Loans, Unearned Revenue</td><td>Obligation incurred; payment deferred</td><td>SoFP</td></tr>
+      <tr><td><b>E</b>quity</td><td>Share Capital, Retained Earnings</td><td>Owner invests; profit earned</td><td>SoFP</td></tr>
+      <tr><td><b>R</b>evenue</td><td>Sales, Service Revenue</td><td>Service performed or goods delivered</td><td>IS</td></tr>
+      <tr><td>e<b>X</b>pense</td><td>Salary, Rent, Dep. Expense</td><td>Resource consumed or cost incurred</td><td>IS</td></tr>
     </table>
-    <div class="cs-note">A/L/E = Stock (SoFP, measured at a date) · R/X = Flow (IS, measured over a period, reset each year)</div>
+    <div class="cs-note">A/L/E = Stock (SoFP, measured at a date) · R/X = Flow (IS, measured over a period, reset each year) · Expenses ↑ = Equity ↓</div>
   </div>
 
   <div class="cs-section">
@@ -288,11 +288,11 @@ def validate(x): ...       # no self or cls</pre>
   <div class="cs-section">
     <div class="cs-sh">Adjusting Entries — 4 Types</div>
     <table class="cs-table">
-      <tr><th>Type</th><th>Initial Entry (when cash moves)</th><th>Period-End Adjusting Entry</th></tr>
-      <tr><td><b>Prepaid Expense</b><br><i>cash before service</i></td><td>Dr Prepaid Asset / Cr Cash</td><td>Dr Expense / Cr Prepaid<br>(portion used = Total ÷ months × months used)</td></tr>
-      <tr><td><b>Accrued Expense</b><br><i>cash after service</i></td><td>— (paid later)</td><td>Dr Expense / Cr Accrued Liability</td></tr>
-      <tr><td><b>Unearned Revenue</b><br><i>cash before service</i></td><td>Dr Cash / Cr Unearned Revenue</td><td>Dr Unearned Revenue / Cr Revenue<br>(portion earned this period)</td></tr>
-      <tr><td><b>Accrued Revenue</b><br><i>cash after service</i></td><td>— (collected later)</td><td>Dr Accounts Receivable / Cr Revenue</td></tr>
+      <tr><th>Type</th><th>When cash moves</th><th>Period-End Adjustment</th></tr>
+      <tr><td><b>Prepaid Expense</b><br><i>cash before service</i></td><td>Asset (Prepaid) ↑ · Cash ↓</td><td>Expense ↑ · Prepaid Asset ↓<br>(portion used = Total ÷ months × months used)</td></tr>
+      <tr><td><b>Accrued Expense</b><br><i>cash after service</i></td><td>— (paid later)</td><td>Expense ↑ · Liability (Accrued Payable) ↑</td></tr>
+      <tr><td><b>Unearned Revenue</b><br><i>cash before service</i></td><td>Cash ↑ · Liability (Unearned Revenue) ↑</td><td>Liability (Unearned Revenue) ↓ · Revenue ↑<br>(portion earned this period)</td></tr>
+      <tr><td><b>Accrued Revenue</b><br><i>cash after service</i></td><td>— (collected later)</td><td>Asset (Accounts Receivable) ↑ · Revenue ↑</td></tr>
     </table>
     <div class="cs-note">Remaining Prepaid = Total Paid − Amount Expensed · Remaining Unearned = Total Received − Revenue Recognised</div>
   </div>
@@ -302,7 +302,7 @@ def validate(x): ...       # no self or cls</pre>
     <div class="cs-formula">Straight-Line: Dep/yr = (Cost − Residual Value) ÷ Useful Life</div>
     <div class="cs-formula">Reducing Balance: Dep/yr = Carrying Value × Rate%</div>
     <div class="cs-formula">Carrying Value = Cost − Accumulated Depreciation</div>
-    <div class="cs-note">Journal: Dr Depreciation Expense / Cr Accumulated Depreciation · ❌ NOT a cash flow item</div>
+    <div class="cs-note">Effect: Depreciation Expense ↑ · Accumulated Depreciation ↑ (contra-asset) · ❌ NOT a cash flow item</div>
   </div>
 
   <div class="cs-section">
