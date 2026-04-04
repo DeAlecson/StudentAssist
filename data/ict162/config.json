@@ -79,6 +79,12 @@
       "label": "JAN 2025",
       "file": "data/ict162/exams/jan2025.json",
       "examType": "closed_book"
+    },
+    {
+      "id": "jul2025",
+      "label": "JUL 2025",
+      "file": "data/ict162/exams/jul2025.json",
+      "examType": "closed_book"
     }
   ]
 }

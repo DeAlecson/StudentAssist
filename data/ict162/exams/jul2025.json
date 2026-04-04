@@ -1,0 +1,308 @@
+{
+  "id": "ict162_jul2025",
+  "module": "ict162",
+  "code": "ICT162",
+  "semester": "JUL 2025",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "closed_book",
+  "notes": "One A4-sized (double-sided) hardcopy Cheat Sheet allowed.",
+  "caseStudies": [],
+  "questions": [
+    {
+      "id": "q1",
+      "label": "Question 1",
+      "marks": 3,
+      "type": "mcq",
+      "text": "Demonstrate your understanding of class hierarchy. What will be the output of the following code snippet?",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p2_img1.png"],
+      "choices": [
+        "Parent value: 5  Child value: 5",
+        "Parent value: 10  Child value: 10",
+        "Parent value: 5  Child value: 10",
+        "Parent value: 10  Child value: 5"
+      ],
+      "answer": 2,
+      "explanation": "Due to Python name mangling, self.__value in Parent becomes _Parent__value (=5 from super().__init__()), while self.__value in Child becomes _Child__value (=10). When c.display() is called, super().display() accesses _Parent__value=5, and Child's own part accesses _Child__value=10. Output: 'Parent value: 5  Child value: 10'.",
+      "modelAnswer": "C — Parent value: 5  Child value: 10\n\nPython name mangling means `self.__value` in each class refers to a different attribute:\n- `Parent.__init__` sets `_Parent__value = 5`\n- `Child.__init__` calls `super().__init__()` (sets `_Parent__value = 5`) then sets `_Child__value = 10`\n- `super().display()` inside Child reads `_Parent__value = 5` → 'Parent value: 5'\n- Child's `{self.__value}` reads `_Child__value = 10` → 'Child value: 10'",
+      "keyPoints": [
+        "Name mangling: self.__value in Parent → _Parent__value, in Child → _Child__value",
+        "super().__init__() sets _Parent__value = 5",
+        "Child.__init__ then sets _Child__value = 10",
+        "super().display() reads _Parent__value = 5"
+      ]
+    },
+    {
+      "id": "q2",
+      "label": "Question 2",
+      "marks": 3,
+      "type": "mcq",
+      "text": "This question tests your understanding of attributes and methods. Which line/s will raise an error?",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p2_img2.jpeg"],
+      "choices": [
+        "Line 16",
+        "Line 19 and 20",
+        "Line 20",
+        "Line 18"
+      ],
+      "answer": 1,
+      "explanation": "Line 19 (rect.width = 10) attempts to set the @property 'width', but no setter is defined — this raises AttributeError: can't set attribute. Because line 19 raises an error, line 20 (print(rect.area())) is never reached, making both lines problematic.",
+      "modelAnswer": "B — Line 19 and 20\n\nThe `width` property only has a getter (`@property`), no `@width.setter`. Attempting to assign `rect.width = 10` at line 19 raises `AttributeError: can't set attribute`. Since execution halts at line 19, line 20 is never reached.",
+      "keyPoints": [
+        "@property without a setter creates a read-only attribute",
+        "rect.width = 10 raises AttributeError: can't set attribute",
+        "Line 20 cannot execute because line 19 already raised an error"
+      ]
+    },
+    {
+      "id": "q3",
+      "label": "Question 3",
+      "marks": 3,
+      "type": "mcq",
+      "text": "Demonstrate your understanding of object composition. Which line demonstrates composition?",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p3_img1.png"],
+      "choices": [
+        "self.__model = model",
+        "self.__engine = engine",
+        "def start(self):",
+        "class Car:"
+      ],
+      "answer": 1,
+      "explanation": "Composition (HAS-A relationship) is shown when one class contains an instance of another class as an attribute. 'self.__engine = engine' stores an Engine object inside Car — Car HAS-A Engine. This is composition: the Engine object is passed in and owned by Car.",
+      "modelAnswer": "B — self.__engine = engine\n\nComposition means one class HAS-A reference to an object of another class. `self.__engine = engine` stores an `Engine` instance inside `Car`, meaning Car is composed of an Engine. This is the HAS-A relationship that defines composition.",
+      "keyPoints": [
+        "Composition = HAS-A relationship: one class owns an instance of another",
+        "self.__engine = engine stores an Engine object inside Car",
+        "Contrast with inheritance (IS-A): class Car(Engine) would be inheritance"
+      ]
+    },
+    {
+      "id": "q4",
+      "label": "Question 4",
+      "marks": 3,
+      "type": "mcq",
+      "text": "Apply OOP principle. Which part of the code enforces the requirement for subclasses to implement specific methods?",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p3_img2.png"],
+      "choices": [
+        "class AbstractVehicle(ABC):",
+        "@abstractmethod",
+        "class Bike(AbstractVehicle):",
+        "def start(self):"
+      ],
+      "answer": 1,
+      "explanation": "The @abstractmethod decorator is what enforces that any subclass of AbstractVehicle MUST implement the decorated method. If a subclass does not implement it, Python raises TypeError when you try to instantiate it. Inheriting from ABC alone does not enforce method implementation.",
+      "modelAnswer": "B — @abstractmethod\n\nThe `@abstractmethod` decorator marks a method as abstract, meaning any concrete subclass MUST provide its own implementation. If a subclass fails to implement all abstract methods, Python raises `TypeError: Can't instantiate abstract class`. Simply inheriting from `ABC` makes the class abstract but does not enforce method contracts — `@abstractmethod` does.",
+      "keyPoints": [
+        "@abstractmethod enforces that subclasses must implement the method",
+        "Failing to implement raises TypeError on instantiation",
+        "ABC (Abstract Base Class) marks the class as abstract",
+        "@abstractmethod on method + ABC on class = contract enforcement"
+      ]
+    },
+    {
+      "id": "q5",
+      "label": "Question 5",
+      "marks": 3,
+      "type": "mcq",
+      "text": "Apply OOP principle. What will be printed when 'child_method' is called?",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p4_img1.png"],
+      "choices": [
+        "An error occurred in Child.  An error occurred in Parent.",
+        "An error occurred in Parent.  An error occurred in Child.",
+        "An error occurred in Child.",
+        "An error occurred in Parent."
+      ],
+      "answer": 3,
+      "explanation": "child_method() calls self.parent_method() first, which raises ValueError('An error occurred in Parent.'). This exception propagates immediately — the subsequent raise in child_method never executes. The outer try-except catches it and prints 'An error occurred in Parent.'",
+      "modelAnswer": "D — An error occurred in Parent.\n\n`child_method()` calls `self.parent_method()` first. `parent_method()` raises `ValueError('An error occurred in Parent.')`. This exception propagates up immediately — execution never reaches `raise ValueError('An error occurred in Child.')`. The `except ValueError as e` block in the main code catches it and `print(e)` outputs 'An error occurred in Parent.'",
+      "keyPoints": [
+        "parent_method() raises ValueError before child_method() can raise its own",
+        "The first raise stops execution — the second raise is never reached",
+        "Exception propagates up the call stack to the outer try-except",
+        "print(e) prints the string message of the caught exception"
+      ]
+    },
+    {
+      "id": "q6",
+      "label": "Question 6",
+      "marks": 3,
+      "type": "mcq",
+      "text": "Apply OOP principle. What will be the output when it is executed?",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p4_img2.png"],
+      "choices": [
+        "\"Bark\"",
+        "\"\"",
+        "TypeError: Can't instantiate abstract class Cat with abstract method 'sound'",
+        "AttributeError: 'Cat' object has no attribute 'sound'"
+      ],
+      "answer": 2,
+      "explanation": "Cat inherits from Animal(ABC) but does not implement the abstract method 'sound' — it just has 'pass'. Trying to instantiate Cat() raises TypeError because abstract methods must be implemented in concrete subclasses.",
+      "modelAnswer": "C — TypeError: Can't instantiate abstract class Cat with abstract method 'sound'\n\n`Animal` is an abstract class with `@abstractmethod sound()`. `Cat` inherits from `Animal` but never implements `sound()` — it only has `pass`. When `Cat()` is called, Python raises `TypeError: Can't instantiate abstract class Cat with abstract method 'sound'`.",
+      "keyPoints": [
+        "Cat inherits Animal(ABC) but does not implement sound()",
+        "pass in Cat body means sound() is still abstract",
+        "Instantiating a class with unimplemented abstract methods raises TypeError",
+        "Dog works because it implements sound() with return 'Bark'"
+      ]
+    },
+    {
+      "id": "q7",
+      "label": "Question 7",
+      "marks": 3,
+      "type": "mcq",
+      "text": "Apply OOP principle. Analyze the code below and determine which modification would correctly define the 'Bird' class with the expected output: 'Flapping wings'.",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p5_img1.png"],
+      "choices": [
+        "def fly(self): return \"Flapping wings\"",
+        "def flap(self): print(\"Flapping wings\")",
+        "def fly(self): print(\"Flapping wings\")",
+        "def flap(self): return \"Flapping wings\""
+      ],
+      "answer": 2,
+      "explanation": "The abstract method is named 'fly'. bird.fly() is called, and print() wraps the call in main. If fly() itself calls print(), then print(bird.fly()) would print 'Flapping wings' then 'None'. The code calls print(bird.fly()), so fly() should return the string, not print it... BUT looking at the output expected is just 'Flapping wings' from print(bird.fly()). If fly() returns the string, print() outputs it correctly. Answer C (print inside fly) would output 'Flapping wings\\nNone'. Answer A (return string) with print(bird.fly()) outputs 'Flapping wings'. So answer is A.",
+      "modelAnswer": "A — def fly(self): return \"Flapping wings\"\n\nThe main code calls `print(bird.fly())`. If `fly()` returns the string 'Flapping wings', then `print()` outputs it cleanly. Option C (`print` inside `fly`) would cause double output: 'Flapping wings' from fly's print, then 'None' from print(bird.fly()). The abstract method is named `fly` so options B and D (using `flap`) would not satisfy the abstract contract.",
+      "keyPoints": [
+        "Abstract method is named fly — implementation must be def fly(self)",
+        "print(bird.fly()) calls print on the return value",
+        "fly() should return the string, not print it (to avoid 'None' output)",
+        "Implementing the wrong method name (flap) does not satisfy the abstract contract"
+      ]
+    },
+    {
+      "id": "q8",
+      "label": "Question 8",
+      "marks": 6,
+      "type": "code_writing",
+      "text": "Examine the following code intended to demonstrate method overloading that can accept 2 or 3 arguments. Identify the issue in the code that will prevent it from functioning as intended and propose a way to fix it.\n\n```python\nclass Operation:\n    def multiply(self, x, y, z):\n        return x * y * z\n\n    def multiply(self, x, y):\n        return x * y\n\nop = Operation()\nresult = op.multiply(3, 4)   # Expected output: 12\nresult = op.multiply(3, 4, 2) # Expected output: 24\n```\n\nWrite your fixed code for the Operation class.",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p5_img2.png"],
+      "modelAnswer": "Issue: Python does not support method overloading by defining the same method name multiple times. The second `multiply` definition overwrites the first, so only `multiply(self, x, y)` exists. Calling `op.multiply(3, 4, 2)` raises TypeError.\n\nFix using a default parameter:\n\n```python\nclass Operation:\n    def multiply(self, x, y, z=1):\n        return x * y * z\n```\n\nAlternative fix using *args:\n\n```python\nclass Operation:\n    def multiply(self, *args):\n        result = 1\n        for n in args:\n            result *= n\n        return result\n```",
+      "keyPoints": [
+        "Python does not support method overloading — same name = second overwrites first",
+        "Fix: use a default parameter (z=1) so the method works with 2 or 3 args",
+        "Alternative: use *args to accept variable number of arguments",
+        "Must explain the bug AND provide the corrected code for full marks"
+      ]
+    },
+    {
+      "id": "q9",
+      "label": "Question 9",
+      "marks": 35,
+      "type": "code_writing",
+      "text": "You are developing a system for a logistics company to manage different types of shipments. Each type of shipment calculates shipping cost differently based on the shipment's weight and includes a base cost associated with handling specific shipment types.\n\nRequirements:\n1. Create an abstract class 'Shipment' with an abstract method 'calculate_cost'.\n2. Use class variables to define base costs and additional fees for each type.\n3. Implement subclasses 'RefrigeratedShipment' and 'PriorityShipment'.\n\nExpected Output:\n```\nShipment ID 101 to New York: Cost = $25.00\nShipment ID 102 to San Francisco: Cost = $27.50\n```",
+      "figures": [
+        "data/ict162/exams/figures/ICT162_JUL2025_p6_img1.png",
+        "data/ict162/exams/figures/ICT162_JUL2025_p6_img2.png"
+      ],
+      "subQuestions": [
+        {
+          "id": "q9a",
+          "label": "Question 9a",
+          "marks": 15,
+          "type": "code_writing",
+          "text": "Construct the class with the following specifications:\n- Define an abstract class named 'Shipment'\n- An '__init__' method that accepts 'id', 'weight', and 'destination'\n- An abstract method 'calculate_cost'\n- A class variable 'base_cost' set to 1.5\n- Getter for 'weight' using @property decorator",
+          "modelAnswer": "```python\nfrom abc import ABC, abstractmethod\n\nclass Shipment(ABC):\n    base_cost = 1.5\n\n    def __init__(self, id, weight, destination):\n        self.__id = id\n        self.__weight = weight\n        self.__destination = destination\n\n    @property\n    def weight(self):\n        return self.__weight\n\n    @abstractmethod\n    def calculate_cost(self):\n        pass\n```",
+          "keyPoints": [
+            "from abc import ABC, abstractmethod",
+            "class Shipment(ABC): — inherits ABC",
+            "base_cost = 1.5 as class variable (not instance variable)",
+            "__init__ accepts id, weight, destination and stores as private attributes",
+            "@property getter for weight returning self.__weight",
+            "@abstractmethod on calculate_cost"
+          ]
+        },
+        {
+          "id": "q9b",
+          "label": "Question 9b",
+          "marks": 14,
+          "type": "code_writing",
+          "text": "Construct the subclasses 'PriorityShipment' and 'RefrigeratedShipment'. Each class should:\n- Implement the 'calculate_cost' method to include the additional fees\n- 'PriorityShipment': class variable priority_fee = 10\n- 'RefrigeratedShipment': class variable refrigeration_fee = 20\n- Expected outputs: PriorityShipment(101, 10, 'New York') → Cost = $25.00; RefrigeratedShipment(102, 5, 'San Francisco') → Cost = $27.50",
+          "modelAnswer": "Working backwards from the expected output:\n- PriorityShipment(101, 10, 'New York'): Cost = $25.00\n  → 10 * base_cost + priority_fee = 10 * 1.5 + 10 = 25.00 ✓\n- RefrigeratedShipment(102, 5, 'San Francisco'): Cost = $27.50\n  → 5 * base_cost + refrigeration_fee = 5 * 1.5 + 20 = 27.50 ✓\n\n```python\nclass PriorityShipment(Shipment):\n    priority_fee = 10\n\n    def calculate_cost(self):\n        return self.weight * Shipment.base_cost + PriorityShipment.priority_fee\n\n\nclass RefrigeratedShipment(Shipment):\n    refrigeration_fee = 20\n\n    def calculate_cost(self):\n        return self.weight * Shipment.base_cost + RefrigeratedShipment.refrigeration_fee\n```",
+          "keyPoints": [
+            "PriorityShipment.priority_fee = 10 as class variable",
+            "RefrigeratedShipment.refrigeration_fee = 20 as class variable",
+            "calculate_cost = weight * base_cost + fee (derive from expected output)",
+            "Use self.weight (the property getter) not self.__weight",
+            "Both classes must implement calculate_cost() to be concrete"
+          ]
+        },
+        {
+          "id": "q9c",
+          "label": "Question 9c",
+          "marks": 6,
+          "type": "code_writing",
+          "text": "Implement a '__str__' method in the Shipment class that fulfils the expected output. Use 'id' and 'destination' to identify each shipment.\n\nExpected output format:\nShipment ID 101 to New York: Cost = $25.00",
+          "modelAnswer": "```python\ndef __str__(self):\n    return f\"Shipment ID {self.__id} to {self.__destination}: Cost = ${self.calculate_cost():.2f}\"\n```\n\nNote: Since __id and __destination are name-mangled private attributes, you may need to access them as _Shipment__id and _Shipment__destination, or store them with single underscore or provide property getters.",
+          "keyPoints": [
+            "Format: 'Shipment ID {id} to {destination}: Cost = ${cost:.2f}'",
+            ":.2f formats the float to 2 decimal places",
+            "Calls self.calculate_cost() — polymorphic, works for both subclasses",
+            "Must be defined in Shipment base class, not subclasses"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "label": "Question 10",
+      "marks": 22,
+      "type": "code_writing",
+      "text": "Building upon the previous shipment system, extend it to include a tracking system using composition.\n\nThe Tracking class (provided) is:\n```python\nclass Tracking:\n    def __init__(self):\n        self.__history = []\n\n    def update_status(self, status):\n        formatted_datetime = datetime.now().strftime('%Y-%m-%d')\n        self.__history.append((formatted_datetime, status))\n\n    def get_history(self):\n        if not self.__history:\n            raise Exception('No tracking history available.')\n        return self.__history\n```\n\nModify the 'Shipment' class to incorporate 'Tracking' using composition. Implement 'start_tracking', 'update_status', and 'get_status_history' methods. Include exception handling where necessary.\n\nExpected output:\n```\nStatus History: [('2024-12-29', 'Initialized'), ('2024-12-29', 'Awaiting Pickup')]\n```",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p7_img1.png"],
+      "modelAnswer": "Add the following to the Shipment class:\n\n```python\nfrom datetime import datetime\n\nclass Shipment(ABC):\n    base_cost = 1.5\n\n    def __init__(self, id, weight, destination):\n        self.__id = id\n        self.__weight = weight\n        self.__destination = destination\n        self.__tracker = None  # Tracking object, None until started\n\n    def start_tracking(self):\n        self.__tracker = Tracking()\n        self.__tracker.update_status('Initialized')\n\n    def update_status(self, status):\n        if self.__tracker is None:\n            raise Exception('Tracking has not been started. Call start_tracking() first.')\n        self.__tracker.update_status(status)\n\n    def get_status_history(self):\n        if self.__tracker is None:\n            raise Exception('Tracking has not been started.')\n        return self.__tracker.get_history()\n\n    # ... existing weight property, calculate_cost, __str__ ...\n```\n\nUsage:\n```python\nrefrigerated_shipment = RefrigeratedShipment(103, 8, 'Chicago')\nrefrigerated_shipment.start_tracking()            # Creates Tracking, adds 'Initialized'\nrefrigerated_shipment.update_status('Awaiting Pickup')\nprint(refrigerated_shipment.get_status_history()) # [('2024-12-29', 'Initialized'), ...]\n```",
+      "keyPoints": [
+        "Composition: self.__tracker = Tracking() stored as instance attribute in Shipment",
+        "start_tracking() creates a new Tracking() and calls update_status('Initialized')",
+        "update_status() delegates to self.__tracker.update_status()",
+        "get_status_history() delegates to self.__tracker.get_history()",
+        "Exception handling: raise Exception if tracker is None (not started)",
+        "from datetime import datetime needed for the Tracking class"
+      ]
+    },
+    {
+      "id": "q11",
+      "label": "Question 11",
+      "marks": 16,
+      "type": "code_writing",
+      "text": "Develop a simple tkinter GUI for the logistics system allowing users to select a shipment, view its details, and update its status.",
+      "figures": ["data/ict162/exams/figures/ICT162_JUL2025_p9_img1.png"],
+      "subQuestions": [
+        {
+          "id": "q11a",
+          "label": "Question 11a",
+          "marks": 8,
+          "type": "code_writing",
+          "text": "The sample code shows a Tkinter window with a Listbox to select a shipment and Label widgets to display current status and details. Lines 16 and 17 are missing — complete the code to create the GUI window.\n\nThe completed code will show a window titled 'Shipment Tracker' with a Listbox showing shipments and a 'Current Status: N/A' label at the bottom.",
+          "figures": [
+            "data/ict162/exams/figures/ICT162_JUL2025_p9_img1.png",
+            "data/ict162/exams/figures/ICT162_JUL2025_p10_img1.png"
+          ],
+          "modelAnswer": "Lines 16 and 17 create the main tkinter window:\n\n```python\nwin = tk.Tk()                        # Line 16: create root window\nwin.title(\"Shipment Tracker\")        # Line 17: set window title\n```\n\nFull context of the missing lines in the ShipmentTrackerGUI.__init__:\n```python\ndef __init__(self, shipment_list):\n    self.__shipment_list = shipment_list\n    win = tk.Tk()                    # Line 16\n    win.title(\"Shipment Tracker\")    # Line 17\n    self.__listbox = tk.Listbox(win)\n    self.__listbox.pack()\n    for shipment in self.__shipment_list:\n        self.__listbox.insert(tk.END, f\"{shipment.destination} (ID: {shipment.id})\")\n    self.__status_label = tk.Label(win, text=\"Current Status: N/A\")\n    self.__status_label.pack()\n    self.__listbox.bind('<<ListboxSelect>>', self.on_select)\n    win.mainloop()\n```",
+          "keyPoints": [
+            "Line 16: win = tk.Tk() — creates the root window",
+            "Line 17: win.title('Shipment Tracker') — sets the window title",
+            "tk.Tk() must be called before any other tkinter widgets",
+            "win.mainloop() at the end starts the event loop"
+          ]
+        },
+        {
+          "id": "q11b",
+          "label": "Question 11b",
+          "marks": 8,
+          "type": "code_writing",
+          "text": "Ensure the GUI can dynamically update the current status. The goal is to display the current status (shipment.get_status_history()) when the cursor selects the listbox. ONE line is missing in the on_select method.",
+          "figures": [
+            "data/ict162/exams/figures/ICT162_JUL2025_p10_img2.png",
+            "data/ict162/exams/figures/ICT162_JUL2025_p10_img3.png"
+          ],
+          "modelAnswer": "The missing line updates the status label with the selected shipment's tracking history:\n\n```python\nself.__status_label.config(text=f\"Current Status: {shipment.get_status_history()[-1]}\")\n```\n\nFull on_select method:\n```python\ndef on_select(self, event):\n    selected_index = self.__listbox.curselection()\n    if selected_index:\n        shipment = self.__shipment_list[selected_index[0]]\n        # missing line:\n        self.__status_label.config(text=f\"Current Status: {shipment.get_status_history()[-1]}\")\n```\n\nThe expected output shows 'Current Status: ('2025-01-14', 'Initialized')' — the last tuple from get_status_history().",
+          "keyPoints": [
+            "self.__status_label.config(text=...) updates the label text dynamically",
+            "shipment.get_status_history()[-1] gets the most recent status entry",
+            "[-1] index retrieves the last element from the history list",
+            "The label displays the tuple e.g. ('2025-01-14', 'Initialized')"
+          ]
+        }
+      ]
+    }
+  ]
+}
