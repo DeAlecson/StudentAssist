@@ -2902,3 +2902,7 @@
 .token-row-stat { color: var(--text-muted); text-align: right; }
 .token-row-cost { color: #10b981; font-weight: 600; text-align: right; }
 .token-row-cost-total { font-size: 0.85rem; }
+
+/* ── Sync / Refresh buttons ───────────────────────────────────────── */
+.topbar-btn-sync { font-size: 1.1rem; font-weight: 700; }
+.topbar-btn-sync:disabled { opacity: 0.5; }

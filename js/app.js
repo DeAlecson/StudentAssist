@@ -443,6 +443,38 @@ const App = (() => {
       });
     }
 
+    // Sync button (force pull from Supabase)
+    const syncBtn = Utils.$('#sync-btn');
+    if (syncBtn) {
+      syncBtn.addEventListener('click', async () => {
+        if (!Auth.isAuthed || !Auth.isAuthed()) {
+          Utils.toast('Sign in to sync progress', 'info', 2500);
+          return;
+        }
+        syncBtn.textContent = '⏳';
+        syncBtn.disabled = true;
+        try {
+          await Storage.pullFromSupabase();
+          await Storage.pushAllToSupabase();
+          Gamification.refreshHeader();
+          Utils.toast('Synced with cloud ✓', 'success', 2500);
+        } catch (e) {
+          Utils.toast('Sync failed — check connection', 'error', 3000);
+        } finally {
+          syncBtn.textContent = '⇅';
+          syncBtn.disabled = false;
+        }
+      });
+    }
+
+    // Refresh button
+    const refreshBtn = Utils.$('#refresh-btn');
+    if (refreshBtn) {
+      refreshBtn.addEventListener('click', () => {
+        window.location.reload();
+      });
+    }
+
     // TTS settings
     const ttsEnabledToggle = Utils.$('#tts-enabled');
     const ttsVoiceSelect   = Utils.$('#tts-voice-select');

@@ -125,6 +125,10 @@ const Auth = {
     // Module topbar account indicator
     const topbarUser = document.getElementById('topbar-user-initial');
     if (topbarUser) topbarUser.textContent = initial;
+
+    // Show sync button when signed in
+    const syncBtn = document.getElementById('sync-btn');
+    if (syncBtn) syncBtn.classList.remove('hidden');
   },
 
   // ── Auth operations ─────────────────────────────────────
