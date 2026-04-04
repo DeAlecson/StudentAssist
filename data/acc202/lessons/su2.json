@@ -22,12 +22,12 @@
     {
       "type": "concept",
       "title": "Prepayments (Prepaid Expenses)",
-      "content": "A prepayment occurs when cash is paid **before** the expense is incurred.\n\n**Example:** Paying 12 months of insurance $12,000 in January.\n- Initial entry (January): Dr Prepaid Insurance $12,000, Cr Cash $12,000\n- Monthly adjusting entry (Jan-Dec): Dr Insurance Expense $1,000, Cr Prepaid Insurance $1,000\n\nThe prepaid asset is gradually expensed as the benefit is consumed. At period end, prepaid = unexpired portion."
+      "content": "A prepayment occurs when cash is paid **before** the expense is incurred.\n\n**Example:** Paying 12 months of insurance $12,000 in January.\n- Initial entry (January): Prepaid Insurance (Asset) **increases** $12,000; Cash (Asset) **decreases** $12,000\n- Monthly adjusting entry (Jan–Dec): Insurance Expense **increases** $1,000; Prepaid Insurance (Asset) **decreases** $1,000\n\nThe prepaid asset is gradually expensed as the benefit is consumed. At period end, prepaid = unexpired portion."
     },
     {
       "type": "concept",
       "title": "Accrued Expenses (Expenses Payable)",
-      "content": "An accrued expense is incurred **but not yet paid**.\n\n**Example:** December salaries $10,000 are earned by employees in December but paid in January.\n- December adjusting entry: Dr Salary Expense $10,000, Cr Salaries Payable $10,000\n- January payment: Dr Salaries Payable $10,000, Cr Cash $10,000\n\nAccruing ensures the expense is recorded in the period incurred, not when payment is made."
+      "content": "An accrued expense is incurred **but not yet paid**.\n\n**Example:** December salaries $10,000 are earned by employees in December but paid in January.\n- December adjusting entry: Salary Expense **increases** $10,000; Salaries Payable (Liability) **increases** $10,000\n- January payment: Salaries Payable (Liability) **decreases** $10,000; Cash (Asset) **decreases** $10,000\n\nAccruing ensures the expense is recorded in the period incurred, not when payment is made."
     },
     {
       "type": "checkpoint",
@@ -49,12 +49,12 @@
     {
       "type": "concept",
       "title": "Accrued Revenue (Revenue Receivable)",
-      "content": "Revenue is earned **but cash has not yet been received**.\n\n**Example:** A service firm completes a $5,000 project in December but invoices the customer in January.\n- December adjusting entry: Dr Accounts Receivable $5,000, Cr Service Revenue $5,000\n- January collection: Dr Cash $5,000, Cr Accounts Receivable $5,000\n\nAccruing revenue ensures it is recorded in the period earned, maintaining matching principle."
+      "content": "Revenue is earned **but cash has not yet been received**.\n\n**Example:** A service firm completes a $5,000 project in December but invoices the customer in January.\n- December adjusting entry: Accounts Receivable (Asset) **increases** $5,000; Service Revenue **increases** $5,000\n- January collection: Cash (Asset) **increases** $5,000; Accounts Receivable (Asset) **decreases** $5,000\n\nAccruing revenue ensures it is recorded in the period earned, maintaining matching principle."
     },
     {
       "type": "concept",
       "title": "Unearned Revenue (Deferred Revenue)",
-      "content": "Cash is received **before** the service is performed. This is a **LIABILITY**, not revenue, until the service is delivered.\n\n**Example:** A customer pays $5,000 deposit in November for work to be done in December.\n- November entry: Dr Cash $5,000, Cr Unearned Revenue $5,000 (liability)\n- December entry (on completion): Dr Unearned Revenue $5,000, Cr Service Revenue $5,000\n\nUnearned revenue represents an obligation to perform — it is not income until earned."
+      "content": "Cash is received **before** the service is performed. This is a **LIABILITY**, not revenue, until the service is delivered.\n\n**Example:** A customer pays $5,000 deposit in November for work to be done in December.\n- November entry: Cash (Asset) **increases** $5,000; Unearned Revenue (Liability) **increases** $5,000\n- December entry (on completion): Unearned Revenue (Liability) **decreases** $5,000; Service Revenue **increases** $5,000\n\nUnearned revenue represents an obligation to perform — it is not income until earned."
     },
     {
       "type": "checkpoint",
@@ -76,7 +76,7 @@
     {
       "type": "definition",
       "title": "Inventory and Receivables Treatments",
-      "content": "**Inventory:** Recorded at cost, adjusted downward if obsolete or damaged (Lower of Cost or Market principle). Ensures assets are not overstated.\n\n**Allowance for Doubtful Debts:** Accounts receivable should be reduced by an estimated amount of uncollectible receivables. This is a contra-asset account that reduces receivables on the balance sheet and matches the expense (bad debt expense) to revenue.\n\nBoth are examples of the matching principle: assets are valued conservatively, and expenses are matched to revenues."
+      "content": "**Inventory:** Recorded at cost, adjusted downward if obsolete or damaged (Lower of Cost or Market principle). Ensures assets are not overstated.\n\nThis is an example of the matching principle: assets are valued conservatively, and expenses are matched to revenues in the period they are incurred."
     }
   ],
   "assessment": {
@@ -90,7 +90,7 @@
       {
         "id": "su2_a2",
         "prompt": "A company pays 12 months insurance of $24,000 on 1 July. The financial year ends 31 December. What is the accounting treatment?",
-        "modelAnswer": "On 1 July: Dr Prepaid Insurance $24,000, Cr Cash $24,000 (record the prepayment). By 31 December (6 months used): Dr Insurance Expense $12,000, Cr Prepaid Insurance $12,000 (adjusting entry). Balance sheet at 31 Dec shows Prepaid Insurance (asset) $12,000. Income statement shows Insurance Expense $12,000. The remaining 6 months stay as an asset.",
+        "modelAnswer": "On 1 July: Prepaid Insurance (Asset) increases $24,000; Cash (Asset) decreases $24,000 (record the prepayment). By 31 December (6 months used): Insurance Expense increases $12,000; Prepaid Insurance (Asset) decreases $12,000 (adjusting entry). Balance sheet at 31 Dec shows Prepaid Insurance (asset) $12,000. Income statement shows Insurance Expense $12,000. The remaining 6 months stay as an asset.",
         "keyPoints": ["Initial payment creates prepaid asset", "6 months expensed by year end", "Remaining 6 months stay as asset", "Prepaid = unexpired portion"]
       },
       {
