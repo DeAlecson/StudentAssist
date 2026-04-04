@@ -51,7 +51,7 @@ const Storage = (() => {
     const key = PREFIX + moduleId + '_progress';
     localStorage.setItem(key, JSON.stringify(progress));
     // Non-blocking push to Supabase if signed in
-    if (typeof Auth !== 'undefined' && Auth.isSignedIn()) {
+    if (typeof Auth !== 'undefined' && Auth.isAuthed()) {
       pushToSupabase(moduleId).catch(err => console.warn('Supabase push failed:', err));
     }
   };
@@ -151,7 +151,7 @@ const Storage = (() => {
   // Primary key: (user_id, module_id)
 
   const pushToSupabase = async (moduleId) => {
-    if (typeof Auth === 'undefined' || !Auth.isSignedIn()) return;
+    if (typeof Auth === 'undefined' || !Auth.isAuthed()) return;
     const client = Auth.getClient();
     const user   = Auth.getUser();
     const progress = getProgress(moduleId);
@@ -165,7 +165,7 @@ const Storage = (() => {
   };
 
   const pullFromSupabase = async () => {
-    if (typeof Auth === 'undefined' || !Auth.isSignedIn()) return;
+    if (typeof Auth === 'undefined' || !Auth.isAuthed()) return;
     const client = Auth.getClient();
     const { data, error } = await client
       .from('user_progress')
