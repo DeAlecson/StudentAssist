@@ -105,6 +105,8 @@ const Renderer = (() => {
             </div>
           </div>
         ` : ''}
+
+        ${_renderTokenFooter(moduleId, p)}
       </div>
     `;
   };
@@ -210,6 +212,23 @@ const Renderer = (() => {
             </div>
           `).join('')}
         </div>
+      </div>
+    `;
+  };
+
+  const _renderTokenFooter = (moduleId, p) => {
+    const usage = p.tokenUsage || { inputTokens: 0, outputTokens: 0, calls: 0 };
+    if (usage.calls === 0) return '';
+    const costStr = (typeof AI !== 'undefined') ? AI.estimateCost(usage.inputTokens, usage.outputTokens) : '—';
+    return `
+      <div class="token-footer">
+        <span class="token-footer-label">🤖 AI Usage (this module)</span>
+        <span class="token-footer-stats">
+          <span title="Input tokens">↑ ${usage.inputTokens.toLocaleString()}</span>
+          <span title="Output tokens">↓ ${usage.outputTokens.toLocaleString()}</span>
+          <span title="API calls">× ${usage.calls}</span>
+          <span class="token-footer-cost" title="Estimated cost (Haiku)">${costStr}</span>
+        </span>
       </div>
     `;
   };

@@ -13,7 +13,8 @@ const Storage = (() => {
     masteryMap: {},
     wrongAnswers: [],
     weakTopics: [],
-    attempts: {}
+    attempts: {},
+    tokenUsage: { inputTokens: 0, outputTokens: 0, calls: 0 }
   };
 
   const DEFAULT_SETTINGS = {

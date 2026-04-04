@@ -485,6 +485,9 @@ const App = (() => {
       Utils.$('#api-key-status').className = 'settings-status success';
     }
 
+    // Token usage summary
+    _renderTokenSummary();
+
     // TTS form population
     const s = Storage.getSettings();
     const ttsEnabledEl = Utils.$('#tts-enabled');
@@ -520,9 +523,50 @@ const App = (() => {
     State.set('navOpen', false);
   };
 
+  const _renderTokenSummary = () => {
+    const el = Utils.$('#token-usage-summary');
+    if (!el) return;
+    const modules = ['ict162', 'sst101', 'acc202', 'mkt202'];
+    let totalIn = 0, totalOut = 0, totalCalls = 0;
+    const rows = modules.map(mid => {
+      const p = Storage.getProgress(mid);
+      const u = p.tokenUsage || { inputTokens: 0, outputTokens: 0, calls: 0 };
+      totalIn    += u.inputTokens;
+      totalOut   += u.outputTokens;
+      totalCalls += u.calls;
+      if (u.calls === 0) return '';
+      const cost = (typeof AI !== 'undefined') ? AI.estimateCost(u.inputTokens, u.outputTokens) : '—';
+      return `<div class="token-row">
+        <span class="token-row-module">${mid.toUpperCase()}</span>
+        <span class="token-row-stat" title="Input tokens">↑ ${u.inputTokens.toLocaleString()}</span>
+        <span class="token-row-stat" title="Output tokens">↓ ${u.outputTokens.toLocaleString()}</span>
+        <span class="token-row-stat" title="API calls">× ${u.calls}</span>
+        <span class="token-row-cost">${cost}</span>
+      </div>`;
+    }).filter(Boolean).join('');
+
+    if (totalCalls === 0) {
+      el.innerHTML = '<div class="token-usage-empty">No AI calls recorded yet. Use AI marking to see usage here.</div>';
+      return;
+    }
+
+    const totalCost = (typeof AI !== 'undefined') ? AI.estimateCost(totalIn, totalOut) : '—';
+    el.innerHTML = `
+      ${rows}
+      <div class="token-row token-row-total">
+        <span class="token-row-module">TOTAL</span>
+        <span class="token-row-stat">↑ ${totalIn.toLocaleString()}</span>
+        <span class="token-row-stat">↓ ${totalOut.toLocaleString()}</span>
+        <span class="token-row-stat">× ${totalCalls}</span>
+        <span class="token-row-cost token-row-cost-total">${totalCost}</span>
+      </div>
+    `;
+  };
+
   const openSettings = () => {
     const overlay = Utils.$('#settings-overlay');
     if (overlay) overlay.style.display = 'flex';
+    _renderTokenSummary();
     State.set('settingsOpen', true);
   };
 
