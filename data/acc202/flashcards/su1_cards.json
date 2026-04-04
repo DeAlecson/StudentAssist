@@ -4,75 +4,87 @@
   "cards": [
     {
       "id": "acc_su1_f1",
-      "front": "What is the double entry system?",
-      "back": "Every transaction affects at least two accounts. Total debits must always equal total credits, keeping the accounting equation balanced.",
-      "concept": "Double Entry System"
+      "front": "What is the difference between Financial and Managerial Accounting?",
+      "back": "Financial Accounting: reports to external users (investors, lenders), must follow SFRS rules, standardised format.\n\nManagerial Accounting: reports to internal management, no regulation required, any format that helps decision-making.",
+      "concept": "Financial vs Managerial Accounting"
     },
     {
       "id": "acc_su1_f2",
-      "front": "What is a debit?",
-      "back": "The left side of an account. Debits increase assets, expenses, and dividends; debits decrease liabilities, equity, and revenue.",
-      "concept": "Debit"
+      "front": "Why is Financial Accounting regulated but Managerial Accounting is not?",
+      "back": "External users (investors, lenders) need to trust and compare reports across companies — regulation ensures consistency and comparability.\n\nManagerial reports are internal only, so no external parties are relying on them — companies can design them however they like.",
+      "concept": "Regulatory Framework"
     },
     {
       "id": "acc_su1_f3",
-      "front": "What is a credit?",
-      "back": "The right side of an account. Credits increase liabilities, equity, and revenue; credits decrease assets, expenses, and dividends.",
-      "concept": "Credit"
+      "front": "What are the three sources of the regulatory framework for financial reporting in Singapore?",
+      "back": "1. Companies Act — directors must keep records, produce fair statements, and get them audited.\n2. Accounting Standards (SFRS/IFRS) — detailed rules for recording transactions.\n3. Stock Exchange Regulations — additional requirements for listed companies.",
+      "concept": "Regulatory Framework"
     },
     {
       "id": "acc_su1_f4",
-      "front": "What is a normal balance?",
-      "back": "The side (debit or credit) where an account naturally carries its balance. Assets, expenses, and dividends have debit normal balances. Liabilities, equity, and revenue have credit normal balances.",
-      "concept": "Normal Balance"
+      "front": "What is the Accrual Basis Assumption?",
+      "back": "Transactions are recorded when they occur, NOT when cash is received or paid.\n\nExample: If you provide a service in March but get paid in April, the revenue is still recorded in March — because that's when it was earned.",
+      "concept": "Accrual Basis"
     },
     {
       "id": "acc_su1_f5",
-      "front": "State the accounting equation.",
-      "back": "Assets = Liabilities + Equity. Every transaction must keep this equation balanced.",
-      "concept": "Accounting Equation"
+      "front": "What is the Going-Concern Assumption?",
+      "back": "We assume the business will continue operating indefinitely into the future.\n\nThis means assets are valued based on their ongoing use — NOT at fire-sale/liquidation prices.",
+      "concept": "Going Concern"
     },
     {
       "id": "acc_su1_f6",
-      "front": "Define an asset.",
-      "back": "A resource owned by the business that is expected to provide economic benefits in the future (e.g., cash, inventory, equipment).",
-      "concept": "Assets"
+      "front": "What is the Measurement (Cost) Principle?",
+      "back": "Assets are recorded at their actual purchase cost (historical cost), not at their current market value.\n\nExample: Land bought for $100,000 in 2010 is still recorded at $100,000 today, even if it's now worth $300,000.",
+      "concept": "Measurement Principle"
     },
     {
       "id": "acc_su1_f7",
-      "front": "Define a liability.",
-      "back": "An obligation to transfer economic resources to another party in the future (e.g., accounts payable, loans payable).",
-      "concept": "Liabilities"
+      "front": "What is Conservatism and Prudence in accounting?",
+      "back": "When uncertain, record the lower asset value and recognise losses early.\n\nExample: If inventory cost $10,000 but can only be sold for $8,000, record it at $8,000 — do not overstate assets.",
+      "concept": "Conservatism"
     },
     {
       "id": "acc_su1_f8",
-      "front": "Define equity.",
-      "back": "The residual interest in assets after deducting liabilities. It represents the owners' stake in the business.",
-      "concept": "Equity"
+      "front": "What are the 5 types of accounts (ALREX)?",
+      "back": "A — Asset: what the company owns (Cash, Equipment, Receivables)\nL — Liability: what the company owes (Loans, Payables)\nE — Equity: owners' stake (Share Capital, Retained Earnings)\nR — Revenue: income earned (Sales, Service Revenue)\nX — Expense: costs incurred (Salary Expense, Rent Expense)",
+      "concept": "Account Types"
     },
     {
       "id": "acc_su1_f9",
-      "front": "Define revenue.",
-      "back": "Income earned by the business from selling products or providing services. Revenue increases equity and has a credit normal balance.",
-      "concept": "Revenue"
+      "front": "What is a Stock account vs a Flow account?",
+      "back": "Stock account: measured at a specific point in time (like a snapshot). Includes A, L, E — appears on the Balance Sheet.\nExample: Cash balance on 31 Dec = $25,000\n\nFlow account: measured over a period of time (like a video). Includes R and X — appears on the Income Statement.\nExample: Revenue earned during the year = $150,000",
+      "concept": "Stock vs Flow"
     },
     {
       "id": "acc_su1_f10",
-      "front": "Define an expense.",
-      "back": "A cost incurred to generate revenue. Expenses decrease equity and have a debit normal balance.",
-      "concept": "Expenses"
+      "front": "State the Accounting Equation and explain what each element means.",
+      "back": "Assets = Liabilities + Equity\n\nAssets: resources owned by the business\nLiabilities: amounts owed to outsiders\nEquity: owners' residual interest (what's left after paying liabilities)\n\nEvery transaction must keep this equation balanced.",
+      "concept": "Accounting Equation"
     },
     {
       "id": "acc_su1_f11",
-      "front": "What is a journal entry?",
-      "back": "A chronological record of a transaction showing the accounts debited and credited, amounts, and explanation. Journal entries are the starting point of the accounting cycle.",
-      "concept": "Journal Entry"
+      "front": "How does Revenue affect Equity? How does Expense affect Equity?",
+      "back": "Revenue INCREASES Equity — earning income increases the owners' stake (more profit).\n\nExpense DECREASES Equity — incurring costs reduces the owners' stake (less profit).\n\nThis is why: Equity = Share Capital + Retained Earnings + Revenue − Expenses",
+      "concept": "Revenue and Expenses"
     },
     {
       "id": "acc_su1_f12",
-      "front": "What is a trial balance?",
-      "back": "A list of all accounts and their balances to verify that total debits equal total credits. It is a control mechanism to detect errors in recording or posting.",
-      "concept": "Trial Balance"
+      "front": "Name the four financial statements and what each reports.",
+      "back": "1. Income Statement — Revenue and Expenses over a period → Net Profit/Loss\n2. Statement of Financial Position (Balance Sheet) — Assets, Liabilities, Equity at a date\n3. Statement of Changes in Equity — how equity changed during the period\n4. Statement of Cash Flows — cash inflows/outflows: Operating, Investing, Financing activities",
+      "concept": "Financial Statements"
+    },
+    {
+      "id": "acc_su1_f13",
+      "front": "What are the three sections of the Statement of Cash Flows?",
+      "back": "1. Operating Activities — cash from core business (collecting from customers, paying suppliers, wages)\n2. Investing Activities — buying/selling long-term assets (land, equipment)\n3. Financing Activities — borrowing/repaying loans, issuing shares, paying dividends",
+      "concept": "Cash Flow Statement"
+    },
+    {
+      "id": "acc_su1_f14",
+      "front": "Is Unearned Revenue an Asset or a Liability? Why?",
+      "back": "Unearned Revenue is a LIABILITY.\n\nWhy: The company has received cash from a customer but has NOT yet provided the service. The company owes a future service — it's an obligation, not income earned yet.\n\nOnce the service is performed, Unearned Revenue (Liability) decreases and Revenue increases.",
+      "concept": "Unearned Revenue"
     }
   ]
 }

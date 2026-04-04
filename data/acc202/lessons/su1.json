@@ -1,98 +1,136 @@
 {
   "id": "su1",
-  "title": "Recording Financial Transactions",
+  "title": "Introduction to Financial Accounting",
   "moduleId": "acc202",
   "difficulty": 1,
   "sections": [
     {
       "type": "intro",
       "title": "What is Accounting?",
-      "content": "Accounting records, classifies, and summarises financial transactions to help stakeholders make decisions. The accounting cycle starts with source documents (invoices, receipts) and flows to financial statements.\n\nAccounting is often called the 'language of business' because it communicates financial information in a standardised way that investors, creditors, managers, and regulators can understand."
-    },
-    {
-      "type": "definition",
-      "title": "The Double Entry System",
-      "content": "Every transaction affects at least two accounts. **Debit (Dr)** = left side, **Credit (Cr)** = right side. Total debits MUST equal total credits. This is the foundation of accounting accuracy.\n\nThe double entry system is elegant in its logic: every economic event has a dual effect. Money comes from somewhere and goes somewhere else. This two-sided recording ensures accuracy and allows us to track both sources and uses of resources."
+      "content": "Accounting is the process of **recording, classifying, and summarising** financial transactions so that stakeholders can make informed decisions.\n\nThink of it as the business's scoreboard — it tells you what the company owns, what it owes, and how well it performed.\n\n**Two main branches:**\n- **Financial Accounting** — reports to *external* users (investors, lenders, regulators)\n- **Managerial Accounting** — reports to *internal* users (management, department heads)\n\nACC202 focuses on **financial accounting** — the external-facing reports that must follow strict rules."
     },
     {
       "type": "concept",
-      "title": "The Accounting Equation",
-      "content": "**Assets = Liabilities + Equity**\n\nExpanded: **Assets = Liabilities + Share Capital + Retained Earnings + Revenue - Expenses**\n\nEvery transaction must keep this equation balanced. This fundamental relationship underpins all of accounting. If the equation is out of balance, there is an error somewhere."
+      "title": "Financial vs Managerial Accounting",
+      "content": "| | Financial Accounting | Managerial Accounting |\n|---|---|---|\n| **Users** | External (investors, lenders) | Internal (managers) |\n| **Regulated?** | Yes — must follow SFRS/IFRS | No — tailored to company's needs |\n| **Format** | Standardised (Income Statement, SoFP) | Any format useful to management |\n| **Focus** | Past performance | Future planning & control |\n| **Example** | Annual Report published to shareholders | Monthly budget report for department heads |\n\n**Why is Financial Accounting regulated?**\nBecause external users need to *trust and compare* reports across different companies. Without standardised rules, companies could report in any way they liked, making comparisons meaningless. Regulations like SFRS (Singapore Financial Reporting Standards) ensure consistency, comparability, and transparency."
     },
     {
       "type": "definition",
-      "title": "Account Types and Their Normal Balances",
-      "content": "- **Assets** increase with Dr, decrease with Cr\n- **Liabilities** increase with Cr, decrease with Dr\n- **Equity/Revenue** increase with Cr, decrease with Dr (rare)\n- **Expenses** increase with Dr, decrease with Cr\n\n**Remember: DEALER**\n- **D**ividends increase with Dr\n- **E**xpenses increase with Dr\n- **A**ssets increase with Dr\n- **L**iabilities increase with Cr\n- **E**quity increases with Cr\n- **R**evenue increases with Cr"
+      "title": "The Regulatory Framework",
+      "content": "Financial accounting in Singapore is governed by three layers:\n\n**1. Companies Act**\nDirectors must:\n- Keep proper accounting records\n- Produce true and fair financial statements\n- Have statements audited and attach the auditor's report\n\n**2. Accounting Standards (SFRS/IFRS)**\nSet out detailed rules for how to record and report specific transactions. For example, IAS 1 prescribes the format of the Income Statement.\n\n**3. Stock Exchange Regulations**\nListed companies on SGX have additional reporting requirements (e.g., quarterly announcements).\n\nAll three work together to ensure financial reports are **honest, comparable, and useful** to investors and lenders."
     },
     {
-      "type": "example",
-      "title": "Recording Common Transactions",
-      "content": "**Example 1: Buying inventory with cash**\n- Dr Inventory $5,000\n- Cr Cash $5,000\n- Effect: One asset (Inventory) increases, another asset (Cash) decreases. Equation stays balanced: Assets unchanged.\n\n**Example 2: Buying on credit**\n- Dr Inventory $8,000\n- Cr Accounts Payable $8,000\n- Effect: Asset increases, liability increases. Total assets = liabilities + equity still holds.\n\n**Example 3: Selling for cash**\n- Dr Cash $10,000\n- Cr Service Revenue $10,000\n- Effect: Asset increases, revenue (which increases equity) increases.\n\n**Example 4: Receiving from debtor**\n- Dr Cash $3,000\n- Cr Accounts Receivable $3,000\n- Effect: One asset increases, another decreases."
+      "type": "definition",
+      "title": "Accounting Principles and Assumptions",
+      "content": "These are the ground rules every accountant follows:\n\n**Going-Concern Assumption**\nWe assume the business will continue operating indefinitely — so assets are not valued at liquidation prices.\n\n**Accrual Basis Assumption**\nTransactions are recorded *when they occur*, not when cash is received or paid. If you provide a service in December but get paid in January, it's still December's revenue.\n\n**Measurement (Cost) Principle**\nAssets are recorded at their actual purchase cost, not at what they might be worth today.\n\n**Accounting Period Principle**\nFinancial results are reported in regular periods (monthly, quarterly, annually) so stakeholders can track performance over time.\n\n**Comparability**\nThe same accounting methods are used consistently from year to year so results can be meaningfully compared.\n\n**Relevance and Faithful Representation**\nInformation must be useful for decisions (relevant) and free from personal bias (faithfully represented).\n\n**Conservatism and Prudence**\nWhen in doubt, record lower asset values and recognise losses early. Example: if inventory cost $10,000 but can only be sold for $8,000, record it at $8,000.\n\n**Specific Accounting Principles**\nDetailed rules for specific transactions (e.g., how to account for leases, or depreciation methods)."
     },
     {
       "type": "checkpoint",
-      "title": "Which side increases an Asset?",
-      "content": "Test your understanding of normal balances.",
+      "title": "Checkpoint: Accounting Principles",
+      "content": "A company provides $5,000 of services in March but will only receive payment in April. Under which principle is the revenue recorded in March?",
       "question": {
         "type": "mcq",
-        "prompt": "What is the normal balance (increases) for an Asset account?",
-        "choices": ["Credit side", "Debit side", "Either side", "Neither side"],
+        "prompt": "A company provides $5,000 of services in March but receives payment in April. Which principle requires revenue to be recorded in March?",
+        "choices": [
+          "Going-concern assumption",
+          "Accrual basis assumption",
+          "Measurement (cost) principle",
+          "Conservatism and Prudence"
+        ],
         "answer": 1,
-        "explanation": "Assets have a DEBIT normal balance. They increase with debits and decrease with credits. This is part of the DEALER mnemonic."
+        "explanation": "Accrual basis: record transactions when they occur, not when cash changes hands. Revenue is earned in March when the service is provided, regardless of when payment arrives."
       }
     },
     {
       "type": "concept",
-      "title": "The Transaction Flow",
-      "content": "1. **Source Documents** → Invoices, receipts, contracts, bank statements\n2. **Journal** → Chronological list of all entries (debit = credit for each entry)\n3. **Ledger** → T-accounts organised by account type, showing debits and credits\n4. **Trial Balance** → List of all accounts and balances, checking that total debits = total credits\n5. **Financial Statements** → Income statement, balance sheet, cash flow statement\n\nThis flow ensures every transaction is recorded accurately and can be traced from source to financial statement."
+      "title": "Account Types: A, L, E, R, X",
+      "content": "Every account in accounting belongs to one of five types:\n\n**A — Asset**\nSomething the business *owns* that provides future economic benefit.\nExamples: Cash (Bank), Accounts Receivable, Inventory, Equipment, Prepaid Insurance\n\n**L — Liability**\nSomething the business *owes* to an outside party.\nExamples: Accounts Payable, Bank Loan, Unearned Revenue, Salaries Payable, Accrued Rent\n\n**E — Equity**\nThe owners' stake — what's left after liabilities are deducted from assets.\nExamples: Share Capital, Retained Earnings\n\n**R — Revenue**\nIncome *earned* from the company's activities.\nExamples: Sales, Service Revenue\n\n**X — Expense**\nCosts *incurred* to generate revenue.\nExamples: Salary Expense, Cost of Goods Sold, Supplies Expense, Insurance Expense\n\n**The Accounting Equation ties them together:**\n**Assets (A) = Liabilities (L) + Equity (E)**\n\nRevenue *increases* Equity (more profit → more owners' stake).\nExpenses *decrease* Equity (more costs → less profit → less owners' stake)."
     },
     {
-      "type": "example",
-      "title": "Capital and Liability Transactions",
-      "content": "**Shareholder injects capital:**\n- Dr Cash $50,000\n- Cr Share Capital $50,000\n- Assets increase, equity increases.\n\n**Bank loan received:**\n- Dr Cash $20,000\n- Cr Bank Loan (Liability) $20,000\n- Assets increase, liabilities increase.\n\n**Paying rent expense:**\n- Dr Rent Expense $3,000\n- Cr Cash $3,000\n- Expense increases (decreases net profit, thus equity), cash decreases.\n\n**Declaring dividends:**\n- Dr Retained Earnings $2,000\n- Cr Dividends Payable $2,000\n- Equity decreases, liability increases (company owes this to shareholders)."
+      "type": "definition",
+      "title": "Stock vs Flow Accounts",
+      "content": "Accounts are also classified by *when* they are measured:\n\n**Stock Accounts (Balance Sheet accounts)**\nMeasured at a *specific point in time* — like a snapshot.\nThey carry a balance that accumulates over time.\nIncludes: **Assets, Liabilities, Equity**\nExample: Cash balance on 31 December = $25,000\n\n**Flow Accounts (Income Statement accounts)**\nMeasured *over a period of time* — like a video recording.\nThey reset to zero at the start of each accounting period.\nIncludes: **Revenue, Expenses**\nExample: Sales revenue earned *during* the year = $150,000\n\n**Quick test:** Ask yourself — is this account measured at a *date* or *over a period*?\n- Bank balance at 31 Dec → Stock (date)\n- Salary expense for the year → Flow (period)\n- Accounts Payable at 31 Dec → Stock (date)\n- Sales Revenue for January → Flow (period)"
     },
     {
       "type": "checkpoint",
-      "title": "Identify the Journal Entry",
-      "content": "Apply your knowledge to a transaction scenario.",
+      "title": "Checkpoint: Classify the Account",
+      "content": "Test your understanding of account types and stock vs flow.",
       "question": {
         "type": "mcq",
-        "prompt": "A company buys inventory on credit for $8,000. What is the correct journal entry?",
+        "prompt": "Unearned Revenue is best classified as:",
         "choices": [
-          "Dr Cash $8,000, Cr Inventory $8,000",
-          "Dr Inventory $8,000, Cr Cash $8,000",
-          "Dr Inventory $8,000, Cr Accounts Payable $8,000",
-          "Dr Accounts Payable $8,000, Cr Inventory $8,000"
+          "Asset — Stock account",
+          "Liability — Stock account",
+          "Revenue — Flow account",
+          "Equity — Stock account"
+        ],
+        "answer": 1,
+        "explanation": "Unearned Revenue is a Liability (the company owes a service to the customer who has already paid) and a Stock account (it appears on the Balance Sheet at a point in time, not the Income Statement)."
+      }
+    },
+    {
+      "type": "definition",
+      "title": "The Four Financial Statements",
+      "content": "**1. Income Statement (Statement of Profit or Loss)**\n- Shows revenue and expenses *over a period*\n- Revenue − Expenses = Net Profit (or Net Loss)\n- Contains *flow* accounts (R and X)\n- Example line: Sales $200,000 − Salary Expense $80,000 = Net Profit $120,000\n\n**2. Statement of Financial Position (Balance Sheet)**\n- Shows what the company *owns* and *owes* at a specific date\n- Assets = Liabilities + Equity\n- Contains *stock* accounts (A, L, E)\n\n**3. Statement of Changes in Equity**\n- Shows how equity changed during the period\n- Opening Equity + Net Profit − Dividends = Closing Equity\n\n**4. Statement of Cash Flows**\n- Shows actual cash movements during the period (not just revenue/expenses)\n- Three sections:\n  - **Operating activities** — cash from core business (selling goods, paying wages)\n  - **Investing activities** — buying/selling long-term assets (land, equipment)\n  - **Financing activities** — borrowing money, issuing shares, paying dividends\n\n**Key difference:** The Income Statement uses accrual basis. The Cash Flow Statement shows actual cash received and paid."
+    },
+    {
+      "type": "example",
+      "title": "The Accounting Equation in Action",
+      "content": "SUSS uses **Increase (↑) and Decrease (↓)** to track how transactions affect the accounting equation: **Assets = Liabilities + Equity**\n\n**Transaction 1: Shareholder injects $50,000 cash**\n- Cash (Asset) ↑ $50,000\n- Share Capital (Equity) ↑ $50,000\n- Effect: Both sides increase equally → Equation stays balanced ✓\n\n**Transaction 2: Company borrows $20,000 from bank**\n- Cash (Asset) ↑ $20,000\n- Bank Loan (Liability) ↑ $20,000\n- Effect: Asset up, Liability up → Equation stays balanced ✓\n\n**Transaction 3: Company pays $3,000 rent**\n- Rent Expense ↑ $3,000 → this reduces Net Profit → reduces Equity ↓\n- Cash (Asset) ↓ $3,000\n- Effect: Asset down, Equity down → Equation stays balanced ✓\n\n**Transaction 4: Company provides services, earns $8,000 cash**\n- Cash (Asset) ↑ $8,000\n- Service Revenue ↑ $8,000 → increases Net Profit → increases Equity ↑\n- Effect: Asset up, Equity up → Equation stays balanced ✓\n\n**The rule:** Every transaction must keep Assets = Liabilities + Equity. This is the fundamental check in accounting."
+    },
+    {
+      "type": "checkpoint",
+      "title": "Checkpoint: Accounting Equation",
+      "content": "Apply the accounting equation to solve for a missing figure.",
+      "question": {
+        "type": "mcq",
+        "prompt": "A company has Cash $22,000, Accounts Receivable $16,000, Office Equipment $50,000, and Accounts Payable $17,000. What is Owner's Equity?",
+        "choices": [
+          "$17,000",
+          "$29,000",
+          "$71,000",
+          "$88,000"
         ],
         "answer": 2,
-        "explanation": "Buying on credit: Inventory (asset) increases with debit, Accounts Payable (liability) increases with credit. Cash is NOT involved because payment is deferred."
+        "explanation": "Assets = $22,000 + $16,000 + $50,000 = $88,000. Liabilities = $17,000. Equity = Assets − Liabilities = $88,000 − $17,000 = $71,000. This directly applies A = L + E."
       }
-    },
-    {
-      "type": "definition",
-      "title": "Financial Statements Overview",
-      "content": "**Income Statement (Profit & Loss)**\n- Revenue - Expenses = Net Profit\n- Covers a period (e.g., one year)\n\n**Balance Sheet (Statement of Financial Position)**\n- Assets = Liabilities + Equity\n- At a point in time (e.g., 31 December)\n\n**Cash Flow Statement**\n- Operating activities: cash from core business\n- Investing activities: buying/selling assets\n- Financing activities: borrowing, share issuance, dividends\n- Shows cash inflows and outflows during a period"
     }
   ],
   "assessment": {
     "questions": [
       {
         "id": "su1_a1",
-        "prompt": "Explain the double entry principle and why total debits must equal total credits.",
-        "modelAnswer": "Every transaction has equal and opposite effects on at least two accounts. Total debits = total credits ensures the accounting equation (Assets = Liabilities + Equity) remains balanced. This dual recording system provides a built-in check for accuracy. If debits and credits do not balance, an error exists.",
-        "keyPoints": ["Each transaction affects two or more accounts", "Debits must always equal credits", "Maintains accounting equation balance", "Provides internal control check"]
+        "prompt": "Why is it necessary for financial accounting to be regulated by specific accounting principles, but not managerial accounting? Give one example of each type of accounting report.",
+        "modelAnswer": "Financial accounting is regulated because its reports are used by external stakeholders (investors, lenders, regulators) who need to trust and compare information across different companies. Without standardised rules (like SFRS), companies could report in any way they liked, making comparisons misleading and reducing investor confidence. Managerial accounting does not need regulation because it is used internally by management — there are no external parties relying on it, so companies can design reports to suit their own decision-making needs.\n\nExample of Financial Accounting Report: Income Statement (must follow IAS 1 format).\nExample of Managerial Accounting Report: A departmental budget report (no standard format required).",
+        "keyPoints": [
+          "External users need comparability and trust — regulation achieves this",
+          "Managerial accounting is internal — no need for standardised rules",
+          "SFRS/IFRS are the regulatory standards in Singapore",
+          "One valid example of each report type"
+        ]
       },
       {
         "id": "su1_a2",
-        "prompt": "A company receives $15,000 cash for services rendered. Record the journal entry and explain which accounts are affected and why.",
-        "modelAnswer": "Dr Cash $15,000 (asset increases, debit) / Cr Service Revenue $15,000 (revenue increases, credit). Cash is an asset with a debit normal balance, so receiving cash increases it with a debit. Revenue has a credit normal balance, so earning revenue credits the account. The entry keeps Assets = Liabilities + Equity balanced.",
-        "keyPoints": ["Cash is a debit-normal asset", "Revenue has credit normal balance", "Entry keeps equation balanced", "Inflow of resources from operating activity"]
+        "prompt": "Classify each of the following accounts as Asset (A), Liability (L), Equity (E), Revenue (R), or Expense (X), and state whether each is a Stock or Flow account. Explain your reasoning for TWO of them: (1) Unearned Revenue, (2) Prepaid Insurance Expense, (3) Salary Expense, (4) Share Capital, (5) Accounts Receivable.",
+        "modelAnswer": "1. Unearned Revenue — L, Stock. It is a liability because the company has received cash but not yet provided the service (owes a future service). It is a Stock account because it appears on the Balance Sheet at a point in time.\n2. Prepaid Insurance Expense — A, Stock. It is an asset because the company has paid for future coverage (economic benefit not yet consumed). Stock account as it sits on the Balance Sheet.\n3. Salary Expense — X, Flow. It is an expense incurred during the period to generate revenue. Flow account as it is measured over a period and resets each year.\n4. Share Capital — E, Stock. It represents the owners' investment in the company. Stock account on the Balance Sheet.\n5. Accounts Receivable — A, Stock. It is an asset — money owed to the company by customers. Stock account on the Balance Sheet.",
+        "keyPoints": [
+          "Unearned Revenue = Liability (owes future service), Stock",
+          "Prepaid = Asset (future benefit), Stock",
+          "Salary Expense = Expense, Flow (resets each period)",
+          "Share Capital = Equity, Stock",
+          "Accounts Receivable = Asset, Stock"
+        ]
       },
       {
         "id": "su1_a3",
-        "prompt": "List the five types of accounts and state whether each has a debit or credit normal balance.",
-        "modelAnswer": "Assets (Debit normal balance), Liabilities (Credit normal balance), Equity/Capital (Credit normal balance), Revenue (Credit normal balance), Expenses (Debit normal balance). The DEALER mnemonic helps remember: Dividends/Expenses/Assets increase with Debits; Liabilities/Equity/Revenue increase with Credits.",
-        "keyPoints": ["Assets = Debit normal balance", "Liabilities, Equity, Revenue = Credit normal balance", "Expenses = Debit normal balance", "DEALER mnemonic for quick recall"]
+        "prompt": "A company reported total equity of $145,000 at the start of the year. During the year it earned $210,000 in revenue and incurred $165,000 in expenses. Liabilities at year end were $92,000. Calculate (a) net profit for the year, (b) equity at year end, and (c) total assets at year end. Show your workings.",
+        "modelAnswer": "(a) Net Profit = Revenue − Expenses = $210,000 − $165,000 = $45,000\n\n(b) Equity at year end = Opening Equity + Net Profit = $145,000 + $45,000 = $190,000\n(Assuming no dividends paid during the year)\n\n(c) Total Assets = Liabilities + Equity = $92,000 + $190,000 = $282,000\n\nThis applies the fundamental accounting equation: Assets = Liabilities + Equity.",
+        "keyPoints": [
+          "Net Profit = Revenue − Expenses = $45,000",
+          "Closing Equity = $145,000 + $45,000 = $190,000",
+          "Assets = Liabilities + Equity = $92,000 + $190,000 = $282,000",
+          "Must show workings step by step"
+        ]
       }
     ]
   }
