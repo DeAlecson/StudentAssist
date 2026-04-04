@@ -503,6 +503,49 @@ const App = (() => {
     loadSettingsForm();
   };
 
+  // Populate TTS voice dropdown from browser's speechSynthesis
+  // Voices may not be ready immediately — listen for voiceschanged too
+  const _populateTTSVoices = () => {
+    if (typeof TTS === 'undefined') return;
+    const sel = Utils.$('#tts-voice-select');
+    if (!sel) return;
+
+    const fill = () => {
+      const voices = TTS.listVoices();
+      sel.innerHTML = '';
+
+      if (!voices.length) {
+        const opt = document.createElement('option');
+        opt.value = '';
+        opt.textContent = 'Default browser voice';
+        sel.appendChild(opt);
+        TTS.showStatus('Using default browser voice', 'ready');
+      } else {
+        // Default option
+        const def = document.createElement('option');
+        def.value = '';
+        def.textContent = '— Default —';
+        sel.appendChild(def);
+        voices.forEach(v => {
+          const opt = document.createElement('option');
+          opt.value = v.id;
+          opt.textContent = v.name;
+          sel.appendChild(opt);
+        });
+        TTS.showStatus(`${voices.length} voice${voices.length > 1 ? 's' : ''} available ✓`, 'ready');
+      }
+
+      const saved = Storage.getSettings().ttsVoice || '';
+      sel.value = saved;
+    };
+
+    // Some browsers (Chrome) load voices async
+    if (window.speechSynthesis) {
+      fill();
+      window.speechSynthesis.onvoiceschanged = fill;
+    }
+  };
+
   const loadSettingsForm = () => {
     const settings = Storage.getSettings();
     const displayNameInput = Utils.$('#display-name-input');
@@ -525,18 +568,7 @@ const App = (() => {
     const ttsEnabledEl = Utils.$('#tts-enabled');
     if (ttsEnabledEl) ttsEnabledEl.checked = s.ttsEnabled === true;
 
-    const ttsVoiceSel = Utils.$('#tts-voice-select');
-    if (ttsVoiceSel && typeof TTS !== 'undefined') {
-      if (ttsVoiceSel.options.length === 0) {
-        TTS.listVoices().forEach(v => {
-          const opt = document.createElement('option');
-          opt.value = v.id;
-          opt.textContent = v.name;
-          ttsVoiceSel.appendChild(opt);
-        });
-      }
-      ttsVoiceSel.value = s.ttsVoice || 'af_sky';
-    }
+    _populateTTSVoices();
   };
 
   const openSideNav = () => {
