@@ -2703,41 +2703,47 @@
 .pw-label-amber { color: #f59e0b; }
 .pw-label-green { color: #22c55e; }
 
-/* ═════ HUB HEADER ═════ */
-.hub-header {
-  display: flex; flex-direction: column;
-  align-items: center; margin-bottom: 2.5rem; gap: 1.25rem;
-}
-.hub-header-top {
-  width: 100%; display: flex; justify-content: flex-end; min-height: 1rem;
-}
-.hub-wordmark { text-align: center; margin-bottom: 0; }
-
-/* ═════ HUB USER CHIP ═════ */
-.hub-user-chip {
-  display: flex; align-items: center; gap: 0.5rem;
+/* ═════ HUB MENU BUTTON ═════ */
+.hub-inner { position: relative; }
+.hub-wordmark { text-align: center; margin-bottom: 2.5rem; }
+.hub-menu-btn {
+  position: absolute; top: 0; right: 0;
+  width: 38px; height: 38px; border-radius: 10px;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 12px; padding: 0.45rem 0.6rem 0.45rem 0.45rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  color: var(--text); font-size: 1.1rem; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+  z-index: 10;
 }
-.hub-user-chip.hidden { display: none; }
-.hub-user-avatar {
-  width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+.hub-menu-btn:hover { background: var(--surface-hover, var(--border)); }
+.hub-menu-btn.hidden { display: none; }
+
+/* ═════ HUB ACCOUNT DROPDOWN ═════ */
+.hub-account-panel {
+  position: absolute; top: 46px; right: 0; z-index: 200;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 1rem;
+  min-width: 220px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+.hub-account-panel.hidden { display: none; }
+.hub-account-user { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+.hub-account-avatar {
+  width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
   background: linear-gradient(135deg, #00d4ff, #a855f7);
-  color: #fff; font-size: 0.78rem; font-weight: 700;
+  color: #fff; font-size: 0.9rem; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
 }
-.hub-user-info { display: flex; flex-direction: column; line-height: 1.2; }
-.hub-user-name { font-size: 0.8rem; font-weight: 700; color: var(--text); max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.hub-user-label { font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; }
-.hub-signout-btn {
-  background: none; border: 1px solid var(--border); cursor: pointer;
-  color: var(--text-muted); font-size: 0.68rem; font-weight: 600;
-  padding: 0.2rem 0.45rem; border-radius: 6px; margin-left: 0.15rem;
-  transition: color 0.15s, border-color 0.15s, background 0.15s;
-  white-space: nowrap;
+.hub-account-name { font-size: 0.88rem; font-weight: 700; color: var(--text); }
+.hub-account-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; margin-top: 1px; }
+.hub-account-divider { height: 1px; background: var(--border); margin-bottom: 0.75rem; }
+.hub-account-signout {
+  width: 100%; padding: 0.5rem; border-radius: 8px;
+  background: none; border: 1px solid var(--border);
+  color: var(--text-muted); font-size: 0.82rem; font-weight: 600;
+  cursor: pointer; transition: color 0.15s, background 0.15s;
 }
-.hub-signout-btn:hover { color: var(--text); border-color: var(--text-muted); background: var(--bg); }
+.hub-account-signout:hover { color: var(--text); background: var(--bg); }
 
 /* ═════ TOPBAR USER CHIP ═════ */
 .topbar-user-chip {

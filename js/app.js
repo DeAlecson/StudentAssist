@@ -239,6 +239,23 @@ const App = (() => {
       });
     }
 
+    // Hub menu button toggle
+    const hubMenuBtn = Utils.$('#hub-menu-btn');
+    const hubAccountPanel = Utils.$('#hub-account-panel');
+    if (hubMenuBtn && hubAccountPanel) {
+      hubMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        hubAccountPanel.classList.toggle('hidden');
+      });
+      document.addEventListener('click', (e) => {
+        if (!hubAccountPanel.classList.contains('hidden') &&
+            !hubAccountPanel.contains(e.target) &&
+            e.target !== hubMenuBtn) {
+          hubAccountPanel.classList.add('hidden');
+        }
+      });
+    }
+
     // Nav toggle
     const navToggleBtn = Utils.$('#nav-toggle-btn');
     if (navToggleBtn) {

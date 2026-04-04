@@ -104,13 +104,13 @@ const Auth = {
     const email  = this.profile?.email || this.session?.user?.email || '';
     const initial = (name[0] || 'U').toUpperCase();
 
-    // Hub account chip
-    const hubAvatar = document.getElementById('hub-user-avatar');
-    const hubName   = document.getElementById('hub-user-name');
-    const hubChip   = document.getElementById('hub-user-chip');
-    if (hubAvatar) hubAvatar.textContent = initial;
-    if (hubName)   hubName.textContent   = name;
-    if (hubChip)   hubChip.classList.remove('hidden');
+    // Hub menu button + dropdown
+    const hubAvatar  = document.getElementById('hub-user-avatar');
+    const hubName    = document.getElementById('hub-user-name');
+    const hubMenuBtn = document.getElementById('hub-menu-btn');
+    if (hubAvatar)  hubAvatar.textContent = initial;
+    if (hubName)    hubName.textContent   = name;
+    if (hubMenuBtn) hubMenuBtn.classList.remove('hidden');
 
     // Settings panel (module screen)
     const settEmailEl = document.getElementById('settings-user-email');
