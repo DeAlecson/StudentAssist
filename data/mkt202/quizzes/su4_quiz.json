@@ -151,6 +151,51 @@
       ],
       "answer": 1,
       "explanation": "Rapid market expansion — entering new geographic markets, signing new distribution partnerships, and scaling quickly — is characteristic of the Growth stage. At this stage, a company maximises market share by widening distribution and entering new segments before competition intensifies."
+    },
+    {
+      "id": "mkt_su4_q11",
+      "type": "mcq",
+      "concept": "distribution intensity",
+      "difficulty": 2,
+      "prompt": "A high-end Swiss watch brand sells exclusively through its own flagship boutiques and a small number of carefully selected luxury retailers. Which distribution strategy is this?",
+      "choices": [
+        "Intensive distribution — maximum market coverage",
+        "Selective distribution — limited but not exclusive outlets",
+        "Exclusive distribution — very few carefully chosen intermediaries",
+        "Omnichannel distribution — both online and offline"
+      ],
+      "answer": 2,
+      "explanation": "Exclusive distribution limits the number of intermediaries to very few, often with territorial exclusivity. Luxury brands use it to maintain prestige, control the customer experience, and signal scarcity. Intensive distribution (FMCG/convenience goods) maximises availability. Selective distribution uses a moderate number of outlets without exclusivity."
+    },
+    {
+      "id": "mkt_su4_q12",
+      "type": "mcq",
+      "concept": "waterfall vs sprinkler approach",
+      "difficulty": 3,
+      "prompt": "A cosmetics brand first launches in Singapore, then 6 months later expands to Malaysia and Thailand, then 12 months later enters Australia. This international rollout strategy is the:",
+      "choices": [
+        "Sprinkler approach — entering all markets simultaneously",
+        "Waterfall approach — entering markets sequentially, one region at a time",
+        "Penetration strategy — low pricing to capture each new market",
+        "Skimming strategy — premium pricing in each sequential market"
+      ],
+      "answer": 1,
+      "explanation": "The waterfall approach enters markets sequentially — starting in the home market, then entering one or a few foreign markets at a time as resources and learning grow. It is lower-risk and conserves resources. The sprinkler approach enters many markets simultaneously for faster global reach but requires greater capital and coordination. The JAN 2024 MKT202 exam tested this exact distinction."
+    },
+    {
+      "id": "mkt_su4_q13",
+      "type": "mcq",
+      "concept": "market entry modes",
+      "difficulty": 3,
+      "prompt": "A Singaporean food brand wants to sell in Australia without setting up local operations. It grants an Australian company the right to manufacture and sell its products using its brand name and recipes, in exchange for royalty payments. This market entry mode is:",
+      "choices": [
+        "Direct exporting — shipping finished goods from Singapore",
+        "Franchising — licensing a complete business system with ongoing support",
+        "Licensing — granting rights to produce/sell in exchange for fees/royalties",
+        "Joint venture — creating a shared ownership entity with the Australian partner"
+      ],
+      "answer": 2,
+      "explanation": "Licensing grants a foreign licensee the right to use the brand's intellectual property (name, recipes, technology) in exchange for royalty fees. It avoids direct investment but gives less control. Franchising is a more comprehensive form that includes ongoing support, training, and brand standards. Exporting involves physically shipping products. A joint venture involves shared ownership of a new entity."
     }
   ]
 }

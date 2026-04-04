@@ -78,6 +78,19 @@
           "Three distinct brand elements must be named (from: brand name, URL, logo, character, slogan, jingle, packaging)",
           "Each element should be explained with an example"
         ]
+      },
+      {
+        "prompt": "An eco-friendly skincare brand sells its products through its own website, select organic health stores, and Sephora outlets in Singapore. It is now deciding whether to enter Australia or enter Australia, Japan, and UAE all at once.\n(a) Analyse the distribution strategy the brand uses in Singapore. Name it and justify your answer. (7 marks)\n(b) Evaluate the waterfall versus sprinkler approach for its international expansion. Which is more appropriate for this brand? Justify with at least two reasons. (8 marks)",
+        "modelAnswer": "(a) Selective Distribution: The brand sells through a limited, curated set of outlets (own website, select organic stores, Sephora) — not every available retailer. This is selective because it is more than exclusive (more than 1–2 outlets) but far less than intensive (not every convenience or pharmacy store). Selective distribution suits a premium/eco brand: it maintains brand image by associating only with retailers that align with its positioning (organic stores, Sephora = beauty authority), controls the shopping experience, and targets its specific customer segment without cheapening the brand through mass availability. The omnichannel presence (online + offline) reinforces this.\n\n(b) Waterfall approach is more appropriate. Reason 1 — Limited Resources: As a small eco-friendly brand, simultaneously launching in 3 markets (Australia, Japan, UAE) requires parallel marketing, logistics, legal compliance, and distributor management across very different markets. The waterfall approach allows it to enter Australia first, learn from that experience, adjust strategy, and then enter Japan and UAE with lower risk. Reason 2 — Market Learning: Each market has unique consumer behaviour, regulatory environments, and retail landscapes. A sequential approach allows the brand to adapt its positioning and channel strategy for each market based on real data. Reason 3 — Brand Integrity: A premium eco-brand's identity depends on consistent experience. Spreading resources too thin across 3 simultaneous markets risks diluted execution, inconsistent retail partner quality, and brand damage.",
+        "keyPoints": [
+          "Part (a): Must correctly name SELECTIVE distribution (not intensive, not exclusive)",
+          "Part (a): List specific channels from the scenario as evidence",
+          "Part (a): Explain WHY selective suits this brand (image control, targeting, positioning)",
+          "Part (a): Mention omnichannel (online + offline) as a characteristic",
+          "Part (b): Define BOTH waterfall and sprinkler before concluding",
+          "Part (b): Recommend waterfall with minimum 2 justified reasons specific to the brand",
+          "Part (b): Reasons should reflect brand constraints (resources, learning, consistency)"
+        ]
       }
     ]
   }

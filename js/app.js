@@ -355,16 +355,16 @@ const App = (() => {
       });
     }
 
-    // Settings - Display Name
+    // Settings - Display Name (also syncs to Supabase profile if signed in)
     const displayNameSaveBtn = Utils.$('#display-name-save');
     if (displayNameSaveBtn) {
-      displayNameSaveBtn.addEventListener('click', () => {
+      displayNameSaveBtn.addEventListener('click', async () => {
         const input = Utils.$('#display-name-input');
         const name = (input.value || '').trim();
-        Storage.updateSettings(s => {
-          s.displayName = name;
-          return s;
-        });
+        Storage.updateSettings(s => { s.displayName = name; return s; });
+        if (Auth.isAuthed && Auth.isAuthed()) {
+          await Auth.updateDisplayName(name);
+        }
         Utils.toast('Display name saved', 'success', 2000);
       });
     }
@@ -484,9 +484,18 @@ const App = (() => {
   };
 })();
 
-// Boot when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', App.boot);
-} else {
+// initApp is called by Auth after sign-in (or directly if auth not configured)
+function initApp() {
   App.boot();
+}
+
+// Kick off auth gate on DOM ready — auth.js decides when to call initApp
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    initAuthGate();
+    Auth.init();
+  });
+} else {
+  initAuthGate();
+  Auth.init();
 }

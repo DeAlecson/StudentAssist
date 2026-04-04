@@ -50,6 +50,10 @@ const Storage = (() => {
   const setProgress = (moduleId, progress) => {
     const key = PREFIX + moduleId + '_progress';
     localStorage.setItem(key, JSON.stringify(progress));
+    // Non-blocking push to Supabase if signed in
+    if (typeof Auth !== 'undefined' && Auth.isSignedIn()) {
+      pushToSupabase(moduleId).catch(err => console.warn('Supabase push failed:', err));
+    }
   };
 
   const updateProgress = (moduleId, fn) => {
@@ -142,6 +146,47 @@ const Storage = (() => {
     }
   };
 
+  // ── Supabase sync ───────────────────────────────────────────────────────────
+  // Table: user_progress(user_id uuid, module_id text, progress jsonb, updated_at timestamptz)
+  // Primary key: (user_id, module_id)
+
+  const pushToSupabase = async (moduleId) => {
+    if (typeof Auth === 'undefined' || !Auth.isSignedIn()) return;
+    const client = Auth.getClient();
+    const user   = Auth.getUser();
+    const progress = getProgress(moduleId);
+    const { error } = await client
+      .from('user_progress')
+      .upsert(
+        { user_id: user.id, module_id: moduleId, progress, updated_at: new Date().toISOString() },
+        { onConflict: 'user_id,module_id' }
+      );
+    if (error) throw error;
+  };
+
+  const pullFromSupabase = async () => {
+    if (typeof Auth === 'undefined' || !Auth.isSignedIn()) return;
+    const client = Auth.getClient();
+    const { data, error } = await client
+      .from('user_progress')
+      .select('module_id, progress');
+    if (error) throw error;
+    if (data) {
+      data.forEach(({ module_id, progress }) => {
+        if (progress && typeof progress === 'object') {
+          const merged = { ...DEFAULT_PROGRESS, ...progress };
+          localStorage.setItem(PREFIX + module_id + '_progress', JSON.stringify(merged));
+        }
+      });
+      if (typeof Gamification !== 'undefined') Gamification.refreshHeader();
+    }
+  };
+
+  const pushAllToSupabase = async () => {
+    const modules = ['ict162', 'sst101', 'acc202', 'mkt202'];
+    await Promise.all(modules.map(mid => pushToSupabase(mid)));
+  };
+
   return {
     init,
     getProgress,
@@ -156,6 +201,9 @@ const Storage = (() => {
     resetModule,
     resetAll,
     exportData,
-    importData
+    importData,
+    pushToSupabase,
+    pullFromSupabase,
+    pushAllToSupabase
   };
 })();

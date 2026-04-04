@@ -19,11 +19,80 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div id="app">
+
+<!-- INITIAL LOADER -->
+<div id="app-loader" class="app-loader">
+  <div class="loader-brand">
+    <div class="loader-logo">Student<span>Assist</span></div>
+  </div>
+  <div class="loader-spinner"></div>
+</div>
+
+<!-- AUTH GATE -->
+<div id="auth-gate" class="gate-overlay hidden">
+  <div class="gate-card">
+    <div class="gate-logo">
+      <div class="gate-wordmark">Student<span>Assist</span></div>
+      <div class="gate-tagline">SUSS · Powered by AI</div>
+    </div>
+
+    <div class="gate-auth-tabs" id="auth-tabs">
+      <button class="gate-tab active" id="gate-tab-login">Sign In</button>
+      <button class="gate-tab" id="gate-tab-register">Sign Up</button>
+    </div>
+
+    <!-- Step: Sign In -->
+    <div id="auth-step-login">
+      <div class="gate-field-label">Email</div>
+      <input id="auth-login-email" type="email" class="gate-input" placeholder="you@example.com" autocomplete="email">
+      <div class="gate-field-label" style="margin-top:12px">Password</div>
+      <input id="auth-login-password" type="password" class="gate-input" placeholder="••••••••" autocomplete="current-password">
+      <button id="auth-signin-btn" class="btn btn-primary" style="width:100%;margin-top:16px">Sign In</button>
+      <p class="gate-hint">No account? Click <strong>Sign Up</strong> above. &nbsp;·&nbsp; <a href="#" id="auth-forgot-link">Forgot password?</a></p>
+    </div>
+
+    <!-- Step: Sign Up -->
+    <div id="auth-step-register" class="hidden">
+      <div class="gate-field-label">Email</div>
+      <input id="auth-register-email" type="email" class="gate-input" placeholder="you@example.com" autocomplete="email">
+      <div class="gate-field-label" style="margin-top:12px">Password</div>
+      <input id="auth-register-password" type="password" class="gate-input" placeholder="Min 8 chars, include numbers &amp; symbols" autocomplete="new-password">
+      <div id="auth-pw-strength" class="pw-strength hidden">
+        <div class="pw-track"><div class="pw-bar" id="auth-pw-bar"></div></div>
+        <span class="pw-label" id="auth-pw-label"></span>
+      </div>
+      <button id="auth-signup-btn" class="btn btn-primary" style="width:100%;margin-top:16px">Create Account</button>
+      <p class="gate-hint">Free to join — sign up with any email address.</p>
+    </div>
+
+    <!-- Step: Password reset -->
+    <div id="auth-step-reset" class="hidden">
+      <div class="gate-sent-icon">🔒</div>
+      <p class="gate-sub">Set a new password for your account.</p>
+      <div class="gate-field-label">New Password</div>
+      <input id="auth-newpw-input" type="password" class="gate-input" placeholder="Min 8 chars, numbers &amp; symbols" autocomplete="new-password">
+      <div id="auth-newpw-strength" class="pw-strength hidden">
+        <div class="pw-track"><div class="pw-bar" id="auth-newpw-bar"></div></div>
+        <span class="pw-label" id="auth-newpw-label"></span>
+      </div>
+      <button id="auth-newpw-btn" class="btn btn-primary" style="width:100%;margin-top:16px">Update Password</button>
+      <button id="auth-reset-back-btn" class="btn btn-ghost" style="width:100%;margin-top:8px">← Back to Sign In</button>
+    </div>
+  </div>
+</div>
+
+<!-- APP SHELL -->
+<div id="app" class="hidden">
 
   <!-- HUB SCREEN: module selector -->
   <div id="hub-screen" class="screen active">
     <div class="hub-inner">
+      <!-- User chip top-right of hub -->
+      <div id="hub-user-chip" class="hub-user-chip hidden">
+        <div id="hub-user-avatar" class="hub-user-avatar"></div>
+        <span id="hub-user-name" class="hub-user-name"></span>
+        <button id="hub-signout-btn" class="hub-signout-btn" title="Sign out">↩</button>
+      </div>
       <div class="hub-wordmark">
         <div class="hub-logo">Student<span class="hub-dot">Assist</span></div>
         <div class="hub-tagline">SUSS · Powered by AI</div>
@@ -31,7 +100,7 @@
       <div id="hub-cards" class="hub-cards">
         <!-- Cards injected by app.js from modules.json -->
       </div>
-      <div class="hub-footer">v1.1.0 · MKT202 · Past Papers · Exam Mode</div>
+      <div class="hub-footer">v2.0.0 · Auth · Leaderboard · Exam Practice · Cheatsheet</div>
     </div>
   </div>
 
@@ -50,6 +119,7 @@
         <span id="header-xp" class="xp-badge"></span>
         <button id="lb-btn" class="topbar-btn" title="Leaderboard">🏆</button>
         <button id="settings-btn" class="topbar-btn" title="Settings">⚙</button>
+        <div id="topbar-user-initial" class="topbar-user-chip" title="Account"></div>
         <button id="nav-toggle-btn" class="topbar-btn" title="Menu">☰</button>
       </div>
     </header>
@@ -98,6 +168,29 @@
         <button id="settings-close" class="icon-btn">✕</button>
       </div>
       <div class="settings-body">
+
+        <!-- Account section (signed-in info) -->
+        <div class="settings-section">
+          <label class="settings-label">Account</label>
+          <div class="settings-account-card">
+            <div id="settings-user-initial" class="settings-user-avatar"></div>
+            <div class="settings-user-info">
+              <div id="settings-user-name" class="settings-user-displayname"></div>
+              <div id="settings-user-email" class="settings-user-email"></div>
+            </div>
+            <button id="auth-signout-btn" class="btn btn-ghost settings-signout-btn">Sign Out</button>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <label class="settings-label">Display Name</label>
+          <div class="settings-hint">Shown on the leaderboard when you submit a score.</div>
+          <input type="text" id="display-name-input" class="settings-input" placeholder="Your name...">
+          <div class="settings-actions">
+            <button id="display-name-save" class="btn btn-primary">Save Name</button>
+          </div>
+        </div>
+
         <div class="settings-section">
           <label class="settings-label">Anthropic API Key <span class="badge-optional">optional</span></label>
           <div class="settings-hint">Enables AI marking and AI-generated assessments. Stored in session only — cleared on tab close.</div>
@@ -108,14 +201,7 @@
           </div>
           <div id="api-key-status" class="settings-status"></div>
         </div>
-        <div class="settings-section">
-          <label class="settings-label">Your Display Name</label>
-          <div class="settings-hint">Shown on the leaderboard when you submit a score.</div>
-          <input type="text" id="display-name-input" class="settings-input" placeholder="Your name...">
-          <div class="settings-actions">
-            <button id="display-name-save" class="btn btn-primary">Save Name</button>
-          </div>
-        </div>
+
         <div class="settings-section">
           <label class="settings-label">Data</label>
           <div class="settings-hint">Export your progress as a JSON backup, or wipe all stored data.</div>
@@ -126,6 +212,7 @@
             <button id="reset-all-btn" class="btn btn-danger settings-data-btn">🗑 Reset All Data</button>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -177,7 +264,10 @@
     </div>
   </div>
 
-</div>
+</div><!-- #app -->
+
+<!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <!-- Scripts loaded in dependency order -->
 <script src="js/utils.js"></script>
@@ -195,6 +285,7 @@
 <script src="js/exam-engine.js"></script>
 <script src="js/cheatsheet.js"></script>
 <script src="js/renderer.js"></script>
+<script src="js/auth.js"></script>
 <script src="js/app.js"></script>
 
 </body>

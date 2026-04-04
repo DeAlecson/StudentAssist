@@ -51,6 +51,66 @@
       "choices": ["Encapsulation", "Polymorphism", "Composition", "Abstraction"],
       "answer": 1,
       "explanation": "Polymorphism means different classes respond to the same method call (.area()) in their own way. Each shape calculates area differently."
+    },
+    {
+      "id": "su3_q6",
+      "type": "mcq",
+      "concept": "MRO",
+      "difficulty": 3,
+      "prompt": "When obj.speak() is called and both the parent class Animal and the child class Dog define speak(), which implementation does Python run?",
+      "choices": [
+        "The parent class (Animal) implementation",
+        "Both implementations in order",
+        "The most-derived (Dog) class implementation",
+        "Whichever was defined last"
+      ],
+      "answer": 2,
+      "explanation": "Python's Method Resolution Order (MRO) always uses the most-derived class's method first. Since Dog overrides speak(), Dog.speak() runs. This is the foundation of polymorphism."
+    },
+    {
+      "id": "su3_q7",
+      "type": "output_prediction",
+      "concept": "MRO super() chain",
+      "difficulty": 4,
+      "prompt": "What is the output of the following code?\n```python\nclass Vehicle:\n    def describe(self):\n        return \"Vehicle\"\n\nclass Car(Vehicle):\n    def describe(self):\n        return super().describe() + \" > Car\"\n\nclass ElectricCar(Car):\n    def describe(self):\n        return super().describe() + \" > ElectricCar\"\n\nec = ElectricCar()\nprint(ec.describe())\n```",
+      "choices": [
+        "Vehicle",
+        "ElectricCar",
+        "Vehicle > Car > ElectricCar",
+        "ElectricCar > Car > Vehicle"
+      ],
+      "answer": 2,
+      "explanation": "MRO traces up the chain. ElectricCar.describe() calls Car.describe() via super(), which calls Vehicle.describe() via super(). Each appends its own label after getting the parent's result, producing the full chain left-to-right: Vehicle > Car > ElectricCar."
+    },
+    {
+      "id": "su3_q8",
+      "type": "mcq",
+      "concept": "abstract class TypeError",
+      "difficulty": 3,
+      "prompt": "What happens when this code runs?\n```python\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\ns = Shape()\n```",
+      "choices": [
+        "area() returns None silently",
+        "TypeError: Can't instantiate abstract class Shape with abstract method area",
+        "NotImplementedError is raised",
+        "Shape is created with area() returning 0"
+      ],
+      "answer": 1,
+      "explanation": "Python raises TypeError at the point of instantiation (s = Shape()) — not when you call area(). Abstract classes with unimplemented abstract methods cannot be instantiated directly."
+    },
+    {
+      "id": "su3_q9",
+      "type": "output_prediction",
+      "concept": "runtime type dispatch",
+      "difficulty": 4,
+      "prompt": "What does this code print?\n```python\nclass Animal:\n    def __str__(self):\n        return \"Animal\"\n\nclass Dog(Animal):\n    def __str__(self):\n        return \"Dog\"\n\npet = Dog()  # variable type is Animal reference\nprint(pet)\n```",
+      "choices": [
+        "Animal",
+        "Dog",
+        "Animal\\nDog",
+        "TypeError"
+      ],
+      "answer": 1,
+      "explanation": "Python always dispatches based on the runtime (actual) type of the object, not the declared reference type. pet holds a Dog object at runtime, so Dog.__str__() runs and prints 'Dog'. This is key for exam output-tracing questions."
     }
   ]
 }

@@ -16,6 +16,36 @@
     {"id": "sst_su5_q12", "type": "mcq", "concept": "ETC", "prompt": "ETC (Estimate to Complete) represents:", "difficulty": 2, "choices": ["The total project budget approved at start", "The difference between planned and actual costs", "The remaining estimated cost to finish the project", "The variance between budget and actual at project end"], "answer": 2},
     {"id": "sst_su5_q13", "type": "mcq", "concept": "SV", "prompt": "SV = EV - PV. If SV is POSITIVE, the project is:", "difficulty": 2, "choices": ["Over budget", "Behind schedule", "Ahead of schedule", "Underspent"], "answer": 2},
     {"id": "sst_su5_q14", "type": "mcq", "concept": "CPI", "prompt": "Which is NOT a valid interpretation of CPI = 0.85?", "difficulty": 3, "choices": ["For every $1 spent, $0.85 of value is delivered", "The project is 15% cost-inefficient", "The project will likely finish under budget", "The project is experiencing a cost overrun trend"], "answer": 2},
-    {"id": "sst_su5_q15", "type": "mcq", "concept": "dual variance", "prompt": "What does it mean when both CV and SV are negative?", "difficulty": 3, "choices": ["The project is on track", "Under budget and ahead of schedule", "Over budget AND behind schedule simultaneously", "The project will finish early with savings"], "answer": 2}
+    {"id": "sst_su5_q15", "type": "mcq", "concept": "dual variance", "prompt": "What does it mean when both CV and SV are negative?", "difficulty": 3, "choices": ["The project is on track", "Under budget and ahead of schedule", "Over budget AND behind schedule simultaneously", "The project will finish early with savings"], "answer": 2},
+    {
+      "id": "sst_su5_q16",
+      "type": "mcq",
+      "concept": "EVM corrective action",
+      "difficulty": 3,
+      "prompt": "A project reports: CPI = 0.78, SPI = 0.85, EAC = $640,000, BAC = $500,000. What is the PM's MOST appropriate corrective action?",
+      "choices": [
+        "Accept the overrun — EAC is only an estimate, wait until project end",
+        "Immediately rebaseline the project to match EAC so variances disappear",
+        "Escalate to sponsor, investigate root causes of cost inefficiency, explore scope reduction or resource reallocation to recover",
+        "Add more resources to speed up the schedule, which will automatically fix the cost overrun"
+      ],
+      "answer": 2,
+      "explanation": "CPI = 0.78 means $1 of work costs $1.28 — serious cost inefficiency. SPI = 0.85 means schedule is also behind. The corrective action sequence is: (1) escalate to sponsor (overrun is significant), (2) investigate ROOT CAUSE — is it scope creep, inefficient resources, rework, procurement issues?, (3) consider crashing high-priority tasks if schedule slippage is causing cascading costs, (4) explore cutting low-priority scope. Rebasing hides the problem. Adding resources often worsens cost efficiency."
+    },
+    {
+      "id": "sst_su5_q17",
+      "type": "mcq",
+      "concept": "VAC management response",
+      "difficulty": 3,
+      "prompt": "A project has BAC = $300,000 and EAC = $375,000. VAC = -$75,000. The project is 60% complete. Which statement BEST describes the PM's responsibility?",
+      "choices": [
+        "VAC is negative, meaning the project is $75,000 under budget — no action needed",
+        "VAC = -$75,000 means the project is forecasted to overrun by $75,000; the PM must report this to the sponsor and actively seek corrective actions",
+        "The PM should wait until project completion to determine if VAC is accurate",
+        "A negative VAC simply means the EAC formula was applied incorrectly"
+      ],
+      "answer": 1,
+      "explanation": "VAC = BAC - EAC = $300,000 - $375,000 = -$75,000. Negative VAC means the project is forecasted to OVERRUN by $75,000 — it will cost $75,000 more than the approved budget. The PM's responsibility is to: (1) report the forecasted overrun to the project sponsor immediately, (2) identify what is driving the cost overrun, (3) propose corrective actions (reduce scope, improve efficiency, request budget increase). Doing nothing or waiting is NOT acceptable project management practice."
+    }
   ]
 }

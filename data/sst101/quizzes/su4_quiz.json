@@ -16,6 +16,36 @@
     {"id": "sst_su4_q12", "type": "mcq", "concept": "mitigate", "prompt": "Which risk response is MOST appropriate when a risk cannot be eliminated but its probability can be reduced?", "difficulty": 2, "choices": ["Accept", "Transfer", "Avoid", "Mitigate"], "answer": 3},
     {"id": "sst_su4_q13", "type": "mcq", "concept": "cost increase", "prompt": "Which statement BEST explains why the cost to fix problems is highest in late project stages?", "difficulty": 2, "choices": ["More staff are employed later", "Mistakes late require rework of completed deliverables, which is expensive to undo", "Risks are easier to identify late", "The PM's authority increases in late stages"], "answer": 1},
     {"id": "sst_su4_q14", "type": "mcq", "concept": "moderate risk", "prompt": "A risk has HIGH impact but LOW likelihood. The recommended response is to:", "difficulty": 2, "choices": ["Treat it as critical and react immediately", "Accept it without any planning", "Monitor closely and prepare a contingency plan", "Avoid the risk by changing the project plan completely"], "answer": 2},
-    {"id": "sst_su4_q15", "type": "mcq", "concept": "control phase", "prompt": "After planning risk responses, executing, monitoring, and adjusting is done in which IADC step?", "difficulty": 2, "choices": ["Identify", "Assess", "Develop", "Control"], "answer": 3}
+    {"id": "sst_su4_q15", "type": "mcq", "concept": "control phase", "prompt": "After planning risk responses, executing, monitoring, and adjusting is done in which IADC step?", "difficulty": 2, "choices": ["Identify", "Assess", "Develop", "Control"], "answer": 3},
+    {
+      "id": "sst_su4_q16",
+      "type": "mcq",
+      "concept": "risk scenario - avoid vs mitigate",
+      "difficulty": 3,
+      "prompt": "A PM discovers the project depends on a legacy software library that the vendor may discontinue within 6 months — creating a HIGH probability, HIGH impact risk. The team decides to rewrite the module using a modern, well-supported alternative before this becomes an issue. Which risk response strategy is this?",
+      "choices": [
+        "Accept — acknowledging the risk and setting aside contingency budget",
+        "Transfer — passing the risk to a third-party maintenance vendor",
+        "Mitigate — reducing the probability by monitoring the vendor closely",
+        "Avoid — eliminating the risk entirely by removing the source of vulnerability"
+      ],
+      "answer": 3,
+      "explanation": "Avoid means changing the project plan to eliminate the risk source entirely. By rewriting the module before the library is discontinued, the team removes the dependency — the risk no longer exists. Mitigate would reduce (not eliminate) the probability, e.g., by monitoring for an early warning. Accept would acknowledge the risk. Transfer would shift it to another party."
+    },
+    {
+      "id": "sst_su4_q17",
+      "type": "mcq",
+      "concept": "risk scenario - integrated response selection",
+      "difficulty": 4,
+      "prompt": "A project is 40% complete. A new regulatory requirement has emerged that could force a complete redesign of the core deliverable if implemented. Likelihood: MEDIUM (50%). Impact: CRITICAL. The PM has 3 months before the regulation takes effect. Which response is MOST appropriate?",
+      "choices": [
+        "Accept — the regulation may not pass, so wait and see",
+        "Transfer — pass the redesign risk to the client via a contract amendment",
+        "Develop a contingency plan (partial redesign already scoped) and monitor the regulatory process — mitigate and control",
+        "Avoid — cancel the project immediately to prevent losses"
+      ],
+      "answer": 2,
+      "explanation": "With MEDIUM likelihood and CRITICAL impact, the risk sits in the proactive response zone. Accept is too passive (3 months is enough time to prepare). Avoid (cancel the project) is disproportionate — the regulation may not pass. Transfer is possible but the client would likely resist absorbing critical design risk. The best approach: develop a pre-planned contingency (partial redesign ready), lobby for regulatory feedback, and escalate — this is Develop + Control in the IADC cycle."
+    }
   ]
 }

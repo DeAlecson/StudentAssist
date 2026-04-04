@@ -146,6 +146,51 @@
       ],
       "answer": 1,
       "explanation": "Rolling budget is continuously updated, always looking forward (e.g., always planning 12 months ahead). It keeps the budget current and responsive to changing circumstances."
+    },
+    {
+      "id": "acc_su6_q11",
+      "type": "mcq",
+      "concept": "flexible budget variance",
+      "difficulty": 3,
+      "prompt": "A company budgeted variable production costs of $4/unit for a planned output of 8,000 units. Actual output was 10,000 units with actual variable costs totalling $44,000. What is the flexible budget variance for variable costs?",
+      "choices": [
+        "$12,000 Unfavourable — actual exceeded the static budget",
+        "$4,000 Unfavourable — actual exceeded the flexible budget",
+        "$4,000 Favourable — actual was below the flexible budget",
+        "$8,000 Favourable — production exceeded the static budget"
+      ],
+      "answer": 1,
+      "explanation": "Flexible budget adjusts for actual volume. Flexible budget for 10,000 units = 10,000 × $4 = $40,000. Actual = $44,000. Variance = $44,000 − $40,000 = $4,000 Unfavourable. This shows the company spent $4,000 more per unit than planned, NOT because it produced more — that effect is isolated in the sales volume variance."
+    },
+    {
+      "id": "acc_su6_q12",
+      "type": "mcq",
+      "concept": "sales volume variance",
+      "difficulty": 3,
+      "prompt": "Static budget: 8,000 units × $4 variable cost = $32,000. Flexible budget: 10,000 units × $4 = $40,000. The difference of $8,000 represents the:",
+      "choices": [
+        "Flexible budget variance — the difference caused by spending efficiency",
+        "Sales volume variance — the difference caused by producing/selling a different volume than planned",
+        "Price variance — the difference caused by paying different prices for inputs",
+        "Efficiency variance — the difference caused by using more or fewer inputs per unit"
+      ],
+      "answer": 1,
+      "explanation": "The sales volume variance (also called the activity variance) measures the cost/revenue effect of producing/selling a different volume than budgeted. Here: actual 10,000 vs budgeted 8,000 units drove an additional $8,000 of expected variable cost. The flexible budget variance ($4,000 Unfav) shows actual spending efficiency. Total variance = sales volume variance + flexible budget variance."
+    },
+    {
+      "id": "acc_su6_q13",
+      "type": "mcq",
+      "concept": "variance root cause and management response",
+      "difficulty": 3,
+      "prompt": "A manufacturing firm has a $15,000 Unfavourable direct materials variance. Which management response is MOST appropriate?",
+      "choices": [
+        "Immediately cut the materials budget for next period",
+        "Investigate the root cause — determine whether it was a price increase, usage inefficiency, or waste — then respond accordingly",
+        "Override the budget and record it as a budget error",
+        "Accept the variance as normal without investigation since it is below 10%"
+      ],
+      "answer": 1,
+      "explanation": "Variance analysis is only the start — the variance flags a problem, but management must investigate ROOT CAUSE before responding: (a) if materials prices rose (price variance), consider renegotiating contracts or switching suppliers; (b) if workers used more materials than standard (efficiency/usage variance), investigate training, machine calibration, or scrap rates; (c) if both, address each separately. Cutting the budget without understanding why creates a cycle of missed targets."
     }
   ]
 }

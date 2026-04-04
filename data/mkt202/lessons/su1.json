@@ -81,6 +81,17 @@
           "Brand equity enables premium pricing and customer loyalty beyond functional benefits",
           "Customer equity (sum of all CLVs) is a key indicator of organisational health"
         ]
+      },
+      {
+        "prompt": "Propose TWO specific CRM strategies a sustainable activewear brand could use to strengthen customer loyalty and grow customer equity. For each strategy, explain the mechanism — how does it build loyalty — and link it to CRM theory.",
+        "modelAnswer": "Strategy 1 — Tiered Loyalty Programme: Create tiered membership (e.g., Green/Gold/Platinum) based on cumulative spend. Higher tiers unlock exclusive benefits — early product drops, free alterations, sustainability impact reports showing the customer's personal environmental contribution. Mechanism: the tier system creates aspiration and switching costs. Once a customer reaches Gold, downgrading feels like a loss (loss aversion). CRM link: focuses investment on high-CLV customers, increases purchase frequency, and deepens emotional engagement through purpose alignment.\n\nStrategy 2 — Post-purchase Community Engagement: Launch a private app community where customers log workouts, share progress, and access exclusive coaching content. Personalised check-ins at 30, 60, and 90 days post-purchase reinforce the relationship. Mechanism: community membership creates social belonging and brand identity fusion, making the customer's identity tied to the brand. CRM link: engagement marketing extends the customer relationship beyond transactions, increasing CLV by reducing churn and encouraging upgrades.",
+        "keyPoints": [
+          "TWO distinct strategies — not two variations of the same idea",
+          "Each strategy must be specific to the brand context, not generic CRM advice",
+          "Explain the MECHANISM of each strategy — HOW does it build loyalty",
+          "Reference to CRM theory: customer equity, CLV, switching costs, or engagement marketing",
+          "Approximately 7 marks per strategy in exam format"
+        ]
       }
     ]
   }

@@ -151,6 +151,51 @@
       ],
       "answer": 2,
       "explanation": "The microenvironment consists of forces close to the company that directly affect its ability to serve customers — including suppliers, competitors, marketing intermediaries, customers, and publics. A supplier experiencing delays is a direct microenvironment factor. The other options (inflation, privacy law, generational values shifts) are macroenvironment forces."
+    },
+    {
+      "id": "mkt_su1_q11",
+      "type": "mcq",
+      "concept": "CRM",
+      "difficulty": 2,
+      "prompt": "Customer Relationship Management (CRM) aims to:",
+      "choices": [
+        "Reduce the total number of customers to improve service quality",
+        "Build long-term, profitable relationships by maximising customer lifetime value and customer equity",
+        "Automate all marketing decisions using software systems",
+        "Replace sales teams with digital communication channels"
+      ],
+      "answer": 1,
+      "explanation": "CRM is a comprehensive strategy for managing relationships to maximise long-term profitability. It involves acquiring the right customers, building deep relationships through value delivery, and retaining the most profitable customers — ultimately growing customer equity (the total lifetime value of all customers)."
+    },
+    {
+      "id": "mkt_su1_q12",
+      "type": "mcq",
+      "concept": "CLV vs customer equity",
+      "difficulty": 2,
+      "prompt": "Which BEST distinguishes Customer Lifetime Value (CLV) from Customer Equity?",
+      "choices": [
+        "CLV is measured in units sold; Customer Equity is measured in dollars",
+        "CLV estimates the total value of one customer relationship; Customer Equity is the total CLV across all customers",
+        "CLV applies to B2B customers only; Customer Equity applies to B2C customers",
+        "They are synonymous terms used interchangeably in marketing"
+      ],
+      "answer": 1,
+      "explanation": "CLV (Customer Lifetime Value) estimates the total net profit attributable to one customer over their entire relationship. Customer Equity is the sum of all CLVs across the entire customer base — the total long-term financial value of all customer relationships. A company grows by acquiring customers with high CLV potential."
+    },
+    {
+      "id": "mkt_su1_q13",
+      "type": "mcq",
+      "concept": "CRM strategy",
+      "difficulty": 3,
+      "prompt": "A premium hotel chain identifies its top 5% of guests (who contribute 60% of revenue) and creates a dedicated concierge service, exclusive upgrade benefits, and early booking access for them only. This CRM approach reflects:",
+      "choices": [
+        "Mass marketing — treating all customers equally regardless of value",
+        "Selective relationship management — concentrating investment on the most valuable customers",
+        "Penetration pricing — attracting new customers with low introductory prices",
+        "Market skimming — extracting maximum value from all customers simultaneously"
+      ],
+      "answer": 1,
+      "explanation": "Effective CRM recognises that customers differ in profitability. Selective relationship management concentrates service investment on high-value customers (top 5% generating 60% of revenue) to maximise return on relationship investment. CRM theory states: identify valuable customers → build deeper bonds → milk them; for low-value customers, minimise acquisition cost and invest less."
     }
   ]
 }

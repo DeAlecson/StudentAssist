@@ -121,6 +121,34 @@
           "Make code intentions clear",
           "Enable compile-time (instantiation-time) error checking"
         ]
+      },
+      {
+        "id": "su3_a4",
+        "prompt": "Trace the output of the following code. Show your reasoning step by step.\n```python\nclass Base:\n    def __init__(self, name):\n        self.name = name\n    def __str__(self):\n        return f\"Base({self.name})\"\n\nclass Middle(Base):\n    def __init__(self, name, level):\n        super().__init__(name)\n        self.level = level\n    def __str__(self):\n        return super().__str__() + f\" Level:{self.level}\"\n\nclass Top(Middle):\n    def __init__(self, name, level, rank):\n        super().__init__(name, level)\n        self.rank = rank\n    def __str__(self):\n        return super().__str__() + f\" Rank:{self.rank}\"\n\nobj = Top(\"Alice\", 3, \"Gold\")\nprint(obj)\n```",
+        "modelAnswer": "Output: Base(Alice) Level:3 Rank:Gold\n\nStep-by-step trace:\n1. Top(\"Alice\", 3, \"Gold\") calls Top.__init__ → calls super().__init__(\"Alice\", 3) → Middle.__init__ sets self.name=\"Alice\", self.level=3 via Base → Top sets self.rank=\"Gold\"\n2. print(obj) triggers Top.__str__ → calls super().__str__() which is Middle.__str__ → Middle calls super().__str__() which is Base.__str__ → Base returns \"Base(Alice)\"\n3. Middle appends \" Level:3\" → returns \"Base(Alice) Level:3\"\n4. Top appends \" Rank:Gold\" → final output: \"Base(Alice) Level:3 Rank:Gold\"\n\nKey: each super().__str__() call walks up the MRO chain, building the string from the top of the hierarchy downwards.",
+        "keyPoints": [
+          "super().__init__() in Top calls Middle.__init__, which calls Base.__init__",
+          "All three constructors run, setting name, level, rank",
+          "super().__str__() in Top calls Middle.__str__ first",
+          "Middle.__str__ calls Base.__str__ which returns 'Base(Alice)'",
+          "Each level appends to the parent's result: Base → Middle → Top",
+          "Final output must match exact chain: Base(Alice) Level:3 Rank:Gold"
+        ]
+      },
+      {
+        "id": "su3_a5",
+        "prompt": "Design a Vehicle system with the following requirements. Provide working Python code.\n- Abstract class Vehicle (from ABC) with two abstract methods: accelerate(amount) and brake(amount)\n- Concrete class Car(Vehicle): has attributes make (str) and speed (float, starts at 0). accelerate() increases speed by amount but raises ValueError('Speed limit exceeded') if speed would exceed 200. brake() decreases speed by amount but never below 0.\n- Concrete class ElectricCar(Car): has additional attribute battery (int %). Override accelerate() to call super().accelerate(amount) and then print f'Battery at {self.battery}%'.\n- In main: create an ElectricCar, accelerate by 80, accelerate by 80, then try to accelerate by 80 again (expecting the exception).",
+        "modelAnswer": "```python\nfrom abc import ABC, abstractmethod\n\nclass Vehicle(ABC):\n    @abstractmethod\n    def accelerate(self, amount):\n        pass\n    \n    @abstractmethod\n    def brake(self, amount):\n        pass\n\nclass Car(Vehicle):\n    def __init__(self, make):\n        self.make = make\n        self.speed = 0.0\n    \n    def accelerate(self, amount):\n        if self.speed + amount > 200:\n            raise ValueError('Speed limit exceeded')\n        self.speed += amount\n    \n    def brake(self, amount):\n        self.speed = max(0, self.speed - amount)\n\nclass ElectricCar(Car):\n    def __init__(self, make, battery):\n        super().__init__(make)\n        self.battery = battery\n    \n    def accelerate(self, amount):\n        super().accelerate(amount)  # raises ValueError if limit exceeded\n        print(f'Battery at {self.battery}%')\n\ndef main():\n    ec = ElectricCar('Tesla', 80)\n    ec.accelerate(80)   # speed = 80, prints Battery at 80%\n    ec.accelerate(80)   # speed = 160, prints Battery at 80%\n    try:\n        ec.accelerate(80)  # would be 240 > 200 → ValueError\n    except ValueError as e:\n        print(f'Error: {e}')\n\nmain()\n```",
+        "keyPoints": [
+          "Vehicle uses ABC and @abstractmethod on both methods",
+          "Car implements both abstract methods — can now be instantiated",
+          "Car.accelerate raises ValueError before updating speed (check first)",
+          "Car.brake uses max(0, ...) to prevent negative speed",
+          "ElectricCar.__init__ calls super().__init__(make) to set make and speed",
+          "ElectricCar.accelerate calls super().accelerate() so ValueError still propagates",
+          "The battery print only runs if super().accelerate() does NOT raise",
+          "main() wraps the third accelerate in try/except to handle the error"
+        ]
       }
     ]
   }

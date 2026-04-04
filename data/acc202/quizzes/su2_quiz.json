@@ -126,6 +126,36 @@
       ],
       "answer": 1,
       "explanation": "Allowance for doubtful debts is a contra-asset account that reduces accounts receivable on the balance sheet and records an estimated bad debt expense on the income statement. This matches the expense to the period revenue was earned."
+    },
+    {
+      "id": "acc_su2_q11",
+      "type": "mcq",
+      "concept": "unearned revenue adjusting entry",
+      "difficulty": 3,
+      "prompt": "On 1 November, a company receives $9,600 in advance for a 12-month maintenance contract (Nov to Oct). At 31 December (year end), what is the adjusting entry?",
+      "choices": [
+        "Dr Unearned Revenue $1,600, Cr Revenue $1,600",
+        "Dr Revenue $1,600, Cr Unearned Revenue $1,600",
+        "Dr Cash $9,600, Cr Revenue $9,600",
+        "Dr Unearned Revenue $9,600, Cr Revenue $9,600"
+      ],
+      "answer": 0,
+      "explanation": "From Nov 1 to Dec 31 = 2 months earned. Monthly rate = $9,600 / 12 = $800. Revenue earned = 2 × $800 = $1,600. Adjusting entry: Dr Unearned Revenue $1,600 (liability decreases) Cr Revenue $1,600 (income recognised). Remaining $8,000 stays as Unearned Revenue (liability) for the remaining 10 months."
+    },
+    {
+      "id": "acc_su2_q12",
+      "type": "mcq",
+      "concept": "accrued revenue adjusting entry",
+      "difficulty": 3,
+      "prompt": "A consultancy provides $8,000 of services in December but will not invoice the client until January. What is the December 31 year-end adjusting entry?",
+      "choices": [
+        "Dr Accounts Receivable $8,000, Cr Revenue $8,000",
+        "Dr Revenue $8,000, Cr Accounts Receivable $8,000",
+        "Dr Cash $8,000, Cr Revenue $8,000",
+        "No entry needed until cash is received"
+      ],
+      "answer": 0,
+      "explanation": "Accrued revenue (also called accrued income) is revenue earned but not yet billed or collected. The adjusting entry creates an asset (Accounts Receivable / Accrued Revenue) for money owed and recognises the revenue in the period it was earned. Dr Accounts Receivable $8,000, Cr Revenue $8,000. When the invoice is paid in January, Dr Cash, Cr Accounts Receivable."
     }
   ]
 }
