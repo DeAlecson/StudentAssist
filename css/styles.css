@@ -2705,12 +2705,13 @@
 
 /* ═════ HUB HEADER ═════ */
 .hub-header {
-  display: flex; align-items: flex-start; justify-content: space-between;
-  gap: 1rem; margin-bottom: 2.5rem;
+  display: flex; flex-direction: column;
+  align-items: center; margin-bottom: 2.5rem; gap: 1.25rem;
 }
-.hub-header-spacer { flex: 1; min-width: 0; }
-.hub-header-right { flex: 1; min-width: 0; display: flex; justify-content: flex-end; }
-.hub-wordmark { flex: 0 0 auto; text-align: center; margin-bottom: 0; }
+.hub-header-top {
+  width: 100%; display: flex; justify-content: flex-end; min-height: 1rem;
+}
+.hub-wordmark { text-align: center; margin-bottom: 0; }
 
 /* ═════ HUB USER CHIP ═════ */
 .hub-user-chip {
