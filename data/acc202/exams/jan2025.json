@@ -10,22 +10,22 @@
     {
       "id": "cs1",
       "title": "Wong's Bakery — April 20X5",
-      "text": "Miss Wong started a bakery business in April 20X5. The following transactions occurred during the month:\n\na. Miss Wong invested $100,000 cash into the business and contributed a convection oven valued at $24,000 (estimated useful life 10 years, zero residual value, straight-line depreciation).\nb. Paid $15,000 cash for shop furniture (estimated useful life 5 years, zero residual value, straight-line depreciation).\nc. Paid $2,000 cash for business licences (one-off expense).\nd. Paid $18,000 cash for 6-month shop rental from 1 April.\ne. Purchased $2,000 of baking materials on credit; $300 worth remained unused at month-end.\nf. Paid $12,000 cash for a 12-month insurance policy effective 15 April.\ng. Settled the baking materials payable in full with cash.\nh. Recorded revenue from baking sales during April of $45,000 (assume all received in cash).\ni. Paid $8,000 cash for staff salaries for April.\nj. Recognised monthly depreciation on all depreciable assets."
+      "text": "In April 20X5, Wong's Bakery was opened with the following transactions:\n\na. On April 1, Miss Wong, the owner, invested $100,000 in cash and a convection oven at a cost of $24,000. The oven is expected to have a useful life of 10 years with zero disposal value. The straight-line method is used to calculate the oven's depreciation expense.\n\nb. On April 1, the bakery paid $15,000 for the shop furniture. The furniture is expected to be used for 5 years with zero disposal value. The straight-line method is used to calculate the furniture's depreciation expense.\n\nc. On April 1, the bakery paid $2,000 for business licences and permits. These are necessary costs for running a bakery and are one-off expenses.\n\nd. On April 2, the bakery paid $18,000 for six-month rent, starting from 1 April.\n\ne. On April 2, the company purchased $2,000 baking materials on credit. At the end of April, a physical count showed that $300 of baking materials were left.\n\nf. On April 15, the company paid $12,000 for insurance premiums covering 12 months, effective April 15.\n\ng. On April 20, the company settled the payment for baking materials purchased on April 2.\n\nh. In April, the company received $12,000 cash for bread and cakes sold during the month. Meanwhile, it collected $1,000 in advance to deliver a custom birthday cake in May.\n\ni. On April 30, the company received April's utility bill of $1,500 and planned to settle it in May.\n\nj. On April 30, a payment of $3,500 was made for salaries in April."
     },
     {
       "id": "cs2",
-      "title": "Green Foods Ltd — Profitability Analysis",
-      "text": "The following income statements are provided for Green Foods Ltd:\n\n                        20X4          20X3\nRevenue              $2,000,000    $1,800,000\nCost of sales        $1,100,000      $900,000\nGross profit           $900,000      $900,000\nOperating expenses     $399,760      $461,865\nProfit before tax      $500,240      $438,135\nTax (29%)              $145,000      $119,000\nNet profit             $355,240      $319,135\n\nAdditional information:\n- Total assets 20X4: $3,200,000; 20X3: $2,900,000\n- Total assets 20X2: $2,700,000\n- Current assets 20X4: $1,100,000; Current liabilities 20X4: $700,000\n- Current assets 20X3: $980,000; Current liabilities 20X3: $620,000\n- Industry average current ratio: 1.8×\n- Industry average gross margin: 48%\n- Industry average net profit margin: 15%"
+      "title": "Green Foods Ltd — Income Statements 20X3 & 20X4",
+      "text": "Green Foods Ltd is a mid-sized company specialising in the processing and packaging of organic vegetables. The company sources vegetables from local farmers and then processes them into canned products. Market supply and climate conditions significantly affect the purchasing cost of vegetables.\n\nINCOME STATEMENT — For the Financial Year Ended 31 December\n\n                              20X4           20X3\nSales                     $2,000,000     $1,800,000\nCost of sales            ($1,100,000)     ($900,000)\nGross profit                $900,000       $900,000\nSelling & distribution    ($420,000)     ($400,000)\nResearch & development     ($10,000)      ($80,000)\nAdministrative expenses    ($30,000)      ($30,000)\nFinance costs              ($10,000)       ($4,000)\nOthers                      ($2,000)       ($1,500)\nProfit before income tax    $428,000       $384,500\nIncome tax                  ($72,760)      ($65,365)\nNet profit after tax        $355,240       $319,135\n\nLiquidity ratios (given):\n\n| Ratio          | 20X4 | 20X3 | 20X2 | 20X1 | 20X0 | Industry 20X4 | Industry 5-yr avg |\n|----------------|------|------|------|------|------|---------------|-------------------|\n| Current ratio  |  2.1 |  2.2 |  2.4 |  2.5 |  2.6 |           1.9 |               2.0 |\n| Acid-test ratio|  0.8 |  0.9 |  0.8 |  0.7 |  0.8 |           0.9 |               1.0 |"
     },
     {
       "id": "cs3",
-      "title": "CVP Analysis — Sunshine Accessories",
-      "text": "Sunshine Accessories manufactures a single product, a fashion bag, and sells it for $120 each. The variable cost is $72 per unit and total fixed costs are $216,000 per year.\n\nAdditional data:\n- Last year actual sales: 6,000 units\n- Tax rate: 20%\n- The company is considering reducing the selling price to $110 to increase market share"
+      "title": "Convenience Ltd — Vending Machine Expansion",
+      "text": "Convenience Ltd operates and services snack vending machines in restaurants, metro stations, canteens, etc. The machines are leased from the manufacturer, and the company must also rent the space to locate the machines. The following details outline the predicted monthly expenses and data for a proposed expansion involving 20 machines.\n\nFixed costs:\n  Machine rent (20 machines × $3,000)    $60,000\n  Space rent (20 machines × $2,000)      $40,000\n  Wages to service the 20 machines        $5,000\n  Other fixed costs                       $15,000\n  Total fixed costs                      $120,000\n\nOther data:\n  Budgeted monthly sales of snacks:  50,000 units\n  Selling price:                     $5 per unit\n  Cost of snack:                     20% of selling price\n\nOption 1 (current): Fixed machine rent of $60,000 per month.\nOption 2 (proposed): Variable machine rent at 25% of sales; no fixed machine rent."
     },
     {
       "id": "cs4",
-      "title": "Budget and Variance Analysis — Coastal Beverages",
-      "text": "Coastal Beverages Ltd prepared the following static budget for the quarter:\n- Budgeted sales: 20,000 units at $15 per unit\n- Budgeted variable costs: $8 per unit\n- Budgeted fixed costs: $70,000\n\nActual results for the quarter:\n- Units sold: 22,000\n- Actual revenue: $319,000\n- Actual variable costs: $182,600\n- Actual fixed costs: $73,000"
+      "title": "XYZ Company — Cash Budget April–June 20X5",
+      "text": "XYZ Company's operations began in March 20X5. Its sales in March were $300,000. The ending cash balance for March is $10,000. During March, the company approached the bank for a $200,000 short-term loan to be made on April 1 and repaid on June 30. The bank requires monthly cash budgets from April to June.\n\nBudgeted sales:\n  April   $320,000\n  May     $350,000\n  June    $360,000\n  July    $340,000\n\nAdditional information:\n• 20% of monthly sales are cash sales; 80% are credit sales.\n• 60% of credit sales are collected in the first month following the sale; the remaining 40% are collected in the second month.\n• Purchases each month equal the cost of goods sold of the following month. COGS is 50% of sales. All purchases are on credit, settled in the first month following purchase.\n• Operating expenses are 30% of sales, including a fixed monthly depreciation of $25,000. All other operating expenses are paid when incurred.\n• The annual interest rate on the bank loan is 6%. Both principal and interest are paid on June 30 (maturity date)."
     }
   ],
   "questions": [
@@ -34,16 +34,20 @@
       "label": "Question 1a",
       "marks": 17,
       "caseStudyRef": "cs1",
-      "text": "Prepare journal entries for ALL transactions (a) to (j) for Wong's Bakery in April 20X5. Show debit and credit entries clearly with narrations.",
-      "type": "journal_entries",
-      "modelAnswer": "(a) Capital investment — cash and oven:\nDR Cash                      $100,000\nDR Convection Oven (Asset)    $24,000\n   CR Capital (Owner's Equity)        $124,000\n(Being Miss Wong's initial investment of cash and oven)\n\n(b) Purchase of shop furniture:\nDR Shop Furniture             $15,000\n   CR Cash                             $15,000\n(Being purchase of shop furniture for cash)\n\n(c) Business licences:\nDR Licence Expense             $2,000\n   CR Cash                              $2,000\n(Being payment for business licences, expensed immediately as one-off)\n\n(d) Prepaid rent:\nDR Prepaid Rent               $18,000\n   CR Cash                             $18,000\n(Being 6-month rent paid in advance from 1 April)\n\nAdjusting entry — 1 month rent elapsed = $18,000 / 6 = $3,000:\nDR Rent Expense                $3,000\n   CR Prepaid Rent                      $3,000\n(Being rent expense recognised for April)\n\n(e) Purchase of baking materials on credit:\nDR Baking Materials (Asset)    $2,000\n   CR Accounts Payable                  $2,000\n(Being purchase of baking materials on credit)\n\nAdjusting entry — materials used = $2,000 – $300 = $1,700:\nDR Baking Materials Expense    $1,700\n   CR Baking Materials (Asset)          $1,700\n(Being cost of baking materials consumed during April)\n\n(f) Prepaid insurance:\nDR Prepaid Insurance          $12,000\n   CR Cash                             $12,000\n(Being 12-month insurance paid in advance from 15 April)\n\nAdjusting entry — approximately 0.5 month elapsed (15 Apr to 30 Apr):\nInsurance expense = $12,000 / 12 × 0.5 = $500\nDR Insurance Expense             $500\n   CR Prepaid Insurance                  $500\n(Being insurance expense for half of April recognised)\n\n(g) Settlement of accounts payable:\nDR Accounts Payable            $2,000\n   CR Cash                              $2,000\n(Being settlement of baking materials payable)\n\n(h) Revenue from baking sales:\nDR Cash                       $45,000\n   CR Baking Sales Revenue             $45,000\n(Being cash sales revenue for April)\n\n(i) Salaries paid:\nDR Salaries Expense            $8,000\n   CR Cash                              $8,000\n(Being salaries paid to staff for April)\n\n(j) Monthly depreciation:\nConvection Oven: $24,000 / 10 years / 12 months = $200/month\nShop Furniture: $15,000 / 5 years / 12 months = $250/month\nTotal depreciation = $200 + $250 = $450\n\nDR Depreciation Expense          $450\n   CR Accumulated Depreciation — Oven    $200\n   CR Accumulated Depreciation — Furniture $250\n(Being monthly depreciation on convection oven and shop furniture)",
+      "text": "For each transaction (a) to (j), explain its impact on the accounts in the expanded accounting equation (Assets, Liabilities, Equity, Revenues, Expenses) for Wong's Bakery in April 20X5.\n\nList each account affected separately. Use this format:\n  Item | Account Type | Amount ($) | Increase or Decrease\n\nNote: For items with useful lives (a, b), include the April depreciation adjustment. For items involving prepayments (d, f) and inventory (e), show the net April impact after period-end adjustments.",
+      "type": "accounting_equation",
+      "modelAnswer": "a. Owner's investment — Cash + Oven:\n   Assets (Cash) | $100,000 | Increase\n   Assets (Convection Oven) | $24,000 | Increase\n   Equity (Owner's Capital) | $124,000 | Increase\n   Depreciation adjustment (oven, 1 month): $24,000 ÷ 10 ÷ 12 = $200\n   Assets (Accumulated Depreciation – Oven) | $200 | Increase\n   Expenses (Depreciation Expense) | $200 | Increase\n\nb. Shop furniture:\n   Assets (Shop Furniture) | $15,000 | Increase\n   Assets (Cash) | $15,000 | Decrease\n   Depreciation adjustment (furniture, 1 month): $15,000 ÷ 5 ÷ 12 = $250\n   Assets (Accumulated Depreciation – Furniture) | $250 | Increase\n   Expenses (Depreciation Expense) | $250 | Increase\n\nc. Business licences (one-off expense):\n   Expenses (Licence Expense) | $2,000 | Increase\n   Assets (Cash) | $2,000 | Decrease\n\nd. Six-month rent from April 1 ($18,000 ÷ 6 = $3,000/month):\n   Assets (Cash) | $18,000 | Decrease\n   Assets (Prepaid Rent) | $15,000 | Increase  [net: $18,000 paid – $3,000 used]\n   Expenses (Rent Expense) | $3,000 | Increase\n\ne. Baking materials on credit ($2,000); $300 unused at month-end; $1,700 used:\n   Assets (Baking Materials/Inventory) | $300 | Increase  [net remaining]\n   Liabilities (Accounts Payable) | $2,000 | Increase\n   Expenses (Baking Materials Expense) | $1,700 | Increase\n\nf. Insurance 12 months from April 15 ($12,000 ÷ 12 × 0.5 = $500 for half of April):\n   Assets (Cash) | $12,000 | Decrease\n   Assets (Prepaid Insurance) | $11,500 | Increase  [net: $12,000 – $500]\n   Expenses (Insurance Expense) | $500 | Increase\n\ng. Settled accounts payable for baking materials:\n   Liabilities (Accounts Payable) | $2,000 | Decrease\n   Assets (Cash) | $2,000 | Decrease\n\nh. Cash sales $12,000 + $1,000 advance for May birthday cake:\n   Assets (Cash) | $13,000 | Increase\n   Revenue (Sales Revenue) | $12,000 | Increase\n   Liabilities (Unearned Revenue) | $1,000 | Increase\n\ni. Utility bill received, to be paid in May:\n   Expenses (Utility Expense) | $1,500 | Increase\n   Liabilities (Utilities Payable) | $1,500 | Increase\n\nj. Salaries paid:\n   Expenses (Salary Expense) | $3,500 | Increase\n   Assets (Cash) | $3,500 | Decrease",
       "keyPoints": [
-        "Transaction (a): both Cash AND the oven are debited as assets; Capital is credited",
-        "Prepaid rent and prepaid insurance are initially recorded as assets, then adjusted",
-        "Baking materials: record as asset first, then expense the portion used ($1,700)",
-        "Insurance: only ~0.5 month elapsed (15 Apr to 30 Apr), so $500 is expensed",
-        "Depreciation is calculated separately for each asset and credited to accumulated depreciation",
-        "Licence fee is immediately expensed (no future economic benefit beyond current period)"
+        "Item (a): three accounts — Cash increase, Oven increase, Equity increase; plus depreciation $200",
+        "Item (b): Furniture increase, Cash decrease; plus depreciation $250",
+        "Item (c): Expense increase $2,000, Cash decrease — licences are expensed immediately (one-off)",
+        "Item (d): Cash decrease $18,000, Prepaid Rent increase $15,000, Rent Expense increase $3,000 (1/6 of $18,000)",
+        "Item (e): Baking Materials $300, AP $2,000, Expense $1,700 — must split purchased vs used",
+        "Item (f): Cash decrease $12,000, Prepaid Insurance $11,500, Insurance Expense $500 (0.5/12 of $12,000)",
+        "Item (g): AP decrease $2,000, Cash decrease $2,000 — settling the liability",
+        "Item (h): Cash increase $13,000, Revenue $12,000, Unearned Revenue $1,000 — advance is a liability not revenue",
+        "Item (i): Expense $1,500, Utilities Payable $1,500 — accrued, not paid",
+        "Item (j): Salary Expense $3,500, Cash decrease $3,500"
       ]
     },
     {
@@ -51,28 +55,16 @@
       "label": "Question 1b",
       "marks": 6,
       "caseStudyRef": "cs1",
-      "text": "Based on the journal entries prepared, calculate:\n(i) Profit for the month of April 20X5\n(ii) Balance of Owner's Equity as at 30 April 20X5",
+      "text": "Calculate:\n(i) The profit or loss of Wong's Bakery for April 20X5.\n(ii) The balance of equity as of April 30, 20X5.",
       "type": "calculation",
-      "subItems": [
-        {
-          "label": "(i)",
-          "text": "Profit for April 20X5",
-          "marks": 4
-        },
-        {
-          "label": "(ii)",
-          "text": "Balance of Owner's Equity as at 30 April 20X5",
-          "marks": 2
-        }
-      ],
-      "modelAnswer": "(i) Profit for April 20X5\n\nRevenue:\nBaking Sales                  $45,000\n\nLess Expenses:\nLicence Expense                $2,000\nRent Expense                   $3,000   (18,000 / 6 months)\nBaking Materials Expense       $1,700   (2,000 – 300 unused)\nInsurance Expense                $500   (12,000 / 12 × 0.5 months)\nSalaries Expense               $8,000\nDepreciation — Oven              $200   (24,000 / 120 months)\nDepreciation — Furniture         $250   (15,000 / 60 months)\nTotal Expenses                $15,650\n\nProfit for April = $45,000 – $15,650 = $29,350\n\n(ii) Owner's Equity as at 30 April 20X5\n\nOpening Capital (Investment)  $124,000   (Cash $100,000 + Oven $24,000)\nAdd: Profit for April          $29,350\nLess: Drawings                     $0   (none mentioned)\nClosing Owner's Equity        $153,350",
+      "modelAnswer": "(i) Profit/(Loss) for April 20X5:\n\nRevenue:\n  Sales Revenue                          $12,000\n\nExpenses:\n  Licence Expense                         $2,000\n  Rent Expense (1/6 × $18,000)            $3,000\n  Baking Materials Expense                $1,700\n  Insurance Expense (0.5/12 × $12,000)     $500\n  Utility Expense                         $1,500\n  Salary Expense                          $3,500\n  Depreciation – Oven ($24,000÷10÷12)      $200\n  Depreciation – Furniture ($15,000÷5÷12)  $250\n  Total Expenses                         $12,650\n\nNet Loss = $12,000 – $12,650 = $(650)\n\n(ii) Equity at April 30, 20X5:\n\n  Opening equity (new business)              $0\n  Add: Owner's investment (cash + oven)  $124,000\n  Add/(Less): Net loss                     ($650)\n  Equity at April 30                    $123,350",
       "keyPoints": [
-        "Only include expenses that were INCURRED in April (not prepaid amounts)",
-        "Rent: 1 month out of 6 = $3,000 (not the full $18,000)",
-        "Insurance: half month only = $500 (policy started 15 April)",
-        "Baking materials: only the used portion ($1,700), not total purchased",
-        "Capital includes both cash ($100,000) AND the oven at fair value ($24,000)",
-        "Owner's equity = Opening capital + Profit – Drawings"
+        "Revenue is only $12,000 (cash sales) — the $1,000 advance is Unearned Revenue, not income",
+        "8 expense items must be included: licences, rent ($3,000 not $18,000), materials used ($1,700), insurance ($500), utilities, salaries, and TWO depreciation charges",
+        "Oven depreciation: $24,000 ÷ 10 years ÷ 12 months = $200",
+        "Furniture depreciation: $15,000 ÷ 5 years ÷ 12 months = $250",
+        "Net result is a loss of $650",
+        "Equity = $124,000 investment – $650 net loss = $123,350"
       ]
     },
     {
@@ -80,58 +72,31 @@
       "label": "Question 1c",
       "marks": 4,
       "caseStudyRef": "cs1",
-      "text": "Calculate the asset turnover ratio for Wong's Bakery for April 20X5. Comment on the ratio compared to a benchmark of 1.0 (annualised). Assume total assets as at 30 April 20X5.",
+      "text": "Calculate the asset turnover ratio for Wong's Bakery for April 20X5, and comment on the ratio. Assume the benchmark asset turnover ratio for this industry is 1.0. Round your answer to two decimal places.",
       "type": "calculation",
-      "modelAnswer": "Asset Turnover Ratio = Revenue / Total Assets\n\nFirst, calculate Total Assets as at 30 April 20X5:\nCash = 100,000 – 15,000 – 2,000 – 18,000 – 12,000 – 2,000 + 45,000 – 8,000 = $88,000\nConvection Oven (net) = 24,000 – 200 = $23,800\nShop Furniture (net) = 15,000 – 250 = $14,750\nPrepaid Rent = 18,000 – 3,000 = $15,000\nPrepaid Insurance = 12,000 – 500 = $11,500\nBaking Materials = $300 (unused)\nTotal Assets = 88,000 + 23,800 + 14,750 + 15,000 + 11,500 + 300 = $153,350\n\nNote: Total Assets = Owner's Equity (no liabilities remaining as payable was settled) = $153,350 ✓\n\nMonthly Asset Turnover = $45,000 / $153,350 = 0.293×\nAnnualised = 0.293 × 12 = 3.52×\n\nComment: The annualised asset turnover ratio of 3.52× significantly exceeds the benchmark of 1.0×, indicating that Wong's Bakery is generating $3.52 in revenue for every $1 of assets. This is a very strong result, suggesting highly efficient use of assets. However, as this is only the first month of operations, the ratio should be monitored over a longer period before drawing firm conclusions.",
+      "modelAnswer": "Total assets at April 30, 20X5:\n  Cash: $100,000 – $15,000 – $2,000 – $18,000 – $12,000 – $2,000 + $13,000 – $3,500 = $60,500\n  Convection Oven (net of depreciation): $24,000 – $200 = $23,800\n  Shop Furniture (net): $15,000 – $250 = $14,750\n  Baking Materials: $300\n  Prepaid Rent: $15,000\n  Prepaid Insurance: $11,500\n  Total Assets = $125,850\n\nAsset Turnover = Sales ÷ Total Assets\n             = $12,000 ÷ $125,850\n             = 0.10 (rounded to 2 decimal places)\n\nComment: The asset turnover ratio of 0.10 is significantly below the industry benchmark of 1.0, indicating that the bakery is generating only $0.10 of revenue for every $1.00 of assets. However, this is expected for a business in its first month of operation — the bakery has made substantial upfront investments in equipment, prepayments, and capital, but has had very limited time to generate sales. The ratio should improve considerably as the business matures and monthly revenue grows relative to its asset base.",
       "keyPoints": [
-        "Asset turnover = Revenue / Total Assets",
-        "Annualise the ratio by multiplying monthly figure by 12 for fair comparison to annual benchmark",
-        "Total assets should match owner's equity if there are no remaining liabilities",
-        "Comment must address whether ratio is above/below benchmark and what it implies",
-        "Acknowledge the limitation: only one month of data for a new business"
+        "Formula: Asset Turnover = Sales ÷ Total Assets",
+        "Sales = $12,000 (April only)",
+        "Total assets correctly calculated at ~$125,850",
+        "Ratio = 0.10 (accept 0.09–0.10 range due to rounding)",
+        "Comment must note: below benchmark 1.0; reason is new business with high assets but low revenue; expected to improve"
       ]
     },
     {
       "id": "q2a",
       "label": "Question 2a",
-      "marks": 10,
+      "marks": 12,
       "caseStudyRef": "cs2",
-      "text": "For Green Foods Ltd, calculate the following ratios for both 20X4 and 20X3:\n(i) Gross margin\n(ii) Net profit margin\n(iii) Return on total assets\n(iv) Sales growth (20X4 vs 20X3)\n(v) Profit growth (20X4 vs 20X3)",
+      "text": "Using the ACC202 formula sheet, calculate the following profitability ratios for Green Foods Ltd. Round all answers to two decimal places.\n\n(i) Gross margin for 20X4 and 20X3.\n(ii) Profit margin for 20X4 and 20X3.\n(iii) Sales growth in 20X4.\n(iv) Profit growth in 20X4.",
       "type": "calculation",
-      "subItems": [
-        {
-          "label": "(i)",
-          "text": "Gross margin for 20X4 and 20X3",
-          "marks": 2
-        },
-        {
-          "label": "(ii)",
-          "text": "Net profit margin for 20X4 and 20X3",
-          "marks": 2
-        },
-        {
-          "label": "(iii)",
-          "text": "Return on total assets for 20X4 and 20X3",
-          "marks": 2
-        },
-        {
-          "label": "(iv)",
-          "text": "Sales growth rate",
-          "marks": 2
-        },
-        {
-          "label": "(v)",
-          "text": "Profit growth rate",
-          "marks": 2
-        }
-      ],
-      "modelAnswer": "(i) Gross Margin\n20X4: $900,000 / $2,000,000 × 100 = 45.0%\n20X3: $900,000 / $1,800,000 × 100 = 50.0%\nTrend: Gross margin declined by 5 percentage points — unfavourable.\n\n(ii) Net Profit Margin\n20X4: $355,240 / $2,000,000 × 100 = 17.76%\n20X3: $319,135 / $1,800,000 × 100 = 17.73%\nTrend: Net profit margin is virtually stable — minimal change.\n\n(iii) Return on Total Assets (ROA)\nAverage Assets 20X4 = ($3,200,000 + $2,900,000) / 2 = $3,050,000\nAverage Assets 20X3 = ($2,900,000 + $2,700,000) / 2 = $2,800,000\n20X4 ROA: $355,240 / $3,050,000 × 100 = 11.65%\n20X3 ROA: $319,135 / $2,800,000 × 100 = 11.40%\nTrend: Slight improvement in ROA.\n\n(iv) Sales Growth\n= ($2,000,000 – $1,800,000) / $1,800,000 × 100\n= $200,000 / $1,800,000 × 100 = 11.11%\n\n(v) Profit Growth\n= ($355,240 – $319,135) / $319,135 × 100\n= $36,105 / $319,135 × 100 = 11.31%",
+      "modelAnswer": "(i) Gross Margin = Gross Profit ÷ Sales\n  20X4: $900,000 ÷ $2,000,000 = 45.00%\n  20X3: $900,000 ÷ $1,800,000 = 50.00%\n\n(ii) Profit Margin = Net Profit After Tax ÷ Sales\n  20X4: $355,240 ÷ $2,000,000 = 17.76%\n  20X3: $319,135 ÷ $1,800,000 = 17.73%\n\n(iii) Sales Growth = (This Year Sales – Last Year Sales) ÷ Last Year Sales\n  = ($2,000,000 – $1,800,000) ÷ $1,800,000\n  = $200,000 ÷ $1,800,000\n  = 11.11%\n\n(iv) Profit Growth = (This Year Profit – Last Year Profit) ÷ Last Year Profit\n  = ($355,240 – $319,135) ÷ $319,135\n  = $36,105 ÷ $319,135\n  = 11.31%",
       "keyPoints": [
-        "Gross margin uses GROSS profit over revenue",
-        "Net profit margin uses NET profit (after tax) over revenue",
-        "ROA uses AVERAGE total assets — average of opening and closing balances",
-        "Growth rates: (Current – Prior) / Prior × 100",
-        "Profit grew slightly faster (11.31%) than sales (11.11%) — positive sign"
+        "Gross margin 20X4 = 45.00%; 20X3 = 50.00%",
+        "Profit margin 20X4 = 17.76%; 20X3 = 17.73%",
+        "Sales growth = 11.11%",
+        "Profit growth = 11.31%",
+        "Must use Net Profit After Tax for profit margin (not profit before tax)"
       ]
     },
     {
@@ -139,15 +104,16 @@
       "label": "Question 2b",
       "marks": 8,
       "caseStudyRef": "cs2",
-      "text": "Analyse the profitability trends of Green Foods Ltd based on the ratios calculated in Q2a. Compare each ratio to the industry averages provided and identify key strengths and concerns.",
+      "text": "Analyse the company's profitability based on the ratios calculated in Question 2a and the income statement provided. Your answer should cover trends, causes, and implications.",
       "type": "essay",
-      "modelAnswer": "Analysis of Green Foods Ltd Profitability Trends:\n\nGROSS MARGIN:\nThe gross margin declined from 50.0% (20X3) to 45.0% (20X4), a fall of 5 percentage points. Both years are below the industry average of 48%, with 20X4 declining further. This signals that cost of sales has risen faster than revenue — possibly due to higher input/material costs, or the company reducing prices to achieve sales growth. Management should investigate supply chain costs and pricing strategy.\n\nNET PROFIT MARGIN:\nDespite the gross margin decline, the net profit margin remained stable at approximately 17.76% (20X4) vs 17.73% (20X3). Both exceed the industry average of 15%, which is a strength. The stability of net margin despite lower gross margin suggests that operating expenses were successfully reduced (from $461,865 to $399,760), partially offsetting the gross margin erosion.\n\nRETURN ON TOTAL ASSETS:\nROA improved marginally from 11.40% to 11.65%, showing slightly better asset utilisation. Both years are performing reasonably given strong profit growth.\n\nOVERALL:\nStrengths: Strong net profit margins exceeding industry; healthy sales and profit growth of ~11%.\nConcerns: Declining gross margin — if this trend continues, it will eventually erode net profitability. The company must address cost of sales or justify why it is pricing below industry norms.",
+      "modelAnswer": "Green Foods Ltd shows mixed profitability signals in 20X4.\n\nGross margin declined significantly from 50.00% in 20X3 to 45.00% in 20X4. Cost of sales rose by $200,000 (from $900k to $1,100k) while sales grew by only $200,000. This reflects the case description — market supply and climate conditions pushed up vegetable purchasing costs, squeezing the gross margin despite strong top-line growth. This is a structural risk: input costs are largely outside management's control.\n\nDespite the gross margin decline, profit margin remained virtually flat at 17.73% (20X3) vs 17.76% (20X4). This is because research and development expense fell sharply from $80,000 to $10,000, which largely offset the increase in cost of sales. While this stabilised the profit margin in the short term, the dramatic reduction in R&D is a concern — it may indicate underinvestment in product development and future competitiveness.\n\nSales growth of 11.11% is positive, reflecting the company's ability to expand revenue. Profit growth of 11.31% marginally outpaced sales growth, which appears healthy on the surface but is largely attributable to the R&D cut rather than operational improvements.\n\nFinance costs doubled from $4,000 to $10,000, suggesting increased borrowing. If sales growth is being debt-funded, this adds financial risk. Overall, profitability appears stable but fragile — dependent on continued cost-cutting and vulnerable to further input cost increases.",
       "keyPoints": [
-        "Reference specific ratio values and compare to industry averages",
-        "Identify the key tension: gross margin declining but net margin stable (due to opex reduction)",
-        "Strong points: net margin above industry, consistent growth",
-        "Concern: gross margin below industry average and declining",
-        "Provide actionable insight, not just description of numbers"
+        "Gross margin fell from 50% to 45% — link to rising COGS/vegetable input costs",
+        "Profit margin essentially flat — explain why (R&D expense dropped $80k to $10k)",
+        "Must note that R&D reduction is a concern for long-term sustainability",
+        "Sales growth 11.11% is positive",
+        "Finance costs doubled — signal of increased borrowing/financial risk",
+        "Answer should cover: trend, cause, implication (not just state the numbers)"
       ]
     },
     {
@@ -155,120 +121,85 @@
       "label": "Question 2c",
       "marks": 6,
       "caseStudyRef": "cs2",
-      "text": "Calculate the current ratio for Green Foods Ltd for 20X4 and 20X3. Compare the results to the industry average of 1.8× and comment on the company's liquidity position.",
-      "type": "calculation",
-      "modelAnswer": "Current Ratio = Current Assets / Current Liabilities\n\n20X4: $1,100,000 / $700,000 = 1.57×\n20X3: $980,000 / $620,000 = 1.58×\nIndustry average: 1.8×\n\nAnalysis:\nThe current ratio has remained almost unchanged at approximately 1.57–1.58× in both years. Both results are below the industry average of 1.8×, indicating that Green Foods Ltd has a weaker liquidity position relative to its peers.\n\nWhile the company can still cover its current liabilities (ratio > 1.0), the gap versus industry suggests:\n- Less buffer if unexpected cash demands arise\n- Potential reliance on short-term credit or tight payment cycles\n\nHowever, the stability of the ratio indicates the liquidity position is not deteriorating further. Management should monitor working capital closely and consider strategies to improve the ratio, such as extending payment terms with suppliers, speeding up receivables collection, or reducing short-term debt.",
+      "text": "The following liquidity ratios are provided for Green Foods Ltd over the last five years, along with industry benchmarks.\n\n| Ratio           | 20X4 | 20X3 | 20X2 | 20X1 | 20X0 | Industry 20X4 | Industry 5-yr avg |\n|-----------------|------|------|------|------|------|---------------|-------------------|\n| Current ratio   |  2.1 |  2.2 |  2.4 |  2.5 |  2.6 |           1.9 |               2.0 |\n| Acid-test ratio |  0.8 |  0.9 |  0.8 |  0.7 |  0.8 |           0.9 |               1.0 |\n\nAnalyse the company's liquidity based on the ratios given.",
+      "type": "essay",
+      "modelAnswer": "Green Foods Ltd's liquidity presents a dual picture: adequate on current ratio metrics but concerning on the quick ratio.\n\nThe current ratio has been declining steadily from 2.6 in 20X0 to 2.1 in 20X4. Despite this five-year downward trend, the current ratio still exceeds the industry average (1.9) and the 5-year industry average (2.0), meaning the company retains more short-term assets than peers relative to current liabilities. Short-term liquidity is not immediately at risk.\n\nHowever, the acid-test (quick) ratio tells a more concerning story. At 0.8 in 20X4, it is below the industry average (0.9) and significantly below the industry 5-year average (1.0). This indicates the company cannot fully cover current liabilities with its most liquid assets (cash, receivables) — it relies heavily on inventory to maintain its current ratio. As a food processing company, inventory may not be quickly convertible to cash.\n\nThe large gap between the current ratio (2.1) and acid-test ratio (0.8) confirms substantial inventory holdings. If inventory becomes obsolete or difficult to sell (e.g., seasonal spoilage of organic vegetables), liquidity could deteriorate rapidly.\n\nOverall: while the company is not in immediate liquidity distress, the declining trend and below-industry quick ratio warrant close monitoring. Management should focus on reducing inventory levels and improving receivables collection to strengthen liquid asset coverage.",
       "keyPoints": [
-        "Current ratio = Current Assets / Current Liabilities",
-        "Both years are below industry average of 1.8× — unfavourable",
-        "Ratio is stable — not worsening, but not improving",
-        "A ratio above 1.0 means current assets exceed current liabilities (can cover short-term obligations)",
-        "Suggest practical improvement actions"
+        "Current ratio declining trend (2.6 to 2.1) but still above industry 1.9 — adequate",
+        "Acid-test ratio 0.8 below industry 0.9 and 5yr avg 1.0 — concerning",
+        "Large gap between current (2.1) and acid-test (0.8) = significant inventory dependence",
+        "Link to business context: organic food company, inventory risk (spoilage, seasonal)",
+        "Overall assessment: not in crisis but declining trend and inventory reliance need monitoring"
       ]
     },
     {
       "id": "q3a",
       "label": "Question 3a",
-      "marks": 12,
+      "marks": 6,
       "caseStudyRef": "cs3",
-      "text": "For Sunshine Accessories, calculate:\n(i) Contribution margin per unit and contribution margin ratio\n(ii) Break-even point in units and in sales dollars\n(iii) Profit at last year's actual sales of 6,000 units\n(iv) Profit after tax at 6,000 units",
+      "text": "Apply cost-volume-profit analysis to calculate:\n(i) Contribution margin per unit of snack.\n(ii) Contribution margin ratio.\n(iii) Break-even point in units.\n(iv) Break-even point in dollars.\n(v) Margin of safety in percentage at budgeted sales of 50,000 units.",
       "type": "calculation",
-      "subItems": [
-        {
-          "label": "(i)",
-          "text": "Contribution margin per unit and CM ratio",
-          "marks": 3
-        },
-        {
-          "label": "(ii)",
-          "text": "Break-even point in units and dollars",
-          "marks": 3
-        },
-        {
-          "label": "(iii)",
-          "text": "Profit at 6,000 units",
-          "marks": 3
-        },
-        {
-          "label": "(iv)",
-          "text": "Profit after tax at 6,000 units",
-          "marks": 3
-        }
-      ],
-      "modelAnswer": "(i) Contribution Margin\nCM per unit = Selling Price – Variable Cost = $120 – $72 = $48\nCM Ratio = $48 / $120 × 100 = 40%\n\n(ii) Break-Even Point\nBreak-Even Units = Fixed Costs / CM per unit = $216,000 / $48 = 4,500 units\nBreak-Even Sales = 4,500 × $120 = $540,000\nAlternatively: $216,000 / 0.40 = $540,000 ✓\n\n(iii) Profit at 6,000 units\nTotal Revenue = 6,000 × $120 = $720,000\nTotal Variable Costs = 6,000 × $72 = $432,000\nContribution Margin = $720,000 – $432,000 = $288,000\nLess Fixed Costs = $216,000\nProfit before tax = $288,000 – $216,000 = $72,000\n\nAlternatively: (Units – BEP) × CM per unit = (6,000 – 4,500) × $48 = 1,500 × $48 = $72,000 ✓\n\n(iv) Profit After Tax\nTax = $72,000 × 20% = $14,400\nProfit after tax = $72,000 – $14,400 = $57,600",
+      "modelAnswer": "Given: Selling price = $5/unit; Variable cost = 20% × $5 = $1/unit; Total fixed costs = $120,000; Budgeted sales = 50,000 units\n\n(i) Contribution Margin per unit = Selling Price – Variable Cost\n   = $5 – $1 = $4 per unit\n\n(ii) CM Ratio = CM per unit ÷ Selling Price\n   = $4 ÷ $5 = 0.80 = 80%\n\n(iii) Break-even point (units) = Fixed Costs ÷ CM per unit\n   = $120,000 ÷ $4 = 30,000 units\n\n(iv) Break-even point ($) = Fixed Costs ÷ CM Ratio\n   = $120,000 ÷ 0.80 = $150,000\n\n(v) Margin of Safety % = (Budgeted Sales – BEP Units) ÷ Budgeted Sales × 100\n   = (50,000 – 30,000) ÷ 50,000 × 100\n   = 20,000 ÷ 50,000 × 100 = 40%",
       "keyPoints": [
-        "CM = Selling price minus variable costs only",
-        "Break-even: Fixed costs / CM per unit — only fixed costs, not total costs",
-        "At 6,000 units, the company sells 1,500 units above break-even",
-        "Profit after tax = Profit before tax × (1 – tax rate)",
-        "Always show formula, numbers substituted, and final answer with units/labels"
+        "Variable cost = 20% × $5 = $1/unit (not $5)",
+        "CM per unit = $4",
+        "CM ratio = 80%",
+        "BEP units = 30,000",
+        "BEP dollars = $150,000",
+        "MOS% = 40%"
       ]
     },
     {
       "id": "q3b",
       "label": "Question 3b",
-      "marks": 8,
+      "marks": 6,
       "caseStudyRef": "cs3",
-      "text": "Sunshine Accessories is considering reducing the selling price to $110 per unit to increase sales volume.\n(i) Calculate the new break-even point in units.\n(ii) Calculate the sales volume needed at the new price to achieve the same profit ($72,000) as before.\n(iii) Advise management on whether this price reduction is beneficial.",
+      "text": "Calculate the degree of operating leverage (DOL) at the budgeted sales level of 50,000 units. Explain what the degree of operating leverage means for Convenience Ltd.",
       "type": "calculation",
-      "subItems": [
-        {
-          "label": "(i)",
-          "text": "New break-even point at $110 selling price",
-          "marks": 3
-        },
-        {
-          "label": "(ii)",
-          "text": "Units needed to achieve $72,000 profit at new price",
-          "marks": 3
-        },
-        {
-          "label": "(iii)",
-          "text": "Management recommendation",
-          "marks": 2
-        }
-      ],
-      "modelAnswer": "(i) New Break-Even Point\nNew CM per unit = $110 – $72 = $38\nNew Break-Even Units = $216,000 / $38 = 5,684 units (rounded up to 5,685)\n\nComparison: Break-even increased from 4,500 to 5,685 units — a 26% increase in break-even volume.\n\n(ii) Units to Achieve $72,000 Profit\nRequired Units = (Fixed Costs + Target Profit) / New CM per unit\n= ($216,000 + $72,000) / $38\n= $288,000 / $38\n= 7,579 units (rounded up)\n\nComparison: Previously needed 6,000 units; now needs 7,579 units — an additional 1,579 units (26.3% more).\n\n(iii) Management Recommendation\nThe price reduction is risky. While a lower price may attract more customers, the company would need to increase sales volume by 26% (from 6,000 to 7,579 units) just to maintain the same profit. The break-even point also rises significantly. Management should only proceed if market research confirms that demand at $110 will exceed 7,579 units. If demand elasticity is low (customers are not very price-sensitive), the price cut would reduce profitability without a compensating volume increase.",
+      "modelAnswer": "At 50,000 units:\n  Revenue = 50,000 × $5 = $250,000\n  Variable costs = 50,000 × $1 = $50,000\n  Contribution Margin = $200,000\n  Fixed costs = $120,000\n  Operating Income = $200,000 – $120,000 = $80,000\n\nDOL = Contribution Margin ÷ Operating Income\n    = $200,000 ÷ $80,000\n    = 2.5\n\nMeaning: A degree of operating leverage of 2.5 means that for every 1% change in sales, operating income will change by 2.5% (in the same direction). For example, a 10% increase in sales would increase operating income by 25%; equally, a 10% decrease in sales would reduce operating income by 25%.\n\nConvenience Ltd has high fixed costs ($120,000 out of $250,000 revenue = 48% of sales), which creates significant operating leverage. This amplifies both upside and downside — the company benefits greatly from sales growth but is vulnerable to sales declines.",
       "keyPoints": [
-        "New CM = new price minus SAME variable cost",
-        "Target profit formula: (FC + Target Profit) / CM per unit",
-        "Compare old and new break-even volumes to highlight increased risk",
-        "Recommendation must be logically justified using the numbers",
-        "Key concept: lower price reduces CM, requiring higher volume to compensate"
+        "DOL = CM ÷ Operating Income = $200,000 ÷ $80,000 = 2.5",
+        "Explanation must include: 1% change in sales → 2.5% change in operating income",
+        "Must explain the direction (same direction as sales change)",
+        "Should link to high fixed costs creating leverage effect",
+        "Must mention risk: amplifies both upside (sales increase) and downside (sales decline)"
       ]
     },
     {
-      "id": "q4a",
-      "label": "Question 4a",
-      "marks": 14,
-      "caseStudyRef": "cs4",
-      "text": "For Coastal Beverages Ltd:\n(i) Prepare a flexible budget for the actual activity level of 22,000 units.\n(ii) Calculate ALL variances (revenue, variable cost, fixed cost, and operating profit) and label each as Favourable (F) or Unfavourable (U).\n(iii) Calculate the sales volume variance by comparing flexible budget profit to static budget profit.",
+      "id": "q3c",
+      "label": "Question 3c",
+      "marks": 9,
+      "caseStudyRef": "cs3",
+      "text": "The machine manufacturer offers Option 2: a variable machine rent at 25% of sales, with no fixed machine rent (currently $60,000 fixed under Option 1).\n\n(i) Calculate the sales level (in units) at which the company is indifferent between Option 1 and Option 2.\n(ii) Use relevant costs to decide whether the company should accept Option 2 at its budgeted sales of 50,000 units.",
       "type": "calculation",
-      "subItems": [
-        {
-          "label": "(i)",
-          "text": "Flexible budget at 22,000 units",
-          "marks": 4
-        },
-        {
-          "label": "(ii)",
-          "text": "All variances labelled F or U",
-          "marks": 6
-        },
-        {
-          "label": "(iii)",
-          "text": "Sales volume variance",
-          "marks": 4
-        }
-      ],
-      "modelAnswer": "(i) Flexible Budget at 22,000 Units\n                        Flexible Budget (22,000 units)\nRevenue (22,000 × $15)        $330,000\nVariable Costs (22,000 × $8)  $176,000\nContribution Margin           $154,000\nFixed Costs                    $70,000\nOperating Profit               $84,000\n\n(ii) Variance Analysis\n                    Flexible Budget   Actual      Variance\nRevenue             $330,000          $319,000    $11,000 (U)\nVariable Costs      $176,000          $182,600     $6,600 (U)\nContribution Margin $154,000          $136,400    $17,600 (U)\nFixed Costs          $70,000           $73,000     $3,000 (U)\nOperating Profit     $84,000           $63,400    $20,600 (U)\n\nActual selling price = $319,000 / 22,000 = $14.50 vs budget $15.00 → price variance (U)\nActual variable cost per unit = $182,600 / 22,000 = $8.30 vs budget $8.00 → efficiency variance (U)\n\n(iii) Sales Volume Variance\nStatic Budget Profit:\nRevenue (20,000 × $15) = $300,000\nVariable Costs (20,000 × $8) = $160,000\nContribution = $140,000\nFixed Costs = $70,000\nStatic Budget Profit = $70,000\n\nSales Volume Variance = Flexible Budget Profit – Static Budget Profit\n= $84,000 – $70,000 = $14,000 (F)\n\nThe higher volume (22,000 vs 20,000 units) generated a favourable volume variance of $14,000. However, the total operating profit variance is $63,400 – $70,000 = $6,600 (U) vs static budget, driven by adverse price and cost variances more than offsetting the volume benefit.",
+      "modelAnswer": "(i) Indifference Point:\n\nUnder Option 1:\n  Total Fixed Costs = $120,000 (includes $60,000 machine rent)\n  Variable cost per unit = $1 (snack cost only)\n  Operating Income = 4Q – 120,000  [CM = $4]\n\nUnder Option 2:\n  Fixed machine rent removed: Fixed Costs = $120,000 – $60,000 = $60,000\n  Variable machine rent = 25% × $5 = $1.25 per unit\n  New VC per unit = $1.00 + $1.25 = $2.25\n  New CM per unit = $5.00 – $2.25 = $2.75\n  Operating Income = 2.75Q – 60,000\n\nAt indifference point, OI Option 1 = OI Option 2:\n  4Q – 120,000 = 2.75Q – 60,000\n  1.25Q = 60,000\n  Q = 48,000 units\n\n(ii) Decision at 50,000 units (above indifference point of 48,000):\n\nOption 1 OI = (50,000 × $4) – $120,000 = $200,000 – $120,000 = $80,000\nOption 2 OI = (50,000 × $2.75) – $60,000 = $137,500 – $60,000 = $77,500\n\nOption 1 generates $2,500 more operating income at budgeted sales.\n\nDecision: Reject Option 2. At the budgeted sales level of 50,000 units (which exceeds the indifference point of 48,000 units), Option 1 (fixed rent) is more profitable. The company should retain the current fixed machine rent arrangement.",
       "keyPoints": [
-        "Flexible budget: variable costs scaled to actual volume; fixed costs remain unchanged",
-        "Revenue variance: actual revenue vs flexible budget revenue (price effect)",
-        "Variable cost variance: actual variable cost vs flexible budget variable cost (efficiency effect)",
-        "Sales volume variance = flexible budget profit vs static budget profit",
-        "All four variances here are unfavourable except the volume effect",
-        "Label every variance as F (favourable) or U (unfavourable) — favourable = better than budget"
+        "Option 2: new VC = $1 + $1.25 = $2.25; new FC = $60,000",
+        "Indifference equation: 4Q – 120,000 = 2.75Q – 60,000",
+        "Indifference point = 48,000 units",
+        "At 50,000 units: Option 1 OI $80,000 > Option 2 OI $77,500",
+        "Decision: Reject Option 2 (keep fixed rent) because 50,000 > 48,000 units",
+        "Must show working for both OI calculations"
+      ]
+    },
+    {
+      "id": "q4",
+      "label": "Question 4",
+      "marks": 26,
+      "caseStudyRef": "cs4",
+      "text": "Present cash budgets for XYZ Company for April, May and June 20X5, assuming the bank loan of $200,000 is approved on April 1.\n\nYour budget should clearly show:\n- Cash receipts (cash sales + credit collections)\n- Cash disbursements (purchase payments + cash operating expenses)\n- Financing (loan received, principal repayment, interest)\n- Opening and closing cash balances for each month",
+      "type": "calculation",
+      "modelAnswer": "STEP 1 — Sales breakdown:\n  March: $300,000 | April: $320,000 | May: $350,000 | June: $360,000 | July: $340,000\n  Cash sales (20%): Mar $60k | Apr $64k | May $70k | Jun $72k\n  Credit sales (80%): Mar $240k | Apr $256k | May $280k | Jun $288k\n\nSTEP 2 — Credit collections:\n  60% collected month after sale; 40% two months after:\n  April collections from March credit: 60% × $240k = $144,000\n  May collections:\n    From April credit (60%): 60% × $256k = $153,600\n    From March credit (40%): 40% × $240k = $96,000\n  June collections:\n    From May credit (60%): 60% × $280k = $168,000\n    From April credit (40%): 40% × $256k = $102,400\n\nSTEP 3 — Purchases (= COGS of next month = 50% × next month sales); paid month after:\n  March purchases (for April COGS): 50% × $320k = $160,000 → paid April\n  April purchases (for May COGS): 50% × $350k = $175,000 → paid May\n  May purchases (for June COGS): 50% × $360k = $180,000 → paid June\n\nSTEP 4 — Cash operating expenses (30% of sales – $25,000 depreciation):\n  April: 30% × $320k – $25k = $96k – $25k = $71,000\n  May:   30% × $350k – $25k = $105k – $25k = $80,000\n  June:  30% × $360k – $25k = $108k – $25k = $83,000\n\nSTEP 5 — Interest: $200,000 × 6% × (3/12) = $3,000 (paid June 30)\n\n─────────────────────────────────────────────────────\nCASH BUDGET — XYZ Company, April to June 20X5\n─────────────────────────────────────────────────────\n                              April       May        June\nOpening Cash Balance        $10,000   $187,000   $251,600\n\nADD: Cash Receipts\n  Cash sales (20% of sales)  $64,000    $70,000    $72,000\n  Credit collected (60% prior)$144,000  $153,600   $168,000\n  Credit collected (40% prior)      –    $96,000   $102,400\n  Bank loan received         $200,000         –          –\nTotal Cash Available        $418,000   $506,600   $594,000\n\nLESS: Cash Disbursements\n  Purchases paid             $160,000   $175,000   $180,000\n  Cash operating expenses     $71,000    $80,000    $83,000\nTotal Disbursements         $231,000   $255,000   $263,000\n\nExcess / (Shortage)         $187,000   $251,600   $331,000\n\nFINANCING\n  Loan repayment (principal)        –          –  ($200,000)\n  Interest paid                     –          –    ($3,000)\n\nClosing Cash Balance        $187,000   $251,600   $128,000\n─────────────────────────────────────────────────────\n\nKey notes:\n• Depreciation ($25,000/month) is EXCLUDED — non-cash item\n• No March credit collection in April (company started in March, only 1 month of credit sales)\n• Interest = $200,000 × 6% × 3/12 = $3,000 paid at June 30 maturity",
+      "keyPoints": [
+        "Cash sales: 20% of each month's sales",
+        "April credit collections: only March credit (60%) — no 2-month-prior credit as company started in March",
+        "May: April credit (60% × $256k = $153,600) + March credit (40% × $240k = $96,000)",
+        "June: May credit (60% × $280k = $168,000) + April credit (40% × $256k = $102,400)",
+        "Purchases = 50% of NEXT month's sales, paid the following month",
+        "March purchases ($160k) paid in April; April purchases ($175k) in May; May purchases ($180k) in June",
+        "Cash opex = 30% of sales MINUS $25,000 depreciation each month",
+        "Bank loan $200k received April 1; repaid June 30 with $3,000 interest",
+        "Closing balances: April $187,000 | May $251,600 | June $128,000"
       ]
     }
   ]

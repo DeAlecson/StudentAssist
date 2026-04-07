@@ -1,0 +1,182 @@
+{
+  "id": "acc202_jul2025",
+  "module": "acc202",
+  "code": "ACC202",
+  "semester": "JUL 2025",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "closed_book",
+  "caseStudies": [
+    {
+      "id": "cs1",
+      "title": "Sharp Marketing Agency (SMA) — October Transactions",
+      "text": "Sharp Marketing Agency (SMA) operates a small digital marketing firm. In October, the company recorded the following transactions:\n\na. Provided marketing services for clients, earning $50,000. Of this amount, $30,000 was collected in cash, and the remaining $20,000 will be collected next month.\n\nb. Incurred salary expense of $35,000, which was paid in full in cash.\n\nc. Purchased $4,000 in office supplies. The company paid $1,500 in cash, with the remaining $2,500 placed on account, payable within 30 days.\n\nd. Paid $150 to repair the office coffee machine, which broke down suddenly.\n\ne. Paid a freelance graphic designer $1,500 for work completed last month.\n\nf. Received a special pre-payment from a customer for a project to be completed in the upcoming 3 months. The customer paid $6,000 in full. The project is estimated to cost the company $3,000 in materials.\n\ng. Incurred depreciation of equipment and furniture of $2,500 for the month.\n\nh. Incurred a loss of $1,200 when an uninsured laptop was stolen during an office break-in.\n\ni. Determined after a physical count at the end of the month that the company had $500 of office supplies remaining. This ending balance represents a $300 increase from the beginning balance of the month."
+    },
+    {
+      "id": "cs2",
+      "title": "BeverageCo — Financial Ratio Analysis",
+      "text": "BeverageCo is a mid-sized beverage manufacturing company that produces a range of bottled drinks for both domestic and regional markets. The company operates in an intensely competitive industry where shifting consumer preferences and rising health awareness are reshaping market dynamics. Management is undertaking a comprehensive evaluation of financial health against industry benchmarks.\n\nRatio Data:\n\n| Ratio                        | 2023  | 2022  | 2021  | 2020  | 2019  | Industry 2023 | Industry 5-yr avg |\n|------------------------------|-------|-------|-------|-------|-------|---------------|-------------------|\n| Current Ratio                |  1.80 |  1.70 |  1.62 |  1.55 |  1.40 |          1.30 |              1.35 |\n| Quick Ratio                  |  0.50 |  0.55 |  0.48 |  0.45 |  0.70 |          0.80 |              0.82 |\n| Inventory Turnover (times)   |  3.50 |  3.80 |  3.50 |  3.00 |  5.00 |          6.00 |              5.80 |\n| Days' Purchases Outstanding  |    75 |    70 |    80 |    85 |    60 |            65 |                63 |\n| Gross Margin (%)             | 45.0% | 46.0% | 43.0% | 42.0% | 45.0% |         42.0% |             41.0% |\n| Profit Margin (%)            |  3.0% |  4.0% |  1.8% |  1.2% |  6.0% |          7.0% |              7.5% |\n| Debt Ratio (%)               | 50.0% | 49.0% | 48.0% | 50.0% | 35.0% |         40.0% |             38.0% |\n| Interest Cover Ratio (times) |  2.50 |  3.00 |  1.70 |  1.30 |  5.00 |          4.50 |              4.80 |"
+    },
+    {
+      "id": "cs3",
+      "title": "Sweet Confectionery Ltd — Sell or Process Further Decision",
+      "text": "Sweet Confectionery Ltd (SC) currently produces 5,000 raw chocolate bars per month, which are sold to distributors for a total monthly revenue of $12,500. The company is now considering further processing these bars into chocolate-covered pretzels. Relevant operation data:\n\n1. Monthly production of raw chocolate bars: 5,000 units\n2. Selling price of raw chocolate bars: $2.50 per unit\n3. Total fixed production costs for raw chocolate bars: $8,000 per month\n4. Monthly production of pretzels: 6,000 units (5,000 raw bars yield 6,000 pretzels due to additional inputs)\n5. Selling price of chocolate-covered pretzels: $4.00 per unit\n6. Additional materials cost for pretzel production: $0.20 per pretzel\n7. Processing cost to convert each bar into a pretzel: $1.00 per pretzel\n8. Additional monthly fixed overhead for pretzel production: $3,000\n9. The processing facility could be used for an alternative project generating monthly profit of $1,500\n10. All produced pretzels can be sold"
+    },
+    {
+      "id": "cs4",
+      "title": "Apparel Ltd — Cash Budget Q1 20X6",
+      "text": "Apparel Ltd is a mid-sized retail company specialising in casual clothing for young adults, operating three outlets and an online store. The finance team is developing a cash budget for Q1 20X6 (January–March).\n\nSales and Collections:\n  Monthly sales: January $200,000 | February $250,000 | March $300,000 | April $320,000\n  Selling price: $100 per unit\n  60% of sales collected in month of sale; 40% collected in the following month\n  Beginning accounts receivable (1 January): $76,000\n\nPurchases and Payments:\n  Inventory purchased = 60% of next month's expected unit sales, at $30 per unit\n  80% of purchases paid in month of purchase; 20% paid in the following month\n  Beginning accounts payable (1 January): $11,760\n\nOperating Expenses:\n  Fixed monthly expenses: $30,000 (of which 30% is depreciation/amortisation — non-cash)\n  Variable operating expenses (marketing, delivery, commissions): 15% of monthly sales, paid in month incurred\n\nAdditional:\n  Beginning cash balance (1 January 20X6): $20,000"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1a",
+      "label": "Question 1a",
+      "marks": 20,
+      "caseStudyRef": "cs1",
+      "text": "For each transaction (a) to (i), explain its impact on SMA's accounts in the expanded accounting equation (Assets, Liabilities, Equity, Revenues, Expenses) in October.\n\nList each account affected separately. Use this format:\n  Item | Account Type | Amount ($) | Increase or Decrease\n\nNote for item (i): consider the beginning balance of supplies and total supplies available before calculating supplies consumed.",
+      "type": "accounting_equation",
+      "modelAnswer": "a. Marketing services $50,000 ($30k cash + $20k receivable):\n   Assets (Cash) | $30,000 | Increase\n   Assets (Accounts Receivable) | $20,000 | Increase\n   Revenue (Service Revenue) | $50,000 | Increase\n\nb. Salaries $35,000 paid in cash:\n   Expenses (Salary Expense) | $35,000 | Increase\n   Assets (Cash) | $35,000 | Decrease\n\nc. Office supplies $4,000 ($1,500 cash + $2,500 on account):\n   Assets (Office Supplies) | $4,000 | Increase\n   Assets (Cash) | $1,500 | Decrease\n   Liabilities (Accounts Payable) | $2,500 | Increase\n\nd. Coffee machine repair $150 cash:\n   Expenses (Repair Expense) | $150 | Increase\n   Assets (Cash) | $150 | Decrease\n\ne. Freelancer paid $1,500 for last month's work:\n   Expenses (Contract/Freelance Expense) | $1,500 | Increase\n   Assets (Cash) | $1,500 | Decrease\n\nf. Customer pre-payment $6,000 for 3-month project:\n   Assets (Cash) | $6,000 | Increase\n   Liabilities (Unearned Revenue) | $6,000 | Increase\n   [The $3,000 project cost is a future cost — not recorded now]\n\ng. Depreciation of equipment and furniture $2,500:\n   Expenses (Depreciation Expense) | $2,500 | Increase\n   Assets (Accumulated Depreciation) | $2,500 | Increase\n\nh. Loss from stolen laptop $1,200 (uninsured):\n   Expenses (Loss on Theft) | $1,200 | Increase\n   Assets (Equipment) | $1,200 | Decrease\n\ni. Office supplies consumed:\n   Beginning supplies balance = $500 (ending) – $300 (increase) = $200\n   Total available = $200 (beginning) + $4,000 (purchased, item c) = $4,200\n   Supplies used = $4,200 – $500 (ending) = $3,700\n   Expenses (Office Supplies Expense) | $3,700 | Increase\n   Assets (Office Supplies) | $3,700 | Decrease",
+      "keyPoints": [
+        "Item (a): three accounts — Cash $30k, AR $20k, Revenue $50k (NOT all cash)",
+        "Item (b): Salary expense, Cash decrease",
+        "Item (c): Office Supplies increase $4,000; Cash decrease $1,500; AP increase $2,500",
+        "Item (d): Repair expense $150, Cash decrease",
+        "Item (e): Expense $1,500, Cash decrease — records the payment for prior month work",
+        "Item (f): Cash increase $6,000, Unearned Revenue (Liability) increase $6,000 — NOT revenue yet",
+        "Item (g): Depreciation expense, Accumulated Depreciation increase (Assets decrease)",
+        "Item (h): Loss expense $1,200, Asset (Equipment) decreases $1,200",
+        "Item (i): Must work out supplies used: beginning $200 + purchased $4,000 – ending $500 = $3,700"
+      ]
+    },
+    {
+      "id": "q1b",
+      "label": "Question 1b",
+      "marks": 3,
+      "caseStudyRef": "cs1",
+      "text": "Calculate the net profit or loss for SMA in October based on the transactions listed above.",
+      "type": "calculation",
+      "modelAnswer": "Revenue:\n  Service Revenue                        $50,000\n\nExpenses:\n  Salary Expense                         $35,000\n  Repair Expense                            $150\n  Contract/Freelance Expense              $1,500\n  Depreciation Expense                    $2,500\n  Loss on Theft                           $1,200\n  Office Supplies Expense                 $3,700\n  Total Expenses                         $44,050\n\nNet Profit = $50,000 – $44,050 = $5,950\n\nNote: The $6,000 customer pre-payment (item f) is Unearned Revenue — not included in October revenue as the project has not yet been performed.",
+      "keyPoints": [
+        "Revenue = $50,000 (service revenue only)",
+        "6 expense items: salary $35,000, repair $150, freelancer $1,500, depreciation $2,500, theft loss $1,200, supplies $3,700",
+        "Total expenses = $44,050",
+        "Net profit = $5,950",
+        "The $6,000 pre-payment must NOT be included as revenue"
+      ]
+    },
+    {
+      "id": "q1c",
+      "label": "Question 1c",
+      "marks": 5,
+      "caseStudyRef": "cs1",
+      "text": "Assess the company's performance in October. Assume total assets at end of October are $76,000 and the required rate of return is 10%.",
+      "type": "calculation",
+      "modelAnswer": "Return on Assets (ROA) = Net Profit After Tax ÷ Total Assets\n= $5,950 ÷ $76,000\n= 7.83%\n\nRequired rate of return = 10%\n\nAssessment: SMA's ROA of 7.83% falls below the required rate of return of 10%. For every $1 of assets deployed, the company generated only $0.0783 of profit, against a minimum expectation of $0.10.\n\nThis suggests the company's assets are not generating sufficient returns in October. However, several expense items are one-off or non-cash (laptop theft loss $1,200, depreciation $2,500), which suppressed October's profit. Excluding the theft loss (a non-recurring event), adjusted profit would be $7,150, giving an ROA of 9.41% — closer to but still below the 10% target.\n\nManagement should focus on revenue growth or cost optimisation to meet the required return on assets.",
+      "keyPoints": [
+        "Formula: ROA = Net Profit ÷ Total Assets = $5,950 ÷ $76,000 = 7.83%",
+        "Compare to required rate 10%: below target",
+        "Must state: performance is inadequate — not meeting required return",
+        "Good answers discuss non-recurring items (theft) that distorted October profit",
+        "Recommendation to improve ROA"
+      ]
+    },
+    {
+      "id": "q2",
+      "label": "Question 2",
+      "marks": 25,
+      "caseStudyRef": "cs2",
+      "text": "Analyse the ratios provided for BeverageCo and comment on its profitability, liquidity, solvency, and efficiency. A friend is considering investing in this industry. Using only the information provided, would you recommend buying shares of BeverageCo? Justify your recommendation.",
+      "type": "essay",
+      "modelAnswer": "PROFITABILITY:\nGross margin improved slightly from 45% (2019) to 45% (2023), remaining above industry (42%), suggesting good cost-of-goods management. However, profit margin has collapsed from 6% (2019) to 3% (2023), far below the industry average of 7% and 5-year industry average of 7.5%. This widening gap between gross margin and profit margin indicates rising operating and/or finance expenses are severely eroding net profitability. Despite reasonable top-line cost control, the company is not converting revenue into bottom-line profit efficiently.\n\nLIQUIDITY:\nThe current ratio has improved from 1.40 (2019) to 1.80 (2023), now above the industry average (1.30) — a positive sign for short-term debt coverage. However, the quick ratio has deteriorated from 0.70 (2019) to 0.50 (2023), well below the industry average of 0.80. The large gap between current (1.80) and quick (0.50) ratios signals excessive inventory build-up. BeverageCo cannot meet short-term liabilities without relying heavily on inventory liquidation — a risk in a rapidly changing consumer market (health-conscious shift reducing demand for traditional beverages).\n\nSOLVENCY / GEARING:\nThe debt ratio has worsened significantly from 35% (2019) to 50% (2023), now 10 percentage points above the industry average of 40%. This means half of the company's assets are funded by debt. More critically, interest cover has fallen from 5.0× to 2.5×, far below the industry average of 4.5×. At 2.5×, the company has little buffer to absorb earnings declines before it cannot service its debt — this is a serious red flag. The company's financial risk has materially increased.\n\nEFFICIENCY:\nInventory turnover has declined sharply from 5.0× (2019) to 3.5× (2023), well below the industry average of 6.0×. This confirms slow-moving inventory, consistent with the liquidity concerns above. Days' Purchases Outstanding has increased from 60 days to 75 days (vs. industry 65 days), suggesting the company is delaying supplier payments — possibly due to cash pressure from poor profitability.\n\nINVESTMENT RECOMMENDATION: Do NOT recommend buying BeverageCo shares.\nDespite superficially improving liquidity (current ratio) and gross margins, the fundamental picture is deteriorating: profit margin is 3% vs. industry 7% and declining; interest cover of 2.5× creates significant default risk; debt ratio at 50% leaves little financial flexibility; and inventory turnover far below industry average indicates operational inefficiency. The company has not capitalised on the health-beverage trend, leaving a strategic gap. These combined risks make BeverageCo a poor investment at this time.",
+      "keyPoints": [
+        "Profitability: Gross margin above industry — good; Profit margin 3% vs industry 7% — very poor; declining trend since 2019",
+        "Liquidity: Current ratio improving and above industry — positive; Quick ratio 0.50 vs industry 0.80 — concerning; large gap = heavy inventory reliance",
+        "Solvency: Debt ratio 50% vs industry 40% — high leverage; Interest cover 2.5× vs industry 4.5× — dangerous, little debt-service buffer",
+        "Efficiency: Inventory turnover 3.5× vs industry 6.0× — slow moving; DPO 75 days vs industry 65 days — stretching suppliers",
+        "Investment recommendation: NOT recommended — must give clear recommendation with minimum 2–3 reasons linked to ratios",
+        "Must discuss all 4 dimensions: profitability, liquidity, solvency, efficiency"
+      ]
+    },
+    {
+      "id": "q3a",
+      "label": "Question 3a",
+      "marks": 15,
+      "caseStudyRef": "cs3",
+      "text": "List the relevant revenues and costs that should be considered when deciding whether Sweet Confectionery Ltd should sell the raw chocolate bars or process them into pretzels. Briefly explain why each item is relevant or irrelevant.",
+      "type": "essay",
+      "modelAnswer": "RELEVANT REVENUES:\n\n1. Revenue from selling raw chocolate bars: $2.50 × 5,000 = $12,500/month\n   → RELEVANT. This is the revenue FOREGONE if the company processes further. It represents the opportunity cost of not selling raw bars. Relevant because it differs between the two alternatives.\n\n2. Revenue from selling pretzels: $4.00 × 6,000 = $24,000/month\n   → RELEVANT. This is the NEW revenue earned only if the company processes further. It differs between alternatives.\n\nRELEVANT COSTS (incremental — arise only if processing occurs):\n\n3. Additional materials cost: $0.20 × 6,000 = $1,200/month\n   → RELEVANT. This cost is incurred ONLY if processing occurs. It is a future cost that differs between alternatives.\n\n4. Processing cost (converting bars to pretzels): $1.00 × 6,000 = $6,000/month\n   → RELEVANT. Only incurred if the decision to process is made. Incremental future cost.\n\n5. Additional fixed overhead for pretzel production: $3,000/month\n   → RELEVANT. This is an additional fixed cost specifically for pretzel production, incurred only if the company processes further. It is avoidable if the company does not process.\n\n6. Opportunity cost of processing facility: $1,500/month\n   → RELEVANT. If the processing facility is used for pretzels, the company forgoes $1,500 profit from the alternative project. Opportunity costs represent the value of the best alternative forgone — relevant to the decision.\n\nIRRELEVANT COSTS:\n\n7. Fixed production costs for raw chocolate bars: $8,000/month\n   → IRRELEVANT. These costs are incurred regardless of whether the company sells raw bars or processes them into pretzels. They are sunk/committed costs that do not differ between alternatives. Including them would not change the decision.",
+      "keyPoints": [
+        "Relevant revenues: raw bar revenue (foregone) $12,500 AND pretzel revenue $24,000 — both relevant as they differ between alternatives",
+        "Relevant costs: additional materials $1,200 + processing cost $6,000 + additional fixed overhead $3,000 + opportunity cost $1,500",
+        "IRRELEVANT: fixed production costs for raw bars $8,000 — sunk/unavoidable cost, incurred regardless of decision",
+        "Must explain WHY each item is relevant (future, differs between alternatives) or irrelevant (sunk, does not change)",
+        "Opportunity cost must be included and explained as profit foregone from alternative use of facility"
+      ]
+    },
+    {
+      "id": "q3b",
+      "label": "Question 3b",
+      "marks": 5,
+      "caseStudyRef": "cs3",
+      "text": "Using the relevant revenues and costs identified in Question 3a, evaluate whether Sweet Confectionery Ltd should continue selling the raw chocolate bars or process them further into pretzels. Provide supporting calculations.",
+      "type": "calculation",
+      "modelAnswer": "Incremental Analysis — Process Further vs Sell Raw:\n\n                                          $\nRevenue from pretzels (6,000 × $4.00)   24,000\nLess: Revenue from raw bars (foregone)  (12,500)\nIncremental Revenue                      11,500\n\nLess Incremental Costs:\n  Additional materials ($0.20 × 6,000)   (1,200)\n  Processing cost ($1.00 × 6,000)        (6,000)\n  Additional fixed overhead              (3,000)\n  Opportunity cost (alternative project) (1,500)\nTotal Incremental Costs                 (11,700)\n\nNet Benefit/(Loss) of Processing          (200)\n\nDecision: Sweet Confectionery Ltd should NOT process further into pretzels. The incremental costs ($11,700) exceed the incremental revenue gain ($11,500) by $200 per month, resulting in a marginal net loss. The company is marginally better off continuing to sell raw chocolate bars.\n\nNote: The margin is very small ($200/month). Any slight increase in pretzel selling price or reduction in processing costs could reverse this decision.",
+      "keyPoints": [
+        "Incremental revenue = $24,000 – $12,500 = $11,500",
+        "Incremental costs = $1,200 + $6,000 + $3,000 + $1,500 = $11,700",
+        "Net loss from processing = $200",
+        "Decision: Do NOT process further",
+        "Fixed production cost $8,000 must NOT appear in the calculation (irrelevant)"
+      ]
+    },
+    {
+      "id": "q3c",
+      "label": "Question 3c",
+      "marks": 4,
+      "caseStudyRef": "cs3",
+      "text": "Identify any other factors the company should consider before making the final decision.",
+      "type": "essay",
+      "modelAnswer": "1. Market demand uncertainty: The calculation assumes all 6,000 pretzels can be sold at $4.00 each. If actual demand is lower, revenue will fall and the net loss widens. The company should assess market demand for pretzels before committing.\n\n2. Quality and brand risk: Processing raw bars into pretzels is a different product. If quality is inconsistent or the product does not align with the brand image, it could damage the company's reputation and existing customer relationships with distributors.\n\n3. One-time setup and transition costs: The analysis captures ongoing monthly costs but ignores any one-time capital expenditure for equipment setup, staff training, or production line modifications — these could make the decision even less favourable initially.\n\n4. Long-term strategic fit: Even though the monthly financial difference is only $200, the pretzel market may have higher growth potential. Conversely, the existing distributor relationships for raw bars may be strategically valuable and difficult to rebuild if abandoned.",
+      "keyPoints": [
+        "Market demand risk — assumption that all pretzels sell at $4.00 may not hold",
+        "Brand/quality risk — new product may not align with existing brand or relationships",
+        "One-time setup costs not captured in the analysis",
+        "Strategic/long-term considerations (growth potential, customer relationships)"
+      ]
+    },
+    {
+      "id": "q4a",
+      "label": "Question 4a",
+      "marks": 18,
+      "caseStudyRef": "cs4",
+      "text": "Present a cash budget for Apparel Ltd for Q1 20X6 (January, February, March).\n\nYour budget must clearly show:\n- Cash receipts: collections from sales (current + prior month AR)\n- Cash payments: purchases (current + prior month AP) and operating expenses\n- Opening and closing cash balances for each month",
+      "type": "calculation",
+      "modelAnswer": "STEP 1 — Units sold each month:\n  Jan: $200,000 ÷ $100 = 2,000 units\n  Feb: $250,000 ÷ $100 = 2,500 units\n  Mar: $300,000 ÷ $100 = 3,000 units\n  Apr: $320,000 ÷ $100 = 3,200 units\n\nSTEP 2 — Purchases (60% of NEXT month's units × $30):\n  Jan purchases: 60% × 2,500 × $30 = 1,500 × $30 = $45,000\n  Feb purchases: 60% × 3,000 × $30 = 1,800 × $30 = $54,000\n  Mar purchases: 60% × 3,200 × $30 = 1,920 × $30 = $57,600\n  (Dec purchases derived from opening AP: $11,760 ÷ 20% = $58,800)\n\nSTEP 3 — Cash collections (60% in month of sale, 40% next month):\n  January:\n    Current month (60% × $200k)          $120,000\n    Prior month AR (opening balance)       $76,000\n    Total                                $196,000\n  February:\n    Current month (60% × $250k)          $150,000\n    Prior month (40% × $200k)             $80,000\n    Total                                $230,000\n  March:\n    Current month (60% × $300k)          $180,000\n    Prior month (40% × $250k)            $100,000\n    Total                                $280,000\n\nSTEP 4 — Cash payments for purchases (80% in purchase month, 20% next month):\n  January:\n    Current (80% × $45,000)              $36,000\n    Prior month AP (opening balance)     $11,760\n    Total                               $47,760\n  February:\n    Current (80% × $54,000)             $43,200\n    Prior month (20% × $45,000)          $9,000\n    Total                               $52,200\n  March:\n    Current (80% × $57,600)             $46,080\n    Prior month (20% × $54,000)         $10,800\n    Total                               $56,880\n\nSTEP 5 — Operating expenses:\n  Fixed cash expenses = $30,000 × 70% = $21,000/month [30% = D&A, non-cash]\n  Variable (15% of sales):\n    Jan: 15% × $200,000 = $30,000  |  Feb: 15% × $250,000 = $37,500  |  Mar: 15% × $300,000 = $45,000\n  Total cash opex:\n    Jan: $21,000 + $30,000 = $51,000\n    Feb: $21,000 + $37,500 = $58,500\n    Mar: $21,000 + $45,000 = $66,000\n\n─────────────────────────────────────────────────────────\nCASH BUDGET — Apparel Ltd, Q1 20X6\n─────────────────────────────────────────────────────────\n                                Jan          Feb          Mar\nOpening Cash Balance         $20,000     $117,240     $236,540\n\nADD: Cash Receipts\n  Collections (current 60%)  $120,000     $150,000     $180,000\n  Collections (prior 40%/AR)  $76,000      $80,000     $100,000\nTotal Receipts               $196,000     $230,000     $280,000\n\nLESS: Cash Payments\n  Purchases (current 80%)     $36,000      $43,200      $46,080\n  Purchases (prior 20%/AP)    $11,760       $9,000      $10,800\n  Operating expenses          $51,000      $58,500      $66,000\nTotal Payments               $98,760     $110,700     $122,880\n\nClosing Cash Balance        $117,240     $236,540     $393,660\n─────────────────────────────────────────────────────────",
+      "keyPoints": [
+        "Jan units 2,000 | Feb 2,500 | Mar 3,000 | Apr 3,200",
+        "Jan purchases = 60% × 2,500 × $30 = $45,000; Feb = $54,000; Mar = $57,600",
+        "Jan collections: $120,000 (current) + $76,000 (opening AR) = $196,000",
+        "Jan purchase payments: $36,000 (current 80%) + $11,760 (opening AP) = $47,760",
+        "Fixed cash opex = $21,000/month (70% of $30,000 — exclude 30% D&A)",
+        "Closing balances: Jan $117,240 | Feb $236,540 | Mar $393,660"
+      ]
+    },
+    {
+      "id": "q4b",
+      "label": "Question 4b",
+      "marks": 5,
+      "caseStudyRef": "cs4",
+      "text": "Evaluate Apparel Ltd's cash status based on the cash budget prepared in Question 4a.",
+      "type": "essay",
+      "modelAnswer": "Apparel Ltd is in a strong and improving cash position throughout Q1 20X6.\n\nThe cash balance grows consistently from $20,000 (opening) to $117,240 (end of January), $236,540 (end of February), and $393,660 (end of March). There is no cash shortage at any point — the company maintains positive cash balances in every month without any need for external financing.\n\nThe strong cash generation is driven by robust collections (60% same-month collection provides reliable inflows) and growing sales volumes. Cash receipts exceed payments in every month, producing a net inflow of approximately $97,240 in January, $119,300 in February, and $157,120 in March.\n\nHowever, the rapidly accumulating cash balance ($393,660 by March) suggests the company may be holding excessive idle cash. Management should consider deploying the surplus productively — for example, paying down any existing debt early, investing in short-term securities, funding inventory expansion ahead of expected sales growth, or returning value to shareholders.\n\nOverall, the cash budget presents a healthy picture of cash management for Q1 20X6, with no financing concerns identified.",
+      "keyPoints": [
+        "Cash position is positive and growing every month — no shortage",
+        "Closing balances: Jan $117,240 | Feb $236,540 | Mar $393,660",
+        "No external financing required",
+        "Must note the growing surplus — suggest productive deployment (invest, repay debt, etc.)",
+        "Overall assessment: healthy cash management"
+      ]
+    }
+  ]
+}
