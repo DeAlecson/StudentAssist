@@ -73,6 +73,18 @@
       "label": "JAN 2025",
       "file": "data/sst101/exams/jan2025.json",
       "examType": "open_book"
+    },
+    {
+      "id": "jul2024",
+      "label": "JUL 2024",
+      "file": "data/sst101/exams/jul2024.json",
+      "examType": "open_book"
+    },
+    {
+      "id": "jul2025",
+      "label": "JUL 2025",
+      "file": "data/sst101/exams/jul2025.json",
+      "examType": "open_book"
     }
   ]
 }

@@ -1,0 +1,355 @@
+{
+  "id": "sst101_jul2024",
+  "module": "sst101",
+  "code": "SST101",
+  "semester": "JUL 2024",
+  "duration": 7200,
+  "totalMarks": 100,
+  "examType": "open_book",
+  "caseStudies": [
+    {
+      "id": "cs_hospital_it",
+      "title": "Case Study — SingHealth Hospital IT System Upgrade",
+      "text": "SingHealth Group has commissioned a major IT system upgrade project across three of its public hospitals in Singapore. The project involves replacing the existing Patient Administration System (PAS) with a new integrated Electronic Health Record (EHR) platform. The project has a budget of SGD 8.2 million, a planned duration of 18 months, and involves over 120 IT staff, clinical trainers, and vendor personnel.\n\nKey project details:\n- Phase 1 (Months 1–6): Requirements gathering, vendor selection, and system design\n- Phase 2 (Months 7–13): System development, data migration, and integration testing\n- Phase 3 (Months 14–18): User acceptance testing, staff training, and go-live\n\nRisk Scenario: During project initiation, the project steering committee has identified several concerns:\n(i) Legacy data from three separate hospital databases may be incompatible with the new EHR data schema, requiring extensive data cleansing.\n(ii) Clinical staff resistance to the new system is anticipated, as a previous IT rollout in 2019 was poorly received due to inadequate training.\n(iii) The primary IT vendor has sub-contracted the data migration module to an overseas firm in India, introducing third-party dependency and timezone coordination challenges.\n(iv) Singapore's Ministry of Health (MOH) may issue revised data governance regulations mid-project, requiring system redesign.\n(v) The project is scheduled to go live in January — historically the busiest period for hospitals due to post-holiday patient surges.\n\nThis case study applies to all parts of Question 3."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "label": "Question 1",
+      "marks": 20,
+      "text": "Apply the principles of project management to answer the following with the most appropriate answers. (10 MCQ × 2 marks each)",
+      "type": "mcq",
+      "subQuestions": [
+        {
+          "id": "q1a",
+          "label": "Question 1a",
+          "marks": 2,
+          "text": "In a project network diagram, the Critical Path is BEST described as:",
+          "type": "mcq",
+          "choices": [
+            "The shortest path from project start to finish",
+            "The path with the most activities",
+            "The longest path through the network that determines the minimum project duration",
+            "The path with the highest total cost"
+          ],
+          "answer": 2,
+          "explanation": "The Critical Path is the longest sequence of dependent activities from project start to finish. It determines the minimum total project duration — any delay on a critical path activity directly delays the entire project. It is not necessarily the shortest path, the path with the most activities, or the most expensive path."
+        },
+        {
+          "id": "q1b",
+          "label": "Question 1b",
+          "marks": 2,
+          "text": "During a forward pass in Critical Path Method (CPM) analysis, which value is being calculated for each activity?",
+          "type": "mcq",
+          "choices": [
+            "Late Start (LS) and Late Finish (LF)",
+            "Float (Slack) for each activity",
+            "Early Start (ES) and Early Finish (EF)",
+            "Resource usage per time period"
+          ],
+          "answer": 2,
+          "explanation": "The forward pass calculates the Early Start (ES) and Early Finish (EF) for each activity by moving from left to right (start to finish) through the network. ES of a successor = EF of its predecessor. The backward pass (moving right to left) calculates Late Start (LS) and Late Finish (LF). Float is derived after both passes."
+        },
+        {
+          "id": "q1c",
+          "label": "Question 1c",
+          "marks": 2,
+          "text": "Which of the following BEST describes the purpose of the IADC Risk Management cycle?",
+          "type": "mcq",
+          "choices": [
+            "A four-step cycle: Initiate, Assign, Deploy, Close",
+            "An iterative cycle of Identify, Analyse, Design response, Control — used to manage project risks continuously",
+            "A process for managing only financial risks in large-scale infrastructure projects",
+            "A one-time activity conducted only at project initiation"
+          ],
+          "answer": 1,
+          "explanation": "The IADC cycle stands for Identify, Analyse, Design response (or Develop response), and Control. It is an iterative, ongoing process applied throughout the project lifecycle — not just at the start, and not limited to financial risks. Risks must be continuously monitored and updated as the project evolves."
+        },
+        {
+          "id": "q1d",
+          "label": "Question 1d",
+          "marks": 2,
+          "text": "A project team discovers a risk that, if it occurs, would delay the project by three months. The team decides to arrange a contract with a specialist vendor who will be on standby to intervene if needed. This risk response strategy is BEST classified as:",
+          "type": "mcq",
+          "choices": [
+            "Risk Avoidance",
+            "Risk Transfer",
+            "Risk Mitigation",
+            "Risk Acceptance (Active)"
+          ],
+          "answer": 3,
+          "explanation": "Active Risk Acceptance involves acknowledging the risk and preparing a contingency plan (a fallback plan to execute if the risk occurs) — such as having a specialist vendor on standby. Risk Avoidance eliminates the risk entirely. Risk Transfer shifts the financial impact to a third party (e.g., insurance). Risk Mitigation reduces the probability or impact of the risk before it occurs."
+        },
+        {
+          "id": "q1e",
+          "label": "Question 1e",
+          "marks": 2,
+          "text": "In Agile project management, a 'Sprint Retrospective' is PRIMARILY used for:",
+          "type": "mcq",
+          "choices": [
+            "Reviewing and accepting deliverables with the product owner",
+            "Planning the work to be done in the next sprint",
+            "Reflecting on the team's processes and identifying improvements for future sprints",
+            "Updating the product backlog with new user stories"
+          ],
+          "answer": 2,
+          "explanation": "The Sprint Retrospective is an internal team ceremony held at the end of each sprint where the team reflects on HOW they worked — what went well, what did not, and what to improve in the next sprint. It is distinct from the Sprint Review (which demonstrates deliverables to the product owner), Sprint Planning (which plans the next sprint's work), and backlog refinement (which updates user stories)."
+        },
+        {
+          "id": "q1f",
+          "label": "Question 1f",
+          "marks": 2,
+          "text": "Which of the following activities is MOST associated with the Project Closure phase?",
+          "type": "mcq",
+          "choices": [
+            "Developing the Work Breakdown Structure",
+            "Conducting stakeholder needs analysis",
+            "Archiving project records and capturing lessons learned",
+            "Estimating project duration using the critical path"
+          ],
+          "answer": 2,
+          "explanation": "Project Closure involves formally ending the project, obtaining final acceptance of deliverables, releasing resources, archiving all project documentation, and capturing lessons learned for future projects. WBS development, stakeholder analysis, and CPM estimation occur during project initiation and planning — not closure."
+        },
+        {
+          "id": "q1g",
+          "label": "Question 1g",
+          "marks": 2,
+          "text": "In a Scrum framework, who is responsible for maximising the value of the product and managing the Product Backlog?",
+          "type": "mcq",
+          "choices": [
+            "Scrum Master",
+            "Development Team",
+            "Project Sponsor",
+            "Product Owner"
+          ],
+          "answer": 3,
+          "explanation": "The Product Owner (PO) is responsible for maximising the value of the product by managing and prioritising the Product Backlog. The Scrum Master facilitates the Scrum process and removes impediments. The Development Team does the actual work of building the product. The Project Sponsor provides funding and strategic direction but does not manage the backlog."
+        },
+        {
+          "id": "q1h",
+          "label": "Question 1h",
+          "marks": 2,
+          "text": "A project stakeholder is defined as:",
+          "type": "mcq",
+          "choices": [
+            "Only the individuals who fund the project",
+            "Any person or group who may affect, be affected by, or perceive themselves to be affected by the project",
+            "Only the members of the project management team",
+            "External parties such as government regulators and the media"
+          ],
+          "answer": 1,
+          "explanation": "A stakeholder is any person, group, or organisation that may affect, be affected by, or perceive themselves to be affected by a decision, activity, or outcome of the project (PMBOK definition). This is a broad category that includes both internal (project team, sponsor, functional managers) and external (customers, suppliers, regulators, media, public) parties — not only funders or external parties."
+        },
+        {
+          "id": "q1i",
+          "label": "Question 1i",
+          "marks": 2,
+          "text": "Which of the following BEST illustrates the concept of the 'Triple Constraint' (Iron Triangle) in project management?",
+          "type": "mcq",
+          "choices": [
+            "Budget, human resources, and technology",
+            "Scope, schedule (time), and cost — which must be balanced to manage quality",
+            "Initiation, planning, and execution",
+            "Risk, quality, and stakeholder satisfaction"
+          ],
+          "answer": 1,
+          "explanation": "The Triple Constraint (or Iron Triangle) refers to the three primary constraints that every project must balance: Scope (what is to be done), Schedule/Time (when it must be done), and Cost (how much budget is available). Quality sits at the centre — changes to any one constraint affect the others and ultimately impact quality. This is a foundational concept in project management."
+        },
+        {
+          "id": "q1j",
+          "label": "Question 1j",
+          "marks": 2,
+          "text": "During project execution, the project manager notices that the team has been consistently adding features not included in the approved project scope without formal change requests. This is BEST described as:",
+          "type": "mcq",
+          "choices": [
+            "Value engineering",
+            "Progressive elaboration",
+            "Gold plating",
+            "Fast tracking"
+          ],
+          "answer": 2,
+          "explanation": "Gold plating refers to the practice of adding extra features, functions, or quality beyond what was agreed in the project scope — without a formal change request — often motivated by a desire to impress the client or exceed expectations. Although well-intentioned, it wastes resources and introduces uncontrolled risk. It differs from progressive elaboration (refining the plan as more detail becomes known) and fast tracking (overlapping sequential activities)."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "label": "Question 2",
+      "marks": 30,
+      "text": "This question focuses on Critical Path Method (CPM) and project scheduling. A construction project has the following seven activities. Use this information to answer all parts of this question.\n\nActivity details:\n| Activity | Description | Predecessor(s) | Duration (weeks) |\n|----------|-------------|----------------|------------------|\n| A | Site preparation | None | 4 |\n| B | Foundation works | A | 6 |\n| C | Structural framing | B | 8 |\n| D | Electrical rough-in | B | 5 |\n| E | Plumbing rough-in | B | 7 |\n| F | Interior finishing | C, D, E | 9 |\n| G | Final inspection & handover | F | 3 |\n\nAll durations are in weeks. The project begins at time zero (Week 0).",
+      "type": "essay",
+      "subQuestions": [
+        {
+          "id": "q2a",
+          "label": "Question 2a",
+          "marks": 8,
+          "text": "Explain the purpose and benefits of using the Critical Path Method (CPM) in project scheduling. In your answer, define what a critical path is and discuss why project managers need to identify it.",
+          "type": "essay",
+          "modelAnswer": "PURPOSE OF CRITICAL PATH METHOD (CPM):\n\nCPM is a project scheduling technique used to determine the longest sequence of dependent activities from project start to finish, which establishes the minimum total duration required to complete the project. It was developed in the late 1950s (jointly by DuPont and Remington Rand) and remains one of the most widely used scheduling tools in project management.\n\nDEFINITION OF CRITICAL PATH:\nThe Critical Path is the sequence of activities that takes the longest total time from the project's start to its end. Activities on the critical path have zero float (also called slack) — meaning any delay to a critical path activity will directly delay the project's completion date by the same amount of time. A project can have more than one critical path if two or more paths have equal total duration.\n\nKEY BENEFITS FOR PROJECT MANAGERS:\n\n1. Identifies the project's minimum duration: Before project execution begins, CPM gives the project manager a data-driven basis for committing to a project end date. This supports realistic schedule planning and avoids overpromising to stakeholders.\n\n2. Focuses management attention: By clearly labelling which activities are critical, the project manager knows where to concentrate monitoring effort. A one-week delay in activity G (critical) is far more serious than a one-week delay in activity D (non-critical, with float) — CPM makes this distinction explicit.\n\n3. Enables float analysis and flexible resource allocation: Non-critical activities have float — the amount of time they can be delayed without affecting the project end date. This allows the project manager to shift resources from non-critical to critical activities to recover schedule when needed.\n\n4. Supports what-if analysis: Project managers can model the impact of accelerating individual activities (e.g., by adding resources or working overtime) on the overall project duration, enabling informed trade-off decisions.\n\n5. Provides a baseline for monitoring: The CPM schedule serves as the approved schedule baseline against which actual progress is measured. Earned Value Management (EVM) and Schedule Variance calculations depend on a valid baseline schedule.\n\nLIMITATIONS: CPM assumes deterministic activity durations — it does not account for uncertainty. For high-uncertainty projects, PERT (Programme Evaluation and Review Technique) extends CPM with probabilistic duration estimates.",
+          "keyPoints": [
+            "Define CPM as a scheduling technique to find the longest path and minimum project duration",
+            "Define Critical Path: longest path from start to finish, zero float on all critical activities",
+            "At least 3 specific benefits (not just vague descriptions)",
+            "Explain the concept of float and its practical value",
+            "Explain why identifying the critical path focuses management attention"
+          ]
+        },
+        {
+          "id": "q2b",
+          "label": "Question 2b",
+          "marks": 12,
+          "text": "Using the activity table provided in the question stem, perform a full forward and backward pass to determine the Early Start (ES), Early Finish (EF), Late Start (LS), and Late Finish (LF) for every activity. Clearly show all calculations. Then identify the critical path and state the total project duration.",
+          "type": "calculation",
+          "modelAnswer": "NETWORK PATHS THROUGH THE PROJECT:\nPath 1: A → B → C → F → G = 4 + 6 + 8 + 9 + 3 = 30 weeks\nPath 2: A → B → D → F → G = 4 + 6 + 5 + 9 + 3 = 27 weeks\nPath 3: A → B → E → F → G = 4 + 6 + 7 + 9 + 3 = 29 weeks\n\nFORWARD PASS (calculating ES and EF):\nRule: ES of first activity = 0; EF = ES + Duration; ES of successor = max(EF of all predecessors)\n\nActivity A: ES=0, EF=0+4=4\nActivity B: ES=4 (after A), EF=4+6=10\nActivity C: ES=10 (after B), EF=10+8=18\nActivity D: ES=10 (after B), EF=10+5=15\nActivity E: ES=10 (after B), EF=10+7=17\nActivity F: predecessors are C(EF=18), D(EF=15), E(EF=17); ES=max(18,15,17)=18; EF=18+9=27\nActivity G: ES=27 (after F), EF=27+3=30\n\nTotal Project Duration (EF of last activity) = 30 weeks\n\nBACKWARD PASS (calculating LF and LS):\nRule: LF of last activity = EF of last activity (= 30); LS = LF − Duration; LF of predecessor = min(LS of all successors)\n\nActivity G: LF=30, LS=30−3=27\nActivity F: LF=27 (only successor is G, LS=27); LS=27−9=18\nActivity C: LF=18 (only successor is F, LS=18); LS=18−8=10\nActivity D: LF=18 (only successor is F, LS=18); LS=18−5=13\nActivity E: LF=18 (only successor is F, LS=18); LS=18−7=11\nActivity B: successors are C(LS=10), D(LS=13), E(LS=11); LF=min(10,13,11)=10; LS=10−6=4\nActivity A: LF=4 (only successor is B, LS=4); LS=4−4=0\n\nSUMMARY TABLE:\n| Activity | ES | EF | LS | LF | Float (LS−ES) | Critical? |\n|----------|----|----|----|----|---------------|-----------|\n| A        | 0  | 4  | 0  | 4  | 0             | YES       |\n| B        | 4  | 10 | 4  | 10 | 0             | YES       |\n| C        | 10 | 18 | 10 | 18 | 0             | YES       |\n| D        | 10 | 15 | 13 | 18 | 3             | No        |\n| E        | 10 | 17 | 11 | 18 | 1             | No        |\n| F        | 18 | 27 | 18 | 27 | 0             | YES       |\n| G        | 27 | 30 | 27 | 30 | 0             | YES       |\n\nCRITICAL PATH: A → B → C → F → G\nTOTAL PROJECT DURATION: 30 weeks",
+          "keyPoints": [
+            "Correct forward pass: A(0-4), B(4-10), C(10-18), D(10-15), E(10-17), F(18-27), G(27-30)",
+            "Correct backward pass: A(0-4), B(4-10), C(10-18), D(13-18), E(11-18), F(18-27), G(27-30)",
+            "Float correctly calculated: A,B,C,F,G = 0; D = 3; E = 1",
+            "Critical Path correctly identified: A → B → C → F → G",
+            "Total project duration = 30 weeks",
+            "Show all ES, EF, LS, LF values clearly (full marks require a complete table or equivalent)"
+          ]
+        },
+        {
+          "id": "q2c",
+          "label": "Question 2c",
+          "marks": 10,
+          "text": "Based on your CPM analysis, discuss the concept of float (slack) for the non-critical activities (D and E). Explain the scheduling implications and advise the project manager on how float can be used strategically. Your answer should also address what happens to the critical path if Activity C is delayed by 4 weeks.",
+          "type": "essay",
+          "modelAnswer": "FLOAT ANALYSIS FOR NON-CRITICAL ACTIVITIES:\n\nFloat (also called slack or total float) is the amount of time a non-critical activity can be delayed from its Early Start without delaying the overall project completion date. Float is calculated as: Float = LS − ES = LF − EF.\n\nActivity D (Electrical rough-in): Float = 3 weeks\nActivity D has an ES of Week 10 and an LS of Week 13. This means the project manager can delay starting Activity D by up to 3 weeks (i.e., start as late as Week 13) without delaying Activity F or the project's final completion date of Week 30. Its EF is Week 15 and LF is Week 18 — it must finish by Week 18 at the latest.\n\nActivity E (Plumbing rough-in): Float = 1 week\nActivity E has an ES of Week 10 and an LS of Week 11. It has only 1 week of float — a much tighter constraint than Activity D. Starting Activity E any later than Week 11 will jeopardise the project's end date.\n\nSTRATEGIC USE OF FLOAT:\n\n1. Resource levelling: When resources (e.g., skilled tradespeople) are scarce, the project manager can shift Activity D's start to Week 11–13 and direct those resources to Activity C (critical) first, knowing D has float to absorb the delay. This avoids resource conflicts without impacting the project end date.\n\n2. Risk buffer: Float acts as a natural buffer on non-critical paths. If Activity D experiences a minor disruption — such as a material delivery delay — the 3-week float absorbs it without requiring corrective action at the project level.\n\n3. Monitoring threshold: Activity E's float of only 1 week means it is 'near critical' — a small disruption would make it critical. The project manager should monitor Activity E almost as closely as the critical path activities.\n\nIMPACT IF ACTIVITY C IS DELAYED BY 4 WEEKS:\nIf Activity C (currently ES=10, EF=18, Float=0) is delayed by 4 weeks, its new EF becomes 18 + 4 = 22 weeks.\n\nConsequences:\n- Activity F's ES shifts from Week 18 to Week 22 (because F requires C to be complete), changing F's EF to 22 + 9 = 31 weeks.\n- Activity G's new EF = 31 + 3 = 34 weeks.\n- The total project duration increases from 30 weeks to 34 weeks — a 4-week delay.\n\nCritical Path Impact: The critical path remains A → B → C → F → G, but is now 34 weeks. Activity E (previously with 1 week float) now has a path duration of A+B+E+F+G = 4+6+7+9+3=29 weeks, still less than 34, so E gains more float (34-29=5 weeks). Activity D now has path duration of 4+6+5+9+3=27 weeks, giving D even more float (34-27=7 weeks). The critical path has not changed, but the project is now 4 weeks late.",
+          "keyPoints": [
+            "Correctly state float for D (3 weeks) and E (1 week) with ES/LS calculations",
+            "Explain what float means practically — how long each can be delayed without impacting project end",
+            "Discuss at least 2 strategic uses of float (resource levelling and/or risk buffer are the key answers)",
+            "Correctly analyse that a 4-week delay to Activity C extends project duration to 34 weeks",
+            "Note that Activity E is 'near critical' with only 1 week of float"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "label": "Question 3",
+      "marks": 30,
+      "text": "This question is based on the SingHealth Hospital IT System Upgrade case study provided. Read the case study carefully before answering all parts.",
+      "type": "essay",
+      "_caseStudyRef": "cs_hospital_it",
+      "subQuestions": [
+        {
+          "id": "q3a",
+          "label": "Question 3a",
+          "marks": 8,
+          "text": "Explain the risk management process as applied to project management. In your answer, describe each step of the IADC cycle and explain why risk management must be an ongoing activity throughout the project lifecycle, rather than a one-time exercise.",
+          "type": "essay",
+          "modelAnswer": "THE RISK MANAGEMENT PROCESS — IADC CYCLE:\n\nRisk management is the systematic process of identifying, analysing, responding to, and controlling uncertainty in projects. In project management, the IADC cycle provides a structured, iterative framework:\n\nI — IDENTIFY:\nThe first step involves identifying all risks that may affect the project — both threats (negative impacts) and opportunities (positive impacts). Techniques include brainstorming sessions with the project team, expert interviews, review of lessons learned from similar past projects, SWOT analysis, and checklists. All identified risks are documented in a Risk Register, which captures the risk description, category (technical, external, organisational, project management), and initial owner.\n\nFor the SingHealth project, the steering committee has already identified five initial risks in the case study (e.g., legacy data incompatibility, staff resistance, third-party vendor, regulatory changes, and go-live timing) — these would be entered into the risk register at this stage.\n\nA — ANALYSE:\nOnce risks are identified, they are assessed qualitatively and/or quantitatively. Qualitative analysis assigns a probability rating (e.g., Low/Medium/High) and an impact rating to each risk, then plots them on a Probability-Impact (PI) matrix to prioritise which risks need the most attention. Quantitative analysis (e.g., Monte Carlo simulation, Expected Monetary Value) assigns numerical values for cost/schedule impact. The result is a prioritised risk register.\n\nD — DESIGN (Develop) RESPONSE:\nFor each prioritised risk, the team develops an appropriate response strategy. For threats, the four main strategies are: Avoid (eliminate the risk), Transfer (shift impact to third party), Mitigate (reduce probability or impact), and Accept (acknowledge and prepare a contingency). For opportunities, strategies include Exploit, Share, Enhance, and Accept. Risk responses are assigned to a risk owner who is responsible for executing the plan.\n\nC — CONTROL (Monitor & Control):\nRisks are continuously monitored throughout the project. The risk register is reviewed at regular intervals (e.g., monthly steering committee meetings), new risks are identified as the project evolves, and the effectiveness of implemented responses is assessed. Risk status changes — a risk may materialise into an issue, its probability may increase or decrease, or it may be closed.\n\nWHY RISK MANAGEMENT MUST BE ONGOING:\nRisks are dynamic — they change throughout the project lifecycle. New risks emerge as the project moves from planning into execution (e.g., a vendor delivering late, a regulatory change mid-project). Risks that were low-probability at initiation may become imminent in later phases. Treating risk management as a one-time exercise creates a false sense of security — the 2019 IT rollout failure referenced in the SingHealth case was likely the result of risks (staff training) that were not managed proactively. Continuous monitoring ensures risks are caught early, when the cost of response is lowest.",
+          "keyPoints": [
+            "All four IADC steps named and explained with content (not just labels)",
+            "Mention Risk Register as the key documentation tool",
+            "Explain qualitative analysis (PI matrix / probability-impact) and distinguish from quantitative analysis",
+            "The four threat response strategies: Avoid, Transfer, Mitigate, Accept",
+            "Explain why risk management must be iterative and ongoing — risks evolve throughout the project",
+            "Reference to the case study context earns higher marks"
+          ]
+        },
+        {
+          "id": "q3b",
+          "label": "Question 3b",
+          "marks": 8,
+          "text": "Using the Probability-Impact (PI) matrix approach, assess THREE (3) of the five risks identified by the SingHealth steering committee. For each risk, assign a probability level (Low, Medium, High), an impact level (Low, Medium, High), determine the overall risk rating, and justify your assessment.",
+          "type": "essay",
+          "modelAnswer": "RISK ASSESSMENT USING PROBABILITY-IMPACT MATRIX:\n\nThe PI Matrix assigns each risk a Probability score and Impact score. A standard 3×3 matrix uses: Low=1, Medium=2, High=3. Risk Rating = Probability × Impact. Scores of 6–9 are HIGH priority (red), 3–4 are MEDIUM priority (amber), and 1–2 are LOW priority (green).\n\nRISK 1: Legacy Data Incompatibility (Risk ID: R1)\nCategory: Technical\nProbability: HIGH (3)\nJustification: The project involves migrating data from three separate legacy databases with different schemas. Data migration is almost universally a significant challenge in healthcare IT upgrades. The technical complexity and the known incompatibility make this highly likely to occur.\nImpact: HIGH (3)\nJustification: If legacy data cannot be migrated correctly, the new EHR system will be launched with incomplete or corrupted patient records — a patient safety risk and a regulatory compliance issue. This could cause the project to fail entirely or require a costly rollback.\nRisk Rating: HIGH × HIGH = 9 (Red — Critical Risk)\nAction: This is a top-priority risk requiring immediate response. The project team should allocate dedicated data quality resources and conduct data cleansing in parallel with development.\n\nRISK 2: Clinical Staff Resistance (Risk ID: R2)\nCategory: Organisational / People\nProbability: HIGH (3)\nJustification: The case study explicitly states that a prior IT rollout in 2019 was poorly received, creating institutional distrust. Staff who experienced that failure are unlikely to embrace the new system without compelling evidence of improvement. The probability of resistance is high without proactive intervention.\nImpact: MEDIUM (2)\nJustification: Staff resistance affects system adoption rates, productivity during transition, and training effectiveness — but it is unlikely to cause the project to fail entirely if managed. It primarily threatens the post-go-live benefit realisation phase.\nRisk Rating: HIGH × MEDIUM = 6 (Red — High Priority)\nAction: An early and sustained change management and communication programme is essential.\n\nRISK 3: Regulatory Changes by MOH (Risk ID: R4)\nCategory: External\nProbability: MEDIUM (2)\nJustification: Singapore's MOH does issue periodic data governance updates, and the healthcare data landscape (including recent Personal Data Protection Act amendments) is evolving. However, a mid-project major regulatory change specifically affecting this system's design is not guaranteed — hence Medium probability.\nImpact: HIGH (3)\nJustification: If new MOH data governance regulations require system redesign mid-project, the scope, cost, and schedule impacts could be severe — particularly in Phase 2 (development and integration), where changes are most costly to incorporate. The entire architecture may need reworking.\nRisk Rating: MEDIUM × HIGH = 6 (Red — High Priority)\nAction: The project team should maintain a regulatory watch and design the system with modular architecture to accommodate potential changes.",
+          "keyPoints": [
+            "Three risks clearly identified from the case study",
+            "Each risk assigned explicit Probability AND Impact levels (Low/Medium/High) with justification",
+            "Risk Rating calculated correctly (P × I or equivalent method)",
+            "Justifications reference specific details from the SingHealth case study",
+            "At least one risk rated HIGH priority (red zone)"
+          ]
+        },
+        {
+          "id": "q3c",
+          "label": "Question 3c",
+          "marks": 8,
+          "text": "For any THREE (3) risks identified in the case study, propose a specific risk response strategy for each. For each response, name the strategy type (e.g., Avoid, Transfer, Mitigate, Accept), describe the concrete actions to be taken, assign a risk owner, and explain how the response reduces the overall risk exposure.",
+          "type": "essay",
+          "modelAnswer": "RISK RESPONSE STRATEGIES:\n\nRISK 1: Legacy Data Incompatibility\nStrategy Type: MITIGATE\nRationale: Complete avoidance is not feasible (migration is a core project deliverable). Transfer is impractical (no insurer covers data quality). Mitigation aims to reduce both the probability and impact of data incompatibility before go-live.\nConcrete Actions:\n(a) Engage a specialist healthcare data quality firm to conduct a Data Quality Audit in Month 1 — before vendor selection is finalised. Map all three legacy data schemas against the new EHR data model and identify all incompatibilities.\n(b) Allocate a dedicated data migration workstream with its own budget and timeline, running from Month 3 through Month 13.\n(c) Conduct three data migration dry-runs (sandbox environments) in Months 9, 11, and 13 to validate migration scripts and cleanse remaining issues before UAT.\n(d) Define a data quality acceptance threshold (e.g., >99.5% accuracy) that must be met before go-live approval.\nRisk Owner: IT Project Manager (data migration workstream lead)\nImpact on Exposure: By proactively identifying and resolving incompatibilities early and testing migration repeatedly, the probability of a failed go-live due to data issues drops from High to Low. Even if minor issues remain, they are known and manageable rather than discovered at go-live.\n\nRISK 2: Clinical Staff Resistance\nStrategy Type: MITIGATE\nRationale: Staff resistance cannot be avoided (change is inherent), but proactive change management significantly reduces its probability and softens its impact on adoption.\nConcrete Actions:\n(a) Appoint Clinical Change Champions — two to three respected senior clinicians from each hospital who will advocate for the new EHR system from Month 2 onwards.\n(b) Conduct structured communication sessions in Months 3–6: share design progress, solicit clinical feedback, and visibly act on it to build buy-in and trust.\n(c) Design a hands-on training programme starting Month 12 (not Month 16, as was reportedly done in 2019), giving staff sufficient time to practice before go-live.\n(d) Establish a 24/7 go-live support helpdesk for the first 4 weeks post-launch.\nRisk Owner: Change Management Lead / HR Business Partner\nImpact on Exposure: Early engagement converts potential resisters into advocates. Adequate training time (learned from 2019) reduces impact from Medium to Low by go-live.\n\nRISK 3: Third-Party Overseas Vendor Dependency (Data Migration Subcontractor)\nStrategy Type: TRANSFER (partial) + MITIGATE\nRationale: The overseas sub-contractor introduces delivery, quality, and coordination risks. A portion of this risk can be transferred contractually, with additional mitigation through governance mechanisms.\nConcrete Actions:\n(a) Transfer (contractual): Ensure the sub-contracting agreement with the India firm includes binding Service Level Agreements (SLAs), penalty clauses for late delivery, and an escrow arrangement for deliverables. This transfers financial consequences back to the subcontractor if they fail to deliver.\n(b) Mitigate (governance): Assign a dedicated technical liaison officer in Singapore to coordinate daily with the India team, accounting for the 2.5-hour timezone difference. Schedule overlap hours (9am–12pm SGT / 6:30am–9:30am IST) for all real-time collaboration.\n(c) Establish a milestone-based payment schedule — payments released only upon acceptance of tested deliverables, not based on calendar time.\nRisk Owner: Procurement Manager / Technical Lead\nImpact on Exposure: Contractual penalties incentivise the subcontractor to perform. Governance mechanisms reduce the probability of coordination failures. Combined, this moves the risk from High to Medium exposure.",
+          "keyPoints": [
+            "Three distinct risks with clearly named strategy types (Avoid / Transfer / Mitigate / Accept)",
+            "Concrete, specific actions — not generic advice (e.g., 'conduct dry-run migrations', 'appoint Clinical Change Champions')",
+            "Risk owner identified for each risk",
+            "Explanation of how the response reduces risk exposure (links back to probability/impact)",
+            "Reference to lessons learned from the 2019 rollout failure earns additional marks"
+          ]
+        },
+        {
+          "id": "q3d",
+          "label": "Question 3d",
+          "marks": 6,
+          "text": "After implementing the risk responses in Question 3c, explain the concept of residual risk. Using ONE example from the SingHealth case study, illustrate what the residual risk looks like after the response has been applied, and discuss how the project manager should manage residual risk going forward.",
+          "type": "essay",
+          "modelAnswer": "DEFINITION OF RESIDUAL RISK:\n\nResidual risk is the level of risk that remains AFTER risk responses have been planned and implemented. No risk response strategy completely eliminates a risk — there is always a remaining element of uncertainty, even after mitigation, transfer, or other strategies have been applied. Residual risks must be acknowledged, documented in the risk register, and actively monitored throughout the project.\n\nResidual risk should be distinguished from secondary risk — secondary risks are new risks that arise directly as a result of implementing a risk response. For example, if you engage an external consultant to mitigate a technical risk, a secondary risk is consultant unavailability.\n\nEXAMPLE: Residual Risk After Responding to Clinical Staff Resistance\n\nOriginal Risk: Clinical staff resistance to the new EHR system (High Probability, Medium Impact)\nResponse Applied (Mitigation): Appointed Clinical Change Champions, conducted early communication sessions, designed extended training starting Month 12, established a go-live helpdesk.\n\nResidual Risk After Response:\nDespite best efforts, some staff — particularly older clinicians or those with deeply entrenched workflows — may still experience difficulty adapting to the new system. The residual risk is: 'A subset of clinical staff remain non-proficient with the EHR system at go-live, leading to slower patient processing and data entry errors during the initial post-launch period.'\n\nRevised probability: Low (most staff will have been adequately trained)\nRevised impact: Low-Medium (limited to a small cohort; the helpdesk absorbs immediate queries)\nResidual Risk Rating: LOW (acceptable)\n\nMANAGING RESIDUAL RISK GOING FORWARD:\n\n1. Document in the Risk Register: The revised probability and impact scores are recorded, noting that the response has been applied. This provides a transparent audit trail.\n\n2. Establish a monitoring plan: The project manager schedules post-training competency assessments (end of Month 13) to measure readiness. Staff who fail assessments receive targeted remedial training before go-live.\n\n3. Set a residual risk threshold: If post-training assessments reveal that more than 10% of clinical staff are not proficient, this triggers escalation to the steering committee for a go-live delay decision.\n\n4. Maintain the go-live helpdesk as a long-term safety net: The residual risk of low proficiency is managed operationally after project closure by embedding ongoing EHR support within the hospital's IT service desk.",
+          "keyPoints": [
+            "Define residual risk clearly (risk remaining after response)",
+            "Distinguish from secondary risk (new risk created by the response itself)",
+            "Apply the concept to a specific case study risk with before/after probability-impact assessment",
+            "At least 2 concrete ways to manage residual risk going forward (monitoring, thresholds, documentation)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "label": "Question 4",
+      "marks": 20,
+      "text": "Answer all three parts of this question on Agile project management and the Scrum framework.",
+      "type": "essay",
+      "subQuestions": [
+        {
+          "id": "q4a",
+          "label": "Question 4a",
+          "marks": 8,
+          "text": "Compare and contrast Agile and Waterfall project management approaches. Your answer should cover at least FOUR (4) key dimensions of difference, and use examples to illustrate where each approach would be most appropriate.",
+          "type": "essay",
+          "modelAnswer": "AGILE VS WATERFALL — COMPARATIVE ANALYSIS:\n\n1. APPROACH TO PLANNING AND FLEXIBILITY\nWaterfall is a linear, sequential methodology where all requirements are defined upfront, a detailed project plan is created at the start, and phases (Initiation → Planning → Execution → Monitoring → Closure) are completed one after the other. Changes to scope are tightly controlled and costly. Example: Building a bridge or a nuclear power plant — requirements are fixed by engineering specifications and safety regulations.\n\nAgile is an iterative, incremental methodology where work is delivered in short cycles (sprints, typically 2–4 weeks). Requirements are expected to evolve throughout the project. Planning is lightweight and just-in-time. Example: Developing a mobile banking app where user requirements evolve based on beta testing and market feedback.\n\n2. CUSTOMER INVOLVEMENT\nWaterfall involves the customer heavily at the beginning (requirements phase) and at the end (acceptance testing), but minimally during execution. The risk is that the delivered product may not meet the customer's actual needs if requirements were misunderstood.\n\nAgile involves the customer or Product Owner continuously throughout the project. Each sprint produces a working increment for review, allowing early course correction. Customer feedback is built into the process via Sprint Reviews.\n\n3. DELIVERABLES AND VALUE DELIVERY TIMELINE\nWaterfall delivers value only at the end of the project, when the complete product is handed over. For a 24-month project, business value arrives at Month 24 — which is risky if market conditions change.\n\nAgile delivers working software or product increments at the end of every sprint (every 2–4 weeks). Stakeholders receive value early and can begin using portions of the product while development continues.\n\n4. TEAM STRUCTURE AND SELF-ORGANISATION\nWaterfall uses hierarchical, functionally organised teams with clearly defined roles and a project manager directing the team. Decisions are centralised.\n\nAgile uses small, cross-functional, self-organising teams (typically 5–9 people in Scrum) where the team collectively decides how to accomplish sprint goals. The Scrum Master facilitates but does not direct.\n\n5. RISK AND UNCERTAINTY MANAGEMENT\nWaterfall assumes risks can be fully identified and managed upfront. It is well-suited to stable, low-uncertainty environments where scope is well-understood.\n\nAgile is explicitly designed for high-uncertainty, complex environments where the solution is not fully known at the start. Iterative delivery allows the team to learn and adapt continuously, reducing the risk of building the wrong product.\n\nSUMMARY TABLE:\n| Dimension | Waterfall | Agile |\n|-----------|-----------|-------|\n| Planning | Upfront, comprehensive | Iterative, rolling wave |\n| Customer involvement | Beginning and end | Continuous |\n| Delivery | End of project | Each sprint |\n| Team structure | Hierarchical | Self-organising |\n| Best for | Stable, well-defined scope | Complex, evolving requirements |",
+          "keyPoints": [
+            "At least 4 clearly labelled dimensions of comparison",
+            "Both approaches described accurately for each dimension (not just Agile advantages)",
+            "Specific examples for when each is appropriate",
+            "Customer involvement is a key differentiator — must be mentioned",
+            "Summary table or structured comparison earns full marks"
+          ]
+        },
+        {
+          "id": "q4b",
+          "label": "Question 4b",
+          "marks": 8,
+          "text": "Describe the THREE (3) core roles and FOUR (4) key ceremonies (events) in the Scrum framework. For each ceremony, state its purpose, typical duration (time-box), and explain what output or outcome it produces.",
+          "type": "essay",
+          "modelAnswer": "SCRUM FRAMEWORK:\n\nTHREE CORE ROLES:\n\n1. Product Owner (PO)\nRepresents the business and the customer. Responsible for maximising the value of the product by managing and prioritising the Product Backlog — an ordered list of all features, requirements, and fixes. The PO makes the final decision on what the team works on next and accepts (or rejects) sprint deliverables during the Sprint Review.\n\n2. Scrum Master (SM)\nA servant-leader and process facilitator — NOT a traditional project manager. The Scrum Master ensures the team follows Scrum practices, facilitates all four Scrum ceremonies, removes impediments that block the team's progress, and shields the team from external distractions. The SM coaches the organisation on Agile adoption.\n\n3. Development Team (Developers)\nA cross-functional, self-organising group of professionals (typically 3–9 people) who design, build, test, and deliver the product increment each sprint. There are no sub-teams or titles within the Development Team — all members collectively own the sprint goal and the quality of the increment.\n\nFOUR KEY CEREMONIES:\n\n1. SPRINT PLANNING\nPurpose: At the start of each sprint, the entire Scrum Team collaborates to select Product Backlog items to work on during the sprint and defines the Sprint Goal. The Development Team breaks selected items into tasks and commits to what can be completed. This populates the Sprint Backlog.\nTime-box: Maximum 8 hours for a 4-week sprint (proportionally shorter for shorter sprints).\nOutput: Sprint Backlog (the team's plan for the sprint) and a clear Sprint Goal.\n\n2. DAILY SCRUM (Daily Standup)\nPurpose: A brief daily synchronisation meeting for the Development Team. Each member answers three questions: What did I complete yesterday? What will I work on today? Are there any impediments blocking me? The Scrum Master facilitates and records impediments for resolution.\nTime-box: 15 minutes, held at the same time and place every day.\nOutput: A shared understanding of daily progress and a list of impediments to be resolved by the Scrum Master.\n\n3. SPRINT REVIEW\nPurpose: At the end of the sprint, the Development Team demonstrates the working increment to the Product Owner and invited stakeholders. The PO formally accepts or rejects completed items. Stakeholder feedback informs updates to the Product Backlog for future sprints.\nTime-box: Maximum 4 hours for a 4-week sprint.\nOutput: An accepted (or rejected) product increment and an updated Product Backlog reflecting stakeholder feedback.\n\n4. SPRINT RETROSPECTIVE\nPurpose: After the Sprint Review, the Scrum Team (PO, SM, and Developers) reflects on their processes, tools, and teamwork — not the product. The team identifies what went well, what did not, and commits to specific process improvements for the next sprint. This is the Scrum framework's built-in continuous improvement mechanism.\nTime-box: Maximum 3 hours for a 4-week sprint.\nOutput: A list of actionable improvement items committed to for the next sprint (often called 'retrospective action items').",
+          "keyPoints": [
+            "All three roles named and correctly described: Product Owner, Scrum Master, Development Team",
+            "All four ceremonies named: Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective",
+            "Purpose of each ceremony clearly stated",
+            "Time-box for each ceremony stated (exact numbers earn full marks)",
+            "Output/outcome for each ceremony — distinguish Sprint Review (product) from Retrospective (process)"
+          ]
+        },
+        {
+          "id": "q4c",
+          "label": "Question 4c",
+          "marks": 4,
+          "text": "A Singapore government agency is planning two separate projects: (i) construction of a new hawker centre with a fixed government budget and regulatory requirements, and (ii) development of a new citizen-facing digital services portal where user needs are still being defined. Recommend which project management approach (Agile or Waterfall) is most suitable for each project, and justify your recommendations.",
+          "type": "essay",
+          "modelAnswer": "PROJECT (i): Construction of a New Hawker Centre\nRECOMMENDATION: Waterfall\n\nJustification:\n(a) Fixed scope and regulatory requirements: Construction projects in Singapore are governed by BCA (Building and Construction Authority) regulations, fire safety codes, and NEA hygiene standards. The scope and specifications are defined at the outset and cannot be iteratively changed without costly rework and re-approval.\n(b) Linear, interdependent phases: Construction activities are inherently sequential — foundations must be poured before walls are built, and walls before the roof. You cannot build 'sprints' of a physical structure. Each phase depends on the physical completion of the prior phase.\n(c) Fixed budget: A government-approved budget with Parliamentary appropriation requires rigorous cost control — the predictability of Waterfall's upfront planning aligns with public sector financial governance requirements.\n(d) Low uncertainty: Physical construction of a hawker centre is a well-understood project type with established specifications, experienced contractors, and available comparable projects for estimation. Agile's iterative exploration is unnecessary.\n\nPROJECT (ii): Citizen-Facing Digital Services Portal\nRECOMMENDATION: Agile (Scrum)\n\nJustification:\n(a) Evolving requirements: The case explicitly states that user needs are still being defined. A digital portal's features, user experience, and functionality will be better understood through iterative user testing and feedback — a Waterfall approach would lock in potentially incorrect requirements at the start.\n(b) Opportunity for early value delivery: Citizens can benefit from even a partial portal (e.g., one or two services digitised) while development continues, rather than waiting 18–24 months for a fully complete Waterfall delivery.\n(c) Lower cost of change: In software development, changes to code are far less costly than changes to physical construction. Agile explicitly embraces change as competitive advantage.\n(d) User-centric design: Singapore's Smart Nation initiative emphasises human-centred digital government services. Agile's Sprint Reviews allow real citizens or service users to test and provide feedback at the end of each sprint, ensuring the portal meets actual user needs.",
+          "keyPoints": [
+            "Correct recommendation: Waterfall for hawker centre, Agile for digital portal",
+            "At least 2 specific justifications per project recommendation",
+            "Justifications must reference characteristics of the project (not generic Agile/Waterfall descriptions)",
+            "Reference to Singapore public sector context (BCA, Smart Nation, government budgeting) earns higher marks"
+          ]
+        }
+      ]
+    }
+  ]
+}
