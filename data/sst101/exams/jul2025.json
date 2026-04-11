@@ -5,297 +5,156 @@
   "semester": "JUL 2025",
   "duration": 7200,
   "totalMarks": 100,
-  "examType": "open_book",
+  "examType": "closed_book",
   "caseStudies": [
     {
-      "id": "cs_smartcity",
-      "title": "EVM Scenario — Smart City Infrastructure Project",
-      "text": "You are the project manager overseeing a Smart City infrastructure project in Singapore. The project involves deploying sensor networks, data platforms, and integrated dashboards across five town councils. The project has a total Budget at Completion (BAC) of $800,000 and a planned duration of 8 months.\n\nAt the end of Month 4, the following performance data has been collected:\n\n- Planned Value (PV) at Month 4: $400,000\n- Earned Value (EV) at Month 4: $320,000\n- Actual Cost (AC) at Month 4: $380,000\n\nThis case study applies to Questions 3b, 3c, and 3d."
+      "id": "cs_greenlight",
+      "title": "Case Study — Green Light Community Centre Upgrade (Question 3)",
+      "text": "The Green Light Community Centre is embarking on an exciting journey of upgrading its facilities, thanks to a grant it has been awarded. Alex, a seasoned project manager with over a decade of experience, is at the helm of this project.\n\nThe project kicks off with the Project Initiation (Activity A), a standalone activity that sets the stage for all the work to come. This phase is expected to span 5 days.\n\nOnce the initiation is successfully completed, the renovation of the main hall (Activity B) commences. This activity, which includes the installation of energy-efficient lighting and a fresh coat of eco-friendly paint on the walls, is projected to last 10 days.\n\nFollowing the completion of the main hall renovation, an additional task of installing 3 water fountains in the main hall will be undertaken. However, this task, estimated to take 3 days, falls OUTSIDE the project scope and should NOT be included in the network diagram.\n\nIn parallel to the main hall renovation (Activity B), the IT infrastructure of the centre will undergo an upgrade (Activity C). This task, which involves replacing old computers with new ones and installing high-speed internet, is slated to take 15 days.\n\nAlongside the IT upgrade, the library's media content will be restocked — a task that will take 8 days but is NOT part of the project scope and should NOT be included in the network diagram.\n\nUpon completion of the main hall renovation (Activity B), the centre will see the addition of new recreational facilities (Activity D). This task, which includes setting up a playground for children and a fitness centre for adults, is expected to take 20 days.\n\nFollowing the IT infrastructure upgrade (Activity C), a new security system featuring biometric access control and CCTV cameras will be implemented (Activity E) over an 8-day period.\n\nThe project culminates with the Final Inspection and Approval (Activity F). This final step, which can only commence after the completion of ALL other in-scope activities (D and E), is expected to take 5 days.\n\nIN-SCOPE ACTIVITIES SUMMARY:\n- A: Project Initiation — 5 days — No predecessor\n- B: Main Hall Renovation — 10 days — After A\n- C: IT Infrastructure Upgrade — 15 days — After A (parallel to B)\n- D: Recreational Facilities — 20 days — After B\n- E: Security System Implementation — 8 days — After C\n- F: Final Inspection and Approval — 5 days — After BOTH D and E\n\nThis case study applies to all parts of Question 3."
     }
   ],
   "questions": [
     {
-      "id": "q1",
-      "label": "Question 1",
-      "marks": 20,
-      "text": "Apply the principles of project management to answer the following with the most appropriate answers. (10 MCQ x 2 marks each)",
-      "type": "mcq",
-      "subQuestions": [
-        {
-          "id": "q1a",
-          "label": "Question 1a",
-          "marks": 2,
-          "text": "In project management, a stakeholder register is BEST described as:",
-          "type": "mcq",
-          "choices": [
-            "A financial ledger tracking all project expenditures by department",
-            "A document identifying stakeholders, their interests, influence, and engagement strategies",
-            "A scheduling tool that maps task ownership to individual team members",
-            "A risk log recording all threats raised by external parties"
-          ],
-          "answer": 1,
-          "explanation": "A stakeholder register is a project document that identifies all stakeholders, captures their roles, interests, expectations, influence levels, and potential impact on the project. It also informs the development of appropriate engagement strategies. It is not a financial, scheduling, or risk document.",
-          "modelAnswer": "The correct answer is B. A stakeholder register is a project document that identifies all stakeholders and records their interests, roles, influence levels, expectations, and appropriate engagement strategies. It is created during the Initiating phase and updated throughout the project lifecycle. It is not a financial ledger (A), a scheduling ownership tool (C), or a risk log (D).",
-          "keyPoints": [
-            "Stakeholder register identifies WHO stakeholders are and records their interests and influence",
-            "It is a planning/engagement document — not financial, scheduling, or risk-focused",
-            "Created during Initiating process group",
-            "Used to develop the Communications Management Plan and Stakeholder Engagement Plan"
-          ]
-        },
-        {
-          "id": "q1b",
-          "label": "Question 1b",
-          "marks": 2,
-          "text": "Which of the following BEST describes the purpose of a formal change control process in project management?",
-          "type": "mcq",
-          "choices": [
-            "To allow team members to make adjustments to the schedule without manager approval",
-            "To prevent any modifications to the project scope after initiation",
-            "To evaluate, approve, and document changes to scope, schedule, or cost in a controlled manner",
-            "To assign change requests to the project sponsor for unilateral decision-making"
-          ],
-          "answer": 2,
-          "explanation": "A formal change control process ensures that any proposed change to the project's baseline (scope, schedule, or cost) is evaluated for impact, approved by the appropriate authority, and documented. It does not prevent all changes, nor does it bypass managerial review — it is a structured governance mechanism to control scope creep.",
-          "modelAnswer": "The correct answer is C. A formal change control process is a governance mechanism that evaluates, approves or rejects, and documents changes to the project's scope, schedule, or cost baseline. It does not prevent all change (B), nor does it allow ad hoc changes without approval (A), nor does it assign all decisions solely to the sponsor (D).",
-          "keyPoints": [
-            "Change control is about evaluating impact AND documenting — not preventing all change",
-            "Changes must be approved by the appropriate authority (e.g., Change Control Board)",
-            "Applies to all baseline elements: scope, schedule, AND cost",
-            "Purpose is to prevent uncontrolled scope creep while allowing legitimate changes"
-          ]
-        },
-        {
-          "id": "q1c",
-          "label": "Question 1c",
-          "marks": 2,
-          "text": "In procurement management, which contract type places the GREATEST financial risk on the buyer?",
-          "type": "mcq",
-          "choices": [
-            "Fixed-Price (Lump Sum) contract",
-            "Time and Materials (T&M) contract",
-            "Cost-Plus-Fixed-Fee (CPFF) contract",
-            "Firm-Fixed-Price (FFP) contract"
-          ],
-          "answer": 2,
-          "explanation": "In a Cost-Plus-Fixed-Fee (CPFF) contract, the buyer reimburses all allowable costs incurred by the seller, plus a fixed fee. Because there is no ceiling on reimbursable costs, the buyer bears the greatest financial risk if the seller's costs escalate. Fixed-price contracts shift cost risk to the seller.",
-          "modelAnswer": "The correct answer is C. In a Cost-Plus-Fixed-Fee (CPFF) contract, the buyer pays all of the seller's allowable costs plus a fixed fee regardless of actual cost. Because the buyer absorbs all cost overruns, the buyer carries the maximum financial risk. Fixed-Price and Firm-Fixed-Price contracts (A and D) transfer cost risk to the seller. Time and Materials (B) shares risk but is generally less risky for the buyer than CPFF.",
-          "keyPoints": [
-            "CPFF = buyer pays ALL costs plus a fixed fee — no cost ceiling for the buyer",
-            "Fixed-Price contracts shift cost risk TO the seller",
-            "Contract type determines who bears financial risk of cost overruns",
-            "Risk to buyer: CPFF > T&M > Fixed-Price (spectrum from high to low buyer risk)"
-          ]
-        },
-        {
-          "id": "q1d",
-          "label": "Question 1d",
-          "marks": 2,
-          "text": "Which of the following BEST describes 'resource levelling' in project scheduling?",
-          "type": "mcq",
-          "choices": [
-            "Reducing the project budget by reallocating surplus funds to other projects",
-            "Adjusting the project schedule to resolve resource over-allocations, even if this extends the project duration",
-            "Standardising team members' skill levels through training before the project begins",
-            "Distributing project deliverables evenly across all team members"
-          ],
-          "answer": 1,
-          "explanation": "Resource levelling is a schedule network analysis technique that adjusts start and finish dates based on resource constraints, often extending the project's critical path. It resolves situations where a resource is over-allocated (assigned to more work than they can handle at a given time), even if this results in a longer schedule.",
-          "modelAnswer": "The correct answer is B. Resource levelling adjusts activity start and finish dates to address resource over-allocation or to keep resource usage at a constant level. It is a schedule technique — not a budgeting technique (A), a training initiative (C), or a workload distribution exercise (D). A key consequence is that it may extend the project duration.",
-          "keyPoints": [
-            "Resource levelling resolves over-allocation by adjusting schedule dates",
-            "Key consequence: may extend the project's critical path and overall duration",
-            "It is a schedule network analysis technique, not a budgeting or HR tool",
-            "Distinguished from resource smoothing (which does not extend duration)"
-          ]
-        },
-        {
-          "id": "q1e",
-          "label": "Question 1e",
-          "marks": 2,
-          "text": "Which of the following is a KEY output of project closure that captures knowledge gained for future use?",
-          "type": "mcq",
-          "choices": [
-            "Project charter",
-            "Work Breakdown Structure (WBS)",
-            "Lessons learned register",
-            "Risk breakdown structure"
-          ],
-          "answer": 2,
-          "explanation": "The lessons learned register (or report) is created and finalised during project closure. It documents what went well, what went wrong, and recommendations for future projects. It is an organisational process asset that helps improve future project performance. The project charter and WBS are planning documents, not closure outputs.",
-          "modelAnswer": "The correct answer is C. The lessons learned register is the primary closure output that captures knowledge for future use. It records successes, failures, and recommendations, becoming an organisational process asset. The project charter (A) authorises the project at initiation. The WBS (B) decomposes scope during planning. The risk breakdown structure (D) is a planning tool for organising risk categories.",
-          "keyPoints": [
-            "Lessons learned register is a closure output — not a planning document",
-            "It becomes an organisational process asset (OPA) used by future projects",
-            "Records what went well, what went wrong, and recommendations",
-            "Project charter and WBS are created during Initiating/Planning — not closure"
-          ]
-        },
-        {
-          "id": "q1f",
-          "label": "Question 1f",
-          "marks": 2,
-          "text": "In quality management, which tool is used to identify the MOST SIGNIFICANT causes of a problem by separating the 'vital few' from the 'trivial many'?",
-          "type": "mcq",
-          "choices": [
-            "Ishikawa (fishbone) diagram",
-            "Control chart",
-            "Pareto chart",
-            "Scatter diagram"
-          ],
-          "answer": 2,
-          "explanation": "A Pareto chart is a bar graph ordered by frequency of occurrence. It applies the Pareto principle (80/20 rule) — approximately 80% of problems come from 20% of causes. It helps project managers focus corrective action on the most impactful root causes. The Ishikawa diagram identifies potential causes but does not prioritise them by frequency.",
-          "modelAnswer": "The correct answer is C. A Pareto chart ranks defect causes or problem types by frequency, identifying the 'vital few' causes that account for the majority of problems (the 80/20 rule). The Ishikawa/fishbone diagram (A) maps all possible causes but does not rank them. A control chart (B) monitors process stability over time. A scatter diagram (D) shows correlation between two variables.",
-          "keyPoints": [
-            "Pareto chart applies the 80/20 rule — 80% of problems from 20% of causes",
-            "It separates the 'vital few' from the 'trivial many' causes",
-            "Ishikawa diagram finds causes but does NOT prioritise by frequency",
-            "Pareto chart is a quality management tool for focusing corrective action"
-          ]
-        },
-        {
-          "id": "q1g",
-          "label": "Question 1g",
-          "marks": 2,
-          "text": "When two project team members have a persistent disagreement over technical approaches, which conflict resolution mode is MOST LIKELY to produce a sustainable long-term outcome?",
-          "type": "mcq",
-          "choices": [
-            "Forcing — the project manager imposes a solution based on authority",
-            "Smoothing — downplaying the differences and emphasising agreement",
-            "Withdrawing — postponing the issue until after the project",
-            "Collaborating (Confronting) — exploring the disagreement to reach a mutually agreeable solution"
-          ],
-          "answer": 3,
-          "explanation": "The collaborating (also called confronting or problem-solving) mode is the most constructive approach. It involves addressing the disagreement openly, understanding both parties' concerns, and working toward a mutually beneficial solution. Forcing may create resentment, smoothing is temporary, and withdrawing allows problems to fester.",
-          "modelAnswer": "The correct answer is D. Collaborating (confronting/problem-solving) is the only mode that addresses the underlying disagreement and seeks a win-win resolution — making it the most sustainable long-term approach. Forcing (A) imposes a solution and breeds resentment. Smoothing (B) temporarily suppresses the conflict. Withdrawing (C) defers the conflict without resolving it.",
-          "keyPoints": [
-            "Collaborating/Confronting is the BEST long-term conflict resolution mode",
-            "It involves exploring the disagreement openly to reach a mutually agreeable solution",
-            "Forcing is fastest but least sustainable — creates resentment",
-            "Smoothing and withdrawing are temporary — the conflict resurfaces"
-          ]
-        },
-        {
-          "id": "q1h",
-          "label": "Question 1h",
-          "marks": 2,
-          "text": "Monte Carlo simulation is used in project management PRIMARILY to:",
-          "type": "mcq",
-          "choices": [
-            "Calculate the exact cost of each work package in the WBS",
-            "Determine the single most likely project completion date",
-            "Model the range of possible project outcomes by running thousands of probabilistic iterations",
-            "Generate a network diagram showing task dependencies"
-          ],
-          "answer": 2,
-          "explanation": "Monte Carlo simulation is a quantitative risk analysis technique that uses probability distributions for cost and schedule variables, running thousands of simulations to produce a distribution of possible outcomes (e.g., '80% probability of completing the project within 14 months'). It does not produce a single point estimate; it quantifies uncertainty across a range of outcomes.",
-          "modelAnswer": "The correct answer is C. Monte Carlo simulation is a quantitative risk analysis technique that iterates through thousands of scenarios using probability distributions for uncertain variables, producing a probability distribution of possible outcomes (e.g., cost or schedule). It does NOT produce exact single-point estimates (A), a single most likely date (B), or network diagrams (D).",
-          "keyPoints": [
-            "Monte Carlo is a QUANTITATIVE risk analysis technique",
-            "It runs thousands of probabilistic iterations — not a single calculation",
-            "Output is a probability distribution (e.g., 80% chance of completing by Month X)",
-            "Used for cost and schedule risk quantification — supplements not replaces network diagrams"
-          ]
-        },
-        {
-          "id": "q1i",
-          "label": "Question 1i",
-          "marks": 2,
-          "text": "Which of the following BEST describes the Integrated Change Control process in project management?",
-          "type": "mcq",
-          "choices": [
-            "A process that allows the project sponsor to change the scope at will without review",
-            "A process for reviewing all change requests and managing changes to deliverables, documents, and plans",
-            "A process that limits changes exclusively to the project schedule",
-            "A process for automatically accepting changes if they are below a certain cost threshold"
-          ],
-          "answer": 1,
-          "explanation": "Integrated Change Control is a process that ensures all change requests — whether to scope, schedule, cost, or quality — are reviewed, evaluated for impact across all project knowledge areas, and either approved or rejected by the Change Control Board (CCB). It applies to all changes throughout the project lifecycle, not just schedule or low-cost items.",
-          "modelAnswer": "The correct answer is B. Integrated Change Control is a PMBOK process that reviews all change requests, evaluates their impact across all knowledge areas (scope, schedule, cost, quality, risk), and approves or rejects them via the Change Control Board. It is not an open-door policy for sponsors (A), limited to schedule only (C), or a cost-threshold auto-approval system (D).",
-          "keyPoints": [
-            "Integrated Change Control applies to ALL types of change — scope, schedule, cost, quality",
-            "The Change Control Board (CCB) reviews and approves or rejects change requests",
-            "It evaluates cross-impact across all knowledge areas — hence 'integrated'",
-            "Applies throughout the entire project lifecycle, not just in planning"
-          ]
-        },
-        {
-          "id": "q1j",
-          "label": "Question 1j",
-          "marks": 2,
-          "text": "In stakeholder engagement, which of the following BEST describes the 'Manage Closely' strategy on a Power/Interest grid?",
-          "type": "mcq",
-          "choices": [
-            "Stakeholders with low power and low interest who need minimal communication",
-            "Stakeholders with high power and low interest who only need to be kept satisfied",
-            "Stakeholders with high power and high interest who require active engagement and frequent communication",
-            "Stakeholders with low power and high interest who should be kept informed"
-          ],
-          "answer": 2,
-          "explanation": "On a Power/Interest grid, stakeholders with HIGH power and HIGH interest fall in the 'Manage Closely' quadrant. These stakeholders can significantly impact the project and are actively invested in its outcomes, so they require frequent communication, active involvement in key decisions, and tailored engagement. Stakeholders with low power and low interest are monitored with minimal effort.",
-          "modelAnswer": "The correct answer is C. On the Power/Interest grid, 'Manage Closely' applies to stakeholders with HIGH power AND HIGH interest. They require active engagement, frequent communication, and involvement in key decisions. Low power/low interest = 'Monitor' (A). High power/low interest = 'Keep Satisfied' (B). Low power/high interest = 'Keep Informed' (D).",
-          "keyPoints": [
-            "'Manage Closely' = HIGH power + HIGH interest — these are the most critical stakeholders",
-            "Four quadrants: Monitor (low/low), Keep Informed (low/high), Keep Satisfied (high/low), Manage Closely (high/high)",
-            "High power stakeholders can block or enable the project",
-            "High interest means they are actively invested — ignoring them risks active opposition"
-          ]
-        }
-      ]
+      "id": "q1a",
+      "label": "Question 1a",
+      "marks": 2,
+      "text": "In a SWOT analysis, good product quality, low debt, and an established supplier network are examples of internal ______.",
+      "type": "fill_blank",
+      "answer": "strengths",
+      "explanation": "In a SWOT analysis, internal factors are either Strengths (positive internal attributes) or Weaknesses (negative internal attributes). Good product quality, low debt, and an established supplier network are all positive attributes within the organisation's control — making them internal Strengths."
+    },
+    {
+      "id": "q1b",
+      "label": "Question 1b",
+      "marks": 2,
+      "text": "A document that formally recognises the existence of a project is a Project ______.",
+      "type": "fill_blank",
+      "answer": "Charter",
+      "explanation": "The Project Charter is the document that formally authorises the existence of a project and gives the project manager the authority to apply organisational resources to project activities. It is created during the Initiating process group and defines high-level scope, objectives, key stakeholders, and constraints."
+    },
+    {
+      "id": "q1c",
+      "label": "Question 1c",
+      "marks": 2,
+      "text": "The ______ matrix form of project organisation is likely to improve technical quality as well as provide a better system for managing conflict across projects because the functional manager assigns personnel to different projects.",
+      "type": "fill_blank",
+      "answer": "functional",
+      "explanation": "In the functional matrix (also called weak matrix) form of project organisation, functional managers retain authority over personnel and assign staff to different projects as needed. This maintains strong technical specialisation (improving technical quality) and allows functional managers to balance resource conflicts across multiple projects."
+    },
+    {
+      "id": "q1d",
+      "label": "Question 1d",
+      "marks": 2,
+      "text": "The \"A\" in the RACI chart or matrix refers to ______.",
+      "type": "fill_blank",
+      "answer": "Accountable",
+      "explanation": "RACI stands for Responsible, Accountable, Consulted, and Informed. 'Accountable' (A) refers to the person who is ultimately answerable for the correct and thorough completion of the task — the decision-maker. Only one person should be Accountable for each task. This is distinct from 'Responsible' (R), who actually does the work."
+    },
+    {
+      "id": "q1e",
+      "label": "Question 1e",
+      "marks": 2,
+      "text": "______ estimating involves using historical data from similar projects to estimate the duration and cost of the current project.",
+      "type": "fill_blank",
+      "answer": "Analogous",
+      "explanation": "Analogous estimating (also called top-down estimating) uses historical data from similar past projects as a basis for estimating the duration or cost of the current project. It is fast and inexpensive but less accurate than bottom-up estimating, and is most useful during early project phases when detailed scope is not yet available."
+    },
+    {
+      "id": "q1f",
+      "label": "Question 1f",
+      "marks": 2,
+      "text": "A ______ is a planned response that defines the steps to be taken if an identified risk event should occur.",
+      "type": "fill_blank",
+      "answer": "contingency plan",
+      "explanation": "A contingency plan is a pre-planned set of actions that will be executed if a specific risk event materialises. It is part of Active Risk Acceptance — acknowledging the risk and preparing a fallback plan. Contingency plans are associated with known risks (known unknowns) and are funded by the contingency reserve."
+    },
+    {
+      "id": "q1g",
+      "label": "Question 1g",
+      "marks": 2,
+      "text": "Jane is trying to reallocate resources in a time-constrained project to create smoother resource utilisation. She should first identify activities with the most ______.",
+      "type": "fill_blank",
+      "answer": "slack",
+      "explanation": "In resource smoothing (which does not extend the project duration), the project manager reallocates resources from activities with the most slack (float) to activities that are over-allocated. Activities with the most slack can be delayed or stretched without impacting the project end date, making them the best candidates for resource reallocation. 'Float' is also an acceptable answer."
+    },
+    {
+      "id": "q1h",
+      "label": "Question 1h",
+      "marks": 2,
+      "text": "______ is a technique used to shorten the project duration by performing activities in parallel that would normally be done sequentially.",
+      "type": "fill_blank",
+      "answer": "Fast tracking",
+      "explanation": "Fast tracking is a schedule compression technique that involves performing project activities in parallel that would normally be done sequentially. While it can shorten the project schedule, it increases risk because overlapping activities may require rework if earlier activities change. It is distinct from crashing (adding resources to shorten activity duration)."
+    },
+    {
+      "id": "q1i",
+      "label": "Question 1i",
+      "marks": 2,
+      "text": "______ project teams are geographically dispersed and rely heavily on communication technology to collaborate.",
+      "type": "fill_blank",
+      "answer": "Virtual",
+      "explanation": "Virtual project teams consist of members who work in different physical locations — often across different time zones, cities, or countries. They rely on digital communication tools (video conferencing, email, collaboration platforms) to coordinate work. Managing virtual teams presents unique challenges including communication barriers, time zone differences, and trust-building."
+    },
+    {
+      "id": "q1j",
+      "label": "Question 1j",
+      "marks": 2,
+      "text": "______ Project Management emphasizes iterative development, flexibility, and collaboration over traditional, linear approaches.",
+      "type": "fill_blank",
+      "answer": "Agile",
+      "explanation": "Agile Project Management is a family of iterative and incremental approaches that prioritise flexibility, customer collaboration, and frequent delivery of working results over following a rigid, sequential plan. Key characteristics include short development cycles (iterations/sprints), continuous feedback, and adaptive planning. Scrum and Kanban are popular Agile frameworks."
     },
     {
       "id": "q2",
       "label": "Question 2",
       "marks": 30,
-      "text": "Answer all three parts of this question on Stakeholder Management and Project Communications.",
+      "text": "In this question, you will discuss the principles of project management and the characteristics of projects, as well as the differences between projects and operations.",
       "type": "essay",
       "subQuestions": [
         {
           "id": "q2a",
           "label": "Question 2a",
-          "marks": 8,
-          "text": "Define the term 'stakeholder' in the context of project management. Explain what a stakeholder register is, what information it typically contains, and how it is used throughout the project lifecycle.",
+          "marks": 12,
+          "text": "Define 'project management' and list the FIVE (5) essential characteristics of a project.",
           "type": "essay",
-          "modelAnswer": "DEFINITION OF STAKEHOLDER:\nA stakeholder is any individual, group, or organisation that may affect, be affected by, or perceive themselves to be affected by a project's decisions, activities, or outcomes. Stakeholders can be internal (project team, sponsors, functional managers) or external (clients, government agencies, the public, vendors). The Project Management Institute (PMI) emphasises that stakeholders include both those with a positive interest in the project and those who may oppose or be negatively impacted by it.\n\nWHAT IS A STAKEHOLDER REGISTER?\nA stakeholder register is a project document — typically created during the Initiating phase and updated throughout the project — that systematically identifies and records all relevant information about each stakeholder. It is one of the primary outputs of the 'Identify Stakeholders' process.\n\nTYPICAL CONTENTS OF A STAKEHOLDER REGISTER:\n1. Identification information: Name, position, organisation, role in the project, contact details.\n2. Assessment information: Stakeholder's major requirements and expectations, potential influence on project decisions, phase of the project lifecycle most relevant to them.\n3. Stakeholder classification: Internal vs external; supporter, neutral, or resistant; position on the Power/Interest or Salience grid.\n4. Engagement strategy notes: Preferred communication channels, frequency of updates, and any sensitivities (e.g., a government regulator who must receive formal written reports).\n\nHOW IT IS USED THROUGHOUT THE PROJECT LIFECYCLE:\n- Initiation: First created to ensure no key stakeholders are overlooked before planning begins.\n- Planning: Used to develop the Stakeholder Engagement Plan and Communications Management Plan — tailoring who gets what information, when, and how.\n- Execution: Updated as new stakeholders are identified and engagement levels shift. Guides the PM in prioritising where to invest relationship-building effort.\n- Monitoring and Closure: Reviewed to ensure all contractual and reporting obligations to stakeholders have been met before close-out.\n\nThe stakeholder register is a living document — it should be reviewed and revised as stakeholder expectations and influence evolve, ensuring the project team maintains accurate situational awareness of its stakeholder landscape.",
+          "modelAnswer": "DEFINITION OF PROJECT MANAGEMENT:\nProject management is the application of knowledge, skills, tools, and techniques to project activities in order to meet the project requirements. It involves planning, organising, executing, monitoring and controlling, and closing work to achieve specific objectives within defined constraints of scope, time, cost, quality, resources, and risk. The Project Management Institute (PMI) defines it as 'the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements.'\n\nFIVE ESSENTIAL CHARACTERISTICS OF A PROJECT:\n\n1. UNIQUE OUTCOME\nEvery project produces a unique result — a product, service, or outcome that has not been produced in exactly the same way before. Even if the type of project is familiar (e.g., building a hospital), the specific combination of location, design, team, stakeholders, and constraints makes each project distinct. This uniqueness distinguishes projects from repetitive operational activities.\n\n2. TEMPORARY (DEFINITE START AND END DATE)\nA project has a defined beginning and a defined end. The end is reached when the project objectives have been achieved, when it is determined the objectives cannot be met, or when the need for the project no longer exists. This temporary nature is what separates projects from ongoing operations, which have no planned end date.\n\n3. DEFINED SCOPE\nA project has a clearly defined scope — the sum of all the products, services, and results that the project is to provide. The scope defines the boundaries of what is included and what is excluded from the project. Controlling scope (preventing scope creep) is one of the fundamental responsibilities of the project manager.\n\n4. RESOURCE CONSTRAINTS (LIMITED RESOURCES)\nProjects are executed with limited and specifically allocated resources — budget, time, personnel, equipment, and materials. Resource constraints require the project manager to plan carefully, prioritise work, and manage trade-offs between scope, schedule, and cost (the Triple Constraint / Iron Triangle).\n\n5. PROGRESSIVE ELABORATION\nProjects are characterised by progressive elaboration — the project scope and plan are developed incrementally, becoming more detailed and refined as the project progresses and more information becomes available. Initial plans at the start of a project are necessarily high-level; detailed planning occurs closer to execution. This is different from operations, which follow well-established, repeatable processes.",
           "keyPoints": [
-            "Clear definition of 'stakeholder' including internal and external parties",
-            "State that the register is created during Initiating and updated throughout",
-            "List at least 4 types of information contained in the register (identification, assessment, classification, engagement notes)",
-            "Explain how the register is used in at least 2-3 phases of the lifecycle",
-            "Mention that it is a living document",
-            "Distinguish between those who support and those who resist the project"
+            "Clear definition of project management — application of knowledge, skills, tools and techniques to meet project requirements",
+            "Reference to PMBOK or PMI definition is a bonus",
+            "All FIVE characteristics named and described: Unique, Temporary, Defined Scope, Resource Constraints, Progressive Elaboration",
+            "Each characteristic should have a brief explanation — not just a label",
+            "Distinguish characteristics from operational activities where relevant"
           ]
         },
         {
           "id": "q2b",
           "label": "Question 2b",
-          "marks": 10,
-          "text": "Explain what a Communications Management Plan is and describe its key components. Discuss why effective communication planning is critical to project success.",
+          "marks": 8,
+          "text": "Analyse the importance of project management in today's business environment and explain how it contributes to organisational success.",
           "type": "essay",
-          "modelAnswer": "WHAT IS A COMMUNICATIONS MANAGEMENT PLAN?\nA Communications Management Plan is a component of the overall project management plan that describes how project communications will be planned, structured, monitored, and controlled. It defines who needs what information, when they need it, in what format, through which channel, and who is responsible for providing it. It is typically developed during the Planning phase and serves as the authoritative reference for all project communications.\n\nKEY COMPONENTS OF A COMMUNICATIONS MANAGEMENT PLAN:\n\n1. Stakeholder Communication Requirements\nDocuments what specific information each stakeholder or stakeholder group requires. For example, the project sponsor may require a weekly executive dashboard, while the construction team lead needs daily site progress reports.\n\n2. Information to Be Communicated\nDefines the type and content of each communication — e.g., status reports, milestone updates, budget summaries, risk escalations, meeting minutes.\n\n3. Communication Methods and Technologies\nSpecifies the channels to be used: email, formal memos, video conference, project management software dashboards, face-to-face briefings. The choice depends on the urgency, sensitivity, and audience of the communication.\n\n4. Frequency and Timing\nEstablishes how often each communication will occur (e.g., bi-weekly steering committee meetings, monthly board updates, daily standup for the Agile team) and whether it is scheduled (push) or on-demand (pull).\n\n5. Roles and Responsibilities\nIdentifies who is responsible for creating, reviewing, approving, and distributing each type of communication. This prevents duplication and ensures accountability.\n\n6. Escalation Procedures\nDefines the process for escalating issues — who to contact, within what timeframe, and through which channel — if a communication is not acknowledged or a decision is blocked.\n\n7. Communication Constraints and Assumptions\nDocuments any legal, organisational, or cultural constraints (e.g., confidentiality requirements, language preferences, regulatory reporting obligations).\n\nWHY EFFECTIVE COMMUNICATION PLANNING IS CRITICAL:\nResearch consistently shows that communication failures are among the leading causes of project failure. An estimated 90% of a project manager's time is spent communicating. Without a structured plan:\n- Stakeholders receive inconsistent or outdated information, eroding trust and creating conflicting expectations.\n- Critical issues may not be escalated in time for corrective action.\n- Team members lack clarity on decisions made in meetings they did not attend.\n- Miscommunication leads to rework, delays, and stakeholder disengagement.\nA well-executed Communications Management Plan ensures that all stakeholders are aligned, informed, and engaged — which is foundational to maintaining the Triple Constraint (scope, time, cost) and achieving project success.",
+          "modelAnswer": "IMPORTANCE OF PROJECT MANAGEMENT IN TODAY'S BUSINESS ENVIRONMENT:\n\nIn the modern business landscape, organisations face rapid technological change, globalisation, increasing competition, and growing stakeholder expectations. Projects — not operational routines — are the primary vehicle through which organisations transform their strategies into results. Effective project management is therefore critical to organisational survival and success.\n\n1. STRATEGIC EXECUTION\nProject management translates organisational strategy into tangible deliverables. Without structured project management, strategic initiatives (e.g., digital transformation, market expansion, new product launches) remain aspirations rather than achievements. Project managers ensure that resources are directed toward activities that align with and advance the organisation's strategic goals.\n\n2. EFFICIENT USE OF RESOURCES\nProjects consume significant organisational resources — people, money, time, and equipment. Project management disciplines (scope definition, scheduling, budgeting, risk management) ensure these scarce resources are used efficiently and not wasted on unplanned work. Poor project management leads to cost overruns and schedule delays that erode profitability.\n\n3. MANAGING COMPLEXITY AND RISK\nModern projects are increasingly complex — involving multiple stakeholders, cross-functional teams, global supply chains, and advanced technologies. Project management provides structured frameworks (PMBOK, PRINCE2, Agile) to manage this complexity and proactively identify and mitigate risks before they become crises.\n\n4. DELIVERING VALUE TO STAKEHOLDERS\nProject management ensures that customer and stakeholder requirements are clearly defined, communicated, and delivered. Stakeholder satisfaction — achieved through effective communication, scope management, and quality control — builds organisational reputation and secures future business.\n\n5. CONTINUOUS IMPROVEMENT THROUGH LESSONS LEARNED\nMature project management organisations capture lessons learned from each project, creating an organisational knowledge base that improves future performance. This institutional learning reduces the likelihood of repeating past mistakes and accelerates capability development.\n\nCONCLUSION:\nOrganisations with strong project management capabilities consistently outperform those without them. Research by PMI indicates that organisations with mature project management practices waste significantly fewer resources and deliver more projects on time and within budget. In today's dynamic environment, project management is not a luxury — it is a core organisational competency.",
           "keyPoints": [
-            "Clear definition of the Communications Management Plan and its purpose",
-            "At least 5 key components described with explanations (not just listed)",
-            "Distinguish between push (scheduled) and pull (on-demand) communication",
-            "Explain why poor communication leads to project failure",
-            "Reference the PM's significant time investment in communications",
-            "Link the plan back to stakeholder engagement and project success"
+            "Explain at least 3-4 reasons why PM is important in today's environment",
+            "Link PM to strategic execution — not just task coordination",
+            "Address resource efficiency, complexity management, stakeholder value",
+            "Mention the connection between PM maturity and organisational performance",
+            "Use specific examples or reference PMI research for strong answers"
           ]
         },
         {
           "id": "q2c",
           "label": "Question 2c",
-          "marks": 12,
-          "text": "Describe THREE (3) stakeholder engagement strategies a project manager can use when managing stakeholders with varying levels of power and interest. For each strategy, provide a realistic example and explain how it contributes to project success.",
+          "marks": 10,
+          "text": "Compare and contrast projects and operations, highlighting their key differences in terms of scope, duration, and objectives.",
           "type": "essay",
-          "modelAnswer": "Stakeholder engagement is a proactive process of building and sustaining relationships with stakeholders to align expectations, address concerns, and secure ongoing support for the project. The Power/Interest grid and the Salience Model are commonly used to categorise stakeholders and select appropriate engagement strategies.\n\nSTRATEGY 1: ACTIVE ENGAGEMENT AND CO-CREATION (for High Power / High Interest Stakeholders)\nDescription: Stakeholders with both high power (ability to influence or block the project) and high interest (personally invested in outcomes) must be managed closely. The project manager should involve them actively in key decisions, hold regular one-on-one briefings, and seek their input when scoping changes or resolving major issues. This is more than information sharing — it is collaborative co-creation.\nExample: In a government-funded Smart City project, the Ministry of Finance is the primary funding authority. The project manager holds bi-weekly steering committee sessions where the ministry representative reviews budget performance, approves scope changes, and co-signs risk escalations. This ensures the sponsor remains engaged and supportive throughout.\nHow it contributes to success: When high-power stakeholders are actively engaged, they become advocates. Their authority can remove bureaucratic obstacles, secure additional resources, or arbitrate inter-departmental disputes — all of which keep the project on track.\n\nSTRATEGY 2: KEEP INFORMED — STRUCTURED REPORTING (for Low Power / High Interest Stakeholders)\nDescription: Stakeholders who are keenly interested in project outcomes but lack formal authority (e.g., end users, community members) must be kept regularly informed. While they cannot block the project, their dissatisfaction can generate negative publicity, complaints to senior management, or resistance during implementation. Regular, transparent updates build goodwill.\nExample: In a public housing renovation project, affected residents do not have formal authority over project decisions but are highly interested in noise, timelines, and displacement arrangements. The project manager sends fortnightly community newsletters and holds monthly town hall Q&A sessions to address concerns before they escalate.\nHow it contributes to success: Keeping this group informed reduces rumours and anxiety, increases acceptance of disruptions, and builds a reputation for transparency. This smooth social licence to operate prevents delays caused by complaints or protests.\n\nSTRATEGY 3: MANAGE EXPECTATIONS — TARGETED COMMUNICATION (for High Power / Low Interest Stakeholders)\nDescription: High-power stakeholders who are not deeply interested in day-to-day project details must be kept satisfied without overwhelming them with information. The risk is that if they become disengaged, they may withdraw support or be uninformed if a critical decision requires their input. Targeted, concise, executive-level updates are appropriate.\nExample: The CEO of an organisation running a 3-year IT transformation project does not want daily reports but needs to be confident that the project is delivering value. The project manager provides a one-page executive dashboard monthly, highlighting only key milestones reached, budget status (green/amber/red), and decisions that require C-suite sign-off.\nHow it contributes to success: Ensuring powerful stakeholders remain satisfied — without overloading them — preserves their sponsorship. When unexpected issues arise (scope escalations, budget overruns), a PM who has maintained a positive relationship with this group will find it easier to obtain the approvals and resources needed to recover.",
+          "modelAnswer": "PROJECTS vs OPERATIONS — COMPARISON AND CONTRAST:\n\nDEFINITIONS:\n- A PROJECT is a temporary endeavour undertaken to create a unique product, service, or result. It has a defined beginning, end, and objective.\n- OPERATIONS are ongoing, repetitive activities performed to sustain the business on a continuous basis. They follow established processes and produce standardised outputs.\n\nKEY DIFFERENCES:\n\n1. SCOPE\nProjects: Have a clearly defined and bounded scope — specifying exactly what will be delivered and what is excluded. Scope is agreed upon at the outset and managed throughout (via change control) to prevent scope creep. Each project scope is unique and tailored to its specific objectives.\nOperations: Scope is defined by the function's ongoing purpose (e.g., a payroll department's scope is to process salaries every month). It does not vary significantly over time and is rarely subject to formal change control.\n\n2. DURATION\nProjects: Temporary — they have a specific start date and end date. Once the objectives are achieved (or the project is terminated), the project ends. Duration may range from days to years, but it is always finite.\nOperations: Ongoing and indefinite — they continue as long as the organisation exists and requires them. There is no planned end date; operations are sustained continuously.\n\n3. OBJECTIVES\nProjects: Aim to achieve a specific, unique outcome — e.g., deliver a new ERP system, construct a building, launch a new product. Once the objective is achieved, the project concludes. The objective is transformational — changing something from its current state.\nOperations: Aim to maintain and sustain existing business processes at a consistent level of efficiency and quality — e.g., process customer orders, maintain equipment, manage accounts. Objectives are efficiency-focused and repeatable.\n\nADDITIONAL DIFFERENCES:\n| Aspect        | Projects                  | Operations                  |\n|---------------|---------------------------|-----------------------------|\n| Output        | Unique                    | Repetitive/standardised     |\n| Team          | Temporary, cross-functional| Permanent, functional       |\n| Risk          | Higher (new, unknown)     | Lower (established process) |\n| Success measure| Deliverables achieved on time, within budget | Efficiency, throughput, quality consistency |\n\nOVERLAP:\nProjects and operations interact — projects often create the products or systems that operations then run on an ongoing basis (e.g., a construction project delivers a building that facilities management then maintains). At project close-out, there is typically a formal handover from the project team to the operations team.\n\nCONCLUSION:\nUnderstanding the distinction between projects and operations is fundamental to project management. It determines the tools, processes, and management approaches that are appropriate — and ensures that project resources are not confused with or diverted to operational activities.",
           "keyPoints": [
-            "Three clearly differentiated strategies aligned to Power/Interest categories",
-            "Each strategy has a specific, realistic example (not abstract)",
-            "Each explanation covers HOW the strategy contributes to project success",
-            "Reference to a classification tool (Power/Interest grid, Salience Model)",
-            "Demonstrate understanding that engagement is proactive, not just reactive",
-            "Show that different stakeholder groups require tailored approaches"
+            "Clear definitions of both projects and operations",
+            "Address all three required dimensions: scope, duration, and objectives",
+            "Use a comparison table to structure the answer — demonstrates analytical clarity",
+            "Include additional differences: output uniqueness, team composition, risk level",
+            "Note the overlap/handover point between projects and operations",
+            "Conclusion that ties the comparison back to practical project management"
           ]
         }
       ]
@@ -304,74 +163,98 @@
       "id": "q3",
       "label": "Question 3",
       "marks": 30,
-      "text": "This question relates to Earned Value Management (EVM). Questions 3b, 3c, and 3d use the Smart City EVM scenario in the case study.",
+      "text": "Case Study: Green Light Community Centre Upgrade\n\nRefer to the case study provided. Answer ALL parts of this question. Note: Activities that fall outside the project scope (water fountain installation and library media restock) must be EXCLUDED from the network diagram and all calculations.",
       "type": "essay",
-      "_caseStudyRef": "cs_smartcity",
+      "caseStudyRef": "cs_greenlight",
       "subQuestions": [
         {
           "id": "q3a",
           "label": "Question 3a",
-          "marks": 10,
-          "text": "Explain the concept of Earned Value Management (EVM) and its key components. Discuss TWO (2) significant limitations of EVM that a project manager should be aware of when using it to assess project performance.",
-          "type": "essay",
-          "modelAnswer": "WHAT IS EARNED VALUE MANAGEMENT (EVM)?\nEarned Value Management (EVM) is an integrated project performance measurement framework that combines scope, schedule, and cost data to provide a quantitative, objective assessment of project health. Unlike traditional methods that compare only budgeted costs to actual costs, EVM measures the value of work actually accomplished relative to what was planned and what was spent. It enables both backward-looking performance assessment and forward-looking forecasting.\n\nKEY COMPONENTS OF EVM:\n\n1. Planned Value (PV) — also known as Budgeted Cost of Work Scheduled (BCWS)\nThe authorised budget assigned to the work that was planned to be completed by a specific point in time. PV represents what SHOULD have been accomplished according to the original plan.\nFormula context: PV at any time = Total BAC × Planned % complete at that time.\n\n2. Earned Value (EV) — also known as Budgeted Cost of Work Performed (BCWP)\nThe measure of work that HAS been accomplished, expressed in terms of the approved budget for that work. EV answers the question: 'How much work have we actually done, valued at the budget rate?'\n\n3. Actual Cost (AC) — also known as Actual Cost of Work Performed (ACWP)\nThe total cost actually incurred in completing the work performed during a given period. AC reflects what was SPENT.\n\n4. Budget at Completion (BAC)\nThe total authorised budget for the project — the sum of all planned work.\n\nDERIVED METRICS:\n- Cost Variance (CV) = EV − AC (positive = under budget; negative = over budget)\n- Schedule Variance (SV) = EV − PV (positive = ahead of schedule; negative = behind schedule)\n- Cost Performance Index (CPI) = EV ÷ AC (>1.0 = cost efficient; <1.0 = cost overrun)\n- Schedule Performance Index (SPI) = EV ÷ PV (>1.0 = ahead of schedule; <1.0 = behind schedule)\n\nFORECASTING METRICS:\n- Estimate at Completion (EAC) = BAC ÷ CPI (projected total cost at current efficiency)\n- Estimate to Complete (ETC) = EAC − AC (remaining cost to finish the project)\n- To-Complete Performance Index (TCPI) = (BAC − EV) ÷ (BAC − AC) (required CPI for the rest of the project to finish within budget)\n\nLIMITATION 1: EVM Does Not Measure Quality\nEVM measures whether work has been completed according to schedule and cost, but it does not assess the quality of that work. A project can show EV equal to PV (on schedule) while the delivered outputs are defective, incomplete, or require rework. A smart city sensor network that is '100% installed on time' may still fail integration testing, meaning its EV-based completion is misleading. Project managers must supplement EVM with quality management processes (e.g., quality audits, acceptance testing) to avoid a false sense of progress.\n\nLIMITATION 2: EVM Relies on Accurate Baselining and Earned Value Assignment\nEVM is only as reliable as the baseline it measures against and the accuracy of EV measurement. If the project baseline (cost and schedule plan) was poorly estimated, all EVM metrics will be distorted. Similarly, measuring percentage complete for knowledge-based or creative work (e.g., software design, research) is subjective and prone to manipulation ('90% complete syndrome' — tasks reported near-complete but never finishing). If the project team inflates EV to appear on track, the CPI and SPI will give false signals and mislead decision-makers.",
+          "marks": 8,
+          "text": "Create the project network diagram based on the provided activities and dependencies. Ensure that each activity is represented by a node, and dependencies are clearly indicated. (Exclude out-of-scope activities.)",
+          "type": "diagram",
+          "modelAnswer": "PROJECT NETWORK DIAGRAM (Activity-on-Node / Precedence Diagramming Method):\n\nIn-scope activities and dependencies:\n- A (5 days): Project Initiation — START node, no predecessors\n- B (10 days): Main Hall Renovation — after A\n- C (15 days): IT Infrastructure Upgrade — after A (runs in parallel with B)\n- D (20 days): Recreational Facilities — after B\n- E (8 days): Security System Implementation — after C\n- F (5 days): Final Inspection and Approval — after BOTH D and E (merge node)\n\nNetwork Diagram (text representation):\n\n          → [B: 10] → [D: 20] →\n[A: 5] →                        → [F: 5] → END\n          → [C: 15] → [E: 8]  →\n\nKey features of the diagram:\n1. Node A connects with two arrows: one to B and one to C (burst/fork)\n2. Node B connects to D only\n3. Node C connects to E only\n4. Both D and E connect to F (merge node — F has two incoming arrows)\n5. F is the terminal/end node\n6. Out-of-scope activities (water fountain installation; library media restock) are NOT shown\n\nAll arrows flow in the direction of dependency (left to right).",
           "keyPoints": [
-            "Define EVM as integrating scope, schedule and cost — not just budget vs actual",
-            "Define all three base values: PV, EV, AC with clear plain-language descriptions",
-            "Define BAC and at least four derived metrics (CV, SV, CPI, SPI)",
-            "Mention forecasting metrics EAC and ETC",
-            "First limitation: EVM does not capture quality",
-            "Second limitation: reliability depends on accurate baselining and EV measurement (90% complete syndrome acceptable)"
+            "Only in-scope activities A, B, C, D, E, F are included",
+            "Out-of-scope activities (water fountains, library restock) must be excluded",
+            "A is the sole start node; F is the sole end node",
+            "A has two outgoing arrows (to B and C) — parallel paths begin here",
+            "F has two incoming arrows (from D and E) — merge node",
+            "Arrows show direction of dependency clearly"
           ]
         },
         {
           "id": "q3b",
           "label": "Question 3b",
-          "marks": 8,
-          "text": "Using the Smart City EVM data (BAC=$800,000; at Month 4: PV=$400,000, EV=$320,000, AC=$380,000), calculate the Cost Variance (CV), Schedule Variance (SV), Cost Performance Index (CPI), and Schedule Performance Index (SPI). Show all workings and provide a clear interpretation of each result.",
+          "marks": 2,
+          "text": "Based on your network diagram, determine how long the project will take to complete from start to finish.",
           "type": "calculation",
-          "_caseStudyRef": "cs_smartcity",
-          "modelAnswer": "GIVEN DATA:\n- Budget at Completion (BAC) = $800,000\n- Planned Value (PV) at Month 4 = $400,000\n- Earned Value (EV) at Month 4 = $320,000\n- Actual Cost (AC) at Month 4 = $380,000\n\nCALCULATION 1: Cost Variance (CV)\nFormula: CV = EV − AC\nCV = $320,000 − $380,000\nCV = −$60,000\n\nInterpretation: The CV is NEGATIVE, which means the project is OVER BUDGET by $60,000. The team spent $380,000 to produce only $320,000 worth of value. For every dollar of planned work delivered, more than a dollar was actually spent. This signals cost inefficiency.\n\nCALCULATION 2: Schedule Variance (SV)\nFormula: SV = EV − PV\nSV = $320,000 − $400,000\nSV = −$80,000\n\nInterpretation: The SV is NEGATIVE, which means the project is BEHIND SCHEDULE. The team has only completed $320,000 worth of planned work when $400,000 worth should have been completed by Month 4. The project has delivered only 80% of the work planned at this stage.\n\nCALCULATION 3: Cost Performance Index (CPI)\nFormula: CPI = EV ÷ AC\nCPI = $320,000 ÷ $380,000\nCPI = 0.842 (rounded to 3 decimal places)\n\nInterpretation: CPI < 1.0 means the project is COST INEFFICIENT. For every $1.00 spent, only $0.842 worth of value is being delivered. Alternatively, for every $1 of value earned, $1.188 is being spent (1 ÷ 0.842). This represents approximately a 19% cost overrun per unit of work.\n\nCALCULATION 4: Schedule Performance Index (SPI)\nFormula: SPI = EV ÷ PV\nSPI = $320,000 ÷ $400,000\nSPI = 0.800\n\nInterpretation: SPI < 1.0 means the project is BEHIND SCHEDULE. The project is progressing at 80% of the planned rate. Only 80 cents of planned work is being delivered for every $1 of work that should have been done by now.\n\nSUMMARY:\nThe Smart City project is simultaneously over budget (CPI = 0.842) and behind schedule (SPI = 0.800). Both indicators are materially below 1.0, indicating a project under significant stress that requires immediate management attention.",
+          "modelAnswer": "FORWARD PASS TO FIND PROJECT DURATION:\n\nEarliest Start (ES) and Earliest Finish (EF) for each activity:\n- A: ES=0, EF=0+5=5\n- B: ES=5 (after A), EF=5+10=15\n- C: ES=5 (after A), EF=5+15=20\n- D: ES=15 (after B), EF=15+20=35\n- E: ES=20 (after C), EF=20+8=28\n- F: ES=max(EF_D, EF_E)=max(35, 28)=35; EF=35+5=40\n\nTOTAL PROJECT DURATION = 40 days\n\nF can only start after BOTH D (finishes day 35) and E (finishes day 28) are complete. Since D finishes later (day 35), F starts on day 35 and finishes on day 40.",
           "keyPoints": [
-            "CV = EV − AC = $320,000 − $380,000 = −$60,000 (must show formula and working)",
-            "SV = EV − PV = $320,000 − $400,000 = −$80,000 (must show formula and working)",
-            "CPI = EV ÷ AC = $320,000 ÷ $380,000 = 0.842 (accept 0.84)",
-            "SPI = EV ÷ PV = $320,000 ÷ $400,000 = 0.800",
-            "Each result must be interpreted — not just calculated",
-            "Summary statement that both indicators signal a project in trouble"
+            "Use forward pass: ES of each activity = EF of its predecessor",
+            "At merge node F: ES_F = max(EF_D, EF_E) = max(35, 28) = 35",
+            "Project duration = EF_F = 35 + 5 = 40 days",
+            "Show working clearly for full marks"
           ]
         },
         {
           "id": "q3c",
           "label": "Question 3c",
-          "marks": 7,
-          "text": "Using the Smart City EVM data and metrics from Question 3b, calculate the Estimate at Completion (EAC) and Estimate to Complete (ETC). Evaluate the project's financial outlook and discuss whether the project is likely to be completed within budget.",
-          "type": "calculation",
-          "_caseStudyRef": "cs_smartcity",
-          "modelAnswer": "GIVEN:\n- BAC = $800,000\n- EV = $320,000\n- AC = $380,000\n- CPI = 0.842 (from Question 3b)\n\nCALCULATION 1: Estimate at Completion (EAC)\nThe most common EAC formula assumes that the current cost efficiency (CPI) will continue for the remainder of the project:\n\nFormula: EAC = BAC ÷ CPI\nEAC = $800,000 ÷ 0.842\nEAC ≈ $950,119 (approximately $950,000)\n\nInterpretation: If current spending efficiency continues, the project is forecast to cost approximately $950,000 — a cost overrun of approximately $150,000 above the original $800,000 budget, representing an 18.75% budget overrun.\n\nCALCULATION 2: Estimate to Complete (ETC)\nETC represents how much additional funding is needed to complete the remaining work:\n\nFormula: ETC = EAC − AC\nETC = $950,119 − $380,000\nETC ≈ $570,119\n\nInterpretation: The project still requires approximately $570,000 in additional spending to reach completion. At the halfway point in the timeline (Month 4 of 8), only $380,000 has been spent, meaning roughly 60% of the total estimated cost remains to be incurred.\n\nFINANCIAL OUTLOOK AND EVALUATION:\nThe project's financial outlook is concerning. With a CPI of 0.842, the team is spending approximately 19% more than planned per unit of work. If this inefficiency persists for the remaining four months, the project will significantly exceed its $800,000 budget.\n\nAdditionally, the SPI of 0.800 from Question 3b indicates the project is behind schedule. If schedule delays result in extended resource deployment (e.g., extended labour contracts, prolonged equipment rental), actual costs may increase further, potentially pushing EAC even higher than $950,000.\n\nAlternative EAC perspective: If the team can recover efficiency and complete remaining work at the original budgeted rate:\nEAC (optimistic) = AC + (BAC − EV) = $380,000 + ($800,000 − $320,000) = $380,000 + $480,000 = $860,000\nEven under this optimistic scenario, the project will overspend by $60,000.\n\nConclusion: Completing the project within the original $800,000 budget is highly unlikely given current performance data. Corrective action is urgently needed.",
+          "marks": 2,
+          "text": "Identify all the paths from the start to the end of the project.",
+          "type": "short_answer",
+          "modelAnswer": "All distinct paths from Start (A) to End (F):\n\nPath 1: A → B → D → F\nDuration: 5 + 10 + 20 + 5 = 40 days\n\nPath 2: A → C → E → F\nDuration: 5 + 15 + 8 + 5 = 33 days\n\nNote: While Path 2's arithmetic sum is 33 days, the actual time F can start is day 35 (constrained by Path 1 reaching F at day 35). Path 2 has 7 days of slack before F can begin.\n\nThere are 2 distinct paths in this network.",
           "keyPoints": [
-            "EAC = BAC ÷ CPI = $800,000 ÷ 0.842 ≈ $950,000 (accept slight rounding differences)",
-            "ETC = EAC − AC ≈ $570,000",
-            "Interpret both figures clearly — cost overrun amount stated explicitly",
-            "Discuss whether the project can recover within original BAC",
-            "Mention that schedule delay compounds cost overrun risk",
-            "Bonus: present alternative EAC formula (AC + remaining work at budget rate)"
+            "Correctly identify both paths: A-B-D-F and A-C-E-F",
+            "State the duration of each path",
+            "There are exactly 2 paths (since A branches to B and C, and both converge at F)"
           ]
         },
         {
           "id": "q3d",
           "label": "Question 3d",
-          "marks": 5,
-          "text": "Based on the Smart City EVM analysis, provide THREE (3) specific recommendations for the project manager to address the cost and schedule performance issues. Justify each recommendation with reference to the EVM data.",
+          "marks": 6,
+          "text": "Determine the critical path(s) in the project. Explain why it is critical.",
           "type": "essay",
-          "_caseStudyRef": "cs_smartcity",
-          "modelAnswer": "THREE RECOMMENDATIONS FOR THE PROJECT MANAGER:\n\nRECOMMENDATION 1: CONDUCT A ROOT CAUSE ANALYSIS TO IDENTIFY THE SOURCE OF COST AND SCHEDULE VARIANCES\nJustification: With CV = −$60,000 and SV = −$80,000 at the project midpoint, the project is under significant stress. Before any corrective action is taken, the project manager must understand WHY costs are running 19% over plan (CPI = 0.842). Possible causes include: unanticipated technical complexity in sensor integration, scope additions not formally approved, underperforming contractors, or rework due to quality failures. Without diagnosing root causes, corrective actions risk addressing symptoms rather than causes and may further destabilise the project.\n\nRECOMMENDATION 2: IMPLEMENT FAST-TRACKING OR CRASHING TO RECOVER THE SCHEDULE\nJustification: The SPI of 0.800 means the project is running 20% behind schedule. With only 4 months remaining and significant work outstanding, the project manager should explore schedule compression. Fast-tracking (executing phases or tasks in parallel that were originally planned sequentially) can recover time without necessarily increasing cost. Crashing (adding resources to critical path activities) may increase cost but should be evaluated against the risk of further delays. A revised schedule baseline should be issued with approval from the project sponsor.\n\nRECOMMENDATION 3: INCREASE MONITORING FREQUENCY AND ESCALATE TO THE PROJECT SPONSOR IMMEDIATELY\nJustification: The EAC of approximately $950,000 represents an 18.75% overrun on a $800,000 budget — a material variance that requires sponsor awareness and decision-making authority. The project manager should escalate this in writing, presenting the current CPI, SPI, EAC, and ETC alongside corrective action options. Going forward, EVM reporting should shift from monthly to bi-weekly to detect further deterioration faster. Introducing performance thresholds (e.g., escalate immediately if CPI drops below 0.80) will support early intervention and prevent the project from reaching a point of no recovery.",
+          "modelAnswer": "CRITICAL PATH: A → B → D → F\nDuration: 5 + 10 + 20 + 5 = 40 days\n\nWHY THIS PATH IS CRITICAL:\n\nThe critical path is the longest path through the project network. It determines the minimum project duration — 40 days. Any delay to any activity on this path will directly extend the project completion date by the same amount.\n\nThe critical path A → B → D → F is critical because:\n\n1. It has the longest total duration (40 days), which sets the overall project timeline.\n\n2. All activities on it have ZERO total float:\n   - A: Float = 0 (must start immediately)\n   - B: Float = 0 (must start immediately after A)\n   - D: Float = 0 (must start immediately after B)\n   - F: Float = 0 (must start immediately after D — and D is the controlling predecessor)\n\n3. If Activity D (Recreational Facilities, 20 days) is delayed by even 1 day, the project end date shifts to day 41.\n\nThe second path A → C → E → F has a total float of 7 days — activities C and E can each be delayed by up to 7 days without affecting the project completion date.\n\nCONCLUSION: The project manager must monitor activities A, B, D, and F most closely, as these are the activities that directly control whether the project finishes on day 40.",
           "keyPoints": [
-            "Three distinct, named recommendations (not just generic project management advice)",
-            "Each recommendation must reference specific EVM figures (CV, SV, CPI, SPI, EAC)",
-            "Root cause analysis recommendation is essential",
-            "Schedule recovery recommendation (fast-tracking or crashing) with rationale",
-            "Escalation and reporting recommendation linked to EAC overrun magnitude"
+            "Correctly identify the critical path as A → B → D → F",
+            "State the duration: 40 days",
+            "Explain that the critical path is the longest path — determines minimum project duration",
+            "State that critical activities have ZERO total float",
+            "Explain the consequence: any delay on the critical path delays the project end",
+            "Note that Path 2 (A-C-E-F) has 7 days of float — is NOT critical"
+          ]
+        },
+        {
+          "id": "q3e",
+          "label": "Question 3e",
+          "marks": 6,
+          "text": "Determine the total slack for the project. Explain the significance of slack in project management.",
+          "type": "essay",
+          "modelAnswer": "TOTAL FLOAT (SLACK) CALCULATION:\n\nUsing Forward Pass and Backward Pass:\n\nFORWARD PASS (ES, EF):\n- A: ES=0, EF=5\n- B: ES=5, EF=15\n- C: ES=5, EF=20\n- D: ES=15, EF=35\n- E: ES=20, EF=28\n- F: ES=35, EF=40\n\nBACKWARD PASS (LS, LF) — working backwards from project end = 40:\n- F: LF=40, LS=40−5=35\n- D: LF=LS_F=35, LS=35−20=15\n- E: LF=LS_F=35, LS=35−8=27\n- B: LF=LS_D=15, LS=15−10=5\n- C: LF=LS_E=27, LS=27−15=12\n- A: LF=min(LS_B, LS_C)=min(5,12)=5, LS=5−5=0\n\nTOTAL FLOAT = LS − ES (or LF − EF):\n- A: 0 − 0 = 0 days (Critical)\n- B: 5 − 5 = 0 days (Critical)\n- C: 12 − 5 = 7 days\n- D: 15 − 15 = 0 days (Critical)\n- E: 27 − 20 = 7 days\n- F: 35 − 35 = 0 days (Critical)\n\nCritical activities (zero float): A, B, D, F\nNon-critical activities: C (7 days float), E (7 days float)\n\nSIGNIFICANCE OF SLACK IN PROJECT MANAGEMENT:\n\n1. Scheduling Flexibility: Slack shows the project manager how much flexibility exists in scheduling non-critical activities. Activities C and E can each start up to 7 days later than their earliest start without delaying the project — giving Alex flexibility in resource scheduling.\n\n2. Resource Reallocation: The project manager can redeploy resources from activities with slack (C, E) to critical path activities (B, D) if needed, improving overall project efficiency without delaying the end date.\n\n3. Risk Buffer: Slack provides a natural buffer against small delays on non-critical activities. If the IT upgrade (C) encounters a 5-day delay, the project is still on track since it has 7 days of slack.\n\n4. Prioritisation: Zero-float activities (A, B, D, F) must be monitored most closely — any delay immediately impacts the project. Activities with slack receive relatively less monitoring attention.",
+          "keyPoints": [
+            "Show both forward pass (ES/EF) and backward pass (LS/LF) for all activities",
+            "Calculate Total Float = LS − ES for each activity",
+            "Critical activities (A, B, D, F) have zero float",
+            "C and E each have 7 days of total float",
+            "Explain at least 3 significances of slack: flexibility, resource reallocation, risk buffer, prioritisation"
+          ]
+        },
+        {
+          "id": "q3f",
+          "label": "Question 3f",
+          "marks": 6,
+          "text": "Define 'free float' and identify the free float for this project. Show how free float can impact project scheduling and resource allocation.",
+          "type": "essay",
+          "modelAnswer": "DEFINITION OF FREE FLOAT:\nFree float (also called free slack) is the amount of time an activity can be delayed from its earliest start without delaying the earliest start of any of its immediate successor activities. Unlike total float (which measures delay tolerance without impacting the project end date), free float measures delay tolerance without impacting the NEXT activity's earliest start.\n\nFormula: Free Float = ES(successor) − EF(activity)\nFor activities with multiple successors: Free Float = minimum[ES(successor)] − EF(activity)\n\nFREE FLOAT CALCULATIONS:\n\nFrom the forward pass (ES, EF for all activities):\n- A: Successors are B (ES=5) and C (ES=5). FF = min(5,5) − 5 = 0\n- B: Successor is D (ES=15). FF = 15 − 15 = 0\n- C: Successor is E (ES=20). FF = 20 − 20 = 0\n- D: Successor is F (ES=35). FF = 35 − 35 = 0\n- E: Successor is F (ES=35). FF = 35 − 28 = 7 days\n- F: End node. FF = 0\n\nFREE FLOAT SUMMARY:\n- A = 0 | B = 0 | C = 0 | D = 0 | E = 7 days | F = 0\n\nOnly Activity E (Security System Implementation) has free float — 7 days.\n\nHOW FREE FLOAT IMPACTS SCHEDULING AND RESOURCE ALLOCATION:\n\n1. Independent Scheduling: Activity E can be delayed by up to 7 days from its earliest start (day 20) without pushing out Activity F's earliest start (day 35). Alex can schedule E to start anywhere between day 20 and day 27 without impacting the downstream activity.\n\n2. Resource Sharing: The 7-day free float on E means that the installation team assigned to E could be borrowed to help with Activity D (Recreational Facilities, on the critical path) during E's flexible window — without creating a schedule conflict.\n\n3. Reduced Pressure: Knowing that E has 7 days of free float reduces scheduling pressure on that specific activity. The project manager does not need to rush the security team to start immediately after C finishes.\n\n4. Difference from Total Float: Note that both C and E have 7 days of total float. However, only E has free float (7 days). C's 7 days of total float cannot be fully used as free float because if C starts late, it pushes E's start later — reducing E's free float. Free float is more conservative and operationally useful for scheduling individual activities.",
+          "keyPoints": [
+            "Define free float clearly: amount of delay without impacting the EARLIEST START of the next activity",
+            "Distinguish free float from total float",
+            "Show formula: FF = ES(successor) − EF(activity)",
+            "Calculate free float for all activities — only E has free float (7 days), all others = 0",
+            "Explain impact on scheduling: E can start between day 20–27 without affecting F",
+            "Explain impact on resource allocation: resources from E can be shared with critical path activities"
           ]
         }
       ]
@@ -380,55 +263,66 @@
       "id": "q4",
       "label": "Question 4",
       "marks": 20,
-      "text": "Answer all three parts of this question on Project Closure and Lessons Learned.",
+      "text": "Risk management is a crucial aspect of project management. It involves identifying, assessing, and mitigating potential risks that could impact the success of a project. Answer the following questions related to project risk management.",
       "type": "essay",
       "subQuestions": [
         {
           "id": "q4a",
           "label": "Question 4a",
-          "marks": 6,
-          "text": "Explain the difference between administrative closure, contractual closure, and financial closure in project management. Provide an example of each.",
+          "marks": 4,
+          "text": "Define 'project risk'. Explain the importance of risk management in project management.",
           "type": "essay",
-          "modelAnswer": "Project closure is the formal process of concluding all project activities. It is not a single event but encompasses several distinct types of closure, each addressing a different dimension of wrapping up the project.\n\nADMINISTRATIVE CLOSURE:\nAdministrative closure involves completing and archiving all project documentation, formally releasing the project team, obtaining final sign-off and acceptance from the project sponsor and key stakeholders, and updating organisational process assets with lessons learned and final performance records. It confirms that all project management processes have been completed and that the project's outputs have been formally handed over to operations or the customer.\nExample: After delivering a new enterprise software system, the project manager obtains a written acceptance certificate from the client, archives all project plans, status reports, and change logs in the organisation's document management system, and formally dissolves the project team. Team members are reassigned and their performance appraisals are completed.\n\nCONTRACTUAL CLOSURE:\nContractual closure (sometimes called procurement closure) involves completing and settling all contracts with external vendors, suppliers, and contractors. It includes verifying that all contracted deliverables have been received and accepted, resolving any outstanding claims or disputes, and formally closing out each procurement agreement in accordance with its terms.\nExample: In a construction project, the project manager verifies that the main contractor has completed all punch list items, issues the Certificate of Practical Completion, releases any retained funds held under the contract, and files the signed final payment certificates. All vendor agreements — for materials, subcontractors, and equipment hire — are formally closed.\n\nFINANCIAL CLOSURE:\nFinancial closure involves reconciling and finalising all project accounts. This includes ensuring all invoices have been processed, closing project cost codes in the financial system, reconciling actual costs against the budget baseline, releasing any unused contingency or management reserves back to the organisation, and producing a final cost report.\nExample: The project accountant reconciles the project ledger, confirms that all supplier invoices have been paid, closes the project's budget codes in the ERP system, and produces a final project financial report showing the total amount spent versus the original budget. Any surplus funds are returned to the organisational budget pool.\n\nIn summary, administrative closure addresses governance and documentation, contractual closure addresses legal and procurement obligations, and financial closure addresses accounting and budget reconciliation. All three must be completed before a project can be considered fully closed.",
+          "modelAnswer": "DEFINITION OF PROJECT RISK:\nA project risk is an uncertain event or condition that, if it occurs, has a positive or negative effect on one or more project objectives such as scope, schedule, cost, or quality. Risks are characterised by probability (likelihood of occurrence) and impact (severity of effect if it occurs). Risks can be threats (negative) or opportunities (positive). Risk is inherent in all projects due to the unique and temporary nature of project work.\n\nIMPORTANCE OF RISK MANAGEMENT IN PROJECT MANAGEMENT:\n\n1. Proactive Problem Prevention: Risk management enables project managers to identify potential issues BEFORE they occur and put mitigation measures in place — reducing the likelihood of surprises that cause delays or cost overruns.\n\n2. Better Decision-Making: A structured risk assessment provides objective data on the probability and impact of threats and opportunities, enabling project managers and sponsors to make informed decisions about scope, budget, and schedule trade-offs.\n\n3. Protection of Project Objectives: Without risk management, unforeseen events can cause scope, schedule, or cost overruns that jeopardise the entire project. Proactive risk management protects the Triple Constraint.\n\n4. Stakeholder Confidence: Demonstrating a systematic approach to identifying and managing risks builds confidence among sponsors, clients, and team members that the project is being managed professionally.",
           "keyPoints": [
-            "Define all three types of closure — administrative, contractual, financial",
-            "Administrative: formal sign-off, documentation archiving, team release",
-            "Contractual: settling vendor/supplier contracts, verifying deliverables, resolving claims",
-            "Financial: reconciling accounts, closing cost codes, releasing reserves",
-            "A specific, realistic example for each type",
-            "Summary statement distinguishing what dimension each closure addresses"
+            "Define project risk as an uncertain event with positive OR negative effect on project objectives",
+            "Mention probability and impact as the two dimensions of risk",
+            "Note that risks include both threats AND opportunities",
+            "Explain at least 3 importances: proactive prevention, better decisions, protecting objectives, stakeholder confidence"
           ]
         },
         {
           "id": "q4b",
           "label": "Question 4b",
           "marks": 8,
-          "text": "Describe the importance of lessons learned in project management. Explain how a project manager should capture lessons learned effectively and how they can be used to benefit future projects.",
+          "text": "Describe the FOUR (4) steps of the risk management process. Provide a brief explanation of each step.",
           "type": "essay",
-          "modelAnswer": "IMPORTANCE OF LESSONS LEARNED:\nLessons learned are the documented knowledge gained from both the successes and failures of a completed project. They represent one of the most valuable organisational assets a project can produce, yet they are frequently overlooked in the rush to close out and move on. Their importance can be understood on multiple levels:\n\n1. Institutional Knowledge Preservation: In organisations with high staff turnover or project-based workforces, individual knowledge walks out the door when a project ends. Lessons learned transform tacit knowledge (what team members know but have not written down) into explicit, retrievable organisational knowledge.\n\n2. Continuous Improvement: By systematically recording what worked well and what did not, organisations can continuously refine their project management methodologies, estimation models, risk frameworks, and vendor management practices. This is the foundation of a learning organisation.\n\n3. Risk Avoidance: Lessons captured from past failures — such as a specific vendor who consistently underdelivered, or a particular regulatory approval that always took longer than planned — enable future project managers to identify and mitigate risks that might otherwise not appear on a risk register.\n\n4. Cost and Schedule Savings: If lessons from estimation errors on past projects are captured and used, future estimates will be more accurate — avoiding the expensive overruns and delays that result from repeating the same mistakes.\n\nHOW TO CAPTURE LESSONS LEARNED EFFECTIVELY:\n\n1. Ongoing Documentation — Not Just at Closure: Lessons should be recorded throughout the project lifecycle, not only at the end. A running lessons learned log (often part of the project management information system) allows issues to be captured while details are fresh, rather than relying on memory months later.\n\n2. Structured Retrospective Sessions: At key project milestones and at project closure, the project manager should facilitate a structured lessons learned workshop with the team and key stakeholders. Useful prompts include: 'What went well and should be repeated?', 'What went wrong and why?', and 'What would you do differently?' Anonymity mechanisms (e.g., anonymous pre-meeting surveys) can surface sensitive issues that team members are reluctant to raise publicly.\n\n3. Categorisation and Indexing: Lessons should be categorised by project phase, knowledge area, and severity so they are easily searchable. Unstructured text buried in a closure report is rarely retrieved.\n\nHOW LESSONS LEARNED BENEFIT FUTURE PROJECTS:\n- Project planning: Future PMs consult the lessons learned repository when estimating, identifying risks, and developing communication plans.\n- Onboarding: New PMs assigned to similar projects can review past lessons to accelerate their understanding of common pitfalls.\n- Process improvement: Recurring lessons may trigger updates to organisational templates, standards, or training programmes — embedding the learning at a systemic level rather than relying on individual memory.",
+          "modelAnswer": "THE FOUR STEPS OF THE RISK MANAGEMENT PROCESS (IADC):\n\nSTEP 1: IDENTIFY (Risk Identification)\nThe first step involves systematically identifying all potential risks that could affect the project — both threats and opportunities. Techniques include brainstorming sessions with the project team, expert interviews, review of lessons learned from similar past projects, checklists, SWOT analysis, and assumptions analysis. The output of this step is a comprehensive list of identified risks recorded in the Risk Register.\nKey output: Initial Risk Register with risk descriptions and potential causes.\n\nSTEP 2: ANALYSE (Risk Analysis)\nIdentified risks are analysed to determine their likelihood (probability) and potential effect (impact) on project objectives. There are two types:\n- Qualitative Analysis: Prioritises risks using a Probability × Impact (P×I) matrix or scoring scale (e.g., 1–5 for probability and impact). Fast and subjective — useful for all projects.\n- Quantitative Analysis: Uses numerical models (e.g., Monte Carlo simulation, decision trees) to quantify the overall effect of risk on project cost or schedule. More rigorous but requires significant data.\nKey output: Risk Register updated with probability, impact scores, risk ratings, and priority rankings.\n\nSTEP 3: DEVELOP RESPONSE (Risk Response Planning)\nFor each significant risk, a response strategy is selected and a response plan is developed. Common risk response strategies include:\n- Avoid: Eliminate the threat by changing the project plan\n- Mitigate: Reduce the probability or impact of the threat\n- Transfer: Shift the financial impact to a third party (e.g., insurance, fixed-price contracts)\n- Accept (Active or Passive): Acknowledge the risk and prepare a contingency plan, or simply monitor it\n- Exploit/Enhance: For opportunities — increase the probability or impact of positive risks\nKey output: Risk Register updated with response strategies, contingency plans, risk owners, and reserves.\n\nSTEP 4: CONTROL (Risk Monitoring and Control)\nRisk management is an ongoing process throughout the project lifecycle. In the Control step, the project manager monitors identified risks for changes in status, implements response plans when trigger conditions occur, identifies new risks as the project evolves, tracks residual risks, and reviews the effectiveness of existing responses. Regular risk reviews are conducted at project status meetings.\nKey output: Updated Risk Register, issue log, change requests, lessons learned.",
           "keyPoints": [
-            "Explain at least THREE reasons why lessons learned are important",
-            "Institutional knowledge preservation and continuous improvement are key themes",
-            "Lessons should be captured throughout the project, not only at closure",
-            "Structured retrospective/workshop approach described",
-            "Categorisation and indexing for future retrieval",
-            "Specific ways future projects benefit: planning, risk identification, estimation improvement"
+            "Name all four steps: Identify, Analyse, Develop Response, Control (IADC framework)",
+            "Identify: tools include brainstorming, lessons learned, SWOT, checklists",
+            "Analyse: distinguish qualitative (P×I matrix) from quantitative (Monte Carlo)",
+            "Develop Response: name at least 3 strategies (Avoid, Mitigate, Transfer, Accept) with brief descriptions",
+            "Control: emphasise that risk management is ONGOING — not a one-time activity",
+            "Reference the Risk Register as a key output linking all four steps"
           ]
         },
         {
           "id": "q4c",
           "label": "Question 4c",
           "marks": 6,
-          "text": "Discuss TWO (2) common challenges that project managers face during project closure and explain how each challenge can be addressed.",
+          "text": "Identify THREE (3) common risk response strategies. Outline how each strategy can be used to manage project risks.",
           "type": "essay",
-          "modelAnswer": "CHALLENGE 1: TEAM DISENGAGEMENT AND PREMATURE RESOURCE RELEASE\nDescription: As a project nears completion, team members often become distracted by or anxious about their next assignment. Functional managers may begin pulling resources back to operational roles before the project is formally closed. This creates a situation where critical closure tasks — final documentation, defect resolution, knowledge transfer, and acceptance testing — are left incomplete or completed hastily by a skeleton crew. In some cases, key subject matter experts with institutional knowledge leave before lessons learned are captured.\n\nHow to Address It:\nThe project manager should plan the closure phase explicitly in the project schedule, with defined tasks, responsibilities, and deadlines for all closure activities. Resource release should be formalised — team members should not be reassigned until their specific closure tasks are signed off. The PM can also negotiate with functional managers in advance to retain critical resources for a defined closure window (e.g., two additional weeks). Recognising and celebrating the team's contribution at a project closure event can also sustain motivation through the final phase.\n\nCHALLENGE 2: STAKEHOLDER RELUCTANCE TO PROVIDE FORMAL ACCEPTANCE\nDescription: Project closure requires formal sign-off from the client or key stakeholders confirming that deliverables meet acceptance criteria. In practice, stakeholders may delay or refuse to sign off for various reasons: unresolved scope disputes, minor defects on a 'punch list', dissatisfaction with aspects of the project, or simply a desire to continue receiving project team support after the formal end date. This can leave the project in perpetual 'near-closure' limbo, continuing to consume resources without a clear end.\n\nHow to Address It:\nThe project manager should ensure that acceptance criteria are clearly defined and agreed upon in the project scope baseline — not left vague until closure. The contract should specify a formal acceptance process with defined response windows (e.g., the client has 10 business days to accept or reject with specific reasons). Outstanding punch list items should be prioritised and resolved quickly, and any items deemed out of scope should be documented as future enhancements rather than blocking final sign-off. If disputes persist, escalation to the Change Control Board or a pre-agreed dispute resolution mechanism should be invoked.",
+          "modelAnswer": "THREE COMMON RISK RESPONSE STRATEGIES:\n\n1. RISK AVOIDANCE\nDefinition: Risk avoidance involves changing the project plan to eliminate the threat entirely — removing the cause of the risk or protecting the project objectives from its impact.\nHow it works: The project manager modifies scope, schedule, or approach to bypass the risk situation. For example, if a particular vendor has a history of delays (a risk), the project manager may choose a different, more reliable supplier instead of negotiating with the risky one. Alternatively, if using a new, unproven technology poses a risk of failure, the team switches to a proven technology.\nBest used when: The potential impact is severe and the risk cannot be adequately controlled. Avoidance is the strongest response — it eliminates the risk entirely. However, it may also eliminate associated opportunities.\n\n2. RISK MITIGATION\nDefinition: Risk mitigation reduces the probability and/or impact of a risk to an acceptable threshold. Unlike avoidance, mitigation does not eliminate the risk — it makes it less likely to occur or less harmful if it does.\nHow it works: For a risk of critical staff absence delaying the project, the PM could: (a) cross-train team members so others can cover critical roles, (b) document all critical technical processes to reduce key-person dependency, or (c) add schedule buffer to activities dependent on key personnel. For a risk of construction delays due to weather, the PM could schedule weather-sensitive activities during a lower-risk season.\nBest used when: Full avoidance is not feasible but the risk's probability or impact can be meaningfully reduced through targeted actions. Mitigation is the most commonly used strategy.\n\n3. RISK TRANSFER\nDefinition: Risk transfer shifts the financial consequence of a risk to a third party — without eliminating the risk itself. The risk still exists, but another party bears the cost if it occurs.\nHow it works: Common methods include: (a) purchasing insurance (transfers financial loss to the insurer), (b) using fixed-price contracts (transfers cost overrun risk to the contractor), (c) performance bonds or warranties (the vendor compensates if deliverables fail to meet standards), (d) outsourcing risky activities to specialist firms.\nBest used when: The risk involves financial exposure that the organisation is unwilling or unable to absorb, or when a third party has better capability to manage or absorb the risk. Note: Transfer does not eliminate the risk for the project — delays or failures still affect the project even if costs are recovered.",
           "keyPoints": [
-            "Two clearly distinct challenges — not variations of the same problem",
-            "Challenge 1: team disengagement / premature resource release is a strong answer",
-            "Challenge 2: stakeholder refusal to formally accept deliverables is a strong answer",
-            "Each challenge should be clearly explained — not just named",
-            "Each solution is specific and actionable (not just 'communicate better')",
-            "Reference to contractual acceptance criteria or formal closure process is a bonus"
+            "Name three strategies clearly: Avoidance, Mitigation, Transfer (Acceptance also accepted as a fourth)",
+            "Define each strategy accurately",
+            "Provide a realistic example of how each strategy is applied",
+            "Explain when each strategy is most appropriate",
+            "Distinguish between the strategies — do not conflate mitigation and avoidance"
+          ]
+        },
+        {
+          "id": "q4d",
+          "label": "Question 4d",
+          "marks": 2,
+          "text": "State the importance of involving project stakeholders in the risk management process.",
+          "type": "short_answer",
+          "modelAnswer": "IMPORTANCE OF STAKEHOLDER INVOLVEMENT IN RISK MANAGEMENT:\n\nInvolving stakeholders in the risk management process is important for the following reasons:\n\n1. Broader Risk Identification: Stakeholders bring diverse perspectives, domain knowledge, and experience that the project team may lack. Clients, end users, suppliers, and regulators can identify risks that the internal team would not consider — leading to a more comprehensive Risk Register.\n\n2. Increased Stakeholder Buy-In: When stakeholders are involved in identifying and planning responses to risks, they develop ownership of the risk management plan. This makes them more likely to support and cooperate with risk response activities when risks materialise.\n\n3. Better Risk Assessment: Stakeholders can provide valuable input on the probability and impact of specific risks — especially those related to their area of expertise (e.g., a government regulator can assess regulatory risk more accurately than an internal IT team).\n\n4. Improved Trust and Communication: Transparent risk discussions with stakeholders build trust and reduce surprises. Stakeholders who are aware of project risks and response plans are less likely to be alarmed if issues arise during execution.",
+          "keyPoints": [
+            "Broader/more comprehensive risk identification from diverse perspectives",
+            "Increased stakeholder buy-in and support for risk response actions",
+            "Better probability/impact assessment from domain experts",
+            "Improved communication and trust with the project team"
           ]
         }
       ]
